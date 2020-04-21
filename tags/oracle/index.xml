@@ -6,24 +6,10 @@
     <description>Recent content in oracle on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 07:08:13 +0545</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:19 +0545</lastBuildDate>
     
 	<atom:link href="/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>RMS recon</title>
-      <link>/braindump/2020/04/rms-recon/</link>
-      <pubDate>Tue, 21 Apr 2020 07:08:13 +0545</pubDate>
-      
-      <guid>/braindump/2020/04/rms-recon/</guid>
-      <description>TRAN TRAN_A Index: 1,1,1,
-  PACK_IND
-Indicates whether or not the item is a pack item.
-    TRAN_CODE
-Tran_code : Identifies the transaction type. Valid values are: 0 Ordering 1 Net Sales 2 Net Sales VAT Exclusive 3 Non-inventory Items Sales/Returns 4 Returns 5 Non-inventory VAT Exclusive Sales 6 Deals income (Sales) 7 Deals income (Purchases) 8 Fixed Income Accrual 10
-    UNITS</description>
-    </item>
     
     <item>
       <title>ODI</title>

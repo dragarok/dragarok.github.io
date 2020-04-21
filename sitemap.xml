@@ -3,37 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/braindump/</loc>
-    <lastmod>2020-04-21T07:08:13+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/oracle/</loc>
-    <lastmod>2020-04-21T07:08:13+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/rms/</loc>
-    <lastmod>2020-04-21T07:08:13+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/braindump/2020/04/rms-recon/</loc>
-    <lastmod>2020-04-21T07:08:13+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-04-21T07:08:13+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/algorithm/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
   </url>
   
   <url>
     <loc>/braindump/2020/04/algorithms/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
   </url>
   
@@ -59,6 +39,11 @@
   
   <url>
     <loc>/tags/optimization/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
   </url>
   
@@ -618,6 +603,11 @@
   </url>
   
   <url>
+    <loc>/tags/oracle/</loc>
+    <lastmod>2020-04-19T16:00:19+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>/braindump/2020/04/ml-paper-questions/</loc>
     <lastmod>2020-04-19T16:00:15+05:45</lastmod>
   </url>
@@ -789,11 +779,6 @@
   
   <url>
     <loc>/tags/os/</loc>
-    <lastmod>2020-04-19T15:59:51+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/braindump/2020/04/recon-sc-script-names/</loc>
     <lastmod>2020-04-19T15:59:51+05:45</lastmod>
   </url>
   
