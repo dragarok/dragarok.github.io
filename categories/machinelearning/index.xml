@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machinelearning on Alok&#39;s Blog</title>
+    <link>/categories/machinelearning/</link>
+    <description>Recent content in machinelearning on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:43 +0545</lastBuildDate>
+    
+	<atom:link href="/categories/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convolution</title>
+      <link>/braindump/2020/04/convolution/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:43 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/convolution/</guid>
+      <description>Convolution Image will be of shape: (H * W * channels)
+Our kernel will also be of shape (Hk * Wk * channels)
+The number of channels is same as it is volume convolution.
+In case of 1 * 1 convolution, the convolution helps decrease or increase the feature map dimensions.</description>
+    </item>
+    
+    <item>
+      <title>ML Causality</title>
+      <link>/braindump/2020/04/ml-causality/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:33 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/ml-causality/</guid>
+      <description>Causality in ML: &amp;ndash;Inspirations and References: J. Peters, D. Janzing, and B. Schölkopf. 2017. Elements of Causal Inference - Foundations and Learning Algorithms. MIT</description>
+    </item>
+    
+  </channel>
+</rss>

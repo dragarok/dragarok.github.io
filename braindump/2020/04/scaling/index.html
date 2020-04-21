@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Scalability of web request handling:
+That leads to the first golden rule for scalability: every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory.
+Sessions need to be stored in a centralized data store which is accessible to all your application servers. It can be an external database or an external persistent cache, like Redis.
+After “outsourcing” your sessions and serving the same codebase from all your servers, you can now create an image file from one of these servers (AWS calls this AMI - Amazon Machine Image." />
+<meta name="keywords" content="Blog, devops, scaling, webserver" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/scaling/" />
+
+
+    <title>
+        
+            Scaling :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Scaling">
+<meta itemprop="description" content="Scalability of web request handling:
+That leads to the first golden rule for scalability: every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory.
+Sessions need to be stored in a centralized data store which is accessible to all your application servers. It can be an external database or an external persistent cache, like Redis.
+After “outsourcing” your sessions and serving the same codebase from all your servers, you can now create an image file from one of these servers (AWS calls this AMI - Amazon Machine Image.">
+<meta itemprop="dateModified" content="2020-04-19T16:00:23&#43;05:45" />
+<meta itemprop="wordCount" content="2748">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="devops,scaling,webserver," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Scaling"/>
+<meta name="twitter:description" content="Scalability of web request handling:
+That leads to the first golden rule for scalability: every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory.
+Sessions need to be stored in a centralized data store which is accessible to all your application servers. It can be an external database or an external persistent cache, like Redis.
+After “outsourcing” your sessions and serving the same codebase from all your servers, you can now create an image file from one of these servers (AWS calls this AMI - Amazon Machine Image."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-19 16:00:23 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>13 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/scaling/">Scaling</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>Scalability of web request handling:</p>
+<p>That leads to the first golden rule for scalability: every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory.</p>
+<p>Sessions need to be stored in a centralized data store which is accessible to all your application servers. It can be an external database or an external persistent cache, like Redis.</p>
+<p>After “outsourcing” your sessions and serving the same codebase from all your servers, you can now create an image file from one of these servers (AWS calls this AMI - Amazon Machine Image.)</p>
+<p>Scalability of caches:</p>
+<p>Always try to use cache such as Redis</p>
+<p>The cache is good as long as you can make keys properly that you would not need even a database</p>
+<p>Memcache can be used to cache direct; but more efficient approach would be redis.</p>
+<p>Caches are difficult when you cache the result of query; each time table&rsquo;s element changes, the cached element has to be dropped.</p>
+<p>Instead, better to use cache objects</p>
+<p>Scalability of asynchronism:</p>
+<p>Just imagine the scalability of your website if the script would upload these pre-rendered HTML pages to AWS S3 or Cloudfront or another Content Delivery Network!</p>
+<p>Your website would be super responsive and could handle millions of visitors per hour!</p>
+<p>RabbitMQ is one of many systems which help to implement async processing. You could also use ActiveMQ or a simple Redis list.</p>
+<p>The basic idea is to have a queue of tasks or jobs that a worker can process.</p>
+<p>Scalability for database:</p>
+<p>means to denormalize right from the beginning and include no more Joins in any database query</p>
+<p>Joins will now need to be done in your application code.</p>
+<p>Some ideas of objects to cache:</p>
+<p>user sessions (never use the database!)
+fully rendered blog articles
+activity streams
+user&lt;-&gt;friend relationships</p>
+<p>Generally, you should aim for maximal throughput with acceptable latency.</p>
+<p>Another way to look at performance vs scalability:</p>
+<p>If you have a performance problem, your system is slow for a single user.
+If you have a scalability problem, your system is fast for a single user but slow under heavy load.</p>
+<p>In a distributed computer system, you can only support two of the following guarantees:</p>
+<p>Consistency - Every read receives the most recent write or an error
+Availability - Every request receives a response, without guarantee that it contains the most recent version of the information
+Partition Tolerance - The system continues to operate despite arbitrary partitioning due to network failures</p>
+<p>CP - consistency and partition tolerance
+Waiting for a response from the partitioned node might result in a timeout error. CP is a good choice if your business needs require atomic reads and writes.</p>
+<p>AP - availability and partition tolerance
+Responses return the most recent version of the data available on a node, which might not be the latest. Writes might take some time to propagate when the partition is resolved.</p>
+<p>AP is a good choice if the business needs allow for eventual consistency or when the system needs to continue working despite external errors.</p>
+<p>Consistency Issues:</p>
+<p>Weak Consistency:
+After a write, reads may or may not see it. A best effort approach is taken.</p>
+<p>Weak consistency works well in real time use cases such as VoIP, video chat, and realtime multiplayer games</p>
+<p>For example, if you are on a phone call and lose reception for a few seconds, when you regain connection you do not hear what was spoken during connection loss.</p>
+<p>Strong Consistency:</p>
+<p>After a write, reads will see it. Data is replicated synchronously.</p>
+<p>Strong consistency works well in systems that need transactions.</p>
+<p>Eventual Consistency</p>
+<p>After a write, reads will eventually see it (typically within milliseconds). Data is replicated asynchronously.</p>
+<p>DNS and email</p>
+<p>There are two main patterns to support high availability: fail-over and replication.</p>
+<p>Fail Over</p>
+<p>Active Passive</p>
+<p>Heartbeat from passive to active; if active fails -&gt; passive takes on ip of previously active one</p>
+<p>Master slave failover</p>
+<p>Depends whether the passive one needs to hot boot or cold boot to resume the processes.</p>
+<p>Active Active</p>
+<p>In active-active, both servers are managing traffic, spreading the load between them.</p>
+<p>If the servers are public-facing, the DNS would need to know about the public IPs of both servers.</p>
+<p>If the servers are internal-facing, application logic would need to know about both servers.</p>
+<p>&ndash; More hardware and complex</p>
+<p>&ndash; Potential loss of data if active fails before replicating the data to passive node.</p>
+<p>Replication</p>
+<p>Describing Availability:</p>
+<p>Availability is often quantified by uptime (or downtime) as a percentage of time the service is available</p>
+<p>99.9 % will have 8h downtime per year whereas 99.99% will have 52 mins downtime in a year(8.6s a day)</p>
+<p>DNS:</p>
+<p>DNS results can also be cached by your browser or OS for a certain period of time, determined by the TTL</p>
+<p>NS record (name server) - Specifies the DNS servers for your domain/subdomain.
+MX record (mail exchange) - Specifies the mail servers for accepting messages.
+A record (address) - Points a name to an IP address.
+CNAME (canonical) - Points a name to another name or CNAME (example.com to <a href="http://www.example.com">www.example.com</a>) or to an A record.</p>
+<p>Some DNS services can route traffic through various methods:</p>
+<p>Weighted round robin
+Prevent traffic from going to servers under maintenance
+Balance between varying cluster sizes
+A/B testing
+Latency-based
+Geolocation-based</p>
+<p>CDNs:</p>
+<p>A content delivery network (CDN) is a globally distributed network of proxy servers, serving content from locations closer to the user.</p>
+<p>The site&rsquo;s DNS resolution will tell clients which server to contact.</p>
+<p>Serving content from CDNs can significantly improve performance in two ways:</p>
+<p>Users receive content at data centers close to them
+Your servers do not have to serve requests that the CDN fulfills</p>
+<p>Push CDNs:</p>
+<p>Push CDNs receive new content whenever changes occur on your server.</p>
+<p>You take full responsibility for providing content, uploading directly to the CDN and rewriting URLs to point to the CDN.</p>
+<p>Content is uploaded only when it is new or changed, minimizing traffic, but maximizing storage.</p>
+<p>Pull CDNs:</p>
+<p>Pull CDNs grab new content from your server when the first user requests the content</p>
+<p>This results in a slower request until the content is cached on the CDN.</p>
+<p>A time-to-live (TTL) determines how long content is cached.</p>
+<p>Sites with heavy traffic work well with pull CDNs, as traffic is spread out more evenly with only recently-requested content remaining on the CDN.</p>
+<p>&ndash; CDNs require changing URLs for static content to point to the CDN.</p>
+<p>&ndash; Costly</p>
+<p>&ndash; Stale content if update happens before TTL</p>
+<p>Load Balancer:</p>
+<p>Pick a worker to forward the request. The worker will be chosen based on different types of algorithms.</p>
+<p>Load balancers are effective at:</p>
+<p>Preventing requests from going to unhealthy servers</p>
+<p>Preventing overloading resources</p>
+<p>Helping eliminate single points of failure</p>
+<p>Can be implemented using hardware or software using a proxy known as HAProxy.</p>
+<p>Additional benefits include:</p>
+<p>SSL termination</p>
+<p>encryption decryption from load balancer so ease for actual workers</p>
+<p>Removes the need to install X.509 certificates on each server</p>
+<p>Session persistence</p>
+<p>Issue cookies and route a specific client&rsquo;s requests to same instance if the web apps do not keep track of sessions</p>
+<p>Load balancers can route traffic based on various metrics, including:</p>
+<p>Random
+Least loaded
+Session/cookies
+Round robin or weighted round robin
+Layer 4
+Layer 7</p>
+<p>Layer 4 and 7 means the layers of Network protocol standards</p>
+<p>Layer 4:</p>
+<p>load balancers look at info at the transport layer to decide how to distribute requests.</p>
+<p>Generally, this involves the source, destination IP addresses, and ports in the header, but not the contents of the packet.</p>
+<p>Performs NAT</p>
+<p>Layer 7:</p>
+<p>Layer 7 load balancers look at the application layer to decide how to distribute requests.</p>
+<p>terminates network traffic, reads the message, makes a load-balancing decision, then opens a connection to the selected server.</p>
+<p>can direct video traffic to servers that host videos while directing more sensitive user billing traffic to security-hardened servers.</p>
+<p>At the cost of flexibility, layer 4 load balancing requires less time and computing resources than Layer 7, although the performance impact can be minimal on modern commodity hardware.</p>
+<p>&ndash; The load balancer can become a performance bottleneck if it does not have enough resources or if it is not configured properly.</p>
+<p>&ndash; increased complexity</p>
+<p>&ndash; A single load balancer is a single point of failure, configuring multiple load balancers further increases complexity.</p>
+<p>Horizontal Scaling:</p>
+<p>Scaling out using commodity machines is more cost efficient and results in higher availability
+than scaling up a single server on more expensive hardware, called Vertical Scaling.</p>
+<p>Scaling horizontally introduces complexity and involves cloning servers:
+Servers should be stateless: they should not contain any user-related data like sessions or profile pictures</p>
+<p>Sessions can be stored in a centralized data store such as a database (SQL, NoSQL) or a persistent cache (Redis, Memcached)</p>
+<p>Downstream servers such as caches and databases need to handle more simultaneous connections as upstream servers scale out</p>
+<p>Reverse Proxy:</p>
+<p>web server that centralizes internal services and provides unified interfaces to the public.</p>
+<p>Secure, Scalability and Flexibility, SSL termination, Compression, Caching, Static content serve</p>
+<p>Load balancer vs reverse proxy:</p>
+<p>Deploying a load balancer is useful when you have multiple servers. Often, load balancers route traffic to a set of servers serving the same function.</p>
+<p>Reverse proxies can be useful even with just one web server or application server</p>
+<p>Solutions such as NGINX and HAProxy can support both layer 7 reverse proxying and load balancing.</p>
+<p>Separating out the web layer from the application layer (also known as platform layer) allows you to scale and configure both layers independently.</p>
+<p>Adding a new API results in adding application servers without necessarily adding additional web servers.</p>
+<p>Microservices : Each service runs a unique process and communicates through a well-defined, lightweight mechanism to serve a business goal.</p>
+<p>Service Discovery</p>
+<p>Systems such as Consul, Etcd, and Zookeeper can help services find each other by keeping track of registered names, addresses, and ports.</p>
+<p>Health checks help verify service integrity and are often done using an HTTP endpoint.</p>
+<p>Both Consul and Etcd have a built in key-value store that can be useful for storing config values and other shared data.</p>
+<p>Functional Partitioning:</p>
+<p>Federation (or functional partitioning) splits up databases by function.</p>
+<p>For example, instead of a single, monolithic database, you could have three databases: forums, users, and products,
+resulting in less read and write traffic to each database and therefore less replication lag</p>
+<p>&ndash;  not effective if your schema requires huge functions or tables.</p>
+<p>&ndash; need to update your application logic to determine which database to read and write.</p>
+<p>&ndash; Joining data from two databases is more complex with a server link.</p>
+<p>Sharding:</p>
+<p>Sharding distributes data across different databases such that each database can only manage a subset of the data</p>
+<p>sharding results in less read and write traffic, less replication, and more cache hits.</p>
+<p>If one shard goes down, the other shards are still operational, although you&rsquo;ll want to add some form of replication to avoid data loss.</p>
+<p>Common ways to shard a table of users is either through the user&rsquo;s last name initial or the user&rsquo;s geographic location.</p>
+<p>&ndash; update your application logic to work with shards,</p>
+<p>&ndash;set of power users on a shard could result in increased load to that shard compared to others</p>
+<p>Denormalization:</p>
+<p>Increase performance at the cost of additional write in the database</p>
+<p>Constraints to help different parts of db to sync; hard.</p>
+<p>SQL Tuning:</p>
+<p>It&rsquo;s important to benchmark and profile to simulate and uncover bottlenecks.</p>
+<p>Benchmark - Simulate high-load situations with tools such as ab.</p>
+<p>Profile - Enable tools such as the slow query log to help track performance issues.</p>
+<p>Good things to do:</p>
+<p>CHAR instead of VARCHAR for fixed-length fields</p>
+<p>TEXT for large blocks of text such as blog posts</p>
+<p>INT for larger numbers up to 2^32 or 4 billion</p>
+<p>DECIMAL for currency to avoid floating point representation errors.</p>
+<p>Avoid storing large BLOBS, store the location of where to get the object instead.</p>
+<p>Set the NOT NULL constraint where applicable to improve search performance.</p>
+<p>Use good indices.</p>
+<p>Avoid expensive joins: i.e. denormalize where needed</p>
+<p>NosQL:</p>
+<p>Data is denormalized, and joins are generally done in the application code.</p>
+<p>Most NoSQL stores lack true ACID transactions and favor eventual consistency.</p>
+<p>BASE chooses availability over consistency.</p>
+<p>Basically available - the system guarantees availability.</p>
+<p>Soft state - the state of the system may change over time, even without input.</p>
+<p>Eventual consistency - the system will become consistent over a period of time, given that the system doesn&rsquo;t receive input during that period.</p>
+<p>Key Value Stores:</p>
+<p>Key-value stores provide high performance and are often used for simple data models or for rapidly-changing data, such as an in-memory cache layer</p>
+<p>Document Value stores:</p>
+<p>Couch-db , mongo-db etc store all data as documents.</p>
+<p>JSON, XML type storage of the data</p>
+<p>Wide column store:</p>
+<p>A wide column store&rsquo;s basic unit of data is a column (name/value pair)</p>
+<p>Column can be grouped in column families</p>
+<p>Super column families further group column families.</p>
+<p>BigTable, Cassandra etc. are examples of such db.</p>
+<p>Graph Database:
+Node is a record</p>
+<p>Use to store data having many to many relationships</p>
+<p>Neo4j , FlockDB etc.</p>
+<p>SQL vs NoSQL:
+Temporary store: NO
+Non relational data: no
+Store huge data: NO
+Strict schema: S</p>
+<p>Caching:
+CDN
+Web server -&gt; Reverse proxies, Varnish e.g.
+Database -&gt; to boost db performance
+Client -&gt; in browser, server side or distinct cache layer
+Application -&gt; Memcache , Redis</p>
+<p>Database query cache issues: Hard to delete cached result with complex query, need to delete on small change
+Object level cache: Cache of user session , fully rendered web pages, activity streams, user graph data</p>
+<p>Cache-aside is also referred to as lazy loading. Only requested data is cached, which avoids filling up the cache with data that isn&rsquo;t requested.</p>
+<p>Issues of cache aside: Cache miss involves three steps to fetch data; data can become stale: solved by
+write through or TTL.</p>
+<p>Refresh-ahead can result in reduced latency vs read-through if the cache can accurately predict which items are likely to be needed in the future.</p>
+<p>Asynchronism:</p>
+<p>Message queues:
+Message queues receive, hold, and deliver messages.</p>
+<p>An application publishes a job to the queue, then notifies the user of job status.</p>
+<p>A worker picks up the job from the queue, processes it, then signals the job is complete</p>
+<p>For example, if posting a tweet, the tweet could be instantly posted to your timeline, but it could take some time before your tweet is actually delivered to all of your followers.</p>
+<p>Redis is a simple msg broker, RabbitMQ, AmazonSQS are some examples.</p>
+<p>Task  Queues:</p>
+<p>Receive task and related data , runs them and delivers results.</p>
+<p>e.g. Celery python support and scheduling</p>
+<p>Back pressure:</p>
+<p>Once queues fill up client gets 503.</p>
+<p>HTTP Requests:
+GET: reads resource ; cacheable</p>
+<p>PUT: creates or replaces a resource; not cacheable</p>
+<p>PATCH: partailly update resouce; cacheable if response contains freshness info</p>
+<p>DELETE, POST</p>
+<p>RPC:</p>
+<p>a client causes a procedure to execute on a different address space, usually a remote server</p>
+<p>Remote calls are usually slower and less reliable than local calls</p>
+<p>e.g. Protobuf, Thrift , Avro</p>
+<p>Consists of :
+Client program : params pushed to stack like local procedure call
+Client stub procedure: packs procedure id and args into request msg
+Client Comm module: os sends msg from client to server
+Server comm module
+Server stub procedure : calls server procedure matching procedure id and passes given args</p>
+<p>RPC is focused on exposing behaviors.</p>
+<p>RPCs are often used for performance reasons with internal communications, as you can hand-craft native calls to better fit your use cases.</p>
+<p>&ndash; RPC clients become tightly coupled to the service implementation.</p>
+<p>&ndash; A new API must be defined for every new operation or use case.</p>
+<p>REST: Representational State transfer</p>
+<p>The server provides a representation of resources and actions that can either manipulate or get a new representation of resources.</p>
+<p>All communication must be stateless and cacheable.</p>
+<p>Qualities of restful instance:</p>
+<p>identify resources: use same uri regardless of action</p>
+<p>verbs</p>
+<p>status response in http</p>
+<p>must be fully accessible in a browser</p>
+<p>REST is focused on exposing data</p>
+<p>Great for horizontal scaling and partitioning</p>
+<p>Security:</p>
+<p>Principle of least privilege</p>
+<p>Parameterized queries to prevent SQL injection</p>
+<p>1 TB means 1 trillion, 1GB means 1 billion, 1MB means one millions</p>
+<p>Latency comparison:</p>
+<p>L1 cache: 0.5ns
+L2 cache: 7ns
+Mutex lock/unlock: 25ns
+Main mem reference: 100 ns
+Send 1kb over 1GBps network: 10us
+SSD read speed: 1Gb/sec around; read 1mb from ssd: 1ms
+Disk seek: 10ms
+read 1mb from disk: 30ms
+read 1mb from 1gbps: 10ms</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/devops">devops</a></span><span class="tag"><a href="/tags/scaling">scaling</a></span><span class="tag"><a href="/tags/webserver">webserver</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2748 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 16:00 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/lisp/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">LISP</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/mars-terraforming/">
+                                <span class="button__text">Mars Terraforming</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

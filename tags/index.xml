@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Alok&#39;s Blog</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>algorithm</title>
+      <link>/tags/algorithm/</link>
+      <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
+      
+      <guid>/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>complexity</title>
+      <link>/tags/complexity/</link>
+      <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
+      
+      <guid>/tags/complexity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data_structures</title>
+      <link>/tags/data_structures/</link>
+      <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
+      
+      <guid>/tags/data_structures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optimization</title>
+      <link>/tags/optimization/</link>
+      <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
+      
+      <guid>/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>datastructure</title>
+      <link>/tags/datastructure/</link>
+      <pubDate>Tue, 21 Apr 2020 05:41:02 +0545</pubDate>
+      
+      <guid>/tags/datastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>/tags/architecture/</link>
+      <pubDate>Sun, 19 Apr 2020 19:28:53 +0545</pubDate>
+      
+      <guid>/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neuralnetwork</title>
+      <link>/tags/neuralnetwork/</link>
+      <pubDate>Sun, 19 Apr 2020 19:28:53 +0545</pubDate>
+      
+      <guid>/tags/neuralnetwork/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vision</title>
+      <link>/tags/vision/</link>
+      <pubDate>Sun, 19 Apr 2020 19:28:53 +0545</pubDate>
+      
+      <guid>/tags/vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graph</title>
+      <link>/tags/graph/</link>
+      <pubDate>Sun, 19 Apr 2020 19:24:20 +0545</pubDate>
+      
+      <guid>/tags/graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>/tags/git/</link>
+      <pubDate>Sun, 19 Apr 2020 18:43:16 +0545</pubDate>
+      
+      <guid>/tags/git/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

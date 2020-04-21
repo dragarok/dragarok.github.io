@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="&amp;ndash; iteration: -! specific no of times: range(5) -! as long as the variable : for ch in &amp;ldquo;Hello&amp;rdquo; &amp;ndash; querying the directory of the module for objects to use: e.g. import random dir(random) &amp;ndash; asking for help with the object we searched: help(random.randint) &amp;ndash; sleep function: import time time.sleep(5) &amp;ndash; Know that everything is an object in python &amp;ndash; Built in data structures: list, dictionary, tuple and sets -! lists are dynamic and mutable too." />
+<meta name="keywords" content="Blog, python, tips" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/python/" />
+
+
+    <title>
+        
+            Python :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Python">
+<meta itemprop="description" content="&ndash; iteration: -! specific no of times: range(5) -! as long as the variable : for ch in &ldquo;Hello&rdquo; &ndash; querying the directory of the module for objects to use: e.g. import random dir(random) &ndash; asking for help with the object we searched: help(random.randint) &ndash; sleep function: import time time.sleep(5) &ndash; Know that everything is an object in python &ndash; Built in data structures: list, dictionary, tuple and sets -! lists are dynamic and mutable too.">
+<meta itemprop="dateModified" content="2020-04-19T15:59:54&#43;05:45" />
+<meta itemprop="wordCount" content="1700">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="python,tips," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Python"/>
+<meta name="twitter:description" content="&ndash; iteration: -! specific no of times: range(5) -! as long as the variable : for ch in &ldquo;Hello&rdquo; &ndash; querying the directory of the module for objects to use: e.g. import random dir(random) &ndash; asking for help with the object we searched: help(random.randint) &ndash; sleep function: import time time.sleep(5) &ndash; Know that everything is an object in python &ndash; Built in data structures: list, dictionary, tuple and sets -! lists are dynamic and mutable too."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-19 15:59:54 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>8 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/python/">Python</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>&ndash; iteration:
+-! specific no of times: range(5)
+-! as long as the variable : for ch in &ldquo;Hello&rdquo;
+&ndash; querying the directory of the module for objects to use:
+e.g. import random
+dir(random)
+&ndash; asking for help with the object we searched:
+help(random.randint)
+&ndash; sleep function:
+import time
+time.sleep(5)
+&ndash; Know that everything is an object in python
+&ndash; Built in data structures: list, dictionary, tuple and sets
+-! lists are dynamic and mutable too.
+-! methods: append() , len(list_name), remove(item_name),pop(index),pop()-last element removed
+-! methods: extend([3,4]),insert(index,item),pop() returns the removed value
+-! copying using assignment is not actual. it just points to the same thing.
+first = [1,2,4]
+second = first
+first.append(5)</p>
+<pre><code>-! checking membership with &quot;in&quot; and &quot;not in&quot;
+-! method: list[start:stop:step] to make a new list out of old one.
+-!''.join(list[::2]) makes a string out of list elements.
+</code></pre>
+<p>-! tuples are immutable: can&rsquo;t be changed in runtime
+-! ()
+-! t = (&lsquo;Python&rsquo;) is a string but t=(&lsquo;Python&rsquo;,) is a tuple
+-!
+-! dictionaries are unordered set of key and value pairs.
+-! dictionary of dictionaries is a table.
+-! sorted(dict_name)
+-! .setdefault(key, value)
+-! for letter in vowels:
+found.setdefault(letter,0)</p>
+<p>-! set are unordered and set of unique objects.
+-! {}
+-! union method combines one set with another
+e.g vowels.union(set(word))
+-! .difference(set2) gives the A-B in set notation.
+-! similarly .intersection
+-! can replace several iters of search and for loops to iterate through dictionaries and lists.</p>
+<p>&ndash; what a nice way to print:
+print('\t&rsquo;*2,char)
+&ndash; if print looks messy, #use pprint pretty print
+e.g import pprint
+pprint.pprint(Anything)
+&ndash; functions and methods into a single file used for reuse: module
+-! &quot;&rdquo;&rdquo; This is documentation string for function&rdquo;&rdquo;&rdquo;
+-! return bool(result) : True or False
+-! empty set is represented as set() by the interpreter
+-! function annotations are optioinal and informational
+e.g def search4vowel(word:str) -&gt; set:
+This means it expects the argument to be a string and returns a set.
+-! using help will show us docstring as well as it&rsquo;s expected input and output.
+-! passing default arguments with assignment operator
+-! not only positional assignment is possible but keyword assignment can be done.
+e.g the 1st arg can be written second or anywhere if keyword is specified.
+&ndash; Making a module:
+-! default search locations:</p>
+<ol>
+<li>cwd</li>
+<li>interpreter&rsquo;s site packages locations</li>
+<li>standard library locations</li>
+</ol>
+<p>-! easiest use : make a folder mymodules in cwd and using it go to the folder and import statement can be used.
+-! can&rsquo;t use import /mymodules/vsearch
+-! but no worries: we can get the module into site packages using setuptools:</p>
+<ol>
+<li>
+<p>create a distribution description
+-! create at least two files: README.txt and setup.py
+e.g of setup.py
+from setuptools import setup
+setup(
+name='vsearch&rsquo;,
+version='1.0&rsquo;,
+description='The first vowel search module&rsquo;,
+author='Alok Regmi&rsquo;,
+author_email='alok@protonmail.ch&rsquo;,
+url='alokregmi.com.np&rsquo;,
+py_modules=[&lsquo;vsearch&rsquo;],
+)
+the readme file needs to be built but doesn&rsquo;t need to contain anything at all.</p>
+</li>
+<li>
+<p>Generate a distribution file
+-! C:\Users\mymodules&gt; py -3 setup.py sdist in Windows results in a zip file i.e installable file.
+-! on unix like os mymodules$ python3 setup.py sdist</p>
+</li>
+<li>
+<p>Install the distribution file
+-! using pip now you can install the packages
+-! On windows :
+py -3 -m pip install vsearch-1.0.zip
+-! on unix:
+python3 -m pip install vsearch-1.0.tar.gz</p>
+</li>
+</ol>
+<p>&ndash; Pass by object reference is by default in python:
+e.g double(num) gives twice the num but doesn&rsquo;t change the value of num.
+but a function where list is passed and appended inside it will have the element permanently.
+&ndash; if passed argument allows mutability, the arg passed is pass by reference.
+so lists, dictionaries and sets are passed into a function by reference.
+strings,integers and tuples being immutable are passed into a function by value.
+&ndash; Strangest phenomenon of all:
+e.g def double(arg):
+arg = arg * 2
+def change(arg):
+arg.append(&ldquo;More data&rdquo;)
+If we pass a list as arg, it&rsquo;s not changed out in first function ie. double(list_arg)
+but it is changed in 2nd function i.e change(list_arg)
+Reason: The first function has assignment so right of assignment is calculated.
+so it&rsquo;s a list with twice the elements. so the value created has it&rsquo;s object reference assigned to
+the variable symbol on the left of = symbol. so this code creates a new value, and is assigned a new
+object reference and this reference is assigned to the arg variable. so it overwrites the previous object reference in arg.
+However, the old object reference still exists in the calling code and it&rsquo;s value hasn&rsquo;t changed, so
+the shell sees the original list not the one created in the function.
+The second one calls a method to the same list and same reference so changes the content of the list.
+&ndash; meeting the standards and compliances:
+-! install the pytest module and pep8 plugin. i.e pytest, pytest-pep8
+-! py.test &ndash;pep8 vsearch.py</p>
+<p>&ndash; Building a webapp using Flask:
+-! simplest web server in flask:
+from flask import Flask #this is the class name Flask  with uppercase F
+app=Flask(<!-- raw HTML omitted --><!-- raw HTML omitted -->name<!-- raw HTML omitted --><!-- raw HTML omitted -->) # it creates tn object of type Flask and assigns to app variable</p>
+<p>@app.route('/&rsquo; # decorating a function with a url</p>
+<p>def hello() -&gt; str:
+return &lsquo;Hello in the world of Flask&rsquo;</p>
+<pre><code>app.run()
+</code></pre>
+<p>-! Building the HTML form to code the function into the web page:
+-! powered by jinja2 engine
+-! {{ }} template directive : indicates value will be provided prior to rendering i.e. argument to a template
+-! {% %} substitute the block of html prior to rendering and is provided by any page that inherits from it.
+-! rendering template:
+@app.route('/entry&rsquo;)
+def entry_page() -&gt; &lsquo;html&rsquo;:
+return render_template(&lsquo;entry.html&rsquo;, the_title='Welcome to search4letters web&rsquo;)
+-! handling post data to a decorator:
+@app.route('/search4&rsquo;, methods=[&lsquo;POST&rsquo;]) now the search4 url supports post method
+-! debugging mode:
+app.run(debug=True)
+-! using the request data in webapp:
+from flask import request
+@app.route('/search4&rsquo;&hellip;)
+def do_search() -&gt; str:
+phrase = request.form[&lsquo;phrase&rsquo;]
+letters = request.form[&lsquo;letters&rsquo;] # this variable in sq brackets need to be defined in html form code.
+title = &lsquo;Here are results&rsquo;
+results = str(search4letters(phrase,letters))
+return render_template(&lsquo;results.html&rsquo;, the_phrase=phrase, the_letters=letters, the_title=title, the_results=results,)</p>
+<p>-! redirect to avoid unwanted errors:
+@app.route('/')
+def hello() -&gt; &lsquo;302&rsquo;:
+return redirect('/entry&rsquo;) # annotate to clearly indicate that HTTP status code is returned .</p>
+<p>-! @app.route('/')
+@app.route('/entry&rsquo;)
+def do_search()-&gt; &lsquo;html&rsquo;:
+&hellip;.</p>
+<p>&ndash; dunder:
+if <!-- raw HTML omitted --><!-- raw HTML omitted -->name<!-- raw HTML omitted --><!-- raw HTML omitted --> == &lsquo;<!-- raw HTML omitted --><!-- raw HTML omitted -->main<!-- raw HTML omitted --><!-- raw HTML omitted -->&rsquo;:</p>
+<p>&ndash; Working with files: open, process and close
+-!  todos = open(&lsquo;todos.txt&rsquo;, &lsquo;a&rsquo;)
+print(&lsquo;Put on the trash&rsquo;, file=todos) # printing to filestream
+todos.close()
+-!  tasks = open(&lsquo;todos.txt&rsquo;)
+for chore in tasks:
+print(chore, end=&rsquo;') # there is already a new line in file so it removes the extra new line in between.
+tasks.close()
+-! modes: r, w , a , x where if file previously exists it fails, xb or x+b
+-! easier opening, processing and closing of a file: use with statement
+with open(&lsquo;todos.txt&rsquo;) as tasks:
+for chore in tasks:
+print(chore, end=&rsquo;')
+-! printing the data in html with all andgle brackets and so on:
+escape(&lsquo;This is a <!-- raw HTML omitted -->&rsquo;)
+from flask import escape</p>
+<pre><code>Pg 257
+</code></pre>
+<p>-! the request file is boring so we do:
+str(dir(request)) # dir produces a list then we stringify that list and save to the log file.
+doing dir we see a lot of methods to work on request.
+but we don&rsquo;t need this info into the log file.
+so we use request.form request.remote_addr request.user_agent
+-! using vertical bars as delimiiters:
+print(req.form, file=log, end='|&rsquo;)
+print(req.remote_addr, file=log, end='|&rsquo;)
+print(res,file=log)</p>
+<p>-! these lines above can be written into one line as:
+print(req.form,req.remote_addr, res,file=log,sep='|&rsquo;)</p>
+<p>-! after use of delimiter we can convert it into list using .split(&lsquo;|&rsquo;)</p>
+<ol>
+<li>first read a line:
+with open(&lsquo;vsearch.log&rsquo;) as log:
+contents = log.readlines()
+return escape(''.join(contents))</li>
+<li>then use the contents and read it using split(&lsquo;|&rsquo;) method.</li>
+<li>then you get a list of lists.</li>
+<li>parse it using the proper html tag. <!-- raw HTML omitted --> , <!-- raw HTML omitted --> and so on.</li>
+</ol>
+<p>&ndash; Working with db-api:</p>
+<ol>
+<li>install mysql server</li>
+<li>install mysql python driver</li>
+<li>create webapp&rsquo;s database and tables.</li>
+<li></li>
+</ol>
+<p>&ndash; Classes and abstraction:
+-! pass a valid statement that does nothing
+-! naming convention:
+functions: lowercase e.g. count_from_by()
+classes: Camelcase e.g. CountFromBy()
+-! Objects share behavior but not state. i.e methods but not variables
+-! the methods in python always take one argument i.e the object itself.
+e.g c.increase() is same as CountFromBy.increase(c) where c is an object of the class CountFromBy
+-! def increase(self): is the default way.
+-! the variables are used with self.sth because the variables need to be in the scope of the current object.
+-! there are several dunders which can be overridden to our purpose such as:
+<!-- raw HTML omitted --><!-- raw HTML omitted -->ge<!-- raw HTML omitted --><!-- raw HTML omitted --> for greater than sign with objects
+<!-- raw HTML omitted --><!-- raw HTML omitted -->eq<!-- raw HTML omitted --><!-- raw HTML omitted --> for == operator usage
+<!-- raw HTML omitted --><!-- raw HTML omitted -->init<!-- raw HTML omitted --><!-- raw HTML omitted --> for initialization of the attributes related to the object
+-! __repr__(self) -&gt; str:
+return str(self.name)</p>
+<p>&ndash; Now dancing with the decorators:</p>
+<p>&ndash; Reading csv:
+import csv
+with open(&lsquo;buzzers.csv&rsquo;) as data:
+for line in csv.reader(data):
+print(line)
+-! this also can be done with csv.DictReader which stores as dict.</p>
+<p>&ndash; Converting patterns to comprehensions:
+destinations = []
+for dest in flight.values():
+destinations.append(dest.title())</p>
+<p>more_dests = [ for dest in flights.values()]</p>
+<p>more_dests = [dest.title() for dest in flights.values()]</p>
+<p>-! comprehensions are not just for lists but for dicts as well.
+flights2={}
+for k,v in flights.items():
+flights2[convertam2pm(k)] = v.title()
+#lets succintize this:
+more_flights = {for k,v in flights.items()} # the iteration part first
+#need to add the functionality now
+more_flights = {convert2ampm(k):v.title() for k,v in flights.items()}
+#the key value pair is specified first and then processed.</p>
+<p>-! now extending comprehensions with filters:
+if context is like: iterate, filter, then  make a new dict
+e.g. just_freeport = {}
+for k, v in flights.items():
+if v == &lsquo;FREEPORT&rsquo;:
+just_freeport[convert2ampm(k)] = v.title()</p>
+<p>just_freeport2 = {convert2ampm(k): v.title() for k, v in flights.items() if v == &lsquo;FREEPORT&rsquo;}</p>
+<p>-! comprehensions spanning multiple lines:
+just_freeport3 = {convert2ampm(k): v.title()
+for k, v in flights.items()
+if v == &lsquo;FREEPORT&rsquo;}</p>
+<p>-! when2 = {dest: [k for k, v in fts.items() if v == dest] for dest in set(fts.values())}
+#it&rsquo;s making a list out of the set of places, compares it and iterates into a list as well.</p>
+<p>-! the next big things: generators
+-! When you replace your listcomp’s square brackets with parentheses, the listcomp
+becomes a generator, and your code behaves differently.
+-! list comprehension waits for all data to be produced but generator releases as soon as one&rsquo;s available.</p>
+<p>-! Decorators usage:</p>
+<ol>
+<li>Output formatting</li>
+<li>Authentication BoilerPlate</li>
+<li></li>
+</ol>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/python">python</a></span><span class="tag"><a href="/tags/tips">tips</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1700 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 15:59 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/nifty-linux-hacks/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Nifty Linux Hacks</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/obiee/">
+                                <span class="button__text">obiee</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

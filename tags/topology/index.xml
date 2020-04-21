@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>topology on Alok&#39;s Blog</title>
+    <link>/tags/topology/</link>
+    <description>Recent content in topology on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:08 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/topology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Topology</title>
+      <link>/braindump/2020/04/topology/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:08 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/topology/</guid>
+      <description>&amp;ndash; Topology is a branch of mathematics which deals with characterizing shapes, space and sets by their connectivity. In topology, we express relationship between two spaces through continuous maps between them.
+&amp;ndash; Mathematical formulation of topology:
+Let M be a set and P(M) be the set of all subsets of M (i.e. power set of M). A set O ⊆ P(M) is called a topology, if all of the following properties are satisfied: (i) O contains the null set and the set M itself.</description>
+    </item>
+    
+  </channel>
+</rss>

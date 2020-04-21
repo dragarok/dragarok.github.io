@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oneliners on Alok&#39;s Blog</title>
+    <link>/tags/oneliners/</link>
+    <description>Recent content in oneliners on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:40 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/oneliners/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux one liners</title>
+      <link>/braindump/2020/04/linux-one-liners/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:40 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/linux-one-liners/</guid>
+      <description>&amp;ndash;tags: Useful Linux Packages
+sudo !! python -m SimpleHTTPServer :w !sudo tee % cd - ^foo^bar mtr google.com cp filename{,.bak} ctrl-x e $ssh-copy-id user@host &amp;gt; file.txt &amp;lt;space&amp;gt;command ffmpeg -f x11grab -s wxga -r 25 -i :0.0 -sameq /tmp/out.mpg reset ssh -N -L2001:localhost:80 somemachine echo &amp;#34;ls -l&amp;#34; | at midnight dig +short txt &amp;lt;keyword&amp;gt;.wp.dg.cx mount | column -t curl -u user:pass -d status=&amp;#34;Tweeting from the shell&amp;#34; http://twitter.com/statuses/update.xml &amp;#39;ALT+.&amp;#39; or &amp;#39;&amp;lt;ESC&amp;gt; .&amp;#39; dd if=/dev/dsp | ssh -c arcfour -C username@host dd of=/dev/dsp netstat -tlnp mount -t tmpfs tmpfs /mnt -o size=1024m sshfs name@server:/path/to/folder /path/to/mount/point !</description>
+    </item>
+    
+  </channel>
+</rss>

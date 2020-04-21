@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oracle on Alok&#39;s Blog</title>
+    <link>/tags/oracle/</link>
+    <description>Recent content in oracle on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:19 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ODI</title>
+      <link>/braindump/2020/04/odi/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:19 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/odi/</guid>
+      <description>Full package for ETL Automation tool: UC4 RMS Server Database  These work together; ODI isn&amp;rsquo;t standalone. All stuffs may be installed in the same RMS server.    Jobs  Handled by (ksh) scripts to run different jobs  UC4  Scheduler Agent: defined in uc4 to connect to RMS server.  defines path of scripts    ODI agent  Connect between server &amp;amp; ODI Can also automate UC4 tasks in newer versions.</description>
+    </item>
+    
+    <item>
+      <title>RMS recon</title>
+      <link>/braindump/2020/04/rms-recon/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:02 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/rms-recon/</guid>
+      <description>TRAN TRAN_A Index: 1,1,1,
+  PACK_IND
+Indicates whether or not the item is a pack item.
+    TRAN_CODE
+Tran_code : Identifies the transaction type. Valid values are: 0 Ordering 1 Net Sales 2 Net Sales VAT Exclusive 3 Non-inventory Items Sales/Returns 4 Returns 5 Non-inventory VAT Exclusive Sales 6 Deals income (Sales) 7 Deals income (Purchases) 8 Fixed Income Accrual 10
+    UNITS</description>
+    </item>
+    
+    <item>
+      <title>Warehouse</title>
+      <link>/braindump/2020/04/warehouse/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:59 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/warehouse/</guid>
+      <description>Basic terminologies:
+Dimensions Facts
+Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage
+Column naming: Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC
+  Maintenance columns: insert timestamp, update, close, close_dt</description>
+    </item>
+    
+    <item>
+      <title>obiee</title>
+      <link>/braindump/2020/04/obiee/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:53 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/obiee/</guid>
+      <description>Steps  Catalog &amp;ndash;&amp;gt; Get to columns and filters. Change defaults tab to criteria save as give a proper name for result change all columns and filters as necessary. save again go to results then. export results. if &amp;gt; 2500 : export to csv. Edit the sheet  RMS Sales recon Tran data  In tran_data we have item, units, tran_code as major fields. if it belongs to a pack, then it has a ref_pack_no which is a packitem object.</description>
+    </item>
+    
+    <item>
+      <title>RA</title>
+      <link>/braindump/2020/04/ra/</link>
+      <pubDate>Sun, 19 Apr 2020 15:58:54 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/ra/</guid>
+      <description>Basic terminologies:
+Dimensions Facts
+Table and table naming conventions
+ initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage  Column naming:
+ Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC  Maintenance columns: insert timestamp, update, close, close_dt</description>
+    </item>
+    
+  </channel>
+</rss>

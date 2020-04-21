@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Graph Algos:
+Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
+Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes
+Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.
+Edgenode data structure is created which saves the node, weight of edge and the next edgenode reference." />
+<meta name="keywords" content="Blog, graph, algorithm" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/graph-algorithms/" />
+
+
+    <title>
+        
+            Graph Algorithms :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Graph Algorithms">
+<meta itemprop="description" content="Graph Algos:
+Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
+Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes
+Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.
+Edgenode data structure is created which saves the node, weight of edge and the next edgenode reference.">
+<meta itemprop="dateModified" content="2020-04-19T15:59:47&#43;05:45" />
+<meta itemprop="wordCount" content="611">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="graph,algorithm," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Graph Algorithms"/>
+<meta name="twitter:description" content="Graph Algos:
+Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
+Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes
+Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.
+Edgenode data structure is created which saves the node, weight of edge and the next edgenode reference."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-19 15:59:47 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>3 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/graph-algorithms/">Graph Algorithms</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>Graph Algos:</p>
+<p>Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used</p>
+<p>Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes</p>
+<p>Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.</p>
+<p>Edgenode data structure is created which saves the node, weight of edge  and the next edgenode reference.</p>
+<p>Reading the graph:</p>
+<p>Insert the edge into the graph that we just initialized:</p>
+<p>Inserting takes the graph object, nodes and directed FLAG.</p>
+<p>We make an edgenode structure instance, allocate memory for it, give info about edge it&rsquo;s connected to, set wt to NULL.</p>
+<p>The next edgenode reference is given to the edges list for the node.</p>
+<p>Edge list of the node is updated by appending the  new edgenode to the list at start.</p>
+<p>Now degree is increased by 1. If directed, another insert edge is done with x and y node reversed.</p>
+<p>Now number of edges is also increased for graph.</p>
+<p>Printing the graph:</p>
+<p>For i in number of vertices in graph:</p>
+<p>get the i&rsquo;th edgenode.</p>
+<p>While we get some edgenode:</p>
+<p>Get the next node for i&rsquo;th edgenode.</p>
+<p>Breadth first search:</p>
+<p>Parent list maintained in bfs can be used to calculate the path to the top. This must be done from bottom towards up.</p>
+<p>Connected components: Is a maximal set of vertices such that there is a path between every pair of vertices.</p>
+<p>Can be done using discovered nodes list: you take a node, find all that are connected to it via BFS. Then go to unexplored node and do that thing again.
+Need to have a componentID which marks new component when one BFS finishes.</p>
+<p>Bipartite graphs can be verified by making small modification to BFS where we change the color of a node as we process any edge present in graph.
+If both nodes have same color assigned to them, we can set one node&rsquo;s color as complement of another node.</p>
+<p>Depth First Search:</p>
+<p>It uses concept of time as an element in graph.</p>
+<p>It uses stack as element for storing nodes to process.</p>
+<p>Time changes as we enter or exit any vertex. We keep track of entry and exit time for each vertex.</p>
+<p>It can be used without need of stack using recursive implementation.</p>
+<p>Set state of node to undiscovered</p>
+<p>Process vertex if anything you want to do</p>
+<p>Entry time of node is entered into entry list</p>
+<p>increment time by 1</p>
+<p>for each edge in adjacency list do :</p>
+<p>process edge if desired</p>
+<p>if state of node with which we have edge is undiscovered then do DFS of the node</p>
+<p>Mark the node as Processed</p>
+<p>mark exit time in list of exit times</p>
+<p>Increment time by 1 again.</p>
+<p>Why use time intervals:</p>
+<p>Know who is an ancestor in the graph: We cannot exit an ancestor before child in DFS. So, time interval of child must be nested within ancestor.</p>
+<p>How many descendants: The difference between entry and exit time for parent divided by two will mark number of descendants.</p>
+<p>In case of DFS, we need to be able to do different tasks on entry and exit of a node. So , we have two functions namely process edge early and process edge late for
+our applications that we require.</p>
+<p>Depth first tree partitions tree into:</p>
+<p>Back edges:</p>
+<p>Tree edges: Discovers new edges</p>
+<p>Cycles are easy to be found using DFS: By modifying the process edge function.</p>
+<p>Articulation vertex or cut node: Having an articulation matrix makes the graph extremely fragile.</p>
+<p>Connectivity of a graph is the smallest number of vertices&rsquo;s whose deletion will disconnect the graph.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/graph">graph</a></span><span class="tag"><a href="/tags/algorithm">algorithm</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>611 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 15:59 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/recon-sc-script-names/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Recon SC Script Names</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/para/">
+                                <span class="button__text">Para</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

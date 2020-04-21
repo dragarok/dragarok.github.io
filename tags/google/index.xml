@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google on Alok&#39;s Blog</title>
+    <link>/tags/google/</link>
+    <description>Recent content in google on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:27 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Meena</title>
+      <link>/braindump/2020/04/meena/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:27 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/meena/</guid>
+      <description>Abstract  2.6B parameter Public domain social media conversations SSA (Sensibleness and Specificity Average) Some open-domain chatbots such as MILABOT (Ser-ban et al., 2017), XiaoIce (Zhou et al., 2018)1,Gunrock (Chen et al., 2018), Mitsuku (Wor-swick, 2018)2and Cleverbot3(by Rollo Carpen-ter) display human-like attributes, but rely on com-plex frameworks, such as dialog managers. Mostly not useful since just have vague conversations. 40 B mined and filtered from public domain conversations. Seq2Seq + Evolved Transformer  </description>
+    </item>
+    
+    <item>
+      <title>Google Dorks</title>
+      <link>/braindump/2020/04/google-dorks/</link>
+      <pubDate>Sun, 19 Apr 2020 15:58:46 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/google-dorks/</guid>
+      <description>What Is Google Dorks? It is basically an advanced google search!
+I have included four types of google dorks in this collection: Google dorks for SQL injection, Google dorks for Local File Inclusion, Google dorks For open CCTV cams and Google dorks for sensitive information.
+Copy and paste the below google dorks on the search engine and have fun!
+Google Dorks For SQL Injection:
+•inurl:index.php?id=
+•inurl:trainers.php?id=
+•inurl:buy.php?category=
+•inurl:article.php?ID=
+•inurl:play_old.php?id=
+•inurl:declaration_more.php?decl_id=</description>
+    </item>
+    
+  </channel>
+</rss>

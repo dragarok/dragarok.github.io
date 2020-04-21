@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="CTF New attacks and tools:
+Hash extender attack: https://github.com/iagox86/hash%5Fextender
+Decrypt substitution cipher using guesses: https://quipqiup.com/
+Xor cipher: python3 -m pip install &amp;ndash;user xortool
+examples: xortool file.bin xortool -l 11 -c 20 file.bin xortool -x -c &#39; &#39; file.hex xortool -b -f -l 23 -t base64 message.enc
+The most common use is to pass just the encrypted file and the most frequent character (usually 00 for binaries and 20 for text files) - length will be automatically chosen:" />
+<meta name="keywords" content="Blog, ctf, hacking" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/ctf-new/" />
+
+
+    <title>
+        
+            CTF New :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="CTF New">
+<meta itemprop="description" content="CTF New attacks and tools:
+Hash extender attack: https://github.com/iagox86/hash%5Fextender
+Decrypt substitution cipher using guesses: https://quipqiup.com/
+Xor cipher: python3 -m pip install &ndash;user xortool
+examples: xortool file.bin xortool -l 11 -c 20 file.bin xortool -x -c &#39; &#39; file.hex xortool -b -f -l 23 -t base64 message.enc
+The most common use is to pass just the encrypted file and the most frequent character (usually 00 for binaries and 20 for text files) - length will be automatically chosen:">
+<meta itemprop="dateModified" content="2020-04-19T15:59:08&#43;05:45" />
+<meta itemprop="wordCount" content="544">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="ctf,hacking," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="CTF New"/>
+<meta name="twitter:description" content="CTF New attacks and tools:
+Hash extender attack: https://github.com/iagox86/hash%5Fextender
+Decrypt substitution cipher using guesses: https://quipqiup.com/
+Xor cipher: python3 -m pip install &ndash;user xortool
+examples: xortool file.bin xortool -l 11 -c 20 file.bin xortool -x -c &#39; &#39; file.hex xortool -b -f -l 23 -t base64 message.enc
+The most common use is to pass just the encrypted file and the most frequent character (usually 00 for binaries and 20 for text files) - length will be automatically chosen:"/>
+
+
+
+    <meta property="article:section" content="security" />
+
+
+
+    <meta property="article:published_time" content="2020-04-19 15:59:08 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>3 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/ctf-new/">CTF New</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>CTF New attacks and tools:</p>
+<p>Hash extender attack: <a href="https://github.com/iagox86/hash%5Fextender">https://github.com/iagox86/hash%5Fextender</a></p>
+<p>Decrypt substitution cipher using guesses: <a href="https://quipqiup.com/">https://quipqiup.com/</a></p>
+<p>Xor cipher: python3 -m pip install &ndash;user xortool</p>
+<p>examples:
+xortool file.bin
+xortool -l 11 -c 20 file.bin
+xortool -x -c ' ' file.hex
+xortool -b -f -l 23 -t base64 message.enc</p>
+<p>The most common use is to pass just the encrypted file and the most frequent character (usually 00 for binaries and 20 for text files) - length will be automatically chosen:</p>
+<p>Hydra:</p>
+<p>hydra -l root -P /usr/share/wordlists/metasploit/unix_passwords.txt -t 6 ssh://192.168.1.123 : 6 threads, login as root, use wordlist unix_passwords.txt</p>
+<p>Pw-inspector:</p>
+<p>pw-inspector -i /usr/share/wordlists/nmap.lst -o /root/passes.txt -m 6 -M 10 : get passes of specific length from wordlist</p>
+<p>John jumbo : new package of john the ripper</p>
+<p>Nozzlr : bruteforce utility, manages threads, multiple wordlists,</p>
+<p>ophcrack: modular utility to crack using rainbow tables in windows</p>
+<p>patator: crack various types of login such as ftp login, smtp, ssh, telnet login and so on</p>
+<p>one_gadget: gem install one_gadget When playing ctf pwn challenges we usually need the one-gadget RCE (remote code execution), which leads to call execve('/bin/sh&rsquo;, NULL, NULL).</p>
+<p>This tool automates it , no need to ida and stuff</p>
+<p>e.g. one_gadget /lib/x86_64-linux-gnu/libc.so.6</p>
+<p>pwntools: exploit writing framework for ease of use</p>
+<p>qira: qemu based runtime analyzer tool</p>
+<p>v0lt: security based ctf toolkit in python3</p>
+<p>creddump: creddump is a python tool to extract various credentials and secrets from Windows registry hives. It currently extracts: LM and NT hashes, LSA pwds, cached domain pwds,</p>
+<p>snow.exe: find secret information from a file</p>
+<p>zmap: open source security scanner</p>
+<p>Android:</p>
+<p>pip install -U androguard : dex, odex, xml files, resources, decompiler and disassembler work</p>
+<p>apktool: extract info from an android app</p>
+<p>Reversing:</p>
+<p>angr: pip install angr: python framework for analyzing binaries: both static and dynamic symbol analysis</p>
+<p>barf: python pkg for binary analysis and reverse engineering</p>
+<p>binary ninja: similar tool</p>
+<p>binutils: tools in linux to support re  git clone git://sourceware.org/git/binutils-gdb.git</p>
+<p>peda: python helper module for gdb</p>
+<p>uncompyle: reverse python binaries</p>
+<p>pwndbg: git clone <a href="https://github.com/pwndbg/pwndbg">https://github.com/pwndbg/pwndbg</a> : multi feature suckless plugin for gdb that says it makes gdb awesome</p>
+<p>websocket test: <a href="http://cow.cat/cswsh.html">http://cow.cat/cswsh.html</a> : cross site websocket hijacking test</p>
+<p>Steganography:</p>
+<p><a href="https://aperisolve.fr/">https://aperisolve.fr/</a> : uses zsteg, stegsolver online to perform layer analysis on any image</p>
+<p>exiv2: <a href="https://www.exiv2.org/manpage.html">https://www.exiv2.org/manpage.html</a> : edit metadata of files</p>
+<p>exif : give metadata information</p>
+<p>exiftool: Read and write meta information in files</p>
+<p><a href="https://incoherency.co.uk/image-steganography/">https://incoherency.co.uk/image-steganography/</a> : online test for steganography/</p>
+<p>outguess:  outguess	- universal steganographic tool</p>
+<p>smartdeblur: <a href="https://github.com/Y-Vladimir/SmartDeblur">https://github.com/Y-Vladimir/SmartDeblur</a></p>
+<p>Web :</p>
+<p>Burpsuite and owasp zap for capturing and intercepting the requests</p>
+<p>git clone <a href="https://github.com/commixproject/commix.git">https://github.com/commixproject/commix.git</a> commix : commix command injection tool</p>
+<p><a href="https://addons.mozilla.org/en-US/firefox/addon/hackbartool/">https://addons.mozilla.org/en-US/firefox/addon/hackbartool/</a> : firefox add on for testing</p>
+<p><a href="https://github.com/evyatarmeged/Raccoon">https://github.com/evyatarmeged/Raccoon</a> : recon and info gathering on  sites</p>
+<p>w3af: w3af is an open source web application security scanner</p>
+<p>xsser: xss attacks detect and script over it</p>
+<p>flare vm : windows based vm solution for re and malware analysis</p>
+<p>remnux: a debian based linux for reverse engineering</p>
+<p><a href="http://ctfs.github.io/resources/">http://ctfs.github.io/resources/</a> : ctf resources online about crypto , web and stuffs</p>
+<p><a href="https://teambi0s.gitlab.io/bi0s-wiki/">https://teambi0s.gitlab.io/bi0s-wiki/</a> : nice place to read blogs and articles on aspects of ctf</p>
+<p>Nice cheatsheet all in one: <a href="https://uppusaikiran.github.io/hacking/Capture-the-Flag-CheatSheet/">https://uppusaikiran.github.io/hacking/Capture-the-Flag-CheatSheet/</a></p>
+<p><a href="https://github.com/osirislab/Project-Ideas/wiki">https://github.com/osirislab/Project-Ideas/wiki</a> : a nice in depth ctf wiki that goes on and on</p>
+<p>Some ctf tips for you boy: <a href="https://github.com/OpenToAllCTF/Tips">https://github.com/OpenToAllCTF/Tips</a></p>
+<p>CTF writeups: <a href="https://github.com/ctfs/">https://github.com/ctfs/</a></p>
+<p><a href="http://shell-storm.org/">http://shell-storm.org/</a> : blogs and resources on exploits and ctf tips</p>
+<p>ILSpy to decompile .NET applications</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/ctf">ctf</a></span><span class="tag"><a href="/tags/hacking">hacking</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>544 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 15:59 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/kalman/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Kalman</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/etl-extraction/">
+                                <span class="button__text">ETL Extraction</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

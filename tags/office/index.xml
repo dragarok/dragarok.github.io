@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>office on Alok&#39;s Blog</title>
+    <link>/tags/office/</link>
+    <description>Recent content in office on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:41 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/office/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Office Linux Package</title>
+      <link>/braindump/2020/04/office-linux-package/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:41 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/office-linux-package/</guid>
+      <description> Checkbox issue:  U+2610 ☐BALLOT BOX U+2611 ☑ BALLOT BOX WITH CHECK U+2612 ☒ BALLOT BOX WITH X
+ Calc:  $ to lock rows on which to extend same formula for Vlookup on multiple rows:  Create a helpful variable =A1&amp;amp;&amp;ldquo;|&amp;rdquo;&amp;amp;B1 then use it to lookup from another table or datasheet.       </description>
+    </item>
+    
+  </channel>
+</rss>

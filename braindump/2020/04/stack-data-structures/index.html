@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="&amp;ndash;tags: Data Structures
+Stacks, lists, Queues  Add something to the top is a stack Last in is the first out push and pop to the data: .push - add data .pop is return the data at top and remove .peek to look into the top data without removing it no need to reshuffle or add or insert or anything dynamic arrays with just push and pop is actually a stack implementation of an array  Abstract data types:  Much more reusable Continuous memory Stack can be made using different way using array or a linked list or something else Java has a stack class Stack is also an abstract data type or a concrete class too as seen in Java  Queues:  First in First out Printer has a queue to print the data Used in multithreading as well Queue class available in Csharp AN interface in java: linked list can act like a java put and get in queue in python Queues are mostly used for synchronizing the communication between threads push back and pop_front methods in std::queue C&#43;&#43;  Priority Queues:  Higher priority comes to the top to be removed Priority can be maintained by comparison DEQUE:  Double ended queue: stack and queue at the same time    " />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/stack-data-structures/" />
+
+
+    <title>
+        
+            Stack Data Structures :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Stack Data Structures">
+<meta itemprop="description" content="&ndash;tags: Data Structures
+Stacks, lists, Queues  Add something to the top is a stack Last in is the first out push and pop to the data: .push - add data .pop is return the data at top and remove .peek to look into the top data without removing it no need to reshuffle or add or insert or anything dynamic arrays with just push and pop is actually a stack implementation of an array  Abstract data types:  Much more reusable Continuous memory Stack can be made using different way using array or a linked list or something else Java has a stack class Stack is also an abstract data type or a concrete class too as seen in Java  Queues:  First in First out Printer has a queue to print the data Used in multithreading as well Queue class available in Csharp AN interface in java: linked list can act like a java put and get in queue in python Queues are mostly used for synchronizing the communication between threads push back and pop_front methods in std::queue C&#43;&#43;  Priority Queues:  Higher priority comes to the top to be removed Priority can be maintained by comparison DEQUE:  Double ended queue: stack and queue at the same time    ">
+<meta itemprop="dateModified" content="2020-04-21T05:50:51&#43;05:45" />
+<meta itemprop="wordCount" content="206">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Stack Data Structures"/>
+<meta name="twitter:description" content="&ndash;tags: Data Structures
+Stacks, lists, Queues  Add something to the top is a stack Last in is the first out push and pop to the data: .push - add data .pop is return the data at top and remove .peek to look into the top data without removing it no need to reshuffle or add or insert or anything dynamic arrays with just push and pop is actually a stack implementation of an array  Abstract data types:  Much more reusable Continuous memory Stack can be made using different way using array or a linked list or something else Java has a stack class Stack is also an abstract data type or a concrete class too as seen in Java  Queues:  First in First out Printer has a queue to print the data Used in multithreading as well Queue class available in Csharp AN interface in java: linked list can act like a java put and get in queue in python Queues are mostly used for synchronizing the communication between threads push back and pop_front methods in std::queue C&#43;&#43;  Priority Queues:  Higher priority comes to the top to be removed Priority can be maintained by comparison DEQUE:  Double ended queue: stack and queue at the same time    "/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-21 05:50:51 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/stack-data-structures/">Stack Data Structures</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>&ndash;tags: <a href="/braindump/2020/04/data-structures/">Data Structures</a></p>
+<h2 id="stacks-lists-queues">Stacks, lists, Queues</h2>
+<ul>
+<li>Add something to the top is a stack</li>
+<li>Last in is the first out</li>
+<li>push and pop to the data: .push - add data  .pop is return the data at top and remove</li>
+<li>.peek to look into the top data without removing it</li>
+<li>no need to reshuffle or add or insert or anything</li>
+<li>dynamic arrays with just push and pop is actually a stack implementation of an array</li>
+</ul>
+<h3 id="abstract-data-types">Abstract data types:</h3>
+<ul>
+<li>Much more reusable</li>
+<li>Continuous memory</li>
+<li>Stack can be made using different way using array or a linked list or something else</li>
+<li>Java has a stack class</li>
+<li>Stack is also an abstract data type or a concrete class too as seen in Java</li>
+</ul>
+<h3 id="queues">Queues:</h3>
+<ul>
+<li>First in First out</li>
+<li>Printer has a queue to print the data</li>
+<li>Used in multithreading as well</li>
+<li>Queue class available in Csharp</li>
+<li>AN interface in java: linked list can act like a java</li>
+<li>put and get in queue in python</li>
+<li>Queues are mostly used for synchronizing the communication between threads</li>
+<li>push back and pop_front methods in std::queue C++</li>
+</ul>
+<h3 id="priority-queues">Priority Queues:</h3>
+<ul>
+<li>Higher priority comes to the top to be removed</li>
+<li>Priority can be maintained by comparison</li>
+<li>DEQUE:
+<ul>
+<li>Double ended queue: stack and queue at the same time</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>206 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-21 05:50 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/heap-data-structures/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Heap Data Structures</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/list-data-structures/">
+                                <span class="button__text">List Data Structures</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

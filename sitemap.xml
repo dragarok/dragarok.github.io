@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/tags/algorithm/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/algorithms/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/coding/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/complexity/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data_structures/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/optimization/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/graph-signal-processing/</loc>
+    <lastmod>2020-04-21T05:57:03+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/graph-convolutions/</loc>
+    <lastmod>2020-04-21T05:54:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/fast-graphconv-nets/</loc>
+    <lastmod>2020-04-21T05:53:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/monets/</loc>
+    <lastmod>2020-04-21T05:53:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/motifs/</loc>
+    <lastmod>2020-04-21T05:53:26+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/chebnets/</loc>
+    <lastmod>2020-04-21T05:53:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/cayley-nets/</loc>
+    <lastmod>2020-04-21T05:52:54+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/graph-data-structures/</loc>
+    <lastmod>2020-04-21T05:52:14+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/array-data-structures/</loc>
+    <lastmod>2020-04-21T05:51:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/heap-data-structures/</loc>
+    <lastmod>2020-04-21T05:51:05+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/stack-data-structures/</loc>
+    <lastmod>2020-04-21T05:50:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/list-data-structures/</loc>
+    <lastmod>2020-04-21T05:50:32+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/hash-data-structures/</loc>
+    <lastmod>2020-04-21T05:44:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/data-structures/</loc>
+    <lastmod>2020-04-21T05:41:02+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/datastructure/</loc>
+    <lastmod>2020-04-21T05:41:02+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/emacs-tips/</loc>
+    <lastmod>2020-04-20T05:07:00+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/architecture/</loc>
+    <lastmod>2020-04-19T19:28:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/efficient-nets/</loc>
+    <lastmod>2020-04-19T19:28:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/neuralnetwork/</loc>
+    <lastmod>2020-04-19T19:28:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vision/</loc>
+    <lastmod>2020-04-19T19:28:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/graph/</loc>
+    <lastmod>2020-04-19T19:24:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/graph-neural-networks/</loc>
+    <lastmod>2020-04-19T19:24:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/references/</loc>
+    <lastmod>2020-04-19T18:43:55+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/git/</loc>
+    <lastmod>2020-04-19T18:43:16+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/gitconfig/</loc>
+    <lastmod>2020-04-19T18:43:16+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/git-commands/</loc>
+    <lastmod>2020-04-19T18:31:28+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tips/</loc>
+    <lastmod>2020-04-19T18:31:28+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-04-19T16:26:42+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2020/04/tentacles-of-thoughts/</loc>
+    <lastmod>2020-04-19T16:26:42+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2020/04/peak/</loc>
+    <lastmod>2020-04-19T16:22:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/emacs/</loc>
+    <lastmod>2020-04-19T16:17:16+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/emacs-shortcuts/</loc>
+    <lastmod>2020-04-19T16:17:16+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shortcuts/</loc>
+    <lastmod>2020-04-19T16:17:16+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/zettlekasten/</loc>
+    <lastmod>2020-04-19T16:12:54+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/selinux/</loc>
+    <lastmod>2020-04-19T16:10:57+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/question/</loc>
+    <lastmod>2020-04-19T16:09:16+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/rus/</loc>
+    <lastmod>2020-04-19T16:05:05+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rust/</loc>
+    <lastmod>2020-04-19T16:05:05+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bi/</loc>
+    <lastmod>2020-04-19T16:00:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bibliography/</loc>
+    <lastmod>2020-04-19T16:00:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/bibliography-management/</loc>
+    <lastmod>2020-04-19T16:00:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/notes/</loc>
+    <lastmod>2020-04-19T16:00:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/notetaking/</loc>
+    <lastmod>2020-04-19T16:00:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/paper/</loc>
+    <lastmod>2020-04-19T16:00:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/papers/</loc>
+    <lastmod>2020-04-19T16:00:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/reading/</loc>
+    <lastmod>2020-04-19T16:00:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mantra/</loc>
+    <lastmod>2020-04-19T16:00:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sanskrit/</loc>
+    <lastmod>2020-04-19T16:00:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/tandav/</loc>
+    <lastmod>2020-04-19T16:00:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/numpy/</loc>
+    <lastmod>2020-04-19T16:00:50+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/numpy/</loc>
+    <lastmod>2020-04-19T16:00:50+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2020-04-19T16:00:50+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/rigveda/</loc>
+    <lastmod>2020-04-19T16:00:49+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/veda/</loc>
+    <lastmod>2020-04-19T16:00:49+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/notes-management/</loc>
+    <lastmod>2020-04-19T16:00:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/organization/</loc>
+    <lastmod>2020-04-19T16:00:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/productivity/</loc>
+    <lastmod>2020-04-19T16:00:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ctf/</loc>
+    <lastmod>2020-04-19T16:00:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hack/</loc>
+    <lastmod>2020-04-19T16:00:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hacking/</loc>
+    <lastmod>2020-04-19T16:00:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/reverse/</loc>
+    <lastmod>2020-04-19T16:00:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/web-ctf/</loc>
+    <lastmod>2020-04-19T16:00:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/blogging/</loc>
+    <lastmod>2020-04-19T16:00:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/emacs-hugo-blogging/</loc>
+    <lastmod>2020-04-19T16:00:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2020-04-19T16:00:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/markov/</loc>
+    <lastmod>2020-04-19T16:00:44+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/markov-nets/</loc>
+    <lastmod>2020-04-19T16:00:44+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/convolution/</loc>
+    <lastmod>2020-04-19T16:00:43+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/convolution/</loc>
+    <lastmod>2020-04-19T16:00:43+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/machinelearning/</loc>
+    <lastmod>2020-04-19T16:00:43+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/emacs-completion/</loc>
+    <lastmod>2020-04-19T16:00:42+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/linux-tip/</loc>
+    <lastmod>2020-04-19T16:00:41+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/config/</loc>
+    <lastmod>2020-04-19T16:00:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/rcnn/</loc>
+    <lastmod>2020-04-19T16:00:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rcnn/</loc>
+    <lastmod>2020-04-19T16:00:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wordpress/</loc>
+    <lastmod>2020-04-19T16:00:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/wordpress-manjaro/</loc>
+    <lastmod>2020-04-19T16:00:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bash/</loc>
+    <lastmod>2020-04-19T16:00:38+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/know-bash-better/</loc>
+    <lastmod>2020-04-19T16:00:38+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/scripting/</loc>
+    <lastmod>2020-04-19T16:00:38+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/graph-neural-nets/</loc>
+    <lastmod>2020-04-19T16:00:36+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/github-sec/</loc>
+    <lastmod>2020-04-19T16:00:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/design/</loc>
+    <lastmod>2020-04-19T16:00:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/image-processing-pipeline/</loc>
+    <lastmod>2020-04-19T16:00:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/object-oriented-design/</loc>
+    <lastmod>2020-04-19T16:00:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/objectoriented/</loc>
+    <lastmod>2020-04-19T16:00:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/problemsolving/</loc>
+    <lastmod>2020-04-19T16:00:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/causality/</loc>
+    <lastmod>2020-04-19T16:00:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ml/</loc>
+    <lastmod>2020-04-19T16:00:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/ml-causality/</loc>
+    <lastmod>2020-04-19T16:00:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/preprocess/</loc>
+    <lastmod>2020-04-19T16:00:32+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/scipy/</loc>
+    <lastmod>2020-04-19T16:00:31+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/gayatri-mantra/</loc>
+    <lastmod>2020-04-19T16:00:28+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/chatbot/</loc>
+    <lastmod>2020-04-19T16:00:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google/</loc>
+    <lastmod>2020-04-19T16:00:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/meena/</loc>
+    <lastmod>2020-04-19T16:00:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/useful/</loc>
+    <lastmod>2020-04-19T16:00:26+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/emacs-tramp/</loc>
+    <lastmod>2020-04-19T16:00:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/oneliner/</loc>
+    <lastmod>2020-04-19T16:00:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/python-one-liners/</loc>
+    <lastmod>2020-04-19T16:00:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ssh/</loc>
+    <lastmod>2020-04-19T16:00:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/lisp/</loc>
+    <lastmod>2020-04-19T16:00:24+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/devops/</loc>
+    <lastmod>2020-04-19T16:00:23+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/scaling/</loc>
+    <lastmod>2020-04-19T16:00:23+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/scaling/</loc>
+    <lastmod>2020-04-19T16:00:23+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/webserver/</loc>
+    <lastmod>2020-04-19T16:00:23+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mars/</loc>
+    <lastmod>2020-04-19T16:00:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/mars-terraforming/</loc>
+    <lastmod>2020-04-19T16:00:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/nn-interpretability/</loc>
+    <lastmod>2020-04-19T16:00:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/emacs/</loc>
+    <lastmod>2020-04-19T16:00:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/odi/</loc>
+    <lastmod>2020-04-19T16:00:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/oracle/</loc>
+    <lastmod>2020-04-19T16:00:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/ml-paper-questions/</loc>
+    <lastmod>2020-04-19T16:00:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/ml-useful/</loc>
+    <lastmod>2020-04-19T16:00:13+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mathematics/</loc>
+    <lastmod>2020-04-19T16:00:11+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/matlab/</loc>
+    <lastmod>2020-04-19T16:00:11+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/novel/</loc>
+    <lastmod>2020-04-19T16:00:10+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/the-unbearable-lightness-of-being/</loc>
+    <lastmod>2020-04-19T16:00:10+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/thought/</loc>
+    <lastmod>2020-04-19T16:00:10+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/8086/</loc>
+    <lastmod>2020-04-19T16:00:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/assembly/</loc>
+    <lastmod>2020-04-19T16:00:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mircroprocessor/</loc>
+    <lastmod>2020-04-19T16:00:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/top/</loc>
+    <lastmod>2020-04-19T16:00:08+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/topology/</loc>
+    <lastmod>2020-04-19T16:00:08+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/topology/</loc>
+    <lastmod>2020-04-19T16:00:08+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/problems/</loc>
+    <lastmod>2020-04-19T16:00:06+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/macro/</loc>
+    <lastmod>2020-04-19T16:00:05+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/message/</loc>
+    <lastmod>2020-04-19T16:00:05+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/progressive-summarization/</loc>
+    <lastmod>2020-04-19T16:00:05+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rms/</loc>
+    <lastmod>2020-04-19T16:00:02+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/rms-recon/</loc>
+    <lastmod>2020-04-19T16:00:02+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/3d/</loc>
+    <lastmod>2020-04-19T16:00:00+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/3ddatarepresentation/</loc>
+    <lastmod>2020-04-19T16:00:00+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/datawarehouse/</loc>
+    <lastmod>2020-04-19T15:59:59+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ra/</loc>
+    <lastmod>2020-04-19T15:59:59+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/warehouse/</loc>
+    <lastmod>2020-04-19T15:59:59+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/memories/</loc>
+    <lastmod>2020-04-19T15:59:58+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/memory/</loc>
+    <lastmod>2020-04-19T15:59:58+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/raspberry-pi-project-ideas/</loc>
+    <lastmod>2020-04-19T15:59:57+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/raspberrypi/</loc>
+    <lastmod>2020-04-19T15:59:57+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/music/</loc>
+    <lastmod>2020-04-19T15:59:56+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/musical-thoughts/</loc>
+    <lastmod>2020-04-19T15:59:56+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/nifty-linux-hacks/</loc>
+    <lastmod>2020-04-19T15:59:55+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/python/</loc>
+    <lastmod>2020-04-19T15:59:54+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/obiee/</loc>
+    <lastmod>2020-04-19T15:59:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/obiee/</loc>
+    <lastmod>2020-04-19T15:59:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/migrating-os/</loc>
+    <lastmod>2020-04-19T15:59:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/migration/</loc>
+    <lastmod>2020-04-19T15:59:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/os/</loc>
+    <lastmod>2020-04-19T15:59:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/recon-sc-script-names/</loc>
+    <lastmod>2020-04-19T15:59:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/graph-algorithms/</loc>
+    <lastmod>2020-04-19T15:59:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/para/</loc>
+    <lastmod>2020-04-19T15:59:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/para/</loc>
+    <lastmod>2020-04-19T15:59:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/matplotlib/</loc>
+    <lastmod>2020-04-19T15:59:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/matplotlib/</loc>
+    <lastmod>2020-04-19T15:59:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/mcmc-methods/</loc>
+    <lastmod>2020-04-19T15:59:44+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/office/</loc>
+    <lastmod>2020-04-19T15:59:41+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/office-linux-package/</loc>
+    <lastmod>2020-04-19T15:59:41+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/linux-one-liners/</loc>
+    <lastmod>2020-04-19T15:59:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/oneliners/</loc>
+    <lastmod>2020-04-19T15:59:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/guide/</loc>
+    <lastmod>2020-04-19T15:59:38+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/subconscious/</loc>
+    <lastmod>2020-04-19T15:59:38+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/subconscious-reprogramming/</loc>
+    <lastmod>2020-04-19T15:59:38+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/2017nov14-reminder-to-myself/</loc>
+    <lastmod>2020-04-19T15:59:37+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/reminder/</loc>
+    <lastmod>2020-04-19T15:59:37+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/inventory-replenishment/</loc>
+    <lastmod>2020-04-19T15:59:36+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/replenishment/</loc>
+    <lastmod>2020-04-19T15:59:36+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/retail/</loc>
+    <lastmod>2020-04-19T15:59:36+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/consciousness/</loc>
+    <lastmod>2020-04-19T15:59:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/pineal-gland/</loc>
+    <lastmod>2020-04-19T15:59:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pinealgland/</loc>
+    <lastmod>2020-04-19T15:59:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/debate/</loc>
+    <lastmod>2020-04-19T15:59:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/practical-guide-to-debating/</loc>
+    <lastmod>2020-04-19T15:59:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/songs/</loc>
+    <lastmod>2020-04-19T15:59:32+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/emacs-windows-installation/</loc>
+    <lastmod>2020-04-19T15:59:31+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows/</loc>
+    <lastmod>2020-04-19T15:59:31+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/paper-reading-3-pass/</loc>
+    <lastmod>2020-04-19T15:59:30+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nlp/</loc>
+    <lastmod>2020-04-19T15:59:29+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/text-text-transformers/</loc>
+    <lastmod>2020-04-19T15:59:29+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/ra-and-bi/</loc>
+    <lastmod>2020-04-19T15:59:28+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/sqlbasics/</loc>
+    <lastmod>2020-04-19T15:59:26+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bert/</loc>
+    <lastmod>2020-04-19T15:59:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/bert-tokenization/</loc>
+    <lastmod>2020-04-19T15:59:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tokenization/</loc>
+    <lastmod>2020-04-19T15:59:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/euler/</loc>
+    <lastmod>2020-04-19T15:59:24+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/euler-621/</loc>
+    <lastmod>2020-04-19T15:59:24+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/packages/</loc>
+    <lastmod>2020-04-19T15:59:22+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/useful/</loc>
+    <lastmod>2020-04-19T15:59:22+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/useful-linux-packages/</loc>
+    <lastmod>2020-04-19T15:59:22+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/interstellar/</loc>
+    <lastmod>2020-04-19T15:59:21+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/interstellar-poem/</loc>
+    <lastmod>2020-04-19T15:59:21+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/movie/</loc>
+    <lastmod>2020-04-19T15:59:21+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/muzero/</loc>
+    <lastmod>2020-04-19T15:59:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/reinforcement/</loc>
+    <lastmod>2020-04-19T15:59:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/confidence/</loc>
+    <lastmod>2020-04-19T15:59:18+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/public-speaking/</loc>
+    <lastmod>2020-04-19T15:59:18+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/speaking/</loc>
+    <lastmod>2020-04-19T15:59:18+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/org-mode-tips-and-tricks/</loc>
+    <lastmod>2020-04-19T15:59:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/orgmode/</loc>
+    <lastmod>2020-04-19T15:59:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/photoshop/</loc>
+    <lastmod>2020-04-19T15:59:14+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/photoshop/</loc>
+    <lastmod>2020-04-19T15:59:14+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/controlsystem/</loc>
+    <lastmod>2020-04-19T15:59:12+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/kalman/</loc>
+    <lastmod>2020-04-19T15:59:12+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/kalman/</loc>
+    <lastmod>2020-04-19T15:59:12+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/ctf-new/</loc>
+    <lastmod>2020-04-19T15:59:08+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/security/</loc>
+    <lastmod>2020-04-19T15:59:08+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/etl/</loc>
+    <lastmod>2020-04-19T15:59:07+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/etl-extraction/</loc>
+    <lastmod>2020-04-19T15:59:07+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/extraction/</loc>
+    <lastmod>2020-04-19T15:59:07+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/language/</loc>
+    <lastmod>2020-04-19T15:59:03+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/sanskrit-learning/</loc>
+    <lastmod>2020-04-19T15:59:03+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/top-novels-subash/</loc>
+    <lastmod>2020-04-19T15:59:02+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/tmux/</loc>
+    <lastmod>2020-04-19T15:59:01+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tmux/</loc>
+    <lastmod>2020-04-19T15:59:01+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/django/</loc>
+    <lastmod>2020-04-19T15:58:59+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/django-process/</loc>
+    <lastmod>2020-04-19T15:58:59+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nepali/</loc>
+    <lastmod>2020-04-19T15:58:58+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/unicode-nepali-character-map/</loc>
+    <lastmod>2020-04-19T15:58:58+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/ra/</loc>
+    <lastmod>2020-04-19T15:58:54+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/resource/</loc>
+    <lastmod>2020-04-19T15:58:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/security/</loc>
+    <lastmod>2020-04-19T15:58:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/security-resources/</loc>
+    <lastmod>2020-04-19T15:58:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bayes/</loc>
+    <lastmod>2020-04-19T15:58:50+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/bayesian-prior/</loc>
+    <lastmod>2020-04-19T15:58:50+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/ctf-resource/</loc>
+    <lastmod>2020-04-19T15:58:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/whitehat/</loc>
+    <lastmod>2020-04-19T15:58:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dorks/</loc>
+    <lastmod>2020-04-19T15:58:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/google-dorks/</loc>
+    <lastmod>2020-04-19T15:58:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/robling-meeting/</loc>
+    <lastmod>2020-04-19T10:44:06+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2020-04-14T07:53:22+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-04-14T07:53:22+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/anaconda/</loc>
+    <lastmod>2020-04-19T15:59:13+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2019/09/anaconda-windows/</loc>
+    <lastmod>2020-04-19T15:59:13+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/howtoguide/</loc>
+    <lastmod>2020-04-19T15:59:13+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/solutions/</loc>
+    <lastmod>2020-04-19T15:59:13+05:45</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="CTFs Crackstation.net : NTLM, md4, md5 hashes match with existing hashtable from crackstation
+Some useful commands:
+  cat | head -n &amp;lt;line_number&amp;gt; | tail -1 : get n&amp;rsquo;th line_number
+  strings reversing1 | egrep &amp;ldquo;^([A-Za-z0-9&#43;/]{4})*([A-Za-z0-9&#43;/]{2}==|[A-Za-z0-9&#43;/]{3}=|[A-Za-z0-9&#43;/]{4})$&amp;rdquo; | while read line ; do echo $line | base64 -d | cat -v &amp;amp;&amp;amp; echo &amp;ldquo;&amp;quot;; done
+base64 encoded text regex
+  echo &amp;ldquo;obase=16; &amp;lt;decimal_number&amp;gt;&amp;rdquo; | BC_LINE_LENGTH=0 bc | awk &amp;lsquo;{ print (length($0) % 2 == 0) ?" />
+<meta name="keywords" content="Blog, ctf, hacking, whitehat" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/ctf-resource/" />
+
+
+    <title>
+        
+            CTF Resource :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="CTF Resource">
+<meta itemprop="description" content="CTFs Crackstation.net : NTLM, md4, md5 hashes match with existing hashtable from crackstation
+Some useful commands:
+  cat | head -n &lt;line_number&gt; | tail -1 : get n&rsquo;th line_number
+  strings reversing1 | egrep &ldquo;^([A-Za-z0-9&#43;/]{4})*([A-Za-z0-9&#43;/]{2}==|[A-Za-z0-9&#43;/]{3}=|[A-Za-z0-9&#43;/]{4})$&rdquo; | while read line ; do echo $line | base64 -d | cat -v &amp;&amp; echo &ldquo;&quot;; done
+base64 encoded text regex
+  echo &ldquo;obase=16; &lt;decimal_number&gt;&rdquo; | BC_LINE_LENGTH=0 bc | awk &lsquo;{ print (length($0) % 2 == 0) ?">
+<meta itemprop="dateModified" content="2020-04-19T15:58:47&#43;05:45" />
+<meta itemprop="wordCount" content="1484">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="ctf,hacking,whitehat," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="CTF Resource"/>
+<meta name="twitter:description" content="CTFs Crackstation.net : NTLM, md4, md5 hashes match with existing hashtable from crackstation
+Some useful commands:
+  cat | head -n &lt;line_number&gt; | tail -1 : get n&rsquo;th line_number
+  strings reversing1 | egrep &ldquo;^([A-Za-z0-9&#43;/]{4})*([A-Za-z0-9&#43;/]{2}==|[A-Za-z0-9&#43;/]{3}=|[A-Za-z0-9&#43;/]{4})$&rdquo; | while read line ; do echo $line | base64 -d | cat -v &amp;&amp; echo &ldquo;&quot;; done
+base64 encoded text regex
+  echo &ldquo;obase=16; &lt;decimal_number&gt;&rdquo; | BC_LINE_LENGTH=0 bc | awk &lsquo;{ print (length($0) % 2 == 0) ?"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-19 15:58:47 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>7 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/ctf-resource/">CTF Resource</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <h2 id="ctfs">CTFs</h2>
+<p>Crackstation.net : NTLM, md4, md5 hashes match with existing hashtable from crackstation</p>
+<p>Some useful commands:</p>
+<ol>
+<li>
+<p>cat <!-- raw HTML omitted --> | head -n &lt;line_number&gt; | tail -1 : get n&rsquo;th line_number</p>
+</li>
+<li>
+<p>strings reversing1 | egrep &ldquo;^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{4})$&rdquo; | while read line ; do echo $line | base64 -d | cat -v &amp;&amp; echo &ldquo;&quot;; done</p>
+<p>base64 encoded text regex</p>
+</li>
+<li>
+<p>echo &ldquo;obase=16; &lt;decimal_number&gt;&rdquo; | BC_LINE_LENGTH=0 bc | awk &lsquo;{ print (length($0) % 2 == 0) ? $0 : 0$0; }&rsquo; : decimal number to zero padded hex</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p>/bin/cat $(find / -name flag.txt): find all files with name flag.txt and paste their content</p>
+</li>
+<li>
+<p>echo &lsquo;&lt;hex_string&gt;&rsquo; | awk &lsquo;{ print (length($0) % 2 == 0) ? $0 : 0$0; }&rsquo; | xxd -p -r &gt; &lt;output_file&gt; : create binary file from hex strings</p>
+</li>
+<li>
+<p>cat &lt;(python -c &ldquo;print((&lsquo;A&rsquo; * 76) + &lsquo;\x08\x87\x04\x08&rsquo;)&quot;) - | ./authme : redirect into executable stdin and then keep going</p>
+</li>
+<li>
+<p>ascii_char=\((printf &ldquo;\)(printf %x &lt;decimal_ascii_code&gt;)&rdquo; | xxd -p -r) : ascii code to characters</p>
+</li>
+<li>
+<p>{ echo &ldquo;name&rdquo;; echo &lsquo;a_reAllY_s3cuRe_p4s$word_56b977&rsquo;;} | cat : echo two lines by including them in curly braces</p>
+</li>
+</ol>
+<p>9/ Openssl commands:</p>
+<ol>
+<li>
+<p>openssl genrsa -out &lt;output_key_name&gt; <!-- raw HTML omitted --> : generate a rsa based private public key pair</p>
+</li>
+<li>
+<p>openssl req -in <!-- raw HTML omitted --> -text -noout : view certificate signing details</p>
+</li>
+<li>
+<p>openssl x509 -in &lt;c.cer&gt; -inform <!-- raw HTML omitted --> -text -noout: examine certificate content : formats can be pem or der</p>
+</li>
+<li>
+<p>openssl pkcs12 -export -inkey &lt;key_file&gt; -in &lt;cert_file&gt; -certfile &lt;parent_certs&gt; -out &lt;output_name&gt; : get pkcs12 file ; needs key_file, cert_file and parent certificates</p>
+</li>
+<li>
+<p>openssl x509 -req -in &lt;child_csr&gt; -CA &lt;parent_certificate&gt; -CAkey &lt;parent_key&gt; -CAcreateserial -out &lt;output_child_name&gt; -days &lt;validity_days&gt; -sha256 -extfile <!-- raw HTML omitted --> :  sign child csr with  parent</p>
+</li>
+<li>
+<p>openssl rsa -pubin -in &lt;public_key_file&gt; -text: examine modulus and exponent of RSA public key</p>
+</li>
+<li>
+<p>openssl pkcs12 -info -in <!-- raw HTML omitted --> : pkcs12 file details</p>
+</li>
+<li>
+<p>openssl pkcs12 -in &lt;input_pfx_file&gt; -clcerts -nokeys -out &lt;output_certificate_file&gt; : extract certificate files from pkc file</p>
+</li>
+<li>
+<p>openssl rsa -in &lt;private_key_file&gt; -text : evaluate rsa private key details: modulus, exponent and so on.</p>
+</li>
+<li>
+<p>openssl req -addext <!-- raw HTML omitted --> -outform pem -out &lt;out_csr_name&gt; -key &lt;input_csr_key&gt; -new : generate csr file with extension</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p><a href="https://github.com/Ganapati/RsaCtfTool">https://github.com/Ganapati/RsaCtfTool</a> : rsa ctf tool to analyze using various public and private keys, some simple decryption tries as well. it helps uncipher files using rsa private key as well</p>
+</li>
+<li>
+<p>echo &ldquo;U2VjcmV0IG1lc3NhZ2U=&rdquo; | base64 -d : simple base 64 decoding directly from command line</p>
+</li>
+<li>
+<p>cyclic <!-- raw HTML omitted --> : generate a cyclic number of string inputs of specific length; used in several cases of buffer overflow</p>
+</li>
+<li>
+<p>sudo pip install capstone; pip install ropgadget; : shellstorm script to find rop exploitation on various elf,  pe , mach o binaries on various architectures.</p>
+</li>
+<li>
+<p>shellstorm.org : so you want to have exploits to various shells, you have binaries and tools to let you exploit here.</p>
+</li>
+<li>
+<p>radare2 : analysing any binary for reversing ; <a href="https://insinuator.net/2016/08/reverse-engineering-with-radare2-part-1/">https://insinuator.net/2016/08/reverse-engineering-with-radare2-part-1/</a> tutorials on using radare2</p>
+</li>
+<li>
+<p>ltrace <!-- raw HTML omitted --> : gives all the library calls and system calls made by the program</p>
+</li>
+<li>
+<p>strace <!-- raw HTML omitted --> : gives all the system calls made by the program to the kernel</p>
+</li>
+<li>
+<p><a href="https://github.com/slimm609/checksec.sh">https://github.com/slimm609/checksec.sh</a> : this script can give you info about different type of executables and their sections</p>
+</li>
+</ol>
+<p>Forensics:</p>
+<ol>
+<li>
+<p>apktool -d <!-- raw HTML omitted --> : decompiles any android app</p>
+</li>
+<li>
+<p>sox &lt;audio_file&gt; -n spectrogram : give a spectrogram of any wav file: directly available on linux archives</p>
+</li>
+</ol>
+<p>Binary forensics:</p>
+<ol>
+<li>
+<p>xxd -g1 &lt;binary_file&gt;: g means the number of bytes to group by : this is used to print the binary file&rsquo;s hex code</p>
+</li>
+<li>
+<p>strings <!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>dd skip=&lt;start_offset&gt; count=<!-- raw HTML omitted --> if=&lt;input_file&gt; of=&lt;output_file&gt; bs=1 : get a binary file from an existing binary file using offset and count of number of bytes</p>
+</li>
+<li>
+<p>printf <!-- raw HTML omitted --> | dd conv=notrunc of=<!-- raw HTML omitted --> bs=1 seek=<!-- raw HTML omitted --> : patch a binary with bytes at offset.</p>
+<p>example: printf &lsquo;\x53\xef&rsquo; | dd conv=notrunc of=ext-super-magic.img bs=1 seek=$((1024+56)) adds the bytes at the seek position . Useful when changing and adding headers to binary files</p>
+</li>
+<li>
+<p>file <!-- raw HTML omitted --></p>
+</li>
+<li>
+<p><a href="https://ide.kaitai.io/">https://ide.kaitai.io/</a> : kaitai ide to analyze any binary : has it&rsquo;s specific formats at formats.kaitai.io</p>
+</li>
+<li>
+<p>foremost <!-- raw HTML omitted --> :Recover files based on their headers, footers, and internal data structures. available as linux package</p>
+</li>
+<li>
+<p>binwalk <!-- raw HTML omitted -->: walk through the executable to find number of files and executable code : to extract use option -echo</p>
+</li>
+<li>
+<p>binwalk &ndash;dd=&rdquo;.*&rdquo; &lt;file_name&gt; : extract any file type from binwalk; not just known files</p>
+</li>
+<li>
+<p>pngcheck <!-- raw HTML omitted --> : check the integrity of png files</p>
+</li>
+<li>
+<p>exiftool <!-- raw HTML omitted --> : metadata and  exif information from file</p>
+</li>
+<li>
+<p>sudo apt-get install zbar-tools; zbarimg &lt;img_with_qr&gt; : decodes qr code from image</p>
+</li>
+<li>
+<p><a href="https://blog.didierstevens.com/2008/04/09/quickpost-about-the-physical-and-logical-structure-of-pdf-files/">https://blog.didierstevens.com/2008/04/09/quickpost-about-the-physical-and-logical-structure-of-pdf-files/</a> : learn about physical and logical structure of a pdf file</p>
+</li>
+<li>
+<p>get pdf-parser.py from ctf-tools : pdf-parser -v <!-- raw HTML omitted --> : get all malformed elements with todo prefix</p>
+<p>example: pdf-parser.py -v 1485.pdf | grep &ldquo;todo&rdquo;</p>
+</li>
+<li>
+<p>Stegano with gimp: Reveal hidden text in an image.</p>
+<ol>
+<li>Open the image with GIMP.</li>
+<li>Mode: Grain Extract.</li>
+<li>Filters -&gt; Enhance -&gt; Unsharp Mask -&gt; Amout: ~10.0</li>
+</ol>
+</li>
+<li>
+<p>stegsolve, zsteg are easy to use as well.</p>
+</li>
+</ol>
+<p>Network and Web:</p>
+<ol>
+<li>
+<p>Curl : -s, &ndash;silent:  -v, &ndash;verbose: , -k &ndash;insecure: any connection doesn&rsquo;t check certs.</p>
+</li>
+<li>
+<p>curl &ndash;cookie &ldquo;&lt;cookie_name&gt;=&lt;cookie_value&gt;&rdquo; <!-- raw HTML omitted --> : give a cookie and get something from the uri</p>
+</li>
+<li>
+<p>curl <!-- raw HTML omitted --> -X POST &ndash;data &ldquo;<!-- raw HTML omitted -->=<!-- raw HTML omitted -->&amp;<!-- raw HTML omitted -->=<!-- raw HTML omitted -->&rdquo; : fetch using a post request with multiple parameters</p>
+<p>&ndash;data-binary : if you don&rsquo;t want curl to work on the data</p>
+</li>
+<li>
+<p>curl <!-- raw HTML omitted --> -H &lsquo;Content-Type: application/json; charset=UTF-8&rsquo; &ndash;data-binary &lsquo;{&ldquo;<!-- raw HTML omitted -->&rdquo;:&ldquo;<!-- raw HTML omitted -->&rdquo;}&rsquo; : use a json request to fetch data from a server</p>
+</li>
+<li>
+<p>curl -d &ldquo;<!-- raw HTML omitted -->=<!-- raw HTML omitted -->&rdquo; &ndash;data-urlencode &ldquo;<!-- raw HTML omitted -->=&lt;value2_to_be_encoded&gt;&rdquo; -X POST <!-- raw HTML omitted --> &quot; : fetch using post request and a urlencoded format to send to the server</p>
+</li>
+<li>
+<p>curl -l <!-- raw HTML omitted --> : gets the header only from a request.</p>
+</li>
+</ol>
+<p>Directory search : <a href="https://github.com/maurosoria/dirsearch">https://github.com/maurosoria/dirsearch</a> : brute force a directory for files and folders</p>
+<p>dirsearch.py -u <!-- raw HTML omitted --> -e <!-- raw HTML omitted --></p>
+<p>Dirbuster from owasp can be used to find dirs as well</p>
+<p>nmap -p 443 &ndash;script ssl-cert <!-- raw HTML omitted --> : view certificate details for ssl-cert</p>
+<p>scp username@from_host:file.txt <em>local/directory</em> : directly get a file from ssh server to local directory</p>
+<p>scp file.txt username@to_host:/remote/directory/ : copy to ssh server</p>
+<p>Tshark:</p>
+<p>tshark -r <!-- raw HTML omitted --> -Y &ldquo;data.len != 0&rdquo; -T json -e tcp.stream -e data.data : Receive JSON-encoded structure of all TCP packets which contain data.</p>
+<p>Display all frames from a network capture which comply with filter.</p>
+<p>Add &lsquo;-x&rsquo; for a full hex dump of the packets.</p>
+<p>Password file cracking:</p>
+<p>unshadow &lt;passwd_file&gt; &lt;shadow_file&gt; : combine passwd and shadow to crack linux pwd hashes</p>
+<p>zip2john &lt;zip_file&gt; &gt; &lt;password_file&gt; : Encode a zip file&rsquo;s password in a format John can crack.</p>
+<p>john &lt;password_file&gt; :  &ndash;show option to show pwd after cracking it</p>
+<p>SQLMAP:</p>
+<p>sqlmap -u <!-- raw HTML omitted -->: automate the process of sqli attacks</p>
+<p>&ndash;dbs: Discover databases in case an SQL vulnerability is previously found.</p>
+<p>&mdash;tables -D <!-- raw HTML omitted --> : Discover tables in case an SQL vulnerability is previously found.</p>
+<p>&ndash;dump -T <!-- raw HTML omitted --> -D <!-- raw HTML omitted -->: dump a table of a databases</p>
+<p>&ndash;method POST &ndash;data <!-- raw HTML omitted --> -p &lt;field_to_attack&gt; : using a post on specific field</p>
+<p>GDB:</p>
+<p>printf &ldquo;%s&rdquo;, 0x804894c : print a string</p>
+<p>gdb <!-- raw HTML omitted --> &lt;core_dump&gt; : open a program with a core dump</p>
+<p>run(r), quit(q), continue(q)</p>
+<p>break *<!-- raw HTML omitted --> or function to break at function name</p>
+<p>info break : info about breakpoints</p>
+<p>delete breakpoint</p>
+<p>step, stepi, next, nexti, finish : i means one instruction and then stop to debugger</p>
+<p>nexti : Execute one machine instruction, but if it is a function call, proceed until the function returns.</p>
+<p>step: Continue running your program until control reaches a different source line, then stop it and return control to GDB.</p>
+<p>finish(fin): Continue running until just after function in the selected stack frame returns. Print the returned value (if any).</p>
+<p>print:</p>
+<p>p i:</p>
+<p>p/x i:</p>
+<p>p arr:</p>
+<p>p pArr</p>
+<p>p *pArr@3</p>
+<p>p *pArr</p>
+<ul>
+<li>to dereference variables.</li>
+</ul>
+<p>@[number] to print as an array of [number] elements.</p>
+<p>/x for printing hexadecimal values.</p>
+<p>x /<!-- raw HTML omitted --> <!-- raw HTML omitted --> : n: repeat count, f: display format, u: unit size</p>
+<p>example: x /10xb $2</p>
+<p>info variables : get all static and global variables</p>
+<p>info locals: Print all local variables of current stack frame.</p>
+<p>info args: Print all local arguments of current stack frame.</p>
+<p>list(l) : print lines from a source file</p>
+<p>disassemble(disas): print disassembly of the program</p>
+<p>backtrace(bt): A summary of the call stack - one line per frame.</p>
+<p>frame <!-- raw HTML omitted --> : Move to a specific frame from the backtrace to view locals or arguments.</p>
+<p>info threads: status of all threads for the process</p>
+<p>thread apply all <!-- raw HTML omitted -->  : apply a singular command to all threads</p>
+<p>e.g. thread apply all backtrace</p>
+<p>thread <!-- raw HTML omitted --> : Make thread number threadno the current thread.</p>
+<p>until : Continue running until a source line past the current line, in the current stack frame, is reached.</p>
+<p>info <!-- raw HTML omitted --> : show details about the address</p>
+<p>e.g. info address system@plt</p>
+<p>readelf: show the elf binaries info</p>
+<p>info proc mappings: Report the memory address space ranges accessible in the program.</p>
+<p>GDB settings:</p>
+<p>display/i $pc: Display the machine instruction about to be executed each time execution stops.</p>
+<p>set print pretty on: indented format print with one per line</p>
+<p>dump <!-- raw HTML omitted --> memory &lt;filename.bin&gt; &lt;start_addr&gt; &lt;end_addr&gt; : dump binary from specific start to end address</p>
+<p>set print elements <!-- raw HTML omitted -->: Set a limit on how many elements of an array GDB will print. Default is 200, 0 for unlimited</p>
+<p>set print array-indexes on : Print the index of each element when displaying arrays.</p>
+<p>set disassembly-flavor intel: change the disassembly-flavor format</p>
+<p>set output-radix <!-- raw HTML omitted -->: Set the default base for numeric display.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/ctf">ctf</a></span><span class="tag"><a href="/tags/hacking">hacking</a></span><span class="tag"><a href="/tags/whitehat">whitehat</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1484 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 15:58 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/bayesian-prior/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Bayesian Prior</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/google-dorks/">
+                                <span class="button__text">Google Dorks</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

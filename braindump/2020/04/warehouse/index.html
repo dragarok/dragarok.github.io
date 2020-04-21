@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Basic terminologies:
+Dimensions Facts
+Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region &#43; dimension_or_fact &#43; content &#43; granularity &#43; usage
+Column naming: Naming: Attribute or measure &#43; data type Attribute: Price etc. Data type: KEY, ID, DESC
+  Maintenance columns: insert timestamp, update, close, close_dt" />
+<meta name="keywords" content="Blog, datawarehouse, ra, oracle" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/warehouse/" />
+
+
+    <title>
+        
+            Warehouse :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Warehouse">
+<meta itemprop="description" content="Basic terminologies:
+Dimensions Facts
+Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region &#43; dimension_or_fact &#43; content &#43; granularity &#43; usage
+Column naming: Naming: Attribute or measure &#43; data type Attribute: Price etc. Data type: KEY, ID, DESC
+  Maintenance columns: insert timestamp, update, close, close_dt">
+<meta itemprop="dateModified" content="2020-04-19T15:59:59&#43;05:45" />
+<meta itemprop="wordCount" content="376">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="datawarehouse,ra,oracle," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Warehouse"/>
+<meta name="twitter:description" content="Basic terminologies:
+Dimensions Facts
+Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region &#43; dimension_or_fact &#43; content &#43; granularity &#43; usage
+Column naming: Naming: Attribute or measure &#43; data type Attribute: Price etc. Data type: KEY, ID, DESC
+  Maintenance columns: insert timestamp, update, close, close_dt"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-19 15:59:59 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/warehouse/">Warehouse</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>Basic terminologies:</p>
+<p>Dimensions
+Facts</p>
+<h2 id="table-and-table-naming-conventions">Table and table naming conventions</h2>
+<p>initial 3 letter prefix: DWH, ODS etc.
+Content: e.g. PRD, SLS
+Dimension or Fact: D, F
+Granularity : Department, day/week etc.
+Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix
+Naming: data region + dimension_or_fact + content + granularity + usage</p>
+<h2 id="column-naming">Column naming:</h2>
+<p>Naming: Attribute or measure  + data type
+Attribute: Price etc.
+Data type: KEY, ID, DESC</p>
+<ul>
+<li>
+<p>Maintenance columns: insert timestamp, update, close, close_dt</p>
+</li>
+<li>
+<p>Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar.</p>
+</li>
+<li>
+<p>Matrices are designated with MTX suffix.</p>
+</li>
+</ul>
+<h3 id="dimension-tables">Dimension Tables:</h3>
+<ul>
+<li>
+<p>Examples of naming:</p>
+<p>DWH_D_TIM_YR_LU : data warehouse, dimension table, timestamp, year, Lookup</p>
+<p>CURR_TIM : curr timestamp</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Organization Dimension:</p>
+<p>company &gt; chain &gt; area &gt; region &gt; district &gt; location</p>
+<p>dimension tables: center, market area, market statistics area, converted location,
+location_day_attr, week attribute, history attribute,
+commercial_invoice attri, omni channel attri, location outage,
+location group matrix etc.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Product dimension:</p>
+<p>division &gt; group &gt; department &gt; class &gt; subclass</p>
+<p>other: style, color, size, item,</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Supplier and Partner:</p>
+<p>Supplier, supplier trait, trait matrix, partner matrix</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Customer:</p>
+<p>customer, customer rfmp, household</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Customer Order:</p>
+<p>Order strategy, payment, order source, status, do consolidated status, do status, do user matrix</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Promotion:
+Promotion, Prom event, prom head, coupon</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Price zone:
+Price zone and price zone location matrix</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Employee:
+Employee, Segment, Segment derived, Location labor</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Payroll:</p>
+<p>Payroll code, Employee location day matrix, emp position</p>
+</li>
+<li>
+<p>Miscellaneous:
+Country dimension, Discount type, Item location status code, reason, receipt type, retail type, state
+transfer type, tender, currency code, exchange rate.</p>
+</li>
+</ul>
+<h3 id="fact-tables">Fact tables:</h3>
+<ol>
+<li>Allocation tables:
+Base, current, item week aggregate, location day aggregate, location week aggregate</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>Inventory:
+Inventory:
+item location day base, curr table, location day aggregate, &hellip; , area item week aggregate</li>
+</ol>
+<p>Inv in transit:
+item location day base, transit curr table,</p>
+<p>Inv markdown:
+markdown style location week aggregate</p>
+<p>Inv adjustment, inv on order, inv receipt, return to vendor, transfer, transfer reserved,
+unavailable inventory</p>
+<ol>
+<li>Price:
+Price , Price Current , Ecommerce Price item day, price status</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p>Sales:</p>
+<p>Line discount, Line item, tender, aggregates on item, locaiton, week/day, subclass, location week,</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>Customer:
+Credit card apps status location week, customer capture stat, creadit card transaction location day</li>
+</ol>
+<p>Customer order:</p>
+<p>Loss prevention:</p>
+<p>Supplier cost:</p>
+<p>Planning facts:</p>
+<p>Retail demand forecasting:</p>
+<p>Traffic:</p>
+<p>Market basket analysis:</p>
+<p>Store plan:</p>
+<p>Payroll:</p>
+<p>Order Commit:</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/datawarehouse">datawarehouse</a></span><span class="tag"><a href="/tags/ra">ra</a></span><span class="tag"><a href="/tags/oracle">oracle</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>376 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 15:59 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/3ddatarepresentation/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">3ddatarepresentation</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/memories/">
+                                <span class="button__text">Memories</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

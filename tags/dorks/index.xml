@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dorks on Alok&#39;s Blog</title>
+    <link>/tags/dorks/</link>
+    <description>Recent content in dorks on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 15:58:46 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/dorks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Dorks</title>
+      <link>/braindump/2020/04/google-dorks/</link>
+      <pubDate>Sun, 19 Apr 2020 15:58:46 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/google-dorks/</guid>
+      <description>What Is Google Dorks? It is basically an advanced google search!
+I have included four types of google dorks in this collection: Google dorks for SQL injection, Google dorks for Local File Inclusion, Google dorks For open CCTV cams and Google dorks for sensitive information.
+Copy and paste the below google dorks on the search engine and have fun!
+Google Dorks For SQL Injection:
+•inurl:index.php?id=
+•inurl:trainers.php?id=
+•inurl:buy.php?category=
+•inurl:article.php?ID=
+•inurl:play_old.php?id=
+•inurl:declaration_more.php?decl_id=</description>
+    </item>
+    
+  </channel>
+</rss>

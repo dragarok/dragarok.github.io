@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wordpress on Alok&#39;s Blog</title>
+    <link>/tags/wordpress/</link>
+    <description>Recent content in wordpress on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:40 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wordpress Manjaro</title>
+      <link>/braindump/2020/04/wordpress-manjaro/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:40 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/wordpress-manjaro/</guid>
+      <description>sudo mysql_install_db : when &amp;ldquo;Can&amp;rsquo;t open and lock privilege tables: Table &amp;lsquo;mysql.servers&amp;rsquo; doesn&amp;rsquo;t exist&amp;rdquo; occurs.
+  Install apache, mariadb, phpmyadmin, mysql and everything
+  Starting apache server:
+sudo systemctl enable httpd.service sudo systemctl start httpd.service  Also can check status as well.    After installing mariadb: run
+mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql sudo systemctl restart mariadb.service   Create wordpress database and user using mysql shell rather than phpmyadmin</description>
+    </item>
+    
+  </channel>
+</rss>

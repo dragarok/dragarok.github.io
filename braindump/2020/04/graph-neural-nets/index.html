@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="&amp;ndash; Information about the non euclidean space incorporated &amp;ndash; 2D conversion of image as input vs 3D image as input &amp;ndash; Ideas about no connectivity in cases of pixels &amp;ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &amp;ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &amp;ndash; Static and dynamic graphs will have different ways &amp;ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &amp;ndash; Adjacency Matrix are mostly used." />
+<meta name="keywords" content="Blog, graph, neuralnetwork" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/graph-neural-nets/" />
+
+
+    <title>
+        
+            Graph Neural Nets :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Graph Neural Nets">
+<meta itemprop="description" content="&ndash; Information about the non euclidean space incorporated &ndash; 2D conversion of image as input vs 3D image as input &ndash; Ideas about no connectivity in cases of pixels &ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &ndash; Static and dynamic graphs will have different ways &ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &ndash; Adjacency Matrix are mostly used.">
+<meta itemprop="dateModified" content="2020-04-19T16:00:36&#43;05:45" />
+<meta itemprop="wordCount" content="2055">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="graph,neuralnetwork," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Graph Neural Nets"/>
+<meta name="twitter:description" content="&ndash; Information about the non euclidean space incorporated &ndash; 2D conversion of image as input vs 3D image as input &ndash; Ideas about no connectivity in cases of pixels &ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &ndash; Static and dynamic graphs will have different ways &ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &ndash; Adjacency Matrix are mostly used."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-19 16:00:36 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>10 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/graph-neural-nets/">Graph Neural Nets</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>&ndash; Information about the non euclidean space incorporated
+&ndash; 2D conversion of image as input vs 3D image as input
+&ndash; Ideas about no connectivity in cases of pixels
+&ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information
+&ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node)
+&ndash; Static and dynamic graphs will have different ways
+&ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as
+low information loss as possible
+&ndash; Adjacency Matrix are mostly used.
+&ndash; Laplcian matrix = Degree - adjacency matrix
+&ndash; Generally all three types of matrices are used in many of the approaches.
+&ndash; Degree Matrix are diagonal matrices with the value of degree along the diagonal.
+&ndash; In case of undirected graphs, the no of connections is the degree.
+&ndash; In case of directed graphs, degree is either  out degree or in degree
+&ndash; In case of weighted graphs, it is the sum of weights on all nodes
+&ndash; Node level, Sub graph level embeddings</p>
+<p>&ndash; Graph Embedding Techniques:</p>
+<p>&ndash; Deepwalk: uses concept of walk as embedding process</p>
+<pre><code>-- walk: traversal of graph by moving from one node to another as long as they have common edge
+-- Traversal can be represented by having one node representation after other and continue the chain.
+-- Similar to word vectors: inputs can be splits of the sequence of such giant representation of walk.
+-- Now, the probability of having some node as output given the total representation is computed.
+-- Instead of running along word corpus, the graph network instead runs across graphs
+-- Operation is similar to Word2Vec
+-- Problem: Whenever a new node is added, the network must be retrained again to incorporate it's info.
+</code></pre>
+<p>&ndash; Node2Vec
+&ndash; If you turn each node in a graph into an embedding as you would words in sentence,
+a neural network can learn representations for each node.
+&ndash; The difference between Node2vec and DeepWalk is subtle but significant.
+Node2vec features a walk bias variable α(alpha), which is parameterized by p and q.
+The parameter p prioritizes a breadth-first-search (BFS) procedure,
+while the parameter q prioritizes a depth-first-search (DFS) procedure.
+The decision of where to walk next is therefore influenced by probabilities 1/p or 1/q.
+&ndash;  BFS is ideal for learning local neighbors, while DFS is better for learning global variables.
+&ndash; BFS is better at classifying according to structural roles (hubs, bridges, outliers, etc.)
+while DFS returns a more community driven classification scheme.
+&ndash; Graph2Vec
+&ndash; Using an analogy with word2vec, if a document is made of sentences (which is then made of words),
+then a graph is made of sub-graphs (which is then made of nodes).
+&ndash; We use the sub graph embedding in this process.
+&ndash; Similar to word embedding vector computation, it utilizes similar formula for subgraph embedding vector.</p>
+<p>&ndash; SDNE:
+&ndash; Not just learn from walks but tries to learn from two different metrics:
+&ndash; 1st order proximity: nodes said to be similar if they share an edge
+&ndash; 2nd order:  if they share many neighboring nodes
+&ndash; Goal: to capture highly non linear structure
+&ndash; This is achieved by using deep autoencoders (semi-supervised) to preserve the first order (supervised)
+and second order (unsupervised) network proximities.
+&ndash; Laplacian Eigenmaps: to preserve first order proximity
+&ndash; Laplacian Eigenmap embedding algorithm applies a penalty when similar nodes are mapped far from each other in the embedded space,
+thus allowing for optimization by minimizing the space between similar nodes.
+&ndash; The second order proximity is preserved by passing the adjacency matrix of the graph through
+an unsupervised autoencoder which has a built in reconstruction loss function it must minimize.
+&ndash; Together, these two losses are used to train a proper embedding for the graph data.</p>
+<p>&ndash; LINE: Large scale Network Embedding
+&ndash; Explicitly define two functions for 1st and 2nd order proximity.
+&ndash; EMpirically,found that the 2nd order proximity performed better and improved accuracy.
+&ndash; Goal: to decrease KL divergence between the input and the embedding distributions
+&ndash; Since the algorithm has to define new functions for each increasing order of proximity,
+LINE doesn’t perform very well if the application needs an understanding of node community structure.</p>
+<p>&ndash; HARP:
+&ndash;  Previous models risked getting stuck in local optima since their objective functions are non-convex.
+&ndash; Graph coarsening to make similar nodes into super nodes
+&ndash; After coarsening the graph, it then generates an embedding of the coarsest “supernode”,
+followed by an embedding of the entire graph (which itself is made of supernodes).
+&ndash; As a preprocessing step rather than a solution: can be used with other techniques.</p>
+<p>&ndash; Graph Convolutions:</p>
+<p>&ndash; What is inductive bias ?
+&ndash; Inductive bias of a learning algorithm is the set of assumptions that the learner uses
+to predict outputs given inputs that it has not encountered.
+&ndash; Neural Networks tend to discard the features that have very less significance in task at hand.
+&ndash; Similary, GNNs have bias:
+By structuring the data in a way that prioritizes certain patterns, we can improve model performance, even if the data is the same.
+&ndash; Graphs are more abstract, and variables like node degree, proximity,
+and neighborhood structure provide far more information about the data</p>
+<p>&ndash; Convolutions are basically pooling, kernels and strides. As like in euclidean space, where we have notion of left
+right,  and so on ; we can&rsquo;t use such concepts in graphs due to their irregular structure.</p>
+<p>&ndash; So, to perform convolution; we need to start from what convolution means so that we can mimic the process
+At a high level, convolutions aggregate information from surrounding or adjacent entities.
+Convolutions in Deep Learning take this aggregated information to build feature maps (the grid values),
+which are used to make predictions with a neural network. We want to do this on graphs.</p>
+<p>&ndash; Now we know what are we trying to do. So, we need a method to do this now.
+&ndash; Spatial and Spectral methods: One that requires Eigen and another that doesn&rsquo;take</p>
+<p>&ndash; Graph Signal Processing:
+&ndash; Spectral Graph Convolutional Network:
+&ndash; GSP is the key to generalizing convolutions, allowing us to build functions
+that can take into account both the
+overall structure of the graph and the individual properties of the graph’s components.</p>
+<p>&ndash;  It is the graph fourier transform that allows one to introduce the notion of a “bandwidth” or “smoothness” to a graph
+&ndash;  In GCNs, node features and attributes are represented by “signals”.
+&ndash;  Calculating the eigenvectors of the Laplacian, returns the Fourier basis for the graph.</p>
+<p>So, steps in Graph Signal Processing are as follows:
+So the overall steps are:</p>
+<p>&ndash; Transform the graph into the spectral domain using eigendecomposition
+&ndash; Apply eigendecomposition to the specified kernel
+&ndash; Multiply the spectral graph and spectral kernel (like vanilla convolutions)
+&ndash; Return results in the original spatial domain (analogous to inverse GFT)</p>
+<p>&ndash; ChebNets:
+&ndash; Spectral convolutions are defined as the multiplication of a signal (node features/attributes) by a kernel.
+&ndash; Thus similar to original convolution operation
+&ndash; The kernel used in a spectral convolution made of Chebyshev polynomials of the diagonal matrix of Laplacian eigenvalues
+&ndash; The kernel equals the sum of all Chebyshev polynomial kernels applied to the diagonal matrix of
+scaled Laplacian eigenvalues for each order of k up to K-1.
+&ndash; Using graph coarsening, it also introduced pooling methods similar to original convolution.
+&ndash; ChebNet implicitly avoids computing the eigendomposition opting to approximate it instead.
+&ndash; GCNs are basically first order ChebNets.
+&ndash; In GCNs, this is intended to alleviate the risk of overfitting on a local neighborhood of a graph.
+&ndash; GCNs performed well in node classification tasks and other graph applications, but the main drawback is how eigenvalues
+tend to cluster together in a very small range, with large gaps in between each cluster.
+&ndash; The problem of such GCNS was later solved by Cayleynets.</p>
+<p>&ndash; Fast GCNs/ SGCs
+&ndash; The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute.
+&ndash;  O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&rsquo;s laplacian.
+&ndash; Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals,
+which allowed for batch training, reducing the overall training time.
+&ndash; We hypothesize that the nonlinearity between GCN layers is not critical — but that the majority of the benefit arises from the local averaging. &ndash;IBM paper on Fast GCN
+&ndash; The project removed the nonlinear transition functions between each convolutional layer.
+The final softmax activation allowed for probabilistic outputs that can be optimized with stochastic gradient descent.</p>
+<p>&ndash; Cayley Nets:
+&ndash; Cayley Transform: Unit half circle transform
+&ndash; useful notion of localization
+&ndash; Cayley has proven to perform better on a wide range of Graph Learning tasks due to their ability to detect narrow frequency bands of importance during training,
+and to specialize on them while being well-localized on the graph.</p>
+<p>&ndash; Motifs:
+&ndash; Essentially, the mode partitions input graphs into motifs which are unique substructures of x length,
+such that any graph in the dataset can be built by some combination of the motifs.
+&ndash; The motifs take into directionality of edges into consideration,
+a detail in graph theory that has been omitted in previous graph learning approaches.
+&ndash;  Each convolutional layer of a MotifNet has a multivariate matrix polynomial (a fancy kernel where each element is a polynomial with multiple variables),
+which is applied to and learns from the motif’s Laplacian matrices.</p>
+<p>&ndash; Spatial Convolutional Networks
+&ndash; GraphSage:
+&ndash; It is especially powerful because it scales well with large, dense, homogenous, dynamic networks
+&ndash; Stages:
+&ndash; Neighborhood Sampling: Takes param &lsquo;k&rsquo; to define depth
+&ndash; Search neighbors of neighbors
+&ndash; Aggregation: Bring together properties of neighboring node to the target node
+&ndash; Types:
+&ndash; Mean : mean of all node&rsquo;s features
+&ndash; LSTM : random out of the nodes
+&ndash; Max pooling: Only the best feature from experiments
+&ndash; Prediction:
+&ndash; Based on a neural network , using the aggregated values , perform node classification or context determination.
+&ndash; This 3 step process repeated for all the nodes in the graph.
+&ndash; Being used by Pinterest as PinSage.
+&ndash; Pooling performed best and computationally also simpler than others.</p>
+<p>&ndash; MoNets:
+&ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc.
+&ndash; Contributions:
+&ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches
+&ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,)
+&ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks
+&ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input.
+Variables y is considered the neighboring nodes or points, which is associated with a vector of pseudo-coordinates in d-dimensional space,
+such that u(x, y) are the pseudo-coordinates of which there is a unique set for each neighbor of x.
+&ndash; Each pseudo-coordinate is put through a weighting function, which replicates the effect of a traditional image convolution kernel
+whereby each value of the kernel is multiplied by the value that is currently in consideration.
+In the case of MoNet, the weighting function is a kernel with learnable parameters that operates on the pseudo-coordinates:</p>
+<p>&ndash; we will have covariance matrix of order &lsquo;d&rsquo; by &lsquo;d&rsquo; and mean vector of order 1 by &lsquo;d&rsquo; for the kernel.
+&ndash; patch operator weighting functions (fancy way of saying kernel) used in different convolutional operations on the manifold. ( the heatmap figure of 3d models)
+&ndash; This kernel is learned only in MoNet, versus hard-coded in GCNNs and ACNNs. The first thing one might notice is how much “smoother” the weights (red curves) are in MoNet,
+versus the more distinct (GCNN) and more integrated (ACNN) weights of the other approaches.
+&ndash; This flexibility is part of the reason why both allow for the sharing of parameters cross-dataset.
+This opens up the capacity for ideas like Transfer Learning to be applied to the geometric domain.</p>
+<p>&ndash; Spectral convolutions are mathematically as well as theoretically similar to their vanilla convolution counterparts whereas
+spatial convolutions are conceptually as well as markedly similar to vanilla convolutions.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/graph">graph</a></span><span class="tag"><a href="/tags/neuralnetwork">neuralnetwork</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2055 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 16:00 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/know-bash-better/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Know Bash Better</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/github-sec/">
+                                <span class="button__text">Github Sec</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

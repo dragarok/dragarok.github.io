@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcuts on Alok&#39;s Blog</title>
+    <link>/tags/shortcuts/</link>
+    <description>Recent content in shortcuts on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:17:16 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emacs Shortcuts</title>
+      <link>/braindump/2020/04/emacs-shortcuts/</link>
+      <pubDate>Sun, 19 Apr 2020 16:17:16 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/emacs-shortcuts/</guid>
+      <description>Emacs Shortcuts  Spc f d &amp;ndash;&amp;gt; search for files in dired Spc : &amp;ndash;&amp;gt; main command Spc g s &amp;ndash;&amp;gt; git status Spc n n &amp;ndash;&amp;gt; Capture template Spc n a &amp;ndash;&amp;gt; agenda view Vim commands  Ctrl up , down &amp;ndash;&amp;gt; go up and down in file q [a-z] &amp;ndash;&amp;gt; record a macro Shift &amp;raquo; &amp;ndash;&amp;gt; indent in code   Evil snipe:  s ch : go to ch ; same as f but more letters gc : to comment using evil gs [annotation] &amp;ndash;&amp;gt; to go to lines directly like vimium ease dii &amp;ndash;&amp;gt; delete inside indentation dik &amp;ndash;&amp;gt; delete inside plus a line above     Backlinks  Emacs Hugo Blogging  </description>
+    </item>
+    
+    <item>
+      <title>Photoshop</title>
+      <link>/braindump/2020/04/photoshop/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:14 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/photoshop/</guid>
+      <description>Photoshop carefulness:   Active layer is to be cared.
+  Not on bed or something
+  control +g go back
+  move tool by pressing V
+  always group layers and rename them
+  control g for group after selecting using control
+Never use yellow background with white text Designing a cursor to appear on the design . Selecting a hover to other text color and also the opacity to change either low or high</description>
+    </item>
+    
+  </channel>
+</rss>

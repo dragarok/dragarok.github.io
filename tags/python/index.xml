@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Alok&#39;s Blog</title>
+    <link>/tags/python/</link>
+    <description>Recent content in python on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:50 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Numpy</title>
+      <link>/braindump/2020/04/numpy/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:50 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/numpy/</guid>
+      <description>Working with numpy:   import numpy as np
+  a = np.array([0,1,2])
+  a.ndim - gives dimension of array
+  a.shape : gives the shape of the array
+  a.reshape((3,2)) new order of matrix to be formed
+ changing a element of an array we reshaped is also going to change from the original since numpy package avoids copies    so if copy needed: c= a.</description>
+    </item>
+    
+    <item>
+      <title>Scipy</title>
+      <link>/braindump/2020/04/scipy/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:31 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/scipy/</guid>
+      <description>In python lists copies the elements twice and power is not applicable but for numpy arrays we can directly use the power function a*2 means multiply each element by 2 a**2 means square of each term on the array
+import matplotlib.pyplot as plt plt.scatter(x,y) plt.title(&amp;ldquo;Web traffic over the last month&amp;rdquo;) plt.xlabel(&amp;ldquo;Time&amp;rdquo;) plt.ylabel(&amp;ldquo;Hits/hour&amp;rdquo;) plt.xticks([w*7*24 for w in range(10)], [&amp;lsquo;week %i&amp;rsquo;%w for w in range(10)]) plt.autoscale(tight=True) plt.grid() plt.show()</description>
+    </item>
+    
+    <item>
+      <title>Python one liners</title>
+      <link>/braindump/2020/04/python-one-liners/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:25 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/python-one-liners/</guid>
+      <description>print(sum(map(int,bin(int(input()))[2:]))) : Adding numbers from a number converted to binary</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/braindump/2020/04/python/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:54 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/python/</guid>
+      <description>&amp;ndash; iteration: -! specific no of times: range(5) -! as long as the variable : for ch in &amp;ldquo;Hello&amp;rdquo; &amp;ndash; querying the directory of the module for objects to use: e.g. import random dir(random) &amp;ndash; asking for help with the object we searched: help(random.randint) &amp;ndash; sleep function: import time time.sleep(5) &amp;ndash; Know that everything is an object in python &amp;ndash; Built in data structures: list, dictionary, tuple and sets -! lists are dynamic and mutable too.</description>
+    </item>
+    
+    <item>
+      <title>Matplotlib</title>
+      <link>/braindump/2020/04/matplotlib/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:45 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/matplotlib/</guid>
+      <description>triangles
+plot(t, t, &amp;lsquo;r&amp;ndash;&#39;, t, t**2, &amp;lsquo;bs&amp;rsquo;, t, t**3, &amp;lsquo;g^&amp;rsquo;)
+plt.plot(x,y,&amp;lsquo;r&amp;ndash;&#39;, linewidth=1.0)
+when lines= plt.plot(x1,y1,x2,y2)
+and the use of subplot() command
+plt.figure(1) # the first figure plt.subplot(211) # the first subplot in the first figure plt.plot([1, 2, 3]) plt.subplot(212) # the second subplot in the first figure plt.plot([4, 5, 6])
+plt.figure(2) # a second figure plt.plot([4, 5, 6]) # creates a subplot(111) by default
+plt.figure(1) # figure 1 current; subplot(212) still current plt.</description>
+    </item>
+    
+    <item>
+      <title>Django Process</title>
+      <link>/braindump/2020/04/django-process/</link>
+      <pubDate>Sun, 19 Apr 2020 15:58:59 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/django-process/</guid>
+      <description>FIrst i created project, then created an app Registered the app into the setttings.py file Then first created the view in the app, then add url to the urls.py file in the app If more urls are to be added and multiple apps within the project use include and make urls.py in own app Then made the html file in index directory and worked there. The function in views class takes the request as parameter and returns either HttpResponse or a render object.</description>
+    </item>
+    
+    <item>
+      <title>Anaconda Windows</title>
+      <link>/braindump/2019/09/anaconda-windows/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0545</pubDate>
+      
+      <guid>/braindump/2019/09/anaconda-windows/</guid>
+      <description>Anaconda Installation in Windows   Issue with pyzmq:
+pip uninstall pyzmq pip install pyzmq   Issue with requests
+conda deactivate conda update --force conda   Issue with sqlite3
+ Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder    Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.
+  Anaconda if HTTPS error:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="http://pentest-tools.com/
+https://www.shodan.io/
+https://www.zoomeye.org/
+https://censys.io
+https://crt.sh/
+http://webscan.cc/
+https://x.threatbook.cn/
+https://dnsdumpster.com/
+https://www.domainiq.com/reverse%5Fwhois
+https://www.yougetsignal.com/tools/web-sites-on-web-server/
+https://www.robtex.com/dns-lookup/
+https://phpinfo.me/bing.php
+https://www.owasp.org/index.php/Category:OWASP%5FDirBuster%5FProject
+https://github.com/laramies/theHarvester
+https://github.com/drwetter/testssl.sh
+https://github.com/urbanadventurer/WhatWeb
+https://buckets.grayhatwarfare.com/
+Social Engineering https://leakedsource.ru/
+https://www.shuju666.com/
+http://www.pwsay.com/
+http://www.mimayun.club/
+http://leakbase.pw
+https://haveibeenpwned.com/
+Crack http://cmd5.com
+https://somd5.com/
+https://crackstation.net/
+https://hashkiller.co.uk/
+其它 https://3v4l.org/
+php eval https://github.com/denny0223/scrabble
+git https://github.com/lijiejie/ds%5Fstore%5Fexp
+.DS_Store https://github.com/kost/dvcs-ripper
+git / svn / hg / cvs &amp;hellip; http://www.factordb.com/
+unicode converter
+https://www.branah.com/unicode-converter PHP混淆 / 加密
+http://enphp.djunny.com/ http://www.phpjm.net/ https://github.com/PowerShellMafia/PowerSploit
+https://github.com/swisskyrepo/PayloadsAllTheThings/
+http://xssor.io
+https://github.com/Pgaijin66/XSS-Payloads/blob/master/payload.txt
+XSS Payloads DNSLog
+http://ceye.io https://www.t00ls.net/dnslog.html http://dnsbin.zhack.ca/ https://r12a.github.io/apps/encodings/
+Encoding converter http://tool.leavesongs.com/" />
+<meta name="keywords" content="Blog, ctf, hacking" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/web-ctf/" />
+
+
+    <title>
+        
+            Web CTF :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Web CTF">
+<meta itemprop="description" content="http://pentest-tools.com/
+https://www.shodan.io/
+https://www.zoomeye.org/
+https://censys.io
+https://crt.sh/
+http://webscan.cc/
+https://x.threatbook.cn/
+https://dnsdumpster.com/
+https://www.domainiq.com/reverse%5Fwhois
+https://www.yougetsignal.com/tools/web-sites-on-web-server/
+https://www.robtex.com/dns-lookup/
+https://phpinfo.me/bing.php
+https://www.owasp.org/index.php/Category:OWASP%5FDirBuster%5FProject
+https://github.com/laramies/theHarvester
+https://github.com/drwetter/testssl.sh
+https://github.com/urbanadventurer/WhatWeb
+https://buckets.grayhatwarfare.com/
+Social Engineering https://leakedsource.ru/
+https://www.shuju666.com/
+http://www.pwsay.com/
+http://www.mimayun.club/
+http://leakbase.pw
+https://haveibeenpwned.com/
+Crack http://cmd5.com
+https://somd5.com/
+https://crackstation.net/
+https://hashkiller.co.uk/
+其它 https://3v4l.org/
+php eval https://github.com/denny0223/scrabble
+git https://github.com/lijiejie/ds%5Fstore%5Fexp
+.DS_Store https://github.com/kost/dvcs-ripper
+git / svn / hg / cvs &hellip; http://www.factordb.com/
+unicode converter
+https://www.branah.com/unicode-converter PHP混淆 / 加密
+http://enphp.djunny.com/ http://www.phpjm.net/ https://github.com/PowerShellMafia/PowerSploit
+https://github.com/swisskyrepo/PayloadsAllTheThings/
+http://xssor.io
+https://github.com/Pgaijin66/XSS-Payloads/blob/master/payload.txt
+XSS Payloads DNSLog
+http://ceye.io https://www.t00ls.net/dnslog.html http://dnsbin.zhack.ca/ https://r12a.github.io/apps/encodings/
+Encoding converter http://tool.leavesongs.com/">
+<meta itemprop="dateModified" content="2020-04-19T16:00:46&#43;05:45" />
+<meta itemprop="wordCount" content="80">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="ctf,hacking," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Web CTF"/>
+<meta name="twitter:description" content="http://pentest-tools.com/
+https://www.shodan.io/
+https://www.zoomeye.org/
+https://censys.io
+https://crt.sh/
+http://webscan.cc/
+https://x.threatbook.cn/
+https://dnsdumpster.com/
+https://www.domainiq.com/reverse%5Fwhois
+https://www.yougetsignal.com/tools/web-sites-on-web-server/
+https://www.robtex.com/dns-lookup/
+https://phpinfo.me/bing.php
+https://www.owasp.org/index.php/Category:OWASP%5FDirBuster%5FProject
+https://github.com/laramies/theHarvester
+https://github.com/drwetter/testssl.sh
+https://github.com/urbanadventurer/WhatWeb
+https://buckets.grayhatwarfare.com/
+Social Engineering https://leakedsource.ru/
+https://www.shuju666.com/
+http://www.pwsay.com/
+http://www.mimayun.club/
+http://leakbase.pw
+https://haveibeenpwned.com/
+Crack http://cmd5.com
+https://somd5.com/
+https://crackstation.net/
+https://hashkiller.co.uk/
+其它 https://3v4l.org/
+php eval https://github.com/denny0223/scrabble
+git https://github.com/lijiejie/ds%5Fstore%5Fexp
+.DS_Store https://github.com/kost/dvcs-ripper
+git / svn / hg / cvs &hellip; http://www.factordb.com/
+unicode converter
+https://www.branah.com/unicode-converter PHP混淆 / 加密
+http://enphp.djunny.com/ http://www.phpjm.net/ https://github.com/PowerShellMafia/PowerSploit
+https://github.com/swisskyrepo/PayloadsAllTheThings/
+http://xssor.io
+https://github.com/Pgaijin66/XSS-Payloads/blob/master/payload.txt
+XSS Payloads DNSLog
+http://ceye.io https://www.t00ls.net/dnslog.html http://dnsbin.zhack.ca/ https://r12a.github.io/apps/encodings/
+Encoding converter http://tool.leavesongs.com/"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-19 16:00:46 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>One minute
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/web-ctf/">Web CTF</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p><a href="http://pentest-tools.com/">http://pentest-tools.com/</a></p>
+<p><a href="https://www.shodan.io/">https://www.shodan.io/</a></p>
+<p><a href="https://www.zoomeye.org/">https://www.zoomeye.org/</a></p>
+<p><a href="https://censys.io">https://censys.io</a></p>
+<p><a href="https://crt.sh/">https://crt.sh/</a></p>
+<p><a href="http://webscan.cc/">http://webscan.cc/</a></p>
+<p><a href="https://x.threatbook.cn/">https://x.threatbook.cn/</a></p>
+<p><a href="https://dnsdumpster.com/">https://dnsdumpster.com/</a></p>
+<p><a href="https://www.domainiq.com/reverse%5Fwhois">https://www.domainiq.com/reverse%5Fwhois</a></p>
+<p><a href="https://www.yougetsignal.com/tools/web-sites-on-web-server/">https://www.yougetsignal.com/tools/web-sites-on-web-server/</a></p>
+<p><a href="https://www.robtex.com/dns-lookup/">https://www.robtex.com/dns-lookup/</a></p>
+<p><a href="https://phpinfo.me/bing.php">https://phpinfo.me/bing.php</a></p>
+<p><a href="https://www.owasp.org/index.php/Category:OWASP%5FDirBuster%5FProject">https://www.owasp.org/index.php/Category:OWASP%5FDirBuster%5FProject</a></p>
+<p><a href="https://github.com/laramies/theHarvester">https://github.com/laramies/theHarvester</a></p>
+<p><a href="https://github.com/drwetter/testssl.sh">https://github.com/drwetter/testssl.sh</a></p>
+<p><a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a></p>
+<p><a href="https://buckets.grayhatwarfare.com/">https://buckets.grayhatwarfare.com/</a></p>
+<p>Social Engineering
+<a href="https://leakedsource.ru/">https://leakedsource.ru/</a></p>
+<p><a href="https://www.shuju666.com/">https://www.shuju666.com/</a></p>
+<p><a href="http://www.pwsay.com/">http://www.pwsay.com/</a></p>
+<p><a href="http://www.mimayun.club/">http://www.mimayun.club/</a></p>
+<p><a href="http://leakbase.pw">http://leakbase.pw</a></p>
+<p><a href="https://haveibeenpwned.com/">https://haveibeenpwned.com/</a></p>
+<p>Crack
+<a href="http://cmd5.com">http://cmd5.com</a></p>
+<p><a href="https://somd5.com/">https://somd5.com/</a></p>
+<p><a href="https://crackstation.net/">https://crackstation.net/</a></p>
+<p><a href="https://hashkiller.co.uk/">https://hashkiller.co.uk/</a></p>
+<p>其它
+<a href="https://3v4l.org/">https://3v4l.org/</a></p>
+<p>php eval
+<a href="https://github.com/denny0223/scrabble">https://github.com/denny0223/scrabble</a></p>
+<p>git
+<a href="https://github.com/lijiejie/ds%5Fstore%5Fexp">https://github.com/lijiejie/ds%5Fstore%5Fexp</a></p>
+<p>.DS_Store
+<a href="https://github.com/kost/dvcs-ripper">https://github.com/kost/dvcs-ripper</a></p>
+<p>git / svn / hg / cvs &hellip;
+<a href="http://www.factordb.com/">http://www.factordb.com/</a></p>
+<p>unicode converter</p>
+<p><a href="https://www.branah.com/unicode-converter">https://www.branah.com/unicode-converter</a>
+PHP混淆 / 加密</p>
+<p><a href="http://enphp.djunny.com/">http://enphp.djunny.com/</a>
+<a href="http://www.phpjm.net/">http://www.phpjm.net/</a>
+<a href="https://github.com/PowerShellMafia/PowerSploit">https://github.com/PowerShellMafia/PowerSploit</a></p>
+<p><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/">https://github.com/swisskyrepo/PayloadsAllTheThings/</a></p>
+<p><a href="http://xssor.io">http://xssor.io</a></p>
+<p><a href="https://github.com/Pgaijin66/XSS-Payloads/blob/master/payload.txt">https://github.com/Pgaijin66/XSS-Payloads/blob/master/payload.txt</a></p>
+<p>XSS Payloads
+DNSLog</p>
+<p><a href="http://ceye.io">http://ceye.io</a>
+<a href="https://www.t00ls.net/dnslog.html">https://www.t00ls.net/dnslog.html</a>
+<a href="http://dnsbin.zhack.ca/">http://dnsbin.zhack.ca/</a>
+<a href="https://r12a.github.io/apps/encodings/">https://r12a.github.io/apps/encodings/</a></p>
+<p>Encoding converter
+<a href="http://tool.leavesongs.com/">http://tool.leavesongs.com/</a></p>
+<p>Mimikatz</p>
+<p>mimikatz.exe privilege::debug sekurlsa::logonpasswords full exit &raquo; log.txt
+WASM</p>
+<p><a href="https://wasdk.github.io/WasmFiddle/">https://wasdk.github.io/WasmFiddle/</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/ctf">ctf</a></span><span class="tag"><a href="/tags/hacking">hacking</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>80 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 16:00 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/reverse/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Reverse</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/emacs-hugo-blogging/">
+                                <span class="button__text">Emacs Hugo Blogging</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>productivity on Alok&#39;s Blog</title>
+    <link>/tags/productivity/</link>
+    <description>Recent content in productivity on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:47 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Notes Management</title>
+      <link>/braindump/2020/04/notes-management/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:47 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/notes-management/</guid>
+      <description>Notes Management  Org-ref Helm-bibtex Interleave Org-capture The whole process is about writing notes, interleaving them, collecting references so that this whole loop can be iterated.  Process  papers.org and papers.bib &amp;ndash;&amp;gt; huge files Books, papers, articles marked as TODO When going through the file convert captures to bibtex references.  Helm bibtex for searching references directly or have paper and let bibtex do the work   Capture TODO to document TODO in papers.</description>
+    </item>
+    
+  </channel>
+</rss>

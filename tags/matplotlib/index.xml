@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>matplotlib on Alok&#39;s Blog</title>
+    <link>/tags/matplotlib/</link>
+    <description>Recent content in matplotlib on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:45 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Matplotlib</title>
+      <link>/braindump/2020/04/matplotlib/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:45 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/matplotlib/</guid>
+      <description>triangles
+plot(t, t, &amp;lsquo;r&amp;ndash;&#39;, t, t**2, &amp;lsquo;bs&amp;rsquo;, t, t**3, &amp;lsquo;g^&amp;rsquo;)
+plt.plot(x,y,&amp;lsquo;r&amp;ndash;&#39;, linewidth=1.0)
+when lines= plt.plot(x1,y1,x2,y2)
+and the use of subplot() command
+plt.figure(1) # the first figure plt.subplot(211) # the first subplot in the first figure plt.plot([1, 2, 3]) plt.subplot(212) # the second subplot in the first figure plt.plot([4, 5, 6])
+plt.figure(2) # a second figure plt.plot([4, 5, 6]) # creates a subplot(111) by default
+plt.figure(1) # figure 1 current; subplot(212) still current plt.</description>
+    </item>
+    
+  </channel>
+</rss>

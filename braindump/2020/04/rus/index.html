@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Variables: let age:u32 = 20; let sum:i32 = 5-15; let mark:isize = 10; let count:usize = 30;
+Overflow: let weight:u8 = 256; //overflow value is 0 let height:u8 = 257; //overflow value is 1
+Floats: The f32 type is a single-precision float, and f64 has double precision let interest:f32 = 8.35; let cost:f64 = 15000.600; f64 is default
+No automatic type casting
+That is 50,000 can be written as 50_000 ." />
+<meta name="keywords" content="Blog, rust" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/rus/" />
+
+
+    <title>
+        
+            Rus :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Rus">
+<meta itemprop="description" content="Variables: let age:u32 = 20; let sum:i32 = 5-15; let mark:isize = 10; let count:usize = 30;
+Overflow: let weight:u8 = 256; //overflow value is 0 let height:u8 = 257; //overflow value is 1
+Floats: The f32 type is a single-precision float, and f64 has double precision let interest:f32 = 8.35; let cost:f64 = 15000.600; f64 is default
+No automatic type casting
+That is 50,000 can be written as 50_000 .">
+<meta itemprop="dateModified" content="2020-04-19T16:05:05&#43;05:45" />
+<meta itemprop="wordCount" content="2773">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="rust," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Rus"/>
+<meta name="twitter:description" content="Variables: let age:u32 = 20; let sum:i32 = 5-15; let mark:isize = 10; let count:usize = 30;
+Overflow: let weight:u8 = 256; //overflow value is 0 let height:u8 = 257; //overflow value is 1
+Floats: The f32 type is a single-precision float, and f64 has double precision let interest:f32 = 8.35; let cost:f64 = 15000.600; f64 is default
+No automatic type casting
+That is 50,000 can be written as 50_000 ."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-19 16:05:05 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>14 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/rus/">Rus</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>Variables:
+let age:u32 = 20;
+let sum:i32 = 5-15;
+let mark:isize = 10;
+let count:usize = 30;</p>
+<p>Overflow:
+let weight:u8 = 256;   //overflow value is 0
+let height:u8 = 257;   //overflow value is 1</p>
+<p>Floats:
+The f32 type is a single-precision float, and f64 has double precision
+let interest:f32 = 8.35;
+let cost:f64 = 15000.600;
+f64 is default</p>
+<p>No automatic type casting</p>
+<p>That is 50,000 can be written as 50_000 . for ease of read</p>
+<p>Bool:
+let isfun:bool = true;</p>
+<p>Character:
+character data type in Rust supports numbers, alphabets, Unicode and special characters
+let special_character = &lsquo;@'; //default
+let alphabet:char = &lsquo;A&rsquo;;
+let emoji:char = &lsquo;😁&rsquo;;</p>
+<p>Mutability:
+By default, variables are immutable − read only in Rust.
+Error message indicates the cause of the error – you cannot assign values twice to immutable variable fees.</p>
+<p>Mutable:
+let mut variable_name = value;</p>
+<p>Constants:
+ll characters in a constant name are usually in uppercase.
+const PI:f32 = 3.14;
+&ndash; const keyword
+Cannot be set to output of function call or any that is computed at runtime</p>
+<p>Variable declaration can optionally have a data type but not for constnants</p>
+<p>Shadowing:
+let salary = 100.00;
+let salary = 1.50 ;
+The second var hides the first.
+Only variables can be shadowed</p>
+<p>Strings:
+Literal(&amp;string) and Object(String)
+String literals (&amp;str) are used when the value of a string is known at compile time; static by default
+let company:&amp;str=&quot;TutorialsPoint&rdquo;;
+String Object for runtime. ::new(), ::from(), to_string(), replace(), as_str()
+push(), push_str()[push means append here] , len(), trim(),
+split_whitespace(), split(), chars()etc. are it&rsquo;s methods.</p>
+<p>String Concat using +:
+let n3 = n1 + &amp;n2;  // n2&rsquo;s reference is passed</p>
+<p>Add to strings using format macro:
+let n3 = format!(&quot;{} {}&quot;,n1,n2);</p>
+<p>Expressions:
+++ and &ndash; are not supported in Rust</p>
+<p><code>= and !</code> means equal and not equal comparisons</p>
+<p>&amp;&amp; and || are and and or operators respectively. ! is not.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>Right shift with zero is also available.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>if num &gt; 0 { do things }</p>
+<p>if else similarly</p>
+<p>else if is written like this.</p>
+<p>match statement : if current value is matching from a list of vars: similar as switch</p>
+<p>let state_code = &ldquo;MH&rdquo;;
+let state = match state_code {
+&ldquo;MH&rdquo; =&gt; {println!(&ldquo;Found match for MH&rdquo;); &ldquo;Maharashtra&rdquo;},
+&ldquo;KL&rdquo; =&gt; &ldquo;Kerala&rdquo;,
+&ldquo;KA&rdquo; =&gt; &ldquo;Karnadaka&rdquo;,
+&ldquo;GA&rdquo; =&gt; &ldquo;Goa&rdquo;,
+_ =&gt; &ldquo;Unknown&rdquo;
+};</p>
+<p>Loops:
+for x in 1..11{ do anything }</p>
+<p>while x &lt; 10 { do anything } : remember to use mutable variables in loops since they are likely to change</p>
+<p>loop : indefinite loop</p>
+<p>loop {
+x+=1;
+println!(&ldquo;x={}&quot;,x);</p>
+<p>if x==15 {
+break;
+}
+}</p>
+<p>similarly: continue; statement can be used inside loop</p>
+<p>Functions:</p>
+<p>Definitions: fn fn_name(param_1, param_n) {}</p>
+<p>Invoking: fn_name(params);</p>
+<p>Return types: fn get_pi -&gt;f64 {}</p>
+<pre><code>fn get\_pi()-&gt;f64 {
+</code></pre>
+<p>22.0/7.0
+}</p>
+<p>In this function, no semicolon means that value is returned</p>
+<p>Pass by value:
+When functs invoked, values are actually copied.
+e.g. fn mutate_no_to_zero(mut param_no: i32) {}
+Functions will be similar to this.</p>
+<p>Pass by reference:  Parameter values can be passed by reference by prefixing the variable name with an &amp;
+mutate_no_to_zero(&amp;mut no);
+e.g. fn mutate_no_to_zero(mut param_no: i32) { *param_no = 0;}</p>
+<ul>
+<li>here is used to de reference the object</li>
+</ul>
+<p>Passing strings:
+fn fn_name(param_name:String){}
+when used also no need to use * and so on.</p>
+<p>Tuples:
+Tuples have a fixed length - once declared they cannot grow or shrink in size.</p>
+<p>Index starts from zero.
+e.g. let tuple:(i32,f64,u8) = (-325,4.9,22);</p>
+<p>To print a tuple: println!(&quot;{:?}&quot;, tuple_name)</p>
+<p>Getting elements one by one: tuple.0, tuple.1 and so on.</p>
+<p>Printing individual elems also require same println!(&quot;{:?}&quot;,tuple.1);</p>
+<p>Passing tuple as param to function: fn_name(x:(i32,bool,f64))
+Can be directly used as &lsquo;x&rsquo; now.</p>
+<p>Tuple values unpacking:  e.g. let (age,is_male,cgpa) = x;</p>
+<p>Arrays:
+Variables can have only scalar values and randomly allocated in memory; so diff to read in order of declaration.</p>
+<p>Static, sequential memory block, unique by subscript, can be modified but not deleted.</p>
+<p>e.g. let arr:[i32;4] = [10,20,30,40];
+e.g. let arr = [10,20,30,40];
+e.g. let arr:[i32;4] = [-1;4]; // default value -1 for array of size 4</p>
+<p>Array Looping:
+e.g. for val in arr.iter() {}</p>
+<p>Mutable array:
+e.g. let mut arr:[i32;4] = [10,20,30,40];
+e.g. arr[2] = 0; //valid now</p>
+<p>Arrays as params to functions : pass by value
+e.g. fn update(mut arr:[i32;3]) // function that accepts array
+update(arr); //call by value
+This way passes by value so nothing is changed.</p>
+<p>Arrays pass by reference:
+e.g. fn update(arr:&amp;mut [i32;3])
+update(&amp;mut arr); // passing a mutable array so that fn can make changes</p>
+<p>Array Declaration:
+This doesn&rsquo;t work since the array length must be known at runtime.
+let N: usize = 20;
+let arr = [0; N];</p>
+<p>Variables can&rsquo;t be used to define size of array.
+const N: usize = 20;
+This now works</p>
+<p>Usize: usize is pointer-sized, thus its actual size depends on the architecture you are compiling your program for.</p>
+<p>Stack and Heap:
+Variable of fixed size e.g. i32 &ndash;&gt; candidate for stack allocation
+Strings whose length is known at runtime &ndash;&gt; Heap allocated
+Heap less organized as compared to stack</p>
+<p>Ownership:
+e.g. let age = 30; // age is the owner of 30</p>
+<p>Each data can have only one owner at a time.</p>
+<p>Two variables so can&rsquo;t point to same  mem location.</p>
+<p>Transfer of Ownership:
+Assigning value to another variable
+Passing value to function
+Returning value to function</p>
+<p>e.g. let v = vec![1,2,3];
+let v2 = v; // ownership transferred here
+if we try to use v, it returns a error. &lsquo;v&rsquo; is destroyed now.</p>
+<p>e.g.display(v2); <em>/ v2 is moved to display and invalidated
+println!(&quot;{:?}&quot;, v2); /</em> here v2 is no longer usable
+fn display(v:Vec<!-- raw HTML omitted -->){
+println!(&ldquo;inside display {:?}&quot;,v);
+}</p>
+<p>A variable v2 which is in heap once sent to function or closure , it exists no more.</p>
+<p>Ownership passed to the function will be invalidated as function execution completes.
+We can pass back the variable after the function call if we don&rsquo;t want this to happen.</p>
+<p>In case of primitive types, contents from one variable is copied to another.
+e.g.  let u1 = 10;
+let u2 = u1;  // u1 value copied(not moved) to u2</p>
+<p>Borrowing:</p>
+<p>When a function transfers its control over a variable/value to another function temporarily, for a while, it is called borrowing.</p>
+<p>e.g. print_vector(&amp;v); // passing reference</p>
+<p>fn print_vector(x:&amp;Vec<!-- raw HTML omitted -->){ //use x here }</p>
+<p>Doing this we can protect ownership of original variable here.</p>
+<p>A function can modify a borrowed resource by using a mutable reference to such resource.
+e.g. passing by reference example of a variable that is mutable</p>
+<p>Slice:
+Pointer to block of memory</p>
+<p>Size of slice determined at runtime.</p>
+<p>Slices are pointers to the actual data. They are passed by reference to functions,
+which is also known as borrowing.</p>
+<p>e.g let n1 = &ldquo;Tutorials&rdquo;.to_string();</p>
+<p>let c1 = &amp;n1[4..9]; // this gives part of string 4,5,6,7,8</p>
+<p>Passing a slice to function:
+e.g. fn use_slice(slice:&amp;[i32])
+//pass data as use_slice(&amp;data[1..4]);</p>
+<p>To mark slice as mutable:
+e.g. use_slice(&amp;mut data[1..4]);
+also function needs to accept mutable slice</p>
+<p>Structure:</p>
+<p>Key value pair: Similar to python dict</p>
+<p>e.g. struct Employee {
+name:String,
+company:String,
+age:u32
+}</p>
+<p>let emp1 = Employee {
+company:String::from(&ldquo;TutorialsPoint&rdquo;),
+name:String::from(&ldquo;Mohtashim&rdquo;),
+age:50
+};</p>
+<p>Access elements using emp1.name, emp1.company and so on.</p>
+<p>Add mut keyword at front of struct instance to make it mutable
+e.g. let mut emp1 = Employee{}
+emp1.age= 20; //this now works</p>
+<p>Passing to functions: fn display( emp:Employee){//any code}</p>
+<p>Return a struct as output: fn fn_name(params)-&gt;Employee {}</p>
+<p>Methods in structures:</p>
+<p>impl keyword is used to define a method within the context of a structure</p>
+<p>The first parameter of a method will be always self</p>
+<p>To invoke a method, we need to first instantiate the structure.</p>
+<p>e.g. //define dimensions of a rectangle : Do this first
+struct Rectangle {
+width:u32, height:u32
+}</p>
+<p>//logic to calculate area of a rectangle : Then only define methods
+impl Rectangle {
+fn area(&amp;self)-&gt;u32 {
+//use the . operator to fetch the value of a field via the self keyword
+self.width * self.height
+}
+}</p>
+<p>Static Method in structure:</p>
+<p>These methods exist even before the structure is instantiated.</p>
+<p>Using structure&rsquo;s name , no instance to access</p>
+<p>Will not take &amp;self as parameter</p>
+<p>e.g.
+impl Structure_Name {
+//static method that creates objects of the Point structure
+fn method_name(param1: datatype, param2: datatype) -&gt; return_type {
+// logic goes here
+}
+}</p>
+<p>structure_name::method_name(v1,v2) // this is way to invoke static method</p>
+<p>Enums:</p>
+<p>to select a value from a list of possible variants we use enumeration data types</p>
+<p>e.g. 	#[derive(Debug)] // Used to supress error for not having Debug implemented for GenderCategory
+enum GenderCategory {
+Male,Female
+}</p>
+<p>//usage
+let male = GenderCategory::Male;</p>
+<p>Option Enum:</p>
+<p>Option is a predefined enum in the Rust standard library</p>
+<p>Rust does not support the null keyword. The value None, in the enumOption,
+can be used by a function to return a null value.</p>
+<p>Match can be used with Options</p>
+<p>Data Type in Enum and Options:</p>
+<p>It is possible to add data type to each variant of an enum</p>
+<p>e.g. enum GenderCategory {
+Name(String),Usr_ID(i32)
+}</p>
+<p>let p1 = GenderCategory::Name(String::from(&ldquo;LIS&rdquo;));
+let p2 = GenderCategory::Usr_ID(100);</p>
+<p>Modules:</p>
+<p>Logical group of code</p>
+<p>Multiple modules ==&gt; Crate</p>
+<p>Binary crate or Library crate</p>
+<p>Binary crate has a main method.</p>
+<p>Cargo tool used to manage crates in Rust</p>
+<p>e.g. networking module, graphics module</p>
+<p>Can be public or private modules</p>
+<p>Modules private by default</p>
+<p>Prefixed with &ldquo;pub&rdquo; keyword to make module public</p>
+<p>e.g.
+pub mod movies {
+pub fn play(name:String) {
+println!(&ldquo;Playing movie {}&quot;,name);
+}
+}</p>
+<p>This can be called inside a main function as movies::play()</p>
+<p>Use keyword to use a specific module&rsquo;s function: use public_module_name::function_name;</p>
+<p>Use a lib module inside a binary module
+e.g.
+extern crate movies_lib;
+use movies_lib::movies::play;</p>
+<p>Collections:</p>
+<p>Vectors:
+e.g. let mut instance_name = Vec::new();
+e.g. let vector_name = vec![val1,val2,val3]</p>
+<p>vec! is a macro to create a new vector.</p>
+<p>functions: new(), push, remove, contains, len</p>
+<p>Check an element: if 10 is in the vector
+if v.contains(&amp;10) {
+println!(&ldquo;found 10&rdquo;);
+}</p>
+<p>HashMap:</p>
+<p>insert, len, get, iter, contains_key, remove</p>
+<p>Get: Returns a reference to the value corresponding to the key.</p>
+<p>Iter: An iterator visiting all key-value pairs in arbitrary order. The iterator element type is (&amp;&lsquo;a K, &amp;&lsquo;a V).</p>
+<p>e.g. using get</p>
+<p>match stateCodes.get(&amp;&ldquo;KL&rdquo;) {
+Some(value)=&gt; {
+println!(&ldquo;Value for key KL is {}&quot;,value);
+}
+None =&gt; {
+println!(&ldquo;nothing found&rdquo;);
+}
+}
+}</p>
+<p>e.g. using iter:
+for (key, val) in stateCodes.iter() {
+println!(&ldquo;key: {} val: {}&quot;, key, val);
+}</p>
+<p>e.g.    stateCodes.remove(&amp;&ldquo;GJ&rdquo;);</p>
+<p>HashSet:
+set of unique values of type T</p>
+<p>Adding and removing values is fast, and</p>
+<p>it is fast to ask whether a given value is in the set or not</p>
+<p>insert, len, get, iter, contains_key, remove</p>
+<p>Error Handling:</p>
+<p>Recoverable and unrecoverable errors
+e.g. FileNotFound error is recoverable</p>
+<p>Rust doesn&rsquo;t have exceptions</p>
+<p>Returns enum Result&lt;T, E&gt; for recoverable errors</p>
+<p>Panic macro if unrecoverable error occurs</p>
+<p>panic!(&ldquo;Hello&rdquo;); // this ends the program abruptly</p>
+<p>e.g. for array of size 3, if array[10] is called, it invokes a panic</p>
+<p>program can invoke panic! if any rules are violated.</p>
+<p>e.g. enum Result&lt;T,E&gt; {
+OK(T),
+Err(E)
+}</p>
+<p>T ==&gt; type of value to be returned in success case
+E ==&gt; type of error in failure case within Err variant</p>
+<p>e.g. trying to open a file that doesn&rsquo;t exist</p>
+<p>let f = &lt;:open&gt;(&ldquo;main.jpg&rdquo;);   // main.jpg doesn&rsquo;t exist
+match f {
+Ok(f)=&gt; {
+println!(&ldquo;file found {:?}&quot;,f);
+},
+Err(e)=&gt; {
+println!(&ldquo;file not found \n{:?}&quot;,e);   //handled error
+}
+}</p>
+<p>Output: File not found
+Os { code: 2, kind: NotFound, message: &ldquo;The system cannot find the file specified.&rdquo; }</p>
+<p>Can make a function to handle stuffs like this:
+e.g. fn is_even(no:i32)-&gt;Result&lt;bool,String&gt; {
+if no%2==0 {
+return Ok(true);
+} else {
+return Err(&ldquo;NOT_AN_EVEN&rdquo;.to_string());
+}
+}</p>
+<p>The result then can be used using match and printed for errors.</p>
+<p>Unwrap and Expect:
+When you don&rsquo;t expect things to fail</p>
+<p>In case of success: unwrap to get exact result</p>
+<p>e.g. let result = is_even(10).unwrap();
+so here we get the number as result</p>
+<p>On using unwrap , if the function results in an error, program exits with panic!.</p>
+<p>Can use expect() to display custom error message on case of panic.
+e.g.    let f = &lt;:open&gt;(&ldquo;pqr.txt&rdquo;).expect(&ldquo;File not able to open&rdquo;);</p>
+<p>Generic Types:
+Generics allows to write more concise and clean code
+by reducing code duplication and providing type-safety.</p>
+<p>The <!-- raw HTML omitted --> syntax known as the type parameter, is used to declare a generic construct.</p>
+<p>e.g.
+struct Data<!-- raw HTML omitted --> {
+value:T,
+}</p>
+<p>Now the datatype will be filled by the compiler later.</p>
+<p>e.g. let t:Data<!-- raw HTML omitted --> = Data{value:350}; <em>/ generic type of i32
+let t2:Data<!-- raw HTML omitted --> = Data{value:&ldquo;Tom&rdquo;.to_string()}; /</em> generic type of string</p>
+<p>The main() method when these things will be called will create two instances of Data.</p>
+<p>Traits:
+implement a standard set of behaviors (methods) across multiple structures</p>
+<p>Similar to interfaces in OOP.</p>
+<p>e.g. struct Book {
+name:&amp;&lsquo;static str,
+id:u32
+}</p>
+<p>trait Printable {
+fn print(&amp;self);
+}</p>
+<p>impl Printable for Book {
+fn print(&amp;self){
+println!(&ldquo;Printing book with id:{} and name {}&quot;,self.id,self.name)
+}
+}</p>
+<p>Here, first we define a struct data type Book
+Then, we create a trait called Printable having a Print function ready to be implementd.
+Now Book struct will impl Printable trait; so it expands the print function from trait
+to print the book name and id.</p>
+<p>Generic Functions:
+e.g.
+fn print_pro&lt;T:Display&gt;(t:T){
+println!(&ldquo;Inside print_pro generic function:&quot;);
+println!(&quot;{}&quot;,t);
+}</p>
+<p>Here this function will print any datatype you give.</p>
+<p>print_pro(10 as u8);
+print_pro(20 as u16);
+print_pro(&ldquo;Hello TutorialsPoint&rdquo;);</p>
+<p>Every call is valid.</p>
+<p>Input/ Output:
+Read : using stdin, File
+Similarly for write.</p>
+<p>Readers are components that your program can read bytes from
+read_line() to read lines at a time one by one</p>
+<p>e.g.    let mut line = String::new();
+println!(&ldquo;Enter your name :&quot;);
+let b1 = std::io::stdin().read_line(&amp;mut line).unwrap();</p>
+<p>Write example:
+let b1 = std::io::stdout().write(&ldquo;Tutorials &ldquo;.as_bytes()).unwrap();
+std::io::stdout().write(format!(&quot;\nbytes written {}&quot;,(b1+b2)).as_bytes()).unwrap();</p>
+<p>Here first one uses sdout to write into the variable
+Second uses format! macro to generate a string adding two together and writing to var</p>
+<p>CommandLine Args:</p>
+<p>std::env::args() returns the commandline arguments</p>
+<p>e.g. let cmd_line = std::env::args();</p>
+<p>now using len() , we can know the number of values passed and can iterate to get all args.</p>
+<p>e.g. How to use these args:
+let mut command_line: std::env::Args = std::env::args();
+command_line.next().unwrap(); // this skips file name from the args list</p>
+<p>let source = command_line.next().unwrap(); // get the first actual arg passed to a var</p>
+<p>File Input and Output:</p>
+<p>Methods: open, create, remove_file, append, write_all, read_to_string</p>
+<p>std::fs::remove_file(for read), std::fs::OpenOptions(for append),  std::io::Writes ( for write_all)</p>
+<p>e.g.    let mut file = std::fs::&lt;:create&gt;(&ldquo;data.txt&rdquo;).expect(&ldquo;create failed&rdquo;);
+file.write_all(&ldquo;Hello World&rdquo;.as_bytes()).expect(&ldquo;write failed&rdquo;);</p>
+<p>e.g. 	file.read_to_string(&amp;mut contents).unwrap(); // reading from a file to variable</p>
+<p>e.g 	fs::remove_file(&ldquo;data.txt&rdquo;).expect(&ldquo;could not remove file&rdquo;); //remove a file</p>
+<p>e.g. 	let mut file = OpenOptions::new().append(true).open(&ldquo;data.txt&rdquo;).expect(&ldquo;cannot open file&rdquo;);
+// this opens file as to append something to it using write_all method</p>
+<p>Iterators:</p>
+<p>declare an array, vector and so on.
+e.g. let mut iter = a.iter(); // where a is any iterable data type</p>
+<p>now next() can be used to iterate over the elements</p>
+<p>can be used with for loop as well</p>
+<p>into_iter() function uses concept of ownership. It moves values in coll to iter object
+so after doing this, you cannot again use the original collection or vector or whatever.</p>
+<p>iter_mut() We can modify elements within the collection. Only mutable collections can use this</p>
+<p>Closures:</p>
+<p>Closure refers to a function within another function</p>
+<p>Anon functions</p>
+<p>Also known as inline function</p>
+<p>variables in outer function can be accessed by inline functions</p>
+<p>e.g.    let is_even = |x| {
+x%2==0
+};</p>
+<p>similar to lambda function in python</p>
+<p>Smart Pointers:</p>
+<p>Everything is allocated to stack by default</p>
+<p>Can store things on the heap by wrapping them in smart pointers like Box</p>
+<p>Vec, String implicitly help heap allocation.</p>
+<p>Traits of smart pointers:  std::ops::Deref, std::ops::Drop  // similar to destructor and immutable deref</p>
+<p>Box pointer: stack contains pointer to box, box is stored in heap.</p>
+<p>e.g.
+let var_i32 = 5;
+//stack
+let b = Box::new(var_i32);</p>
+<p>Now variable b is in addressed from the heap.</p>
+<p>To get access to variable&rsquo;s value, we use dereferencing. * as deref operator.</p>
+<p>we can now print variable &lsquo;b&rsquo; but to use the value , we need to do *b</p>
+<p>Also we can use impl <!-- raw HTML omitted --> Deref for anyStruct<!-- raw HTML omitted --> to get the inner variable using *</p>
+<p>Concurrency:</p>
+<p>Creating a thread:</p>
+<p>use std::thread;</p>
+<p>thread::spawn(|| {
+any work
+});</p>
+<p>Spawn Takes closure as parameter</p>
+<p>closure defines code that should be executed by the thread</p>
+<p>Sleeping a thread:</p>
+<p>thread::sleep()</p>
+<p>for time duration: use std::time::Duration; Duration::from_millis(1); //eg using ms for time</p>
+<p>Join handles:</p>
+<p>A spawned thread may not get a chance to run or run completely.</p>
+<p>It&rsquo;s because main thread completes quickly.</p>
+<p>handle = thread::spawn(&hellip;..)
+handle.join().unwrap();</p>
+<p>The main thread waits for spawned thread to complete because of the call to the join() method.</p>
+<p>By joining , the main thread doesn&rsquo;t immediately close the program but let all other
+threads finish their work too.</p>
+<p>cargo test &ndash; &ndash;nocapture does the task</p>
+<p>cargo test add does this task</p>
+<p>cargo test &ndash; &ndash;ignored will run ignored tests as well.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/rust">rust</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2773 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 16:05 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/question/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Question</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/bibliography-management/">
+                                <span class="button__text">Bibliography Management</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

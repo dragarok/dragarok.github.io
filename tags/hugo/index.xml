@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Alok&#39;s Blog</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in hugo on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:45 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emacs Hugo Blogging</title>
+      <link>/braindump/2020/04/emacs-hugo-blogging/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:45 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/emacs-hugo-blogging/</guid>
+      <description>Hugo blogging Liked themes:
+ Meme theme Harbor Cortex &amp;ndash;JethroKuan Hello friend ng rhazdon Beautiful Hugo   Blogging org mode Font    Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well
+//fonts.googleapis.com/css?family=Roboto+Slab:700,300,400|Source+Code+Pro:500 //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+    Normalize css : I don&amp;rsquo;t know what it does but looks pretty cool with all these stars on github.
+I think I have a faint idea now about what it does.</description>
+    </item>
+    
+  </channel>
+</rss>

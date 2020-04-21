@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>orgmode on Alok&#39;s Blog</title>
+    <link>/tags/orgmode/</link>
+    <description>Recent content in orgmode on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:15 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Org mode Tips and Tricks</title>
+      <link>/braindump/2020/04/org-mode-tips-and-tricks/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:15 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/org-mode-tips-and-tricks/</guid>
+      <description>Clone trees with time shifts: Bound to C-c C-x c, org-clone-subtree-with-time-shift create multiple subtrees with timestamps shifted. Useful for creating skeleton for repeated tasks. Spc-m-b-c : create table or update from region:  use with whitespace mode if there is an issue.   Advanced features (The Org Manual)  Gives functionality to change formula, update on formula change, go directly to formula and so on.   Also we can create org tables in html mode as well as latex mode.</description>
+    </item>
+    
+  </channel>
+</rss>

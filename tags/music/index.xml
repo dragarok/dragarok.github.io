@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music on Alok&#39;s Blog</title>
+    <link>/tags/music/</link>
+    <description>Recent content in music on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:56 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Musical Thoughts</title>
+      <link>/braindump/2020/04/musical-thoughts/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:56 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/musical-thoughts/</guid>
+      <description>Don&amp;rsquo;t we feel a curiosity why music has played such an important part of our life? Even though we dont like a certain language, we love to hear the mere music without understanding what it&amp;rsquo;s talking about, isn&amp;rsquo;t it?
+I clearly listened to Shakira&amp;rsquo;s Chantaje without even searching for what it means or what it is talking about.
+Music has no clear origins from where it all started. Regarding to it&amp;rsquo;s origin there are basically two theories that are worth to be watched: Evolutionary basis or The Cultural Evolution</description>
+    </item>
+    
+    <item>
+      <title>Songs</title>
+      <link>/braindump/2020/04/songs/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:32 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/songs/</guid>
+      <description>Eurielle - Song of Durin &amp;ndash; Hobbit Part 1-3</description>
+    </item>
+    
+  </channel>
+</rss>

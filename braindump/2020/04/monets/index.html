@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="&amp;ndash; tags: Graph Signal Processing
+MoNets: &amp;ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. &amp;ndash; Contributions: &amp;ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches &amp;ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) &amp;ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks &amp;ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/monets/" />
+
+
+    <title>
+        
+            MoNets :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="MoNets">
+<meta itemprop="description" content="&ndash; tags: Graph Signal Processing
+MoNets: &ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. &ndash; Contributions: &ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches &ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) &ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks &ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input.">
+<meta itemprop="dateModified" content="2020-04-21T05:53:35&#43;05:45" />
+<meta itemprop="wordCount" content="334">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="MoNets"/>
+<meta name="twitter:description" content="&ndash; tags: Graph Signal Processing
+MoNets: &ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. &ndash; Contributions: &ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches &ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) &ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks &ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-21 05:53:35 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/monets/">MoNets</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>&ndash; tags: <a href="/braindump/2020/04/graph-signal-processing/">Graph Signal Processing</a></p>
+<h2 id="monets">MoNets:</h2>
+<p>&ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc.
+&ndash; Contributions:
+&ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches
+&ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,)
+&ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks
+&ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input.
+Variables y is considered the neighboring nodes or points, which is associated with a vector of pseudo-coordinates in d-dimensional space,
+such that u(x, y) are the pseudo-coordinates of which there is a unique set for each neighbor of x.
+&ndash; Each pseudo-coordinate is put through a weighting function, which replicates the effect of a traditional image convolution kernel
+whereby each value of the kernel is multiplied by the value that is currently in consideration.
+In the case of MoNet, the weighting function is a kernel with learnable parameters that operates on the pseudo-coordinates:</p>
+<p>&ndash; we will have covariance matrix of order &lsquo;d&rsquo; by &lsquo;d&rsquo; and mean vector of order 1 by &lsquo;d&rsquo; for the kernel.
+&ndash; patch operator weighting functions (fancy way of saying kernel) used in different convolutional operations on the manifold. ( the heatmap figure of 3d models)
+&ndash; This kernel is learned only in MoNet, versus hard-coded in GCNNs and ACNNs. The first thing one might notice is how much “smoother” the weights (red curves) are in MoNet,
+versus the more distinct (GCNN) and more integrated (ACNN) weights of the other approaches.
+&ndash; This flexibility is part of the reason why both allow for the sharing of parameters cross-dataset.
+This opens up the capacity for ideas like Transfer Learning to be applied to the geometric domain.</p>
+<p>&ndash; Spectral convolutions are mathematically as well as theoretically similar to their vanilla convolution counterparts whereas
+spatial convolutions are conceptually as well as markedly similar to vanilla convolutions.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>334 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-21 05:53 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/fast-graphconv-nets/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Fast GraphConv Nets</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/motifs/">
+                                <span class="button__text">Motifs</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

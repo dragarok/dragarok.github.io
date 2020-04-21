@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Faster RCNN
+Region Proposal:
+Anchors: Different size bounding box of different aspect ratio and sizes
+Task to be done by RPN:
+Does this anchor contain a relevant object?
+How would we adjust this anchor to better fit the relevant object?
+It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
+Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio." />
+<meta name="keywords" content="Blog, rcnn, architecture, neuralnetwork" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/braindump/2020/04/rcnn/" />
+
+
+    <title>
+        
+            RCNN :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="RCNN">
+<meta itemprop="description" content="Faster RCNN
+Region Proposal:
+Anchors: Different size bounding box of different aspect ratio and sizes
+Task to be done by RPN:
+Does this anchor contain a relevant object?
+How would we adjust this anchor to better fit the relevant object?
+It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
+Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.">
+<meta itemprop="dateModified" content="2020-04-19T16:00:40&#43;05:45" />
+<meta itemprop="wordCount" content="867">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="rcnn,architecture,neuralnetwork," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="RCNN"/>
+<meta name="twitter:description" content="Faster RCNN
+Region Proposal:
+Anchors: Different size bounding box of different aspect ratio and sizes
+Task to be done by RPN:
+Does this anchor contain a relevant object?
+How would we adjust this anchor to better fit the relevant object?
+It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
+Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-19 16:00:40 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>5 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/braindump/2020/04/rcnn/">RCNN</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>Faster RCNN</p>
+<p>Region Proposal:</p>
+<p>Anchors: Different size bounding box of different aspect ratio and sizes</p>
+<p>Task to be done by RPN:</p>
+<p>Does this anchor contain a relevant object?</p>
+<p>How would we adjust this anchor to better fit the relevant object?</p>
+<p>It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.</p>
+<p>Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.</p>
+<p>If we define one anchor per spatial position of the feature map, the final image will end up with a bunch of anchors separated by r pixels.</p>
+<p>In order to choose the set of anchors we usually define a set of sizes (e.g. 64px, 128px, 256px) and a set of ratios between width and height of boxes (e.g. 0.5, 1, 1.5) and use all the possible combinations of sizes and ratios</p>
+<p>The RPN uses all the anchors selected for the mini batch to calculate the classification loss using binary cross entropy.</p>
+<p>Then, it uses only those minibatch anchors marked as foreground to calculate the regression loss. For calculating the targets for the regression,</p>
+<p>we use the foreground anchor and the closest ground truth object and calculate the correct Δ\DeltaΔ needed to transform the anchor into the object.</p>
+<p>Two different output for anchors:</p>
+<p>Objectness score: Probability that the anchor is an object</p>
+<p>Bounding box regression: For correcting bounding box to fully engulf the object.</p>
+<p>RPN architecture:</p>
+<p>Take as input feature map from base layer</p>
+<p>2 output heads for objectness and bounding box regression</p>
+<p>For the classification layer, we output two predictions per anchor: Background vs Foreground logit</p>
+<p>For regression: 4 delta values</p>
+<p>Network:</p>
+<p>Convolutional layer with 512 channels and 3x3 kernel size, pad 1 and then we have two parallel convolution layers using a 1*1 kernel,
+whose number of channels depends on the number of anchors per point.</p>
+<p>Training:</p>
+<p>Categorization of anchors:</p>
+<p>Those that overlap a ground-truth object with an Intersection over Union (IoU) bigger than 0.5 are considered “foreground”</p>
+<p>those that don’t overlap any ground truth object or have less than 0.1 IoU with ground-truth objects are considered “background”.</p>
+<p>Random sampling:</p>
+<p>From all anchors to form a mini batch of size 256 making balance between foreground and backgnd</p>
+<p>Binary cross entropy:</p>
+<p>The RPN uses all the anchors selected for the mini batch to calculate the classification loss using binary cross entropy.</p>
+<p>Regression loss:</p>
+<p>Then, it uses only those minibatch anchors marked as foreground to calculate the regression loss.</p>
+<p>Regularization Used:</p>
+<p>Smooth L1 loss</p>
+<p>Smooth L1 is basically L1, but when the L1 error is small enough, defined by a certain σ\sigmaσ, the error is considered almost correct and the loss diminishes at a faster rate.</p>
+<p>Problem:</p>
+<p>Maintaining a perfect ratio between foreground and background in a batch size due to lesser foreground anchors</p>
+<p>Solution:</p>
+<p>Turn to the anchors with biggest IOU to ground truth boxes.</p>
+<p>Post Processing:</p>
+<p>NMS(Non maximum suppression)</p>
+<p>Duplicate proposal regions over same object need to be removed.</p>
+<p>NMS takes the list of proposals sorted by score and iterates over the sorted list, discarding those proposals that have an IoU larger than some predefined threshold with a proposal that has a higher score.</p>
+<p>It means similar proposals with very high degree of similarity are removed using IOU.</p>
+<p>Too low and you may end up missing proposals for objects; too high and you could end up with too many proposals for the same object. A value commonly used is 0.6.</p>
+<p>How many proposals to use then?</p>
+<p>Based on paper, after NMS, let N=2000 but sometimes even 50 will work fine.</p>
+<p>Region of Interest Pooling:</p>
+<p>Calculating category for each region proposals</p>
+<p>can be done by passing the image patch of region after scaling or crop and pass through a pre trained base network.</p>
+<p>But it is inefficient and slow.</p>
+<p>Faster RCNN tries to mitigate using existing feature convolution map.</p>
+<p>This is done by extracting fixed-sized feature maps for each proposal using region of interest pooling.</p>
+<p>We extract features for each of those proposals (via RoI Pooling) and use these features for classification</p>
+<p>RCNN module:</p>
+<p>Classify the content in the bounding box (or discard it, using “background” as a label).</p>
+<p>Adjust the bounding box coordinates (so it better fits the object).</p>
+<p>Makes sure the regions are converted to same shapes using ROI pooling layer.</p>
+<p>Another method than ROI pooling to make conv feature maps the same sized:</p>
+<p>Crop the convolutional feature map using each proposal and then resize each crop to a fixed sized 14×14×convdepth using interpolation (usually bilinear).</p>
+<p>After cropping, use maxpooling with 2* 2 kernel to get final 7* 7 * convdepth feature map for each proposal.</p>
+<p>Full Training:</p>
+<p>The four different losses are combined using a weighted sum. Two for RPN and Two for RCNN.</p>
+<p>Also there is the base network but we can finetune it or not.</p>
+<p>The parts were trained independently and merged the trained wts before full final training.</p>
+<p>Joint end to end training was found to have better results.</p>
+<p>This is because we may want to give classification losses more weight relative to regression ones, or maybe give R-CNN losses more power over the RPNs’.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/rcnn">rcnn</a></span><span class="tag"><a href="/tags/architecture">architecture</a></span><span class="tag"><a href="/tags/neuralnetwork">neuralnetwork</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>867 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 16:00 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/braindump/2020/04/linux-tip/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Linux Tip</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="/braindump/2020/04/wordpress-manjaro/">
+                                <span class="button__text">Wordpress Manjaro</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

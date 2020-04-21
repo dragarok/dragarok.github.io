@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>para on Alok&#39;s Blog</title>
+    <link>/tags/para/</link>
+    <description>Recent content in para on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:46 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/para/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Para</title>
+      <link>/braindump/2020/04/para/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:46 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/para/</guid>
+      <description>Projects Areas Resources Archives
+Projects  Group of related task Specific outcomes Specific deadlines  Areas  No deadline Standards to be met e.g. House, Work etc.  Resources  Not tied to specific project but of interest to you e.g. Emacs, Productivity etc.  Archives  Inactive Projects, Areas or Resources. Archived  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>movie on Alok&#39;s Blog</title>
+    <link>/tags/movie/</link>
+    <description>Recent content in movie on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:21 +0545</lastBuildDate>
+    
+	<atom:link href="/tags/movie/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interstellar Poem</title>
+      <link>/braindump/2020/04/interstellar-poem/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:21 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/interstellar-poem/</guid>
+      <description>Do not go gentle into that good night, Old age should burn and rave at close of day; Rage, rage against the dying of the light.
+Though wise men at their end know dark is right, Because their words had forked no lightning they Do not go gentle into that good night.
+Good men, the last wave by, crying how bright Their frail deeds might have danced in a green bay, Rage, rage against the dying of the light.</description>
+    </item>
+    
+  </channel>
+</rss>
