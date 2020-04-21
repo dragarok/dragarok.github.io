@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 07:08:13 +0545</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>oracle</title>
+      <link>/tags/oracle/</link>
+      <pubDate>Tue, 21 Apr 2020 07:08:13 +0545</pubDate>
+      
+      <guid>/tags/oracle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rms</title>
+      <link>/tags/rms/</link>
+      <pubDate>Tue, 21 Apr 2020 07:08:13 +0545</pubDate>
+      
+      <guid>/tags/rms/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithm</title>
@@ -80,24 +98,6 @@
       <pubDate>Sun, 19 Apr 2020 19:28:53 +0545</pubDate>
       
       <guid>/tags/vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>graph</title>
-      <link>/tags/graph/</link>
-      <pubDate>Sun, 19 Apr 2020 19:24:20 +0545</pubDate>
-      
-      <guid>/tags/graph/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>/tags/git/</link>
-      <pubDate>Sun, 19 Apr 2020 18:43:16 +0545</pubDate>
-      
-      <guid>/tags/git/</guid>
       <description></description>
     </item>
     

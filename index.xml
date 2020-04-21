@@ -12,6 +12,20 @@
     
     
     <item>
+      <title>RMS recon</title>
+      <link>/braindump/2020/04/rms-recon/</link>
+      <pubDate>Tue, 21 Apr 2020 07:08:13 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/rms-recon/</guid>
+      <description>TRAN TRAN_A Index: 1,1,1,
+  PACK_IND
+Indicates whether or not the item is a pack item.
+    TRAN_CODE
+Tran_code : Identifies the transaction type. Valid values are: 0 Ordering 1 Net Sales 2 Net Sales VAT Exclusive 3 Non-inventory Items Sales/Returns 4 Returns 5 Non-inventory VAT Exclusive Sales 6 Deals income (Sales) 7 Deals income (Purchases) 8 Fixed Income Accrual 10
+    UNITS</description>
+    </item>
+    
+    <item>
       <title>Algorithms</title>
       <link>/braindump/2020/04/algorithms/</link>
       <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
@@ -98,16 +112,6 @@ Intro &amp;ndash; Cayley Transform: Unit half circle transform &amp;ndash; usefu
       <guid>/braindump/2020/04/graph-data-structures/</guid>
       <description>&amp;ndash;tags: Data Structures
 Graphs:  Siblings and parent nodes have restriction in trees so graph removes it No starting node or root node Transport or Network points can be explained using graphs Vertices and edges: Sets of vertices and edges Directed or undirected graph ; also weighted graph to give weight to the edges ; also can be used for priority Linked list, Tress , Heaps are specific graphs with some sorts of constraints  </description>
-    </item>
-    
-    <item>
-      <title>Array Data Structures</title>
-      <link>/braindump/2020/04/array-data-structures/</link>
-      <pubDate>Tue, 21 Apr 2020 05:51:27 +0545</pubDate>
-      
-      <guid>/braindump/2020/04/array-data-structures/</guid>
-      <description>&amp;ndash;tags: Data Structures
-Arrays:  Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory  Multidimensional arrays:  Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array  Jagged arrays:  Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations  Resizable arrays:  all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable  NSMutableArray has mutability    Question:  Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag   Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array  Sorting in an array:  Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted  Arrays of custom objects SORT:  Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects  Searching arrays:  Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations  Built in search behavior:  .</description>
     </item>
     
   </channel>
