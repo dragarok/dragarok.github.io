@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ssh on Alok&#39;s Blog</title>
-    <link>/tags/ssh/</link>
+    <link>https://dragarok.github.io/tags/ssh/</link>
     <description>Recent content in ssh on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:25 +0545</lastBuildDate>
     
-	<atom:link href="/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Emacs Tramp</title>
-      <link>/braindump/2020/04/emacs-tramp/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/emacs-tramp/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:25 +0545</pubDate>
       
-      <guid>/braindump/2020/04/emacs-tramp/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/emacs-tramp/</guid>
       <description>Tramp mode for sshing  Emacs Tramp tricks C-x C-f /ssh:root@ssb.willschenk.com:/etc/host This command will ssh into it and now projects can be browsed into emacs as if it were right here on my local machine. C-x C-f also need not be done since I have bound it to Spc-Spc. C-x C-f /sudo::/etc/hosts : edit file as sudo   Also has some tips for docker  </description>
     </item>
     

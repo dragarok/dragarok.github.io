@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mathematics on Alok&#39;s Blog</title>
-    <link>/tags/mathematics/</link>
+    <link>https://dragarok.github.io/tags/mathematics/</link>
     <description>Recent content in mathematics on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:11 +0545</lastBuildDate>
     
-	<atom:link href="/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Matlab</title>
-      <link>/braindump/2020/04/matlab/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/matlab/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:11 +0545</pubDate>
       
-      <guid>/braindump/2020/04/matlab/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/matlab/</guid>
       <description>&amp;ndash; %% to make a code section Ctrl + Enter to run a code section
 &amp;ndash;	%{
 %} to make a multiline comment but you cannot enter any text on the first line : else it interprets the thing as comment and rest as code</description>

@@ -10,7 +10,7 @@
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="/braindump/2020/04/selinux/" />
+<link rel="canonical" href="https://dragarok.github.io/braindump/2020/04/selinux/" />
 
 
     <title>
@@ -45,12 +45,12 @@
  Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot:  autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7.   check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as:  semanage port -a -t http_port_t -p tcp 8585   chcon to change the context   ">
 <meta itemprop="dateModified" content="2020-04-19T16:10:57&#43;05:45" />
 <meta itemprop="wordCount" content="134">
-<meta itemprop="image" content="/"/>
+<meta itemprop="image" content="https://dragarok.github.io"/>
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="/"/>
+<meta name="twitter:image" content="https://dragarok.github.io"/>
 
 <meta name="twitter:title" content="Selinux"/>
 <meta name="twitter:description" content="Selinux Sysadmin&rsquo;s guide on selinux:
@@ -93,7 +93,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/books/">Books</a></li><li><a href="/braindump/">Braindump</a></li>
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
     </ul>
 </nav>
 
@@ -130,7 +130,7 @@
 
         <article>
             <h1 class="post-title">
-                <a href="/braindump/2020/04/selinux/">Selinux</a>
+                <a href="https://dragarok.github.io/braindump/2020/04/selinux/">Selinux</a>
             </h1>
 
             
@@ -190,7 +190,7 @@ logfile, content directory, process, ports</li>
                 <div class="pagination__buttons">
                     
                         <span class="button previous">
-                            <a href="/braindump/2020/04/zettlekasten/">
+                            <a href="https://dragarok.github.io/braindump/2020/04/zettlekasten/">
                                 <span class="button__icon">←</span>
                                 <span class="button__text">Zettlekasten</span>
                             </a>
@@ -199,7 +199,7 @@ logfile, content directory, process, ports</li>
 
                     
                         <span class="button next">
-                            <a href="/braindump/2020/04/question/">
+                            <a href="https://dragarok.github.io/braindump/2020/04/question/">
                                 <span class="button__text">Question</span>
                                 <span class="button__icon">→</span>
                             </a>
@@ -220,7 +220,7 @@ logfile, content directory, process, ports</li>
         <div class="footer__content">
             <span>&copy; 2020</span>
             
-                <span><a href="/">Alok Regmi</a></span>
+                <span><a href="https://dragarok.github.io">Alok Regmi</a></span>
             
                 
             <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>

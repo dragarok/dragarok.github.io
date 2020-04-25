@@ -1,19 +1,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Alok&#39;s Blog</title>
-        <link>/posts/</link>
+        <link>https://dragarok.github.io/posts/</link>
         <description>Recent content in Posts on Alok&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Sun, 19 Apr 2020 16:26:42 +0545</lastBuildDate>
-        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://dragarok.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Tentacles of Thoughts</title>
-            <link>/posts/2020/04/tentacles-of-thoughts/</link>
+            <link>https://dragarok.github.io/posts/2020/04/tentacles-of-thoughts/</link>
             <pubDate>Sun, 19 Apr 2020 16:26:42 +0545</pubDate>
             
-            <guid>/posts/2020/04/tentacles-of-thoughts/</guid>
+            <guid>https://dragarok.github.io/posts/2020/04/tentacles-of-thoughts/</guid>
             <description>Inside the dark vents of my body,
 Lies the vines: of growing darkness.
 Trying to find it&amp;rsquo;s way to my brain,
@@ -70,10 +70,10 @@ The stories of failures,</description>
         
         <item>
             <title>Peak</title>
-            <link>/posts/2020/04/peak/</link>
+            <link>https://dragarok.github.io/posts/2020/04/peak/</link>
             <pubDate>Sun, 19 Apr 2020 16:22:45 +0545</pubDate>
             
-            <guid>/posts/2020/04/peak/</guid>
+            <guid>https://dragarok.github.io/posts/2020/04/peak/</guid>
             <description>Peak they saw,
 Thought they made,
 Of the day when their steps would be on the mountain peak,

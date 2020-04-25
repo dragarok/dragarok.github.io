@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ctf on Alok&#39;s Blog</title>
-    <link>/tags/ctf/</link>
+    <link>https://dragarok.github.io/tags/ctf/</link>
     <description>Recent content in ctf on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:46 +0545</lastBuildDate>
     
-	<atom:link href="/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Web CTF</title>
-      <link>/braindump/2020/04/web-ctf/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/web-ctf/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:46 +0545</pubDate>
       
-      <guid>/braindump/2020/04/web-ctf/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/web-ctf/</guid>
       <description>http://pentest-tools.com/
 https://www.shodan.io/
 https://www.zoomeye.org/
@@ -62,10 +62,10 @@ Encoding converter http://tool.leavesongs.com/</description>
     
     <item>
       <title>CTF New</title>
-      <link>/braindump/2020/04/ctf-new/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/ctf-new/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:08 +0545</pubDate>
       
-      <guid>/braindump/2020/04/ctf-new/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/ctf-new/</guid>
       <description>CTF New attacks and tools:
 Hash extender attack: https://github.com/iagox86/hash%5Fextender
 Decrypt substitution cipher using guesses: https://quipqiup.com/
@@ -76,10 +76,10 @@ The most common use is to pass just the encrypted file and the most frequent cha
     
     <item>
       <title>CTF Resource</title>
-      <link>/braindump/2020/04/ctf-resource/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/ctf-resource/</link>
       <pubDate>Sun, 19 Apr 2020 15:58:47 +0545</pubDate>
       
-      <guid>/braindump/2020/04/ctf-resource/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/ctf-resource/</guid>
       <description>CTFs Crackstation.net : NTLM, md4, md5 hashes match with existing hashtable from crackstation
 Some useful commands:
   cat | head -n &amp;lt;line_number&amp;gt; | tail -1 : get n&amp;rsquo;th line_number
