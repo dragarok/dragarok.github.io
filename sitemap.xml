@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/blogging/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/emacs/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/emacs-hugo-blogging/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>/books/13-steps-to-bloody-good-luck/</loc>
     <lastmod>2020-04-26T03:08:39+05:45</lastmod>
   </url>
@@ -678,11 +708,6 @@
   </url>
   
   <url>
-    <loc>/braindump/</loc>
-    <lastmod>2020-04-24T03:55:25+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <lastmod>2020-04-24T03:55:25+05:45</lastmod>
   </url>
@@ -694,11 +719,6 @@
   
   <url>
     <loc>/categories/science/</loc>
-    <lastmod>2020-04-24T03:55:25+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-04-24T03:55:25+05:45</lastmod>
   </url>
   
@@ -908,11 +928,6 @@
   </url>
   
   <url>
-    <loc>/tags/emacs/</loc>
-    <lastmod>2020-04-19T16:17:16+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>/braindump/2020/04/emacs-shortcuts/</loc>
     <lastmod>2020-04-19T16:17:16+05:45</lastmod>
   </url>
@@ -1055,21 +1070,6 @@
   <url>
     <loc>/braindump/2020/04/web-ctf/</loc>
     <lastmod>2020-04-19T16:00:46+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/blogging/</loc>
-    <lastmod>2020-04-19T16:00:45+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/braindump/2020/04/emacs-hugo-blogging/</loc>
-    <lastmod>2020-04-19T16:00:45+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hugo/</loc>
-    <lastmod>2020-04-19T16:00:45+05:45</lastmod>
   </url>
   
   <url>
