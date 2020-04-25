@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>security on Alok&#39;s Blog</title>
-    <link>https://dragarok.github.io/categories/security/</link>
+    <link>/categories/security/</link>
     <description>Recent content in security on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:08 +0545</lastBuildDate>
     
-	<atom:link href="https://dragarok.github.io/categories/security/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/security/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CTF New</title>
-      <link>https://dragarok.github.io/braindump/2020/04/ctf-new/</link>
+      <link>/braindump/2020/04/ctf-new/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:08 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/ctf-new/</guid>
+      <guid>/braindump/2020/04/ctf-new/</guid>
       <description>CTF New attacks and tools:
 Hash extender attack: https://github.com/iagox86/hash%5Fextender
 Decrypt substitution cipher using guesses: https://quipqiup.com/

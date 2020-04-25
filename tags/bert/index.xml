@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bert on Alok&#39;s Blog</title>
-    <link>https://dragarok.github.io/tags/bert/</link>
+    <link>/tags/bert/</link>
     <description>Recent content in bert on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:25 +0545</lastBuildDate>
     
-	<atom:link href="https://dragarok.github.io/tags/bert/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/bert/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bert Tokenization</title>
-      <link>https://dragarok.github.io/braindump/2020/04/bert-tokenization/</link>
+      <link>/braindump/2020/04/bert-tokenization/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:25 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/bert-tokenization/</guid>
+      <guid>/braindump/2020/04/bert-tokenization/</guid>
       <description>&amp;quot;&amp;rdquo;&amp;rdquo; Adapted from Oliver Atanaszov&amp;rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &amp;quot;&amp;rdquo;&amp;rdquo; from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm
 n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256
 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;]

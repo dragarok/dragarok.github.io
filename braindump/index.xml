@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Braindumps on Alok&#39;s Blog</title>
-    <link>https://dragarok.github.io/braindump/</link>
+    <link>/braindump/</link>
     <description>Recent content in Braindumps on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Apr 2020 04:53:19 +0545</lastBuildDate>
     
-	<atom:link href="https://dragarok.github.io/braindump/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/braindump/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Emacs Hugo Blogging</title>
-      <link>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</link>
+      <link>/braindump/2020/04/emacs-hugo-blogging/</link>
       <pubDate>Sun, 26 Apr 2020 04:53:19 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</guid>
+      <guid>/braindump/2020/04/emacs-hugo-blogging/</guid>
       <description>:ID: 0dacbf0d-550d-4db9-8e15-6ffcede1107c
 Hugo blogging   Liked themes:
  Meme theme Harbor Cortex &amp;ndash;JethroKuan Hello friend ng rhazdon Beautiful Hugo   Blogging org mode Font    Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well
@@ -26,20 +26,20 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>Beyond Higgs Boson</title>
-      <link>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</link>
+      <link>/braindump/2020/04/beyond-higgs-boson/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</guid>
+      <guid>/braindump/2020/04/beyond-higgs-boson/</guid>
       <description>&amp;ndash; link: Beyond Higgs: The Wild Frontier of Particle Physics - YouTube - Brave
 What are these people looking for?  Supersymmetry  Mathematical idea: Not still experimentally verified. Pencil standing on it&amp;rsquo;s tip Analogy: Though people found the Higgs out there, there is still no understanding of how the higgs is standing in the standard model. Physicists are looking for the support for the pencil if it is being held by a string or being held by hand.</description>
     </item>
     
     <item>
       <title>Google Dorks</title>
-      <link>https://dragarok.github.io/braindump/2020/04/google-dorks/</link>
+      <link>/braindump/2020/04/google-dorks/</link>
       <pubDate>Thu, 23 Apr 2020 16:31:35 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/google-dorks/</guid>
+      <guid>/braindump/2020/04/google-dorks/</guid>
       <description>What Is Google Dorks? It is basically an advanced google search!
 I have included four types of google dorks in this collection: Google dorks for SQL injection, Google dorks for Local File Inclusion, Google dorks For open CCTV cams and Google dorks for sensitive information.
 Copy and paste the below google dorks on the search engine and have fun!
@@ -54,69 +54,69 @@ Google Dorks For SQL Injection:
     
     <item>
       <title>Algorithms</title>
-      <link>https://dragarok.github.io/braindump/2020/04/algorithms/</link>
+      <link>/braindump/2020/04/algorithms/</link>
       <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/algorithms/</guid>
+      <guid>/braindump/2020/04/algorithms/</guid>
       <description>Algorithms Basic rules of complexity definition for removing terms:
  Multiplicative constants can be omitted: 14n2 becomes n2. n^a dominates n^b if a &amp;gt; b: for instance, n^2 dominates n. Any exponential dominates any polynomial: 3^n dominates n^5 (it even dominates 2^n). Likewise, any polynomial dominates any logarithm: n dominates (log n)^3. This also means, for example, that n^2 dominates n* log n.  Techniques to think of counter examples:</description>
     </item>
     
     <item>
       <title>Graph Signal Processing</title>
-      <link>https://dragarok.github.io/braindump/2020/04/graph-signal-processing/</link>
+      <link>/braindump/2020/04/graph-signal-processing/</link>
       <pubDate>Tue, 21 Apr 2020 05:57:03 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/graph-signal-processing/</guid>
+      <guid>/braindump/2020/04/graph-signal-processing/</guid>
       <description>&amp;ndash; tags: Graph Convolutions
 Basics Spectral Graph Convolutional Network:  GSP is the key to generalizing convolutions, allowing us to build functions that can take into account both the overall structure of the graph and the individual properties of the graph’s components. It is the graph fourier transform that allows one to introduce the notion of a “bandwidth” or “smoothness” to a graph In GCNs, node features and attributes are represented by “signals”.</description>
     </item>
     
     <item>
       <title>Graph Convolutions</title>
-      <link>https://dragarok.github.io/braindump/2020/04/graph-convolutions/</link>
+      <link>/braindump/2020/04/graph-convolutions/</link>
       <pubDate>Tue, 21 Apr 2020 05:54:09 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/graph-convolutions/</guid>
+      <guid>/braindump/2020/04/graph-convolutions/</guid>
       <description>Graph Conv &amp;ndash; What is inductive bias ? &amp;ndash; Inductive bias of a learning algorithm is the set of assumptions that the learner uses to predict outputs given inputs that it has not encountered. &amp;ndash; Neural Networks tend to discard the features that have very less significance in task at hand. &amp;ndash; Similary, GNNs have bias: By structuring the data in a way that prioritizes certain patterns, we can improve model performance, even if the data is the same.</description>
     </item>
     
     <item>
       <title>Fast GraphConv Nets</title>
-      <link>https://dragarok.github.io/braindump/2020/04/fast-graphconv-nets/</link>
+      <link>/braindump/2020/04/fast-graphconv-nets/</link>
       <pubDate>Tue, 21 Apr 2020 05:53:45 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/fast-graphconv-nets/</guid>
+      <guid>/braindump/2020/04/fast-graphconv-nets/</guid>
       <description>&amp;ndash; tags: Graph Signal Processing
 Intro &amp;ndash; The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute. &amp;ndash; O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&amp;rsquo;s laplacian. &amp;ndash; Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals, which allowed for batch training, reducing the overall training time.</description>
     </item>
     
     <item>
       <title>MoNets</title>
-      <link>https://dragarok.github.io/braindump/2020/04/monets/</link>
+      <link>/braindump/2020/04/monets/</link>
       <pubDate>Tue, 21 Apr 2020 05:53:35 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/monets/</guid>
+      <guid>/braindump/2020/04/monets/</guid>
       <description>&amp;ndash; tags: Graph Signal Processing
 MoNets: &amp;ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. &amp;ndash; Contributions: &amp;ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches &amp;ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) &amp;ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks &amp;ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input.</description>
     </item>
     
     <item>
       <title>Motifs</title>
-      <link>https://dragarok.github.io/braindump/2020/04/motifs/</link>
+      <link>/braindump/2020/04/motifs/</link>
       <pubDate>Tue, 21 Apr 2020 05:53:26 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/motifs/</guid>
+      <guid>/braindump/2020/04/motifs/</guid>
       <description>&amp;ndash; tags: Graph Signal Processing
 Intro &amp;ndash; Essentially, the mode partitions input graphs into motifs which are unique substructures of x length, such that any graph in the dataset can be built by some combination of the motifs. &amp;ndash; The motifs take into directionality of edges into consideration, a detail in graph theory that has been omitted in previous graph learning approaches. &amp;ndash; Each convolutional layer of a MotifNet has a multivariate matrix polynomial (a fancy kernel where each element is a polynomial with multiple variables), which is applied to and learns from the motif’s Laplacian matrices.</description>
     </item>
     
     <item>
       <title>ChebNets</title>
-      <link>https://dragarok.github.io/braindump/2020/04/chebnets/</link>
+      <link>/braindump/2020/04/chebnets/</link>
       <pubDate>Tue, 21 Apr 2020 05:53:09 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/chebnets/</guid>
+      <guid>/braindump/2020/04/chebnets/</guid>
       <description>&amp;ndash; tags: Graph Signal Processing
 ChebNets &amp;ndash; Spectral convolutions are defined as the multiplication of a signal (node features/attributes) by a kernel. &amp;ndash; Thus similar to original convolution operation &amp;ndash; The kernel used in a spectral convolution made of Chebyshev polynomials of the diagonal matrix of Laplacian eigenvalues &amp;ndash; The kernel equals the sum of all Chebyshev polynomial kernels applied to the diagonal matrix of scaled Laplacian eigenvalues for each order of k up to K-1.</description>
     </item>

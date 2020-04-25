@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>guide on Alok&#39;s Blog</title>
-    <link>https://dragarok.github.io/tags/guide/</link>
+    <link>/tags/guide/</link>
     <description>Recent content in guide on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:38 +0545</lastBuildDate>
     
-	<atom:link href="https://dragarok.github.io/tags/guide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/guide/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Subconscious Reprogramming</title>
-      <link>https://dragarok.github.io/braindump/2020/04/subconscious-reprogramming/</link>
+      <link>/braindump/2020/04/subconscious-reprogramming/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:38 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/subconscious-reprogramming/</guid>
+      <guid>/braindump/2020/04/subconscious-reprogramming/</guid>
       <description>Link:How To Reprogram Subconscious Mind: The one cycle that determines your fate (Dirty Secret) - YouTube - Brave
 Overall flow: Thoughts[Incoming/Outgoing] &amp;ndash;&amp;gt; Emotion Emotions &amp;ndash;&amp;gt; Belief Belief &amp;ndash;&amp;gt; RAS ( Reticular Activating System ) RAS &amp;ndash;&amp;gt; Confirmation Confirmation &amp;ndash;&amp;gt; Conviction
  Thoughts and emotions switch between each other for some time to form belief. You don&amp;rsquo;t choose incoming thoughts: these happen and most of us subconsciously create emotion out of it; then switch back and forth between more thoughts and more emotions.</description>
@@ -24,10 +24,10 @@ Overall flow: Thoughts[Incoming/Outgoing] &amp;ndash;&amp;gt; Emotion Emotions &
     
     <item>
       <title>Practical Guide to Debating</title>
-      <link>https://dragarok.github.io/braindump/2020/04/practical-guide-to-debating/</link>
+      <link>/braindump/2020/04/practical-guide-to-debating/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:33 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/practical-guide-to-debating/</guid>
+      <guid>/braindump/2020/04/practical-guide-to-debating/</guid>
       <description>Page 16 Highlight: &amp;ldquo;Anticipating and engaging with a multiplicity of views are required.&amp;rdquo;
   Page 19 Highlight:
  Speaking —talking out loud fluently and without hesitation Arguing —condensing what you say into a persuasive point(s) Listening —hearing and understanding the points others make Synthesizing —matching the points you and others make Arranging —structuring your points into a persuasive speec
@@ -37,10 +37,10 @@ Overall flow: Thoughts[Incoming/Outgoing] &amp;ndash;&amp;gt; Emotion Emotions &
     
     <item>
       <title>Emacs Windows Installation</title>
-      <link>https://dragarok.github.io/braindump/2020/04/emacs-windows-installation/</link>
+      <link>/braindump/2020/04/emacs-windows-installation/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:31 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/emacs-windows-installation/</guid>
+      <guid>/braindump/2020/04/emacs-windows-installation/</guid>
       <description>Problems with installing   Not having msys2 so that pdftools can&amp;rsquo;t build [install msys]
   Not having mingw so that sqlite can&amp;rsquo;t build for org-roam [choco install mingw] Don&amp;rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&amp;rsquo;s bin to the PATH.
 pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick   Then find a version that supports modules : emax64.</description>

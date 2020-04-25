@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>objectoriented on Alok&#39;s Blog</title>
-    <link>https://dragarok.github.io/tags/objectoriented/</link>
+    <link>/tags/objectoriented/</link>
     <description>Recent content in objectoriented on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:34 +0545</lastBuildDate>
     
-	<atom:link href="https://dragarok.github.io/tags/objectoriented/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/objectoriented/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Object Oriented Design</title>
-      <link>https://dragarok.github.io/braindump/2020/04/object-oriented-design/</link>
+      <link>/braindump/2020/04/object-oriented-design/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:34 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/object-oriented-design/</guid>
+      <guid>/braindump/2020/04/object-oriented-design/</guid>
       <description>Object orientation is a paradigm that interacts with objects having logic and data by themselves. Object in a real world is similar to the object in programming. The objects have their unique identity. One object might contain other objects but cannot actually replace an object. Multiple attributes are present in an object. Identity sepatate from others. Data to describe it&amp;rsquo;s current states. Class is a blueprint of the house and house is a object.</description>
     </item>
     

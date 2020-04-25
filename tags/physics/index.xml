@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>physics on Alok&#39;s Blog</title>
-    <link>https://dragarok.github.io/tags/physics/</link>
+    <link>/tags/physics/</link>
     <description>Recent content in physics on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0545</lastBuildDate>
     
-	<atom:link href="https://dragarok.github.io/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/physics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Beyond Higgs Boson</title>
-      <link>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</link>
+      <link>/braindump/2020/04/beyond-higgs-boson/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</guid>
+      <guid>/braindump/2020/04/beyond-higgs-boson/</guid>
       <description>&amp;ndash; link: Beyond Higgs: The Wild Frontier of Particle Physics - YouTube - Brave
 What are these people looking for?  Supersymmetry  Mathematical idea: Not still experimentally verified. Pencil standing on it&amp;rsquo;s tip Analogy: Though people found the Higgs out there, there is still no understanding of how the higgs is standing in the standard model. Physicists are looking for the support for the pencil if it is being held by a string or being held by hand.</description>
     </item>

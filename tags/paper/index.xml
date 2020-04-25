@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>paper on Alok&#39;s Blog</title>
-    <link>https://dragarok.github.io/tags/paper/</link>
+    <link>/tags/paper/</link>
     <description>Recent content in paper on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:52 +0545</lastBuildDate>
     
-	<atom:link href="https://dragarok.github.io/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Paper Reading 3 pass</title>
-      <link>https://dragarok.github.io/braindump/2020/04/paper-reading-3-pass/</link>
+      <link>/braindump/2020/04/paper-reading-3-pass/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:30 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/paper-reading-3-pass/</guid>
+      <guid>/braindump/2020/04/paper-reading-3-pass/</guid>
       <description>Reference: https://codearsonist.com/reading-for-programmers
 3 pass Overview:  Verify  Value Background   Grasp  Thought Process Highlights Diagram Unknowns References   Understand  Holes Implementations Notes    Process Verify  This provides High level view of the contents. Start with references usually. Mark the cited papers I&amp;rsquo;ve read as to get previous notes I have made and verify the background. Title, Abstract, Introduction&amp;ndash;&amp;gt; Read very carefully Scan through to find diagrams, equations.</description>
     </item>

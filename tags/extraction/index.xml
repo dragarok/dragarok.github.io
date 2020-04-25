@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>extraction on Alok&#39;s Blog</title>
-    <link>https://dragarok.github.io/tags/extraction/</link>
+    <link>/tags/extraction/</link>
     <description>Recent content in extraction on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:07 +0545</lastBuildDate>
     
-	<atom:link href="https://dragarok.github.io/tags/extraction/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/extraction/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ETL Extraction</title>
-      <link>https://dragarok.github.io/braindump/2020/04/etl-extraction/</link>
+      <link>/braindump/2020/04/etl-extraction/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:07 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/etl-extraction/</guid>
+      <guid>/braindump/2020/04/etl-extraction/</guid>
       <description>EDW enterprise data warehouse
 RPM Retail price management
 REiM Retail Invoice Match

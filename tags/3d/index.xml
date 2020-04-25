@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3d on Alok&#39;s Blog</title>
-    <link>https://dragarok.github.io/tags/3d/</link>
+    <link>/tags/3d/</link>
     <description>Recent content in 3d on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:00 +0545</lastBuildDate>
     
-	<atom:link href="https://dragarok.github.io/tags/3d/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/3d/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>3ddatarepresentation</title>
-      <link>https://dragarok.github.io/braindump/2020/04/3ddatarepresentation/</link>
+      <link>/braindump/2020/04/3ddatarepresentation/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/3ddatarepresentation/</guid>
+      <guid>/braindump/2020/04/3ddatarepresentation/</guid>
       <description>3D data representations:
   Point Cloud(PointNet): &amp;ndash; More concretely, given points in a point cloud, the network needs to learn unique features that are invariant to the permutations of this input data, since the ordering of points fed into a network doesn&amp;rsquo;t impact the underlying geometry. &amp;ndash; network should be robust to transformations of the point cloud — rotations, translations and scaling should not impact prediction. &amp;ndash; To ensure invariance across input ordering, the key insight behind PointNet is using a simple symmetric function that produces a consistent output for any ordering of the input (examples in this class of functions include addition and multiplication) &amp;ndash; So, we need to have a symmetric function &amp;lsquo;f&amp;rsquo; that converts input points into k-dim vector f = gamma * g(h(x1),&amp;hellip;.</description>
     </item>
