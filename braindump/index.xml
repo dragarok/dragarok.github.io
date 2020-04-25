@@ -6,10 +6,38 @@
     <description>Recent content in Braindumps on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0545</lastBuildDate>
     
 	<atom:link href="/braindump/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Beyond Higgs Boson</title>
+      <link>/braindump/2020/04/beyond-higgs-boson/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/beyond-higgs-boson/</guid>
+      <description>&amp;ndash; link: Beyond Higgs: The Wild Frontier of Particle Physics - YouTube - Brave
+What are these people looking for?  Supersymmetry  Mathematical idea: Not still experimentally verified. Pencil standing on it&amp;rsquo;s tip Analogy: Though people found the Higgs out there, there is still no understanding of how the higgs is standing in the standard model. Physicists are looking for the support for the pencil if it is being held by a string or being held by hand.</description>
+    </item>
+    
+    <item>
+      <title>Google Dorks</title>
+      <link>/braindump/2020/04/google-dorks/</link>
+      <pubDate>Thu, 23 Apr 2020 16:31:35 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/google-dorks/</guid>
+      <description>What Is Google Dorks? It is basically an advanced google search!
+I have included four types of google dorks in this collection: Google dorks for SQL injection, Google dorks for Local File Inclusion, Google dorks For open CCTV cams and Google dorks for sensitive information.
+Copy and paste the below google dorks on the search engine and have fun!
+Google Dorks For SQL Injection:
+•inurl:index.php?id=
+•inurl:trainers.php?id=
+•inurl:buy.php?category=
+•inurl:article.php?ID=
+•inurl:play_old.php?id=
+•inurl:declaration_more.php?decl_id=</description>
+    </item>
     
     <item>
       <title>Algorithms</title>
@@ -88,26 +116,6 @@ ChebNets &amp;ndash; Spectral convolutions are defined as the multiplication of 
       <guid>/braindump/2020/04/cayley-nets/</guid>
       <description>&amp;ndash; tags: Graph Signal Processing
 Intro &amp;ndash; Cayley Transform: Unit half circle transform &amp;ndash; useful notion of localization &amp;ndash; Cayley has proven to perform better on a wide range of Graph Learning tasks due to their ability to detect narrow frequency bands of importance during training, and to specialize on them while being well-localized on the graph. </description>
-    </item>
-    
-    <item>
-      <title>Graph Data Structures</title>
-      <link>/braindump/2020/04/graph-data-structures/</link>
-      <pubDate>Tue, 21 Apr 2020 05:52:14 +0545</pubDate>
-      
-      <guid>/braindump/2020/04/graph-data-structures/</guid>
-      <description>&amp;ndash;tags: Data Structures
-Graphs:  Siblings and parent nodes have restriction in trees so graph removes it No starting node or root node Transport or Network points can be explained using graphs Vertices and edges: Sets of vertices and edges Directed or undirected graph ; also weighted graph to give weight to the edges ; also can be used for priority Linked list, Tress , Heaps are specific graphs with some sorts of constraints  </description>
-    </item>
-    
-    <item>
-      <title>Array Data Structures</title>
-      <link>/braindump/2020/04/array-data-structures/</link>
-      <pubDate>Tue, 21 Apr 2020 05:51:27 +0545</pubDate>
-      
-      <guid>/braindump/2020/04/array-data-structures/</guid>
-      <description>&amp;ndash;tags: Data Structures
-Arrays:  Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory  Multidimensional arrays:  Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array  Jagged arrays:  Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations  Resizable arrays:  all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable  NSMutableArray has mutability    Question:  Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag   Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array  Sorting in an array:  Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted  Arrays of custom objects SORT:  Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects  Searching arrays:  Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations  Built in search behavior:  .</description>
     </item>
     
   </channel>

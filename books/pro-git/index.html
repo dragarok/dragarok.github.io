@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="### Author:
+  loc 102 - Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+  loc 165 - Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/books/pro-git/" />
+
+
+    <title>
+        
+            Pro Git :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Pro Git">
+<meta itemprop="description" content="### Author:
+  loc 102 - Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+  loc 165 - Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.">
+<meta itemprop="dateModified" content="2020-04-26T03:07:21&#43;05:45" />
+<meta itemprop="wordCount" content="704">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Pro Git"/>
+<meta name="twitter:description" content="### Author:
+  loc 102 - Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+  loc 165 - Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-26 03:07:21 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/books/">Books</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/books/pro-git/">Pro Git</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>### Author:</p>
+<ul>
+<li>
+<p>loc 102 - Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.</p>
+</li>
+<li>
+<p>loc 165 - Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.</p>
+</li>
+<li>
+<p>loc 175 - Most operations in Git only need local files and resources to operate – generally no information is needed from another computer on your network.</p>
+</li>
+<li>
+<p>loc 182 - This also means that there is very little you can’t do if you’re offline or off VPN.</p>
+</li>
+<li>
+<p>loc 188 - Everything in Git is check-summed before it is stored and is then referred to by that checksum. This means it’s impossible to change the contents of any file or directory without Git knowing about it.</p>
+</li>
+<li>
+<p>loc 196 - When you do actions in Git, nearly all of them only add data to the Git database.</p>
+</li>
+<li>
+<p>loc 203 - Git has three main states that your files can reside in: committed, modified, and staged. Committed means that the data is safely stored in your local database. Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.</p>
+</li>
+<li>
+<p>loc 296 - The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:</p>
+</li>
+<li>
+<p>loc 303 - you can configure the default text editor that will be used when Git needs you to type in a message.</p>
+</li>
+<li>
+<p>loc 316 - If you want to check your settings, you can use the git config &ndash;list command to list all the settings</p>
+</li>
+<li>
+<p>loc 328 - you can get the manpage help for the config command by running $ git help config</p>
+</li>
+<li>
+<p>loc 331 - try the #git or #github channel on the Freenode IRC server (irc.freenode.net). These channels are regularly filled with hundreds of people who are all very knowledgeable about Git and are often willing to help.</p>
+</li>
+<li>
+<p>loc 346 - git init This creates a new subdirectory named .git that contains all of your necessary repository files – a Git repository skeleton. At this point, nothing in your project is tracked yet.</p>
+</li>
+<li>
+<p>loc 364 - git clone <a href="https://github.com/libgit2/libgit2">https://github.com/libgit2/libgit2</a> That creates a directory named “libgit2”, initializes a .git directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version.</p>
+</li>
+<li>
+<p>loc 384 - The main tool you use to determine which files are in which state is the git status command.</p>
+</li>
+<li>
+<p>loc 396 - Untracked basically means that Git sees a file you didn’t have in the previous snapshot (commit); Git won’t start including it in your commit snapshots until you explicitly tell it to do so.</p>
+</li>
+<li>
+<p>loc 401 - To begin tracking the README file, you can run this: $ git add README</p>
+</li>
+<li>
+<p>loc 419 - git add is a multipurpose command – you use it to begin tracking new files, to stage files, and to do other things like marking merge-conflicted files as resolved.</p>
+</li>
+<li>
+<p>loc 434 - Git stages a file exactly as it is when you run the git add command.</p>
+</li>
+<li>
+<p>loc 459 - The rules for the patterns you can put in the .gitignore file are as follows: Blank lines or lines starting with # are ignored. Standard glob patterns work. You can start patterns with a forward slash (<em>) to avoid recursivity. You can end patterns with a forward slash (</em>) to specify a directory. You can negate a pattern by starting it with an exclamation point (!).</p>
+</li>
+<li>
+<p>loc 498 - git diff by itself doesn’t show all changes made since your last commit – only changes that are still unstaged</p>
+</li>
+<li>
+<p>loc 511 - git diff &ndash;cached to see what you’ve staged so far (&ndash;staged and &ndash;cached are synonyms):</p>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

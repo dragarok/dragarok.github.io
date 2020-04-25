@@ -3,22 +3,737 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/books/13-steps-to-bloody-good-luck/</loc>
+    <lastmod>2020-04-26T03:08:39+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/</loc>
+    <lastmod>2020-04-26T03:08:39+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes/</loc>
+    <lastmod>2020-04-26T03:08:38+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/</loc>
+    <lastmod>2020-04-26T03:08:37+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/a-guide-to-the-good-life-the-ancient-art-of-stoic-joy/</loc>
+    <lastmod>2020-04-26T03:08:36+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/android-concurrency-android-deep-dive/</loc>
+    <lastmod>2020-04-26T03:08:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/android-design-patterns-and-best-practice/</loc>
+    <lastmod>2020-04-26T03:08:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/android-programming-in-a-day/</loc>
+    <lastmod>2020-04-26T03:08:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/antenna-theory-analysis-and-design/</loc>
+    <lastmod>2020-04-26T03:08:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/a-tale-of-two-cities/</loc>
+    <lastmod>2020-04-26T03:08:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/anything-you-want-40-lessons-for-a-new-kind-of-entrepreneur/</loc>
+    <lastmod>2020-04-26T03:08:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/awaken-the-giant-within/</loc>
+    <lastmod>2020-04-26T03:08:32+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/bitcoin-a-concise-history/</loc>
+    <lastmod>2020-04-26T03:08:32+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/brad-feldjason-mendelson/</loc>
+    <lastmod>2020-04-26T03:08:31+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/brave-new-world/</loc>
+    <lastmod>2020-04-26T03:08:30+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/building-machine-learning-projects-with-tensorflow/</loc>
+    <lastmod>2020-04-26T03:08:30+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/chaos-monkeys-obscene-fortune-and-random-failure-in-silicon-valley/</loc>
+    <lastmod>2020-04-26T03:08:29+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/childhoods-end/</loc>
+    <lastmod>2020-04-26T03:08:28+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/choose-yourself/</loc>
+    <lastmod>2020-04-26T03:08:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/clean-architecture/</loc>
+    <lastmod>2020-04-26T03:08:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/clarke-adam/</loc>
+    <lastmod>2020-04-26T03:08:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/coa2-central-processing-unit/</loc>
+    <lastmod>2020-04-26T03:08:24+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/coa3-control-unit/</loc>
+    <lastmod>2020-04-26T03:08:23+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/coa4-pipeline-and-vector-processing/</loc>
+    <lastmod>2020-04-26T03:08:22+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/coa5-computer-arithmetic/</loc>
+    <lastmod>2020-04-26T03:08:22+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/computer-security/</loc>
+    <lastmod>2020-04-26T03:08:21+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/conscious/</loc>
+    <lastmod>2020-04-26T03:08:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/cosmos/</loc>
+    <lastmod>2020-04-26T03:08:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/countdown-to-zero-day/</loc>
+    <lastmod>2020-04-26T03:08:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/debra-cameronjames-elliottmarc-loyeric-s.-raymondbill-rosenblatt/</loc>
+    <lastmod>2020-04-26T03:08:18+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/deep-learning-in-python-prerequisites/</loc>
+    <lastmod>2020-04-26T03:08:17+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/deeplearningbook/</loc>
+    <lastmod>2020-04-26T03:08:17+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/deep-learning-with-keras/</loc>
+    <lastmod>2020-04-26T03:08:16+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/django-unleashed/</loc>
+    <lastmod>2020-04-26T03:08:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/dk/</loc>
+    <lastmod>2020-04-26T03:08:14+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/docker-deep-dive-updated-october-2017/</loc>
+    <lastmod>2020-04-26T03:08:12+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/douglas-adams/</loc>
+    <lastmod>2020-04-26T03:08:11+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/dreaming-yourself-awake/</loc>
+    <lastmod>2020-04-26T03:08:10+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/draper-iii-william-h.eric-schmidt/</loc>
+    <lastmod>2020-04-26T03:08:10+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/eat-that-frog/</loc>
+    <lastmod>2020-04-26T03:08:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/einstein/</loc>
+    <lastmod>2020-04-26T03:08:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/elon-musk-tesla-spacex-and-the-quest-for-a-fantastic-future/</loc>
+    <lastmod>2020-04-26T03:08:08+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/getting-results-the-agile-way-a-personal-results-system-for-work-and-life/</loc>
+    <lastmod>2020-04-26T03:08:07+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/franz-kafkadonna-freedjason-baker/</loc>
+    <lastmod>2020-04-26T03:08:07+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/getting-things-done-the-art-of-stress-free-productivity/</loc>
+    <lastmod>2020-04-26T03:08:06+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/google-adsense-secrets-6.0-what-google-never-told-you-about-making-money-with-adsense/</loc>
+    <lastmod>2020-04-26T03:08:06+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/gorilla-mindset/</loc>
+    <lastmod>2020-04-26T03:08:05+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/how-linux-works-what-every-superuser-should-know/</loc>
+    <lastmod>2020-04-26T03:08:04+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/how-the-linux-scheduler-works/</loc>
+    <lastmod>2020-04-26T03:08:03+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life/</loc>
+    <lastmod>2020-04-26T03:08:02+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/ichiro-kishimifumitake-koga/</loc>
+    <lastmod>2020-04-26T03:08:01+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/ignited-minds/</loc>
+    <lastmod>2020-04-26T03:07:58+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/influence-the-psychology-of-persuasion-collins-business-essentials/</loc>
+    <lastmod>2020-04-26T03:07:58+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/instrumentation-ii-6-grounding-and-shielding/</loc>
+    <lastmod>2020-04-26T03:07:57+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/introduction-to-algorithms/</loc>
+    <lastmod>2020-04-26T03:07:56+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/kundalini-tantra/</loc>
+    <lastmod>2020-04-26T03:07:56+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/lazyprogrammer/</loc>
+    <lastmod>2020-04-26T03:07:55+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/learning-gnu-emacs-3rd-edition/</loc>
+    <lastmod>2020-04-26T03:07:55+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/leonardo-da-vinci/</loc>
+    <lastmod>2020-04-26T03:07:54+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/life-in-light-of-death/</loc>
+    <lastmod>2020-04-26T03:07:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/limited-liability-company/</loc>
+    <lastmod>2020-04-26T03:07:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/love-yourself-like-your-life-depends-on-it/</loc>
+    <lastmod>2020-04-26T03:07:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/machine-learning/</loc>
+    <lastmod>2020-04-26T03:07:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/machine-learning-refined-foundations-algorithms-and-applications/</loc>
+    <lastmod>2020-04-26T03:07:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/malcolm-gladwell/</loc>
+    <lastmod>2020-04-26T03:07:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/mark-manson/</loc>
+    <lastmod>2020-04-26T03:07:49+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/mastering-bitcoin-unlocking-digital-cryptocurrencies/</loc>
+    <lastmod>2020-04-26T03:07:48+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/mastering-ubuntu-server/</loc>
+    <lastmod>2020-04-26T03:07:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/matlab-deep-learning/</loc>
+    <lastmod>2020-04-26T03:07:44+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/matthew-walker/</loc>
+    <lastmod>2020-04-26T03:07:44+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/meaning-in-life-and-why-it-matters-the-university-center-for-human-values-series/</loc>
+    <lastmod>2020-04-26T03:07:42+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/mihaly-csikszentmihalyi/</loc>
+    <lastmod>2020-04-26T03:07:41+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/milan-kundera/</loc>
+    <lastmod>2020-04-26T03:07:37+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/models-attract-women-through-honesty/</loc>
+    <lastmod>2020-04-26T03:07:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/name-that-star-ancient-cultures-lend-titles-to-86-suns/</loc>
+    <lastmod>2020-04-26T03:07:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/never-eat-alone/</loc>
+    <lastmod>2020-04-26T03:07:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/nicholas-royle/</loc>
+    <lastmod>2020-04-26T03:07:32+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/nineteen-eighty-four/</loc>
+    <lastmod>2020-04-26T03:07:32+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/no-excuses/</loc>
+    <lastmod>2020-04-26T03:07:31+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/no-place-to-hide-edward-snowden-the-nsa-and-the-u.s.-surveillance-state/</loc>
+    <lastmod>2020-04-26T03:07:28+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/om-swami/</loc>
+    <lastmod>2020-04-26T03:07:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/opencv-computer-vision-with-python/</loc>
+    <lastmod>2020-04-26T03:07:26+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/penetration-testing/</loc>
+    <lastmod>2020-04-26T03:07:26+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/php-7-tutorial-master-the-concepts-of-php-a-step-by-step-process/</loc>
+    <lastmod>2020-04-26T03:07:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/polkinghorne-john/</loc>
+    <lastmod>2020-04-26T03:07:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/practical-reinforcement-learning/</loc>
+    <lastmod>2020-04-26T03:07:24+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/prof.-brian-cox/</loc>
+    <lastmod>2020-04-26T03:07:23+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/professional-wordpress-design-and-development/</loc>
+    <lastmod>2020-04-26T03:07:22+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/pro-git/</loc>
+    <lastmod>2020-04-26T03:07:21+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/programming-from-the-ground-up/</loc>
+    <lastmod>2020-04-26T03:07:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/quiet-the-power-of-introverts-in-a-world-that-cant-stop-talking/</loc>
+    <lastmod>2020-04-26T03:07:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/rabindranath-tagore/</loc>
+    <lastmod>2020-04-26T03:07:18+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/raspberry-pi-robotic-projects/</loc>
+    <lastmod>2020-04-26T03:07:17+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/ray-dalio/</loc>
+    <lastmod>2020-04-26T03:07:16+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/rich-dad-poor-dad/</loc>
+    <lastmod>2020-04-26T03:07:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/ruby-on-rails-tutorial-rails-5/</loc>
+    <lastmod>2020-04-26T03:07:14+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/self-knowledge/</loc>
+    <lastmod>2020-04-26T03:07:13+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/siddhartha/</loc>
+    <lastmod>2020-04-26T03:07:12+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/signals-and-systems/</loc>
+    <lastmod>2020-04-26T03:07:11+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/stauffer-matt/</loc>
+    <lastmod>2020-04-26T03:07:10+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/space.com/</loc>
+    <lastmod>2020-04-26T03:07:10+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/steve-jobs/</loc>
+    <lastmod>2020-04-26T03:07:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-22-immutable-laws-of-marketing/</loc>
+    <lastmod>2020-04-26T03:07:08+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-48-laws-of-power/</loc>
+    <lastmod>2020-04-26T03:07:07+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-4-hour-workweek-expanded-and-updated/</loc>
+    <lastmod>2020-04-26T03:07:06+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-7-habits-of-highly-effective-people/</loc>
+    <lastmod>2020-04-26T03:07:05+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-art-of-the-start/</loc>
+    <lastmod>2020-04-26T03:07:04+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-charisma-myth/</loc>
+    <lastmod>2020-04-26T03:07:03+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-cold-war-a-very-short-introduction-very-short-introductions/</loc>
+    <lastmod>2020-04-26T03:07:01+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-elon-musk-blog-series-wait-but-why/</loc>
+    <lastmod>2020-04-26T03:07:01+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-infinite-monkey-cage-how-to-build-a-universe/</loc>
+    <lastmod>2020-04-26T03:07:00+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-intelligent-investor-rev/</loc>
+    <lastmod>2020-04-26T03:06:59+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-lean-startup/</loc>
+    <lastmod>2020-04-26T03:06:57+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-library-of-babel-and-other-stories/</loc>
+    <lastmod>2020-04-26T03:06:54+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-magic-of-thinking-big/</loc>
+    <lastmod>2020-04-26T03:06:54+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-metamorphosis-and-other-stories/</loc>
+    <lastmod>2020-04-26T03:06:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-millionaire-fastlane/</loc>
+    <lastmod>2020-04-26T03:06:52+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-miracle-morning/</loc>
+    <lastmod>2020-04-26T03:06:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-picture-of-dorian-gray/</loc>
+    <lastmod>2020-04-26T03:06:50+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-power-of-habit-why-we-do-what-we-do-in-life-and-business/</loc>
+    <lastmod>2020-04-26T03:06:49+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-power-of-now-a-guide-to-spiritual-enlightenment/</loc>
+    <lastmod>2020-04-26T03:06:48+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-power-of-persuasion-how-were-bought-and-sold/</loc>
+    <lastmod>2020-04-26T03:06:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-pragmatic-programmer-from-journeyman-to-master/</loc>
+    <lastmod>2020-04-26T03:06:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-psychedelic-explorers-guide-safe-therapeutic-and-sacred-journeys/</loc>
+    <lastmod>2020-04-26T03:06:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-slight-edge-turning-simple-disciplines-into-massive-success-and-happiness/</loc>
+    <lastmod>2020-04-26T03:06:43+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are/</loc>
+    <lastmod>2020-04-26T03:06:42+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/the-startup-game/</loc>
+    <lastmod>2020-04-26T03:06:41+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/think-and-grow-rich/</loc>
+    <lastmod>2020-04-26T03:06:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/thinking-fast-and-slow/</loc>
+    <lastmod>2020-04-26T03:06:39+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/walter-isaacson/</loc>
+    <lastmod>2020-04-26T03:06:38+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams/</loc>
+    <lastmod>2020-04-26T03:06:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/william-n.-thorndike/</loc>
+    <lastmod>2020-04-26T03:06:30+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/zero-to-one-notes-on-startups-or-how-to-build-the-future/</loc>
+    <lastmod>2020-04-26T03:06:18+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/books/100-years-of-the-best-american-short-stories/</loc>
+    <lastmod>2020-04-26T02:36:50+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/beyond-higgs-boson/</loc>
+    <lastmod>2020-04-24T03:55:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/</loc>
+    <lastmod>2020-04-24T03:55:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-04-24T03:55:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/physics/</loc>
+    <lastmod>2020-04-24T03:55:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/science/</loc>
+    <lastmod>2020-04-24T03:55:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-24T03:55:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dorks/</loc>
+    <lastmod>2020-04-23T16:31:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google/</loc>
+    <lastmod>2020-04-23T16:31:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/braindump/2020/04/google-dorks/</loc>
+    <lastmod>2020-04-23T16:31:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hack/</loc>
+    <lastmod>2020-04-23T16:31:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hacking/</loc>
+    <lastmod>2020-04-23T16:31:35+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/algorithm/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
   </url>
   
   <url>
     <loc>/braindump/2020/04/algorithms/</loc>
-    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/braindump/</loc>
-    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
   </url>
   
@@ -39,11 +754,6 @@
   
   <url>
     <loc>/tags/optimization/</loc>
-    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
   </url>
   
@@ -338,16 +1048,6 @@
   </url>
   
   <url>
-    <loc>/tags/hack/</loc>
-    <lastmod>2020-04-19T16:00:46+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hacking/</loc>
-    <lastmod>2020-04-19T16:00:46+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>/braindump/2020/04/reverse/</loc>
     <lastmod>2020-04-19T16:00:46+05:45</lastmod>
   </url>
@@ -514,11 +1214,6 @@
   
   <url>
     <loc>/tags/chatbot/</loc>
-    <lastmod>2020-04-19T16:00:27+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/google/</loc>
     <lastmod>2020-04-19T16:00:27+05:45</lastmod>
   </url>
   
@@ -1160,16 +1855,6 @@
   <url>
     <loc>/tags/whitehat/</loc>
     <lastmod>2020-04-19T15:58:47+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/dorks/</loc>
-    <lastmod>2020-04-19T15:58:46+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>/braindump/2020/04/google-dorks/</loc>
-    <lastmod>2020-04-19T15:58:46+05:45</lastmod>
   </url>
   
   <url>

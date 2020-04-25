@@ -6,10 +6,28 @@
     <description>Recent content in hacking on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:46 +0545</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2020 16:31:35 +0545</lastBuildDate>
     
 	<atom:link href="/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google Dorks</title>
+      <link>/braindump/2020/04/google-dorks/</link>
+      <pubDate>Thu, 23 Apr 2020 16:31:35 +0545</pubDate>
+      
+      <guid>/braindump/2020/04/google-dorks/</guid>
+      <description>What Is Google Dorks? It is basically an advanced google search!
+I have included four types of google dorks in this collection: Google dorks for SQL injection, Google dorks for Local File Inclusion, Google dorks For open CCTV cams and Google dorks for sensitive information.
+Copy and paste the below google dorks on the search engine and have fun!
+Google Dorks For SQL Injection:
+•inurl:index.php?id=
+•inurl:trainers.php?id=
+•inurl:buy.php?category=
+•inurl:article.php?ID=
+•inurl:play_old.php?id=
+•inurl:declaration_more.php?decl_id=</description>
+    </item>
     
     <item>
       <title>Reverse</title>
@@ -97,24 +115,6 @@ Some useful commands:
   strings reversing1 | egrep &amp;ldquo;^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{4})$&amp;rdquo; | while read line ; do echo $line | base64 -d | cat -v &amp;amp;&amp;amp; echo &amp;ldquo;&amp;quot;; done
 base64 encoded text regex
   echo &amp;ldquo;obase=16; &amp;lt;decimal_number&amp;gt;&amp;rdquo; | BC_LINE_LENGTH=0 bc | awk &amp;lsquo;{ print (length($0) % 2 == 0) ?</description>
-    </item>
-    
-    <item>
-      <title>Google Dorks</title>
-      <link>/braindump/2020/04/google-dorks/</link>
-      <pubDate>Sun, 19 Apr 2020 15:58:46 +0545</pubDate>
-      
-      <guid>/braindump/2020/04/google-dorks/</guid>
-      <description>What Is Google Dorks? It is basically an advanced google search!
-I have included four types of google dorks in this collection: Google dorks for SQL injection, Google dorks for Local File Inclusion, Google dorks For open CCTV cams and Google dorks for sensitive information.
-Copy and paste the below google dorks on the search engine and have fun!
-Google Dorks For SQL Injection:
-•inurl:index.php?id=
-•inurl:trainers.php?id=
-•inurl:buy.php?category=
-•inurl:article.php?ID=
-•inurl:play_old.php?id=
-•inurl:declaration_more.php?decl_id=</description>
     </item>
     
   </channel>

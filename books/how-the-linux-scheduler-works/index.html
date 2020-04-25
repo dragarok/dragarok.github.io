@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="### Author:
+  loc 8 - Normally the scheduler runs in its own thread, which is woken up by a timer interrupt
+  loc 8 - Schedulers tend to give I/O-bound threads priority access to CPUs
+  loc 9 - Because I/O operations usually take a long time it is good to get them started as early as possible
+  loc 9 - Kicking oﬀ the data request as quickly as possible frees up the CPU to work on something else" />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/books/how-the-linux-scheduler-works/" />
+
+
+    <title>
+        
+            How the Linux Scheduler Works :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="How the Linux Scheduler Works">
+<meta itemprop="description" content="### Author:
+  loc 8 - Normally the scheduler runs in its own thread, which is woken up by a timer interrupt
+  loc 8 - Schedulers tend to give I/O-bound threads priority access to CPUs
+  loc 9 - Because I/O operations usually take a long time it is good to get them started as early as possible
+  loc 9 - Kicking oﬀ the data request as quickly as possible frees up the CPU to work on something else">
+<meta itemprop="dateModified" content="2020-04-26T03:08:03&#43;05:45" />
+<meta itemprop="wordCount" content="1574">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="How the Linux Scheduler Works"/>
+<meta name="twitter:description" content="### Author:
+  loc 8 - Normally the scheduler runs in its own thread, which is woken up by a timer interrupt
+  loc 8 - Schedulers tend to give I/O-bound threads priority access to CPUs
+  loc 9 - Because I/O operations usually take a long time it is good to get them started as early as possible
+  loc 9 - Kicking oﬀ the data request as quickly as possible frees up the CPU to work on something else"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-26 03:08:03 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/books/">Books</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/books/how-the-linux-scheduler-works/">How the Linux Scheduler Works</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>### Author:</p>
+<ul>
+<li>
+<p>loc 8 - Normally the scheduler runs in its own thread, which is woken up by a timer interrupt</p>
+</li>
+<li>
+<p>loc 8 - Schedulers tend to give I/O-bound threads priority access to CPUs</p>
+</li>
+<li>
+<p>loc 9 - Because I/O operations usually take a long time it is good to get them started as early as possible</p>
+</li>
+<li>
+<p>loc 9 - Kicking oﬀ the data request as quickly as possible frees up the CPU to work on something else</p>
+</li>
+<li>
+<p>loc 11 - It is important for tasks to be treated with a certain degree of fairness, including the stipulation that no thread ever starves. Starvation happens when a thread is not allowed to run for an unacceptably long period of time due to the prioritization of other threads over it. Starvation must not be allowed to happen, though certain threads should be allowed to have a considerably higher priority level than others based on user-deﬁned values and/or heuristic indicators. Somehow, threads that are approaching the starvation threshold (which is</p>
+</li>
+<li>
+<p>loc 12 - generally deﬁned by a scheduler’s implementors) must get a signiﬁcant priority boost or one-time immediate preemption before they starve. Fairness does not mean that every thread should have the same degree of access to CPU time with the same priority, but it means that no thread should ever starve or be able to trick the scheduler into giving it a higher priority or more CPU time than it ought to have</p>
+</li>
+<li>
+<p>loc 13 - The Linux scheduler supports soft real-time (RT) scheduling. This means that it can eﬀectively schedule tasks that have strict timing requirements</p>
+</li>
+<li>
+<p>loc 13 - RT scheduling modes include a ﬁrst-in-ﬁrst-out (FIFO) mode which allows RT tasks to run to completion on a ﬁrst-come-ﬁrstserve basis, and a round-robin scheduling mode that schedules RT tasks in a round-robin fashion while essentially ignoring non-RT tasks on the system</p>
+</li>
+<li>
+<p>loc 15 - The fact that the Linux 2.4.x scheduling algorithm contained O(n) algorithms was perhaps its greatest ﬂaw, and subsequently the new scheduler’s use of only O(1) algorithms was its most welcome improvement</p>
+</li>
+<li>
+<p>loc 15 - one runqueue is created and maintained for each CPU in a system</p>
+</li>
+<li>
+<p>loc 16 - Only one task can modify a particular runqueue at any given time</p>
+</li>
+<li>
+<p>loc 16 - tasks on a CPU begin in one priority array, the active one, and as they run out of their timeslices they are moved to the expired priority array. During the move, a new timeslice is calculated. When there are no more runnable tasks in the active priority arrays, it is simply swapped with the expired priority array</p>
+</li>
+<li>
+<p>loc 18 - Obtaining multiple runqueue locks must be done by order of ascending runqueue address in order to avoid deadlocks</p>
+</li>
+<li>
+<p>loc 18 - The Linux 2.6.8.1 scheduler always schedules the highest priority task on a system, and if multiple tasks exist at the same priority level, they are scheduled roundrobin with each other</p>
+</li>
+<li>
+<p>loc 18 - Priority arrays make ﬁnding the highest priority task in a system a constant-time operation, and also makes round-robin behavior within priority levels possible in constant-time. Furthermore, using two priority arrays in unison (the active and expired priority arrays) makes transitions between timeslice epochs a constant-time operation. An epoch is the time between when all runnable tasks begin with a fresh timeslice and when all runnable tasks have used up their timeslices</p>
+</li>
+<li>
+<p>loc 19 - struct list_head queue[MAX_PRIO] An array of linked lists. There is one list in the array for each priority level</p>
+</li>
+<li>
+<p>loc 19 - The highest priority task in a priority array is always scheduled ﬁrst, and tasks within a certain priority level are scheduled round-robin</p>
+</li>
+<li>
+<p>loc 19 - A bitmap of size MAX_PRIO + 1 (actually it might be a bit larger since it must be implemented in word-sized chunks) has bits set for each priority level that contains active tasks. In order to ﬁnd the highest priority task in a priority array, one only has to ﬁnd the ﬁrst bit set in the bitmap</p>
+</li>
+<li>
+<p>loc 19 - after running, tasks are put at the bottom of their priority level’s list</p>
+</li>
+<li>
+<p>loc 19 - When a task runs out of timeslice, it is removed from the active priority array and put into the expired priority array. During this move, a new timeslice is calculated. When there are no more runnable tasks in the active priority array, the pointers to the active and expired priority arrays are simply swapped</p>
+</li>
+<li>
+<p>loc 20 - All tasks have a static priority, often called a nice value. On Linux, nice values range from -20 to 19, with higher values being lower priority</p>
+</li>
+<li>
+<p>loc 20 - The Linux 2.6.8.1 scheduler rewards I/O-bound tasks and punishes CPU-bound tasks by adding or subtracting from a task’s static priority</p>
+</li>
+<li>
+<p>loc 20 - Tasks that are I/O-bound tend to sleep quite a bit as they block on I/O, whereas CPU-bound task rarely sleep as they rarely block on I/O. Quite often, tasks are in the middle, and are not entirely CPU-bound or I/O-bound so the heuristic produces some sort of scale instead of a simple binary label (I/O-bound or CPU-bound</p>
+</li>
+<li>
+<p>loc 20 - when a task is woken up from sleep, its total sleep time is added to its sleep_avg variable</p>
+</li>
+<li>
+<p>loc 20 - In the Linux 2.6.8.1 scheduler, the maximum priority bonus is 5 and the maximum priority penalty is 5. Since the scheduler uses bonuses and penalties, adjustments to a task’s static priority are respected</p>
+</li>
+<li>
+<p>loc 21 - When a task gives up the CPU, voluntarily or involuntarily, the time the current task spent running is subtracted from its sleep_avg. The higher a task’s sleep_avg is, the higher its dynamic priority will be</p>
+</li>
+<li>
+<p>loc 22 - The higher the task’s static priority (the lower the task’s static_prio value) the larger the timeslice it gets</p>
+</li>
+<li>
+<p>loc 22 - Without this check, highly interactive tasks could keep spawning new tasks in order to hog the CPU. With this check, sleep_avg and subsequently priority are decreased</p>
+</li>
+<li>
+<p>loc 22 - scheduler_tick() will reinsert interactive tasks into the active priority array with their new timeslice so long as nothing is starving in the expired priority array</p>
+</li>
+<li>
+<p>loc 23 - Essentially, tasks get an interactive credit when they sleep for a long time, and lose an interactive credit when they run for a long time</p>
+</li>
+<li>
+<p>loc 23 - High interactivity credit tasks get less run time subtracted from their sleep avg in order to prevent them from losing interactive status too quickly. If a task got high credit, it must have slept quite a bit at least 100 times recently and thus it should not lose interactive status just because it used up a lot of CPU time once</p>
+</li>
+<li>
+<p>loc 23 - uninterruptible. A task in the interruptible state can wake up prematurely to 23</p>
+</li>
+<li>
+<p>loc 23 - When a task goes to sleep, it is usually in one of two states - interruptible or uninterruptible</p>
+</li>
+<li>
+<p>loc 24 - the kill command will attempt to do its job by sending a SIGTERM signal to the task. If the task is in the uninterruptible state, it will ignore the signal until the event it was originally waiting for occurs</p>
+</li>
+<li>
+<p>loc 24 - When that event occurs, code controlling that event will tell the waitqueue to wake up all of the tasks in it.</p>
+</li>
+<li>
+<p>loc 27 - Once the busiest group has been identiﬁed, load_balance() attempts to move tasks from the busiest group’s busiest runqueue to the current CPU’s runqueue via move_tasks</p>
+</li>
+<li>
+<p>loc 31 - If another task has not run for longer than STARVATION_LIMIT speciﬁes, then interactive tasks stop running in order for the starving tasks to get CPU time. Decreasing this value hurts interactivity since interactive tasks will more often be forced to give up the CPU for the sake of starving tasks, but fairness will increase</p>
+</li>
+<li>
+<p>loc 31 - Timeslices are computed for all tasks when epochs begin, which means that the scheduler’s algorithm for timeslice calculation runs in O(n) time since it must iterate over every task</p>
+</li>
+<li>
+<p>loc 31 - The Linux 2.4.x scheduling algorithm divides time into “epochs,” which are periods of time during which every task is allowed to use up its timeslice. Timeslices are computed for all tasks when epochs begin, which means that the scheduler’s algorithm for timeslice calculation runs in O(n) time since it must iterate over every task.</p>
+</li>
+<li>
+<p>loc 31 - tasks that do not use up their timeslices due to being I/O-bound get longer a longer timeslice in the next epoch. If a task suddenly becomes CPU-bound and uses up its whole timeslice, it quickly drops back to a base timeslice in the next epoch</p>
+</li>
+<li>
+<p>loc 33 - large timeslices can cause the time between executions of low-priority tasks (or simply unlucky ones if all priorities are equal) to grow quite large. For example - with 100 threads using all of their 210ms timeslices without pause, the lowest priority thread in the group might have to wait more than 20 seconds before it executes (an unlikely situation, but it illustrates the point). This problem does not appear to be mitigated by starvation checks or taking system load into account when calculating timeslices, which might not help anyway</p>
+</li>
+<li>
+<p>loc 33 - The problem is lessened by the Linux 2.6.8 scheduler’s lower average timeslices, but it is not entirely done away with. Essentially the system load just needs to be twice as much to create the same problem</p>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

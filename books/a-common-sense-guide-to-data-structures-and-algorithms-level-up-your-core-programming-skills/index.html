@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="### Author: Wengrow, Jay
+  loc 678 - Simply put, O(log N) is the Big O way of describing an algorithm that increases one step each time the data is doubled.
+  loc 1542 - Looking up a value in a hash table has an efficiency of O(1) on average, as it takes just one step.
+  loc 1555 - The truth is that a hash function needs to meet only one criterion to be valid: a hash function must convert the same string to the same number every single time it’s applied." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/" />
+
+
+    <title>
+        
+            A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills">
+<meta itemprop="description" content="### Author: Wengrow, Jay
+  loc 678 - Simply put, O(log N) is the Big O way of describing an algorithm that increases one step each time the data is doubled.
+  loc 1542 - Looking up a value in a hash table has an efficiency of O(1) on average, as it takes just one step.
+  loc 1555 - The truth is that a hash function needs to meet only one criterion to be valid: a hash function must convert the same string to the same number every single time it’s applied.">
+<meta itemprop="dateModified" content="2020-04-26T03:08:37&#43;05:45" />
+<meta itemprop="wordCount" content="2269">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills"/>
+<meta name="twitter:description" content="### Author: Wengrow, Jay
+  loc 678 - Simply put, O(log N) is the Big O way of describing an algorithm that increases one step each time the data is doubled.
+  loc 1542 - Looking up a value in a hash table has an efficiency of O(1) on average, as it takes just one step.
+  loc 1555 - The truth is that a hash function needs to meet only one criterion to be valid: a hash function must convert the same string to the same number every single time it’s applied."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-26 03:08:37 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/books/">Books</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/">A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>### Author: Wengrow, Jay</p>
+<ul>
+<li>
+<p>loc 678 - Simply put, O(log N) is the Big O way of describing an algorithm that increases one step each time the data is doubled.</p>
+</li>
+<li>
+<p>loc 1542 - Looking up a value in a hash table has an efficiency of O(1) on average, as it takes just one step.</p>
+</li>
+<li>
+<p>loc 1555 - The truth is that a hash function needs to meet only one criterion to be valid: a hash function must convert the same string to the same number every single time it’s applied. If the hash function can return inconsistent results for a given string, it’s not valid.</p>
+</li>
+<li>
+<p>loc 1601 - For an unordered array, this would take up to O(N), and for an ordered array, this would take up to O(log N). Using a hash table, however, we can now use the actual menu items as keys, allowing us to do a hash table lookup of O(1). And that’s the beauty of a hash table.</p>
+</li>
+<li>
+<p>loc 1611 - One classic approach for handling collisions is known as separate chaining. When a collision occurs, instead of placing a single value in the cell, it places in it a reference to an array.</p>
+</li>
+<li>
+<p>loc 1629 - In a scenario where the computer hits upon a cell that references an array, its search can take some extra steps, as it needs to conduct a linear search within an array of multiple values. If somehow all of our data ended up within a single cell of our hash table, our hash table would be no better than an array. So it actually turns out that the worst-case performance for a hash table lookup is O(N).</p>
+</li>
+<li>
+<p>loc 1635 - Ultimately, a hash table’s efficiency depends on three factors: How much data we’re storing in the hash table How many cells are available in the hash</p>
+</li>
+<li>
+<p>loc 1651 - Although a hash table with one hundred cells is great for avoiding collisions, we’d be using up one hundred cells to store just five pieces of data, and that’s a poor use of memory. This is the balancing act that a hash table must perform. A good hash table strikes a balance of avoiding collisions while not consuming lots of memory.</p>
+</li>
+<li>
+<p>loc 1653 - To accomplish this, computer scientists have developed the following rule of thumb: for every seven data elements stored in a hash table, it should have ten cells.</p>
+</li>
+<li>
+<p>loc 1668 - When we use a hash table as a set, however, each piece of data is a key within the hash table, and the value can be anything, such as a 1 or a Boolean value of true.</p>
+</li>
+<li>
+<p>loc 1682 - The truth is that hash tables are perfect for any situation where we want to keep track of which values exist within a dataset.</p>
+</li>
+<li>
+<p>loc 1754 - However, since we’d have to count each vote at the end of the day, the</p>
+</li>
+<li>
+<p>loc 1754 - However, since we’d have to count each vote at the end of the day, the countVotes function would take O(N). This might take too long!</p>
+</li>
+<li>
+<p>loc 1773 - With this technique, not only are insertions O(1), but our tally is as well, since it’s already kept as the voting takes place.</p>
+</li>
+<li>
+<p>loc 1784 - More specifically, stacks and queues are elegant tools for handling temporary data. From operating system architecture to printing jobs to traversing data, stacks and queues serve as temporary containers that can be used to form beautiful algorithms.</p>
+</li>
+<li>
+<p>loc 1792 - Data can only be inserted at the end of a stack. Data can only be read from the end of a stack. Data can only be removed from the end of a stack.</p>
+</li>
+<li>
+<p>loc 1829 - This is where a stack allows us to implement a beautiful linting algorithm, which works as follows:</p>
+</li>
+<li>
+<p>loc 1982 - Data can only be inserted at the end of a queue. (This is identical behavior as the stack.) Data can only be read from the front of a queue. (This is the opposite of behavior of the stack.) Data can only be removed from the front of</p>
+</li>
+<li>
+<p>loc 1982 - Data can only be inserted at the end of a queue. (This is identical behavior as the stack.) Data can only be read from the front of a queue. (This is the opposite of behavior of the stack.) Data can only be removed from the front of a queue. (This, too, is the opposite behavior of the stack.)</p>
+</li>
+<li>
+<p>loc 1993 - Queues are common in many applications, ranging from printing jobs to background workers in web applications.</p>
+</li>
+<li>
+<p>loc 2098 - In almost any case in which you can use a loop, you can also use recursion. Now, just because you can use recursion doesn’t mean that you should use recursion. Recursion is a tool that allows for writing elegant code.</p>
+</li>
+<li>
+<p>loc 2227 - Looking back at this example from a bird’s-eye view, you’ll see that the order in which the computer calculates the factorial of 3 is as follows: factorial(3) is called first. factorial(2) is called second. factorial(1) is called third. factorial(1) is completed first. factorial(2) is completed based on the result of factorial(1). Finally, factorial(3) is completed based on the result of factorial(2). Interestingly, in the</p>
+</li>
+<li>
+<p>loc 2227 - Looking back at this example from a bird’s-eye view, you’ll see that the order in which the computer calculates the factorial of 3 is as follows: factorial(3) is called first. factorial(2) is called second. factorial(1) is called third. factorial(1) is completed first. factorial(2) is completed based on the result of factorial(1). Finally, factorial(3) is completed based on the result of factorial(2).</p>
+</li>
+<li>
+<p>loc 2307 - And this is the beauty of recursion. With recursion, we</p>
+</li>
+<li>
+<p>loc 2307 - And this is the beauty of recursion. With recursion, we can write a script that goes arbitrarily deep—and is also simple!</p>
+</li>
+<li>
+<p>loc 2624 - Let’s say that you have an array in random order, and you do not need to sort it, but you do want to know the tenth-lowest value in the array, or the fifth-highest. This can be useful if we had a lot of test grades and wanted to know what the 25th percentile was, or if we wanted to find the median grade.</p>
+</li>
+<li>
+<p>loc 2717 - These cells that are not adjacent to each other are known as nodes.</p>
+</li>
+<li>
+<p>loc 3010 - Operation Array Linked list Reading O(1) O(N) Search O(N) O(N) Insertion O(N) (O(1) at end) O(N) (O(1) at beginning) Deletion O(N) (O(1) at end) O(N) (O(1) at beginning)</p>
+</li>
+<li>
+<p>loc 3020 - No matter whether the list is an array or a linked list, we need to comb through the entire list one element at a time to inspect each value, which would take N steps. However, let’s examine what happens when we actually delete email addresses. With an array, each time we delete an email address, we need another O(N) steps to shift the remaining data to the left to close the gap. All this shifting will happen before we can even inspect the next email address. So besides the N steps of reading each email address, we need another N steps multiplied by invalid email addresses to account for deletion of invalid email addresses.</p>
+</li>
+<li>
+<p>loc 3037 - When it comes to deleting data from a queue, though, linked lists are faster, since they are O(1) compared</p>
+</li>
+<li>
+<p>loc 3037 - When it comes to deleting data from a queue, though, linked lists are faster, since they are O(1) compared to arrays, which delete data from the beginning at O(N).</p>
+</li>
+<li>
+<p>loc 3040 - However, if we use a special variant of a linked list called the doubly linked list, we’d be able to insert and delete data from a queue at O(</p>
+</li>
+<li>
+<p>loc 3040 - However, if we use a special variant of a linked list called the doubly linked list, we’d be able to insert and delete data from a queue at O(1). A doubly linked list</p>
+</li>
+<li>
+<p>loc 3115 - Because doubly linked lists have immediate access to both the front and end of the list, they can insert data on either side at O(1) as well as delete data on either side at O(1). Since doubly linked lists can insert data at the end in O(1) time and delete data from the front in O(1) time,</p>
+</li>
+<li>
+<p>loc 3115 - Because doubly linked lists have immediate access to both the front and end of the list, they can insert data on either side at O(1) as well as delete data on either side at O(1). Since doubly linked lists can insert data at the end in O(1) time and delete data from the front in O(1) time, they make the perfect underlying data structure for a queue.</p>
+</li>
+<li>
+<p>loc 3302 - In an ordered array, by contrast, insertion takes O(N), because in addition to search, we must shift a lot of data to the right to make room for the value that we’re inserting. This is what makes binary trees so efficient. While ordered arrays have O(log N) search and O(N) insertion, binary trees have O(log N) and O(log N) insertion. This becomes critical in an application where you anticipate a lot of changes to your data.</p>
+</li>
+<li>
+<p>loc 3348 - So far, our deletion algorithm follows these rules: If the node being deleted has no children, simply delete it. If the node being deleted has one child, delete it and plug the child into the spot where the deleted node was.</p>
+</li>
+<li>
+<p>loc 3352 - When deleting a node with two children, replace the deleted node with the successor node. The successor node is the child node whose value is the least of all values that are greater than the deleted node.</p>
+</li>
+<li>
+<p>loc 3359 - We now need to plug the successor value into the root node. Let’s find the successor value. To do this, we first visit the right child, and then keep descending leftward until we reach a node that doesn’t have a left child:</p>
+</li>
+<li>
+<p>loc 3366 - If the successor node has a right child, after plugging the successor into the spot of the deleted node, take the right child of the successor node and turn it into the left child</p>
+</li>
+<li>
+<p>loc 3366 - If the successor node has a right child, after plugging the successor into the spot of the deleted node, take the right child of the successor node and turn it into the left child of the parent of the successor node.</p>
+</li>
+<li>
+<p>loc 3372 - the node being deleted has no children, simply delete it.</p>
+</li>
+<li>
+<p>loc 3372 - If the node being deleted has one child, delete it and plug the child into the spot where the deleted node was.</p>
+</li>
+<li>
+<p>loc 3373 - When deleting a node with two children, replace the deleted node with the successor node. The successor node is the child node whose value is the least of all values that are greater than the deleted node.</p>
+</li>
+<li>
+<p>loc 3375 - If the successor node has a right child, after plugging the successor node into the spot of the deleted node, take the right child of the successor node and turn it into the left child of the parent of the successor node.</p>
+</li>
+<li>
+<p>loc 3530 - Based on the way we’ve structured our data, searching for Alice’s friends would have an efficiency of O(N), since we need to inspect every relationship in our database. But we can do much, much better. With a data structure known as a graph, we can find each of Alice’s friends in just O(1) time.</p>
+</li>
+<li>
+<p>loc 3537 - There are a number of ways that a graph can be implemented, but one of the simplest ways is using a hash table (see Chapter 7, ​Blazing Fast Lookup with Hash Tables​). Here’s a bare-bones Ruby implementation of our social network:</p>
+</li>
+<li>
+<p>loc 3716 - The efficiency of breadth-first search in our graph can be calculated by breaking down the algorithm’s steps into two types: We remove a vertex from the queue to designate it as the current vertex. For each current vertex, we visit each of its adjacent vertices.</p>
+</li>
+<li>
+<p>loc 3737 - So, for E edges, we check adjacent vertices 2E times. That is, for E edges in the graph, we check twice that number of adjacent vertices. However, since Big O ignores constants, we just write it as O(E). Since there are O(V) removals from the queue, and O(E) visits, we say that breadth-first search has an efficiency of O(V + E).</p>
+</li>
+<li>
+<p>loc 3756 - The speed at which the computer can find each row in the Users table will be approximately O(log N). This is because the database maintains the rows in order of their ids, and the database can then use binary search to find each row. (This explanation applies to certain relational databases; other processes may apply to other relational databases.)</p>
+</li>
+<li>
+<p>loc 3759 - To say this more generally, for M friends, the efficiency of pulling their information is O(M log N). That is, for each friend, we run a search that takes log N steps.</p>
+</li>
+<li>
+<p>loc 3817 - Here are the rules of Dijkstra’s algorithm (don’t worry—they’ll become clearer when we walk through our example): We make the starting vertex our current vertex. We check all the vertices adjacent to the current vertex and calculate and record the weights from the starting vertex to all known locations. To determine the next current vertex, we find the cheapest unvisited known vertex that can be reached from our starting vertex. Repeat the first three steps until we have visited every vertex in the graph.</p>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="### Author: Antonio Gulli
+  loc 458 - If we have a big output jump, we cannot progressively learn (rather than trying things in all possible directions—a process known as exhaustive search—without knowing if we are improving).
+  loc 460 - A perceptron is either 0 or 1 and that is a big jump and it will not help it to learn, as shown in the following graph: We need something different, smoother." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/books/deep-learning-with-keras/" />
+
+
+    <title>
+        
+            Deep Learning with Keras :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Deep Learning with Keras">
+<meta itemprop="description" content="### Author: Antonio Gulli
+  loc 458 - If we have a big output jump, we cannot progressively learn (rather than trying things in all possible directions—a process known as exhaustive search—without knowing if we are improving).
+  loc 460 - A perceptron is either 0 or 1 and that is a big jump and it will not help it to learn, as shown in the following graph: We need something different, smoother.">
+<meta itemprop="dateModified" content="2020-04-26T03:08:16&#43;05:45" />
+<meta itemprop="wordCount" content="937">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Deep Learning with Keras"/>
+<meta name="twitter:description" content="### Author: Antonio Gulli
+  loc 458 - If we have a big output jump, we cannot progressively learn (rather than trying things in all possible directions—a process known as exhaustive search—without knowing if we are improving).
+  loc 460 - A perceptron is either 0 or 1 and that is a big jump and it will not help it to learn, as shown in the following graph: We need something different, smoother."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-26 03:08:16 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/books/">Books</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/books/deep-learning-with-keras/">Deep Learning with Keras</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>### Author: Antonio Gulli</p>
+<ul>
+<li>
+<p>loc 458 - If we have a big output jump, we cannot progressively learn (rather than trying things in all possible directions—a process known as exhaustive search—without knowing if we are improving).</p>
+</li>
+<li>
+<p>loc 460 - A perceptron is either 0 or 1 and that is a big jump and it will not help it to learn, as shown in the following graph: We need something different, smoother. We need a function that progressively changes from 0 to 1 with no discontinuity.</p>
+</li>
+<li>
+<p>loc 469 - A neuron can use the sigmoid for computing the nonlinear function . Note that, if  is very large and positive, then , so , while if  is very large and negative  so .</p>
+</li>
+<li>
+<p>loc 476 - The sigmoid is not the only kind of smooth activation function used for neural networks. Recently, a very simple function called rectified linear unit (ReLU) became very popular because it generates very good experimental results. A ReLU is simply defined as , and the nonlinear function is represented in the following graph.</p>
+</li>
+<li>
+<p>loc 476 - The sigmoid is not the only kind of smooth activation function used for neural networks. Recently, a very simple function called rectified linear unit (ReLU) became very popular because it generates very good experimental results. A ReLU is simply defined as , and the nonlinear function is represented in the following graph. As you can see in the following graph, the function is zero for negative</p>
+</li>
+<li>
+<p>loc 476 - The sigmoid is not the only kind of smooth activation function used for neural networks. Recently, a very simple function called rectified linear unit (ReLU) became very popular because it generates very good experimental results. A ReLU is simply defined as , and the nonlinear function is represented in the following graph. As you can see in the following graph, the function is zero for negative values, and it grows linearly for positive values:</p>
+</li>
+<li>
+<p>loc 504 - In many applications, it is convenient to transform categorical (non-numerical) features into numerical variables. For instance, the categorical feature digit with the value d in [0-9] can be encoded into a binary vector with 10 positions, which always has 0 value, except the d-th position where a 1 is present. This type of representation is called one-hot encoding (OHE) and is very common in data mining when the learning algorithm is specialized for dealing with numerical functions.</p>
+</li>
+<li>
+<p>loc 554 - Binary cross-entropy: This is the binary logarithmic loss. Suppose that our model predicts p while the target is t, then the binary cross-entropy is defined as follows: This objective function is suitable for binary labels prediction.</p>
+</li>
+<li>
+<p>loc 565 - Precision: This denotes how many selected items are relevant for a multilabel classification</p>
+</li>
+<li>
+<p>loc 566 - Recall: This denotes how many selected items are relevant for a multilabel classification</p>
+</li>
+<li>
+<p>loc 679 - Note that it has been frequently observed that networks with random dropout in internal hidden layers can generalize better on unseen examples contained in test sets. Intuitively, one can think of this as each neuron becoming more capable because it knows it cannot depend on its neighbors.</p>
+</li>
+<li>
+<p>loc 785 - As a rule of thumb, if during the training we see that the loss increases on validation, after an initial decrease, then we have a problem of model complexity that overfits training. Indeed,</p>
+</li>
+<li>
+<p>loc 789 - if we have two models, M1 and M2, achieving pretty much the same performance in terms of loss function, then we should choose the simplest model that has the minimum number of nonzero weights.</p>
+</li>
+<li>
+<p>loc 791 - We can use a hyperparameter ⅄&gt;=0 for controlling what the importance of having a simple model is, as in this formula:</p>
+</li>
+<li>
+<p>loc 794 - L1 regularization (also known as lasso): The complexity of the model is expressed as the sum of the absolute values of the weights L2 regularization (also known as ridge): The complexity of the model is expressed as the sum of the squares of the weights Elastic net regularization: The complexity of the model is captured by a combination of the two preceding techniques</p>
+</li>
+<li>
+<p>loc 1304 - There are two options: padding='valid&rsquo; means that the convolution is only computed where the input and the filter fully overlap, and therefore the output is smaller than the input, while padding='same&rsquo; means that we have an output that is the same size as the input, for which the area around the input is padded with zeros.</p>
+</li>
+<li>
+<p>loc 2347 - In other words, distributed representation aims to convert words to vectors where the similarity between the vectors correlate with the semantic similarity between the words.</p>
+</li>
+<li>
+<p>loc 2351 - The models are unsupervised, taking as input a large corpus of text and producing a vector space of words.</p>
+</li>
+<li>
+<p>loc 2353 - The embedding space is also more dense compared to the sparse embedding of the one-hot embedding space.</p>
+</li>
+<li>
+<p>loc 2355 - the CBOW architecture, the model predicts the current word given a window of surrounding words. In addition, the order of the context words does not influence the prediction (that is, the bag of words assumption).</p>
+</li>
+<li>
+<p>loc 2358 - According to the authors, CBOW is faster but skip-gram does a better job at predicting infrequent words.</p>
+</li>
+<li>
+<p>loc 2363 - love green eggs and ham.</p>
+</li>
+<li>
+<p>loc 2366 - Since the skip-gram model predicts a context word given the center word, we can convert the preceding dataset to one of (input, output) pairs. That is, given an input word, we expect the skip-gram model to predict the output word: (love, I), (love, green), (green, love), (green, eggs), (eggs, green), (eggs, and), &hellip;</p>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

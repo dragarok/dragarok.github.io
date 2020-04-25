@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="### Author:
+  loc 90 - MS08-067 patched an issue in the netapi32. dll that could allow attackers to use a specially crafted remote procedure call request via the Server Message Block (SMB) service to take over a target system. This vulnerability is particularly dangerous because it does not require an attacker to authenticate to the target machine before running the attack.MS08-067 gained eternal infamy as the vulnerability exploited by the Conficker worm, which was widely reported in the media" />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/books/penetration-testing/" />
+
+
+    <title>
+        
+            penetration-testing :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="penetration-testing">
+<meta itemprop="description" content="### Author:
+  loc 90 - MS08-067 patched an issue in the netapi32. dll that could allow attackers to use a specially crafted remote procedure call request via the Server Message Block (SMB) service to take over a target system. This vulnerability is particularly dangerous because it does not require an attacker to authenticate to the target machine before running the attack.MS08-067 gained eternal infamy as the vulnerability exploited by the Conficker worm, which was widely reported in the media">
+<meta itemprop="dateModified" content="2020-04-26T03:07:26&#43;05:45" />
+<meta itemprop="wordCount" content="642">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="penetration-testing"/>
+<meta name="twitter:description" content="### Author:
+  loc 90 - MS08-067 patched an issue in the netapi32. dll that could allow attackers to use a specially crafted remote procedure call request via the Server Message Block (SMB) service to take over a target system. This vulnerability is particularly dangerous because it does not require an attacker to authenticate to the target machine before running the attack.MS08-067 gained eternal infamy as the vulnerability exploited by the Conficker worm, which was widely reported in the media"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-26 03:07:26 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/books/">Books</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/books/penetration-testing/">penetration-testing</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>### Author:</p>
+<ul>
+<li>
+<p>loc 90 - MS08-067 patched an issue in the netapi32. dll that could allow attackers to use a specially crafted remote procedure call request via the Server Message Block (SMB) service to take over a target system. This vulnerability is particularly dangerous because it does not require an attacker to authenticate to the target machine before running the attack.MS08-067 gained eternal infamy as the vulnerability exploited by the Conficker worm, which was widely reported in the media</p>
+</li>
+<li>
+<p>loc 118 - One excellent way to find usernames is by looking for email addresses on the Internet. You might be surprised to find corporate email addresses publicly listed on parent-teacher association contact info, sports team rosters, and, of course, social media. You can use a Python tool called theHarvester to quickly scour thousands of search engine results for possible email addresses. theHarvester can automate searching Google, Bing, PGP, LinkedIn, and others for email addresses</p>
+</li>
+<li>
+<p>loc 120 - Feel free to use Maltego to study other Internet footprints, including your own, your company’s, your high school arch nemesis’s, and so on. Maltego uses information publicly available on the Internet, so it is perfectly legal to do reconnaissance on any entity.</p>
+</li>
+<li>
+<p>loc 124 - After we connected, the SMTP server announced itself as SLMail version 5.5.0.4433.Now, keep in mind that admins can change banners like this to say anything, even sending attackers and pentesters on a wild goose chase, studying vulnerabilities for a product that is not deployed</p>
+</li>
+<li>
+<p>loc 142 - Just as Metasploit evolved from an exploitation framework into a fully fledged penetrationtesting suite with hundreds of modules, Nmap has similarly evolved beyond its original goal of port scanning. The Nmap Scripting Engine (NSE) lets you run publicly available scripts and write your own</p>
+</li>
+<li>
+<p>loc 143 - If you use the -sC flag to tell Nmap to run a script scan in addition to port scanning, it will run all the scripts in the default category</p>
+</li>
+<li>
+<p>loc 144 - The NSE script nfs-ls.nse will connect to NFS and audit shares</p>
+</li>
+<li>
+<p>loc 145 - As you can see, the NSE script found the NFS share /export/georgia u on our Linux target. Of particular interest is the . ssh directory v, which may include sensitive information such as SSH keys and (if public key authentication is allowed on the SSH server) a list of authorized keys</p>
+</li>
+<li>
+<p>loc 146 - Some NSE scripts may crash services or harm the target system, and an entire category is dedicated to denial of service. For example, the script smb-check-vulns will check for the MS08-067 vulnerability and other SMB vulnerabilities. Its help information notes that this script is likely dangerous and shouldn’t be run on production systems unless you are prepared for the server to go down</p>
+</li>
+<li>
+<p>loc 147 - Some Metasploit exploits include a check function that connects to a target to see if it is vulnerable, rather than attempting to exploit a vulnerability. We can use this command as a kind of ad hoc vulnerability scan, as shown in Listing 6-8.(There’s no need to specify a payload when running check because no exploitation will take place.</p>
+</li>
+<li>
+<p>loc 147 - SLMail version 5.5.0.4433 has a known exploitable issue—CVE-2003-0264—so we can find it easily with a quick search in Msfconsole for cve:2003-0264</p>
+</li>
+<li>
+<p>loc 149 - Nikto is a web application vulnerability scanner built into Kali that’s like Nessus for web apps: It looks for issues such as dangerous files, outdated versions, and misconfigurations</p>
+</li>
+<li>
+<p>loc 149 - Nikto thinks that this install is subject to a code execution vulnerability, and further analysis of Open Sourced Vulnerability Database (OSVDB) entry 40478 reveals that this issue has a Metasploit exploit that we can use during exploitation. n o t e OSVDB (<a href="http://osvdb.com/">http://osvdb.com/</a>) is a vulnerability repository specifically for open source software such as TikiWiki, with detailed information on a wide variety of products</p>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="### Author: Martin, Robert C.
+  loc 552 - Dijkstra showed that the use of unrestrained jumps (goto statements) is harmful to program structure. As we’ll see in the chapters that follow, he replaced those jumps with the more familiar if/then/else and do/while/until constructs.
+  loc 555 - Structured programming imposes discipline on direct transfer of control.
+  loc 557 - Ole Johan Dahl and Kristen Nygaard. These two programmers noticed that the function call stack frame in the ALGOL language could be moved to a heap, thereby allowing local variables declared by a function to exist long after the function returned." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/books/clean-architecture/" />
+
+
+    <title>
+        
+            Clean Architecture: A Craftsman&#39;s Guide to Software Structure and Design (Robert C. Martin Series) :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Clean Architecture: A Craftsman&#39;s Guide to Software Structure and Design (Robert C. Martin Series)">
+<meta itemprop="description" content="### Author: Martin, Robert C.
+  loc 552 - Dijkstra showed that the use of unrestrained jumps (goto statements) is harmful to program structure. As we’ll see in the chapters that follow, he replaced those jumps with the more familiar if/then/else and do/while/until constructs.
+  loc 555 - Structured programming imposes discipline on direct transfer of control.
+  loc 557 - Ole Johan Dahl and Kristen Nygaard. These two programmers noticed that the function call stack frame in the ALGOL language could be moved to a heap, thereby allowing local variables declared by a function to exist long after the function returned.">
+<meta itemprop="dateModified" content="2020-04-26T03:08:25&#43;05:45" />
+<meta itemprop="wordCount" content="2525">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Clean Architecture: A Craftsman&#39;s Guide to Software Structure and Design (Robert C. Martin Series)"/>
+<meta name="twitter:description" content="### Author: Martin, Robert C.
+  loc 552 - Dijkstra showed that the use of unrestrained jumps (goto statements) is harmful to program structure. As we’ll see in the chapters that follow, he replaced those jumps with the more familiar if/then/else and do/while/until constructs.
+  loc 555 - Structured programming imposes discipline on direct transfer of control.
+  loc 557 - Ole Johan Dahl and Kristen Nygaard. These two programmers noticed that the function call stack frame in the ALGOL language could be moved to a heap, thereby allowing local variables declared by a function to exist long after the function returned."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-26 03:08:25 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Blog</a></li><li><a href="/books/">Books</a></li><li><a href="/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/books/clean-architecture/">Clean Architecture: A Craftsman&rsquo;s Guide to Software Structure and Design (Robert C. Martin Series)</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>### Author: Martin, Robert C.</p>
+<ul>
+<li>
+<p>loc 552 - Dijkstra showed that the use of unrestrained jumps (goto statements) is harmful to program structure. As we’ll see in the chapters that follow, he replaced those jumps with the more familiar if/then/else and do/while/until constructs.</p>
+</li>
+<li>
+<p>loc 555 - Structured programming imposes discipline on direct transfer of control.</p>
+</li>
+<li>
+<p>loc 557 - Ole Johan Dahl and Kristen Nygaard. These two programmers noticed that the function call stack frame in the ALGOL language could be moved to a heap, thereby allowing local variables declared by a function to exist long after the function returned. The function became a constructor for a class, the local variables became instance variables, and the nested functions became methods. This led inevitably to the discovery of polymorphism through the disciplined use of function pointers.</p>
+</li>
+<li>
+<p>loc 558 - two programmers noticed that the function call stack frame in the ALGOL language could be moved to a heap, thereby allowing local variables declared by a function to exist long after the function returned. The function became a constructor for a class, the local variables became instance variables, and the nested functions became methods. This led inevitably to the discovery of polymorphism through the disciplined use of function pointers.</p>
+</li>
+<li>
+<p>loc 562 - Object-oriented programming imposes discipline on indirect transfer of control.</p>
+</li>
+<li>
+<p>loc 571 - Functional programming imposes discipline upon assignment</p>
+</li>
+<li>
+<p>loc 610 - Dijkstra discovered that certain uses of goto statements prevent modules from being decomposed recursively into smaller and smaller units, thereby preventing use of the divide-and-conquer approach necessary for reasonable proofs. Other uses of goto, however, did not have this problem. Dijkstra realized that these “good” uses of goto corresponded to simple selection and iteration control structures such as if/then/else and do/while.</p>
+</li>
+<li>
+<p>loc 628 - In 1968, Dijkstra wrote a letter to the editor of CACM, which was published in the March issue. The title of this letter was “Go To Statement Considered Harmful.”</p>
+</li>
+<li>
+<p>loc 665 - purposes. Of course, not all statements are provable. The statement “This is a lie” is neither true nor false. It is one of the simplest examples of a statement that is not provable. Ultimately, we can say that mathematics is the discipline of proving provable statements true. Science, in contrast, is the discipline of proving provable</p>
+</li>
+<li>
+<p>loc 669 - Dijkstra once said, “Testing shows the presence, not the absence, of bugs.”</p>
+</li>
+<li>
+<p>loc 672 - Software development is not a mathematical endeavor, even though it seems to manipulate mathematical constructs. Rather, software is like a science. We show correctness by failing to prove incorrectness, despite our best efforts.</p>
+</li>
+<li>
+<p>loc 688 - object-oriented design (OO).</p>
+</li>
+<li>
+<p>loc 696 - Some folks fall back on three magic words to explain the nature of OO: encapsulation, inheritance, and polymorphism.</p>
+</li>
+<li>
+<p>loc 875 - OO is the ability, through the use of polymorphism, to gain absolute control over every source code dependency in the system. It allows the architect to create a plugin architecture, in which modules that contain high-level policies are independent of modules that contain low-level details. The low-level details are relegated to plugin modules that can be deployed and developed independently from the modules that contain high-level policies.</p>
+</li>
+<li>
+<p>loc 923 - Variables in functional languages do not vary.</p>
+</li>
+<li>
+<p>loc 935 - One of the most common compromises in regard to immutability is to segregate the application, or the services within the application, into mutable and immutable components. The immutable components perform their tasks in a purely functional way, without using any mutable variables.</p>
+</li>
+<li>
+<p>loc 941 - Since mutating state exposes those components to all the problems of concurrency, it is common practice to use some kind of transactional memory to protect the mutable variables from concurrent updates and race conditions. Transactional memory simply treats variables in memory the same way a database treats records on disk.1 It protects those variables with a transaction- or retry-based scheme.</p>
+</li>
+<li>
+<p>loc 961 - Architects would be wise to push as much processing as possible into the immutable components, and to drive as much code as possible out of those components that must allow mutation.</p>
+</li>
+<li>
+<p>loc 974 - Event sourcing is a strategy wherein we store the transactions, but not the state. When state is required, we simply apply all the transactions from the beginning of time.</p>
+</li>
+<li>
+<p>loc 974 - Event sourcing is a strategy wherein we store the transactions, but not the state. When state is required, we simply apply all the transactions from the beginning of time. Of course, we can take shortcuts. For example, we can compute and save the state every midnight. Then, when the state information is required,</p>
+</li>
+<li>
+<p>loc 974 - Event sourcing is a strategy wherein we store the transactions, but not the state. When state is required, we simply apply all the transactions from the beginning of time. Of course, we can take shortcuts. For example, we can compute and save the state every midnight. Then, when the state information is required, we need compute only the transactions since midnight.</p>
+</li>
+<li>
+<p>loc 1000 - architecture of the building doesn’t matter much. On the other hand, you</p>
+</li>
+<li>
+<p>loc 1020 - SRP: The Single Responsibility Principle An active corollary to Conway’s law: The best structure for a software system is heavily influenced by the social structure of the organization that uses it so that each software module has one, and only one, reason to change.</p>
+</li>
+<li>
+<p>loc 1021 - Conway’s law: The best structure for a software system is heavily influenced by the social structure of the organization that uses it so that each software module has one, and only one, reason to change.</p>
+</li>
+<li>
+<p>loc 1023 - OCP: The Open-Closed Principle Bertrand Meyer made this principle famous in the 1980s. The gist is that for software systems to be easy to change, they must be designed to allow the behavior of those systems to be changed by adding new code, rather than changing existing code.</p>
+</li>
+<li>
+<p>loc 1026 - LSP: The Liskov Substitution Principle Barbara Liskov’s famous definition of subtypes, from 1988. In short, this principle says that to build software systems from interchangeable parts, those parts must adhere to a contract that allows those parts to be substituted one for another.</p>
+</li>
+<li>
+<p>loc 1029 - ISP: The Interface Segregation Principle This principle advises software designers to avoid depending on things that they don’t use.</p>
+</li>
+<li>
+<p>loc 1031 - DIP: The Dependency Inversion Principle The code that implements high-level policy should not depend on the code that implements low-level details. Rather, details should depend on policies.</p>
+</li>
+<li>
+<p>loc 1167 - Let me say that again: If component A should be protected from changes in component B, then component B should depend on component A.</p>
+</li>
+<li>
+<p>loc 1172 - Why should the Interactor hold such a privileged position? Because it contains the business rules. The Interactor contains the highest-level policies of the application. All the other components are dealing with peripheral concerns. The Interactor deals with the central concern.</p>
+</li>
+<li>
+<p>loc 1313 - The lesson here is that depending on something that carries baggage that you don’t need can cause you troubles that you didn’t expect.</p>
+</li>
+<li>
+<p>loc 1314 - carries baggage that you don’t need can cause you troubles that you didn’t expect.</p>
+</li>
+<li>
+<p>loc 1319 - The Dependency Inversion Principle (DIP) tells us that the most flexible systems are those in which source code dependencies refer only to abstractions, not to concretions. In a statically typed language, like Java, this means that the use, import, and include statements should refer only to source modules containing interfaces, abstract classes, or some other kind of abstract declaration. Nothing concrete should be depended on.</p>
+</li>
+<li>
+<p>loc 1350 - Never mention the name of anything concrete and volatile. This is really just a restatement of the principle itself.</p>
+</li>
+<li>
+<p>loc 1366 - Note that the flow of control crosses the curved line in the opposite direction of the source code dependencies. The source code dependencies are inverted against the flow of control—which is why we refer to this principle as Dependency Inversion.</p>
+</li>
+<li>
+<p>loc 1505 - The Reuse/Release Equivalence Principle (REP) is a principle that seems obvious, at least in hindsight. People who want to reuse software components cannot, and will not, do so unless those components are tracked through a release process and are given release numbers.</p>
+</li>
+<li>
+<p>loc 1524 - THE COMMON CLOSURE PRINCIPLE Gather into components those classes that change for the same reasons and at the same times. Separate into different components those classes that change at different times and for different reasons. This is the Single Responsibility Principle restated for components. Just as the SRP says that a class should not contain multiples reasons to change, so the Common Closure Principle (CCP) says that a component should not have multiple reasons to change.</p>
+</li>
+<li>
+<p>loc 1525 - Gather into components those classes that change for the same reasons and at the same times. Separate into different components those classes that change at different times and for different reasons. This is the Single Responsibility Principle restated for components. Just as the SRP says that a class should not contain multiples reasons to change, so the Common Closure Principle (CCP) says that a component should not have multiple reasons to change.</p>
+</li>
+<li>
+<p>loc 1545 - Gather together those things that change at the same times and for the same reasons. Separate those</p>
+</li>
+<li>
+<p>loc 1545 - Gather together those things that change at the same times and for the same reasons. Separate those things that change at different times or for different reasons.</p>
+</li>
+<li>
+<p>loc 1572 - The REP and CCP are inclusive principles: Both tend to make components larger. The CRP is an exclusive principle, driving components to be smaller. It is the tension between these principles that good architects seek to resolve.</p>
+</li>
+<li>
+<p>loc 1641 - Regardless of which component you begin at, it is impossible to follow the dependency relationships and wind up back at that component. This structure has no cycles. It is a directed acyclic graph (DAG).</p>
+</li>
+<li>
+<p>loc 1661 - This cycle creates some immediate problems. For example, the developers working on the Database component know that to release it, the component must be compatible with Entities. However, with the cycle in place, the Database component must now also be compatible with Authorizer. But Authorizer depends on Interactors. This makes Database much more difficult to release. Entities, Authorizer, and Interactors have, in effect, become one large component—which means that all of the developers working on any of those components will experience the dreaded “morning after syndrome.” They will be stepping all over one another because they must all use exactly the same release of one another’s components</p>
+</li>
+<li>
+<p>loc 1678 - It is always possible to break a cycle of components and reinstate the dependency graph as a DAG. There are two primary mechanisms for doing so: 1. Apply the Dependency Inversion Principle (DIP). In the case in Figure 14.3, we could create an interface that has the methods that User needs. We could then put that interface into Entities and inherit it into Authorizer. This inverts the dependency between Entities and Authorizer, thereby breaking the cycle.</p>
+</li>
+<li>
+<p>loc 1685 - 2. Create a new component that both Entities and Authorizer depend on. Move the class(es) that they both depend on into that new component</p>
+</li>
+<li>
+<p>loc 1694 - The issues we have discussed so far lead to an inescapable conclusion: The component structure cannot be designed from the top down. It is not one of the first things about the system that is designed, but rather evolves as the system grows and changes.</p>
+</li>
+<li>
+<p>loc 1699 - component dependency diagrams have very little do to with describing the function of the application. Instead, they are a map to the buildability and maintainability of the application. This is why they aren’t designed at the beginning of the project. There is no software to build or maintain, so there is no need for a build and maintenance map.</p>
+</li>
+<li>
+<p>loc 1723 - By conforming to the Stable Dependencies Principle (SDP), we ensure that modules that are intended to be easy to change are not depended on by modules that are harder to change.</p>
+</li>
+<li>
+<p>loc 1731 - Many factors may make a software component hard to change—for example, its size, complexity, and clarity, among other characteristics. We will ignore all those factors and focus on something different here. One sure way to make a software component difficult to change, is to make lots of other software components depend on it.</p>
+</li>
+<li>
+<p>loc 1815 - The Stable Abstractions Principle (SAP) sets up a relationship between stability and abstractness. On the one hand, it says that a stable component should also be abstract so that its stability does not prevent it from being extended. On the other hand, it says that an unstable component should be concrete since it its instability allows the concrete code within it to be easily changed.</p>
+</li>
+<li>
+<p>loc 1820 - the SDP says that dependencies should run in the direction of stability, and the SAP says that stability implies abstraction. Thus dependencies run in the direction of abstraction.</p>
+</li>
+<li>
+<p>loc 1848 - The area around (0, 0) is a zone of exclusion called the Zone of Pain. Some software entities do, in fact, fall within the Zone of Pain. An example would be a database schema. Database schemas are notoriously volatile, extremely concrete, and highly depended on.</p>
+</li>
+<li>
+<p>loc 1858 - Consider a component near (1, 1). This location is undesirable because it is maximally abstract, yet has no dependents. Such components are useless. Thus this area is called the Zone of Uselessness.</p>
+</li>
+<li>
+<p>loc 1865 - The locus of points that are maximally distant from each zone is the line that connects (1, 0) and (0, 1). I call this line the Main Sequence.</p>
+</li>
+<li>
+<p>loc 1918 - The purpose of that shape is to facilitate the development, deployment, operation, and maintenance of the software system contained within it. The strategy behind that facilitation is to leave as many options open as possible, for as long as possible.</p>
+</li>
+<li>
+<p>loc 1978 - All software systems can be decomposed into two major elements: policy and details. The policy element embodies all the business rules and procedures.</p>
+</li>
+<li>
+<p>loc 1982 - The goal of the architect is to create a shape for the system that recognizes policy as the most essential element of the system while making the details irrelevant to that policy. This allows decisions about those details to be delayed and deferred.</p>
+</li>
+<li>
+<p>loc 1996 - If you can develop the high-level policy without committing to the details that surround it, you can delay and defer decisions about those details for a long time. And the longer you wait to make those decisions, the more information you have with which to make them properly.</p>
+</li>
+<li>
+<p>loc 2003 - What if the decisions have already been made by someone else? What if your company has made a commitment to a certain database, or a certain web server, or a certain framework? A good architect pretends that the decision has not been made, and shapes the system such that those decisions can still be deferred or changed for as long as possible. A good architect maximizes the number of decisions not made.</p>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>
