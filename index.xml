@@ -12,118 +12,113 @@
     
     
     <item>
-      <title>Emacs Hugo Blogging</title>
-      <link>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</link>
-      <pubDate>Sun, 26 Apr 2020 04:53:19 +0545</pubDate>
+      <title>The Astronomy Book</title>
+      <link>https://dragarok.github.io/books/dk/</link>
+      <pubDate>Mon, 27 Apr 2020 02:30:19 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</guid>
-      <description>:ID: 0dacbf0d-550d-4db9-8e15-6ffcede1107c
-Hugo blogging   Liked themes:
- Meme theme Harbor Cortex &amp;ndash;JethroKuan Hello friend ng rhazdon Beautiful Hugo   Blogging org mode Font    Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well
-//fonts.googleapis.com/css?family=Roboto+Slab:700,300,400|Source+Code+Pro:500 //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
-    Normalize css : I don&amp;rsquo;t know what it does but looks pretty cool with all these stars on github.</description>
+      <guid>https://dragarok.github.io/books/dk/</guid>
+      <description>### Author: DK
+  loc 216 - &amp;ldquo;You have to have the imagination to recognize a discovery when you make one.&amp;rdquo; Clyde Tombaugh
+  loc 225 - &amp;ldquo;What a wonderful and amazing scheme have we here of the magnificent vastness of the universe.&amp;rdquo; Christiaan Huygens
+  loc 235 - in 1979, the first example of a gravitational lens was identified, when the image of a quasar was seen to be double due to the presence of a galaxy along the line of sight, again as relativity had predicted.</description>
     </item>
     
     <item>
-      <title>13 STEPS TO BLOODY GOOD LUCK</title>
-      <link>https://dragarok.github.io/books/13-steps-to-bloody-good-luck/</link>
-      <pubDate>Sun, 26 Apr 2020 03:08:39 +0545</pubDate>
+      <title>Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time</title>
+      <link>https://dragarok.github.io/books/eat-that-frog/</link>
+      <pubDate>Mon, 27 Apr 2020 02:30:01 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/13-steps-to-bloody-good-luck/</guid>
-      <description>### Author: SANGHI, ASHWIN
-  loc 173 - eventually get married. Being at the right place
-  loc 206 - Pretty much everything we do to make ourselves lucky or unlucky can be traced back to attitude and approach.
-  loc 221 - On the other hand, the lucky group approached the task with less anxiety, greater optimism and in a far more relaxed frame of mind. They did not see the need to compete, and this relaxed attitude allowed them to observe beyond the immediate task at hand.</description>
+      <guid>https://dragarok.github.io/books/eat-that-frog/</guid>
+      <description>### Author: Tracy, Brian
+  loc 70 - Then I did something that changed my life. I began to ask successful people what they were doing that enabled them to be more productive and earn more money than me. And they told me.
+  loc 88 - The ability to concentrate singlemindedly on your most important task, to do it well and to finish it completely, is the key to great success, achievement, respect, status, and happiness in life.</description>
     </item>
     
     <item>
-      <title>A Brief History of Everyone who Ever Lived: The Stories in Our Genes</title>
-      <link>https://dragarok.github.io/books/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes/</link>
-      <pubDate>Sun, 26 Apr 2020 03:08:38 +0545</pubDate>
+      <title>The Courage to Be Disliked</title>
+      <link>https://dragarok.github.io/books/ichiro-kishimifumitake-koga/</link>
+      <pubDate>Mon, 27 Apr 2020 02:29:41 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes/</guid>
-      <description>### Author: Rutherford, Adam
-  loc 1 - Here two sets of multiplexers select register which perform input data for ALU. A decoder selects destination register by enabling its load input. The function select in ALU determines the particular operation that to be performed
-  loc 1 - For an example to perform the operation: R3  R1 + R2 1. MUX A selector (SELA): to place the content of R1 into bus A.</description>
+      <guid>https://dragarok.github.io/books/ichiro-kishimifumitake-koga/</guid>
+      <description>### Author: Ichiro Kishimi;Fumitake Koga
+  loc 143 - That is not because the world is complicated. It’s because you are making the world complicated. YOUTH: I am? PHILOSOPHER: None of us live in an objective world, but instead in a subjective world that we ourselves have given meaning to. The world you see is different from the one I see, and it’s impossible to share your world with anyone else</description>
     </item>
     
     <item>
-      <title>A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills</title>
-      <link>https://dragarok.github.io/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/</link>
-      <pubDate>Sun, 26 Apr 2020 03:08:37 +0545</pubDate>
+      <title>The Unbearable Lightness of Being</title>
+      <link>https://dragarok.github.io/books/milan-kundera/</link>
+      <pubDate>Mon, 27 Apr 2020 02:28:33 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/</guid>
-      <description>### Author: Wengrow, Jay
-  loc 678 - Simply put, O(log N) is the Big O way of describing an algorithm that increases one step each time the data is doubled.
-  loc 1542 - Looking up a value in a hash table has an efficiency of O(1) on average, as it takes just one step.
-  loc 1555 - The truth is that a hash function needs to meet only one criterion to be valid: a hash function must convert the same string to the same number every single time it’s applied.</description>
+      <guid>https://dragarok.github.io/books/milan-kundera/</guid>
+      <description>### Author: Milan Kundera
+  loc 306 - The idea of eternal return
+  loc 308 - Putting it negatively, the myth of eternal return states that a life which disappears once and for all, which does not return, is like a shadow, without weight, dead in advance, and whether it was horrible, beautiful, or sublime, its horror, sublimity, and beauty mean nothing
+  loc 332 - This reconciliation with Hitler reveals the profound moral perversity of a world that rests essentially on the nonexistence of return, for in this world everything is pardoned in advance and therefore everything cynically permitted.</description>
     </item>
     
     <item>
-      <title>A Guide to the Good Life: The Ancient Art of Stoic Joy</title>
-      <link>https://dragarok.github.io/books/a-guide-to-the-good-life-the-ancient-art-of-stoic-joy/</link>
-      <pubDate>Sun, 26 Apr 2020 03:08:36 +0545</pubDate>
+      <title>Kundalini – an Untold Story: A Himalayan Mystic&#39;s Insight Into the Power of Kundalini and Chakra Sadhana</title>
+      <link>https://dragarok.github.io/books/om-swami/</link>
+      <pubDate>Mon, 27 Apr 2020 02:28:19 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/a-guide-to-the-good-life-the-ancient-art-of-stoic-joy/</guid>
-      <description>### Author: Irvine, William B.
-  loc 162 - we are unlikely to have a good and meaningful life unless we can overcome our insatiability.
-  loc 441 - Students who knew logic could detect the fallacies committed by others and thereby prevail over them in arguments.
-  loc 443 - And besides providing explanations of natural phenomena, as modern physics does, Stoic physics was concerned with what we would call theology.</description>
+      <guid>https://dragarok.github.io/books/om-swami/</guid>
+      <description>### Author: OM Swami
+  loc 92 - The science of the kundalini is an ancient vidya that has been passed through an oral tradition in strict disciplic succession to worthy recipients. The science remains just as intact today. All it requires is for one to walk the path with great determination and tenacity.
+  loc 618 - When you don’t react, a sense of ease arises. Resistance goes away.</description>
     </item>
     
     <item>
-      <title>Android Concurrency (Android Deep Dive)</title>
-      <link>https://dragarok.github.io/books/android-concurrency-android-deep-dive/</link>
-      <pubDate>Sun, 26 Apr 2020 03:08:35 +0545</pubDate>
+      <title>Quiet: The Power of Introverts in a World That Can&#39;t Stop Talking</title>
+      <link>https://dragarok.github.io/books/quiet-the-power-of-introverts-in-a-world-that-cant-stop-talking/</link>
+      <pubDate>Mon, 27 Apr 2020 02:27:55 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/android-concurrency-android-deep-dive/</guid>
-      <description>### Author: Meike, G. Blake
-  loc 376 - Synchronization is the basic mechanism through which multiple Java threads share state in such a way that the result of the interaction is deterministic.
-  loc 400 - A correct concurrent program is one that abides by the contract for maintaining an illusion.
-  loc 401 - Negotiation between application programmers and hardware developers produce a language, and that language is a contract.</description>
+      <guid>https://dragarok.github.io/books/quiet-the-power-of-introverts-in-a-world-that-cant-stop-talking/</guid>
+      <description>### Author: Cain, Susan
+  loc 121 - Introverts living under the Extrovert Ideal are like women in a man’s world, discounted because of a trait that goes to the core of who they are.
+  loc 226 - Introverts are drawn to the inner world of thought and feeling, said Jung, extroverts to the external life of people and activities. Introverts focus on the meaning they make of the events swirling around them; extroverts plunge into the events themselves.</description>
     </item>
     
     <item>
-      <title>Android Design Patterns and Best Practice</title>
-      <link>https://dragarok.github.io/books/android-design-patterns-and-best-practice/</link>
-      <pubDate>Sun, 26 Apr 2020 03:08:35 +0545</pubDate>
+      <title>Gitanjali</title>
+      <link>https://dragarok.github.io/books/rabindranath-tagore/</link>
+      <pubDate>Mon, 27 Apr 2020 02:27:38 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/android-design-patterns-and-best-practice/</guid>
-      <description>### Author: Mew, Kyle
-  loc 330 - This is not to say that code can be simply cut and pasted from one project to another but that the concepts themselves can be used over and over again in many different situations.
-  loc 333 - When a developer describes a structure as say, an adapter or a facade, other developers will understand what this means and will immediately recognize the structure and purpose of the code.</description>
+      <guid>https://dragarok.github.io/books/rabindranath-tagore/</guid>
+      <description>### Author: Rabindranath Tagore
+  loc 208 - Indeed, when he is speaking of children, so much a part of himself this quality seems, one is not certain that he is not also speaking of the saints, “They build their houses with sand and they play with empty shells. With withered leaves they weave their boats and smilingly float them on the vast deep. Children have their play on the seashore of worlds.</description>
     </item>
     
     <item>
-      <title>Android Programming in a Day 2nd Edition! The Power Guide for Beginners In Android App Programming (Android, Android Programming, App Development, Android … App Programming, Rails, Ruby Programming)</title>
-      <link>https://dragarok.github.io/books/android-programming-in-a-day/</link>
-      <pubDate>Sun, 26 Apr 2020 03:08:34 +0545</pubDate>
+      <title>Siddhartha</title>
+      <link>https://dragarok.github.io/books/siddhartha/</link>
+      <pubDate>Mon, 27 Apr 2020 02:27:19 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/android-programming-in-a-day/</guid>
-      <description>### Author: Key, Sam
-  loc 96 - An Android operating system, regardless of version number, is composed of five software components. They are the Linux kernel, libraries, Android runtime, application framework, and applications.
-  loc 113 - Just above the kernel are the Android libraries. In programming, libraries are reusable program components that make program development and computer operations easier. A few of the known libraries in Android are surface manager, media framework, SQLite, OpenGL, ES, FreeType, WebKit, SGL, SSL, and libc.</description>
+      <guid>https://dragarok.github.io/books/siddhartha/</guid>
+      <description>### Author: Hermann Hesse
+  loc 747 - &amp;ldquo;No, Samana, I am not afraid of this. Did any Samana or Brahman ever fear, someone might come and grab him and steal his learning, and his religious devotion, and his depth of thought? No, for they are his very own, and he would only give away from those whatever he is willing to give and to whomever he is willing to give.</description>
     </item>
     
     <item>
-      <title>Antenna-Theory-Analysis-and-Design</title>
-      <link>https://dragarok.github.io/books/antenna-theory-analysis-and-design/</link>
-      <pubDate>Sun, 26 Apr 2020 03:08:34 +0545</pubDate>
+      <title>The Charisma Myth: How Anyone Can Master the Art and Science of Personal Magnetism</title>
+      <link>https://dragarok.github.io/books/the-charisma-myth/</link>
+      <pubDate>Mon, 27 Apr 2020 02:26:54 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/antenna-theory-analysis-and-design/</guid>
-      <description>### Author:
-  loc 28 - However, when the waves are radiated, they form closed loops and there are no charges to sustain their existence. This leads us to conclude that electric charges are required to excite the ﬁelds but are not needed to sustain them and may exist in their absence. This is in direct analogy with water waves
-  loc 30 - interaction. With today’s advanced numerical and computational methods, and animation and visualization software and hardware, this dilemma can, to a large extent, be minimized.</description>
+      <guid>https://dragarok.github.io/books/the-charisma-myth/</guid>
+      <description>### Author: Cabane, Olivia Fox
+  loc 111 - When we first meet someone, we instinctively assess whether that person is a potential friend or foe and whether they have the power to enact those intentions.
+  loc 114 - When you meet a charismatic person, you get the impression that they have a lot of power and they like you a lot.
+  loc 167 - Lower the intonation of your voice at the end of your sentences.</description>
     </item>
     
     <item>
-      <title>A Tale of Two Cities</title>
-      <link>https://dragarok.github.io/books/a-tale-of-two-cities/</link>
-      <pubDate>Sun, 26 Apr 2020 03:08:33 +0545</pubDate>
+      <title>The Lean Startup: How Today&#39;s Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</title>
+      <link>https://dragarok.github.io/books/the-lean-startup/</link>
+      <pubDate>Mon, 27 Apr 2020 02:26:33 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/a-tale-of-two-cities/</guid>
-      <description>### Author: Dickens, Charles
-  loc 160 - A wonderful fact to reflect upon, that every human creature is constituted to be that profound secret and mystery to every other. A solemn consideration, when I enter a great city by night, that every one of those darkly clustered houses encloses its own secret; that every room in every one of them encloses its own secret; that every beating heart in the hundreds of thousands of breasts there, is, in some of its imaginings, a secret to the heart nearest it!</description>
+      <guid>https://dragarok.github.io/books/the-lean-startup/</guid>
+      <description>### Author: Ries, Eric
+  loc 107 - There is a mythmaking industry hard at work to sell us that story, but I have come to believe that the story is false, the product of selection bias and after-the-fact rationalization.
+  loc 119 - Entrepreneurship is a kind of management. No, you didn’t read that wrong. We have wildly divergent associations with these two words, entrepreneurship and management. Lately, it seems that one is cool, innovative, and exciting and the other is dull, serious, and bland.</description>
     </item>
     
   </channel>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>history on Alok&#39;s Blog</title>
+    <link>https://dragarok.github.io/tags/history/</link>
+    <description>Recent content in history on Alok&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Apr 2020 02:30:19 +0545</lastBuildDate>
+    
+	<atom:link href="https://dragarok.github.io/tags/history/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Astronomy Book</title>
+      <link>https://dragarok.github.io/books/dk/</link>
+      <pubDate>Mon, 27 Apr 2020 02:30:19 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/books/dk/</guid>
+      <description>### Author: DK
+  loc 216 - &amp;ldquo;You have to have the imagination to recognize a discovery when you make one.&amp;rdquo; Clyde Tombaugh
+  loc 225 - &amp;ldquo;What a wonderful and amazing scheme have we here of the magnificent vastness of the universe.&amp;rdquo; Christiaan Huygens
+  loc 235 - in 1979, the first example of a gravitational lens was identified, when the image of a quasar was seen to be double due to the presence of a galaxy along the line of sight, again as relativity had predicted.</description>
+    </item>
+    
+  </channel>
+</rss>
