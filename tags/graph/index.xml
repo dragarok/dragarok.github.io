@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>graph on Alok&#39;s Blog</title>
-    <link>/tags/graph/</link>
+    <link>https://dragarok.github.io/tags/graph/</link>
     <description>Recent content in graph on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 19:24:20 +0545</lastBuildDate>
     
-	<atom:link href="/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Graph Neural Networks</title>
-      <link>/braindump/2020/04/graph-neural-networks/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/graph-neural-networks/</link>
       <pubDate>Sun, 19 Apr 2020 19:24:20 +0545</pubDate>
       
-      <guid>/braindump/2020/04/graph-neural-networks/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/graph-neural-networks/</guid>
       <description>Graph Neural Net Intro &amp;ndash; Information about the non euclidean space incorporated &amp;ndash; 2D conversion of image as input vs 3D image as input &amp;ndash; Ideas about no connectivity in cases of pixels &amp;ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &amp;ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &amp;ndash; Static and dynamic graphs will have different ways &amp;ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &amp;ndash; Adjacency Matrix are mostly used.</description>
     </item>
     
     <item>
       <title>Graph Neural Nets</title>
-      <link>/braindump/2020/04/graph-neural-nets/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/graph-neural-nets/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:36 +0545</pubDate>
       
-      <guid>/braindump/2020/04/graph-neural-nets/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/graph-neural-nets/</guid>
       <description>&amp;ndash; Information about the non euclidean space incorporated &amp;ndash; 2D conversion of image as input vs 3D image as input &amp;ndash; Ideas about no connectivity in cases of pixels &amp;ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &amp;ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &amp;ndash; Static and dynamic graphs will have different ways &amp;ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &amp;ndash; Adjacency Matrix are mostly used.</description>
     </item>
     
     <item>
       <title>Graph Algorithms</title>
-      <link>/braindump/2020/04/graph-algorithms/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:47 +0545</pubDate>
       
-      <guid>/braindump/2020/04/graph-algorithms/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</guid>
       <description>Graph Algos:
 Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
 Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes

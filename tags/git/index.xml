@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on Alok&#39;s Blog</title>
-    <link>/tags/git/</link>
+    <link>https://dragarok.github.io/tags/git/</link>
     <description>Recent content in git on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 18:43:16 +0545</lastBuildDate>
     
-	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gitconfig</title>
-      <link>/braindump/2020/04/gitconfig/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/gitconfig/</link>
       <pubDate>Sun, 19 Apr 2020 18:43:16 +0545</pubDate>
       
-      <guid>/braindump/2020/04/gitconfig/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/gitconfig/</guid>
       <description>Windows Git Config  eval $(ssh-agent -s) ssh-add ~/.ssh/sshkey  Add ssh key in one command https://www.howtogeek.com/168147/add-public-ssh-key-to-remote-server-in-a-single-command/
  ssh-keygen -t rsa cat ~/.ssh/id_rsa.pub | ssh user@hostname &amp;lsquo;cat &amp;raquo; .ssh/authorized_keys&amp;rsquo; Change id_rsa as per your key , user, hostname and you are good to go. Need to restart ssh service though from server.  </description>
     </item>
     
     <item>
       <title>Git Commands</title>
-      <link>/braindump/2020/04/git-commands/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/git-commands/</link>
       <pubDate>Sun, 19 Apr 2020 18:31:28 +0545</pubDate>
       
-      <guid>/braindump/2020/04/git-commands/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/git-commands/</guid>
       <description>&amp;ndash;tags: Useful
 Commands   git add : tracking with git
   git status : current status of tracked, untracked, changed, committed files.
@@ -40,10 +40,10 @@ Commands   git add : tracking with git
     
     <item>
       <title>Github Sec</title>
-      <link>/braindump/2020/04/github-sec/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/github-sec/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:35 +0545</pubDate>
       
-      <guid>/braindump/2020/04/github-sec/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/github-sec/</guid>
       <description>Steps to install and use all tools in Android 8.1:
 My specs: Android 8.1 Kernel from kimocoder&amp;rsquo;s Libraries built by myself Hijacker modded for use
  First install Nexmon app and install all tools in /system/xbin Copy the firmware from firmware folder and replace it in /vendor/firmware Place lib files from armeabi directory to /system/lib. Place lib files from arm64 to /system/lib64 Download hijacker modded apk for usage. * Note: You need to turn wifi on first here.</description>

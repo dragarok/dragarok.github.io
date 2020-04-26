@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tips on Alok&#39;s Blog</title>
-    <link>/tags/tips/</link>
+    <link>https://dragarok.github.io/tags/tips/</link>
     <description>Recent content in tips on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 18:31:28 +0545</lastBuildDate>
     
-	<atom:link href="/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Git Commands</title>
-      <link>/braindump/2020/04/git-commands/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/git-commands/</link>
       <pubDate>Sun, 19 Apr 2020 18:31:28 +0545</pubDate>
       
-      <guid>/braindump/2020/04/git-commands/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/git-commands/</guid>
       <description>&amp;ndash;tags: Useful
 Commands   git add : tracking with git
   git status : current status of tracked, untracked, changed, committed files.
@@ -30,19 +30,19 @@ Commands   git add : tracking with git
     
     <item>
       <title>Emacs Shortcuts</title>
-      <link>/braindump/2020/04/emacs-shortcuts/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</link>
       <pubDate>Sun, 19 Apr 2020 16:17:16 +0545</pubDate>
       
-      <guid>/braindump/2020/04/emacs-shortcuts/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</guid>
       <description>Emacs Shortcuts  Spc f d &amp;ndash;&amp;gt; search for files in dired Spc : &amp;ndash;&amp;gt; main command Spc g s &amp;ndash;&amp;gt; git status Spc n n &amp;ndash;&amp;gt; Capture template Spc n a &amp;ndash;&amp;gt; agenda view Vim commands  Ctrl up , down &amp;ndash;&amp;gt; go up and down in file q [a-z] &amp;ndash;&amp;gt; record a macro Shift &amp;raquo; &amp;ndash;&amp;gt; indent in code   Evil snipe:  s ch : go to ch ; same as f but more letters gc : to comment using evil gs [annotation] &amp;ndash;&amp;gt; to go to lines directly like vimium ease dii &amp;ndash;&amp;gt; delete inside indentation dik &amp;ndash;&amp;gt; delete inside plus a line above     Backlinks  Emacs Hugo Blogging  </description>
     </item>
     
     <item>
       <title>Numpy</title>
-      <link>/braindump/2020/04/numpy/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/numpy/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:50 +0545</pubDate>
       
-      <guid>/braindump/2020/04/numpy/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/numpy/</guid>
       <description>Working with numpy:   import numpy as np
   a = np.array([0,1,2])
   a.ndim - gives dimension of array
@@ -53,19 +53,19 @@ Commands   git add : tracking with git
     
     <item>
       <title>Emacs Completion</title>
-      <link>/braindump/2020/04/emacs-completion/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/emacs-completion/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:42 +0545</pubDate>
       
-      <guid>/braindump/2020/04/emacs-completion/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/emacs-completion/</guid>
       <description>Vim&amp;rsquo;s omni like completion Keybind	Description C-x C-]	Complete etags C-x C-f	Complete file path C-x C-k	Complete from dictionary/keyword C-x C-l	Complete full line C-x C-o	Invoke complete-at-point function C-x C-n	Complete next symbol at point C-x C-p	Complete previous symbol at point C-x C-s	Complete snippet C-x s	Complete spelling suggestions</description>
     </item>
     
     <item>
       <title>Linux Tip</title>
-      <link>/braindump/2020/04/linux-tip/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/linux-tip/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:41 +0545</pubDate>
       
-      <guid>/braindump/2020/04/linux-tip/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/linux-tip/</guid>
       <description>Additional features that come in handy:
 Bashrc : Notify when command completes
 control + a for getting to the start of the line and control + e to get to the end of the line
@@ -77,29 +77,29 @@ yes | command_script_anything : for having not to say yes every time to a script
     
     <item>
       <title>Python</title>
-      <link>/braindump/2020/04/python/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/python/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:54 +0545</pubDate>
       
-      <guid>/braindump/2020/04/python/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/python/</guid>
       <description>&amp;ndash; iteration: -! specific no of times: range(5) -! as long as the variable : for ch in &amp;ldquo;Hello&amp;rdquo; &amp;ndash; querying the directory of the module for objects to use: e.g. import random dir(random) &amp;ndash; asking for help with the object we searched: help(random.randint) &amp;ndash; sleep function: import time time.sleep(5) &amp;ndash; Know that everything is an object in python &amp;ndash; Built in data structures: list, dictionary, tuple and sets -! lists are dynamic and mutable too.</description>
     </item>
     
     <item>
       <title>Linux one liners</title>
-      <link>/braindump/2020/04/linux-one-liners/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/linux-one-liners/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:40 +0545</pubDate>
       
-      <guid>/braindump/2020/04/linux-one-liners/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/linux-one-liners/</guid>
       <description>&amp;ndash;tags: Useful Linux Packages
 sudo !! python -m SimpleHTTPServer :w !sudo tee % cd - ^foo^bar mtr google.com cp filename{,.bak} ctrl-x e $ssh-copy-id user@host &amp;gt; file.txt &amp;lt;space&amp;gt;command ffmpeg -f x11grab -s wxga -r 25 -i :0.0 -sameq /tmp/out.mpg reset ssh -N -L2001:localhost:80 somemachine echo &amp;#34;ls -l&amp;#34; | at midnight dig +short txt &amp;lt;keyword&amp;gt;.wp.dg.cx mount | column -t curl -u user:pass -d status=&amp;#34;Tweeting from the shell&amp;#34; http://twitter.com/statuses/update.xml &amp;#39;ALT+.&amp;#39; or &amp;#39;&amp;lt;ESC&amp;gt; .&amp;#39; dd if=/dev/dsp | ssh -c arcfour -C username@host dd of=/dev/dsp netstat -tlnp mount -t tmpfs tmpfs /mnt -o size=1024m sshfs name@server:/path/to/folder /path/to/mount/point !</description>
     </item>
     
     <item>
       <title>Photoshop</title>
-      <link>/braindump/2020/04/photoshop/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/photoshop/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:14 +0545</pubDate>
       
-      <guid>/braindump/2020/04/photoshop/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/photoshop/</guid>
       <description>Photoshop carefulness:   Active layer is to be cared.
   Not on bed or something
   control +g go back
@@ -111,10 +111,10 @@ Never use yellow background with white text Designing a cursor to appear on the 
     
     <item>
       <title>Tmux</title>
-      <link>/braindump/2020/04/tmux/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/tmux/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:01 +0545</pubDate>
       
-      <guid>/braindump/2020/04/tmux/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/tmux/</guid>
       <description>mastering tmux:
 tmux new -s &amp;ldquo;session_name&amp;rdquo;
 tmux ls - lists sessions

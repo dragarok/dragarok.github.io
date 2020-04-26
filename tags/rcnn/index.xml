@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rcnn on Alok&#39;s Blog</title>
-    <link>/tags/rcnn/</link>
+    <link>https://dragarok.github.io/tags/rcnn/</link>
     <description>Recent content in rcnn on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:40 +0545</lastBuildDate>
     
-	<atom:link href="/tags/rcnn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/rcnn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RCNN</title>
-      <link>/braindump/2020/04/rcnn/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/rcnn/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:40 +0545</pubDate>
       
-      <guid>/braindump/2020/04/rcnn/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/rcnn/</guid>
       <description>Faster RCNN
 Region Proposal:
 Anchors: Different size bounding box of different aspect ratio and sizes

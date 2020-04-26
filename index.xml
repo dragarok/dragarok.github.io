@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alok&#39;s Blog</title>
-    <link>/</link>
+    <link>https://dragarok.github.io/</link>
     <description>Recent content on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Apr 2020 07:53:22 +0545</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Emacs Hugo Blogging</title>
-      <link>/braindump/2020/04/emacs-hugo-blogging/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</link>
       <pubDate>Sun, 26 Apr 2020 04:53:19 +0545</pubDate>
       
-      <guid>/braindump/2020/04/emacs-hugo-blogging/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</guid>
       <description>:ID: 0dacbf0d-550d-4db9-8e15-6ffcede1107c
 Hugo blogging   Liked themes:
  Meme theme Harbor Cortex &amp;ndash;JethroKuan Hello friend ng rhazdon Beautiful Hugo   Blogging org mode Font    Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well
@@ -26,10 +26,10 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>13 STEPS TO BLOODY GOOD LUCK</title>
-      <link>/books/13-steps-to-bloody-good-luck/</link>
+      <link>https://dragarok.github.io/books/13-steps-to-bloody-good-luck/</link>
       <pubDate>Sun, 26 Apr 2020 03:08:39 +0545</pubDate>
       
-      <guid>/books/13-steps-to-bloody-good-luck/</guid>
+      <guid>https://dragarok.github.io/books/13-steps-to-bloody-good-luck/</guid>
       <description>### Author: SANGHI, ASHWIN
   loc 173 - eventually get married. Being at the right place
   loc 206 - Pretty much everything we do to make ourselves lucky or unlucky can be traced back to attitude and approach.
@@ -38,10 +38,10 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>A Brief History of Everyone who Ever Lived: The Stories in Our Genes</title>
-      <link>/books/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes/</link>
+      <link>https://dragarok.github.io/books/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes/</link>
       <pubDate>Sun, 26 Apr 2020 03:08:38 +0545</pubDate>
       
-      <guid>/books/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes/</guid>
+      <guid>https://dragarok.github.io/books/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes/</guid>
       <description>### Author: Rutherford, Adam
   loc 1 - Here two sets of multiplexers select register which perform input data for ALU. A decoder selects destination register by enabling its load input. The function select in ALU determines the particular operation that to be performed
   loc 1 - For an example to perform the operation: R3  R1 + R2 1. MUX A selector (SELA): to place the content of R1 into bus A.</description>
@@ -49,10 +49,10 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>A Common-Sense Guide to Data Structures and Algorithms: Level Up Your Core Programming Skills</title>
-      <link>/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/</link>
+      <link>https://dragarok.github.io/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/</link>
       <pubDate>Sun, 26 Apr 2020 03:08:37 +0545</pubDate>
       
-      <guid>/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/</guid>
+      <guid>https://dragarok.github.io/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/</guid>
       <description>### Author: Wengrow, Jay
   loc 678 - Simply put, O(log N) is the Big O way of describing an algorithm that increases one step each time the data is doubled.
   loc 1542 - Looking up a value in a hash table has an efficiency of O(1) on average, as it takes just one step.
@@ -61,10 +61,10 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>A Guide to the Good Life: The Ancient Art of Stoic Joy</title>
-      <link>/books/a-guide-to-the-good-life-the-ancient-art-of-stoic-joy/</link>
+      <link>https://dragarok.github.io/books/a-guide-to-the-good-life-the-ancient-art-of-stoic-joy/</link>
       <pubDate>Sun, 26 Apr 2020 03:08:36 +0545</pubDate>
       
-      <guid>/books/a-guide-to-the-good-life-the-ancient-art-of-stoic-joy/</guid>
+      <guid>https://dragarok.github.io/books/a-guide-to-the-good-life-the-ancient-art-of-stoic-joy/</guid>
       <description>### Author: Irvine, William B.
   loc 162 - we are unlikely to have a good and meaningful life unless we can overcome our insatiability.
   loc 441 - Students who knew logic could detect the fallacies committed by others and thereby prevail over them in arguments.
@@ -73,10 +73,10 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>Android Concurrency (Android Deep Dive)</title>
-      <link>/books/android-concurrency-android-deep-dive/</link>
+      <link>https://dragarok.github.io/books/android-concurrency-android-deep-dive/</link>
       <pubDate>Sun, 26 Apr 2020 03:08:35 +0545</pubDate>
       
-      <guid>/books/android-concurrency-android-deep-dive/</guid>
+      <guid>https://dragarok.github.io/books/android-concurrency-android-deep-dive/</guid>
       <description>### Author: Meike, G. Blake
   loc 376 - Synchronization is the basic mechanism through which multiple Java threads share state in such a way that the result of the interaction is deterministic.
   loc 400 - A correct concurrent program is one that abides by the contract for maintaining an illusion.
@@ -85,10 +85,10 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>Android Design Patterns and Best Practice</title>
-      <link>/books/android-design-patterns-and-best-practice/</link>
+      <link>https://dragarok.github.io/books/android-design-patterns-and-best-practice/</link>
       <pubDate>Sun, 26 Apr 2020 03:08:35 +0545</pubDate>
       
-      <guid>/books/android-design-patterns-and-best-practice/</guid>
+      <guid>https://dragarok.github.io/books/android-design-patterns-and-best-practice/</guid>
       <description>### Author: Mew, Kyle
   loc 330 - This is not to say that code can be simply cut and pasted from one project to another but that the concepts themselves can be used over and over again in many different situations.
   loc 333 - When a developer describes a structure as say, an adapter or a facade, other developers will understand what this means and will immediately recognize the structure and purpose of the code.</description>
@@ -96,10 +96,10 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>Android Programming in a Day 2nd Edition! The Power Guide for Beginners In Android App Programming (Android, Android Programming, App Development, Android … App Programming, Rails, Ruby Programming)</title>
-      <link>/books/android-programming-in-a-day/</link>
+      <link>https://dragarok.github.io/books/android-programming-in-a-day/</link>
       <pubDate>Sun, 26 Apr 2020 03:08:34 +0545</pubDate>
       
-      <guid>/books/android-programming-in-a-day/</guid>
+      <guid>https://dragarok.github.io/books/android-programming-in-a-day/</guid>
       <description>### Author: Key, Sam
   loc 96 - An Android operating system, regardless of version number, is composed of five software components. They are the Linux kernel, libraries, Android runtime, application framework, and applications.
   loc 113 - Just above the kernel are the Android libraries. In programming, libraries are reusable program components that make program development and computer operations easier. A few of the known libraries in Android are surface manager, media framework, SQLite, OpenGL, ES, FreeType, WebKit, SGL, SSL, and libc.</description>
@@ -107,10 +107,10 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>Antenna-Theory-Analysis-and-Design</title>
-      <link>/books/antenna-theory-analysis-and-design/</link>
+      <link>https://dragarok.github.io/books/antenna-theory-analysis-and-design/</link>
       <pubDate>Sun, 26 Apr 2020 03:08:34 +0545</pubDate>
       
-      <guid>/books/antenna-theory-analysis-and-design/</guid>
+      <guid>https://dragarok.github.io/books/antenna-theory-analysis-and-design/</guid>
       <description>### Author:
   loc 28 - However, when the waves are radiated, they form closed loops and there are no charges to sustain their existence. This leads us to conclude that electric charges are required to excite the ﬁelds but are not needed to sustain them and may exist in their absence. This is in direct analogy with water waves
   loc 30 - interaction. With today’s advanced numerical and computational methods, and animation and visualization software and hardware, this dilemma can, to a large extent, be minimized.</description>
@@ -118,10 +118,10 @@ Hugo blogging   Liked themes:
     
     <item>
       <title>A Tale of Two Cities</title>
-      <link>/books/a-tale-of-two-cities/</link>
+      <link>https://dragarok.github.io/books/a-tale-of-two-cities/</link>
       <pubDate>Sun, 26 Apr 2020 03:08:33 +0545</pubDate>
       
-      <guid>/books/a-tale-of-two-cities/</guid>
+      <guid>https://dragarok.github.io/books/a-tale-of-two-cities/</guid>
       <description>### Author: Dickens, Charles
   loc 160 - A wonderful fact to reflect upon, that every human creature is constituted to be that profound secret and mystery to every other. A solemn consideration, when I enter a great city by night, that every one of those darkly clustered houses encloses its own secret; that every room in every one of them encloses its own secret; that every beating heart in the hundreds of thousands of breasts there, is, in some of its imaginings, a secret to the heart nearest it!</description>
     </item>

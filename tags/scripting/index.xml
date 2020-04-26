@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>scripting on Alok&#39;s Blog</title>
-    <link>/tags/scripting/</link>
+    <link>https://dragarok.github.io/tags/scripting/</link>
     <description>Recent content in scripting on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:38 +0545</lastBuildDate>
     
-	<atom:link href="/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/scripting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Know Bash Better</title>
-      <link>/braindump/2020/04/know-bash-better/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/know-bash-better/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:38 +0545</pubDate>
       
-      <guid>/braindump/2020/04/know-bash-better/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/know-bash-better/</guid>
       <description>Run a history command  ![line-num-from-history]   Run any command as like as last time  ![e.g. !vim] would open the same file/directory you did last time.   Perform previous action as root  sudo !!   Search through history commands  Control+R Control+C to cancel   Search  grep &amp;ldquo;text&amp;rdquo; filename   tldr :  tldr is useful find.    -Cheat</description>
     </item>
     

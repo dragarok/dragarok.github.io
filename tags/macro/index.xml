@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>macro on Alok&#39;s Blog</title>
-    <link>/tags/macro/</link>
+    <link>https://dragarok.github.io/tags/macro/</link>
     <description>Recent content in macro on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:05 +0545</lastBuildDate>
     
-	<atom:link href="/tags/macro/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/macro/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Progressive Summarization</title>
-      <link>/braindump/2020/04/progressive-summarization/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/progressive-summarization/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:05 +0545</pubDate>
       
-      <guid>/braindump/2020/04/progressive-summarization/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/progressive-summarization/</guid>
       <description>Steps  Layer 1: When you encounter something interesting, capture it Layer 2: Bold the most interesting parts Layer 3: Highlight the most interesting bolded sections Layer 4: Summarize the bolded portions and the note in your own words Layer 5: Turn your notes into something new: a tweet, a blog post, even a book  *</description>
     </item>
     

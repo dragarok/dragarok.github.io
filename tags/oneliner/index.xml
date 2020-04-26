@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>oneliner on Alok&#39;s Blog</title>
-    <link>/tags/oneliner/</link>
+    <link>https://dragarok.github.io/tags/oneliner/</link>
     <description>Recent content in oneliner on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:25 +0545</lastBuildDate>
     
-	<atom:link href="/tags/oneliner/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dragarok.github.io/tags/oneliner/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python one liners</title>
-      <link>/braindump/2020/04/python-one-liners/</link>
+      <link>https://dragarok.github.io/braindump/2020/04/python-one-liners/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:25 +0545</pubDate>
       
-      <guid>/braindump/2020/04/python-one-liners/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/python-one-liners/</guid>
       <description>print(sum(map(int,bin(int(input()))[2:]))) : Adding numbers from a number converted to binary</description>
     </item>
     
