@@ -12,6 +12,35 @@
     
     
     <item>
+      <title>KdeConnect I3</title>
+      <link>https://dragarok.github.io/braindump/2020/05/kdeconnect-i3/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/05/kdeconnect-i3/</guid>
+      <description>Firewall sudo ufw allow 1714:1764/udp sudo ufw allow 1714:1764/tcp
+Installation pacman -S kdeconnect yay -S indicator-kdeconnect I3 settings exec --no-startup-id indicator-kdeconnect I3 additional If the above one is not working
+exec --no-startup-id /usr/lib/kdeconnectd </description>
+    </item>
+    
+    <item>
+      <title>School_change</title>
+      <link>https://dragarok.github.io/posts/2020/05/school_change/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/posts/2020/05/school_change/</guid>
+      <description>A Reminiscence   Looking at this image, I find it funny how we change so much that we are no longer ourselves. I believed I was this way for as long as I can remember but alas with time: memories fade, people around you change and you no longer are the same person that you were before. This is the first page of my diary I made in my 9th grade.</description>
+    </item>
+    
+    <item>
+      <title>Songs</title>
+      <link>https://dragarok.github.io/braindump/2020/04/songs/</link>
+      <pubDate>Mon, 27 Apr 2020 11:04:41 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/songs/</guid>
+      <description>Eurielle - Song of Durin &amp;ndash; Hobbit Part 1-3 Jade Bird - Ruins</description>
+    </item>
+    
+    <item>
       <title>The Astronomy Book</title>
       <link>https://dragarok.github.io/books/dk/</link>
       <pubDate>Mon, 27 Apr 2020 02:30:19 +0545</pubDate>
@@ -86,39 +115,6 @@
       <guid>https://dragarok.github.io/books/rabindranath-tagore/</guid>
       <description>### Author: Rabindranath Tagore
   loc 208 - Indeed, when he is speaking of children, so much a part of himself this quality seems, one is not certain that he is not also speaking of the saints, “They build their houses with sand and they play with empty shells. With withered leaves they weave their boats and smilingly float them on the vast deep. Children have their play on the seashore of worlds.</description>
-    </item>
-    
-    <item>
-      <title>Siddhartha</title>
-      <link>https://dragarok.github.io/books/siddhartha/</link>
-      <pubDate>Mon, 27 Apr 2020 02:27:19 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/books/siddhartha/</guid>
-      <description>### Author: Hermann Hesse
-  loc 747 - &amp;ldquo;No, Samana, I am not afraid of this. Did any Samana or Brahman ever fear, someone might come and grab him and steal his learning, and his religious devotion, and his depth of thought? No, for they are his very own, and he would only give away from those whatever he is willing to give and to whomever he is willing to give.</description>
-    </item>
-    
-    <item>
-      <title>The Charisma Myth: How Anyone Can Master the Art and Science of Personal Magnetism</title>
-      <link>https://dragarok.github.io/books/the-charisma-myth/</link>
-      <pubDate>Mon, 27 Apr 2020 02:26:54 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/books/the-charisma-myth/</guid>
-      <description>### Author: Cabane, Olivia Fox
-  loc 111 - When we first meet someone, we instinctively assess whether that person is a potential friend or foe and whether they have the power to enact those intentions.
-  loc 114 - When you meet a charismatic person, you get the impression that they have a lot of power and they like you a lot.
-  loc 167 - Lower the intonation of your voice at the end of your sentences.</description>
-    </item>
-    
-    <item>
-      <title>The Lean Startup: How Today&#39;s Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</title>
-      <link>https://dragarok.github.io/books/the-lean-startup/</link>
-      <pubDate>Mon, 27 Apr 2020 02:26:33 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/books/the-lean-startup/</guid>
-      <description>### Author: Ries, Eric
-  loc 107 - There is a mythmaking industry hard at work to sell us that story, but I have come to believe that the story is false, the product of selection bias and after-the-fact rationalization.
-  loc 119 - Entrepreneurship is a kind of management. No, you didn’t read that wrong. We have wildly divergent associations with these two words, entrepreneurship and management. Lately, it seems that one is cool, innovative, and exciting and the other is dull, serious, and bland.</description>
     </item>
     
   </channel>
