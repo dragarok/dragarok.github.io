@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="&amp;quot;&amp;rdquo;&amp;rdquo; Adapted from Oliver Atanaszov&amp;rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &amp;quot;&amp;rdquo;&amp;rdquo; from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm
+n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256
+class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;]
+def encode(self, input): return list(self." />
+<meta name="keywords" content="Blog, tokenization, bert" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/ai/tokenizing_for_bert/" />
+
+
+    <title>
+        
+            Bert Tokenization :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Bert Tokenization">
+<meta itemprop="description" content="&quot;&rdquo;&rdquo; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&rdquo;&rdquo; from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm
+n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256
+class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;]
+def encode(self, input): return list(self.">
+<meta itemprop="datePublished" content="2020-01-24T00:00:00&#43;05:45" />
+<meta itemprop="dateModified" content="2020-05-02T03:40:21&#43;05:45" />
+<meta itemprop="wordCount" content="255">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="tokenization,bert," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Bert Tokenization"/>
+<meta name="twitter:description" content="&quot;&rdquo;&rdquo; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&rdquo;&rdquo; from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm
+n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256
+class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;]
+def encode(self, input): return list(self."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-01-24 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://dragarok.github.io/ai/tokenizing_for_bert/">Bert Tokenization</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>&quot;&rdquo;&rdquo;
+Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning
+<a href="https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb">https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb</a>
+&quot;&rdquo;&rdquo;
+from concurrent.futures import ProcessPoolExecutor
+import multiprocessing
+import os
+import numpy as np
+import pandas as pd
+import torch
+from torch.utils.data import TensorDataset, random_split, DataLoader
+from tqdm import tqdm</p>
+<p>n_cpu = multiprocessing.cpu_count()
+MAX_LENGTH = 256</p>
+<p>class TextProcessor:
+def __init__(self, tokenizer, label2id: dict, max_length: int=512):
+self.tokenizer = tokenizer
+self.label2id = label2id
+self.max_length = max_length
+self.clf_token = self.tokenizer.vocab['[CLS]']
+self.pad_token = self.tokenizer.vocab['[PAD]']</p>
+<p>def encode(self, input):
+return list(self.tokenizer.convert_tokens_to_ids(o) for o in input)</p>
+<p>def token2id(self, item: Tuple[str, str]):
+&ldquo;Convert text (item[0]) to sequence of IDs and label (item[1]) to integer&rdquo;
+assert len(item) == 2   # Need a row of text AND labels
+label, text = item[0], item[1]
+assert isinstance(text, str)   # Need position 1 of input to be of type(str)
+inputs = self.tokenizer.tokenize(text)</p>
+<p>if len(inputs) &gt;= self.max_length:
+inputs = inputs[:self.max_length - 1]
+ids = self.encode(inputs) + [self.clf_token]
+else:
+pad = [self.pad_token] * (self.max_length - len(inputs) - 1)
+ids = self.encode(inputs) + [self.clf_token] + pad</p>
+<p>return np.array(ids, dtype='int64&rsquo;), self.label2id[label]</p>
+<p>def process_row(self, row):
+&ldquo;Calls the token2id method of the text processor for passing items to executor&rdquo;
+return self.token2id((row[1][LABEL_COL], row[1][TEXT_COL]))</p>
+<p>def create_dataloader(self,
+df: pd.DataFrame,
+batch_size: int = 32,
+shuffle: bool = False,
+valid_pct: float = None):
+&ldquo;Process rows in pd.DataFrame using n_cpus and return a DataLoader&rdquo;</p>
+<p>tqdm.pandas()
+with ProcessPoolExecutor(max_workers=n_cpu) as executor:
+result = list(
+tqdm(executor.map(self.process_row, df.iterrows(), chunksize=8192),
+desc=f&quot;Processing {len(df)} examples on {n_cpu} cores&rdquo;,
+total=len(df)))</p>
+<p>features = [r[0] for r in result]
+labels = [r[1] for r in result]</p>
+<p>dataset = TensorDataset(torch.tensor(features, dtype=torch.long),
+torch.tensor(labels, dtype=torch.long))</p>
+<p>data_loader = DataLoader(dataset,
+batch_size=batch_size,
+num_workers=0,
+shuffle=shuffle,
+pin_memory=torch.cuda.is_available())
+return data_loader</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://dragarok.github.io/tags/tokenization">tokenization</a></span><span class="tag"><a href="https://dragarok.github.io/tags/bert">bert</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

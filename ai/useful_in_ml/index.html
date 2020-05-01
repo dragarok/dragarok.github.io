@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="&amp;ndash;tags: 3ddatarepresentation
+Useful tricks:   Setting the subplot size:
+f, axs = plt.subplots(2,2,figsize=(15,15))
+  Permuting axes in torch tensor(Useful when torch images axes need to be changed):
+testimage = image[0].permute(1, 2, 0)
+  Adding rectangular box to images:
+ax.add_patch(rectangle)
+  patches from matplotlib.patches
+  patches will have function for a rectangle
+   Add empty numpy array   np.empty()
+  can be filled using matrix_name." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/ai/useful_in_ml/" />
+
+
+    <title>
+        
+            ML Useful :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="ML Useful">
+<meta itemprop="description" content="&ndash;tags: 3ddatarepresentation
+Useful tricks:   Setting the subplot size:
+f, axs = plt.subplots(2,2,figsize=(15,15))
+  Permuting axes in torch tensor(Useful when torch images axes need to be changed):
+testimage = image[0].permute(1, 2, 0)
+  Adding rectangular box to images:
+ax.add_patch(rectangle)
+  patches from matplotlib.patches
+  patches will have function for a rectangle
+   Add empty numpy array   np.empty()
+  can be filled using matrix_name.">
+<meta itemprop="datePublished" content="2020-01-24T00:00:00&#43;05:45" />
+<meta itemprop="dateModified" content="2020-05-02T03:58:07&#43;05:45" />
+<meta itemprop="wordCount" content="1283">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="ML Useful"/>
+<meta name="twitter:description" content="&ndash;tags: 3ddatarepresentation
+Useful tricks:   Setting the subplot size:
+f, axs = plt.subplots(2,2,figsize=(15,15))
+  Permuting axes in torch tensor(Useful when torch images axes need to be changed):
+testimage = image[0].permute(1, 2, 0)
+  Adding rectangular box to images:
+ax.add_patch(rectangle)
+  patches from matplotlib.patches
+  patches will have function for a rectangle
+   Add empty numpy array   np.empty()
+  can be filled using matrix_name."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-01-24 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://dragarok.github.io/ai/useful_in_ml/">ML Useful</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>&ndash;tags: <a href="../../braindump/2020/04/3ddatarepresentation/">3ddatarepresentation</a></p>
+<h2 id="useful-tricks">Useful tricks:</h2>
+<ul>
+<li>
+<p>Setting the subplot size:</p>
+<p>f, axs = plt.subplots(2,2,figsize=(15,15))</p>
+</li>
+<li>
+<p>Permuting axes in torch tensor(Useful when torch images axes need to be changed):</p>
+<p>testimage = image[0].permute(1, 2, 0)</p>
+</li>
+<li>
+<p>Adding rectangular box to images:</p>
+<p>ax.add_patch(rectangle)</p>
+</li>
+<li>
+<p>patches from matplotlib.patches</p>
+</li>
+<li>
+<p>patches will have function for a rectangle</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Add empty numpy array
+<ul>
+<li>
+<p>np.empty()</p>
+</li>
+<li>
+<p>can be filled using matrix_name.fill(d)</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Contiguous() call in pytorch:
+<ul>
+<li>When you call contiguous(), it actually makes a copy of tensor so the order of elements would be same as if tensor of same shape created from scratch.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Random permutation function in pytorch:</p>
+<p>rand_num_perm = torch.randperm(self.num_per_batch)</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Expanding tensor without making a change to a dimension:
+<ul>
+<li>
+<p>x = torch.tensor([[1], [2], [3]])</p>
+</li>
+<li>
+<p>x.expand(-1, 4)</p>
+</li>
+<li>
+<p>This means keep the first dimension intact while expanding. Here in the example, it&rsquo;s 3. so the expand will return 3 by 4 tensor.</p>
+</li>
+<li>
+<p>tensor([[ 1,  1,  1,  1],
+[ 2,  2,  2,  2],
+[ 3,  3,  3,  3]])</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Convert 1 channel image to 3 channels:</p>
+<p>if len(im.shape) == 2:
+im = im[:,:,np.newaxis]
+im = np.concatenate((im,im,im), axis=2)</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>RGB to BGR image:</li>
+</ul>
+<p>im = im[:,:,::-1]</p>
+<p>Finding index of mask pixels first horizontal:</p>
+<p>mask = np.zeros((800, 600, 4), dtype=np.int32)
+m = np.array(mask[:, :, 0])
+np.where(np.any(m, axis=0))[0]</p>
+<p>np.where gives the indexes of elements where the required condition meets</p>
+<p>Get a combination of two different arrays:</p>
+<p>scales, ratios = np.meshgrid(np.array(scales), np.array(ratios))</p>
+<p>scales = scales.flatten()
+ratios = ratios.flatten()</p>
+<p>heights = scales / np.sqrt(ratios)</p>
+<p>In this way , we can operate over all combination of operations.</p>
+<p>Get model&rsquo;d few layers so that model can get output in between:</p>
+<p>model = resnet50(pretrained=True)</p>
+<p>f = torch.nn.Sequential(*list(model.children())[:4])</p>
+<p>Itemsize for each item&rsquo;s size :</p>
+<p>x = np.array([1,2,3,4,5],dtype=np.int8)
+print x.itemsize # will print 1</p>
+<p>x = np.array([1,2,3,4,5],dtype=np.int32)
+print x.itemsize # will print 4</p>
+<p>Flags for numpy array:</p>
+<p>x.flags</p>
+<p>Numpy empty array:</p>
+<p>import numpy as np
+a = np.empty([3,2],dtype=int)
+print a</p>
+<p>Numpy zeros special:</p>
+<p>x = np.zeros((2,2),dtype=[(&lsquo;x&rsquo;,&lsquo;i4&rsquo;),(&lsquo;y&rsquo;,&lsquo;i4&rsquo;)])</p>
+<p>Numpy order of arrays:</p>
+<p>order = &ldquo;C&rdquo; or &ldquo;F&rdquo; for c type and fortran type arrays</p>
+<p>C means major row style array and fortran is column major array</p>
+<p>Can create numpy arrays from buffer as well:</p>
+<p>numpy.frombuffer(buffer,dtype=float,count=-1,offset=0)</p>
+<p>count is the number of lines to read from the buffer</p>
+<p>offset to change the starting position from where it is to be read</p>
+<p>numpy linspace params:</p>
+<p>retstep: returns the step size with the array made by linspace</p>
+<p>endpoint = True or False will make sure endpoint is either included or not in the array</p>
+<p>slice object to slice a numpy array:</p>
+<p>x = np.linspace(1,10,10)
+s = slice(2,7,2) # takes start, end and step as params
+print(x[s])# will print the sliced items from the x array</p>
+<p>But this can be done directly in numpy arrays</p>
+<p>Use of ellepsis in array slicing:</p>
+<p>a = np.array([[1,2,3],[3,4,5],[4,5,6]])
+print a[&hellip;,1:]</p>
+<p>Complex arrays also can be made in numpy and also can be filtered as:</p>
+<p>a = np.array([1,2+6j,5,3.5+5j])
+print a[np.iscomplex(a)]</p>
+<p>Flatten usage temporary:
+x = np.array([[1,2],[3,4]])
+x.flatten()[1] = 100
+print(x) # still prints the same matrix</p>
+<p>x.ravel()[1] = 100</p>
+<p>swap  axes in numpy array:</p>
+<p>array.swapaxes(1,2) and similar implementations</p>
+<p>move axes:</p>
+<p>a = np.arange(24).reshape([2,3,4])
+b = np.moveaxes(a, 2, 0)</p>
+<p>expand dimensions:</p>
+<p>x = np.ones((2,2))
+y = np.expand_dims(x,axis=0)
+z = np.expand_dims(x,axis=1)
+a = np.expand_dims(x,axis=2)</p>
+<p>y is 1,2,2
+z is 2,1,2
+a is 2,2,1</p>
+<p>Squeeze to remove axes of dimension 1 anywhere they are in shape matrix</p>
+<p>Concatenate two arrays: by default concat occurs with axis = 0 , if other axis you need to specify.</p>
+<p>Hstack, vstack are simply concat done axis = 0 and axis = 1</p>
+<p>simply hsplit, vsplit occurs to split the arrays horizontally and so on.</p>
+<p>Splitting ndarrays:</p>
+<p>x = np.split(a, subsection [2,7] or no of splits to be made 3, axis=0)</p>
+<p>Numpy character functions:</p>
+<p>np.char.add([&lsquo;hello&rsquo;],[&rsquo; xyz&rsquo;])</p>
+<p>np.char.multiply(&lsquo;Hello &lsquo;,3)</p>
+<p>numpy.char.center(arr,width,fillchar)</p>
+<p>e.g. np.char.center(&lsquo;hello&rsquo;,20,fillchar=&rsquo;*')</p>
+<p>np.char.capitalize(&lsquo;hello world&rsquo;)</p>
+<p>np.char.title(&lsquo;hello how are you?')</p>
+<p>lower and upper functions</p>
+<p>split with sep option</p>
+<p>strip and choose which to strip . can do it in arrays too.</p>
+<p>np.char.join(':',&lsquo;dmy&rsquo;)</p>
+<p>replace, and also encode functions are available</p>
+<p>Rounding to decimal places:</p>
+<p>np.around(a,decimals=1)</p>
+<p>np.around(a,decimals=-1) # rounds to nearest 10s places: 0, 10, 120, and so on.</p>
+<p>Reciprocal function to do 1/sth</p>
+<p>mod function to mod on two arrays</p>
+<p>Power function to do power on two arrays: one will be the base and the other will be the power</p>
+<p>amax and amin to get the max or min in the array or along certain axes</p>
+<p>ptp to get the range of values in an array or along the axes</p>
+<p>percentile function to get percentile values along the whole array or along specific axes</p>
+<p>mean, median, average with support of weights matrix</p>
+<p>std and var to calculate deviation and variance resp.</p>
+<p>Sorting searching and stuffs:</p>
+<p>np.sort(ndarray) &ndash; &gt; will sort the individual rows i.e. axis = 0</p>
+<p>or you can just give the axis to sort about to sort by column and so on.</p>
+<p>numpy has dtype function to specifically give the pararmeters like definition for specific arrays</p>
+<p>say for person&rsquo;s array , we can have dtype as:</p>
+<p>person_dtype = np.dtype([(&lsquo;name&rsquo;,&lsquo;S10&rsquo;),(&lsquo;age&rsquo;,int)])</p>
+<p>a = np.array([(&ldquo;raju&rdquo;,21),(&ldquo;anil&rdquo;,25),(&ldquo;ravi&rdquo;, 17), (&ldquo;amar&rdquo;,27)], dtype = dt)</p>
+<p>np.sort(a,order = &lsquo;name&rsquo;)</p>
+<p>argsort to get the index of sorted array so that it can be used to order other related arrays as well.</p>
+<p>nonzero function : gives the index of non zero elements in ndarray. The indexes will be such that x indices in first array and y indices in second array.</p>
+<p>np.where(condition) also gives index in row, column format so passing such value to ndarray as ndarray[index_of_rows_and_cols] will give the resp elements</p>
+<p>extract elements satisfyig a condition:</p>
+<p>cond = np.mod(x,2) == 0</p>
+<p>res = np.extract(cond,x)</p>
+<p>byte swap function:</p>
+<p>a.byteswap(True) # will be helpful to convert big endian to little and so on.</p>
+<p>id function to get the id of a matrix</p>
+<p>just assigning one matrix to other will not change the id. So , any change in one will result in the change of the other.</p>
+<p>So we can use b = a.view() to make a different view for b which will have OWNDATA false. Now the shape may be different in showing and using them but the
+underlying data they use is the same.</p>
+<p>so any changes in b will change the data of a though they are not similarly showing.</p>
+<p>so make a matrix as b = a.copy() &ndash;&gt; this will have rights over the data as own data and they will be different from each oter.</p>
+<p>byteswap function is very risky if you don&rsquo;t properly care how to use it.</p>
+<ul>
+<li>
+<p>zeros</p>
+</li>
+<li>
+<p>empty</p>
+</li>
+<li>
+<p>ones</p>
+</li>
+<li>
+<p>eye:  identity matrix: option to specify no of rows, columns, index of diagonal, dtype: can make variants of row echleon matrices</p>
+</li>
+<li>
+<p>identity: normal square identity matrix</p>
+</li>
+<li>
+<p>rand</p>
+<p>this type of matrix can be casted to ndarray when required using np.asndarray(matrix)</p>
+</li>
+</ul>
+<h3 id="some-useful-functions">Some useful Functions</h3>
+<ul>
+<li>vdot: flattens multidim arrays first and then dots</li>
+<li>dot: normal dot product of matrices</li>
+<li>inner function to perform dot product of both real as well as complex numbers</li>
+<li>multi_dot : function to calculate dot products of mutliple arrays by efficiently choosing best scheme for dot product</li>
+<li>tensordot: dot along specific axes</li>
+<li>linalg</li>
+<li>eigvals: gives eigen values of matrix</li>
+<li>eigenvalsh: eigen vals of complex hermitian or real symmetric matrix</li>
+<li>det: find the determinant of a matrix</li>
+<li>matrix_rank: matrix using SVD method</li>
+<li>inv: multiplicative inverse of the matrix</li>
+<li>pinv: moorse penrose psedudo inverse of a matrix</li>
+</ul>
+<h3 id="broadcasting-arrays">Broadcasting Arrays</h3>
+<ul>
+<li>
+<p>Broadcast happens when the sizes of matrix operation doesn&rsquo;t meet. e.g. adding 3 by 3 matrix with 1 by 3 makes the 1 by 3 repeat 3 times and add with all rows.</p>
+</li>
+<li>
+<p>Shapes need to be compatible in order for broadcast to occur.</p>
+</li>
+<li>
+<p>When operating on two arrays, NumPy compares their shapes element-wise. It starts with the trailing dimensions, and works its way forward.</p>
+</li>
+<li>
+<p>Two dimensions are compatible when they are equal, or one of them is 1</p>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

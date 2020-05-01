@@ -23,10 +23,10 @@
     
     <item>
       <title>Anaconda Windows</title>
-      <link>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</link>
-      <pubDate>Tue, 10 Sep 2019 00:00:00 +0545</pubDate>
+      <link>https://dragarok.github.io/ai/anaconda-windows/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</guid>
+      <guid>https://dragarok.github.io/ai/anaconda-windows/</guid>
       <description>Anaconda Installation in Windows   Issue with pyzmq:
 pip uninstall pyzmq pip install pyzmq   Issue with requests
 conda deactivate conda update --force conda   Issue with sqlite3

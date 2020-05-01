@@ -23,10 +23,10 @@
     
     <item>
       <title>Graph Algorithms</title>
-      <link>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</link>
-      <pubDate>Sun, 19 Apr 2020 15:59:47 +0545</pubDate>
+      <link>https://dragarok.github.io/ai/graph_algos/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</guid>
+      <guid>https://dragarok.github.io/ai/graph_algos/</guid>
       <description>Graph Algos:
 Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
 Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes

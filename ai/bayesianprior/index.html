@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Always set the priors in the vicinity of what you believe the truth is Always set the priors such that they reflect the same order of magnitude  s the phenomenon you’re trying to predict
+ Don’t be overconfident, leave space for doubt Never use completely uninformative priors Whenever possible refrain from using uniform distributions Always sum up the consequence of all of your priors such that if no data was available your model still predicts in the same order of magnitude as your observed response Be careful, and be honest!" />
+<meta name="keywords" content="Blog, bayes" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/ai/bayesianprior/" />
+
+
+    <title>
+        
+            Bayesian Prior :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Bayesian Prior">
+<meta itemprop="description" content="Always set the priors in the vicinity of what you believe the truth is Always set the priors such that they reflect the same order of magnitude  s the phenomenon you’re trying to predict
+ Don’t be overconfident, leave space for doubt Never use completely uninformative priors Whenever possible refrain from using uniform distributions Always sum up the consequence of all of your priors such that if no data was available your model still predicts in the same order of magnitude as your observed response Be careful, and be honest!">
+<meta itemprop="datePublished" content="2020-01-20T00:00:00&#43;05:45" />
+<meta itemprop="dateModified" content="2020-05-02T03:40:03&#43;05:45" />
+<meta itemprop="wordCount" content="119">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="bayes," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Bayesian Prior"/>
+<meta name="twitter:description" content="Always set the priors in the vicinity of what you believe the truth is Always set the priors such that they reflect the same order of magnitude  s the phenomenon you’re trying to predict
+ Don’t be overconfident, leave space for doubt Never use completely uninformative priors Whenever possible refrain from using uniform distributions Always sum up the consequence of all of your priors such that if no data was available your model still predicts in the same order of magnitude as your observed response Be careful, and be honest!"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-01-20 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://dragarok.github.io/ai/bayesianprior/">Bayesian Prior</a></h2>
+
+            
+
+            <div class="post-content">
+                <ul>
+<li>Always set the priors in the vicinity of what you believe the truth is</li>
+<li>Always set the priors such that they reflect the same order of magnitude</li>
+</ul>
+<p>s the phenomenon you’re trying to predict</p>
+<ul>
+<li>Don’t be overconfident, leave space for doubt</li>
+<li>Never use completely uninformative priors</li>
+<li>Whenever possible refrain from using uniform distributions</li>
+<li>Always sum up the consequence of all of your priors such
+that if no data was available your model still predicts
+in the same order of magnitude as your observed response</li>
+<li>Be careful, and be honest! Never postulate very informative priors on
+results you WANT to be true. It’s OK
+if you BELIEVE them to be true.
+Don’t rest your mind until you see the difference.</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://dragarok.github.io/tags/bayes">bayes</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

@@ -12,6 +12,27 @@
     
     
     <item>
+      <title>Large Scale Network Embedding</title>
+      <link>https://dragarok.github.io/braindump/2020/05/large-scale-network-embedding/</link>
+      <pubDate>Sat, 02 May 2020 03:40:13 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/05/large-scale-network-embedding/</guid>
+      <description>&amp;ndash;tags: Graph Embedding Techniques
+LINE: Large scale Network Embedding &amp;ndash; Explicitly define two functions for 1st and 2nd order proximity. &amp;ndash; EMpirically,found that the 2nd order proximity performed better and improved accuracy. &amp;ndash; Goal: to decrease KL divergence between the input and the embedding distributions &amp;ndash; Since the algorithm has to define new functions for each increasing order of proximity, LINE doesn’t perform very well if the application needs an understanding of node community structure.</description>
+    </item>
+    
+    <item>
+      <title>8086</title>
+      <link>https://dragarok.github.io/braindump/2020/05/8086/</link>
+      <pubDate>Sat, 02 May 2020 01:01:54 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/05/8086/</guid>
+      <description>one pass assembler: converts whole at one, jmp instruction references made after assembly two pass: converts in two steps : first generates a symbol table of names and labels used in programs and calculate their relative addresses, then converts the instructions into machine code in the next cycle of assembly, more efficient and easier than first
+Linking:
+ can link multiple obj files into one and forms exe file additional files that can be produced by the linker .</description>
+    </item>
+    
+    <item>
       <title>KdeConnect I3</title>
       <link>https://dragarok.github.io/braindump/2020/05/kdeconnect-i3/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0545</pubDate>
@@ -94,27 +115,6 @@ exec --no-startup-id /usr/lib/kdeconnectd </description>
       <description>### Author: OM Swami
   loc 92 - The science of the kundalini is an ancient vidya that has been passed through an oral tradition in strict disciplic succession to worthy recipients. The science remains just as intact today. All it requires is for one to walk the path with great determination and tenacity.
   loc 618 - When you don’t react, a sense of ease arises. Resistance goes away.</description>
-    </item>
-    
-    <item>
-      <title>Quiet: The Power of Introverts in a World That Can&#39;t Stop Talking</title>
-      <link>https://dragarok.github.io/books/quiet-the-power-of-introverts-in-a-world-that-cant-stop-talking/</link>
-      <pubDate>Mon, 27 Apr 2020 02:27:55 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/books/quiet-the-power-of-introverts-in-a-world-that-cant-stop-talking/</guid>
-      <description>### Author: Cain, Susan
-  loc 121 - Introverts living under the Extrovert Ideal are like women in a man’s world, discounted because of a trait that goes to the core of who they are.
-  loc 226 - Introverts are drawn to the inner world of thought and feeling, said Jung, extroverts to the external life of people and activities. Introverts focus on the meaning they make of the events swirling around them; extroverts plunge into the events themselves.</description>
-    </item>
-    
-    <item>
-      <title>Gitanjali</title>
-      <link>https://dragarok.github.io/books/rabindranath-tagore/</link>
-      <pubDate>Mon, 27 Apr 2020 02:27:38 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/books/rabindranath-tagore/</guid>
-      <description>### Author: Rabindranath Tagore
-  loc 208 - Indeed, when he is speaking of children, so much a part of himself this quality seems, one is not certain that he is not also speaking of the saints, “They build their houses with sand and they play with empty shells. With withered leaves they weave their boats and smilingly float them on the vast deep. Children have their play on the seashore of worlds.</description>
     </item>
     
   </channel>

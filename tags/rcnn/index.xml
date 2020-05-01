@@ -6,25 +6,22 @@
     <description>Recent content in rcnn on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:40 +0545</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0545</lastBuildDate>
     
 	<atom:link href="https://dragarok.github.io/tags/rcnn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RCNN</title>
-      <link>https://dragarok.github.io/braindump/2020/04/rcnn/</link>
-      <pubDate>Sun, 19 Apr 2020 16:00:40 +0545</pubDate>
+      <link>https://dragarok.github.io/ai/rcnn/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/rcnn/</guid>
-      <description>Faster RCNN
-Region Proposal:
-Anchors: Different size bounding box of different aspect ratio and sizes
-Task to be done by RPN:
-Does this anchor contain a relevant object?
-How would we adjust this anchor to better fit the relevant object?
-It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
-Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.</description>
+      <guid>https://dragarok.github.io/ai/rcnn/</guid>
+      <description>Faster RCNN Region Proposal:   Anchors: Different size bounding box of different aspect ratio and sizes
+  Task to be done by RPN:
+  Does this anchor contain a relevant object?
+  How would we adjust this anchor to better fit the relevant object?
+  It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.</description>
     </item>
     
   </channel>

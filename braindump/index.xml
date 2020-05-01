@@ -6,10 +6,31 @@
     <description>Recent content in Braindumps on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 03:40:13 +0545</lastBuildDate>
     
 	<atom:link href="https://dragarok.github.io/braindump/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Large Scale Network Embedding</title>
+      <link>https://dragarok.github.io/braindump/2020/05/large-scale-network-embedding/</link>
+      <pubDate>Sat, 02 May 2020 03:40:13 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/05/large-scale-network-embedding/</guid>
+      <description>&amp;ndash;tags: Graph Embedding Techniques
+LINE: Large scale Network Embedding &amp;ndash; Explicitly define two functions for 1st and 2nd order proximity. &amp;ndash; EMpirically,found that the 2nd order proximity performed better and improved accuracy. &amp;ndash; Goal: to decrease KL divergence between the input and the embedding distributions &amp;ndash; Since the algorithm has to define new functions for each increasing order of proximity, LINE doesn’t perform very well if the application needs an understanding of node community structure.</description>
+    </item>
+    
+    <item>
+      <title>8086</title>
+      <link>https://dragarok.github.io/braindump/2020/05/8086/</link>
+      <pubDate>Sat, 02 May 2020 01:01:54 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/05/8086/</guid>
+      <description>one pass assembler: converts whole at one, jmp instruction references made after assembly two pass: converts in two steps : first generates a symbol table of names and labels used in programs and calculate their relative addresses, then converts the instructions into machine code in the next cycle of assembly, more efficient and easier than first
+Linking:
+ can link multiple obj files into one and forms exe file additional files that can be produced by the linker .</description>
+    </item>
     
     <item>
       <title>KdeConnect I3</title>
@@ -83,42 +104,23 @@ Google Dorks For SQL Injection:
     </item>
     
     <item>
-      <title>Graph Signal Processing</title>
-      <link>https://dragarok.github.io/braindump/2020/04/graph-signal-processing/</link>
-      <pubDate>Tue, 21 Apr 2020 05:57:03 +0545</pubDate>
+      <title>Array Data Structures</title>
+      <link>https://dragarok.github.io/braindump/2020/04/array-data-structures/</link>
+      <pubDate>Tue, 21 Apr 2020 05:51:27 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/graph-signal-processing/</guid>
-      <description>&amp;ndash; tags: Graph Convolutions
-Basics Spectral Graph Convolutional Network:  GSP is the key to generalizing convolutions, allowing us to build functions that can take into account both the overall structure of the graph and the individual properties of the graph’s components. It is the graph fourier transform that allows one to introduce the notion of a “bandwidth” or “smoothness” to a graph In GCNs, node features and attributes are represented by “signals”.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/array-data-structures/</guid>
+      <description>&amp;ndash;tags: Data Structures
+Arrays:  Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory  Multidimensional arrays:  Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array  Jagged arrays:  Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations  Resizable arrays:  all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable  NSMutableArray has mutability    Question:  Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag   Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array  Sorting in an array:  Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted  Arrays of custom objects SORT:  Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects  Searching arrays:  Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations  Built in search behavior:  .</description>
     </item>
     
     <item>
-      <title>Graph Convolutions</title>
-      <link>https://dragarok.github.io/braindump/2020/04/graph-convolutions/</link>
-      <pubDate>Tue, 21 Apr 2020 05:54:09 +0545</pubDate>
+      <title>Heap Data Structures</title>
+      <link>https://dragarok.github.io/braindump/2020/04/heap-data-structures/</link>
+      <pubDate>Tue, 21 Apr 2020 05:51:05 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/graph-convolutions/</guid>
-      <description>Graph Conv &amp;ndash; What is inductive bias ? &amp;ndash; Inductive bias of a learning algorithm is the set of assumptions that the learner uses to predict outputs given inputs that it has not encountered. &amp;ndash; Neural Networks tend to discard the features that have very less significance in task at hand. &amp;ndash; Similary, GNNs have bias: By structuring the data in a way that prioritizes certain patterns, we can improve model performance, even if the data is the same.</description>
-    </item>
-    
-    <item>
-      <title>Fast GraphConv Nets</title>
-      <link>https://dragarok.github.io/braindump/2020/04/fast-graphconv-nets/</link>
-      <pubDate>Tue, 21 Apr 2020 05:53:45 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/fast-graphconv-nets/</guid>
-      <description>&amp;ndash; tags: Graph Signal Processing
-Intro &amp;ndash; The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute. &amp;ndash; O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&amp;rsquo;s laplacian. &amp;ndash; Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals, which allowed for batch training, reducing the overall training time.</description>
-    </item>
-    
-    <item>
-      <title>MoNets</title>
-      <link>https://dragarok.github.io/braindump/2020/04/monets/</link>
-      <pubDate>Tue, 21 Apr 2020 05:53:35 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/monets/</guid>
-      <description>&amp;ndash; tags: Graph Signal Processing
-MoNets: &amp;ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. &amp;ndash; Contributions: &amp;ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches &amp;ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) &amp;ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks &amp;ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/heap-data-structures/</guid>
+      <description>&amp;ndash;tags: Data Structures
+Heap: Used in sorting algorithms Binary tree not BST but binary tree Rules: Balanced always Left to right top to bottom Minheap or maxheap? Lowest or highest value at the top of heap First left child node is placed first Swapping of the min or max value management keeps a heap sorted Not fully sorted data structure: Min or max value is always at the top High priority is bubbled at the top which is its primary function rather than retrieving values</description>
     </item>
     
   </channel>

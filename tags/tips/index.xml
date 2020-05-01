@@ -38,20 +38,6 @@ Commands   git add : tracking with git
     </item>
     
     <item>
-      <title>Numpy</title>
-      <link>https://dragarok.github.io/braindump/2020/04/numpy/</link>
-      <pubDate>Sun, 19 Apr 2020 16:00:50 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/numpy/</guid>
-      <description>Working with numpy:   import numpy as np
-  a = np.array([0,1,2])
-  a.ndim - gives dimension of array
-  a.shape : gives the shape of the array
-  a.reshape((3,2)) new order of matrix to be formed
- changing a element of an array we reshaped is also going to change from the original since numpy package avoids copies    so if copy needed: c= a.</description>
-    </item>
-    
-    <item>
       <title>Emacs Completion</title>
       <link>https://dragarok.github.io/braindump/2020/04/emacs-completion/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:42 +0545</pubDate>
@@ -130,6 +116,20 @@ z : toggle pane zoom ( can hide all panes using z)
 ! : convert pane into an window
 Control + O : swap panes
 t: copy mode</description>
+    </item>
+    
+    <item>
+      <title>Numpy</title>
+      <link>https://dragarok.github.io/ai/numpy/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/ai/numpy/</guid>
+      <description>Working with numpy:   import numpy as np
+  a = np.array([0,1,2])
+  a.ndim - gives dimension of array
+  a.shape : gives the shape of the array
+  a.reshape((3,2)) new order of matrix to be formed
+ changing a element of an array we reshaped is also going to change from the original since numpy package avoids copies    so if copy needed: c= a.</description>
     </item>
     
   </channel>

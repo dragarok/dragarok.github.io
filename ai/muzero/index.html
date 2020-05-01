@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="MuZero:
+&amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space &amp;ndash; Learns optimal policy, reward functions, value functions automatically &amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly relevant for planning. &amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using previous step&amp;rsquo;s hidden state and hypothetical next action &amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward" />
+<meta name="keywords" content="Blog, reinforcement, neuralnetwork, architecture" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/ai/muzero/" />
+
+
+    <title>
+        
+            MUZero :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="MUZero">
+<meta itemprop="description" content="MuZero:
+&ndash; Works based on AlphaZero&rsquo;s search and planning space &ndash; Learns optimal policy, reward functions, value functions automatically &ndash; The main idea of the algorithm is to predict those aspects of the future that are directly relevant for planning. &ndash; Observation image ===&gt; Model ==&gt; Encodes to hidden states ==&gt; Hidden states updated using previous step&rsquo;s hidden state and hypothetical next action &ndash; In each step, model predicts value fn, optimal policy, and immediate reward">
+<meta itemprop="datePublished" content="2020-04-15T00:00:00&#43;05:45" />
+<meta itemprop="dateModified" content="2020-05-02T03:46:03&#43;05:45" />
+<meta itemprop="wordCount" content="1867">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="reinforcement,neuralnetwork,architecture," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="MUZero"/>
+<meta name="twitter:description" content="MuZero:
+&ndash; Works based on AlphaZero&rsquo;s search and planning space &ndash; Learns optimal policy, reward functions, value functions automatically &ndash; The main idea of the algorithm is to predict those aspects of the future that are directly relevant for planning. &ndash; Observation image ===&gt; Model ==&gt; Encodes to hidden states ==&gt; Hidden states updated using previous step&rsquo;s hidden state and hypothetical next action &ndash; In each step, model predicts value fn, optimal policy, and immediate reward"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-04-15 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://dragarok.github.io/ai/muzero/">MUZero</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>MuZero:</p>
+<p>&ndash; Works based on AlphaZero&rsquo;s search and planning space
+&ndash; Learns optimal policy, reward functions, value functions automatically
+&ndash; The main idea of the algorithm is to predict those aspects of the future that are directly
+relevant for planning.
+&ndash; Observation image ===&gt; Model ==&gt; Encodes to hidden states ==&gt; Hidden states updated using
+previous step&rsquo;s hidden state and hypothetical next action
+&ndash; In each step, model predicts value fn, optimal policy, and immediate reward</p>
+<p>&ndash; RL basically:
+&ndash; model based and model free methods
+&ndash; model based: construct an intermediate step from environment reprs
+&ndash; MDP with state transition model <del><del>+</del></del> Reward model
+&ndash; MCTree Search for optimal policy search or value based iteration methods
+&ndash; Representation learning, model learning , planning all must go together.
+&ndash; Common approach in environment repr: All pixels as describing the env state
+&ndash; But computationally intractable in most cases
+&ndash; So, build latent repr and predict next latent repr is good</p>
+<p>&ndash; Different approach in this area:
+&ndash; End to end prediction of value functions
+&ndash; They construct abstract MDP s.t. planning in abstract MDP is same as
+planning in the given env space
+&ndash; Value Equivalence is the method that does all this:
+trying to copy values like student teacher model so that abstract MDP
+can copy to produce same value functions
+&ndash; Predictron : TD based learning , learns without learning transition functions
+&ndash; TreeQN: tree search for optimal value fn, using same abstract MDP
+&ndash; Value iteration models:  Value iteration over the model to predict optimal value
+functions
+&ndash; Value prediction networks [28] are perhaps the closest precursor to MuZero:
+they learn an MDP model grounded
+in real actions; the unrolled MDP is trained such that the cumulative sum of rewards, conditioned on the actual
+sequence of actions generated by a simple lookahead search, matches the real environment. Unlike MuZero there
+is no policy prediction, and the search only utilizes value prediction.</p>
+<p>&ndash; model consists of three connected components for representation, dynamics and prediction:
+A.</p>
+<ol>
+<li>&ndash; Inputs:
+&ndash;&gt; Prev hidden state
+&ndash;&gt; Candidate action
+&ndash;&gt; Dynamics function &lsquo;g&rsquo;
+&ndash; Outputs:
+&ndash;&gt; Immediate reward
+&ndash;&gt; Next hidden state</li>
+<li>From hidden state: Policy  and value function are calculated using prediction function &lsquo;f&rsquo;</li>
+<li>Initial hidden state: Past observation into representation function &lsquo;h&rsquo;</li>
+</ol>
+<p>B. How model acts:</p>
+<ol>
+<li>Performs MC tree search at timestamp &lsquo;t&rsquo; as described in [A]</li>
+<li>Action &lsquo;t+1&rsquo; sampled from search policy at time &lsquo;t&rsquo;</li>
+<li>Env receives action and genereates new observation and reward &lsquo;t+1&rsquo;</li>
+<li>At end of episode, trajectory data stored in replay buffer.</li>
+</ol>
+<p>C. How training is done:</p>
+<ol>
+<li>Trajectory is sampled</li>
+<li>For initial step: &lsquo;h&rsquo; receives input thee past observations from selected trajectory</li>
+<li>Model subsequently unrolled for &lsquo;K&rsquo; steps</li>
+<li>At each step in unrolling, &lsquo;g&rsquo; receives as input hidden state from previous
+unrolling and real action from a(t+k)</li>
+<li>Now all parameters,dynamics and pred functions are jointly trained by backprop thru time</li>
+</ol>
+<p>D. Final output will be:
+Policy : &lsquo;p[k]&rsquo; ===&gt; &lsquo;pie[t+k]&rsquo;
+Value function: &lsquo;v[k]&rsquo; ====&gt; &lsquo;z[t+k]&rsquo;
+Reward: &lsquo;r[t+k]&rsquo; =====&gt; u[t+k]</p>
+<p>z[t+k] == sample return : final reward in board games, n-step return in Atari</p>
+<p>&ndash; AlphaZero vs MuZero:</p>
+<p>&ndash;	Specifically, AlphaGo Zero and AlphaZero use knowledge of the rules of the game in three places: (1) state
+transitions in the search tree, (2) actions available at each node of the search tree, (3) episode termination within
+the search tree. In MuZero, all of these have been replaced with the use of a single implicit model learned by a
+neural network</p>
+<p>&ndash;</p>
+<p>&ndash;  Alpha Zero&rsquo;s algorithm:</p>
+<p>Mentally play through possible future scenarios, giving priority to promising
+paths, whilst also considering how others are most likely to react to your
+actions and continuing to explore the unknown.</p>
+<p>After reaching a state that is unfamiliar, evaluate how favorable you believe
+the position to be and cascade the score back through previous
+positions in the mental pathway that led to this point.</p>
+<p>After you’ve finished thinking about future possibilities,
+take the action that you’ve explored the most.</p>
+<p>At the end of the game, go back and evaluate where you misjudged the value
+of the future positions and update your understanding accordingly.</p>
+<p>&ndash; In simple terms:
+When you play a bad move, it’s either because you misjudged the future value
+of resulting positions, or you misjudged the likelihood that your opponent would
+play a certain move, so didn’t think to explore that possibility.
+These are exactly the two aspects of gameplay that AlphaZero is trained to learn.</p>
+<p>&ndash;</p>
+<p>&ndash; Alpha Zero :
+&ndash; The expert policy (pie) and approximate value function(W) are both NNs.
+&ndash; Neural net &lsquo;f&rsquo; that takes in game state and produces both probabs over the next
+move and approx state value.
+&ndash; Leaves in search tree are expanded by evaluating them with NN.\<br>
+&ndash;</p>
+<p>&ndash; Alpha Zero has only one NN while MuZero has 3.
+&ndash; We know both use MCTree Search (MCTS) for next best move selection.
+&ndash; What they do is they play out all likely future scenarios, evaluate
+value using NN and choose action that maxes the future expected value.
+&ndash; But muzero has a problem. It doesn&rsquo;t know rules of game and has no idea
+how a given action will affect game state so can&rsquo;t imagine future scenes
+in MCTS. It doesn&rsquo;t even know whether one side has won or which moves are
+legal given a position.
+&ndash; AlphaZero has only function &lsquo;f&rsquo;. whereas Mu has &lsquo;f&rsquo;,&lsquo;g&rsquo;, &lsquo;h&rsquo;
+&ndash; &lsquo;h&rsquo; is for representation: input pixels to state.
+&ndash; &lsquo;g&rsquo; is for dynamics : it learns how to evolve given hidden repr
+&ndash; &lsquo;f&rsquo; is same used for prediction: state to policy and value function
+&ndash; Unlike alphazero where next state in MCTS is simply case of asking the env,
+Muzero builds it&rsquo;s own dynamic model &lsquo;g&rsquo; to tell it how to move.
+&ndash; So, to make predictions from MCTS tree, Muzero needs two inference methods:</p>
+<ol>
+<li>Initial_inference: for current state &lsquo;h&rsquo; followed by &lsquo;f&rsquo;</li>
+<li>Recurrent_inference: for moving between states in MCTS tree &lsquo;g&rsquo; followed by &lsquo;f&rsquo;</li>
+</ol>
+<p>&ndash;</p>
+<p>&ndash; Understanding mu zero coding process:</p>
+<ol>
+<li>
+<p>Starts with the config object which stores important info about the parameters
+of the run.
+&ndash; There are two parts: &ndash; self-play: creating game data
+&ndash; training:  producing improved NNs
+&ndash; They work by accessing SharedStorage and ReplayBuffer.</p>
+</li>
+<li>
+<p>Shared Storage:
+&ndash; make a dictionary of networks
+&ndash; latest_network function to return latest network &ldquo;-&gt; Network&rdquo; to specify
+that it returns a network object
+&ndash; check if no network, create one
+&ndash; else return max(dictionary of network&rsquo;s keys)
+&ndash; save network function to add network to the existing dictionary.</p>
+</li>
+<li>
+<p>ReplayBuffer:
+&ndash; params: window size, batch_size, buffer(list)
+:::: window_size : limit max no of games stored in buffer muzero: 1million
+&ndash; save game: if len(self.buffer) &gt; self.window_size: self.buffer.pop(0)
+self.buffer.append(game)
+&ndash; sample batch: no_unroll_steps, td_steps as input
+&ndash; get games, game_pos then sample</p>
+<p>&ndash; observation at chosen position .make_image(i)
+&ndash; list of next num_unroll_steps actions taken after chosen position if exists
+&ndash; list of targets to train neural nets: list of tuples
+target_value, target_reward, target_policy</p>
+<pre><code>        --
+</code></pre>
+<p>&ndash; sample_game: random.choice(self.buffer)
+&ndash; sample_position: random.choice(game.history)</p>
+</li>
+<li>
+<p>Self play:
+&ndash; params: config, storage, replaybuffer
+&ndash; get latest_network, play_game(config, network), save game into replay buffer</p>
+</li>
+</ol>
+<p>4.1 Play_game function:
+&ndash; params: config, network  ===&gt; produce game as output
+&ndash; create new game from config
+&ndash; while(not game.terminal() and len(game.history) &lt; config.max_moves):
+&ndash; start at root of tree, get root node
+&ndash; get current observation image
+&ndash; expand root node using known legal actions and inference about current
+observation provided by initial_inference function
+&ndash;</p>
+<ol>
+<li>
+<p>Node:
+&ndash; stores visit_count, to_play, prior, value_sum, children(dict), hidden_state, reward=0
+&ndash; expanded: returns bool if it has childrens
+&ndash; value: if unvisited return 0 else: value_sum / visit_count
+&ndash; expand_node: node, to_play(instance of Player), actions: list_of_actions,
+network_output
+&ndash; policy is { action as keys and exp(policy_logit_for_a) as value}
+&ndash; policy_sum is sum over all policy.values()
+&ndash; now for action and p in policy.items(): node.children[action] = Node(p/policy_sum)
+&ndash; we also need to add exploration noise to root node actions:
+to ensure MCTS explores a range of possible actions rather than just what it
+believes is optimal:
+add_exploration_noise: takes config and node to work on
+&ndash; actions = list of node.children.keys()
+&ndash; noise = np.random.dirichlet()
+&ndash; frac = config.root_exploration_fraction
+&ndash; for a, n in zip(actions, noise):
+node.children[a].prior = it&rsquo;s prior * ( 1 - frac) + n* frac</p>
+</li>
+<li>
+<p>run_mcts : config, root, game.action_history, network</p>
+<p>min_max_stats = Minmaxstats(config.known_bounds) # to store info on min and max rewards in order to normalize later</p>
+</li>
+</ol>
+<p>for _ in range(config.num_simulations):</p>
+<p>history  = action_history.clone()</p>
+<p>node = root</p>
+<p>search_path = [node]</p>
+<p>while node.expanded():</p>
+<p>action, node = select_child(config, node, min_max_stats)
+history.add_action(action)
+search_path.append(node)</p>
+<p>parent = search_path[-2]
+network_output = network.recurrent_inference(parent.hidden_state, history.last_action())</p>
+<p>expand_node(node, history.to_play(), history.action_space(), network_output)</p>
+<p>backprop(search_path, network_output.value, history.to_play(),)</p>
+<ol>
+<li>select_child: config, node, min_max_stats
+_, action, child = max(
+(ucb_score(config, node, child, min_max_stats), action, child) for action, child
+in node.children.items())
+return action, child</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>Early in simulation, exploration bonus dominates. As total number of simulation
+increases, the value term becomes more important.</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p>backprop: search_path(list of nodes) , value, to_play, discount, min_max_stats</p>
+<p>for every node:
+node.value_sum += value if node.to_play <code>= to_play else -value node.visit_count +</code> 1
+min_max_stats.update(node.value())</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p>select_action: config, num_moves, node, network</p>
+<p>visit_counts = [(child.visit_count, action) for action, child in node.children.items()]
+t = config.visit_softmax_temp_fn(num_moves, training_steps)
+_, action = softmax_sample(visit_counts, t)
+return action</p>
+<p>visit_softmax_temp_fn(num_moves, training_steps):
+if num_moves &lt; 30:
+return 1
+else:
+return 0</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>now chosen action is applied to true env, relevant values appended to game object:
+rewards, history, child_visits, root_values</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p>train_network: config, storage, replay_buffer
+learning_rate = lr_init * lr_decay_rate ** (training_step / lr_decay_steps)
+optimizer (learning_rate, momentum)
+for i in range(trainig_steps):
+if i % checkpoint_interval == 0:
+storage.save_network(i, network)
+batch = replay_buffer.sample_batch(num_unroll_steps, td_steps)
+update_weights(optimizer, network, batch, wt_decay)
+storage.save_network(training_steps, network)</p>
+</li>
+<li>
+<p>Game object: action_space_size, discount</p>
+<p>history, rewards, child_visits, root_values = []</p>
+<p>make_target: state_index, num_unroll_steps, td_steps, to_play
+targets = []
+for curr_index in range(state_index, state_index+num_unroll_steps + 1):
+bootstrap_ind = curr_index + td_steps</p>
+<p>if bootstrap_ind &lt; len(root_values):
+value = root_values[bootstrap_ind] * discount ** td_steps
+else:</p>
+<p>value = 0</p>
+<p>for i, reward in enumerate(rewards[curr_index:bootstrap_ind]):
+value += reward * discount ** i</p>
+<p>if curr_index &lt; len(root_values):
+targets.append((value, rewards[curr_index], child_visits[curr_index]))
+else:
+targets.append((0, 0, []))</p>
+<p>return targets</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p>Update rule for weights:
+&ndash; three losses we are trying to minimize:
+&ndash; diff betn predicted reward &lsquo;k&rsquo; steps ahead of turn &lsquo;t&rsquo; and actual reward &lsquo;u&rsquo;
+&ndash; diff betn predicted value &lsquo;k&rsquo; steps ahead of turn &lsquo;t&rsquo; and target TD value &lsquo;z&rsquo;
+&ndash; diff betn predicted policy &lsquo;k&rsquo; steps ahead of turn &lsquo;t&rsquo; and MCTS policy &lsquo;pi&rsquo;</p>
+<h2 id="---losses-summed-over-num_unroll_steps-to-gen-loss-for-given-pos-in-batch">&ndash; also regularization term is added
+&ndash; losses summed over num_unroll_steps to gen loss for given pos in batch</h2>
+<p>&ndash; Actual implementation: optimizer, network, batch, wt_decay
+for image, actions, targets in batch:</p>
+<p>value, reward, policy_logits, hidden_state = initial_inference(image)
+preds = [(1.0, value, reward, policy_logits)]</p>
+</li>
+</ol>
+<p>for action in actions:
+value, reward, policy_logits, hidden_state = recurrent_inference(hidden_state, image)
+preds.append((1.0/ len(actions), value, reward, policy_logits))</p>
+<p>hidden_state = tf.scale_gradient(hidden_state, 0.5)</p>
+<p>for prediction, target in zip(predictions, targets):</p>
+<p>grad_scale, value, reward, policy_logits = prediction
+target_value, target_reward, target_policy = target</p>
+<p>l = (
+scalar_loss(value, target_value) +
+scalar_loss(reward, target_reward) +
+softmax_cross_entropy_with_logits(
+logits=policy_logits, labels=target_policy))</p>
+<p>loss += scale_gradient(1, grad_scale)</p>
+<p>for wts in network.get_weights():
+loss += wt_decay * regularization_loss(weights)</p>
+<ol>
+<li>
+<p>AlphaZero already knows:
+What happens to board when it moves
+What are legal moves given a position
+When game is over and who won</p>
+<p>But muzero has no idea.</p>
+</li>
+</ol>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://dragarok.github.io/tags/reinforcement">reinforcement</a></span><span class="tag"><a href="https://dragarok.github.io/tags/neuralnetwork">neuralnetwork</a></span><span class="tag"><a href="https://dragarok.github.io/tags/architecture">architecture</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>
