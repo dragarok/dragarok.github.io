@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
 <meta name="description" content="&amp;ndash; tags: Graph Signal Processing
-Intro &amp;ndash; The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute. &amp;ndash; O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&amp;rsquo;s laplacian. &amp;ndash; Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals, which allowed for batch training, reducing the overall training time." />
+Intro  The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute. O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&amp;rsquo;s laplacian. Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals, which allowed for batch training, reducing the overall training time." />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -42,10 +42,10 @@ Intro &amp;ndash; The kernel is defined in Fourier space and graph Fourier trans
 
 <meta itemprop="name" content="Fast GraphConv Nets">
 <meta itemprop="description" content="&ndash; tags: Graph Signal Processing
-Intro &ndash; The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute. &ndash; O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&rsquo;s laplacian. &ndash; Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals, which allowed for batch training, reducing the overall training time.">
+Intro  The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute. O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&rsquo;s laplacian. Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals, which allowed for batch training, reducing the overall training time.">
 <meta itemprop="datePublished" content="2020-03-12T00:00:00&#43;05:45" />
-<meta itemprop="dateModified" content="2020-05-02T03:48:37&#43;05:45" />
-<meta itemprop="wordCount" content="135">
+<meta itemprop="dateModified" content="2020-05-02T04:09:41&#43;05:45" />
+<meta itemprop="wordCount" content="130">
 <meta itemprop="image" content="https://dragarok.github.io/"/>
 
 
@@ -55,7 +55,7 @@ Intro &ndash; The kernel is defined in Fourier space and graph Fourier transform
 
 <meta name="twitter:title" content="Fast GraphConv Nets"/>
 <meta name="twitter:description" content="&ndash; tags: Graph Signal Processing
-Intro &ndash; The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute. &ndash; O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&rsquo;s laplacian. &ndash; Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals, which allowed for batch training, reducing the overall training time."/>
+Intro  The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute. O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&rsquo;s laplacian. Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals, which allowed for batch training, reducing the overall training time."/>
 
 
 
@@ -134,13 +134,15 @@ Intro &ndash; The kernel is defined in Fourier space and graph Fourier transform
             <div class="post-content">
                 <p>&ndash; tags: <a href="../../ai/graph_signal_processing/">Graph Signal Processing</a></p>
 <h2 id="intro">Intro</h2>
-<p>&ndash; The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute.
-&ndash;  O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&rsquo;s laplacian.
-&ndash; Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals,
-which allowed for batch training, reducing the overall training time.
-&ndash; We hypothesize that the nonlinearity between GCN layers is not critical — but that the majority of the benefit arises from the local averaging. &ndash;IBM paper on Fast GCN
-&ndash; The project removed the nonlinear transition functions between each convolutional layer.
-The final softmax activation allowed for probabilistic outputs that can be optimized with stochastic gradient descent.</p>
+<ul>
+<li>The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute.</li>
+<li>O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&rsquo;s laplacian.</li>
+<li>Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals,
+which allowed for batch training, reducing the overall training time.</li>
+<li>We hypothesize that the nonlinearity between GCN layers is not critical — but that the majority of the benefit arises from the local averaging. &ndash;IBM paper on Fast GCN</li>
+<li>The project removed the nonlinear transition functions between each convolutional layer.
+The final softmax activation allowed for probabilistic outputs that can be optimized with stochastic gradient descent.</li>
+</ul>
 
             </div>
         </article>
