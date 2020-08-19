@@ -17,10 +17,8 @@
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
       
       <guid>https://dragarok.github.io/ai/tokenizing_for_bert/</guid>
-      <description>&amp;quot;&amp;rdquo;&amp;rdquo; Adapted from Oliver Atanaszov&amp;rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &amp;quot;&amp;rdquo;&amp;rdquo; from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm
-n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256
-class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;]
-def encode(self, input): return list(self.</description>
+      <description>&amp;quot;&amp;rdquo;&amp;rdquo; Adapted from Oliver Atanaszov&amp;rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &amp;quot;&amp;rdquo;&amp;rdquo;
+from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&amp;#39;[CLS]&amp;#39;] self.pad_token = self.tokenizer.vocab[&amp;#39;[PAD]&amp;#39;] def encode(self, input): return list(self.</description>
     </item>
     
   </channel>

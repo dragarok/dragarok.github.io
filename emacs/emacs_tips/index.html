@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Emacs   About org noter process to work with my papers
+ Org-noter to start note taking mode Org-noter-create-skeleton to create the headings and subheadings from pdf into the note.  Org-noter-insert-note to insert a note into my pdf i        Showing inline images
+(setq org-startup-with-inline-images t) Both of these options work and upper one is more flexible working with individual files.
+    Some libraries to look at:" />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/emacs/emacs_tips/" />
+
+
+    <title>
+        
+            Emacs Tips :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Emacs Tips">
+<meta itemprop="description" content="Emacs   About org noter process to work with my papers
+ Org-noter to start note taking mode Org-noter-create-skeleton to create the headings and subheadings from pdf into the note.  Org-noter-insert-note to insert a note into my pdf i        Showing inline images
+(setq org-startup-with-inline-images t) Both of these options work and upper one is more flexible working with individual files.
+    Some libraries to look at:">
+<meta itemprop="dateModified" content="2020-08-12T12:52:04&#43;05:45" />
+<meta itemprop="wordCount" content="297">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Emacs Tips"/>
+<meta name="twitter:description" content="Emacs   About org noter process to work with my papers
+ Org-noter to start note taking mode Org-noter-create-skeleton to create the headings and subheadings from pdf into the note.  Org-noter-insert-note to insert a note into my pdf i        Showing inline images
+(setq org-startup-with-inline-images t) Both of these options work and upper one is more flexible working with individual files.
+    Some libraries to look at:"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-08-12 12:52:04 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+        
+
+
+<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://dragarok.github.io/emacs/emacs_tips/">Emacs Tips</a></h2>
+
+            
+
+            <div class="post-content">
+                <h2 id="emacs">Emacs</h2>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>About org noter process to work with my papers</p>
+<ol>
+<li>Org-noter to start note taking mode</li>
+<li>Org-noter-create-skeleton to create the headings and subheadings from pdf
+into the note.
+<ol>
+<li>Org-noter-insert-note to insert a note into my pdf i</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Showing inline images</p>
+<p>(setq org-startup-with-inline-images t)
+Both of these options work and upper one is more flexible working with
+individual files.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Some libraries to look at:</p>
+<p><a href="https://www.eliasstorms.net/zetteldeft/">Zetteldeft</a>
+<a href="https://github.com/Kungsgeten/org-brain">GitHub - Kungsgeten/org-brain:
+Org-mode wiki + concept-mapping</a></p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Hugo Blogging</p>
+<p><a href="../../emacs/emacs_hugo_blogging/">Emacs Hugo Blogging</a></p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Exwm configuration</p>
+<ul>
+<li>Install from melpa : exwm</li>
+<li><a href="https://github.com/hlissner/doom-emacs/issues/1799">[QUESTION] Why does +ivy/switch-workspace-buffer not show EXWM buffers? · Issue #1799 · hlissner/doom-emacs · GitHub</a></li>
+<li>Configurations and use cases later</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Tramp mode for sshing</p>
+<p>-<a href="https://willschenk.com/articles/2020/tramp%5Ftricks/">Emacs Tramp tricks</a></p>
+<ul>
+<li>C-x C-f /ssh:root@ssb.willschenk.com:/etc/host
+This command will ssh into it and now projects can be browsed into emacs as if
+it were right here on my local machine.
+C-x C-f also need not be done since I have bound it to Spc-Spc.
+C-x C-f /sudo::/etc/hosts : edit file as sudo</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Also has some tips for docker</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Libvterm build:</p>
+<ul>
+<li>Install libvterm using pacman or apt</li>
+<li>Also install conda install gxx_linux-64</li>
+<li>This is because of conda libtool being installed. Just remove anaconda from
+path temporarily and build it. Then add it back. It works.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Smerge and Magit to resolve git conflicts:</p>
+<ul>
+<li>Use magit to merge or any cli tool.
+<ul>
+<li>It will tell manage merge conflicts and will stop you.</li>
+</ul>
+</li>
+<li>Go to magit see unmerged changes section.</li>
+<li>Then open from magit the conflicted files and will show you head and other branch output that are in conflict with each other.</li>
+<li>C-c ^ a ==&gt; a means accept all changes : it keeps both</li>
+<li>C-c ^ u ==&gt; upper change</li>
+<li>C-c ^ l ==&gt; lower change</li>
+<li>C-c ^ n ==&gt;  go to next conflict</li>
+<li>C-c ^ p ==&gt;  go to previous conflict</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

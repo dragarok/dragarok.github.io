@@ -6,18 +6,18 @@
     <description>Recent content in shortcuts on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:17:16 +0545</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2020 13:23:08 +0545</lastBuildDate>
     
 	<atom:link href="https://dragarok.github.io/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Emacs Shortcuts</title>
-      <link>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</link>
-      <pubDate>Sun, 19 Apr 2020 16:17:16 +0545</pubDate>
+      <link>https://dragarok.github.io/emacs/emacs_shortcuts/</link>
+      <pubDate>Wed, 12 Aug 2020 13:23:08 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</guid>
-      <description>Emacs Shortcuts  Spc f d &amp;ndash;&amp;gt; search for files in dired Spc : &amp;ndash;&amp;gt; main command Spc g s &amp;ndash;&amp;gt; git status Spc n n &amp;ndash;&amp;gt; Capture template Spc n a &amp;ndash;&amp;gt; agenda view Vim commands  Ctrl up , down &amp;ndash;&amp;gt; go up and down in file q [a-z] &amp;ndash;&amp;gt; record a macro Shift &amp;raquo; &amp;ndash;&amp;gt; indent in code   Evil snipe:  s ch : go to ch ; same as f but more letters gc : to comment using evil gs [annotation] &amp;ndash;&amp;gt; to go to lines directly like vimium ease dii &amp;ndash;&amp;gt; delete inside indentation dik &amp;ndash;&amp;gt; delete inside plus a line above     Backlinks  Emacs Hugo Blogging  </description>
+      <guid>https://dragarok.github.io/emacs/emacs_shortcuts/</guid>
+      <description>Emacs Shortcuts  Spc f d &amp;ndash;&amp;gt; search for files in dired Spc : &amp;ndash;&amp;gt; main command Spc g s &amp;ndash;&amp;gt; git status Spc n n &amp;ndash;&amp;gt; Capture template Spc n a &amp;ndash;&amp;gt; agenda view Vim commands  Ctrl up , down &amp;ndash;&amp;gt; go up and down in file q [a-z] &amp;ndash;&amp;gt; record a macro Shift &amp;raquo; &amp;ndash;&amp;gt; indent in code   Evil snipe:  s ch : go to ch ; same as f but more letters gc : to comment using evil gs [annotation] &amp;ndash;&amp;gt; to go to lines directly like vimium ease dii &amp;ndash;&amp;gt; delete inside indentation dik &amp;ndash;&amp;gt; delete inside plus a line above   Dired buffer shortcuts:  Dired marking and unmarking options: % and * keys Narrow subtree : ( Show git status for files : ) Diff one file to another: = Create a directory : + Up a directory : - Rename a file: R Change timestamp of file: T Copy filename: Y Open a sub-directory in same menu: I Change ownership of file: O Unmark all files: U Hardlink of file: H Goto file: J Counsel search online: K Encrypt, decrypt a file: ; Uncompress or compress : Z Copy file to : C Byte compile a file: B Change file mode: M Copy async to rsync : C-c C-r Wide dired mode: i   Org table by copying html table: C-c | Show all project TODOs: Spc p t Scroll other window : S-up Scroll other window down : S-down  Backlinks  Emacs Hugo Blogging  </description>
     </item>
     
     <item>

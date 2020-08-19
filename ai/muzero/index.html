@@ -70,6 +70,16 @@
 
 
 
+        
+
+
+<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
     </head>
 
     <body class="">
@@ -180,9 +190,9 @@ A.</p>
 </ol>
 <p>B. How model acts:</p>
 <ol>
-<li>Performs MC tree search at timestamp &lsquo;t&rsquo; as described in [A]</li>
-<li>Action &lsquo;t+1&rsquo; sampled from search policy at time &lsquo;t&rsquo;</li>
-<li>Env receives action and genereates new observation and reward &lsquo;t+1&rsquo;</li>
+<li>Performs MC tree search at timestamp &rsquo;t&rsquo; as described in [A]</li>
+<li>Action &rsquo;t+1&rsquo; sampled from search policy at time &rsquo;t&rsquo;</li>
+<li>Env receives action and genereates new observation and reward &rsquo;t+1&rsquo;</li>
 <li>At end of episode, trajectory data stored in replay buffer.</li>
 </ol>
 <p>C. How training is done:</p>
@@ -415,9 +425,9 @@ targets.append((0, 0, []))</p>
 <li>
 <p>Update rule for weights:
 &ndash; three losses we are trying to minimize:
-&ndash; diff betn predicted reward &lsquo;k&rsquo; steps ahead of turn &lsquo;t&rsquo; and actual reward &lsquo;u&rsquo;
-&ndash; diff betn predicted value &lsquo;k&rsquo; steps ahead of turn &lsquo;t&rsquo; and target TD value &lsquo;z&rsquo;
-&ndash; diff betn predicted policy &lsquo;k&rsquo; steps ahead of turn &lsquo;t&rsquo; and MCTS policy &lsquo;pi&rsquo;</p>
+&ndash; diff betn predicted reward &lsquo;k&rsquo; steps ahead of turn &rsquo;t&rsquo; and actual reward &lsquo;u&rsquo;
+&ndash; diff betn predicted value &lsquo;k&rsquo; steps ahead of turn &rsquo;t&rsquo; and target TD value &lsquo;z&rsquo;
+&ndash; diff betn predicted policy &lsquo;k&rsquo; steps ahead of turn &rsquo;t&rsquo; and MCTS policy &lsquo;pi&rsquo;</p>
 <h2 id="---losses-summed-over-num_unroll_steps-to-gen-loss-for-given-pos-in-batch">&ndash; also regularization term is added
 &ndash; losses summed over num_unroll_steps to gen loss for given pos in batch</h2>
 <p>&ndash; Actual implementation: optimizer, network, batch, wt_decay

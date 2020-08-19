@@ -6,10 +6,27 @@
     <description>Recent content in git on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 18:43:16 +0545</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 07:10:51 +0545</lastBuildDate>
     
 	<atom:link href="https://dragarok.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Commands</title>
+      <link>https://dragarok.github.io/braindump/2020/05/git-commands/</link>
+      <pubDate>Thu, 07 May 2020 07:10:51 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/05/git-commands/</guid>
+      <description>&amp;ndash;tags: Useful &amp;ndash;references: https://learngitbranching.js.org/
+Commands   git add : tracking with git
+  git status : current status of tracked, untracked, changed, committed files.
+  git add filename.extension
+  (only after making the file it can be done)
+  double add command - stages the new changes
+  git commit
+  git add . -&amp;gt; all files are committed
+  git add *.</description>
+    </item>
     
     <item>
       <title>Gitconfig</title>
@@ -19,23 +36,6 @@
       <guid>https://dragarok.github.io/braindump/2020/04/gitconfig/</guid>
       <description>Windows Git Config  eval $(ssh-agent -s) ssh-add ~/.ssh/sshkey  Add ssh key in one command https://www.howtogeek.com/168147/add-public-ssh-key-to-remote-server-in-a-single-command/
  ssh-keygen -t rsa cat ~/.ssh/id_rsa.pub | ssh user@hostname &amp;lsquo;cat &amp;raquo; .ssh/authorized_keys&amp;rsquo; Change id_rsa as per your key , user, hostname and you are good to go. Need to restart ssh service though from server.  </description>
-    </item>
-    
-    <item>
-      <title>Git Commands</title>
-      <link>https://dragarok.github.io/braindump/2020/04/git-commands/</link>
-      <pubDate>Sun, 19 Apr 2020 18:31:28 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/git-commands/</guid>
-      <description>&amp;ndash;tags: Useful
-Commands   git add : tracking with git
-  git status : current status of tracked, untracked, changed, committed files.
-  git add filename.extension
-  (only after making the file it can be done)
-  double add command - stages the new changes
-  git commit
-  git add . -&amp;gt; all files are committed
-  git add *.html -&amp;gt;only html files are committed</description>
     </item>
     
     <item>

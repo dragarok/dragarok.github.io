@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Problems with installing   Not having msys2 so that pdftools can&amp;rsquo;t build [install msys]
+  Not having mingw so that sqlite can&amp;rsquo;t build for org-roam [choco install mingw] Don&amp;rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&amp;rsquo;s bin to the PATH.
+pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick   Then find a version that supports modules : emax64." />
+<meta name="keywords" content="Blog, emacs, windows, guide" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/emacs/emacs-windows-installation/" />
+
+
+    <title>
+        
+            Emacs Windows Installation :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Emacs Windows Installation">
+<meta itemprop="description" content="Problems with installing   Not having msys2 so that pdftools can&rsquo;t build [install msys]
+  Not having mingw so that sqlite can&rsquo;t build for org-roam [choco install mingw] Don&rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&rsquo;s bin to the PATH.
+pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick   Then find a version that supports modules : emax64.">
+<meta itemprop="dateModified" content="2020-08-12T12:51:30&#43;05:45" />
+<meta itemprop="wordCount" content="159">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="emacs,windows,guide," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Emacs Windows Installation"/>
+<meta name="twitter:description" content="Problems with installing   Not having msys2 so that pdftools can&rsquo;t build [install msys]
+  Not having mingw so that sqlite can&rsquo;t build for org-roam [choco install mingw] Don&rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&rsquo;s bin to the PATH.
+pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick   Then find a version that supports modules : emax64."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-08-12 12:51:30 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+        
+
+
+<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://dragarok.github.io/emacs/emacs-windows-installation/">Emacs Windows Installation</a></h2>
+
+            
+
+            <div class="post-content">
+                <h2 id="problems-with-installing">Problems with installing</h2>
+<ol>
+<li>
+<p>Not having msys2 so that pdftools can&rsquo;t build [install msys]</p>
+</li>
+<li>
+<p>Not having mingw so that sqlite can&rsquo;t build for org-roam [choco install mingw]
+Don&rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2:
+there will be folder named mingw64. Add it&rsquo;s bin to the PATH.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">   pacman -Syu
+   pacman -S base-devel
+   pacman -S mingw-w64-x86_64-toolchain
+   pacman -S mingw-w64-x86_64-zlib
+   pacman -S mingw-w64-x86_64-libpng
+   pacman -S mingw-w64-x86_64-poppler
+   pacman -S mingw-w64-x86_64-imagemagick
+</code></pre></div></li>
+<li>
+<p>Then find a version that supports modules : emax64. This is a well off
+version and has binaries in different places and things like that because it
+tries providing it&rsquo;s own configuration.</p>
+</li>
+<li>
+<p>Helm-rg didn&rsquo;t work for me. So, I installed helm-ag and used rg&rsquo;s executable with
+it. All is in config file.</p>
+</li>
+<li>
+<p>Helm-rg will try to say projectile to add itself as well so, don&rsquo;t use +fuzzy
+tag with helm.</p>
+</li>
+</ol>
+<h2 id="some-work-to-do">Some work to do:</h2>
+<ol>
+<li>Set HOME=&quot;C:\Users\anywhereyoulike&rdquo;</li>
+<li>Add msys2\bin to PATH</li>
+<li>Jupyter notebook env directory: $HOME/.conda/</li>
+</ol>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://dragarok.github.io/tags/emacs">emacs</a></span><span class="tag"><a href="https://dragarok.github.io/tags/windows">windows</a></span><span class="tag"><a href="https://dragarok.github.io/tags/guide">guide</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

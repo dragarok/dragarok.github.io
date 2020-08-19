@@ -6,10 +6,65 @@
     <description>Recent content in Braindumps on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2020 03:40:13 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 07:54:57 +0545</lastBuildDate>
     
 	<atom:link href="https://dragarok.github.io/braindump/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RA</title>
+      <link>https://dragarok.github.io/braindump/2020/08/ra/</link>
+      <pubDate>Tue, 18 Aug 2020 07:54:57 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/08/ra/</guid>
+      <description>Basic terminologies:  Dimensions Facts  Table and table naming conventions  initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage  Column naming:  Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar.</description>
+    </item>
+    
+    <item>
+      <title>Tips from entrepreneurs</title>
+      <link>https://dragarok.github.io/braindump/2020/08/tips-from-entrepreneurs/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/08/tips-from-entrepreneurs/</guid>
+      <description>Being an entrepreneur old fashioned way I Became an Entrepreneur the Old-Fashioned Way: Getting Fired | by Todd Brison
+ Companies are designed to make you feel rich, powerful, and successful. They are also designed to keep you from remembering all of that wealth, power, and status can be ripped away at a moment’s notice. Getting fired can take people to pursue their side gig.  Tips   Work harder on streams of income</description>
+    </item>
+    
+    <item>
+      <title>Paper Reading 3 pass</title>
+      <link>https://dragarok.github.io/braindump/2020/07/paper-reading-3-pass/</link>
+      <pubDate>Sun, 12 Jul 2020 12:07:48 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/07/paper-reading-3-pass/</guid>
+      <description>Reference: https://codearsonist.com/reading-for-programmers
+3 pass Overview:  Verify  Value Background   Grasp  Thought Process Highlights Diagram Unknowns References   Understand  Holes Implementations Notes    Process Verify  This provides High level view of the contents. Start with references usually. Mark the cited papers I&amp;rsquo;ve read as to get previous notes I have made and verify the background. Title, Abstract, Introduction&amp;ndash;&amp;gt; Read very carefully Scan through to find diagrams, equations.</description>
+    </item>
+    
+    <item>
+      <title>Anatomy directions</title>
+      <link>https://dragarok.github.io/braindump/2020/05/anatomy-directions/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/05/anatomy-directions/</guid>
+      <description>Normal anatomy terms    Term Description     Anterior At or near the front of the body (front view)   Posterior At or near the back of the body (back view)   Midline An imaginary vertical line that divides the body equally (right down the middle)   Lateral Farther from midline (side view)   Medial Nearer to midline (side view)   Superior Toward the head/upper part of a structure (bird’s-eye view, looking down)   Inferior Away from the head/lower part of a structure (bottom view, looking up)   Superficial Close to the surface of the body   Deep Away from the surface of the body   Proximal Nearer to the origination of a structure   Distal Farther from the origination of a structure    Neuroanatomical axes Anatomical axes, planes and localisations in the human brain.</description>
+    </item>
+    
+    <item>
+      <title>Git Commands</title>
+      <link>https://dragarok.github.io/braindump/2020/05/git-commands/</link>
+      <pubDate>Thu, 07 May 2020 07:10:51 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/05/git-commands/</guid>
+      <description>&amp;ndash;tags: Useful &amp;ndash;references: https://learngitbranching.js.org/
+Commands   git add : tracking with git
+  git status : current status of tracked, untracked, changed, committed files.
+  git add filename.extension
+  (only after making the file it can be done)
+  double add command - stages the new changes
+  git commit
+  git add . -&amp;gt; all files are committed
+  git add *.</description>
+    </item>
     
     <item>
       <title>Large Scale Network Embedding</title>
@@ -53,19 +108,6 @@ exec --no-startup-id /usr/lib/kdeconnectd </description>
     </item>
     
     <item>
-      <title>Emacs Hugo Blogging</title>
-      <link>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</link>
-      <pubDate>Sun, 26 Apr 2020 04:53:19 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</guid>
-      <description>:ID: 0dacbf0d-550d-4db9-8e15-6ffcede1107c
-Hugo blogging   Liked themes:
- Meme theme Harbor Cortex &amp;ndash;JethroKuan Hello friend ng rhazdon Beautiful Hugo   Blogging org mode Font    Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well
-//fonts.googleapis.com/css?family=Roboto+Slab:700,300,400|Source+Code+Pro:500 //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
-    Normalize css : I don&amp;rsquo;t know what it does but looks pretty cool with all these stars on github.</description>
-    </item>
-    
-    <item>
       <title>Beyond Higgs Boson</title>
       <link>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0545</pubDate>
@@ -73,54 +115,6 @@ Hugo blogging   Liked themes:
       <guid>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</guid>
       <description>&amp;ndash; link: Beyond Higgs: The Wild Frontier of Particle Physics - YouTube - Brave
 What are these people looking for?  Supersymmetry  Mathematical idea: Not still experimentally verified. Pencil standing on it&amp;rsquo;s tip Analogy: Though people found the Higgs out there, there is still no understanding of how the higgs is standing in the standard model. Physicists are looking for the support for the pencil if it is being held by a string or being held by hand.</description>
-    </item>
-    
-    <item>
-      <title>Google Dorks</title>
-      <link>https://dragarok.github.io/braindump/2020/04/google-dorks/</link>
-      <pubDate>Thu, 23 Apr 2020 16:31:35 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/google-dorks/</guid>
-      <description>What Is Google Dorks? It is basically an advanced google search!
-I have included four types of google dorks in this collection: Google dorks for SQL injection, Google dorks for Local File Inclusion, Google dorks For open CCTV cams and Google dorks for sensitive information.
-Copy and paste the below google dorks on the search engine and have fun!
-Google Dorks For SQL Injection:
-•inurl:index.php?id=
-•inurl:trainers.php?id=
-•inurl:buy.php?category=
-•inurl:article.php?ID=
-•inurl:play_old.php?id=
-•inurl:declaration_more.php?decl_id=</description>
-    </item>
-    
-    <item>
-      <title>Algorithms</title>
-      <link>https://dragarok.github.io/braindump/2020/04/algorithms/</link>
-      <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/algorithms/</guid>
-      <description>Algorithms Basic rules of complexity definition for removing terms:
- Multiplicative constants can be omitted: 14n2 becomes n2. n^a dominates n^b if a &amp;gt; b: for instance, n^2 dominates n. Any exponential dominates any polynomial: 3^n dominates n^5 (it even dominates 2^n). Likewise, any polynomial dominates any logarithm: n dominates (log n)^3. This also means, for example, that n^2 dominates n* log n.  Techniques to think of counter examples:</description>
-    </item>
-    
-    <item>
-      <title>Array Data Structures</title>
-      <link>https://dragarok.github.io/braindump/2020/04/array-data-structures/</link>
-      <pubDate>Tue, 21 Apr 2020 05:51:27 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/array-data-structures/</guid>
-      <description>&amp;ndash;tags: Data Structures
-Arrays:  Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory  Multidimensional arrays:  Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array  Jagged arrays:  Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations  Resizable arrays:  all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable  NSMutableArray has mutability    Question:  Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag   Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array  Sorting in an array:  Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted  Arrays of custom objects SORT:  Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects  Searching arrays:  Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations  Built in search behavior:  .</description>
-    </item>
-    
-    <item>
-      <title>Heap Data Structures</title>
-      <link>https://dragarok.github.io/braindump/2020/04/heap-data-structures/</link>
-      <pubDate>Tue, 21 Apr 2020 05:51:05 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/heap-data-structures/</guid>
-      <description>&amp;ndash;tags: Data Structures
-Heap: Used in sorting algorithms Binary tree not BST but binary tree Rules: Balanced always Left to right top to bottom Minheap or maxheap? Lowest or highest value at the top of heap First left child node is placed first Swapping of the min or max value management keeps a heap sorted Not fully sorted data structure: Min or max value is always at the top High priority is bubbled at the top which is its primary function rather than retrieving values</description>
     </item>
     
   </channel>

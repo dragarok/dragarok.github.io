@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Forecasting weather using neural ODEs  Machine learning to model dynamics of weather. Modeling the changes between time steps using Julia and SciML.  Neural ODEs for time series Instead of a neural network way,
+\begin{equation}y_{i}=f\left(t_{i} ;\theta\right)\end{equation}
+we use a differential equation to represent the change.
+\begin{equation}\frac{\partial y}{\partial t}=f(y ;\theta)\end{equation}
+The goal is to learn the dynamics of change. This formulation can be seen as &amp;ldquo;neural network inside ODE&amp;rdquo;. Forward pass of NN == Initial Value Problem" />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/ai/neural_odes/" />
+
+
+    <title>
+        
+            Neural ODEs :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Neural ODEs">
+<meta itemprop="description" content="Forecasting weather using neural ODEs  Machine learning to model dynamics of weather. Modeling the changes between time steps using Julia and SciML.  Neural ODEs for time series Instead of a neural network way,
+\begin{equation}y_{i}=f\left(t_{i} ;\theta\right)\end{equation}
+we use a differential equation to represent the change.
+\begin{equation}\frac{\partial y}{\partial t}=f(y ;\theta)\end{equation}
+The goal is to learn the dynamics of change. This formulation can be seen as &ldquo;neural network inside ODE&rdquo;. Forward pass of NN == Initial Value Problem">
+<meta itemprop="datePublished" content="2020-08-10T00:00:00&#43;05:45" />
+<meta itemprop="dateModified" content="2020-08-16T08:49:28&#43;05:45" />
+<meta itemprop="wordCount" content="156">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Neural ODEs"/>
+<meta name="twitter:description" content="Forecasting weather using neural ODEs  Machine learning to model dynamics of weather. Modeling the changes between time steps using Julia and SciML.  Neural ODEs for time series Instead of a neural network way,
+\begin{equation}y_{i}=f\left(t_{i} ;\theta\right)\end{equation}
+we use a differential equation to represent the change.
+\begin{equation}\frac{\partial y}{\partial t}=f(y ;\theta)\end{equation}
+The goal is to learn the dynamics of change. This formulation can be seen as &ldquo;neural network inside ODE&rdquo;. Forward pass of NN == Initial Value Problem"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-08-10 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+        
+
+
+<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://dragarok.github.io/ai/neural_odes/">Neural ODEs</a></h2>
+
+            
+
+            <div class="post-content">
+                <h2 id="forecasting-weather-using-neural-odes">Forecasting weather using neural ODEs</h2>
+<ul>
+<li>Machine learning to model dynamics of weather.</li>
+<li>Modeling the changes between time steps using Julia and SciML.</li>
+</ul>
+<h3 id="neural-odes-for-time-series">Neural ODEs for time series</h3>
+<p>Instead of a neural network way,</p>
+<p>\begin{equation}y_{i}=f\left(t_{i} ;\theta\right)\end{equation}</p>
+<p>we use a differential equation to represent the change.</p>
+<p>\begin{equation}\frac{\partial y}{\partial t}=f(y ;\theta)\end{equation}</p>
+<p>The goal is to learn the dynamics of change. This formulation can be seen as
+&ldquo;neural network inside ODE&rdquo;. Forward pass of NN == Initial Value Problem</p>
+<p>\begin{equation}
+y(t_{0})
+\end{equation}</p>
+<p>is the input features and we replace hand crafted equations with a NN.
+So, forward pass gives us an entire trajectory in contrast to RNNs which give a
+single prediction in time at once.</p>
+<p>So, it uses a trained neural network instead of equations.</p>
+<p>\begin{equation}\frac{\partial y}{\partial t}=f^{*}(y(t))\end{equation}</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>How to train network inside ODE</p>
+<p>Take gradient of θ w.r.t. loss we can train using standard gradient based
+methods. In Julia, we can use <strong>DiffEqFlux.jl</strong> for it.</p>
+</li>
+</ul>
+<h2 id="references">References:</h2>
+<p><a href="https://sebastiancallh.github.io/post/neural-ode-weather-forecast/">https://sebastiancallh.github.io/post/neural-ode-weather-forecast/</a>
+<a href="https://sebastiancallh.github.io/post/neural-ode-continuous-layer/">https://sebastiancallh.github.io/post/neural-ode-continuous-layer/</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

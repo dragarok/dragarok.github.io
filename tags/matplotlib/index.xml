@@ -21,7 +21,7 @@
   plt.plot(x,y,&amp;lsquo;color or dots or any fucking thing to represent the numbers&amp;rsquo;)
   r&amp;ndash; means red dashes and bs means blue squares and g^ means green triangles
   make a numpy array using arange(start, end, step_size)
-  multiple plot in plot() plot(t, t, &amp;lsquo;r&amp;ndash;&#39;, t, t**2, &amp;lsquo;bs&amp;rsquo;, t, t**3, &amp;lsquo;g^&amp;rsquo;)
+  multiple plot in plot() plot(t, t, &amp;lsquo;r&amp;ndash;&amp;rsquo;, t, t**2, &amp;lsquo;bs&amp;rsquo;, t, t**3, &amp;lsquo;g^&amp;rsquo;)
   tuple unpacking with obj_name, comma is the essence</description>
     </item>
     

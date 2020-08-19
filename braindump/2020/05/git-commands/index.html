@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="&amp;ndash;tags: Useful &amp;ndash;references: https://learngitbranching.js.org/
+Commands   git add : tracking with git
+  git status : current status of tracked, untracked, changed, committed files.
+  git add filename.extension
+  (only after making the file it can be done)
+  double add command - stages the new changes
+  git commit
+  git add . -&amp;gt; all files are committed
+  git add *." />
+<meta name="keywords" content="Blog, git, tips" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/braindump/2020/05/git-commands/" />
+
+
+    <title>
+        
+            Git Commands :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Git Commands">
+<meta itemprop="description" content="&ndash;tags: Useful &ndash;references: https://learngitbranching.js.org/
+Commands   git add : tracking with git
+  git status : current status of tracked, untracked, changed, committed files.
+  git add filename.extension
+  (only after making the file it can be done)
+  double add command - stages the new changes
+  git commit
+  git add . -&gt; all files are committed
+  git add *.">
+<meta itemprop="dateModified" content="2020-05-07T07:10:51&#43;05:45" />
+<meta itemprop="wordCount" content="774">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="git,tips," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Git Commands"/>
+<meta name="twitter:description" content="&ndash;tags: Useful &ndash;references: https://learngitbranching.js.org/
+Commands   git add : tracking with git
+  git status : current status of tracked, untracked, changed, committed files.
+  git add filename.extension
+  (only after making the file it can be done)
+  double add command - stages the new changes
+  git commit
+  git add . -&gt; all files are committed
+  git add *."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-05-07 07:10:51 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+         
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>4 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://dragarok.github.io/braindump/2020/05/git-commands/">Git Commands</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>&ndash;tags:  <a href="../../../../braindump/2020/04/useful/">Useful</a>
+&ndash;references: <a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li>
+<p>git add : tracking with git</p>
+</li>
+<li>
+<p>git status : current status of tracked, untracked, changed, committed files.</p>
+</li>
+<li>
+<p>git add filename.extension</p>
+</li>
+</ul>
+<p>(only after making the file it can be done)</p>
+<ul>
+<li>
+<p>double add command - stages the new changes</p>
+</li>
+<li>
+<p>git commit</p>
+</li>
+<li>
+<p>git add . -&gt; all files are committed</p>
+</li>
+<li>
+<p>git add *.html -&gt;only html files are committed</p>
+</li>
+<li>
+<p>touch .gitignore</p>
+</li>
+<li>
+<p>git branch Mybranch</p>
+</li>
+<li>
+<p>git commit -m &lsquo;commit command&rsquo;</p>
+</li>
+<li>
+<p>git checkout master</p>
+</li>
+<li>
+<p>git checkout Mybranch</p>
+</li>
+<li>
+<p>git stash -&gt; saves everything over a branch that can be applied later to it</p>
+</li>
+<li>
+<p>come back and work continously into it: git stash apply</p>
+</li>
+</ul>
+<h2 id="working-with-remote-repos">Working with remote repos:</h2>
+<ul>
+<li>
+<p>git remote</p>
+</li>
+<li>
+<p>git clone website</p>
+</li>
+<li>
+<p>cd location</p>
+</li>
+<li>
+<p>git remote -v</p>
+</li>
+<li>
+<p>git fetch origin</p>
+</li>
+<li>
+<p>git pull origin: will pull from the repo and also merge it</p>
+</li>
+<li>
+<p>git remote add Myrepo website</p>
+</li>
+</ul>
+<h2 id="advanced">Advanced</h2>
+<ul>
+<li>
+<p>git rm &ndash;cached `git ls-files -i &ndash;exclude-from=.gitignore`: remove cached files that you have now added to .gitignore .</p>
+<ul>
+<li>e.g. config files you added initially.</li>
+</ul>
+</li>
+<li>
+<p>git checkout master^ : caret means go one commit up</p>
+</li>
+<li>
+<p>git checkout master^^: go to grandparent of master</p>
+</li>
+<li>
+<p>rebase: make a linear history rather than parallel ones.</p>
+</li>
+<li>
+<p>~ operator: takes a number after ~ to go up specific number of commits up the
+the current head. e.g. git checkout HEAD~4</p>
+</li>
+<li>
+<p>git branch -f master HEAD~3 : makes master 3 commits behind HEAD.</p>
+</li>
+<li>
+<p>git checkout commit_hash : just point the head to the commit</p>
+</li>
+<li>
+<p>git branch -f branch_name hash : just take the branch to that commit</p>
+</li>
+<li>
+<p>git checkout master and then git rebase bugFix : would set master to the line
+of bugFix.</p>
+</li>
+</ul>
+<h3 id="git-revert-and-reset">Git revert and reset:</h3>
+<ul>
+<li>On local work: git reset branch_name~n would remove n commits as if were not there</li>
+<li>On remote: git revert HEAD on any branch would take that branch and make
+removal of recent commit as new commit there.</li>
+</ul>
+<h3 id="cherry-picking">Cherry picking:</h3>
+<ul>
+<li>git cherry-pick commit-1 commit-2 &hellip;  : Means i would like to copy these
+commits below current location HEAD.</li>
+</ul>
+<h3 id="rebase-interactive">Rebase interactive</h3>
+<ul>
+<li>rebase -i  : choose options from vim or anywhere.</li>
+<li>can do either of 3 things:
+<ul>
+<li>reorder</li>
+<li>pick off : dropping the commit</li>
+<li>squashing commits : merging into one</li>
+</ul>
+</li>
+<li>git rebase -i HEAD~4 : would let you rebase 4 commits\</li>
+</ul>
+<h3 id="tags">Tags:</h3>
+<ul>
+<li>git tag tag_name commit_hash</li>
+<li>git describe branch_name : it would describe in relation to tags: which is
+easier to understand and go along.</li>
+</ul>
+<h3 id="new-branch-and-checkout-to-before-merge">New branch and checkout to before merge:</h3>
+<ul>
+<li>git checkout -b bugWork HEAD~1^2~1: means first go to ancestor of
+current_branch, choose the second parent to move up, then go back one commit
+up and make it bugWork branch.</li>
+</ul>
+<h3 id="git-fetch">Git fetch:</h3>
+<ul>
+<li>git fetch performs two main steps, and two main steps only. It:
+<ul>
+<li>downloads the commits that the remote has but are missing from our local repository</li>
+<li>updates where our remote branches point</li>
+</ul>
+</li>
+<li>Git fetch wont update master branch though.</li>
+<li>So, it&rsquo;s just downloading all remote work but not accepting it just with fetch.</li>
+</ul>
+<h3 id="merging-from-remote-after-fetch">Merging from remote after fetch:</h3>
+<ul>
+<li>using cherry-pick origin/master, rebase origin/master, merge origin/master</li>
+<li>Git pull : exactly does this <strong>fetch and merge</strong></li>
+</ul>
+<h3 id="git-pull-rebase">Git pull &ndash;rebase</h3>
+<ul>
+<li>when pulling off from remote when you have been working on older version of remote.</li>
+</ul>
+<h3 id="track-origin-master-with-branch-other-than-master">Track origin/master with branch other than master:</h3>
+<ul>
+<li>git checkout -b dummy_branch origin/master; git pull : this will make
+dummy_branch and track it to remote&rsquo;s master branch.</li>
+<li>Another way is to use: git branch -u origin/master dummy_branch</li>
+<li>if currently we are in dummy_branch: git branch -u origin/master does the work</li>
+</ul>
+<h3 id="tracking-different-remote-branches">Tracking different remote branches:</h3>
+<ul>
+<li>git checkout commit_hash; git push origin master: this pushes the commit to
+track origin/master.</li>
+</ul>
+<h3 id="pushing-one-branch-to-another-in-remote">Pushing one branch to another in remote:</h3>
+<ul>
+<li>git push origin source:destination : e.g. git push origin foo:master will set
+the foo branch to track origin/master.</li>
+</ul>
+<h3 id="pulling-from-one-remote-to-another-local">Pulling from one remote to another local:</h3>
+<ul>
+<li>git fetch remote_source:destination_local: eg. git fetch origin master^1:foo
+will get ancestor of master to a new branch foo.</li>
+</ul>
+<h3 id="source-in-push-and-fetch-can-be-nothing">Source in push and fetch can be nothing:</h3>
+<ul>
+<li>Git abuses the <!-- raw HTML omitted --> parameter in two weird ways. These two abuses come
+from the fact that you can technically specify &ldquo;nothing&rdquo; as a valid source for
+both git push and git fetch.</li>
+<li>Fetching nothing to local creates a new branch</li>
+<li>Pushing nothing to remote removes the branch</li>
+</ul>
+<h3 id="pull-commands-with-source-and-destination">Pull commands with source and destination:</h3>
+<ul>
+<li>they are just git fetch and merge in action.</li>
+</ul>
+<h2 id="clearing-branch-history-or-certain-commits">Clearing branch history or certain commits</h2>
+<ul>
+<li>git checkout &ndash;orphan cleanup_branch_name</li>
+<li>git add .</li>
+<li>git commit -am &ldquo;First commit&rdquo;</li>
+<li>git cherry-pick commit-name to commit-name : which commits you want to stay. If you want everything gone then no need to cherry pick</li>
+<li>git branch -D master</li>
+<li>git branch -m master : renames cleanup_branch_name to master.</li>
+<li>git push origin master
+<ul>
+<li>if it doesn&rsquo;t work</li>
+<li>git push -f origin master</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://dragarok.github.io/tags/git">git</a></span><span class="tag"><a href="https://dragarok.github.io/tags/tips">tips</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>774 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-05-07 07:10 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://dragarok.github.io/braindump/2020/05/anatomy-directions/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Anatomy directions</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://dragarok.github.io/braindump/2020/05/large-scale-network-embedding/">
+                                <span class="button__text">Large Scale Network Embedding</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

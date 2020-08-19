@@ -6,115 +6,113 @@
     <description>Recent content on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Apr 2020 07:53:22 +0545</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 07:54:57 +0545</lastBuildDate>
     
 	<atom:link href="https://dragarok.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Large Scale Network Embedding</title>
-      <link>https://dragarok.github.io/braindump/2020/05/large-scale-network-embedding/</link>
-      <pubDate>Sat, 02 May 2020 03:40:13 +0545</pubDate>
+      <title>RA</title>
+      <link>https://dragarok.github.io/braindump/2020/08/ra/</link>
+      <pubDate>Tue, 18 Aug 2020 07:54:57 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/05/large-scale-network-embedding/</guid>
-      <description>&amp;ndash;tags: Graph Embedding Techniques
-LINE: Large scale Network Embedding &amp;ndash; Explicitly define two functions for 1st and 2nd order proximity. &amp;ndash; EMpirically,found that the 2nd order proximity performed better and improved accuracy. &amp;ndash; Goal: to decrease KL divergence between the input and the embedding distributions &amp;ndash; Since the algorithm has to define new functions for each increasing order of proximity, LINE doesn’t perform very well if the application needs an understanding of node community structure.</description>
+      <guid>https://dragarok.github.io/braindump/2020/08/ra/</guid>
+      <description>Basic terminologies:  Dimensions Facts  Table and table naming conventions  initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage  Column naming:  Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar.</description>
     </item>
     
     <item>
-      <title>8086</title>
-      <link>https://dragarok.github.io/braindump/2020/05/8086/</link>
-      <pubDate>Sat, 02 May 2020 01:01:54 +0545</pubDate>
+      <title>Anything You Want: 40 Lessons for a New Kind of Entrepreneur</title>
+      <link>https://dragarok.github.io/books/anything-you-want-40-lessons-for-a-new-kind-of-entrepreneur/</link>
+      <pubDate>Thu, 13 Aug 2020 07:02:53 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/05/8086/</guid>
-      <description>one pass assembler: converts whole at one, jmp instruction references made after assembly two pass: converts in two steps : first generates a symbol table of names and labels used in programs and calculate their relative addresses, then converts the instructions into machine code in the next cycle of assembly, more efficient and easier than first
-Linking:
- can link multiple obj files into one and forms exe file additional files that can be produced by the linker .</description>
+      <guid>https://dragarok.github.io/books/anything-you-want-40-lessons-for-a-new-kind-of-entrepreneur/</guid>
+      <description>### Author: Sivers, Derek
+  loc 70 - Don’t pursue business just for your own gain. Only answer the calls for help.
+  loc 89 - It’s not that distributors were evil. It was just an awful system, and I wanted nothing to do with it. So when the big online record stores told me they couldn’t sell my CD directly, I thought, “Ah, screw it. I’ll just set up my own online store.</description>
     </item>
     
     <item>
-      <title>KdeConnect I3</title>
-      <link>https://dragarok.github.io/braindump/2020/05/kdeconnect-i3/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0545</pubDate>
+      <title>FMRI bootcamp</title>
+      <link>https://dragarok.github.io/neuroscience/fmri_bootcamp/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/05/kdeconnect-i3/</guid>
-      <description>Firewall sudo ufw allow 1714:1764/udp sudo ufw allow 1714:1764/tcp
-Installation pacman -S kdeconnect yay -S indicator-kdeconnect I3 settings exec --no-startup-id indicator-kdeconnect I3 additional If the above one is not working
-exec --no-startup-id /usr/lib/kdeconnectd </description>
+      <guid>https://dragarok.github.io/neuroscience/fmri_bootcamp/</guid>
+      <description>Different views of the brain  Coronal view: View after cutting the face off. Sagittal medial view: Cutting brain from the sides into the middle. Lateral Sagittal view: Take the skull off. Axial view: Look from the top after cutting off a piece.   Sulca: Bottom of cortical folds Gyrus: Top of cortical folds  Different Imaging Techniques Anatomical Imaging  Axial slices are 2D representations. Making multiple axial slices &amp;ndash;&amp;gt; 3D representation of the brain Slices can be separated by some space.</description>
     </item>
     
     <item>
-      <title>Looking Back to School Life</title>
-      <link>https://dragarok.github.io/posts/2020/05/looking-back-to-school-life/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0545</pubDate>
+      <title>Tips from entrepreneurs</title>
+      <link>https://dragarok.github.io/braindump/2020/08/tips-from-entrepreneurs/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/posts/2020/05/looking-back-to-school-life/</guid>
-      <description>A Reminiscence   Looking at this image, I find it funny how we change so much that we are no longer ourselves. I believed I was this way for as long as I can remember but alas with time: memories fade, people around you change and you no longer are the same person that you were before. This is the first page of my diary I made in my 9th grade.</description>
+      <guid>https://dragarok.github.io/braindump/2020/08/tips-from-entrepreneurs/</guid>
+      <description>Being an entrepreneur old fashioned way I Became an Entrepreneur the Old-Fashioned Way: Getting Fired | by Todd Brison
+ Companies are designed to make you feel rich, powerful, and successful. They are also designed to keep you from remembering all of that wealth, power, and status can be ripped away at a moment’s notice. Getting fired can take people to pursue their side gig.  Tips   Work harder on streams of income</description>
     </item>
     
     <item>
-      <title>Songs</title>
-      <link>https://dragarok.github.io/braindump/2020/04/songs/</link>
-      <pubDate>Mon, 27 Apr 2020 11:04:41 +0545</pubDate>
+      <title>Emacs Shortcuts</title>
+      <link>https://dragarok.github.io/emacs/emacs_shortcuts/</link>
+      <pubDate>Wed, 12 Aug 2020 13:23:08 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/songs/</guid>
-      <description>Eurielle - Song of Durin &amp;ndash; Hobbit Part 1-3 Jade Bird - Ruins</description>
+      <guid>https://dragarok.github.io/emacs/emacs_shortcuts/</guid>
+      <description>Emacs Shortcuts  Spc f d &amp;ndash;&amp;gt; search for files in dired Spc : &amp;ndash;&amp;gt; main command Spc g s &amp;ndash;&amp;gt; git status Spc n n &amp;ndash;&amp;gt; Capture template Spc n a &amp;ndash;&amp;gt; agenda view Vim commands  Ctrl up , down &amp;ndash;&amp;gt; go up and down in file q [a-z] &amp;ndash;&amp;gt; record a macro Shift &amp;raquo; &amp;ndash;&amp;gt; indent in code   Evil snipe:  s ch : go to ch ; same as f but more letters gc : to comment using evil gs [annotation] &amp;ndash;&amp;gt; to go to lines directly like vimium ease dii &amp;ndash;&amp;gt; delete inside indentation dik &amp;ndash;&amp;gt; delete inside plus a line above   Dired buffer shortcuts:  Dired marking and unmarking options: % and * keys Narrow subtree : ( Show git status for files : ) Diff one file to another: = Create a directory : + Up a directory : - Rename a file: R Change timestamp of file: T Copy filename: Y Open a sub-directory in same menu: I Change ownership of file: O Unmark all files: U Hardlink of file: H Goto file: J Counsel search online: K Encrypt, decrypt a file: ; Uncompress or compress : Z Copy file to : C Byte compile a file: B Change file mode: M Copy async to rsync : C-c C-r Wide dired mode: i   Org table by copying html table: C-c | Show all project TODOs: Spc p t Scroll other window : S-up Scroll other window down : S-down  Backlinks  Emacs Hugo Blogging  </description>
     </item>
     
     <item>
-      <title>The Astronomy Book</title>
-      <link>https://dragarok.github.io/books/dk/</link>
-      <pubDate>Mon, 27 Apr 2020 02:30:19 +0545</pubDate>
+      <title>Emacs Tramp</title>
+      <link>https://dragarok.github.io/emacs/emacs_tramp/</link>
+      <pubDate>Wed, 12 Aug 2020 13:03:24 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/dk/</guid>
-      <description>### Author: DK
-  loc 216 - &amp;ldquo;You have to have the imagination to recognize a discovery when you make one.&amp;rdquo; Clyde Tombaugh
-  loc 225 - &amp;ldquo;What a wonderful and amazing scheme have we here of the magnificent vastness of the universe.&amp;rdquo; Christiaan Huygens
-  loc 235 - in 1979, the first example of a gravitational lens was identified, when the image of a quasar was seen to be double due to the presence of a galaxy along the line of sight, again as relativity had predicted.</description>
+      <guid>https://dragarok.github.io/emacs/emacs_tramp/</guid>
+      <description>Tramp mode for sshing  Emacs Tramp tricks C-x C-f /ssh:root@ssb.willschenk.com:/etc/host This command will ssh into it and now projects can be browsed into emacs as if it were right here on my local machine. C-x C-f also need not be done since I have bound it to Spc-Spc. C-x C-f /sudo::/etc/hosts : edit file as sudo   Also has some tips for docker  </description>
     </item>
     
     <item>
-      <title>Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time</title>
-      <link>https://dragarok.github.io/books/eat-that-frog/</link>
-      <pubDate>Mon, 27 Apr 2020 02:30:01 +0545</pubDate>
+      <title>Emacs Tips</title>
+      <link>https://dragarok.github.io/emacs/emacs_tips/</link>
+      <pubDate>Wed, 12 Aug 2020 12:52:04 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/eat-that-frog/</guid>
-      <description>### Author: Tracy, Brian
-  loc 70 - Then I did something that changed my life. I began to ask successful people what they were doing that enabled them to be more productive and earn more money than me. And they told me.
-  loc 88 - The ability to concentrate singlemindedly on your most important task, to do it well and to finish it completely, is the key to great success, achievement, respect, status, and happiness in life.</description>
+      <guid>https://dragarok.github.io/emacs/emacs_tips/</guid>
+      <description>Emacs   About org noter process to work with my papers
+ Org-noter to start note taking mode Org-noter-create-skeleton to create the headings and subheadings from pdf into the note.  Org-noter-insert-note to insert a note into my pdf i        Showing inline images
+(setq org-startup-with-inline-images t) Both of these options work and upper one is more flexible working with individual files.
+    Some libraries to look at:</description>
     </item>
     
     <item>
-      <title>The Courage to Be Disliked</title>
-      <link>https://dragarok.github.io/books/ichiro-kishimifumitake-koga/</link>
-      <pubDate>Mon, 27 Apr 2020 02:29:41 +0545</pubDate>
+      <title>Emacs Hugo Blogging</title>
+      <link>https://dragarok.github.io/emacs/emacs_hugo_blogging/</link>
+      <pubDate>Wed, 12 Aug 2020 12:51:48 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/ichiro-kishimifumitake-koga/</guid>
-      <description>### Author: Ichiro Kishimi;Fumitake Koga
-  loc 143 - That is not because the world is complicated. It’s because you are making the world complicated. YOUTH: I am? PHILOSOPHER: None of us live in an objective world, but instead in a subjective world that we ourselves have given meaning to. The world you see is different from the one I see, and it’s impossible to share your world with anyone else</description>
+      <guid>https://dragarok.github.io/emacs/emacs_hugo_blogging/</guid>
+      <description>ID: 0dacbf0d-550d-4db9-8e15-6ffcede1107c
+Hugo blogging &amp;lt;0d/acbf0d-550d-4db9-8e15-6ffcede1107c/_20200426_045146screenshot.png&amp;gt;
+Liked themes:
+ Meme theme Harbor Cortex &amp;ndash;JethroKuan Hello friend ng rhazdon Beautiful Hugo   Blogging org mode Font    Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well
+//fonts.googleapis.com/css?family=Roboto+Slab:700,300,400|Source+Code+Pro:500 //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+    Normalize css : I don&amp;rsquo;t know what it does but looks pretty cool with all these stars on github.
+I think I have a faint idea now about what it does.</description>
     </item>
     
     <item>
-      <title>The Unbearable Lightness of Being</title>
-      <link>https://dragarok.github.io/books/milan-kundera/</link>
-      <pubDate>Mon, 27 Apr 2020 02:28:33 +0545</pubDate>
+      <title>Emacs Windows Installation</title>
+      <link>https://dragarok.github.io/emacs/emacs-windows-installation/</link>
+      <pubDate>Wed, 12 Aug 2020 12:51:30 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/milan-kundera/</guid>
-      <description>### Author: Milan Kundera
-  loc 306 - The idea of eternal return
-  loc 308 - Putting it negatively, the myth of eternal return states that a life which disappears once and for all, which does not return, is like a shadow, without weight, dead in advance, and whether it was horrible, beautiful, or sublime, its horror, sublimity, and beauty mean nothing
-  loc 332 - This reconciliation with Hitler reveals the profound moral perversity of a world that rests essentially on the nonexistence of return, for in this world everything is pardoned in advance and therefore everything cynically permitted.</description>
+      <guid>https://dragarok.github.io/emacs/emacs-windows-installation/</guid>
+      <description>Problems with installing   Not having msys2 so that pdftools can&amp;rsquo;t build [install msys]
+  Not having mingw so that sqlite can&amp;rsquo;t build for org-roam [choco install mingw] Don&amp;rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&amp;rsquo;s bin to the PATH.
+pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick   Then find a version that supports modules : emax64.</description>
     </item>
     
     <item>
-      <title>Kundalini – an Untold Story: A Himalayan Mystic&#39;s Insight Into the Power of Kundalini and Chakra Sadhana</title>
-      <link>https://dragarok.github.io/books/om-swami/</link>
-      <pubDate>Mon, 27 Apr 2020 02:28:19 +0545</pubDate>
+      <title>Emacs Completion</title>
+      <link>https://dragarok.github.io/emacs/emacs-completion/</link>
+      <pubDate>Wed, 12 Aug 2020 12:51:16 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/books/om-swami/</guid>
-      <description>### Author: OM Swami
-  loc 92 - The science of the kundalini is an ancient vidya that has been passed through an oral tradition in strict disciplic succession to worthy recipients. The science remains just as intact today. All it requires is for one to walk the path with great determination and tenacity.
-  loc 618 - When you don’t react, a sense of ease arises. Resistance goes away.</description>
+      <guid>https://dragarok.github.io/emacs/emacs-completion/</guid>
+      <description>Vim&amp;rsquo;s omni like completion Keybind	Description C-x C-]	Complete etags C-x C-f	Complete file path C-x C-k	Complete from dictionary/keyword C-x C-l	Complete full line C-x C-o	Invoke complete-at-point function C-x C-n	Complete next symbol at point C-x C-p	Complete previous symbol at point C-x C-s	Complete snippet C-x s	Complete spelling suggestions</description>
     </item>
     
   </channel>

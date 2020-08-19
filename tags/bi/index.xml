@@ -6,7 +6,7 @@
     <description>Recent content in BI on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:52 +0545</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:36 +0545</lastBuildDate>
     
 	<atom:link href="https://dragarok.github.io/tags/bi/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,21 +18,6 @@
       
       <guid>https://dragarok.github.io/braindump/2020/04/inventory-replenishment/</guid>
       <description>Talk about business opportunity History and Comparison Consumer and Customer Analytics Replenishment: Replenishment Execution System:  Order Point Order Upton Point   Defining these two points is the key. Unknowns and Parameters &amp;ndash;&amp;gt; Optimizations  Terms  Lead time &amp;ndash; Time between ordering and getting items avail for sale.  Order to pickup + Pickup to location + Warehouse to location   ROQ &amp;ndash; Recommended Order Quantity Inventory selling days &amp;ndash; No of days of supply desired when replenishment is made.</description>
-    </item>
-    
-    <item>
-      <title>RA AND BI</title>
-      <link>https://dragarok.github.io/braindump/2020/04/ra-and-bi/</link>
-      <pubDate>Sun, 19 Apr 2020 15:59:28 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/ra-and-bi/</guid>
-      <description>RA and BI tips:
-Compression table use FROM_DT_WID and TO_DT_WID columns to indicate the time range in which records are valid.
-Current Table stores latest positional fact data at the base level. Defined in day dimension levels
-Flow:
-Taken to the staging table or fact table first.
-Temp table from facts table with surrogate keys for ease of processing
-If data in temp table is new, inserted into the target table as well.</description>
     </item>
     
   </channel>

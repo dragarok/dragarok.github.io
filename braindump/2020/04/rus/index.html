@@ -78,6 +78,7 @@ That is 50,000 can be written as 50_000 ."/>
 
 
 
+         
     </head>
 
     <body class="">
@@ -255,7 +256,7 @@ when used also no need to use * and so on.</p>
 Tuples have a fixed length - once declared they cannot grow or shrink in size.</p>
 <p>Index starts from zero.
 e.g. let tuple:(i32,f64,u8) = (-325,4.9,22);</p>
-<p>To print a tuple: println!(&quot;{:?}&quot;, tuple_name)</p>
+<p>To print a tuple: println!(&quot;{:?}&rdquo;, tuple_name)</p>
 <p>Getting elements one by one: tuple.0, tuple.1 and so on.</p>
 <p>Printing individual elems also require same println!(&quot;{:?}&quot;,tuple.1);</p>
 <p>Passing tuple as param to function: fn_name(x:(i32,bool,f64))
@@ -303,7 +304,7 @@ Returning value to function</p>
 let v2 = v; // ownership transferred here
 if we try to use v, it returns a error. &lsquo;v&rsquo; is destroyed now.</p>
 <p>e.g.display(v2); <em>/ v2 is moved to display and invalidated
-println!(&quot;{:?}&quot;, v2); /</em> here v2 is no longer usable
+println!(&quot;{:?}&rdquo;, v2); /</em> here v2 is no longer usable
 fn display(v:Vec<!-- raw HTML omitted -->){
 println!(&ldquo;inside display {:?}&quot;,v);
 }</p>
@@ -446,7 +447,7 @@ println!(&ldquo;nothing found&rdquo;);
 }</p>
 <p>e.g. using iter:
 for (key, val) in stateCodes.iter() {
-println!(&ldquo;key: {} val: {}&quot;, key, val);
+println!(&ldquo;key: {} val: {}&rdquo;, key, val);
 }</p>
 <p>e.g.    stateCodes.remove(&amp;&ldquo;GJ&rdquo;);</p>
 <p>HashSet:
@@ -550,7 +551,7 @@ println!(&ldquo;Enter your name :&quot;);
 let b1 = std::io::stdin().read_line(&amp;mut line).unwrap();</p>
 <p>Write example:
 let b1 = std::io::stdout().write(&ldquo;Tutorials &ldquo;.as_bytes()).unwrap();
-std::io::stdout().write(format!(&quot;\nbytes written {}&quot;,(b1+b2)).as_bytes()).unwrap();</p>
+std::io::stdout().write(format!(&quot;\nbytes written {}&rdquo;,(b1+b2)).as_bytes()).unwrap();</p>
 <p>Here first one uses sdout to write into the variable
 Second uses format! macro to generate a string adding two together and writing to var</p>
 <p>CommandLine Args:</p>

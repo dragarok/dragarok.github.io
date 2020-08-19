@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Python installs sudo pip install pipenv sudo pip install pytest sudo pip install nose sudo pip install black sudo pip install pyflakes sudo pip install poetry sudo pip install isort sudo pip install &amp;#39;python-language-server[all]&amp;#39; Go setup sudo pacman --needed --noconfirm -S go go get -u github.com/motemen/gore go get -u github.com/nsf/gocode go get -u golang.org/x/tools/cmd/godoc go get -u golang.org/x/tools/cmd/goimports go get -u golang.org/x/tools/cmd/gorename go get -u golang.org/x/tools/cmd/guru Markdown setup sudo pip install grip Search Ripgrep sudo pacman --needed --noconfirm -S ripgrep sudo pacman -S fd Language tool and aspell sudo pacman -S languagetool sudo pacman -S aspell aspell-en Web npm install -g js-beautify Shell sudo pacman -S shellcheck npm i -g bash-language-server Rust rustup update rustup component add rls rust-analysis rust-src rustup component add rustfmt-preview cargo install cargo-check rustup component add clippy-preview Org mode sudo pacman -S flameshot sudo pacman -S gnuplot sudo pacman -S texlive-core texlive-bin texlive-science sudo pacman -S pandoc sudo pacman -S hugo C/C&#43;&#43; sudo pacman -S clang cmake Delta [ git-delta ] cargo install git-delta Add this to your ~/." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/emacs/emacs_setup/" />
+
+
+    <title>
+        
+            Emacs Setup :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Emacs Setup">
+<meta itemprop="description" content="Python installs sudo pip install pipenv sudo pip install pytest sudo pip install nose sudo pip install black sudo pip install pyflakes sudo pip install poetry sudo pip install isort sudo pip install &#39;python-language-server[all]&#39; Go setup sudo pacman --needed --noconfirm -S go go get -u github.com/motemen/gore go get -u github.com/nsf/gocode go get -u golang.org/x/tools/cmd/godoc go get -u golang.org/x/tools/cmd/goimports go get -u golang.org/x/tools/cmd/gorename go get -u golang.org/x/tools/cmd/guru Markdown setup sudo pip install grip Search Ripgrep sudo pacman --needed --noconfirm -S ripgrep sudo pacman -S fd Language tool and aspell sudo pacman -S languagetool sudo pacman -S aspell aspell-en Web npm install -g js-beautify Shell sudo pacman -S shellcheck npm i -g bash-language-server Rust rustup update rustup component add rls rust-analysis rust-src rustup component add rustfmt-preview cargo install cargo-check rustup component add clippy-preview Org mode sudo pacman -S flameshot sudo pacman -S gnuplot sudo pacman -S texlive-core texlive-bin texlive-science sudo pacman -S pandoc sudo pacman -S hugo C/C&#43;&#43; sudo pacman -S clang cmake Delta [ git-delta ] cargo install git-delta Add this to your ~/.">
+<meta itemprop="datePublished" content="2020-05-02T00:00:00&#43;05:45" />
+<meta itemprop="dateModified" content="2020-08-17T08:01:11&#43;05:45" />
+<meta itemprop="wordCount" content="336">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Emacs Setup"/>
+<meta name="twitter:description" content="Python installs sudo pip install pipenv sudo pip install pytest sudo pip install nose sudo pip install black sudo pip install pyflakes sudo pip install poetry sudo pip install isort sudo pip install &#39;python-language-server[all]&#39; Go setup sudo pacman --needed --noconfirm -S go go get -u github.com/motemen/gore go get -u github.com/nsf/gocode go get -u golang.org/x/tools/cmd/godoc go get -u golang.org/x/tools/cmd/goimports go get -u golang.org/x/tools/cmd/gorename go get -u golang.org/x/tools/cmd/guru Markdown setup sudo pip install grip Search Ripgrep sudo pacman --needed --noconfirm -S ripgrep sudo pacman -S fd Language tool and aspell sudo pacman -S languagetool sudo pacman -S aspell aspell-en Web npm install -g js-beautify Shell sudo pacman -S shellcheck npm i -g bash-language-server Rust rustup update rustup component add rls rust-analysis rust-src rustup component add rustfmt-preview cargo install cargo-check rustup component add clippy-preview Org mode sudo pacman -S flameshot sudo pacman -S gnuplot sudo pacman -S texlive-core texlive-bin texlive-science sudo pacman -S pandoc sudo pacman -S hugo C/C&#43;&#43; sudo pacman -S clang cmake Delta [ git-delta ] cargo install git-delta Add this to your ~/."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-05-02 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+        
+
+
+<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://dragarok.github.io/emacs/emacs_setup/">Emacs Setup</a></h2>
+
+            
+
+            <div class="post-content">
+                <h2 id="python-installs">Python installs</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pip install pipenv
+sudo pip install pytest
+sudo pip install nose
+sudo pip install black
+sudo pip install pyflakes
+sudo pip install poetry
+sudo pip install isort
+sudo pip install <span style="color:#e6db74">&#39;python-language-server[all]&#39;</span>
+</code></pre></div><h2 id="go-setup">Go setup</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman --needed --noconfirm -S go
+go get -u github.com/motemen/gore
+go get -u github.com/nsf/gocode
+go get -u golang.org/x/tools/cmd/godoc
+go get -u golang.org/x/tools/cmd/goimports
+go get -u golang.org/x/tools/cmd/gorename
+go get -u golang.org/x/tools/cmd/guru
+</code></pre></div><h2 id="markdown-setup">Markdown setup</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+sudo pip install grip
+
+</code></pre></div><h2 id="search-ripgrep">Search Ripgrep</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman --needed --noconfirm -S ripgrep
+sudo pacman -S fd
+
+</code></pre></div><h2 id="language-tool-and-aspell">Language tool and aspell</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S languagetool
+sudo pacman -S aspell aspell-en
+</code></pre></div><h2 id="web">Web</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install -g js-beautify
+
+</code></pre></div><h2 id="shell">Shell</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S shellcheck
+npm i -g bash-language-server
+
+</code></pre></div><h2 id="rust">Rust</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rustup update
+rustup component add rls rust-analysis rust-src
+rustup component add rustfmt-preview
+cargo install cargo-check
+rustup component add clippy-preview
+</code></pre></div><h2 id="org-mode">Org mode</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S flameshot
+sudo pacman -S gnuplot
+sudo pacman -S texlive-core texlive-bin texlive-science
+sudo pacman -S pandoc
+sudo pacman -S hugo
+
+</code></pre></div><h2 id="c-c-plus-plus">C/C++</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -S clang cmake
+
+</code></pre></div><h2 id="delta-git-delta">Delta [ git-delta ]</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cargo install git-delta
+</code></pre></div><p>Add this to your ~/.gitconfig file
+[core]
+pager = delta &ndash;plus-color=&rdquo;#012800&rdquo; &ndash;minus-color=&rdquo;#340001&rdquo; &ndash;theme='Monokai Extended&rsquo;</p>
+<p>[interactive]
+diffFilter = delta &ndash;color-only</p>
+<h2 id="epdfinfo-libpoppler-error">Epdfinfo libpoppler error</h2>
+<p>Newer libpoppler won&rsquo;t be identified by epdfinfo. So, link a new one to act as
+old one  and it works all good.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo ln -s libpoppler.so.99 libpoppler.so.98
+sudo ln -s libpoppler.so.99.0.0 libpoppler.so.98.0.0
+</code></pre></div><h2 id="elfeed-setup">Elfeed setup</h2>
+<p>The configuration for elfeed is inside the config file. Nonetheless, the primary
+work to be done in this case is that I need to know how to put new rss into my
+elfeed file. That is basically using the case of org links or the site addresses
+themselves. Then we can just open elfeed, update the elfeed using &ldquo;Space+o+u&rdquo;
+and it pulls everything as if it&rsquo;s a black hole.</p>
+<h2 id="org-files-type-detection">Org Files Type Detection</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;mime-info</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;http://www.freedesktop.org/standards/shared-mime-info&#39;</span><span style="color:#f92672">&gt;</span>
+  <span style="color:#f92672">&lt;mime-type</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;text/org&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;comment&gt;</span>Emacs Org-mode File<span style="color:#f92672">&lt;/comment&gt;</span>
+    <span style="color:#f92672">&lt;glob</span> <span style="color:#a6e22e">pattern=</span><span style="color:#e6db74">&#34;*.org&#34;</span><span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;alias</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;text/org&#34;</span><span style="color:#f92672">/&gt;</span>
+  <span style="color:#f92672">&lt;/mime-type&gt;</span>
+<span style="color:#f92672">&lt;/mime-info&gt;</span>
+</code></pre></div><h2 id="org-protocol">Org Protocol</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xdg-mime default org-protocol.desktop x-scheme-handler/org-protocol
+</code></pre></div><p>In .local/share/applications/org-protocol.desktop, add the following:</p>
+<pre><code class="language-nil" data-lang="nil">[Desktop Entry]
+Name=Org-Protocol
+Exec=emacsclient %u
+Icon=emacs-icon
+Type=Application
+Terminal=false
+MimeType=x-scheme-handler/org-protocol
+</code></pre>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>
