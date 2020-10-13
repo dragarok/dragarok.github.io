@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Data Scientist with R ID: 2b4e9403-1106-4ec9-844b-5d144eb7890f  R Programming 101- Datacamp Beginner R Programming 101- Datacamp Intermediate Introduction to TidyVerse ID: e32d5ba7-25c5-496b-97fe-23eefa52d5f2  Gapminder dataset  library(gapminder) : For dataset  Country, Continent, Year, LifeExpectancy, Population and GdpPerCapita.   library(datasets) : For other more datasets  More Libraries  library(dplyr) For filtering sorting and summarizing data  Dplyr ID: 912f038f-a063-4c4f-8c7f-5ab3f163ed25  From the tidyverse site, Dplyr is defined as &amp;ldquo;grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges&amp;rdquo; R Programming 101- Dplyr" />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/braindump/2020/09/data-scientist-with-r/" />
+
+
+    <title>
+        
+            Data Scientist with R :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Data Scientist with R">
+<meta itemprop="description" content="Data Scientist with R ID: 2b4e9403-1106-4ec9-844b-5d144eb7890f  R Programming 101- Datacamp Beginner R Programming 101- Datacamp Intermediate Introduction to TidyVerse ID: e32d5ba7-25c5-496b-97fe-23eefa52d5f2  Gapminder dataset  library(gapminder) : For dataset  Country, Continent, Year, LifeExpectancy, Population and GdpPerCapita.   library(datasets) : For other more datasets  More Libraries  library(dplyr) For filtering sorting and summarizing data  Dplyr ID: 912f038f-a063-4c4f-8c7f-5ab3f163ed25  From the tidyverse site, Dplyr is defined as &ldquo;grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges&rdquo; R Programming 101- Dplyr">
+<meta itemprop="datePublished" content="2020-09-20T00:00:00+05:45" />
+<meta itemprop="dateModified" content="2020-10-11T10:28:04+05:45" />
+<meta itemprop="wordCount" content="417">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Data Scientist with R"/>
+<meta name="twitter:description" content="Data Scientist with R ID: 2b4e9403-1106-4ec9-844b-5d144eb7890f  R Programming 101- Datacamp Beginner R Programming 101- Datacamp Intermediate Introduction to TidyVerse ID: e32d5ba7-25c5-496b-97fe-23eefa52d5f2  Gapminder dataset  library(gapminder) : For dataset  Country, Continent, Year, LifeExpectancy, Population and GdpPerCapita.   library(datasets) : For other more datasets  More Libraries  library(dplyr) For filtering sorting and summarizing data  Dplyr ID: 912f038f-a063-4c4f-8c7f-5ab3f163ed25  From the tidyverse site, Dplyr is defined as &ldquo;grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges&rdquo; R Programming 101- Dplyr"/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-09-20 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">~</span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://dragarok.github.io/braindump/2020/09/data-scientist-with-r/">Data Scientist with R</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <h2 id="data-scientist-with-r">Data Scientist with R</h2>
+<pre><code>ID: 2b4e9403-1106-4ec9-844b-5d144eb7890f
+</code></pre>
+<h3 id="r-programming-101-datacamp-beginner--r-programming-101-datacamp-beginner-dot-md"><a href="../../../../braindump/2020/09/r-programming-101-datacamp-beginner/">R Programming 101- Datacamp Beginner</a></h3>
+<h3 id="r-programming-101-datacamp-intermediate--r-programming-101-datacamp-intermediate-dot-md"><a href="../../../../braindump/2020/09/r-programming-101-datacamp-intermediate/">R Programming 101- Datacamp Intermediate</a></h3>
+<h2 id="introduction-to-tidyverse">Introduction to TidyVerse</h2>
+<pre><code>ID: e32d5ba7-25c5-496b-97fe-23eefa52d5f2
+</code></pre>
+<h3 id="gapminder-dataset">Gapminder dataset</h3>
+<ul>
+<li>library(gapminder) : For dataset
+<ul>
+<li>Country, Continent, Year, LifeExpectancy, Population and GdpPerCapita.</li>
+</ul>
+</li>
+<li>library(datasets) : For other more datasets</li>
+</ul>
+<h3 id="more-libraries">More Libraries</h3>
+<ul>
+<li>library(dplyr) For filtering sorting and summarizing data</li>
+</ul>
+<h3 id="dplyr">Dplyr</h3>
+<pre><code>ID: 912f038f-a063-4c4f-8c7f-5ab3f163ed25
+</code></pre>
+<p>From the tidyverse site, Dplyr is defined as &ldquo;grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges&rdquo;
+<a href="../../../../braindump/2020/09/r-programming-101-dplyr/">R Programming 101- Dplyr</a></p>
+<h3 id="r-programming-101-ggplot--r-programming-101-ggplot-dot-md"><a href="../../../../braindump/2020/09/r-programming-101-ggplot/">R Programming 101- Ggplot</a></h3>
+<h2 id="importing-data-from-files">Importing Data from Files</h2>
+<pre><code>ID: 591fd07b-646b-4015-85cf-3d1b03f6facb
+</code></pre>
+<p><a href="../../../../braindump/2020/10/r-programming-102-importing-data/">R Programming 102- Importing Data</a></p>
+<h2 id="importing-data-from-databases">Importing Data from Databases</h2>
+<pre><code>ID: 9844cb4f-1165-4a42-bec7-c0c889f2119a
+</code></pre>
+<p><a href="../../../../braindump/2020/10/r-programming-102-importing-databases-and-urls/">R Programming 102- Importing Databases</a></p>
+<h2 id="cleaning-data">Cleaning Data</h2>
+<pre><code>ID: 143f6193-7537-402d-a422-2af3dc1d6fa3
+</code></pre>
+<p><a href="../../../../braindump/2020/10/r-programming-102-cleaning-data/">R Programming 102- Cleaning data</a></p>
+<h2 id="working-with-dates-and-times">Working with Dates and Times</h2>
+<pre><code>ID: 4ab04bbf-3a45-4402-89d5-3c678e3fc145
+</code></pre>
+<p><a href="../../../../braindump/2020/10/r-programming-102-dates-and-times/">R Programming 102- Dates and Times</a></p>
+<h2 id="functions-in-r">Functions in R</h2>
+<pre><code>ID: 1e3fc3e7-af83-40fc-9e7c-a413e6e1cfc5
+</code></pre>
+<p><a href="../../../../braindump/2020/10/r-programming-102-functions-in-r/">R Programming 102- Functions in R</a></p>
+<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+<pre><code>ID: 8faf9012-011c-49bb-ae04-17aba1b5aa04
+</code></pre>
+<p><a href="../../../../braindump/2020/10/r-programming-103-exploratory-data-analysis/">R Programming 103- Exploratory Data Analysis</a></p>
+<h2 id="correlation-and-regression">Correlation and Regression</h2>
+<pre><code>ID: d3d245cf-ae25-4809-8286-64e60a73a41a
+</code></pre>
+<p><a href="../../../../braindump/2020/10/r-programming-104-correlation-and-regression/">R Programming 104- Correlation and Regression</a></p>
+<h2 id="supervised-learning">Supervised Learning</h2>
+<pre><code>ID: 984e254a-5aec-4a2c-a471-09ac98d41a2b
+</code></pre>
+<p><a href="../../../../braindump/2020/10/r-programming-105-supervised-learning-1/">R Programming 105- Supervised Learning 1</a>
+<a href="../../../../braindump/2020/10/r-programming-105-supervised-learning-2-regression/">R Programming 105- Supervised Learning 2 Regression</a></p>
+<h2 id="unsupervised-learning">Unsupervised Learning</h2>
+<pre><code>ID: 2729b65a-1d9c-4832-b745-3f24dbf31753
+</code></pre>
+<p><a href="../../../../braindump/2020/10/r-programming-105-unsupervised-learning/">R Programming 105- Unsupervised Learning</a></p>
+<h2 id="some-useful-functionalities">Some useful functionalities</h2>
+<h3 id="creating-generic-names-using-paste">Creating generic names using paste</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;filename_&#34;</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">50</span>))
+</code></pre></div><p>This command can create number of columns by pasting some string with a list. Often in naming columns in dataframe, this might be useful.</p>
+<h3 id="remove-the-first-column-of-dataframe">Remove the first column of dataframe</h3>
+<p>Often times you have the value to be predicted in the dataframe and might need to be removed.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">df[<span style="color:#ae81ff">-1</span>]
+</code></pre></div><h3 id="remove-na-values">Remove NA values</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">na.omit</span>(dataframe)
+</code></pre></div><h3 id="summary-for-categorical-variables-using-table-function">Summary for categorical variables using table function</h3>
+<p>Shows the number of columns in each type if the data is categorical.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">table</span>(df<span style="color:#f92672">$</span>col_name)
+</code></pre></div><h3 id="get-a-subset-of-dataframe-similar-to-filter-from-dplyr">Get a subset of dataframe: similar to filter from dplyr</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">subset</span>(df_name, col_name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;sth&#34;</span>)
+</code></pre></div><h3 id="gather-some-rows-into-one-using-key-value-pair">Gather some rows into one using key-value pair</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">gather</span>(key <span style="color:#f92672">=</span> col_key, value <span style="color:#f92672">=</span> new_col_name, old_col1, old_col2)
+</code></pre></div><p>What gather helps us doing is when we have different kind of values of same type: say predictions and actual value and want to plot both of them into some graph. Rather than working with different columns, we can create a new column specified by name <em>col_key</em> which will have the type of data it is: <em>old_col1</em> or <em>old_col2</em>. Then the column specified in <em>new_col_name</em> will be the resulting column you will have containing the value of the respective old columns specified by <em>col_key</em>. Now you can just group by that column and can do many stuff with the plot.</p>
+<h3 id="rows-to-columns-matrix-to-dataframe">Rows to Columns [ Matrix to Dataframe]</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">rownames_to_column</span>(<span style="color:#a6e22e">as.data.frame</span>(df_name), var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;new_col_name&#34;</span>)
+</code></pre></div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>417 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-09-20 00:00 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://dragarok.github.io/braindump/2020/09/r-programming-101-ggplot/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">R Programming 101- Ggplot</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://dragarok.github.io/braindump/2020/09/data-structures/">
+                                <span class="button__text">Data Structures</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

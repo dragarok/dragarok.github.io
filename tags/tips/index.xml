@@ -6,10 +6,23 @@
     <description>Recent content in tips on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2020 13:23:08 +0545</lastBuildDate>
-    
-	<atom:link href="https://dragarok.github.io/tags/tips/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 23 Sep 2020 21:58:34 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Commands</title>
+      <link>https://dragarok.github.io/braindump/2020/09/git-commands/</link>
+      <pubDate>Wed, 23 Sep 2020 21:58:34 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/09/git-commands/</guid>
+      <description>&amp;ndash;tags: Useful &amp;ndash;references: https://learngitbranching.js.org/
+Commands   git add : tracking with git
+  git status : current status of tracked, untracked, changed, committed files.
+  git add filename.extension
+  (only after making the file it can be done)
+  double add command - stages the new changes
+  git commit
+  git add . -&amp;gt; all files are committed
+  git add *.</description>
+    </item>
     
     <item>
       <title>Emacs Shortcuts</title>
@@ -30,20 +43,35 @@
     </item>
     
     <item>
-      <title>Git Commands</title>
-      <link>https://dragarok.github.io/braindump/2020/05/git-commands/</link>
-      <pubDate>Thu, 07 May 2020 07:10:51 +0545</pubDate>
+      <title>Emacs Shortcuts</title>
+      <link>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</link>
+      <pubDate>Sun, 19 Apr 2020 16:17:16 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/05/git-commands/</guid>
-      <description>&amp;ndash;tags: Useful &amp;ndash;references: https://learngitbranching.js.org/
-Commands   git add : tracking with git
-  git status : current status of tracked, untracked, changed, committed files.
-  git add filename.extension
-  (only after making the file it can be done)
-  double add command - stages the new changes
-  git commit
-  git add . -&amp;gt; all files are committed
-  git add *.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</guid>
+      <description>Emacs Shortcuts  Spc f d &amp;ndash;&amp;gt; search for files in dired Spc : &amp;ndash;&amp;gt; main command Spc g s &amp;ndash;&amp;gt; git status Spc n n &amp;ndash;&amp;gt; Capture template Spc n a &amp;ndash;&amp;gt; agenda view Vim commands  Ctrl up , down &amp;ndash;&amp;gt; go up and down in file q [a-z] &amp;ndash;&amp;gt; record a macro Shift &amp;raquo; &amp;ndash;&amp;gt; indent in code   Evil snipe:  s ch : go to ch ; same as f but more letters gc : to comment using evil gs [annotation] &amp;ndash;&amp;gt; to go to lines directly like vimium ease dii &amp;ndash;&amp;gt; delete inside indentation dik &amp;ndash;&amp;gt; delete inside plus a line above     Backlinks  Emacs Hugo Blogging  </description>
+    </item>
+    
+    <item>
+      <title>Numpy</title>
+      <link>https://dragarok.github.io/braindump/2020/04/numpy/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:50 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/numpy/</guid>
+      <description>Working with numpy:   import numpy as np
+  a = np.array([0,1,2])
+  a.ndim - gives dimension of array
+  a.shape : gives the shape of the array
+  a.reshape((3,2)) new order of matrix to be formed
+ changing a element of an array we reshaped is also going to change from the original since numpy package avoids copies    so if copy needed: c= a.</description>
+    </item>
+    
+    <item>
+      <title>Emacs Completion</title>
+      <link>https://dragarok.github.io/braindump/2020/04/emacs-completion/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:42 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/emacs-completion/</guid>
+      <description>Vim&amp;rsquo;s omni like completion Keybind	Description C-x C-]	Complete etags C-x C-f	Complete file path C-x C-k	Complete from dictionary/keyword C-x C-l	Complete full line C-x C-o	Invoke complete-at-point function C-x C-n	Complete next symbol at point C-x C-p	Complete previous symbol at point C-x C-s	Complete snippet C-x s	Complete spelling suggestions</description>
     </item>
     
     <item>
@@ -93,43 +121,6 @@ sudo !! python -m SimpleHTTPServer :w !sudo tee % cd - ^foo^bar mtr google.com c
   always group layers and rename them
   control g for group after selecting using control
 Never use yellow background with white text Designing a cursor to appear on the design . Selecting a hover to other text color and also the opacity to change either low or high</description>
-    </item>
-    
-    <item>
-      <title>Tmux</title>
-      <link>https://dragarok.github.io/braindump/2020/04/tmux/</link>
-      <pubDate>Sun, 19 Apr 2020 15:59:01 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/tmux/</guid>
-      <description>mastering tmux:
-tmux new -s &amp;ldquo;session_name&amp;rdquo;
-tmux ls - lists sessions
-Pane controls:
-everything is with control + B
-then:
-&amp;quot; : split horizontally
-% : split vertically
-o : go to next pane
-; : previous pane
-q : show pane numbers
-z : toggle pane zoom ( can hide all panes using z)
-! : convert pane into an window
-Control + O : swap panes
-t: copy mode</description>
-    </item>
-    
-    <item>
-      <title>Numpy</title>
-      <link>https://dragarok.github.io/ai/numpy/</link>
-      <pubDate>Mon, 02 Dec 2019 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/numpy/</guid>
-      <description>Working with numpy:   import numpy as np
-  a = np.array([0,1,2])
-  a.ndim - gives dimension of array
-  a.shape : gives the shape of the array
-  a.reshape((3,2)) new order of matrix to be formed
- changing a element of an array we reshaped is also going to change from the original since numpy package avoids copies    so if copy needed: c= a.</description>
     </item>
     
   </channel>

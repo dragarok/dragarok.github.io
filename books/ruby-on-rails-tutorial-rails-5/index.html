@@ -27,6 +27,15 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
 
 
 <link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
@@ -49,13 +58,14 @@
   loc 496 - Because web applications have so many moving parts, they offer ample opportunities to develop your technical sophistication.
   loc 788 - using two spaces for indentation is a near-universal convention in Ruby,
   loc 909 - since the structure is common to all Rails apps, you can immediately get your bearings when looking at someone else’s code.">
-<meta itemprop="dateModified" content="2020-04-26T03:07:14&#43;05:45" />
+<meta itemprop="dateModified" content="2020-04-26T03:07:14+05:45" />
 <meta itemprop="wordCount" content="3763">
 <meta itemprop="image" content="https://dragarok.github.io/"/>
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Ruby on Rails Tutorial (Rails 5)"/>
@@ -78,16 +88,6 @@
 
 
 
-        
-
-
-<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
-
     </head>
 
     <body class="">
@@ -97,8 +97,9 @@
         <a href="../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -339,7 +340,7 @@
 <p>loc 5066 - &raquo; h1 = { :name <code>&gt; &quot;Michael Hartl&quot;, :email =&gt; &quot;michael@example.com&quot; } =&gt; {:name=&gt;&quot;Michael Hartl&quot;, :email=&gt;&quot;michael@example.com&quot;} &gt;&gt; h2 = { name: &quot;Michael Hartl&quot;, email: &quot;michael@example.com&quot; } =&gt; {:name=&gt;&quot;Michael Hartl&quot;, :email=&gt;&quot;michael@example.com&quot;} &gt;&gt; h1 =</code> h2 =&gt; true</p>
 </li>
 <li>
-<p>loc 5066 - &gt; h1 = { :name =&gt; &ldquo;Michael Hartl&rdquo;, :email =&gt; &ldquo;<a href="mailto:michael@example.com">michael@example.com</a>&rdquo; } =&gt; {:name=&gt;&quot;Michael Hartl&rdquo;, :email=&gt;&quot;michael@example.com&rdquo;} &raquo; h2 = { name: &ldquo;Michael Hartl&rdquo;, email: &ldquo;<a href="mailto:michael@example.com">michael@example.com</a>&rdquo; } =&gt; {:name=&gt;&quot;Michael Hartl&rdquo;, :email=&gt;&quot;michael@example.com&rdquo;} &raquo; h1</p>
+<p>loc 5066 - &gt; h1 = { :name =&gt; &ldquo;Michael Hartl&rdquo;, :email =&gt; &ldquo;<a href="mailto:michael@example.com">michael@example.com</a>&rdquo; } =&gt; {:name=&gt;&ldquo;Michael Hartl&rdquo;, :email=&gt;&ldquo;<a href="mailto:michael@example.com">michael@example.com</a>&rdquo;} &raquo; h2 = { name: &ldquo;Michael Hartl&rdquo;, email: &ldquo;<a href="mailto:michael@example.com">michael@example.com</a>&rdquo; } =&gt; {:name=&gt;&ldquo;Michael Hartl&rdquo;, :email=&gt;&ldquo;<a href="mailto:michael@example.com">michael@example.com</a>&rdquo;} &raquo; h1</p>
 </li>
 <li>
 <p>loc 5120 - Note that, while the each method for arrays takes a block with only one variable, each for hashes takes two, a key and a value. Thus, the each method for a hash iterates through the hash one key-value pair at a time.</p>
@@ -513,7 +514,7 @@
 <p>loc 9262 - When following REST principles, resources are typically referenced using the resource name and a unique identifier. What this means in the context of users—which we’re now thinking of as a Users resource—is that we should view the user with id 1 by issuing a GET request to the URL /users/1.</p>
 </li>
 <li>
-<p>loc 9824 - the code type=&quot;email&rdquo; will cause some mobile devices to display a special keyboard optimized for entering email addresses.)</p>
+<p>loc 9824 - the code type=&ldquo;email&rdquo; will cause some mobile devices to display a special keyboard optimized for entering email addresses.)</p>
 </li>
 <li>
 <p>loc 10090 - we’ll render an error-messages partial on the user new page while adding the CSS class form-control (which has special meaning to Bootstrap) to each entry field,</p>

@@ -6,11 +6,7 @@
     <description>Recent content in neuralnetwork on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0545</lastBuildDate>
-    
-	<atom:link href="https://dragarok.github.io/tags/neuralnetwork/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/neuralnetwork/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ML Paper Questions</title>
       <link>https://dragarok.github.io/ai/whattowriteabout/</link>
@@ -22,31 +18,11 @@ Problem No. 2 : For example, if we train a generative model of images of cars an
     </item>
     
     <item>
-      <title>MUZero</title>
-      <link>https://dragarok.github.io/ai/muzero/</link>
-      <pubDate>Wed, 15 Apr 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/muzero/</guid>
-      <description>MuZero:
-&amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space &amp;ndash; Learns optimal policy, reward functions, value functions automatically &amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly relevant for planning. &amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using previous step&amp;rsquo;s hidden state and hypothetical next action &amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward</description>
-    </item>
-    
-    <item>
-      <title>Text-Text Transformers</title>
-      <link>https://dragarok.github.io/ai/t2t_transformers/</link>
-      <pubDate>Fri, 03 Apr 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/t2t_transformers/</guid>
-      <description>Catches from text to text transfer transformers:
- As an example, consider the case of English to German translation: If we have a training  datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.</description>
-    </item>
-    
-    <item>
       <title>Efficient Nets</title>
-      <link>https://dragarok.github.io/ai/efficient_nets/</link>
-      <pubDate>Fri, 20 Mar 2020 00:00:00 +0545</pubDate>
+      <link>https://dragarok.github.io/braindump/2020/04/efficient-nets/</link>
+      <pubDate>Sun, 19 Apr 2020 19:28:53 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/ai/efficient_nets/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/efficient-nets/</guid>
       <description>Efficient Nets:   Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
 &amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
 &amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
@@ -55,29 +31,54 @@ Problem No. 2 : For example, if we train a generative model of images of cars an
     
     <item>
       <title>Graph Neural Networks</title>
-      <link>https://dragarok.github.io/ai/graph-neural-networks/</link>
-      <pubDate>Thu, 12 Mar 2020 00:00:00 +0545</pubDate>
+      <link>https://dragarok.github.io/braindump/2020/04/graph-neural-networks/</link>
+      <pubDate>Sun, 19 Apr 2020 19:24:20 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/ai/graph-neural-networks/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/graph-neural-networks/</guid>
       <description>Graph Neural Net Intro &amp;ndash; Information about the non euclidean space incorporated &amp;ndash; 2D conversion of image as input vs 3D image as input &amp;ndash; Ideas about no connectivity in cases of pixels &amp;ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &amp;ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &amp;ndash; Static and dynamic graphs will have different ways &amp;ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &amp;ndash; Adjacency Matrix are mostly used.</description>
     </item>
     
     <item>
       <title>Markov Nets</title>
-      <link>https://dragarok.github.io/ai/markovnets/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
+      <link>https://dragarok.github.io/braindump/2020/04/markov-nets/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:44 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/ai/markovnets/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/markov-nets/</guid>
       <description>Markov Networks We study this by comparing to Bayesian networks: Burglar, Earthquake, Alarm, He calls, She calls
 &amp;ndash; First, the values do not need to sum to one, that is, the table does not define a probability distribution. It only tells us that configurations with higher values are more likely. Second, there is no conditioning. It is proportional to the joint distribution of all the variables involved, as opposed to conditional distributions in CPDs.</description>
     </item>
     
     <item>
-      <title>NN Interpretability</title>
-      <link>https://dragarok.github.io/ai/interpretability/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
+      <title>RCNN</title>
+      <link>https://dragarok.github.io/braindump/2020/04/rcnn/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:40 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/ai/interpretability/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/04/rcnn/</guid>
+      <description>Faster RCNN
+Region Proposal:
+Anchors: Different size bounding box of different aspect ratio and sizes
+Task to be done by RPN:
+Does this anchor contain a relevant object?
+How would we adjust this anchor to better fit the relevant object?
+It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
+Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.</description>
+    </item>
+    
+    <item>
+      <title>Graph Neural Nets</title>
+      <link>https://dragarok.github.io/braindump/2020/04/graph-neural-nets/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:36 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/graph-neural-nets/</guid>
+      <description>&amp;ndash; Information about the non euclidean space incorporated &amp;ndash; 2D conversion of image as input vs 3D image as input &amp;ndash; Ideas about no connectivity in cases of pixels &amp;ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &amp;ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &amp;ndash; Static and dynamic graphs will have different ways &amp;ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &amp;ndash; Adjacency Matrix are mostly used.</description>
+    </item>
+    
+    <item>
+      <title>NN Interpretability</title>
+      <link>https://dragarok.github.io/braindump/2020/04/nn-interpretability/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:20 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/nn-interpretability/</guid>
       <description>This criteria distinguishes Whether Interpret-ability is achieved by restricting the complexity of the machine learning model (intrinsic) or by applying methods that analyze the model after training (post hoc)
 Permutation feature importance is, for example, a post hoc interpretation method
 Contrastive explanation: explaining only the abnormalities Rather than explaining all features, explaining only 3 or 4. Social context &amp;ndash;&amp;gt; who are you going to give answers to
@@ -85,16 +86,35 @@ Whether explanation is required or not is also an imp question.</description>
     </item>
     
     <item>
-      <title>RCNN</title>
-      <link>https://dragarok.github.io/ai/rcnn/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
+      <title>ML Paper Questions</title>
+      <link>https://dragarok.github.io/braindump/2020/04/ml-paper-questions/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:15 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/ai/rcnn/</guid>
-      <description>Faster RCNN Region Proposal:   Anchors: Different size bounding box of different aspect ratio and sizes
-  Task to be done by RPN:
-  Does this anchor contain a relevant object?
-  How would we adjust this anchor to better fit the relevant object?
-  It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/ml-paper-questions/</guid>
+      <description>Problem No. 1 : Understanding what pretraining and training a supervised layer over it changes in the model
+Our ability to characterize exactly what aspects of the pretrained parameters are retained during the supervised training stage is limited.
+Problem No. 2 :
+For example, if we train a generative model of images of cars and motorcycles, it will need to know about wheels, and about how many wheels should be in an image.</description>
+    </item>
+    
+    <item>
+      <title>Text-Text Transformers</title>
+      <link>https://dragarok.github.io/braindump/2020/04/text-text-transformers/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:29 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/text-text-transformers/</guid>
+      <description>Catches from text to text transfer transformers:
+ As an example, consider the case of English to German translation: If we have a training  datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.</description>
+    </item>
+    
+    <item>
+      <title>MUZero</title>
+      <link>https://dragarok.github.io/braindump/2020/04/muzero/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:20 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/muzero/</guid>
+      <description>MuZero:
+&amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space &amp;ndash; Learns optimal policy, reward functions, value functions automatically &amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly relevant for planning. &amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using previous step&amp;rsquo;s hidden state and hypothetical next action &amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward</description>
     </item>
     
   </channel>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="&amp;quot;&amp;rdquo;&amp;rdquo; Adapted from Oliver Atanaszov&amp;rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &amp;quot;&amp;rdquo;&amp;rdquo;
+<meta name="description" content="&amp;quot;&amp;quot;&amp;quot; Adapted from Oliver Atanaszov&amp;rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &amp;quot;&amp;quot;&amp;quot;
 from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&amp;#39;[CLS]&amp;#39;] self.pad_token = self.tokenizer.vocab[&amp;#39;[PAD]&amp;#39;] def encode(self, input): return list(self." />
 <meta name="keywords" content="Blog, tokenization, bert" />
 <meta name="robots" content="noodp" />
@@ -24,6 +24,15 @@ from concurrent.futures import ProcessPoolExecutor import multiprocessing import
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
 
 
 <link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
@@ -41,20 +50,21 @@ from concurrent.futures import ProcessPoolExecutor import multiprocessing import
     <meta name="theme-color" content="#252627">
 
 <meta itemprop="name" content="Bert Tokenization">
-<meta itemprop="description" content="&quot;&rdquo;&rdquo; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&rdquo;&rdquo;
+<meta itemprop="description" content="&quot;&quot;&quot; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&quot;&quot;
 from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;] def encode(self, input): return list(self.">
-<meta itemprop="datePublished" content="2020-01-24T00:00:00&#43;05:45" />
-<meta itemprop="dateModified" content="2020-06-16T07:35:03&#43;05:45" />
+<meta itemprop="datePublished" content="2020-01-24T00:00:00+05:45" />
+<meta itemprop="dateModified" content="2020-06-16T07:35:03+05:45" />
 <meta itemprop="wordCount" content="255">
 <meta itemprop="image" content="https://dragarok.github.io/"/>
 
 
 
-<meta itemprop="keywords" content="tokenization,bert," /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="tokenization,bert," />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Bert Tokenization"/>
-<meta name="twitter:description" content="&quot;&rdquo;&rdquo; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&rdquo;&rdquo;
+<meta name="twitter:description" content="&quot;&quot;&quot; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&quot;&quot;
 from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;] def encode(self, input): return list(self."/>
 
 
@@ -70,16 +80,6 @@ from concurrent.futures import ProcessPoolExecutor import multiprocessing import
 
 
 
-        
-
-
-<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
-
     </head>
 
     <body class="">
@@ -89,8 +89,9 @@ from concurrent.futures import ProcessPoolExecutor import multiprocessing import
         <a href="../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -142,10 +143,10 @@ from concurrent.futures import ProcessPoolExecutor import multiprocessing import
             
 
             <div class="post-content">
-                <p>&quot;&rdquo;&rdquo;
+                <p>&quot;&quot;&quot;
 Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning
 <a href="https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb">https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb</a>
-&quot;&rdquo;&rdquo;</p>
+&quot;&quot;&quot;</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> concurrent.futures <span style="color:#f92672">import</span> ProcessPoolExecutor
 <span style="color:#f92672">import</span> multiprocessing
 <span style="color:#f92672">import</span> os

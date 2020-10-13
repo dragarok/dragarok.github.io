@@ -6,10 +6,42 @@
     <description>Recent content in Tags on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 07:54:57 +0545</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 21:58:34 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git</title>
+      <link>https://dragarok.github.io/tags/git/</link>
+      <pubDate>Wed, 23 Sep 2020 21:58:34 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/tags/git/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://dragarok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tips</title>
+      <link>https://dragarok.github.io/tags/tips/</link>
+      <pubDate>Wed, 23 Sep 2020 21:58:34 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/tags/tips/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>r</title>
+      <link>https://dragarok.github.io/tags/r/</link>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>datastructure</title>
+      <link>https://dragarok.github.io/tags/datastructure/</link>
+      <pubDate>Thu, 17 Sep 2020 19:50:49 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/tags/datastructure/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>datawarehouse</title>
@@ -48,15 +80,6 @@
     </item>
     
     <item>
-      <title>tips</title>
-      <link>https://dragarok.github.io/tags/tips/</link>
-      <pubDate>Wed, 12 Aug 2020 13:23:08 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/tags/tips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ssh</title>
       <link>https://dragarok.github.io/tags/ssh/</link>
       <pubDate>Wed, 12 Aug 2020 13:03:24 +0545</pubDate>
@@ -71,33 +94,6 @@
       <pubDate>Wed, 12 Aug 2020 12:51:48 +0545</pubDate>
       
       <guid>https://dragarok.github.io/tags/blogging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://dragarok.github.io/tags/hugo/</link>
-      <pubDate>Wed, 12 Aug 2020 12:51:48 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>guide</title>
-      <link>https://dragarok.github.io/tags/guide/</link>
-      <pubDate>Wed, 12 Aug 2020 12:51:30 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/tags/guide/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>windows</title>
-      <link>https://dragarok.github.io/tags/windows/</link>
-      <pubDate>Wed, 12 Aug 2020 12:51:30 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/tags/windows/</guid>
       <description></description>
     </item>
     

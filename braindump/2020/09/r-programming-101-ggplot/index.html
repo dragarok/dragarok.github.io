@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Confusions TODOClarify what dodge actually does alongside jitter together TODOUnderstand differences in facet types: wrap, grid, margins. Ggplot Basics Components  Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign]  Aesthetics Parameters  Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property )." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/braindump/2020/09/r-programming-101-ggplot/" />
+
+
+    <title>
+        
+            R Programming 101- Ggplot :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="R Programming 101- Ggplot">
+<meta itemprop="description" content="Confusions TODOClarify what dodge actually does alongside jitter together TODOUnderstand differences in facet types: wrap, grid, margins. Ggplot Basics Components  Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign]  Aesthetics Parameters  Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ).">
+<meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45" />
+<meta itemprop="dateModified" content="2020-10-02T07:35:15+05:45" />
+<meta itemprop="wordCount" content="2143">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="R Programming 101- Ggplot"/>
+<meta name="twitter:description" content="Confusions TODOClarify what dodge actually does alongside jitter together TODOUnderstand differences in facet types: wrap, grid, margins. Ggplot Basics Components  Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign]  Aesthetics Parameters  Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property )."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-09-22 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">~</span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>11 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://dragarok.github.io/braindump/2020/09/r-programming-101-ggplot/">R Programming 101- Ggplot</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <h2 id="confusions">Confusions</h2>
+<h3 id="clarify-what-dodge-actually-does-alongside-jitter-together"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Clarify what dodge actually does alongside jitter together</h3>
+<h3 id="understand-differences-in-facet-types-wrap-grid-margins-dot"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Understand differences in facet types: wrap, grid, margins.</h3>
+<h2 id="ggplot-basics">Ggplot Basics</h2>
+<h3 id="components">Components</h3>
+<ol>
+<li>Data to Plot</li>
+<li>Aesthetics</li>
+<li>Plot additional properties [ Added with + sign]</li>
+</ol>
+<h3 id="aesthetics-parameters">Aesthetics Parameters</h3>
+<ol>
+<li>Color: Set a color based on specific category. e.g. continents in case of gapminder data</li>
+<li>Size: Make points sized base on some value of dataframe. e.g. by population or by gdp</li>
+<li>Faceting: This is used outside aes as <em>facet_wrap( ~ property )</em>. Here ~ means <strong>by category</strong> and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately.</li>
+</ol>
+<h3 id="types-of-plot">Types of plot</h3>
+<ul>
+<li>Scatter Plot:
+Plot based on points. Use <em>+geom_point()</em> to make a scatter plot.</li>
+<li>Line Plot:
+Plot lines. Use <em>+geom_line()</em> to make line plot.</li>
+<li>Bar Plot:
+Plot bar graphs. Use <em>+geom_col()</em> to make bar plots.</li>
+<li>Histogram Plot:
+Plot histogram for plots. Use <em>+geom_histogram()</em> to make histogram plot.</li>
+<li>Box Plot:
+Plot box plots. Use <em>+geom_boxplot()</em> for boxplots.</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Additional Notes</p>
+<ul>
+<li>On plotting many values don&rsquo;t start from 0. So to make plot start from 0 in different axes, <em>expand_limits(y=0)</em> can be used.</li>
+<li>To scale axes like making axis logarithmic, <em>even_x_log10()</em> In this way</li>
+</ul>
+</li>
+</ul>
+<h2 id="ggplot-in-depth">Ggplot In Depth</h2>
+<h3 id="beginners">Beginners</h3>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>General Notes</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Bar Plots</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">geom_bar</span>(position<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dodge&#34;</span>)
+</code></pre></div><p>This results in bar plot where categorical data is shown side by side rather than stacked on top of one another.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Point Plots</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>Line Plots</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Jitter Points</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">geom_jitter</span>()
+<span style="color:#a6e22e">geom_point</span>(position<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jitter&#34;</span>)
+</code></pre></div><p>Both the lines do the same thing. This function add small amount of random variation to location of each point which helps to handle overplotting caused by smaller datasets.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Best Practics in Aesthetics</p>
+<ul>
+<li>Efficiency vs Accuracy</li>
+<li>Form follows function:
+<ul>
+<li>Primary function: Accurate and efficient representations.</li>
+<li>Secondary function: Visually appealing and beautiful plot</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Grammatical Components     :ATTACH:</p>
+<pre><code> ID: 6de41dc8-f180-4508-8ef8-7daa18dc649f
+</code></pre>
+<p><img src="../../../../ox-hugo/_20200928_071235screenshot.png" alt="">
+These are the layers in which we work with plots. They are layered to make dependency as least as possible.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Aesthetics Layer</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Aesthetics Parameters     :ATTACH:</p>
+<pre><code> ID: 32eb25cb-81d9-4eb4-aa1e-23533f438855
+</code></pre>
+<p><img src="../../../../ox-hugo/_20200928_060924screenshot.png" alt="">
+The aesthetics properties are used inside <em>aes()</em> function to create different kind of plots with same set of data.
+In cases you want to have properties of lines or points with something from the data itself, you can call <em>aes()</em> inside <strong>geom</strong> functions.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">geom_point</span>(aes <span style="color:#f92672">=</span> col_1)
+</code></pre></div><p>NOTE: <!-- raw HTML omitted -->label<!-- raw HTML omitted --> and <!-- raw HTML omitted -->shape<!-- raw HTML omitted --> are used only with categorical variables.</p>
+<ul>
+<li>You can define colors in hexadecimal and then use that variable with color value as well.</li>
+<li>To use rownames for <em>geom_text</em> plots, we can use <em>label = rownames(tbl_name)</em>. In this way a plot can be made with rownames visible in the plot.</li>
+<li>You can arithmetically operate two columns in plotting different numerical aesthetics such as size.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Modifying aesthetics</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Scale Functions     :ATTACH:</p>
+<pre><code> ID: 6dbc4bc5-2552-4067-b705-144efa9cb2c0
+</code></pre>
+<figure>
+    <img src="../../../../ox-hugo/_20200928_065842screenshot.png"/> 
+</figure>
+
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Labels</p>
+<ul>
+<li>Labels can be defined as follows:</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">labs</span>(x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-label goes here&#34;</span>, y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Y-label goes here&#34;</span>)
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Geometrical Layer     :ATTACH:</p>
+<pre><code> ID: 961b321b-cf29-4397-99dd-5b9380d4609e
+</code></pre>
+<p><img src="../../../../ox-hugo/_20200928_073010screenshot.png" alt="">
+So , we have many different kind of plots to use.</p>
+<ul>
+<li>For every geometry, there will be some essential as well as some optional parameters to be passed on.
+<ul>
+<li>For eg. In scatter plots, you need <!-- raw HTML omitted -->(x,y)<!-- raw HTML omitted --> but also can pass aesthetic mappings such as color, alpha, size, shape and so on.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Point Plots</p>
+<ul>
+<li>Some Shape Attribute Values:</li>
+</ul>
+<figure>
+    <img src="../../../../ox-hugo/_20200928_073303screenshot.png"/> 
+</figure>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">geom_point</span>(shape<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span>)
+</code></pre></div><p>This line adds a point as a pixel and can be useful in cases of large datasets.</p>
+<ul>
+<li>Consider <!-- raw HTML omitted -->Overplotting<!-- raw HTML omitted --> in following cases:
+<ul>
+<li>Large datasets</li>
+<li>Aligned values on a single axis</li>
+<li>Low-precision data</li>
+<li>Integer data
+Recommended is using transparency when using solid shapes. Or choose something opaque but hollow. For a bigger dataset, there may be so many points: so consider using small sized points.</li>
+</ul>
+</li>
+<li>Adding jitter and width at once:</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">geom_point</span>(position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_jitterdodge</span>(jitter.width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>, dodge.width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>))
+<span style="color:#a6e22e">geom_point</span>(position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_jitter</span>(width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>))
+<span style="color:#a6e22e">geom_point</span>(position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jitter&#34;</span>)
+<span style="color:#a6e22e">geom_jitter</span>()
+</code></pre></div><p>When you can work with default values, you don&rsquo;t need to have functions for position. But when you have to specify additional arguments to work with the plots, then you use the functions such as <em>position_jitter()</em> as used in the block above.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Histograms</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">geom_histogram</span>()
+<span style="color:#a6e22e">geom_histogram</span>(binwidth <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>,
+               center <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.05</span>,
+               position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;stack&#34;</span>)
+</code></pre></div><ul>
+<li>Position variables:
+<ul>
+<li><strong>stack</strong> (the default): Bars for different groups are stacked on top of each other.</li>
+<li><strong>dodge</strong>: Bars for different groups are placed side by side.</li>
+<li><strong>fill</strong>: Bars for different groups are shown as proportions.</li>
+<li><strong>identity</strong>: Plot the values as they appear in the dataset.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Bar Plots</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">geom_bar</span>()
+<span style="color:#a6e22e">geom_col</span>()
+<span style="color:#a6e22e">geom_count</span>()
+<span style="color:#a6e22e">geom_errorbar</span>(<span style="color:#a6e22e">aes</span>(ymin<span style="color:#f92672">=</span> sth, ymax<span style="color:#f92672">=</span>sth)) <span style="color:#75715e"># ymin and ymax for plotting error lines.</span>
+</code></pre></div><ul>
+<li>Position variables;
+<ul>
+<li>stack: The default</li>
+<li>dodge: Preferred</li>
+<li>fill: To show proportions</li>
+</ul>
+</li>
+<li>Comparison between geom_bar and geom_col:
+<ul>
+<li>The function geom_col() is just geom_bar() where both the position and stat arguments are set to &ldquo;identity&rdquo;. Understanding this, it helps to use these two with ease.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Line Plots</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> col_1, y<span style="color:#f92672">=</span>col_2, line_type<span style="color:#f92672">=</span>col_3)
+<span style="color:#a6e22e">geom_area</span>(postion<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fill&#34;</span>)
+<span style="color:#a6e22e">geom_ribbon</span>(<span style="color:#a6e22e">aes</span>(ymax<span style="color:#f92672">=</span>sth, ymin<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>))
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Themes Layer     :ATTACH:</p>
+<pre><code> ID: 4c63241e-e203-4566-9b49-a35e625bb70f
+</code></pre>
+<ul>
+<li>All non data elements
+<ul>
+<li>
+<p>Visual Elements not of data</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">    <span style="color:#a6e22e">element_text</span>()
+    <span style="color:#a6e22e">element_line</span>()
+    <span style="color:#a6e22e">element_rect</span>()
+</code></pre></div></li>
+</ul>
+</li>
+<li>Text Elements:
+<img src="../../../../ox-hugo/_20200928_082541screenshot.png" alt=""></li>
+<li>Theme function contains all these elements and can be changed. But we don&rsquo;t need to change all the elements: instead we use the hierarchy of data such as text, title and modify all elements within them as well.</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Moving legend field</p>
+<p>Legend field can be moved to any position in the plot using <em>legend.position</em> parameter inside theme layer. The various values that <!-- raw HTML omitted -->legend.position<!-- raw HTML omitted --> can take are as follows:</p>
+<ul>
+<li>Top</li>
+<li>Bottom</li>
+<li>Left</li>
+<li>Right</li>
+<li>None</li>
+<li>A point in the form of c(x,y) where c(0,0) means bottom left and c(1,1) means top right.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Working with different elements</p>
+<ul>
+<li>element_text()</li>
+<li>element_line()</li>
+<li>element_rect()</li>
+<li>element_blank()</li>
+</ul>
+<p>If you want to set something to None, you should set that element to <strong>element_blank()</strong>. For customizing anything, you first have to know which element group it belongs to and then you can use these methods to change it&rsquo;s visual appeal.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Examples</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">theme</span>(
+  axis.ticks.length <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;lines&#34;</span>),
+  legend.key <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>),
+  legend.margin <span style="color:#f92672">=</span> <span style="color:#a6e22e">margin</span>(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>, <span style="color:#e6db74">&#34;pt&#34;</span>),
+)
+</code></pre></div><ul>
+<li>
+<p>Other unit values are:</p>
+<ul>
+<li>&ldquo;cm&rdquo;</li>
+<li>&ldquo;mm&rdquo;</li>
+<li>&ldquo;pt&rdquo;</li>
+</ul>
+</li>
+<li>
+<p>Margin follows TBRL order and takes units as the last argument.</p>
+</li>
+<li>
+<p>Other package themes:</p>
+<ul>
+<li>ggthemes library</li>
+</ul>
+</li>
+<li>
+<p>Set a default theme</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">    <span style="color:#a6e22e">theme_set</span>(theme_name)
+</code></pre></div></li>
+<li>
+<p>Some built in themes:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">theme_gray</span>()
+<span style="color:#a6e22e">theme_bw</span>()
+<span style="color:#a6e22e">theme_classic</span>()
+<span style="color:#a6e22e">theme_void</span>()
+</code></pre></div></li>
+<li>
+<p>Example of themes from ggthemes:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">theme_wsj</span>()
+<span style="color:#a6e22e">theme_tufte</span>()
+</code></pre></div></li>
+<li>
+<p>Removing legend vs removing axis ticks</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">theme</span>(
+legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>,
+axis.ticks <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>())
+</code></pre></div><p>You cannot set legend to element_blank() to remove it.</p>
+</li>
+<li>
+<p>Working with modifying grid lines:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">theme</span>(
+    panel.grid.major.y <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_line</span>(
+      color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>,
+      size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>,
+      linetype <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dashed&#34;</span>
+    )
+  )
+</code></pre></div></li>
+<li>
+<p>Setting title and caption using <em>labs()</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Title goes here&#34;</span>,
+  caption <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Caption at the bottom end&#34;</span>)
+</code></pre></div></li>
+<li>
+<p>Add a vertical or horizontal line</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> any_value, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;color_name&#34;</span>, linetype <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+</code></pre></div><p>You can specify parameters similar to geom_line() to plot these line into the existing plot.</p>
+<ul>
+<li>
+<p>To add text by the line we can use:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">annotate</span>(
+  <span style="color:#e6db74">&#34;text&#34;</span>,
+  x<span style="color:#f92672">=</span>sth , y <span style="color:#f92672">=</span>sth,
+  x_end <span style="color:#f92672">=</span> sth, y_end <span style="color:#f92672">=</span> sth,
+  label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is the text to show&#34;</span>,
+  color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>
+    )
+<span style="color:#75715e"># To display a nice arrow also</span>
+<span style="color:#a6e22e">annotate</span>(
+  <span style="color:#e6db74">&#34;curve&#34;</span>,
+  x <span style="color:#f92672">=</span> sth, y<span style="color:#f92672">=</span>sth,
+  x_end <span style="color:#f92672">=</span> sth, y_end <span style="color:#f92672">=</span> sth,
+  arrow <span style="color:#f92672">=</span> <span style="color:#a6e22e">arrow</span>(length <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(), type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sth&#34;</span>),
+  color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>
+)
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<p>Doing this we can have a nice arrow and a nice text that goes alongside the line that we add into the plot or anywhere in the plot we want to show something noticeable.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="intermediate">Intermediate</h3>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Stats Layer</p>
+<p>Know that the stats layer and geom layer are related to each other. Calling stat_boxplot() might call geom_boxplot() by default. Knowing these connections will help build a better understanding and when to use one or the other.</p>
+<ul>
+<li>scale_size(range = c(range_st, range_end))</li>
+<li>mean_sdl function to get mean ans standard deviation from data.</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Smoothing</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">geom_smooth</span>()
+<span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>)
+<span style="color:#a6e22e">geom_smooth</span>(se<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
+<span style="color:#a6e22e">stat_smooth</span>(method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#960050;background-color:#1e0010">lm, se=FALSE)</span>
+</code></pre></div><p>By default, the error interval is shown using the plot. We can change it using parameter <!-- raw HTML omitted -->se<!-- raw HTML omitted -->. For what we want to draw, we can change the method to fit data points. The second line on the code snippet uses linear method to make the plot.</p>
+<ul>
+<li>These functions can be called many times in the same plot as well.</li>
+<li>Parameters:
+<ul>
+<li><strong>size</strong> : To determine line width</li>
+<li>Use <strong>aes()</strong> to use color, fill and so on if needed.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Sum and Quantile</p>
+<ul>
+<li>geom_count() and stat_sum() are same.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Stat Summary</p>
+<ul>
+<li>Parameters:
+<ul>
+<li><strong>fun.data</strong> : Takes a function to give you data to plot summary.</li>
+<li><strong>fun.args</strong> : If you need to pass extra arguments, just pass them via a list.</li>
+<li><strong>position</strong> : Optional and similar to previous plots.</li>
+<li><strong>geom</strong> : Which geom to use.
+<ul>
+<li>&ldquo;pointrange&rdquo; : Just plots the end points of the start and end.</li>
+<li>&ldquo;errorbar&rdquo; : Plots the horizontal lines at the start and end.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">stat_summary</span>(fun.data <span style="color:#f92672">=</span> mean_sd,
+             fun.args <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(mult<span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>),
+             extra_args_here)
+<span style="color:#a6e22e">stat_summary</span>(fun.data <span style="color:#f92672">=</span> mean_cl_normal,
+             fun.args <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(conf.int <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>))
+<span style="color:#a6e22e">stat_summary</span>(fun.y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mean&#34;</span>,
+             geom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bar&#34;</span>) <span style="color:#75715e"># plots a bar plot using function mean</span>
+</code></pre></div><p>Here the confidence interval is set to 80% when drawing those bars.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Coordinates</p>
+<ul>
+<li>
+<p>Change coordinates plane:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">    <span style="color:#a6e22e">coord_cartesian</span>(xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(x0, x1))
+    <span style="color:#a6e22e">scale_x_continuous</span>(limits <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(x0, x1))
+</code></pre></div><p>These two do the same thing: setting x-limits.</p>
+</li>
+<li>
+<p>Aspect Ratio</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">    <span style="color:#a6e22e">coord_fixed</span>() <span style="color:#75715e"># 1:1 ratio</span>
+    <span style="color:#a6e22e">coord_fixed</span>(<span style="color:#ae81ff">0.055</span>) <span style="color:#75715e"># flatten it</span>
+</code></pre></div></li>
+<li>
+<p>Expand and Clip</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">    coord_<span style="color:#f92672">*</span>(expand <span style="color:#f92672">=</span> val)
+    coord_<span style="color:#f92672">*</span>(clip <span style="color:#f92672">=</span> val)
+</code></pre></div><p>Setting <!-- raw HTML omitted -->expand = 0<!-- raw HTML omitted -->, sets a buffer margin around the plot so that the axes and data don&rsquo;t overlap. Setting <!-- raw HTML omitted -->clip = &ldquo;off&rdquo;<!-- raw HTML omitted --> sets clipping to off when we expand the limits.</p>
+</li>
+<li>
+<p>Changing coordinate axes scales</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">    <span style="color:#a6e22e">scale_x_log10</span>()
+    <span style="color:#a6e22e">coord_trans</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;log10&#34;</span>, y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;log10&#34;</span>)
+</code></pre></div><p>Both of these commands work the same. We have <em>scale_</em> commands to scale axes as well as coordinate translate functions for the job as well.</p>
+</li>
+<li>
+<p>Adding a seconday axis:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">    <span style="color:#a6e22e">sec_axis</span>(trans <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>,
+             name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sth&#34;</span>,
+             breaks <span style="color:#f92672">=</span> list_of_first_axis_to_reference,
+             labels <span style="color:#f92672">=</span> list_of_second_axis_mapped_to_reference_axis)
+    y_breaks <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>)
+    y_labels <span style="color:#f92672">=</span> y_breaks <span style="color:#f92672">+</span> <span style="color:#ae81ff">9</span> <span style="color:#75715e"># so we will have these values mapped to secondary axis.</span>
+</code></pre></div></li>
+<li>
+<p>Flip coordinates</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">    <span style="color:#a6e22e">coord_flip</span>()
+</code></pre></div></li>
+<li>
+<p>Projections</p>
+<ul>
+<li>
+<p>Mercator Projection: Project objects around the equator as bigger than that at the poles</p>
+</li>
+<li>
+<p>Polar Projection is also alternative to mercator projection.</p>
+</li>
+<li>
+<p>Bar chart can be converted  to pie chart by converting cartesian to polar coordinates.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">    <span style="color:#a6e22e">coord_polar</span>(theta <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;y&#34;</span>)
+    <span style="color:#a6e22e">coord_polar</span>(start <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#66d9ef">pi</span><span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>) <span style="color:#75715e"># helpful to set the start of the plot.</span>
+</code></pre></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Facets Layer</p>
+<p>Splitting of data plots into different plots to make comparisons.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">facet_grid</span>(rows <span style="color:#f92672">=</span> <span style="color:#a6e22e">vars</span>(col_name), cols <span style="color:#f92672">=</span> <span style="color:#a6e22e">vars</span>(col_name))
+<span style="color:#a6e22e">facet_grid</span>(col_name <span style="color:#f92672">~</span> .) <span style="color:#75715e"># same as specifying rows = vars(col_name)</span>
+<span style="color:#a6e22e">facet_grid</span>(. <span style="color:#f92672">~</span> col_name) <span style="color:#75715e"># same as specifying cols = vars(col_name)</span>
+<span style="color:#a6e22e">facet_grid</span>(col_1 <span style="color:#f92672">~</span> col_2) <span style="color:#75715e"># same as specifying first rows and then columns.</span>
+</code></pre></div><p>Only one of rows or columns is generally used.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Issues with facet layers in general</p>
+<ul>
+<li>No labels</li>
+<li>Wrong or inappropriate order</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Fixes to those issues</p>
+<ul>
+<li>Add labels in ggplot</li>
+<li>Relabel and rearrange factor variables</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Labeling in Facets</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">facet_grid</span>(cols<span style="color:#f92672">/</span>rows <span style="color:#f92672">=</span> col_name, labeller <span style="color:#f92672">=</span> label_both)
+<span style="color:#a6e22e">facet_grid</span>(cols<span style="color:#f92672">/</span>rows <span style="color:#f92672">=</span> col_name, labeller <span style="color:#f92672">=</span> label_context)
+</code></pre></div><!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Automatic Labeling working with data itself</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">table_name<span style="color:#f92672">$</span>new_col_name <span style="color:#f92672">=</span> <span style="color:#a6e22e">factor</span>(table_name<span style="color:#f92672">$</span>old_col_name, labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(`oldRowVal1` <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;newRowVal&#34;</span>),
+                                                                      `oldRowVal2` <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;newRowVal2&#34;</span>))
+
+<span style="color:#75715e"># to order the labels</span>
+<span style="color:#a6e22e">factor</span>(similar, levels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;val_1&#34;</span>, <span style="color:#e6db74">&#34;val_2&#34;</span>),
+                labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;new_val&#34;</span>, <span style="color:#e6db74">&#34;new_val&#34;</span>))
+</code></pre></div><p>For example we may have split by some value. We can rename those specific values using factor so that the plot gets better labels now. This will be pretty useful when we want to have labels which are numbers representing certain quantities. In plots, numbers will not be so useful and can be replaced by their respective meaning to give more information via the plot.</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Changing facet plot axes</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">facet_grid</span>(scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_x&#34;</span>)
+<span style="color:#a6e22e">facet_grid</span>(scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_y&#34;</span>)
+<span style="color:#a6e22e">facet_grid</span>(scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free&#34;</span>)
+<span style="color:#a6e22e">facet_grid</span>(scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fixed&#34;</span>)
+</code></pre></div><p>Generally facets have the same scale of axes even if the range is unused by the facet. In case of free, every facet has different axes. With free_x or free_y, the axis that facet can freely change is either x or y.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Changing size of facets based on the data scales</p>
+<p>Often in having categorical data, we may have to make some plots bigger than the others in facets to accurately present information. To do this we use parameter <code>space.</code> This helps to change the scale of plots in between facets.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">facet_grid</span>(space <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_y&#34;</span>)
+<span style="color:#a6e22e">facet_grid</span>(space <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_x&#34;</span>)
+</code></pre></div><p>Now, When facets are being created, only the values that are significant will be on either x or y axis meaning our plots to be less emptier and also fit according to number of points.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Different kind of facet <strong>Facet_wrap</strong>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">facet_wrap</span>(<span style="color:#a6e22e">vars</span>(col_name))
+<span style="color:#a6e22e">facet_wrap</span>(<span style="color:#f92672">~</span> col_name)
+<span style="color:#a6e22e">facet_wrap</span>(<span style="color:#f92672">~</span> col_name, ncol <span style="color:#f92672">=</span> NumCols) <span style="color:#75715e"># You can specify how many subsets you want to plot along in one dimension.</span>
+</code></pre></div><p>Generally used when categorical variable has too many groups/levels. Facet_wrap rather than having rows and columns unlike facet_grid, it separates levels along one axis and wraps all subsets across a given number of rows or columns.</p>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Best Practices</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Creating a palette</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">brewer.pal</span>(num, <span style="color:#e6db74">&#34;color&#34;</span>)
+<span style="color:#a6e22e">brewer.pal</span>(<span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;reds&#34;</span>)
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Using the palette</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">scale_fill_gradientn</span>(colors <span style="color:#f92672">=</span> palette_variable)
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Bad Plots</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Color:</p>
+<ul>
+<li>Not color-blind-friendly.</li>
+<li>Wrong palette for data type.</li>
+<li>Too similar colors for different groups</li>
+<li>Ugly [ High saturation Primary colors]</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Text</p>
+<ul>
+<li>Illegible : Small, poor resolution etc.</li>
+<li>Non descriptive : No units</li>
+<li>Missing</li>
+<li>Inappropriate: Comic Sans</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Information Content</p>
+<ul>
+<li>Too much or too little information</li>
+<li>No clear message or purpose</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Axes</p>
+<ul>
+<li>Poor aspect ratio</li>
+<li>Suppression of origin</li>
+<li>Broken x or y axes</li>
+<li>Unaligned scales</li>
+<li>Wrong or no transformation</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Statistics</p>
+<ul>
+<li>Visualization not matching actual stats</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Geometrics</p>
+<ul>
+<li>Wrong plot type</li>
+<li>Wrong orientation</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Non-data Ink</p>
+<ul>
+<li>Inappropriate use</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>3D Plots</p>
+<ul>
+<li>Useless 3d axes</li>
+<li>Perceptual problems</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="backlinks">Backlinks</h2>
+<ul>
+<li><a href="../../../../braindump/2020/09/data-scientist-with-r/">Data Scientist with R</a></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>2143 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-09-22 00:00 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://dragarok.github.io/braindump/2020/09/r-programming-101-dplyr/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">R Programming 101- Dplyr</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://dragarok.github.io/braindump/2020/09/data-scientist-with-r/">
+                                <span class="button__text">Data Scientist with R</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

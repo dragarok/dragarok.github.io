@@ -6,17 +6,26 @@
     <description>Recent content in howtoguide on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0545</lastBuildDate>
-    
-	<atom:link href="https://dragarok.github.io/categories/howtoguide/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/categories/howtoguide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anaconda Windows</title>
       <link>https://dragarok.github.io/ai/anaconda-windows/</link>
       <pubDate>Mon, 03 Feb 2020 00:00:00 +0545</pubDate>
       
       <guid>https://dragarok.github.io/ai/anaconda-windows/</guid>
+      <description>Anaconda Installation in Windows   Issue with pyzmq:
+pip uninstall pyzmq pip install pyzmq   Issue with requests
+conda deactivate conda update --force conda   Issue with sqlite3
+ Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder    Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.
+  Anaconda if HTTPS error:</description>
+    </item>
+    
+    <item>
+      <title>Anaconda Windows</title>
+      <link>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</guid>
       <description>Anaconda Installation in Windows   Issue with pyzmq:
 pip uninstall pyzmq pip install pyzmq   Issue with requests
 conda deactivate conda update --force conda   Issue with sqlite3

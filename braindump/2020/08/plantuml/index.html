@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Commands  skinparam COLOR STYLE  skinparam monochrome true skinparam monochrome reverse skinparam handwritten true Both lines handwritten and monochrome can be used together. rectanglebackgroundcolor white notebordercolor green Arrowcolor nodesep 100 : To separate nodes   skinparam SHADOW STYLE  skinparam shadowing false   &amp;ndash; : Draw a line  -[hidden]&amp;ndash;&amp;gt; : Draw a hidden line -right&amp;ndash;&amp;gt; : Left to right arrow from one object to another .. [Double dots] : Dashed line -[dashed]- : Dashed line cp1 -[#black]down-&amp;gt; im : Choose color while drawing an arrow   Objects:  () : Draw a circle  () &amp;ldquo;TEXT&amp;rdquo; as ALIAS   rectangle : Draw a rectangle  rectangle &amp;ldquo;Intermediary&amp;rdquo; as im #Gold : Rectangle in color gold   actor  actor &amp;ldquo;Sad User&amp;rdquo; as user   participant  Rectangular block of participant   boundary artifact control entity database collections ." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/braindump/2020/08/plantuml/" />
+
+
+    <title>
+        
+            Plantuml :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Plantuml">
+<meta itemprop="description" content="Commands  skinparam COLOR STYLE  skinparam monochrome true skinparam monochrome reverse skinparam handwritten true Both lines handwritten and monochrome can be used together. rectanglebackgroundcolor white notebordercolor green Arrowcolor nodesep 100 : To separate nodes   skinparam SHADOW STYLE  skinparam shadowing false   &ndash; : Draw a line  -[hidden]&ndash;&gt; : Draw a hidden line -right&ndash;&gt; : Left to right arrow from one object to another .. [Double dots] : Dashed line -[dashed]- : Dashed line cp1 -[#black]down-&gt; im : Choose color while drawing an arrow   Objects:  () : Draw a circle  () &ldquo;TEXT&rdquo; as ALIAS   rectangle : Draw a rectangle  rectangle &ldquo;Intermediary&rdquo; as im #Gold : Rectangle in color gold   actor  actor &ldquo;Sad User&rdquo; as user   participant  Rectangular block of participant   boundary artifact control entity database collections .">
+<meta itemprop="datePublished" content="2020-08-24T00:00:00+05:45" />
+<meta itemprop="dateModified" content="2020-08-24T08:07:33+05:45" />
+<meta itemprop="wordCount" content="368">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Plantuml"/>
+<meta name="twitter:description" content="Commands  skinparam COLOR STYLE  skinparam monochrome true skinparam monochrome reverse skinparam handwritten true Both lines handwritten and monochrome can be used together. rectanglebackgroundcolor white notebordercolor green Arrowcolor nodesep 100 : To separate nodes   skinparam SHADOW STYLE  skinparam shadowing false   &ndash; : Draw a line  -[hidden]&ndash;&gt; : Draw a hidden line -right&ndash;&gt; : Left to right arrow from one object to another .. [Double dots] : Dashed line -[dashed]- : Dashed line cp1 -[#black]down-&gt; im : Choose color while drawing an arrow   Objects:  () : Draw a circle  () &ldquo;TEXT&rdquo; as ALIAS   rectangle : Draw a rectangle  rectangle &ldquo;Intermediary&rdquo; as im #Gold : Rectangle in color gold   actor  actor &ldquo;Sad User&rdquo; as user   participant  Rectangular block of participant   boundary artifact control entity database collections ."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-08-24 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">~</span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://dragarok.github.io/braindump/2020/08/plantuml/">Plantuml</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <h2 id="commands">Commands</h2>
+<ol>
+<li><strong>skinparam</strong> COLOR STYLE
+<ol>
+<li>skinparam monochrome true</li>
+<li>skinparam monochrome reverse</li>
+<li>skinparam handwritten true</li>
+<li>Both lines handwritten and monochrome can be used together.</li>
+<li>rectanglebackgroundcolor white</li>
+<li>notebordercolor green</li>
+<li>Arrowcolor</li>
+<li>nodesep 100 : To separate nodes</li>
+</ol>
+</li>
+<li><strong>skinparam</strong> SHADOW STYLE
+<ol>
+<li>skinparam shadowing false</li>
+</ol>
+</li>
+<li>&ndash; : Draw a line
+<ol>
+<li>-[hidden]&ndash;&gt; : Draw a hidden line</li>
+<li>-right&ndash;&gt; : Left to right arrow from one object to another</li>
+<li>.. [Double dots] : Dashed line</li>
+<li>-[dashed]- : Dashed line</li>
+<li>cp1 -[#black]down-&gt; im : Choose color while drawing an arrow</li>
+</ol>
+</li>
+<li>Objects:
+<ol>
+<li>() : Draw a circle
+<ol>
+<li>() &ldquo;TEXT&rdquo; as ALIAS</li>
+</ol>
+</li>
+<li><strong>rectangle</strong> : Draw a rectangle
+<ol>
+<li>rectangle &ldquo;<!-- raw HTML omitted -->Intermediary<!-- raw HTML omitted -->&rdquo; as im #Gold : Rectangle in color gold</li>
+</ol>
+</li>
+<li><strong>actor</strong>
+<ol>
+<li>actor &ldquo;Sad User&rdquo; as user</li>
+</ol>
+</li>
+<li><strong>participant</strong>
+<ol>
+<li>Rectangular block of participant</li>
+</ol>
+</li>
+<li><strong>boundary</strong></li>
+<li><strong>artifact</strong></li>
+<li><strong>control</strong></li>
+<li><strong>entity</strong></li>
+<li><strong>database</strong></li>
+<li><strong>collections</strong> .</li>
+</ol>
+</li>
+<li><strong>title</strong> : Title text2. ove diagram</li>
+<li><strong>caption</strong> : Caption below the diagram &ldquo;\n&rdquo; used sometimes to create gap between
+the diagram and the caption.</li>
+<li><!-- raw HTML omitted --><!-- raw HTML omitted --> like tags used inside text to slant text.</li>
+<li><strong>note</strong>
+<ol>
+<li>note DIRECTION of ANY_OBJECT &ldquo;TEXT&rdquo;</li>
+</ol>
+</li>
+<li><strong>scale</strong>
+<ol>
+<li>scale 800 width: to scale image size to 800 width</li>
+</ol>
+</li>
+<li><strong>direction</strong>
+<ol>
+<li>left to right direction: To specify the flow of arrows for ease of use later.</li>
+</ol>
+</li>
+<li><strong>together</strong>
+<ol>
+<li>together{ block1 block2 } : To show some blocks together as a group.</li>
+</ol>
+</li>
+<li>Comments
+<ol>
+<li>' [Quote] : For single line comment</li>
+<li>/' [Slash + Quote] : For multi line comment</li>
+</ol>
+</li>
+<li>Description to arrows
+<ol>
+<li>Object1 -&gt; Object2 : TEXT      ==&gt; For giving comments to arrows</li>
+</ol>
+</li>
+<li><strong>listopeniconic</strong>
+<ol>
+<li>This command shows all icons that can be used in plantuml. e.g. cloud,
+code etc.</li>
+<li>&lt;&amp;code&gt;  &lt;&amp;pie-chart&gt; are some examples of how to use them.</li>
+</ol>
+</li>
+<li><strong>colors</strong>
+<ol>
+<li>List all available colors</li>
+</ol>
+</li>
+<li>Text formatting
+<ol>
+<li><strong>* *</strong> : For bold</li>
+<li>//  / /   : For italics</li>
+<li>&quot;&quot;  &quot;&quot; : For monospaced</li>
+<li>&ndash;  &ndash; : For stroked</li>
+<li>_ _  _ _  : For underline</li>
+<li>~ ~  ~ ~ : For waved</li>
+</ol>
+</li>
+<li>Numbered list:
+<ol>
+<li># for item. # # for subitem and so on.</li>
+</ol>
+</li>
+<li>Unnumbered list:
+<ol>
+<li>* for item. * * for subitem and so on.</li>
+</ol>
+</li>
+<li>~ is used as escape for formatting characters.</li>
+<li>= TEXT : For heading 1</li>
+<li>== TEXT : For heading 2 and so on.</li>
+<li>Trees can be made, legacy HTML can be used to create objects and more to go.</li>
+</ol>
+<h2 id="examples">Examples</h2>
+<figure>
+    <img src="../../../../ox-hugo/plantuml-1.png"/> 
+</figure>
+
+<figure>
+    <img src="../../../../ox-hugo/plantuml-2.png"/> 
+</figure>
+
+<h2 id="references">References</h2>
+<p><a href="https://github.com/mattjhayes/PlantUML-Examples/blob/master/README.md">https://github.com/mattjhayes/PlantUML-Examples/blob/master/README.md</a></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>368 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-08-24 00:00 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://dragarok.github.io/braindump/2020/08/stock-market-metrics/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Stock Market Metrics</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://dragarok.github.io/braindump/2020/08/ra/">
+                                <span class="button__text">RA</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

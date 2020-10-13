@@ -6,17 +6,13 @@
     <description>Recent content in git on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2020 07:10:51 +0545</lastBuildDate>
-    
-	<atom:link href="https://dragarok.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 23 Sep 2020 21:58:34 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Commands</title>
-      <link>https://dragarok.github.io/braindump/2020/05/git-commands/</link>
-      <pubDate>Thu, 07 May 2020 07:10:51 +0545</pubDate>
+      <link>https://dragarok.github.io/braindump/2020/09/git-commands/</link>
+      <pubDate>Wed, 23 Sep 2020 21:58:34 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/05/git-commands/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/09/git-commands/</guid>
       <description>&amp;ndash;tags: Useful &amp;ndash;references: https://learngitbranching.js.org/
 Commands   git add : tracking with git
   git status : current status of tracked, untracked, changed, committed files.
@@ -30,10 +26,10 @@ Commands   git add : tracking with git
     
     <item>
       <title>Gitconfig</title>
-      <link>https://dragarok.github.io/braindump/2020/04/gitconfig/</link>
-      <pubDate>Sun, 19 Apr 2020 18:43:16 +0545</pubDate>
+      <link>https://dragarok.github.io/braindump/2020/09/gitconfig/</link>
+      <pubDate>Sun, 13 Sep 2020 11:00:07 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/gitconfig/</guid>
+      <guid>https://dragarok.github.io/braindump/2020/09/gitconfig/</guid>
       <description>Windows Git Config  eval $(ssh-agent -s) ssh-add ~/.ssh/sshkey  Add ssh key in one command https://www.howtogeek.com/168147/add-public-ssh-key-to-remote-server-in-a-single-command/
  ssh-keygen -t rsa cat ~/.ssh/id_rsa.pub | ssh user@hostname &amp;lsquo;cat &amp;raquo; .ssh/authorized_keys&amp;rsquo; Change id_rsa as per your key , user, hostname and you are good to go. Need to restart ssh service though from server.  </description>
     </item>

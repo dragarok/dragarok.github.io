@@ -26,6 +26,15 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
 
 
 <link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
@@ -47,13 +56,14 @@
   loc 382 - For example, a telecom company is very much interested in knowing which customers are going to terminate their service. If they are aware or can predict those customers, they can offer them special deals to retain them.
   loc 462 - Some popular examples of unsupervised learning algorithms are: Apriori algorithm (association problems) K-means (clustering problems)
   loc 483 - Reinforcement learning is a type of machine learning that determines the action within a specific environment in order to maximize a reward.">
-<meta itemprop="dateModified" content="2020-04-26T03:07:24&#43;05:45" />
+<meta itemprop="dateModified" content="2020-04-26T03:07:24+05:45" />
 <meta itemprop="wordCount" content="2413">
 <meta itemprop="image" content="https://dragarok.github.io/"/>
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Practical Reinforcement Learning: Develop self-evolving, intelligent agents with OpenAI Gym, Python and Java"/>
@@ -75,16 +85,6 @@
 
 
 
-        
-
-
-<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
-
     </head>
 
     <body class="">
@@ -94,8 +94,9 @@
         <a href="../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -195,13 +196,13 @@
 <p>loc 904 - The point is that your action set will represent all the things that the agent, robot, or person we are trying to model is allowed to do.</p>
 </li>
 <li>
-<p>loc 909 - produces the probability that you end up transitioning s&rsquo; given that you were in state s and you took action a.</p>
+<p>loc 909 - produces the probability that you end up transitioning s' given that you were in state s and you took action a.</p>
 </li>
 <li>
 <p>loc 913 - The model is really an important thing and the reason for its importance is that it describes the rules of the game. It tells us what will happen if we do something in a particular place. It captures everything we can know about the transition:</p>
 </li>
 <li>
-<p>loc 913 - The model is really an important thing and the reason for its importance is that it describes the rules of the game. It tells us what will happen if we do something in a particular place. It captures everything we can know about the transition: T(s, a, s&rsquo;) ~ Probability(s'| s, a)</p>
+<p>loc 913 - The model is really an important thing and the reason for its importance is that it describes the rules of the game. It tells us what will happen if we do something in a particular place. It captures everything we can know about the transition: T(s, a, s') ~ Probability(s'| s, a)</p>
 </li>
 <li>
 <p>loc 920 - Next is the reward. It is a scalar value that you get from being in a state.</p>
@@ -246,7 +247,7 @@
 <p>loc 1093 - Utility is both the reward we get for that state and all the rewards that we are going to get from that point on. Let&rsquo;s say I want to go to a college for a master&rsquo;s degree but it costs me $10,000. If I spend $10,000, at the end I get a degree. The point is that there is an immediate negative reward of $10,000. But at the end of the day, I get something positive out of it.</p>
 </li>
 <li>
-<p>loc 1109 - Uπ*(s) = R(s) + γ maxa ∑s&rsquo; T(s, a, s&rsquo;) Uπ*(s&rsquo;) The true utility of the state s then is the reward that I get for being in the state; plus, I am now going to discount all of the reward that I get from that point on.</p>
+<p>loc 1109 - Uπ*(s) = R(s) + γ maxa ∑s' T(s, a, s') Uπ*(s') The true utility of the state s then is the reward that I get for being in the state; plus, I am now going to discount all of the reward that I get from that point on.</p>
 </li>
 <li>
 <p>loc 1621 - In some sense, the states, actions, and transitions represent the physical world and the rewards and discount represent the kind of task description.</p>
@@ -318,7 +319,7 @@
 <p>loc 1726 - What does this based on neighbors mean? It actually means we are going to update the utility for a state based on all the states that it can reach.</p>
 </li>
 <li>
-<p>loc 1728 - how to update them and it will be clear: Ut+1(s) = R(s) + γ maxa ∑s&rsquo; T(s, a, s&rsquo;) Ut(s&rsquo;)</p>
+<p>loc 1728 - how to update them and it will be clear: Ut+1(s) = R(s) + γ maxa ∑s' T(s, a, s') Ut(s')</p>
 </li>
 <li>
 <p>loc 1731 - estimate the utility of some state S by simply recalculating it to be the actual reward that I get for entering state S plus the discount utility that I expect given the original estimates of my utility.</p>
@@ -342,7 +343,7 @@
 <p>loc 1799 - what you end up wanting to do is get a utility that&rsquo;s good enough to get you to π. Which is one reason why you don&rsquo;t have to worry about getting the absolute convergence in value iteration.</p>
 </li>
 <li>
-<p>loc 1913 - Now it&rsquo;s true that given the true utilities we can find a policy, but maybe we don&rsquo;t have to find the true utilities in order to find the optimal policy. So, here is the algorithm; it&rsquo;s going to look a lot like value iteration: Start with π0 &lt;&mdash; Guess. Evaluate the given πt calculate Ut = Uπt. Improve πt+1 = argmaxa ∑ T(s, a, s&rsquo;) Ut(s&rsquo;).</p>
+<p>loc 1913 - Now it&rsquo;s true that given the true utilities we can find a policy, but maybe we don&rsquo;t have to find the true utilities in order to find the optimal policy. So, here is the algorithm; it&rsquo;s going to look a lot like value iteration: Start with π0 &lt;&mdash; Guess. Evaluate the given πt calculate Ut = Uπt. Improve πt+1 = argmaxa ∑ T(s, a, s') Ut(s').</p>
 </li>
 <li>
 <p>loc 1920 - So, given a policy, we are able to evaluate it by figuring out what the utility of that policy is. Then we are actually going to improve that policy in a way similar to what we did with value iteration. We are going to update our policy, Time t plus 1, to be the policy that takes the action that maximizes the expected utility based on what we just calculated for πt.</p>

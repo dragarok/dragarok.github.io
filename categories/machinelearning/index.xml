@@ -6,10 +6,27 @@
     <description>Recent content in machinelearning on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0545</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:43 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/categories/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convolution</title>
+      <link>https://dragarok.github.io/braindump/2020/04/convolution/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:43 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/convolution/</guid>
+      <description>Convolution Image will be of shape: (H * W * channels)
+Our kernel will also be of shape (Hk * Wk * channels)
+The number of channels is same as it is volume convolution.
+In case of 1 * 1 convolution, the convolution helps decrease or increase the feature map dimensions.</description>
+    </item>
     
-	<atom:link href="https://dragarok.github.io/categories/machinelearning/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>ML Causality</title>
+      <link>https://dragarok.github.io/braindump/2020/04/ml-causality/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:33 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/ml-causality/</guid>
+      <description>Causality in ML: &amp;ndash;Inspirations and References: J. Peters, D. Janzing, and B. Schölkopf. 2017. Elements of Causal Inference - Foundations and Learning Algorithms. MIT</description>
+    </item>
     
     <item>
       <title>ML Causality</title>

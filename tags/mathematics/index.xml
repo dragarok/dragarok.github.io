@@ -6,10 +6,17 @@
     <description>Recent content in mathematics on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0545</lastBuildDate>
-    
-	<atom:link href="https://dragarok.github.io/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:11 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Matlab</title>
+      <link>https://dragarok.github.io/braindump/2020/04/matlab/</link>
+      <pubDate>Sun, 19 Apr 2020 16:00:11 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/matlab/</guid>
+      <description>&amp;ndash; %% to make a code section Ctrl + Enter to run a code section
+&amp;ndash;	%{
+%} to make a multiline comment but you cannot enter any text on the first line : else it interprets the thing as comment and rest as code</description>
+    </item>
     
     <item>
       <title>Matlab</title>

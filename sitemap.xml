@@ -4,12 +4,172 @@
   
   <url>
     <loc>https://dragarok.github.io/</loc>
-    <lastmod>2020-08-18T07:54:57+05:45</lastmod>
+    <lastmod>2020-10-11T10:45:01+05:45</lastmod>
   </url>
   
   <url>
     <loc>https://dragarok.github.io/braindump/</loc>
-    <lastmod>2020-08-18T07:54:57+05:45</lastmod>
+    <lastmod>2020-10-11T10:45:01+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-105-unsupervised-learning/</loc>
+    <lastmod>2020-10-11T10:45:01+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-1/</loc>
+    <lastmod>2020-10-09T14:31:13+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-2-regression/</loc>
+    <lastmod>2020-10-09T10:40:57+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</loc>
+    <lastmod>2020-10-07T05:47:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</loc>
+    <lastmod>2020-10-08T09:38:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-103-exploratory-data-analysis/</loc>
+    <lastmod>2020-10-06T13:22:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-dates-and-times/</loc>
+    <lastmod>2020-10-04T15:19:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-functions-in-r/</loc>
+    <lastmod>2020-10-08T07:02:02+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-cleaning-data/</loc>
+    <lastmod>2020-10-08T07:01:43+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-importing-databases-and-urls/</loc>
+    <lastmod>2020-10-03T08:34:44+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-importing-data/</loc>
+    <lastmod>2020-10-02T14:52:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/git/</loc>
+    <lastmod>2020-09-23T21:58:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/09/git-commands/</loc>
+    <lastmod>2020-09-23T21:58:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/</loc>
+    <lastmod>2020-09-23T21:58:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/tips/</loc>
+    <lastmod>2020-09-23T21:58:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/r/</loc>
+    <lastmod>2020-09-22T08:34:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/09/r-programming-101-datacamp-beginner/</loc>
+    <lastmod>2020-09-22T08:34:36+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/09/r-programming-101-datacamp-intermediate/</loc>
+    <lastmod>2020-09-22T08:34:51+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/09/r-programming-101-dplyr/</loc>
+    <lastmod>2020-09-26T16:50:02+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/09/r-programming-101-ggplot/</loc>
+    <lastmod>2020-10-02T07:35:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/09/data-scientist-with-r/</loc>
+    <lastmod>2020-10-11T10:28:04+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/09/data-structures/</loc>
+    <lastmod>2020-09-17T19:50:49+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/datastructure/</loc>
+    <lastmod>2020-09-17T19:50:49+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/09/gitconfig/</loc>
+    <lastmod>2020-09-13T11:00:07+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/08/stock-market-metrics/</loc>
+    <lastmod>2020-09-15T08:08:22+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/neuroscience/fmri_hyperalignment/</loc>
+    <lastmod>2020-08-31T15:28:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/neuroscience/</loc>
+    <lastmod>2020-08-31T15:28:41+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/neuroscience/fmri_comparisons/</loc>
+    <lastmod>2020-08-31T15:28:18+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/neuroscience/representational_similarity_analysis/</loc>
+    <lastmod>2020-08-31T15:28:41+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/books/</loc>
+    <lastmod>2020-08-24T09:32:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/books/the-psychedelic-explorers-guide-safe-therapeutic-and-sacred-journeys/</loc>
+    <lastmod>2020-08-24T09:32:47+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/08/plantuml/</loc>
+    <lastmod>2020-08-24T08:07:33+05:45</lastmod>
   </url>
   
   <url>
@@ -28,33 +188,18 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/</loc>
-    <lastmod>2020-08-18T07:54:57+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/books/anything-you-want-40-lessons-for-a-new-kind-of-entrepreneur/</loc>
     <lastmod>2020-08-13T07:02:53+05:45</lastmod>
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/books/</loc>
-    <lastmod>2020-08-13T07:02:53+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/neuroscience/fmri_bootcamp/</loc>
-    <lastmod>2020-08-18T07:39:58+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/neuroscience/</loc>
-    <lastmod>2020-08-18T07:39:58+05:45</lastmod>
+    <lastmod>2020-08-29T17:35:09+05:45</lastmod>
   </url>
   
   <url>
     <loc>https://dragarok.github.io/braindump/2020/08/tips-from-entrepreneurs/</loc>
-    <lastmod>2020-08-13T07:21:04+05:45</lastmod>
+    <lastmod>2020-08-28T06:51:27+05:45</lastmod>
   </url>
   
   <url>
@@ -74,11 +219,6 @@
   
   <url>
     <loc>https://dragarok.github.io/tags/shortcuts/</loc>
-    <lastmod>2020-08-12T13:23:08+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/tips/</loc>
     <lastmod>2020-08-12T13:23:08+05:45</lastmod>
   </url>
   
@@ -144,12 +284,12 @@
   
   <url>
     <loc>https://dragarok.github.io/ai/</loc>
-    <lastmod>2020-08-16T08:49:28+05:45</lastmod>
+    <lastmod>2020-08-20T07:26:00+05:45</lastmod>
   </url>
   
   <url>
     <loc>https://dragarok.github.io/ai/neural_odes/</loc>
-    <lastmod>2020-08-16T08:49:28+05:45</lastmod>
+    <lastmod>2020-08-20T07:26:00+05:45</lastmod>
   </url>
   
   <url>
@@ -179,22 +319,12 @@
   
   <url>
     <loc>https://dragarok.github.io/posts/</loc>
-    <lastmod>2020-07-06T10:55:38+05:45</lastmod>
+    <lastmod>2020-09-22T06:37:45+05:45</lastmod>
   </url>
   
   <url>
     <loc>https://dragarok.github.io/braindump/2020/05/anatomy-directions/</loc>
     <lastmod>2020-05-13T04:52:56+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/git/</loc>
-    <lastmod>2020-05-07T07:10:51+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/05/git-commands/</loc>
-    <lastmod>2020-05-07T07:10:51+05:45</lastmod>
   </url>
   
   <url>
@@ -253,8 +383,18 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/tags/poem/</loc>
+    <lastmod>2020-09-22T06:37:45+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/tags/thoughts/</loc>
     <lastmod>2020-05-01T05:53:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/posts/2020/05/%E0%A4%97%E0%A4%9C%E0%A4%B2/</loc>
+    <lastmod>2020-09-22T06:37:45+05:45</lastmod>
   </url>
   
   <url>
@@ -395,6 +535,11 @@
   <url>
     <loc>https://dragarok.github.io/books/13-steps-to-bloody-good-luck/</loc>
     <lastmod>2020-04-27T02:21:21+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
   </url>
   
   <url>
@@ -943,11 +1088,6 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/books/the-psychedelic-explorers-guide-safe-therapeutic-and-sacred-journeys/</loc>
-    <lastmod>2020-04-26T03:06:45+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/books/the-slight-edge-turning-simple-disciplines-into-massive-success-and-happiness/</loc>
     <lastmod>2020-04-26T03:06:43+05:45</lastmod>
   </url>
@@ -1068,6 +1208,46 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/graph-signal-processing/</loc>
+    <lastmod>2020-04-21T05:57:03+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/graph-convolutions/</loc>
+    <lastmod>2020-04-21T05:54:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/fast-graphconv-nets/</loc>
+    <lastmod>2020-04-21T05:53:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/monets/</loc>
+    <lastmod>2020-04-21T05:53:35+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/motifs/</loc>
+    <lastmod>2020-04-21T05:53:26+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/chebnets/</loc>
+    <lastmod>2020-04-21T05:53:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/cayley-nets/</loc>
+    <lastmod>2020-04-21T05:52:54+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/graph-data-structures/</loc>
+    <lastmod>2020-04-21T05:52:14+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/braindump/2020/04/array-data-structures/</loc>
     <lastmod>2020-04-21T05:51:27+05:45</lastmod>
   </url>
@@ -1093,23 +1273,38 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/braindump/2020/04/data-structures/</loc>
-    <lastmod>2020-04-21T05:41:02+05:45</lastmod>
+    <loc>https://dragarok.github.io/braindump/2020/04/emacs-tips/</loc>
+    <lastmod>2020-04-20T05:07:00+05:45</lastmod>
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/datastructure/</loc>
-    <lastmod>2020-04-21T05:41:02+05:45</lastmod>
+    <loc>https://dragarok.github.io/tags/architecture/</loc>
+    <lastmod>2020-05-02T04:04:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/efficient-nets/</loc>
+    <lastmod>2020-04-19T19:28:53+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/vision/</loc>
+    <lastmod>2020-05-02T04:04:27+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/graph/</loc>
+    <lastmod>2020-05-02T03:44:39+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/graph-neural-networks/</loc>
+    <lastmod>2020-04-19T19:24:20+05:45</lastmod>
   </url>
   
   <url>
     <loc>https://dragarok.github.io/braindump/2020/04/references/</loc>
     <lastmod>2020-04-19T18:43:55+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/04/gitconfig/</loc>
-    <lastmod>2020-04-19T18:43:16+05:45</lastmod>
   </url>
   
   <url>
@@ -1120,6 +1315,11 @@
   <url>
     <loc>https://dragarok.github.io/posts/2020/04/peak/</loc>
     <lastmod>2020-04-19T16:22:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</loc>
+    <lastmod>2020-04-19T16:17:16+05:45</lastmod>
   </url>
   
   <url>
@@ -1188,6 +1388,21 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/numpy/</loc>
+    <lastmod>2020-04-19T16:00:50+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/numpy/</loc>
+    <lastmod>2020-05-02T03:40:18+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/python/</loc>
+    <lastmod>2020-05-18T03:41:41+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/braindump/2020/04/rigveda/</loc>
     <lastmod>2020-04-19T16:00:49+05:45</lastmod>
   </url>
@@ -1223,6 +1438,36 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/tags/markov/</loc>
+    <lastmod>2020-05-02T03:40:16+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/markov-nets/</loc>
+    <lastmod>2020-04-19T16:00:44+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/convolution/</loc>
+    <lastmod>2020-04-19T16:00:43+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/convolution/</loc>
+    <lastmod>2020-05-02T03:40:04+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/categories/machinelearning/</loc>
+    <lastmod>2020-05-02T03:40:04+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/emacs-completion/</loc>
+    <lastmod>2020-04-19T16:00:42+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/braindump/2020/04/linux-tip/</loc>
     <lastmod>2020-04-19T16:00:41+05:45</lastmod>
   </url>
@@ -1230,6 +1475,16 @@
   <url>
     <loc>https://dragarok.github.io/tags/config/</loc>
     <lastmod>2020-04-19T16:00:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/rcnn/</loc>
+    <lastmod>2020-04-19T16:00:40+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/rcnn/</loc>
+    <lastmod>2020-05-02T03:40:19+05:45</lastmod>
   </url>
   
   <url>
@@ -1258,12 +1513,22 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/graph-neural-nets/</loc>
+    <lastmod>2020-04-19T16:00:36+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/braindump/2020/04/github-sec/</loc>
     <lastmod>2020-04-19T16:00:35+05:45</lastmod>
   </url>
   
   <url>
     <loc>https://dragarok.github.io/tags/design/</loc>
+    <lastmod>2020-04-19T16:00:34+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/image-processing-pipeline/</loc>
     <lastmod>2020-04-19T16:00:34+05:45</lastmod>
   </url>
   
@@ -1278,8 +1543,43 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/tags/problemsolving/</loc>
+    <lastmod>2020-05-02T03:40:09+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/causality/</loc>
+    <lastmod>2020-05-02T03:40:03+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/ml/</loc>
+    <lastmod>2020-05-02T03:40:03+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/ml-causality/</loc>
+    <lastmod>2020-04-19T16:00:33+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/preprocess/</loc>
+    <lastmod>2020-04-19T16:00:32+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/scipy/</loc>
+    <lastmod>2020-04-19T16:00:31+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/braindump/2020/04/gayatri-mantra/</loc>
     <lastmod>2020-04-19T16:00:28+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/meena/</loc>
+    <lastmod>2020-04-19T16:00:27+05:45</lastmod>
   </url>
   
   <url>
@@ -1288,13 +1588,13 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/oneliner/</loc>
+    <loc>https://dragarok.github.io/braindump/2020/04/emacs-tramp/</loc>
     <lastmod>2020-04-19T16:00:25+05:45</lastmod>
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/python/</loc>
-    <lastmod>2020-05-18T03:41:41+05:45</lastmod>
+    <loc>https://dragarok.github.io/tags/oneliner/</loc>
+    <lastmod>2020-04-19T16:00:25+05:45</lastmod>
   </url>
   
   <url>
@@ -1338,6 +1638,11 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/nn-interpretability/</loc>
+    <lastmod>2020-04-19T16:00:20+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/categories/emacs/</loc>
     <lastmod>2020-04-19T16:00:19+05:45</lastmod>
   </url>
@@ -1345,6 +1650,26 @@
   <url>
     <loc>https://dragarok.github.io/braindump/2020/04/odi/</loc>
     <lastmod>2020-04-19T16:00:19+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/ml-paper-questions/</loc>
+    <lastmod>2020-04-19T16:00:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/ml-useful/</loc>
+    <lastmod>2020-04-19T16:00:13+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/mathematics/</loc>
+    <lastmod>2020-05-02T03:40:14+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/matlab/</loc>
+    <lastmod>2020-04-19T16:00:11+05:45</lastmod>
   </url>
   
   <url>
@@ -1360,6 +1685,16 @@
   <url>
     <loc>https://dragarok.github.io/tags/thought/</loc>
     <lastmod>2020-04-19T16:00:10+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/topology/</loc>
+    <lastmod>2020-04-19T16:00:08+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/topology/</loc>
+    <lastmod>2020-05-02T04:00:57+05:45</lastmod>
   </url>
   
   <url>
@@ -1468,6 +1803,11 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</loc>
+    <lastmod>2020-04-19T15:59:47+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/braindump/2020/04/para/</loc>
     <lastmod>2020-04-19T15:59:46+05:45</lastmod>
   </url>
@@ -1475,6 +1815,21 @@
   <url>
     <loc>https://dragarok.github.io/tags/para/</loc>
     <lastmod>2020-04-19T15:59:46+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/matplotlib/</loc>
+    <lastmod>2020-04-19T15:59:45+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/matplotlib/</loc>
+    <lastmod>2020-05-02T03:40:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/mcmc-methods/</loc>
+    <lastmod>2020-04-19T15:59:44+05:45</lastmod>
   </url>
   
   <url>
@@ -1505,6 +1860,16 @@
   <url>
     <loc>https://dragarok.github.io/braindump/2020/04/subconscious-reprogramming/</loc>
     <lastmod>2020-04-19T15:59:38+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/2017nov14-reminder-to-myself/</loc>
+    <lastmod>2020-04-19T15:59:37+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/reminder/</loc>
+    <lastmod>2020-04-19T15:59:37+05:45</lastmod>
   </url>
   
   <url>
@@ -1553,8 +1918,43 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/emacs-windows-installation/</loc>
+    <lastmod>2020-04-19T15:59:31+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/nlp/</loc>
+    <lastmod>2020-05-02T03:46:24+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/text-text-transformers/</loc>
+    <lastmod>2020-04-19T15:59:29+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/ra-and-bi/</loc>
+    <lastmod>2020-04-19T15:59:28+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/braindump/2020/04/sqlbasics/</loc>
     <lastmod>2020-04-19T15:59:26+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/bert/</loc>
+    <lastmod>2020-06-16T07:35:03+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/bert-tokenization/</loc>
+    <lastmod>2020-04-19T15:59:25+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/tokenization/</loc>
+    <lastmod>2020-06-16T07:35:03+05:45</lastmod>
   </url>
   
   <url>
@@ -1565,11 +1965,6 @@
   <url>
     <loc>https://dragarok.github.io/braindump/2020/04/euler-621/</loc>
     <lastmod>2020-04-19T15:59:24+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/problemsolving/</loc>
-    <lastmod>2020-05-02T03:40:09+05:45</lastmod>
   </url>
   
   <url>
@@ -1600,6 +1995,16 @@
   <url>
     <loc>https://dragarok.github.io/tags/movie/</loc>
     <lastmod>2020-04-19T15:59:21+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/muzero/</loc>
+    <lastmod>2020-04-19T15:59:20+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/reinforcement/</loc>
+    <lastmod>2020-05-02T03:46:03+05:45</lastmod>
   </url>
   
   <url>
@@ -1635,6 +2040,21 @@
   <url>
     <loc>https://dragarok.github.io/tags/photoshop/</loc>
     <lastmod>2020-04-19T15:59:14+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/controlsystem/</loc>
+    <lastmod>2020-05-02T03:40:13+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/kalman/</loc>
+    <lastmod>2020-04-19T15:59:12+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/tags/kalman/</loc>
+    <lastmod>2020-05-02T03:40:13+05:45</lastmod>
   </url>
   
   <url>
@@ -1728,6 +2148,16 @@
   </url>
   
   <url>
+    <loc>https://dragarok.github.io/tags/bayes/</loc>
+    <lastmod>2020-08-12T13:07:15+05:45</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dragarok.github.io/braindump/2020/04/bayesian-prior/</loc>
+    <lastmod>2020-04-19T15:58:50+05:45</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dragarok.github.io/braindump/2020/04/ctf-resource/</loc>
     <lastmod>2020-04-19T15:58:47+05:45</lastmod>
   </url>
@@ -1738,17 +2168,7 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/architecture/</loc>
-    <lastmod>2020-05-02T04:04:27+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/ai/muzero/</loc>
-    <lastmod>2020-05-02T03:46:03+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/reinforcement/</loc>
     <lastmod>2020-05-02T03:46:03+05:45</lastmod>
   </url>
   
@@ -1758,22 +2178,12 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/nlp/</loc>
-    <lastmod>2020-05-02T03:46:24+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/ai/t2t_transformers/</loc>
     <lastmod>2020-05-02T03:46:24+05:45</lastmod>
   </url>
   
   <url>
     <loc>https://dragarok.github.io/ai/efficient_nets/</loc>
-    <lastmod>2020-05-02T04:04:27+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/vision/</loc>
     <lastmod>2020-05-02T04:04:27+05:45</lastmod>
   </url>
   
@@ -1800,11 +2210,6 @@
   <url>
     <loc>https://dragarok.github.io/ai/fast_graphconv_nets/</loc>
     <lastmod>2020-05-02T04:09:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/graph/</loc>
-    <lastmod>2020-05-02T03:44:39+05:45</lastmod>
   </url>
   
   <url>
@@ -1868,11 +2273,6 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/topology/</loc>
-    <lastmod>2020-05-02T04:00:57+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/tags/anaconda/</loc>
     <lastmod>2020-05-18T03:41:41+05:45</lastmod>
   </url>
@@ -1898,33 +2298,13 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/bert/</loc>
-    <lastmod>2020-06-16T07:35:03+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/ai/tokenizing_for_bert/</loc>
     <lastmod>2020-06-16T07:35:03+05:45</lastmod>
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/causality/</loc>
-    <lastmod>2020-05-02T03:40:03+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/ai/image_processing_pipeline/</loc>
     <lastmod>2020-05-02T03:40:09+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/categories/machinelearning/</loc>
-    <lastmod>2020-05-02T03:40:04+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/markov/</loc>
-    <lastmod>2020-05-02T03:40:16+05:45</lastmod>
   </url>
   
   <url>
@@ -1935,11 +2315,6 @@
   <url>
     <loc>https://dragarok.github.io/ai/mcmcmethods/</loc>
     <lastmod>2020-05-02T03:40:16+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/ml/</loc>
-    <lastmod>2020-05-02T03:40:03+05:45</lastmod>
   </url>
   
   <url>
@@ -1968,21 +2343,6 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/rcnn/</loc>
-    <lastmod>2020-05-02T03:40:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/tokenization/</loc>
-    <lastmod>2020-06-16T07:35:03+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/bayes/</loc>
-    <lastmod>2020-08-12T13:07:15+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/ai/bayesianprior/</loc>
     <lastmod>2020-08-12T13:07:15+05:45</lastmod>
   </url>
@@ -1990,16 +2350,6 @@
   <url>
     <loc>https://dragarok.github.io/ai/matplotlib/</loc>
     <lastmod>2020-05-02T03:40:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/matplotlib/</loc>
-    <lastmod>2020-05-02T03:40:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/mathematics/</loc>
-    <lastmod>2020-05-02T03:40:14+05:45</lastmod>
   </url>
   
   <url>
@@ -2018,23 +2368,8 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/convolution/</loc>
-    <lastmod>2020-05-02T03:40:04+05:45</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dragarok.github.io/ai/numpy/</loc>
     <lastmod>2020-05-02T03:40:18+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/numpy/</loc>
-    <lastmod>2020-05-02T03:40:18+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/controlsystem/</loc>
-    <lastmod>2020-05-02T03:40:13+05:45</lastmod>
   </url>
   
   <url>
@@ -2043,18 +2378,8 @@
   </url>
   
   <url>
-    <loc>https://dragarok.github.io/tags/kalman/</loc>
-    <lastmod>2020-05-02T03:40:13+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/poem/</loc>
-    <lastmod>2020-05-01T08:16:10+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/posts/2015/05/%E0%A4%97%E0%A4%9C%E0%A4%B2/</loc>
-    <lastmod>2020-05-01T08:16:10+05:45</lastmod>
+    <loc>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</loc>
+    <lastmod>2020-04-19T15:59:13+05:45</lastmod>
   </url>
   
   <url>

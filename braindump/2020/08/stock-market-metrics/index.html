@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Notes In the short run, the market is a voting machine but in the long run it is a weighing machine. &amp;ndash; Warren Buffett. This means fools will often have bad companies go high on the market on shorter runs but eventually the companies that have true value will rise later.
+Price is what you pay, value is what you get. &amp;ndash; Warren Buffett. The value of a company at a given time is fixed, the price for the stocks can either be high or low." />
+<meta name="keywords" content="Blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/braindump/2020/08/stock-market-metrics/" />
+
+
+    <title>
+        
+            Stock Market Metrics :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+<meta itemprop="name" content="Stock Market Metrics">
+<meta itemprop="description" content="Notes In the short run, the market is a voting machine but in the long run it is a weighing machine. &ndash; Warren Buffett. This means fools will often have bad companies go high on the market on shorter runs but eventually the companies that have true value will rise later.
+Price is what you pay, value is what you get. &ndash; Warren Buffett. The value of a company at a given time is fixed, the price for the stocks can either be high or low.">
+<meta itemprop="datePublished" content="2020-08-31T00:00:00+05:45" />
+<meta itemprop="dateModified" content="2020-09-15T08:08:22+05:45" />
+<meta itemprop="wordCount" content="1459">
+<meta itemprop="image" content="https://dragarok.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dragarok.github.io/"/>
+
+<meta name="twitter:title" content="Stock Market Metrics"/>
+<meta name="twitter:description" content="Notes In the short run, the market is a voting machine but in the long run it is a weighing machine. &ndash; Warren Buffett. This means fools will often have bad companies go high on the market on shorter runs but eventually the companies that have true value will rise later.
+Price is what you pay, value is what you get. &ndash; Warren Buffett. The value of a company at a given time is fixed, the price for the stocks can either be high or low."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-08-31 00:00:00 &#43;0545 &#43;0545" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">~</span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>7 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://dragarok.github.io/braindump/2020/08/stock-market-metrics/">Stock Market Metrics</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <h2 id="notes">Notes</h2>
+<p>In the short run, the market is a voting machine but in the long run it is a
+weighing machine. &ndash; Warren Buffett. This means fools will often have bad
+companies go high on the market on shorter runs but eventually the companies
+that have true value will rise later.</p>
+<p>Price is what you pay, value is what you get. &ndash; Warren Buffett. The value of a
+company at a given time is fixed, the price for the stocks can either be high or
+low. No matter what price you pay for stock, it&rsquo;s the same value you get.</p>
+<p>If you buy $1 worth of growing business in less than $1, you will make money in
+the long run.</p>
+<h3 id="value-of-a-company">Value of a company</h3>
+<p>If company has to rely on operations alone to grow and pay its bills, it&rsquo;s the
+intrinsic value of the company.
+The critical investment factor is determining the intrinsic value of a business
+and paying a fair or bargain price. &ndash; Warren Buffett</p>
+<p><strong>Value = Shareholder equity + Discounted value of cash that can be taken out</strong></p>
+<p><em>Shareholder Equity</em> is a company’s net worth. It is essentially the sum of money
+investors would be entitled to if the company stopped operations, sold off all
+of its assets, paid off its debts, and distributed cash to owners. Shareholder
+Equity is easily found on any balance sheet of any company.</p>
+<p><em>Intrinsic value</em> can be defined simply: It is the discounted value of the cash
+that can be taken out of a business during its remaining life.</p>
+<p>The <em>owner earnings calculation</em> tells us whether or not our business could
+survive, and thrive, on its operations alone, or if it constantly needs to find
+alternative sources of cash (selling stock, taking on debt, etc) to grow.</p>
+<p><em>Reported Earnings</em> (the earnings Wall Street adores) plus <em>Non-Cash Charges</em> (tax
+write-offs that did not actually require cash) minus <em>Capital Expenditures</em> (the
+cash the business must spend to keep product pumping off the assembly line, so
+to speak).</p>
+<p>Why, then, are “cash flow” numbers so popular today? In answer, we confess our
+cynicism: we believe these numbers are frequently used by marketers of
+businesses and securities in attempts to justify the unjustifiable (and thereby
+to sell what should be the unsalable)…though dentists correctly claim that if
+you ignore your teeth they’ll go away, the same is not true for [capital
+expenditures]. &ndash; Warren Buffett
+For that use J&amp;J evaluation.</p>
+<p>What are you willing to pay today to end up with $50 next year? Would you pay
+$50? $45? $20? Your answer to that is the basis for the next step in valuing a
+business.</p>
+<p><strong>Value</strong>
+The total value of something is what someone is willing to pay for it minus all
+the effort you have done to obtain it. If the effort alone costs you more than
+what money someone is willing to pay for it, then it has negative value.</p>
+<h3 id="stock-valuation-concepts">Stock Valuation Concepts</h3>
+<p>Stock Valuation = Past and current numbers + Future Narrative</p>
+<ol>
+<li><strong>Stock Valuation is an art</strong>. You can have the same resources but the overall
+output that can come with similar resources is qualitative side of stock
+valuation.</li>
+<li><strong>Stock Valuation is a range not an absolute.</strong> Possible upside and downside of
+the company can be valuated using different scenarios.</li>
+<li><strong>Benjamin Graham&rsquo;s Formula</strong>:</li>
+</ol>
+<p>\begin{equation}V *=E P S \times(8.5+2 g)\end{equation}</p>
+<h2 id="share-evaluation-metrics">Share Evaluation Metrics</h2>
+<h3 id="return-on-investment">Return on Investment</h3>
+<ul>
+<li>Money company has made or lost on an investment.</li>
+<li>You buy something for $10 and sold it later for $20, it&rsquo;s 100% ROI.</li>
+<li>It&rsquo;s the returns that you get from investment divided by your cost of
+investment.</li>
+</ul>
+<h3 id="free-cash-flow">Free Cash Flow</h3>
+<ul>
+<li>Cash produced by the company minus it&rsquo;s expenditures.</li>
+<li>Capital left after company pays for operating expenses and capital expenditures.</li>
+<li>Shows if company is able to run smoothly and also to pay dividends to shareholders.</li>
+<li>Company can have increasing FCF either due to reduced operating costs or more
+sales growth.</li>
+</ul>
+<h3 id="return-on-equity">Return on Equity</h3>
+<ul>
+<li>Measures a corporation&rsquo;s profitability.</li>
+<li>Profit divided by amount of equity or total amount of money invested in the
+company.</li>
+<li>Higher ROE means company is more efficient and are able to make more money
+with less investment.</li>
+</ul>
+<h3 id="price-to-earnings-ratio">Price to Earnings ratio</h3>
+<ul>
+<li>Know whether the stock is undervalued or overvalued.</li>
+<li>High P/E ratio means stock&rsquo;s price is expensive related to it&rsquo;s earnings and
+thus overvalued.</li>
+<li>By finding stocks with less P/E values, for same level of financial
+performance you get more stocks.</li>
+<li>The only downside is that it uses past earnings as  a measure for prediction
+of future returns which might not always be the case. Also it doesn&rsquo;t take
+into account the growth of the earnings.</li>
+<li><strong>Important for comparing companies within the same industry</strong>.</li>
+</ul>
+<h3 id="price-to-book-ratio">Price to Book ratio</h3>
+<ul>
+<li>Ratio of net values [ Assets - Liabilities ] to it&rsquo;s market capitalization.</li>
+<li>Also the ratio of stock&rsquo;s share price to the book value per share (BVPS).</li>
+<li>Market price is price investors are willing to pay for the company&rsquo;s stock
+while book value is a conservative measure derived from company&rsquo;s net value.</li>
+<li>P/B ratio of 0.95, 1 or 1.1 means the stock is nearly at book value. So, it is
+useful when the number differs from 1.</li>
+<li>A ratio of 0.5 would mean the stock price is at 50% of company&rsquo;s book value:
+so good opportunity for investment.</li>
+</ul>
+<h3 id="debt-to-equity-ratio">Debt to Equity ratio</h3>
+<ul>
+<li>To know how a company finances it&rsquo;s assets.</li>
+<li>A low debt-to-equity ratio means the company uses a lower amount of debt for
+financing versus shareholder equity.</li>
+<li>Too much debt can pose a risk to company if they don&rsquo;t have enough cash flow
+to meet their obligations.</li>
+<li>A high D/E doesn&rsquo;t mean a company is run poorly. It varies with industry type.</li>
+<li>Some industries with a lot of fixed assets, such as the auto and construction
+industries, typically have higher ratios than companies in other industries.</li>
+</ul>
+<h3 id="price-earnings-to-growth-ratio">Price Earnings to Growth Ratio</h3>
+<ul>
+<li>Modified version of P/E to take growth into account.</li>
+<li>P/E ratio divided by earnings growth.</li>
+<li>PEG &lt; 1 means stock&rsquo;s undervalued since price is low compared to company&rsquo;s
+expected earnings growth.</li>
+</ul>
+<h3 id="payout-ratio">Payout ratio</h3>
+<ul>
+<li>Can be an important metric if there&rsquo;s a question about the dividend&rsquo;s truth.</li>
+<li>Annual dividend rate divided by earnings.</li>
+<li>Closer a payout ratio is to 100% or higher, the less stable the future
+dividend could be.</li>
+<li>Payout ratios of 60% or less with a history of increasing the dividend can be
+seen as good metrics to judge a company.</li>
+</ul>
+<h3 id="earnings-per-share">Earnings Per Share</h3>
+<ul>
+<li>Take the profit, subtract the dividends and divide by the number of shares.</li>
+<li>Without expenses, this information doesn&rsquo;t clarify the whole picture.</li>
+</ul>
+<h3 id="compound-annual-growth-rate">Compound Annual Growth Rate</h3>
+<ul>
+<li>Measures annual growth rate of an investment.</li>
+<li>Rather than year to year, it&rsquo;s generally useful to take average over time to
+time rather than year by year.</li>
+</ul>
+<h3 id="beta">Beta</h3>
+<ul>
+<li>Measurement of how reactive a stock is compared to overall market.</li>
+<li>Beta of 1 means in line with the market.</li>
+<li>Less than 1 means less reactive to market swings.</li>
+</ul>
+<h3 id="earnings-yield">Earnings Yield</h3>
+<ul>
+<li>Earnings Yield = Net Profit / Market Cap or P/E upside down</li>
+<li>Good way to compare to treasury or bond yields to determine the attractiveness
+of the investment.</li>
+</ul>
+<h3 id="pitroski-f-score">Pitroski F-score</h3>
+<ul>
+<li>In 2008, S&amp;P was nearly down by 40%.</li>
+<li>Pitroski noticed when reviewing stocks with very low price-to-book value that
+many of them were in poor  financial shape, unlikely to survive and deserving
+of their low valuation. Piotroski set  out to devise a system to take these
+low price-to-book stock lists and  mechanically filter out the ones that were
+unlikely to survive and prosper,  leaving a number of potentially attractive
+investment opportunities.</li>
+<li>Nine different criterias for judging company&rsquo;s performance between past 2
+years. Stock gets &lsquo;1&rsquo; for each criteria passed and &lsquo;0&rsquo; for if it does not. If
+both years show identical value, &lsquo;0.5&rsquo; is given. All scores are then added up.
+Scores greater than 8 are worthy of consideration.
+<ul>
+<li><strong>Net Income</strong>: &lsquo;1&rsquo; if positive</li>
+<li><strong>Operating Cash Flow</strong>: &lsquo;1&rsquo; if last year&rsquo;s operating cash flow number is
+positive.</li>
+<li><strong>Returns on Assets Increasing</strong>: &lsquo;1&rsquo; if last year&rsquo;s ROA is greater than prior year.</li>
+<li><strong>Quality of Earnings</strong>: &lsquo;1&rsquo; if operating cash flow &gt; Income.</li>
+<li><strong>Long term debt vs Assets</strong>: &lsquo;1&rsquo; if long term debt to assets ratio is lower
+than year ago number.</li>
+<li><strong>Current ratio</strong>: &lsquo;1&rsquo; if short term assets/ short term liabilities ratio
+greater than previous year.</li>
+<li><strong>Shares Outstanding</strong>: &lsquo;1&rsquo; if outstanding shares is lower or same as prior year.</li>
+<li><strong>Gross Margin</strong>: &lsquo;1&rsquo; if gross margin from last year exceeds previous year.</li>
+<li><strong>Asset Turnover</strong>: &lsquo;1&rsquo; if rise in revenues exceeds rise in total assets.</li>
+</ul>
+</li>
+<li>Tests #5 and #6 are good financial health measures, a problem with some MFI
+stocks. Tests #2 and #7 can red flag potential accounting oddities, and some
+of the others are measures of business momentum.</li>
+</ul>
+<h2 id="cheatsheet">Cheatsheet</h2>
+<pre><code>ID: 544ef5c7-e8ee-4ba7-9457-11c150e0569d
+</code></pre>
+<figure>
+    <img src="../../../../ox-hugo/_20200915_0739461*-kWLzj4FkyTK672lTFr3Cw.png"/> 
+</figure>
+
+<h2 id="references">References:</h2>
+<ul>
+<li><a href="https://seekingalpha.com/article/141340-piotroski-formula-yields-14-promising-investments">https://seekingalpha.com/article/141340-piotroski-formula-yields-14-promising-investments</a></li>
+<li><a href="https://www.investopedia.com/articles/fundamental-analysis/09/five-must-have-metrics-value-investors.asp">https://www.investopedia.com/articles/fundamental-analysis/09/five-must-have-metrics-value-investors.asp</a></li>
+<li><a href="https://www.fool.com/investing/2018/03/21/9-essential-metrics-all-smart-investors-should-kno.aspx">https://www.fool.com/investing/2018/03/21/9-essential-metrics-all-smart-investors-should-kno.aspx</a></li>
+<li><a href="https://medium.com/swlh/the-10-most-powerful-metrics-in-investing-with-cheat-sheet-f0d06378a97d">https://medium.com/swlh/the-10-most-powerful-metrics-in-investing-with-cheat-sheet-f0d06378a97d</a></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1459 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-08-31 00:00 &#43;0545</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other post</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://dragarok.github.io/braindump/2020/09/gitconfig/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Gitconfig</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://dragarok.github.io/braindump/2020/08/plantuml/">
+                                <span class="button__text">Plantuml</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
+            
+                
+            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

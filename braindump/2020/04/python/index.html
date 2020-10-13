@@ -23,6 +23,15 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
 
 
 <link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
@@ -41,13 +50,14 @@
 
 <meta itemprop="name" content="Python">
 <meta itemprop="description" content="&ndash; iteration: -! specific no of times: range(5) -! as long as the variable : for ch in &ldquo;Hello&rdquo; &ndash; querying the directory of the module for objects to use: e.g. import random dir(random) &ndash; asking for help with the object we searched: help(random.randint) &ndash; sleep function: import time time.sleep(5) &ndash; Know that everything is an object in python &ndash; Built in data structures: list, dictionary, tuple and sets -! lists are dynamic and mutable too.">
-<meta itemprop="dateModified" content="2020-04-19T15:59:54&#43;05:45" />
+<meta itemprop="dateModified" content="2020-04-19T15:59:54+05:45" />
 <meta itemprop="wordCount" content="1700">
 <meta itemprop="image" content="https://dragarok.github.io/"/>
 
 
 
-<meta itemprop="keywords" content="python,tips," /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="python,tips," />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Python"/>
@@ -66,7 +76,6 @@
 
 
 
-         
     </head>
 
     <body class="">
@@ -76,8 +85,9 @@
         <a href="../../../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -176,12 +186,12 @@ e.g vowels.union(set(word))
 -! similarly .intersection
 -! can replace several iters of search and for loops to iterate through dictionaries and lists.</p>
 <p>&ndash; what a nice way to print:
-print('\t&rsquo;*2,char)
+print('\t'*2,char)
 &ndash; if print looks messy, #use pprint pretty print
 e.g import pprint
 pprint.pprint(Anything)
 &ndash; functions and methods into a single file used for reuse: module
--! &quot;&rdquo;&rdquo; This is documentation string for function&rdquo;&rdquo;&rdquo;
+-! &quot;&quot;&quot; This is documentation string for function&quot;&quot;&quot;
 -! return bool(result) : True or False
 -! empty set is represented as set() by the interpreter
 -! function annotations are optioinal and informational
@@ -208,12 +218,12 @@ e.g the 1st arg can be written second or anywhere if keyword is specified.
 e.g of setup.py
 from setuptools import setup
 setup(
-name='vsearch&rsquo;,
-version='1.0&rsquo;,
-description='The first vowel search module&rsquo;,
-author='Alok Regmi&rsquo;,
-author_email='alok@protonmail.ch&rsquo;,
-url='alokregmi.com.np&rsquo;,
+name=&lsquo;vsearch&rsquo;,
+version=&lsquo;1.0&rsquo;,
+description=&lsquo;The first vowel search module&rsquo;,
+author=&lsquo;Alok Regmi&rsquo;,
+author_email=&lsquo;<a href="mailto:alok@protonmail.ch">alok@protonmail.ch</a>&rsquo;,
+url=&lsquo;alokregmi.com.np&rsquo;,
 py_modules=[&lsquo;vsearch&rsquo;],
 )
 the readme file needs to be built but doesn&rsquo;t need to contain anything at all.</p>
@@ -259,7 +269,7 @@ The second one calls a method to the same list and same reference so changes the
 -! simplest web server in flask:
 from flask import Flask #this is the class name Flask  with uppercase F
 app=Flask(<!-- raw HTML omitted --><!-- raw HTML omitted -->name<!-- raw HTML omitted --><!-- raw HTML omitted -->) # it creates tn object of type Flask and assigns to app variable</p>
-<p>@app.route('/&rsquo; # decorating a function with a url</p>
+<p>@app.route('/' # decorating a function with a url</p>
 <p>def hello() -&gt; str:
 return &lsquo;Hello in the world of Flask&rsquo;</p>
 <pre><code>app.run()
@@ -269,16 +279,16 @@ return &lsquo;Hello in the world of Flask&rsquo;</p>
 -! {{ }} template directive : indicates value will be provided prior to rendering i.e. argument to a template
 -! {% %} substitute the block of html prior to rendering and is provided by any page that inherits from it.
 -! rendering template:
-@app.route('/entry&rsquo;)
+@app.route('/entry')
 def entry_page() -&gt; &lsquo;html&rsquo;:
-return render_template(&lsquo;entry.html&rsquo;, the_title='Welcome to search4letters web&rsquo;)
+return render_template(&lsquo;entry.html&rsquo;, the_title=&lsquo;Welcome to search4letters web&rsquo;)
 -! handling post data to a decorator:
-@app.route('/search4&rsquo;, methods=[&lsquo;POST&rsquo;]) now the search4 url supports post method
+@app.route('/search4', methods=[&lsquo;POST&rsquo;]) now the search4 url supports post method
 -! debugging mode:
 app.run(debug=True)
 -! using the request data in webapp:
 from flask import request
-@app.route('/search4&rsquo;&hellip;)
+@app.route('/search4'&hellip;)
 def do_search() -&gt; str:
 phrase = request.form[&lsquo;phrase&rsquo;]
 letters = request.form[&lsquo;letters&rsquo;] # this variable in sq brackets need to be defined in html form code.
@@ -288,28 +298,28 @@ return render_template(&lsquo;results.html&rsquo;, the_phrase=phrase, the_letter
 <p>-! redirect to avoid unwanted errors:
 @app.route('/')
 def hello() -&gt; &lsquo;302&rsquo;:
-return redirect('/entry&rsquo;) # annotate to clearly indicate that HTTP status code is returned .</p>
+return redirect('/entry') # annotate to clearly indicate that HTTP status code is returned .</p>
 <p>-! @app.route('/')
-@app.route('/entry&rsquo;)
+@app.route('/entry')
 def do_search()-&gt; &lsquo;html&rsquo;:
 &hellip;.</p>
 <p>&ndash; dunder:
-if <!-- raw HTML omitted --><!-- raw HTML omitted -->name<!-- raw HTML omitted --><!-- raw HTML omitted --> == &lsquo;<!-- raw HTML omitted --><!-- raw HTML omitted -->main<!-- raw HTML omitted --><!-- raw HTML omitted -->&rsquo;:</p>
+if <!-- raw HTML omitted --><!-- raw HTML omitted -->name<!-- raw HTML omitted --><!-- raw HTML omitted --> == &lsquo;<!-- raw HTML omitted --><!-- raw HTML omitted -->main<!-- raw HTML omitted --><!-- raw HTML omitted -->':</p>
 <p>&ndash; Working with files: open, process and close
 -!  todos = open(&lsquo;todos.txt&rsquo;, &lsquo;a&rsquo;)
 print(&lsquo;Put on the trash&rsquo;, file=todos) # printing to filestream
 todos.close()
 -!  tasks = open(&lsquo;todos.txt&rsquo;)
 for chore in tasks:
-print(chore, end=&rsquo;') # there is already a new line in file so it removes the extra new line in between.
+print(chore, end='') # there is already a new line in file so it removes the extra new line in between.
 tasks.close()
 -! modes: r, w , a , x where if file previously exists it fails, xb or x+b
 -! easier opening, processing and closing of a file: use with statement
 with open(&lsquo;todos.txt&rsquo;) as tasks:
 for chore in tasks:
-print(chore, end=&rsquo;')
+print(chore, end='')
 -! printing the data in html with all andgle brackets and so on:
-escape(&lsquo;This is a <!-- raw HTML omitted -->&rsquo;)
+escape(&lsquo;This is a <!-- raw HTML omitted -->')
 from flask import escape</p>
 <pre><code>Pg 257
 </code></pre>
@@ -319,18 +329,18 @@ doing dir we see a lot of methods to work on request.
 but we don&rsquo;t need this info into the log file.
 so we use request.form request.remote_addr request.user_agent
 -! using vertical bars as delimiiters:
-print(req.form, file=log, end='|&rsquo;)
-print(req.remote_addr, file=log, end='|&rsquo;)
+print(req.form, file=log, end='|')
+print(req.remote_addr, file=log, end='|')
 print(res,file=log)</p>
 <p>-! these lines above can be written into one line as:
-print(req.form,req.remote_addr, res,file=log,sep='|&rsquo;)</p>
-<p>-! after use of delimiter we can convert it into list using .split(&lsquo;|&rsquo;)</p>
+print(req.form,req.remote_addr, res,file=log,sep='|')</p>
+<p>-! after use of delimiter we can convert it into list using .split('|')</p>
 <ol>
 <li>first read a line:
 with open(&lsquo;vsearch.log&rsquo;) as log:
 contents = log.readlines()
 return escape(''.join(contents))</li>
-<li>then use the contents and read it using split(&lsquo;|&rsquo;) method.</li>
+<li>then use the contents and read it using split('|') method.</li>
 <li>then you get a list of lists.</li>
 <li>parse it using the proper html tag. <!-- raw HTML omitted --> , <!-- raw HTML omitted --> and so on.</li>
 </ol>

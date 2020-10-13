@@ -25,6 +25,15 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
 
 
 <link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
@@ -45,13 +54,14 @@
 <meta itemprop="description" content="### Author: Debra Cameron;James Elliott;Marc Loy;Eric S. Raymond;Bill Rosenblatt
   loc 14010 - Arguments can be made optional by preceding them with the keyword &amp;optional
   loc 14016 - The first thing let does is define the variables var1, var2, etc., and set them to the initial values value1, value2, etc. Then let executes the statement block, which is a sequence of function calls or values, just like the body of a function.">
-<meta itemprop="dateModified" content="2020-04-26T03:08:18&#43;05:45" />
+<meta itemprop="dateModified" content="2020-04-26T03:08:18+05:45" />
 <meta itemprop="wordCount" content="854">
 <meta itemprop="image" content="https://dragarok.github.io/"/>
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Learning GNU Emacs, 3rd Edition"/>
@@ -72,16 +82,6 @@
 
 
 
-        
-
-
-<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
-
     </head>
 
     <body class="">
@@ -91,8 +91,9 @@
         <a href="../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -174,7 +175,7 @@
 <p>loc 14074 - The form of the message function will be familiar to C programmers. The first argument to message is a format string, which contains text and special formatting instructions of the form % x, where x is one of a few possible letters. For each of these instructions, in the order in which they appear in the format string, message reads the next argument and tries to interpret it according to the letter after the percent sign</p>
 </li>
 <li>
-<p>loc 14101 - For example: (message &ldquo;\&quot;%s\&rdquo; is a string, %d is a number, and %c is a character&rdquo; &ldquo;hi there&rdquo; 142 ?q) causes the message: &ldquo;hi there&rdquo; is a string, 142 is a number, and q is a character</p>
+<p>loc 14101 - For example: (message &ldquo;\&quot;%s\&rdquo; is a string, %d is a number, and %c is a character&quot; &ldquo;hi there&rdquo; 142 ?q) causes the message: &ldquo;hi there&rdquo; is a string, 142 is a number, and q is a character</p>
 </li>
 <li>
 <p>loc 14129 - Now that you can execute the function correctly from a Lisp interaction window, try executing the function with M-x, as with any other Emacs command. Try typing M-x count-words-buffer Enter: you will get the error message [No match]. (You can type C-g to cancel this failed attempt.) You get this error message because you need to &ldquo;register&rdquo; a function with Emacs to make it available for interactive use. The function to do this is interactive, which has the form:</p>

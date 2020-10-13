@@ -26,6 +26,15 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
 
 
 <link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
@@ -47,13 +56,14 @@
   loc 258 - currencies were targeted by worried governments and eventually litigated
   loc 369 - A wallet is simply a collection of addresses and the keys that unlock the funds within.
   loc 512 - The inputs and outputs (debits and credits) do not necessarily add up to the same amount. Instead, outputs add up to slightly less than inputs and the difference represents an implied “transaction fee,”">
-<meta itemprop="dateModified" content="2020-04-26T03:07:48&#43;05:45" />
+<meta itemprop="dateModified" content="2020-04-26T03:07:48+05:45" />
 <meta itemprop="wordCount" content="15914">
 <meta itemprop="image" content="https://dragarok.github.io/"/>
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Mastering Bitcoin: Unlocking Digital Cryptocurrencies"/>
@@ -75,16 +85,6 @@
 
 
 
-        
-
-
-<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
-
     </head>
 
     <body class="">
@@ -94,8 +94,9 @@
         <a href="../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -240,10 +241,10 @@
 <p>loc 1629 - some properties similar to the traditional addition of real numbers that grade school children learn. Given two points P1 and P2 on the elliptic curve, there is a third point P3 = P1 + P2, also on the elliptic curve. Geometrically, this third point P3 is calculated by drawing a line between P1 and P2.</p>
 </li>
 <li>
-<p>loc 1629 - some properties similar to the traditional addition of real numbers that grade school children learn. Given two points P1 and P2 on the elliptic curve, there is a third point P3 = P1 + P2, also on the elliptic curve. Geometrically, this third point P3 is calculated by drawing a line between P1 and P2. This line will intersect the elliptic curve in exactly one additional place. Call this point P3&rsquo; = (x, y). Then reflect in the x-axis to get P3 = (x, –y). There</p>
+<p>loc 1629 - some properties similar to the traditional addition of real numbers that grade school children learn. Given two points P1 and P2 on the elliptic curve, there is a third point P3 = P1 + P2, also on the elliptic curve. Geometrically, this third point P3 is calculated by drawing a line between P1 and P2. This line will intersect the elliptic curve in exactly one additional place. Call this point P3' = (x, y). Then reflect in the x-axis to get P3 = (x, –y). There</p>
 </li>
 <li>
-<p>loc 1629 - some properties similar to the traditional addition of real numbers that grade school children learn. Given two points P1 and P2 on the elliptic curve, there is a third point P3 = P1 + P2, also on the elliptic curve. Geometrically, this third point P3 is calculated by drawing a line between P1 and P2. This line will intersect the elliptic curve in exactly one additional place. Call this point P3&rsquo; = (x, y). Then reflect in the x-axis to get P3 = (x, –y).</p>
+<p>loc 1629 - some properties similar to the traditional addition of real numbers that grade school children learn. Given two points P1 and P2 on the elliptic curve, there is a third point P3 = P1 + P2, also on the elliptic curve. Geometrically, this third point P3 is calculated by drawing a line between P1 and P2. This line will intersect the elliptic curve in exactly one additional place. Call this point P3' = (x, y). Then reflect in the x-axis to get P3 = (x, –y).</p>
 </li>
 <li>
 <p>loc 1634 - If P1 and P2 are the same point, the line “between” P1 and P2 should extend to be the tangent on the curve at this point P1.</p>
@@ -378,7 +379,7 @@
 <p>loc 2354 - Index numbers between 0 and 231–1 (0x0 to 0x7FFFFFFF) are used only for normal derivation. Index numbers between 231 and 232–1 (0x80000000 to 0xFFFFFFFF) are used only for hardened derivation.</p>
 </li>
 <li>
-<p>loc 2357 - To make the index number easier to read and display, the index number for hardened children is displayed starting from zero, but with a prime symbol. The first normal child key is therefore displayed as 0, whereas the first hardened child (index 0x80000000) is displayed as 0&rsquo;.</p>
+<p>loc 2357 - To make the index number easier to read and display, the index number for hardened children is displayed starting from zero, but with a prime symbol. The first normal child key is therefore displayed as 0, whereas the first hardened child (index 0x80000000) is displayed as 0'.</p>
 </li>
 <li>
 <p>loc 2362 - Keys in an HD wallet are identified using a “path”</p>
@@ -396,7 +397,7 @@
 <p>loc 2366 - identifier m/x/y/z describes the key that is the z-th child of key m/x/y, which is the y-th child of key m/x, which is the x-th child of m.</p>
 </li>
 <li>
-<p>loc 2391 - All HD wallets following the BIP0044 structure are identified by the fact that they only used one branch of the tree: m/44&rsquo;/. BIP0044 specifies the structure as consisting of five predefined tree levels: m / purpose&rsquo; / coin_type&rsquo; / account&rsquo; / change / address_index The first-level “purpose” is always set to 44&rsquo;. The second-level “coin_type” specifies the type of cryptocurrency coin, allowing for multicurrency HD wallets where each currency has its own subtree under the second level.</p>
+<p>loc 2391 - All HD wallets following the BIP0044 structure are identified by the fact that they only used one branch of the tree: m/44'/. BIP0044 specifies the structure as consisting of five predefined tree levels: m / purpose' / coin_type' / account' / change / address_index The first-level “purpose” is always set to 44'. The second-level “coin_type” specifies the type of cryptocurrency coin, allowing for multicurrency HD wallets where each currency has its own subtree under the second level.</p>
 </li>
 <li>
 <p>loc 2417 - $ bx seed | bx hd-new &gt; m # create a new master private key from a seed and store in file &ldquo;m&rdquo;</p>
@@ -405,7 +406,7 @@
 <p>loc 2428 - $ cat m | bx hd-private | bx hd-private &ndash;index 12</p>
 </li>
 <li>
-<p>loc 2428 - $ cat m | bx hd-private | bx hd-private &ndash;index 12 &ndash;hard | bx hd-private &ndash;index 4 # generate m/0/12&rsquo;/4</p>
+<p>loc 2428 - $ cat m | bx hd-private | bx hd-private &ndash;index 12 &ndash;hard | bx hd-private &ndash;index 4 # generate m/0/12'/4</p>
 </li>
 <li>
 <p>loc 2444 - BIP0038 proposes a common standard for encrypting private keys with a passphrase and encoding them with Base58Check so that they can be stored securely</p>

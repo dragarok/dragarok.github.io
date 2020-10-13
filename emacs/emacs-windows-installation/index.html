@@ -25,6 +25,15 @@ pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
 
 
 <link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
@@ -45,13 +54,14 @@ pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S 
 <meta itemprop="description" content="Problems with installing   Not having msys2 so that pdftools can&rsquo;t build [install msys]
   Not having mingw so that sqlite can&rsquo;t build for org-roam [choco install mingw] Don&rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&rsquo;s bin to the PATH.
 pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick   Then find a version that supports modules : emax64.">
-<meta itemprop="dateModified" content="2020-08-12T12:51:30&#43;05:45" />
+<meta itemprop="dateModified" content="2020-08-12T12:51:30+05:45" />
 <meta itemprop="wordCount" content="159">
 <meta itemprop="image" content="https://dragarok.github.io/"/>
 
 
 
-<meta itemprop="keywords" content="emacs,windows,guide," /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="emacs,windows,guide," />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Emacs Windows Installation"/>
@@ -72,16 +82,6 @@ pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S 
 
 
 
-        
-
-
-<script src="https://dragarok.github.io/js/mathjax-config.js"></script>
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
-
     </head>
 
     <body class="">
@@ -91,8 +91,9 @@ pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S 
         <a href="../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -177,7 +178,7 @@ tag with helm.</p>
 </ol>
 <h2 id="some-work-to-do">Some work to do:</h2>
 <ol>
-<li>Set HOME=&quot;C:\Users\anywhereyoulike&rdquo;</li>
+<li>Set HOME=&ldquo;C:\Users\anywhereyoulike&rdquo;</li>
 <li>Add msys2\bin to PATH</li>
 <li>Jupyter notebook env directory: $HOME/.conda/</li>
 </ol>

@@ -28,6 +28,15 @@ The most common use is to pass just the encrypted file and the most frequent cha
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
 
 
 <link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
@@ -51,13 +60,14 @@ Decrypt substitution cipher using guesses: https://quipqiup.com/
 Xor cipher: python3 -m pip install &ndash;user xortool
 examples: xortool file.bin xortool -l 11 -c 20 file.bin xortool -x -c &#39; &#39; file.hex xortool -b -f -l 23 -t base64 message.enc
 The most common use is to pass just the encrypted file and the most frequent character (usually 00 for binaries and 20 for text files) - length will be automatically chosen:">
-<meta itemprop="dateModified" content="2020-04-19T15:59:08&#43;05:45" />
+<meta itemprop="dateModified" content="2020-04-19T15:59:08+05:45" />
 <meta itemprop="wordCount" content="544">
 <meta itemprop="image" content="https://dragarok.github.io/"/>
 
 
 
-<meta itemprop="keywords" content="ctf,hacking," /><meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="ctf,hacking," />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="CTF New"/>
@@ -83,7 +93,6 @@ The most common use is to pass just the encrypted file and the most frequent cha
 
 
 
-         
     </head>
 
     <body class="">
@@ -93,8 +102,9 @@ The most common use is to pass just the encrypted file and the most frequent cha
         <a href="../../../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -169,7 +179,7 @@ xortool -b -f -l 23 -t base64 message.enc</p>
 <p>Nozzlr : bruteforce utility, manages threads, multiple wordlists,</p>
 <p>ophcrack: modular utility to crack using rainbow tables in windows</p>
 <p>patator: crack various types of login such as ftp login, smtp, ssh, telnet login and so on</p>
-<p>one_gadget: gem install one_gadget When playing ctf pwn challenges we usually need the one-gadget RCE (remote code execution), which leads to call execve('/bin/sh&rsquo;, NULL, NULL).</p>
+<p>one_gadget: gem install one_gadget When playing ctf pwn challenges we usually need the one-gadget RCE (remote code execution), which leads to call execve('/bin/sh', NULL, NULL).</p>
 <p>This tool automates it , no need to ida and stuff</p>
 <p>e.g. one_gadget /lib/x86_64-linux-gnu/libc.so.6</p>
 <p>pwntools: exploit writing framework for ease of use</p>
@@ -241,9 +251,9 @@ xortool -b -f -l 23 -t base64 message.enc</p>
                 <div class="pagination__buttons">
                     
                         <span class="button previous">
-                            <a href="https://dragarok.github.io/braindump/2020/04/photoshop/">
+                            <a href="https://dragarok.github.io/braindump/2020/04/kalman/">
                                 <span class="button__icon">←</span>
-                                <span class="button__text">Photoshop</span>
+                                <span class="button__text">Kalman</span>
                             </a>
                         </span>
                     

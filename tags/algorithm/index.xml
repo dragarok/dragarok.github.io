@@ -6,11 +6,7 @@
     <description>Recent content in algorithm on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate>
-    
-	<atom:link href="https://dragarok.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithms</title>
       <link>https://dragarok.github.io/braindump/2020/04/algorithms/</link>
@@ -19,6 +15,19 @@
       <guid>https://dragarok.github.io/braindump/2020/04/algorithms/</guid>
       <description>Algorithms Basic rules of complexity definition for removing terms:
  Multiplicative constants can be omitted: 14n2 becomes n2. n^a dominates n^b if a &amp;gt; b: for instance, n^2 dominates n. Any exponential dominates any polynomial: 3^n dominates n^5 (it even dominates 2^n). Likewise, any polynomial dominates any logarithm: n dominates (log n)^3. This also means, for example, that n^2 dominates n* log n.  Techniques to think of counter examples:</description>
+    </item>
+    
+    <item>
+      <title>Graph Algorithms</title>
+      <link>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</link>
+      <pubDate>Sun, 19 Apr 2020 15:59:47 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</guid>
+      <description>Graph Algos:
+Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
+Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes
+Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.
+Edgenode data structure is created which saves the node, weight of edge and the next edgenode reference.</description>
     </item>
     
     <item>
