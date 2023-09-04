@@ -182,17 +182,21 @@ Ask others to join you when you complete one. Let&rsquo;s try what we have at ou
         </figcaption>
 </figure>
 
-<p>caption: Group Photo 11th day
-<img src="/ox-hugo/_20230904_110307screenshot.png" alt=""></p>
+<figure><img src="/ox-hugo/_20230904_110307screenshot.png"
+         alt="Figure 3: Group Photo 11th day"/><figcaption>
+            <p><span class="figure-number">Figure 3: </span>Group Photo 11th day</p>
+        </figcaption>
+</figure>
+
 <figure><img src="/ox-hugo/_20230904_110358screenshot.png"
-         alt="Figure 3: Cloudy view of the Mountains"/><figcaption>
-            <p><span class="figure-number">Figure 3: </span>Cloudy view of the Mountains</p>
+         alt="Figure 4: Cloudy view of the Mountains"/><figcaption>
+            <p><span class="figure-number">Figure 4: </span>Cloudy view of the Mountains</p>
         </figcaption>
 </figure>
 
 <figure><img src="/ox-hugo/_20230904_110459screenshot.png"
-         alt="Figure 4: A Lonely Boat Cr: Dominique"/><figcaption>
-            <p><span class="figure-number">Figure 4: </span>A Lonely Boat Cr: Dominique</p>
+         alt="Figure 5: A Lonely Boat Cr: Dominique"/><figcaption>
+            <p><span class="figure-number">Figure 5: </span>A Lonely Boat Cr: Dominique</p>
         </figcaption>
 </figure>
 
