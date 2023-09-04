@@ -5,24 +5,15 @@
     <link>https://dragarok.github.io/tags/oracle/</link>
     <description>Recent content in oracle on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 07:54:57 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>RA</title>
-      <link>https://dragarok.github.io/braindump/2020/08/ra/</link>
-      <pubDate>Tue, 18 Aug 2020 07:54:57 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/08/ra/</guid>
-      <description>Basic terminologies:  Dimensions Facts  Table and table naming conventions  initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage  Column naming:  Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar.</description>
-    </item>
-    
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:19 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ODI</title>
       <link>https://dragarok.github.io/braindump/2020/04/odi/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:19 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/odi/</guid>
-      <description>Full package for ETL Automation tool: UC4 RMS Server Database  These work together; ODI isn&amp;rsquo;t standalone. All stuffs may be installed in the same RMS server.    Jobs  Handled by (ksh) scripts to run different jobs  UC4  Scheduler Agent: defined in uc4 to connect to RMS server.  defines path of scripts    ODI agent  Connect between server &amp;amp; ODI Can also automate UC4 tasks in newer versions.</description>
+      <description>Full package for ETL Automation tool: UC4 RMS Server Database These work together; ODI isn&amp;rsquo;t standalone. All stuffs may be installed in the same RMS server. Jobs Handled by (ksh) scripts to run different jobs UC4 Scheduler Agent: defined in uc4 to connect to RMS server. defines path of scripts ODI agent Connect between server &amp;amp; ODI Can also automate UC4 tasks in newer versions. Architecture Design Mapping Transform Making of Project Operator Logging Status of jobs Topology Defining connections : physical and logical Physical connections ==&amp;gt; Mapped to logical connections Data model ==&amp;gt; Map table columns to table columns and so on.</description>
     </item>
     
     <item>
@@ -35,7 +26,7 @@
 Dimensions Facts
 Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage
 Column naming: Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC
-  Maintenance columns: insert timestamp, update, close, close_dt</description>
+Maintenance columns: insert timestamp, update, close, close_dt</description>
     </item>
     
     <item>
@@ -44,7 +35,20 @@ Column naming: Naming: Attribute or measure + data type Attribute: Price etc. Da
       <pubDate>Sun, 19 Apr 2020 15:59:53 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/obiee/</guid>
-      <description>Steps  Catalog &amp;ndash;&amp;gt; Get to columns and filters. Change defaults tab to criteria save as give a proper name for result change all columns and filters as necessary. save again go to results then. export results. if &amp;gt; 2500 : export to csv. Edit the sheet  RMS Sales recon Tran data  In tran_data we have item, units, tran_code as major fields. if it belongs to a pack, then it has a ref_pack_no which is a packitem object.</description>
+      <description>Steps Catalog &amp;ndash;&amp;gt; Get to columns and filters. Change defaults tab to criteria save as give a proper name for result change all columns and filters as necessary. save again go to results then. export results. if &amp;gt; 2500 : export to csv. Edit the sheet RMS Sales recon Tran data In tran_data we have item, units, tran_code as major fields. if it belongs to a pack, then it has a ref_pack_no which is a packitem object.</description>
+    </item>
+    
+    <item>
+      <title>RA</title>
+      <link>https://dragarok.github.io/braindump/2020/04/ra/</link>
+      <pubDate>Sun, 19 Apr 2020 15:58:54 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/04/ra/</guid>
+      <description>Basic terminologies:
+Dimensions Facts
+Table and table naming conventions
+initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage Column naming:
+Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt</description>
     </item>
     
   </channel>

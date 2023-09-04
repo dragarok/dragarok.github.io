@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/markov/</link>
     <description>Recent content in markov on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:44 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/markov/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markov Nets</title>
@@ -23,27 +23,6 @@
       <pubDate>Sun, 19 Apr 2020 15:59:44 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/mcmc-methods/</guid>
-      <description>&amp;ndash; MCMC methods allow us to estimate the shape of a posterior distribution in case we can’t compute it directly.
-&amp;ndash; Monte Carlo simulations are just a way of estimating a fixed parameter by repeatedly generating random numbers.
-&amp;ndash; Assuming we have to calculate the area of a circle within the square box. By having points that belong to the circle, we can find out it&amp;rsquo;s area. Since the circle is inside a square with 10 inch sides, the area can be easily calculated as 78.</description>
-    </item>
-    
-    <item>
-      <title>Markov Nets</title>
-      <link>https://dragarok.github.io/ai/markovnets/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/markovnets/</guid>
-      <description>Markov Networks We study this by comparing to Bayesian networks: Burglar, Earthquake, Alarm, He calls, She calls
-&amp;ndash; First, the values do not need to sum to one, that is, the table does not define a probability distribution. It only tells us that configurations with higher values are more likely. Second, there is no conditioning. It is proportional to the joint distribution of all the variables involved, as opposed to conditional distributions in CPDs.</description>
-    </item>
-    
-    <item>
-      <title>MCMC methods</title>
-      <link>https://dragarok.github.io/ai/mcmcmethods/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/mcmcmethods/</guid>
       <description>&amp;ndash; MCMC methods allow us to estimate the shape of a posterior distribution in case we can’t compute it directly.
 &amp;ndash; Monte Carlo simulations are just a way of estimating a fixed parameter by repeatedly generating random numbers.
 &amp;ndash; Assuming we have to calculate the area of a circle within the square box. By having points that belong to the circle, we can find out it&amp;rsquo;s area. Since the circle is inside a square with 10 inch sides, the area can be easily calculated as 78.</description>

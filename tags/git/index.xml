@@ -5,33 +5,37 @@
     <link>https://dragarok.github.io/tags/git/</link>
     <description>Recent content in git on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 23 Sep 2020 21:58:34 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Apr 2020 18:43:16 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Git Commands</title>
-      <link>https://dragarok.github.io/braindump/2020/09/git-commands/</link>
-      <pubDate>Wed, 23 Sep 2020 21:58:34 +0545</pubDate>
+      <title>Gitconfig</title>
+      <link>https://dragarok.github.io/braindump/2020/04/gitconfig/</link>
+      <pubDate>Sun, 19 Apr 2020 18:43:16 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/09/git-commands/</guid>
-      <description>&amp;ndash;tags: Useful &amp;ndash;references: https://learngitbranching.js.org/
-Commands   git add : tracking with git
-  git status : current status of tracked, untracked, changed, committed files.
-  git add filename.extension
-  (only after making the file it can be done)
-  double add command - stages the new changes
-  git commit
-  git add . -&amp;gt; all files are committed
-  git add *.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/gitconfig/</guid>
+      <description>Windows Git Config eval $(ssh-agent -s) ssh-add ~/.ssh/sshkey Add ssh key in one command https://www.howtogeek.com/168147/add-public-ssh-key-to-remote-server-in-a-single-command/
+ssh-keygen -t rsa cat ~/.ssh/id_rsa.pub | ssh user@hostname &amp;lsquo;cat &amp;raquo; .ssh/authorized_keys&amp;rsquo; Change id_rsa as per your key , user, hostname and you are good to go. Need to restart ssh service though from server. </description>
     </item>
     
     <item>
-      <title>Gitconfig</title>
-      <link>https://dragarok.github.io/braindump/2020/09/gitconfig/</link>
-      <pubDate>Sun, 13 Sep 2020 11:00:07 +0545</pubDate>
+      <title>Git Commands</title>
+      <link>https://dragarok.github.io/braindump/2020/04/git-commands/</link>
+      <pubDate>Sun, 19 Apr 2020 18:31:28 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/09/gitconfig/</guid>
-      <description>Windows Git Config  eval $(ssh-agent -s) ssh-add ~/.ssh/sshkey  Add ssh key in one command https://www.howtogeek.com/168147/add-public-ssh-key-to-remote-server-in-a-single-command/
- ssh-keygen -t rsa cat ~/.ssh/id_rsa.pub | ssh user@hostname &amp;lsquo;cat &amp;raquo; .ssh/authorized_keys&amp;rsquo; Change id_rsa as per your key , user, hostname and you are good to go. Need to restart ssh service though from server.  </description>
+      <guid>https://dragarok.github.io/braindump/2020/04/git-commands/</guid>
+      <description>&amp;ndash;tags: Useful
+Commands git add : tracking with git
+git status : current status of tracked, untracked, changed, committed files.
+git add filename.extension
+(only after making the file it can be done)
+double add command - stages the new changes
+git commit
+git add . -&amp;gt; all files are committed
+git add *.html -&amp;gt;only html files are committed
+touch .gitignore
+git branch Mybranch
+git commit -m &amp;lsquo;commit command&amp;rsquo;
+git checkout master</description>
     </item>
     
     <item>
@@ -42,7 +46,7 @@ Commands   git add : tracking with git
       <guid>https://dragarok.github.io/braindump/2020/04/github-sec/</guid>
       <description>Steps to install and use all tools in Android 8.1:
 My specs: Android 8.1 Kernel from kimocoder&amp;rsquo;s Libraries built by myself Hijacker modded for use
- First install Nexmon app and install all tools in /system/xbin Copy the firmware from firmware folder and replace it in /vendor/firmware Place lib files from armeabi directory to /system/lib. Place lib files from arm64 to /system/lib64 Download hijacker modded apk for usage. * Note: You need to turn wifi on first here.</description>
+First install Nexmon app and install all tools in /system/xbin Copy the firmware from firmware folder and replace it in /vendor/firmware Place lib files from armeabi directory to /system/lib. Place lib files from arm64 to /system/lib64 Download hijacker modded apk for usage. * Note: You need to turn wifi on first here.</description>
     </item>
     
   </channel>

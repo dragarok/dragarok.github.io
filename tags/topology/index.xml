@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/topology/</link>
     <description>Recent content in topology on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:08 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/topology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Topology</title>
@@ -16,16 +16,6 @@
       <description>&amp;ndash; Topology is a branch of mathematics which deals with characterizing shapes, space and sets by their connectivity. In topology, we express relationship between two spaces through continuous maps between them.
 &amp;ndash; Mathematical formulation of topology:
 Let M be a set and P(M) be the set of all subsets of M (i.e. power set of M). A set O ⊆ P(M) is called a topology, if all of the following properties are satisfied: (i) O contains the null set and the set M itself.</description>
-    </item>
-    
-    <item>
-      <title>Topology</title>
-      <link>https://dragarok.github.io/ai/topology/</link>
-      <pubDate>Thu, 05 Mar 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/topology/</guid>
-      <description>Topology is a branch of mathematics which deals with characterizing shapes, space  and sets by their connectivity. In topology, we express relationship between two spaces through continuous maps between them.
- Mathematical formulation of topology:  Let M be a set and P(M) be the set of all subsets of M (i.e. power set of M). A set O ⊆ P(M) is called a topology, if all of the following properties are satisfied: (i) O contains the null set and the set M itself.</description>
     </item>
     
   </channel>

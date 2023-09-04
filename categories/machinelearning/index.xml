@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/categories/machinelearning/</link>
     <description>Recent content in machinelearning on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:43 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/categories/machinelearning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Convolution</title>
@@ -26,27 +26,6 @@ In case of 1 * 1 convolution, the convolution helps decrease or increase the fea
       
       <guid>https://dragarok.github.io/braindump/2020/04/ml-causality/</guid>
       <description>Causality in ML: &amp;ndash;Inspirations and References: J. Peters, D. Janzing, and B. Schölkopf. 2017. Elements of Causal Inference - Foundations and Learning Algorithms. MIT</description>
-    </item>
-    
-    <item>
-      <title>ML Causality</title>
-      <link>https://dragarok.github.io/ai/causality_in_ml/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/causality_in_ml/</guid>
-      <description>Causality in ML: &amp;ndash;Inspirations and References: J. Peters, D. Janzing, and B. Schölkopf. 2017. Elements of Causal Inference - Foundations and Learning Algorithms. MIT</description>
-    </item>
-    
-    <item>
-      <title>Convolution</title>
-      <link>https://dragarok.github.io/ai/convolution/</link>
-      <pubDate>Thu, 05 Dec 2019 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/convolution/</guid>
-      <description>Convolution Image will be of shape: (H * W * channels)
-Our kernel will also be of shape (Hk * Wk * channels)
-The number of channels is same as it is volume convolution.
-In case of 1 * 1 convolution, the convolution helps decrease or increase the feature map dimensions.</description>
     </item>
     
   </channel>

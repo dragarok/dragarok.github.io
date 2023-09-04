@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/controlsystem/</link>
     <description>Recent content in controlsystem on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:12 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/controlsystem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kalman</title>
@@ -13,17 +13,6 @@
       <pubDate>Sun, 19 Apr 2020 15:59:12 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/kalman/</guid>
-      <description>&amp;ndash; Such filter is such a general and powerful tool for combining information in the presence of uncertainty.
-&amp;ndash; You can use a Kalman filter in any place where you have uncertain information about some dynamic system, and you can make an educated guess about what the system is going to do next.
-&amp;ndash; And it can take advantage of correlations between crazy phenomena that you maybe wouldn’t have thought to exploit!</description>
-    </item>
-    
-    <item>
-      <title>Kalman</title>
-      <link>https://dragarok.github.io/ai/kalmans/</link>
-      <pubDate>Tue, 05 Nov 2019 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/kalmans/</guid>
       <description>&amp;ndash; Such filter is such a general and powerful tool for combining information in the presence of uncertainty.
 &amp;ndash; You can use a Kalman filter in any place where you have uncertain information about some dynamic system, and you can make an educated guess about what the system is going to do next.
 &amp;ndash; And it can take advantage of correlations between crazy phenomena that you maybe wouldn’t have thought to exploit!</description>

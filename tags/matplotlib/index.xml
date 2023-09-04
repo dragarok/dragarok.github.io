@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/matplotlib/</link>
     <description>Recent content in matplotlib on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:45 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matplotlib</title>
@@ -14,27 +14,13 @@
       
       <guid>https://dragarok.github.io/braindump/2020/04/matplotlib/</guid>
       <description>triangles
-plot(t, t, &amp;lsquo;r&amp;ndash;&amp;rsquo;, t, t**2, &amp;lsquo;bs&amp;rsquo;, t, t**3, &amp;lsquo;g^&#39;)
+plot(t, t, &amp;lsquo;r&amp;ndash;&amp;rsquo;, t, t**2, &amp;lsquo;bs&amp;rsquo;, t, t**3, &amp;lsquo;g^&amp;rsquo;)
 plt.plot(x,y,&amp;lsquo;r&amp;ndash;&amp;rsquo;, linewidth=1.0)
 when lines= plt.plot(x1,y1,x2,y2)
 and the use of subplot() command
 plt.figure(1) # the first figure plt.subplot(211) # the first subplot in the first figure plt.plot([1, 2, 3]) plt.subplot(212) # the second subplot in the first figure plt.plot([4, 5, 6])
 plt.figure(2) # a second figure plt.plot([4, 5, 6]) # creates a subplot(111) by default
 plt.figure(1) # figure 1 current; subplot(212) still current plt.</description>
-    </item>
-    
-    <item>
-      <title>Matplotlib</title>
-      <link>https://dragarok.github.io/ai/matplotlib/</link>
-      <pubDate>Fri, 27 Dec 2019 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/matplotlib/</guid>
-      <description>Matplotlib   plt.axis([x-axis_start, xend, ystart, yend])
-  plt.plot(x,y,&amp;lsquo;color or dots or any fucking thing to represent the numbers&amp;rsquo;)
-  r&amp;ndash; means red dashes and bs means blue squares and g^ means green triangles
-  make a numpy array using arange(start, end, step_size)
-  multiple plot in plot() plot(t, t, &amp;lsquo;r&amp;ndash;&amp;rsquo;, t, t**2, &amp;lsquo;bs&amp;rsquo;, t, t**3, &amp;lsquo;g^&#39;)
-  tuple unpacking with obj_name, comma is the essence</description>
     </item>
     
   </channel>

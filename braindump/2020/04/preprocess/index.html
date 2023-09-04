@@ -6,19 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
 <meta name="description" content="def preprocess_word(word):
-word = word.strip(&#39;\&#39;&amp;quot;?!,.():;&#39;)
-word = re.sub(r&#39;(.)\1&#43;&#39;, r&#39;\1\1&#39;, word)
-word = re.sub(r&#39;(-|\&#39;)&#39;, &amp;lsquo;&amp;rsquo;, word) return word
+word = word.strip(&amp;rsquo;\&amp;rsquo;&amp;quot;?!,.():;&#39;)
+word = re.sub(r&amp;rsquo;(.)\1&#43;&amp;rsquo;, r&amp;rsquo;\1\1&amp;rsquo;, word)
+word = re.sub(r&amp;rsquo;(-|\&amp;rsquo;)&amp;rsquo;, &amp;lsquo;&amp;rsquo;, word) return word
 def is_valid_word(word):
-return (re.search(r&#39;^[a-zA-Z][a-z0-9A-Z\._]*$&#39;, word) is not None)
+return (re.search(r&amp;rsquo;^[a-zA-Z][a-z0-9A-Z\._]*$&amp;rsquo;, word) is not None)
 def handle_emojis(tweet):
-tweet = re.sub(r&#39;(:\s?\)|:-\)|\(\s?:|\(-:|:&#39;\))&#39;, &#39; EMO_POS &amp;lsquo;, tweet)
-tweet = re.sub(r&amp;rsquo;(:\s?D|:-D|x-?D|X-?D)&#39;, &#39; EMO_POS &amp;lsquo;, tweet)
-tweet = re.sub(r&amp;rsquo;(&amp;lt;3|:\*)&#39;, &#39; EMO_POS &amp;lsquo;, tweet)
-tweet = re.sub(r&amp;rsquo;(;-?\)|;-?D|\(-?;)&#39;, &#39; EMO_POS &amp;lsquo;, tweet)
-tweet = re.sub(r&amp;rsquo;(:\s?\(|:-\(|\)\s?:|\)-:)&#39;, &#39; EMO_NEG &amp;lsquo;, tweet)
-tweet = re.sub(r&amp;rsquo;(:,\(|:\&#39;\(|:&amp;quot;\()&#39;, &#39; EMO_NEG &amp;lsquo;, tweet) return tweet" />
-<meta name="keywords" content="Blog" />
+tweet = re.sub(r&amp;rsquo;(:\s?\)|:-\)|\(\s?:|\(-:|:&#39;\))&amp;rsquo;, &amp;rsquo; EMO_POS &amp;lsquo;, tweet)
+tweet = re.sub(r&amp;rsquo;(:\s?D|:-D|x-?D|X-?D)&amp;rsquo;, &amp;rsquo; EMO_POS &amp;lsquo;, tweet)
+tweet = re.sub(r&amp;rsquo;(&amp;lt;3|:\*)&amp;rsquo;, &amp;rsquo; EMO_POS &amp;lsquo;, tweet)
+tweet = re.sub(r&amp;rsquo;(;-?\)|;-?D|\(-?;)&amp;rsquo;, &amp;rsquo; EMO_POS &amp;lsquo;, tweet)
+tweet = re.sub(r&amp;rsquo;(:\s?\(|:-\(|\)\s?:|\)-:)&amp;rsquo;, &amp;rsquo; EMO_NEG &amp;lsquo;, tweet)
+tweet = re.sub(r&amp;rsquo;(:,\(|:\&amp;rsquo;\(|:&amp;quot;\()&amp;rsquo;, &amp;rsquo; EMO_NEG &amp;lsquo;, tweet) return tweet" />
+<meta name="keywords" content="homepage, blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://dragarok.github.io/braindump/2020/04/preprocess/" />
@@ -35,69 +35,55 @@ tweet = re.sub(r&amp;rsquo;(:,\(|:\&#39;\(|:&amp;quot;\()&#39;, &#39; EMO_NEG &a
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-    
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-    
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
+
+
+<link rel="stylesheet" href="/main.min.d235e788b40b442aba9cd6c69fdc330353b2dec27dcbc4235961469d2155f5a9.css">
 
 
 
 
-
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
-
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
-    <link rel="manifest" href="../../../../site.webmanifest">
-    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
 <meta itemprop="name" content="Preprocess">
 <meta itemprop="description" content="def preprocess_word(word):
-word = word.strip(&#39;\&#39;&quot;?!,.():;&#39;)
-word = re.sub(r&#39;(.)\1&#43;&#39;, r&#39;\1\1&#39;, word)
-word = re.sub(r&#39;(-|\&#39;)&#39;, &lsquo;&rsquo;, word) return word
+word = word.strip(&rsquo;\&rsquo;&quot;?!,.():;&#39;)
+word = re.sub(r&rsquo;(.)\1&#43;&rsquo;, r&rsquo;\1\1&rsquo;, word)
+word = re.sub(r&rsquo;(-|\&rsquo;)&rsquo;, &lsquo;&rsquo;, word) return word
 def is_valid_word(word):
-return (re.search(r&#39;^[a-zA-Z][a-z0-9A-Z\._]*$&#39;, word) is not None)
+return (re.search(r&rsquo;^[a-zA-Z][a-z0-9A-Z\._]*$&rsquo;, word) is not None)
 def handle_emojis(tweet):
-tweet = re.sub(r&#39;(:\s?\)|:-\)|\(\s?:|\(-:|:&#39;\))&#39;, &#39; EMO_POS &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(:\s?D|:-D|x-?D|X-?D)&#39;, &#39; EMO_POS &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(&lt;3|:\*)&#39;, &#39; EMO_POS &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(;-?\)|;-?D|\(-?;)&#39;, &#39; EMO_POS &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(:\s?\(|:-\(|\)\s?:|\)-:)&#39;, &#39; EMO_NEG &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(:,\(|:\&#39;\(|:&quot;\()&#39;, &#39; EMO_NEG &lsquo;, tweet) return tweet">
+tweet = re.sub(r&rsquo;(:\s?\)|:-\)|\(\s?:|\(-:|:&#39;\))&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(:\s?D|:-D|x-?D|X-?D)&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(&lt;3|:\*)&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(;-?\)|;-?D|\(-?;)&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(:\s?\(|:-\(|\)\s?:|\)-:)&rsquo;, &rsquo; EMO_NEG &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(:,\(|:\&rsquo;\(|:&quot;\()&rsquo;, &rsquo; EMO_NEG &lsquo;, tweet) return tweet">
 <meta itemprop="dateModified" content="2020-04-19T16:00:32+05:45" />
-<meta itemprop="wordCount" content="259">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="260"><meta itemprop="image" content="https://dragarok.github.io/"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Preprocess"/>
 <meta name="twitter:description" content="def preprocess_word(word):
-word = word.strip(&#39;\&#39;&quot;?!,.():;&#39;)
-word = re.sub(r&#39;(.)\1&#43;&#39;, r&#39;\1\1&#39;, word)
-word = re.sub(r&#39;(-|\&#39;)&#39;, &lsquo;&rsquo;, word) return word
+word = word.strip(&rsquo;\&rsquo;&quot;?!,.():;&#39;)
+word = re.sub(r&rsquo;(.)\1&#43;&rsquo;, r&rsquo;\1\1&rsquo;, word)
+word = re.sub(r&rsquo;(-|\&rsquo;)&rsquo;, &lsquo;&rsquo;, word) return word
 def is_valid_word(word):
-return (re.search(r&#39;^[a-zA-Z][a-z0-9A-Z\._]*$&#39;, word) is not None)
+return (re.search(r&rsquo;^[a-zA-Z][a-z0-9A-Z\._]*$&rsquo;, word) is not None)
 def handle_emojis(tweet):
-tweet = re.sub(r&#39;(:\s?\)|:-\)|\(\s?:|\(-:|:&#39;\))&#39;, &#39; EMO_POS &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(:\s?D|:-D|x-?D|X-?D)&#39;, &#39; EMO_POS &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(&lt;3|:\*)&#39;, &#39; EMO_POS &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(;-?\)|;-?D|\(-?;)&#39;, &#39; EMO_POS &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(:\s?\(|:-\(|\)\s?:|\)-:)&#39;, &#39; EMO_NEG &lsquo;, tweet)
-tweet = re.sub(r&rsquo;(:,\(|:\&#39;\(|:&quot;\()&#39;, &#39; EMO_NEG &lsquo;, tweet) return tweet"/>
+tweet = re.sub(r&rsquo;(:\s?\)|:-\)|\(\s?:|\(-:|:&#39;\))&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(:\s?D|:-D|x-?D|X-?D)&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(&lt;3|:\*)&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(;-?\)|;-?D|\(-?;)&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(:\s?\(|:-\(|\)\s?:|\)-:)&rsquo;, &rsquo; EMO_NEG &lsquo;, tweet)
+tweet = re.sub(r&rsquo;(:,\(|:\&rsquo;\(|:&quot;\()&rsquo;, &rsquo; EMO_NEG &lsquo;, tweet) return tweet"/>
 
 
 
@@ -118,12 +104,11 @@ tweet = re.sub(r&rsquo;(:,\(|:\&#39;\(|:&quot;\()&#39;, &#39; EMO_NEG &lsquo;, t
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="../../../../" style="text-decoration: none;">
+        <a href="/" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">~</span>
+            <span class="logo__mark">></span>
             <span class="logo__text">K4iv41y4</span>
-            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -137,7 +122,7 @@ tweet = re.sub(r&rsquo;(:,\(|:\&#39;\(|:&quot;\()&#39;, &#39; EMO_NEG &lsquo;, t
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
     </ul>
 </nav>
 
@@ -181,31 +166,31 @@ tweet = re.sub(r&rsquo;(:,\(|:\&#39;\(|:&quot;\()&#39;, &#39; EMO_NEG &lsquo;, t
 
             <div class="post-content">
                 <p>def preprocess_word(word):</p>
-<p>word = word.strip('\'&quot;?!,.():;')</p>
-<p>word = re.sub(r'(.)\1+', r'\1\1', word)</p>
-<p>word = re.sub(r'(-|\')', &lsquo;&rsquo;, word)
+<p>word = word.strip(&rsquo;\&rsquo;&quot;?!,.():;')</p>
+<p>word = re.sub(r&rsquo;(.)\1+&rsquo;, r&rsquo;\1\1&rsquo;, word)</p>
+<p>word = re.sub(r&rsquo;(-|\&rsquo;)&rsquo;, &lsquo;&rsquo;, word)
 return word</p>
 <p>def is_valid_word(word):</p>
-<p>return (re.search(r'^[a-zA-Z][a-z0-9A-Z\._]*$', word) is not None)</p>
+<p>return (re.search(r&rsquo;^[a-zA-Z][a-z0-9A-Z\._]*$&rsquo;, word) is not None)</p>
 <p>def handle_emojis(tweet):</p>
-<p>tweet = re.sub(r'(:\s?\)|:-\)|\(\s?:|\(-:|:'\))', ' EMO_POS &lsquo;, tweet)</p>
-<p>tweet = re.sub(r&rsquo;(:\s?D|:-D|x-?D|X-?D)', ' EMO_POS &lsquo;, tweet)</p>
-<p>tweet = re.sub(r&rsquo;(&lt;3|:\*)', ' EMO_POS &lsquo;, tweet)</p>
-<p>tweet = re.sub(r&rsquo;(;-?\)|;-?D|\(-?;)', ' EMO_POS &lsquo;, tweet)</p>
-<p>tweet = re.sub(r&rsquo;(:\s?\(|:-\(|\)\s?:|\)-:)', ' EMO_NEG &lsquo;, tweet)</p>
-<p>tweet = re.sub(r&rsquo;(:,\(|:\'\(|:&quot;\()', ' EMO_NEG &lsquo;, tweet)
+<p>tweet = re.sub(r&rsquo;(:\s?\)|:-\)|\(\s?:|\(-:|:'\))&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)</p>
+<p>tweet = re.sub(r&rsquo;(:\s?D|:-D|x-?D|X-?D)&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)</p>
+<p>tweet = re.sub(r&rsquo;(&lt;3|:\*)&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)</p>
+<p>tweet = re.sub(r&rsquo;(;-?\)|;-?D|\(-?;)&rsquo;, &rsquo; EMO_POS &lsquo;, tweet)</p>
+<p>tweet = re.sub(r&rsquo;(:\s?\(|:-\(|\)\s?:|\)-:)&rsquo;, &rsquo; EMO_NEG &lsquo;, tweet)</p>
+<p>tweet = re.sub(r&rsquo;(:,\(|:\&rsquo;\(|:&quot;\()&rsquo;, &rsquo; EMO_NEG &lsquo;, tweet)
 return tweet</p>
 <p>def preprocess_tweet(tweet):
 processed_tweet = []</p>
 <p>tweet = tweet.lower()</p>
-<p>tweet = re.sub(r&rsquo;((www\.[§]+)|(https?://[§]+))', ' URL &lsquo;, tweet)</p>
-<p>tweet = re.sub(r&rsquo;@[§]+', &lsquo;USER_MENTION&rsquo;, tweet)</p>
-<p>tweet = re.sub(r'#(§+)', r' \1 &lsquo;, tweet)</p>
-<p>tweet = re.sub(r&rsquo;\brt\b', &lsquo;&rsquo;, tweet)</p>
-<p>tweet = re.sub(r'\.{2,}', ' &lsquo;, tweet)</p>
-<p>tweet = tweet.strip(&rsquo; &ldquo;\'')</p>
+<p>tweet = re.sub(r&rsquo;((www\.[§]+)|(https?://[§]+))&rsquo;, &rsquo; URL &lsquo;, tweet)</p>
+<p>tweet = re.sub(r&rsquo;@[§]+&rsquo;, &lsquo;USER_MENTION&rsquo;, tweet)</p>
+<p>tweet = re.sub(r&rsquo;#(§+)&rsquo;, r&rsquo; \1 &lsquo;, tweet)</p>
+<p>tweet = re.sub(r&rsquo;\brt\b&rsquo;, &lsquo;&rsquo;, tweet)</p>
+<p>tweet = re.sub(r&rsquo;\.{2,}&rsquo;, &rsquo; &lsquo;, tweet)</p>
+<p>tweet = tweet.strip(&rsquo; &ldquo;\&rsquo;&rsquo;)</p>
 <p>tweet = handle_emojis(tweet)</p>
-<p>tweet = re.sub(r'\s+', ' &lsquo;, tweet)
+<p>tweet = re.sub(r&rsquo;\s+&rsquo;, &rsquo; &lsquo;, tweet)
 words = tweet.split()</p>
 <p>for word in words:
 word = preprocess_word(word)
@@ -213,32 +198,32 @@ if is_valid_word(word):
 if use_stemmer:
 word = str(porter_stemmer.stem(word))
 processed_tweet.append(word)</p>
-<p>return ' &lsquo;.join(processed_tweet)</p>
+<p>return &rsquo; &lsquo;.join(processed_tweet)</p>
 <p>def preprocess_csv(csv_file_name, processed_file_name, test_file=False):
 save_to_file = open(processed_file_name, &lsquo;w&rsquo;)</p>
 <p>with open(csv_file_name, &lsquo;r&rsquo;) as csv:
 lines = csv.readlines()
 total = len(lines)
 for i, line in enumerate(lines):
-tweet_id = line[:line.find(&rsquo;,')]
+tweet_id = line[:line.find(&rsquo;,&rsquo;)]
 if not test_file:
-line = line[1 + line.find(&rsquo;,'):]
-positive = int(line[:line.find(',')])
-line = line[1 + line.find(','):]
+line = line[1 + line.find(&rsquo;,&rsquo;):]
+positive = int(line[:line.find(&rsquo;,&rsquo;)])
+line = line[1 + line.find(&rsquo;,&rsquo;):]
 tweet = line
 processed_tweet = preprocess_tweet(tweet)
 if not test_file:
-save_to_file.write('%s,%d,%s\n' %
+save_to_file.write(&rsquo;%s,%d,%s\n&rsquo; %
 (tweet_id, positive, processed_tweet))
 else:
-save_to_file.write('%s,%s\n' %
+save_to_file.write(&rsquo;%s,%s\n&rsquo; %
 (tweet_id, processed_tweet))
 write_status(i + 1, total)
 save_to_file.close()
 print &lsquo;\nSaved processed tweets to: %s&rsquo; % processed_file_name
 return processed_file_name</p>
-<p>if <!-- raw HTML omitted --><!-- raw HTML omitted -->name<!-- raw HTML omitted --><!-- raw HTML omitted --> <code>= '__main__': if len(sys.argv) !</code> 2:
-print &lsquo;Usage: python preprocess.py <!-- raw HTML omitted -->&rsquo;
+<p>if <span class="underline"><span class="underline">name</span></span> <code>= '__main__': if len(sys.argv) !</code> 2:
+print &lsquo;Usage: python preprocess.py <raw-CSV>&rsquo;
 exit()
 use_stemmer = False
 csv_file_name = sys.argv[1]
@@ -257,7 +242,7 @@ preprocess_csv(csv_file_name, processed_file_name, test_file=False)</p>
 
         <div class="post-info">
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>259 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>260 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-19 16:00 &#43;0545</p>
         </div>
@@ -300,15 +285,13 @@ preprocess_csv(csv_file_name, processed_file_name, test_file=False)</p>
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2020</span>
+            <span>&copy; 2023</span>
             
                 <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
             
-                
             <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
         </div>
     </div>
-    
 </footer>
 
             
@@ -319,7 +302,7 @@ preprocess_csv(csv_file_name, processed_file_name, test_file=False)</p>
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="/bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
 
 
 

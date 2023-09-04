@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/nlp/</link>
     <description>Recent content in NLP on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:29 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Text-Text Transformers</title>
@@ -14,17 +14,7 @@
       
       <guid>https://dragarok.github.io/braindump/2020/04/text-text-transformers/</guid>
       <description>Catches from text to text transfer transformers:
- As an example, consider the case of English to German translation: If we have a training  datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.</description>
-    </item>
-    
-    <item>
-      <title>Text-Text Transformers</title>
-      <link>https://dragarok.github.io/ai/t2t_transformers/</link>
-      <pubDate>Fri, 03 Apr 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/t2t_transformers/</guid>
-      <description>Catches from text to text transfer transformers:
- As an example, consider the case of English to German translation: If we have a training  datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.</description>
+As an example, consider the case of English to German translation: If we have a training datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.</description>
     </item>
     
   </channel>

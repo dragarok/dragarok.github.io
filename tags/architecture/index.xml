@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/architecture/</link>
     <description>Recent content in architecture on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 19:28:53 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Efficient Nets</title>
@@ -13,10 +13,10 @@
       <pubDate>Sun, 19 Apr 2020 19:28:53 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/efficient-nets/</guid>
-      <description>Efficient Nets:   Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
+      <description>Efficient Nets: Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
 &amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
 &amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
-  We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others.</description>
+We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others.</description>
     </item>
     
     <item>
@@ -53,51 +53,6 @@ Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r
       <guid>https://dragarok.github.io/braindump/2020/04/muzero/</guid>
       <description>MuZero:
 &amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space &amp;ndash; Learns optimal policy, reward functions, value functions automatically &amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly relevant for planning. &amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using previous step&amp;rsquo;s hidden state and hypothetical next action &amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward</description>
-    </item>
-    
-    <item>
-      <title>MUZero</title>
-      <link>https://dragarok.github.io/ai/muzero/</link>
-      <pubDate>Wed, 15 Apr 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/muzero/</guid>
-      <description>MuZero:
-&amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space &amp;ndash; Learns optimal policy, reward functions, value functions automatically &amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly relevant for planning. &amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using previous step&amp;rsquo;s hidden state and hypothetical next action &amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward</description>
-    </item>
-    
-    <item>
-      <title>Efficient Nets</title>
-      <link>https://dragarok.github.io/ai/efficient_nets/</link>
-      <pubDate>Fri, 20 Mar 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/efficient_nets/</guid>
-      <description>Efficient Nets:   Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
-&amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
-&amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
-  We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others.</description>
-    </item>
-    
-    <item>
-      <title>Markov Nets</title>
-      <link>https://dragarok.github.io/ai/markovnets/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/markovnets/</guid>
-      <description>Markov Networks We study this by comparing to Bayesian networks: Burglar, Earthquake, Alarm, He calls, She calls
-&amp;ndash; First, the values do not need to sum to one, that is, the table does not define a probability distribution. It only tells us that configurations with higher values are more likely. Second, there is no conditioning. It is proportional to the joint distribution of all the variables involved, as opposed to conditional distributions in CPDs.</description>
-    </item>
-    
-    <item>
-      <title>RCNN</title>
-      <link>https://dragarok.github.io/ai/rcnn/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/rcnn/</guid>
-      <description>Faster RCNN Region Proposal:   Anchors: Different size bounding box of different aspect ratio and sizes
-  Task to be done by RPN:
-  Does this anchor contain a relevant object?
-  How would we adjust this anchor to better fit the relevant object?
-  It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.</description>
     </item>
     
   </channel>

@@ -5,28 +5,18 @@
     <link>https://dragarok.github.io/tags/neuralnetwork/</link>
     <description>Recent content in neuralnetwork on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/neuralnetwork/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ML Paper Questions</title>
-      <link>https://dragarok.github.io/ai/whattowriteabout/</link>
-      <pubDate>Wed, 22 Apr 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/ai/whattowriteabout/</guid>
-      <description>Problem No. 1 : Understanding what pretraining and training a supervised layer over it changes in the model Our ability to characterize exactly what aspects of the pretrained parameters are retained during the supervised training stage is limited.
-Problem No. 2 : For example, if we train a generative model of images of cars and motorcycles, it will need to know about wheels, and about how many wheels should be in an image.</description>
-    </item>
-    
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Apr 2020 19:28:53 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/neuralnetwork/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Efficient Nets</title>
       <link>https://dragarok.github.io/braindump/2020/04/efficient-nets/</link>
       <pubDate>Sun, 19 Apr 2020 19:28:53 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/efficient-nets/</guid>
-      <description>Efficient Nets:   Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
+      <description>Efficient Nets: Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
 &amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
 &amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
-  We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others.</description>
+We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others.</description>
     </item>
     
     <item>
@@ -104,7 +94,7 @@ For example, if we train a generative model of images of cars and motorcycles, i
       
       <guid>https://dragarok.github.io/braindump/2020/04/text-text-transformers/</guid>
       <description>Catches from text to text transfer transformers:
- As an example, consider the case of English to German translation: If we have a training  datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.</description>
+As an example, consider the case of English to German translation: If we have a training datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.</description>
     </item>
     
     <item>

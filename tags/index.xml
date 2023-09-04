@@ -5,95 +5,95 @@
     <link>https://dragarok.github.io/tags/</link>
     <description>Recent content in Tags on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 23 Sep 2020 21:58:34 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Apr 2020 04:53:19 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>git</title>
-      <link>https://dragarok.github.io/tags/git/</link>
-      <pubDate>Wed, 23 Sep 2020 21:58:34 +0545</pubDate>
+      <title>blogging</title>
+      <link>https://dragarok.github.io/tags/blogging/</link>
+      <pubDate>Sun, 26 Apr 2020 04:53:19 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tips</title>
-      <link>https://dragarok.github.io/tags/tips/</link>
-      <pubDate>Wed, 23 Sep 2020 21:58:34 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/tags/tips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>r</title>
-      <link>https://dragarok.github.io/tags/r/</link>
-      <pubDate>Tue, 22 Sep 2020 00:00:00 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>datastructure</title>
-      <link>https://dragarok.github.io/tags/datastructure/</link>
-      <pubDate>Thu, 17 Sep 2020 19:50:49 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/tags/datastructure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>datawarehouse</title>
-      <link>https://dragarok.github.io/tags/datawarehouse/</link>
-      <pubDate>Tue, 18 Aug 2020 07:54:57 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/tags/datawarehouse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>oracle</title>
-      <link>https://dragarok.github.io/tags/oracle/</link>
-      <pubDate>Tue, 18 Aug 2020 07:54:57 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/tags/oracle/</guid>
+      <guid>https://dragarok.github.io/tags/blogging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
       <link>https://dragarok.github.io/tags/emacs/</link>
-      <pubDate>Wed, 12 Aug 2020 13:23:08 +0545</pubDate>
+      <pubDate>Sun, 26 Apr 2020 04:53:19 +0545</pubDate>
       
       <guid>https://dragarok.github.io/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>shortcuts</title>
-      <link>https://dragarok.github.io/tags/shortcuts/</link>
-      <pubDate>Wed, 12 Aug 2020 13:23:08 +0545</pubDate>
+      <title>hugo</title>
+      <link>https://dragarok.github.io/tags/hugo/</link>
+      <pubDate>Sun, 26 Apr 2020 04:53:19 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/tags/shortcuts/</guid>
+      <guid>https://dragarok.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ssh</title>
-      <link>https://dragarok.github.io/tags/ssh/</link>
-      <pubDate>Wed, 12 Aug 2020 13:03:24 +0545</pubDate>
+      <title>physics</title>
+      <link>https://dragarok.github.io/tags/physics/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/tags/ssh/</guid>
+      <guid>https://dragarok.github.io/tags/physics/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>blogging</title>
-      <link>https://dragarok.github.io/tags/blogging/</link>
-      <pubDate>Wed, 12 Aug 2020 12:51:48 +0545</pubDate>
+      <title>dorks</title>
+      <link>https://dragarok.github.io/tags/dorks/</link>
+      <pubDate>Thu, 23 Apr 2020 16:31:35 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/tags/blogging/</guid>
+      <guid>https://dragarok.github.io/tags/dorks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google</title>
+      <link>https://dragarok.github.io/tags/google/</link>
+      <pubDate>Thu, 23 Apr 2020 16:31:35 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hacking</title>
+      <link>https://dragarok.github.io/tags/hacking/</link>
+      <pubDate>Thu, 23 Apr 2020 16:31:35 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/tags/hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithm</title>
+      <link>https://dragarok.github.io/tags/algorithm/</link>
+      <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>complexity</title>
+      <link>https://dragarok.github.io/tags/complexity/</link>
+      <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/tags/complexity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data_structures</title>
+      <link>https://dragarok.github.io/tags/data_structures/</link>
+      <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/tags/data_structures/</guid>
       <description></description>
     </item>
     

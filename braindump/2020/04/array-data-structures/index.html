@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
 <meta name="description" content="&amp;ndash;tags: Data Structures
-Arrays:  Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory  Multidimensional arrays:  Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array  Jagged arrays:  Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations  Resizable arrays:  all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable  NSMutableArray has mutability    Question:  Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag   Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array  Sorting in an array:  Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted  Arrays of custom objects SORT:  Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects  Searching arrays:  Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations  Built in search behavior:  ." />
-<meta name="keywords" content="Blog" />
+Arrays: Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory Multidimensional arrays: Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array Jagged arrays: Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations Resizable arrays: all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable NSMutableArray has mutability Question: Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array Sorting in an array: Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted Arrays of custom objects SORT: Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects Searching arrays: Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations Built in search behavior: ." />
+<meta name="keywords" content="homepage, blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://dragarok.github.io/braindump/2020/04/array-data-structures/" />
@@ -24,47 +24,33 @@ Arrays:  Ordered collection of items with an index Index used to find the data Z
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
-    
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
-    
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
+
+
+<link rel="stylesheet" href="/main.min.d235e788b40b442aba9cd6c69fdc330353b2dec27dcbc4235961469d2155f5a9.css">
 
 
 
 
-
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
-
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
-    <link rel="manifest" href="../../../../site.webmanifest">
-    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
 <meta itemprop="name" content="Array Data Structures">
 <meta itemprop="description" content="&ndash;tags: Data Structures
-Arrays:  Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory  Multidimensional arrays:  Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array  Jagged arrays:  Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations  Resizable arrays:  all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable  NSMutableArray has mutability    Question:  Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag   Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array  Sorting in an array:  Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted  Arrays of custom objects SORT:  Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects  Searching arrays:  Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations  Built in search behavior:  .">
+Arrays: Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory Multidimensional arrays: Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array Jagged arrays: Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations Resizable arrays: all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable NSMutableArray has mutability Question: Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array Sorting in an array: Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted Arrays of custom objects SORT: Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects Searching arrays: Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations Built in search behavior: .">
 <meta itemprop="dateModified" content="2020-04-21T05:51:27+05:45" />
-<meta itemprop="wordCount" content="384">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="384"><meta itemprop="image" content="https://dragarok.github.io/"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Array Data Structures"/>
 <meta name="twitter:description" content="&ndash;tags: Data Structures
-Arrays:  Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory  Multidimensional arrays:  Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array  Jagged arrays:  Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations  Resizable arrays:  all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable  NSMutableArray has mutability    Question:  Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag   Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array  Sorting in an array:  Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted  Arrays of custom objects SORT:  Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects  Searching arrays:  Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations  Built in search behavior:  ."/>
+Arrays: Ordered collection of items with an index Index used to find the data Zero based index Fixed size - they are immutable dynamically add or remove elements in runtime data type is mostly specific the more constraints you put into data type ; the smaller efficient and practical use Flexibility comes at the cost of performance and memory Multidimensional arrays: Rows and columns: Array of arrays different dimensional arrays: collection of n-1 arrays is the n- dimensional arrays Multiple locations: Sets of days and time for the weather is a 3d array Jagged arrays: Not only rectangular arrays For days in months: there are relevant places where data is empty Internal arrays having different lengths new int[12][] gives us feasibility to write different one dimensional arrays in different situations Resizable arrays: all arrays that are defined firstly are immutable array list is different and instantiated as an object Objectives C gives the NSArray is immutable NSMutableArray has mutability Question: Adding element at the top or the bottom Add the element at specific position Larger the array there is performance lag Same functionality is used in a different way in every programming language pop is used mostly to remove the item in a array Sorting in an array: Internal structure and index remains the same Colossal amount of data if there are thousands of data to work with Different sorting algorithms on the basis of data size So, to choose different types and different mechanisms for sorting on the basis of how frequently the data needs to be sorted and how much data is to be sorted Arrays of custom objects SORT: Information to sort on which order Look into these objects and sort according to some data inside the object Bit of logic: making a comparator function to order or sort the objects Searching arrays: Sequential search to find the element Linear time algorithm Need to check every data just to find the data and predictable sequence to find data easily Cannot have a data structure that is equally good in all situations Built in search behavior: ."/>
 
 
 
@@ -85,12 +71,11 @@ Arrays:  Ordered collection of items with an index Index used to find the data Z
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="../../../../" style="text-decoration: none;">
+        <a href="/" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">~</span>
+            <span class="logo__mark">></span>
             <span class="logo__text">K4iv41y4</span>
-            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -104,7 +89,7 @@ Arrays:  Ordered collection of items with an index Index used to find the data Z
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
     </ul>
 </nav>
 
@@ -147,7 +132,7 @@ Arrays:  Ordered collection of items with an index Index used to find the data Z
             
 
             <div class="post-content">
-                <p>&ndash;tags:  <a href="../../../../braindump/2020/09/data-structures/">Data Structures</a></p>
+                <p>&ndash;tags:  <a href="/braindump/2020/04/data-structures/">Data Structures</a></p>
 <h2 id="arrays">Arrays:</h2>
 <ul>
 <li>Ordered collection of items with an index</li>
@@ -188,7 +173,7 @@ Arrays:  Ordered collection of items with an index Index used to find the data Z
 <li>Add the element at specific position</li>
 <li>Larger the array there is performance lag</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <ul>
 <li>Same functionality is used in a different way in every programming language</li>
 <li>pop is used mostly to remove the item in a array</li>
@@ -277,15 +262,13 @@ Arrays:  Ordered collection of items with an index Index used to find the data Z
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2020</span>
+            <span>&copy; 2023</span>
             
                 <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
             
-                
             <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
         </div>
     </div>
-    
 </footer>
 
             
@@ -296,7 +279,7 @@ Arrays:  Ordered collection of items with an index Index used to find the data Z
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="/bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
 
 
 

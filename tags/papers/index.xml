@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/papers/</link>
     <description>Recent content in papers on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:52 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/papers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bibliography Management</title>
@@ -14,7 +14,7 @@
       
       <guid>https://dragarok.github.io/braindump/2020/04/bibliography-management/</guid>
       <description>What do the files mean? Here, I store all bibliography entries in article.bib , pdfs to pdfs folder, notes in articles.org file. That&amp;rsquo;s all there is to understand.
-(setq bibtex-completion-library-path &amp;#34;c:/Users/sagar/Dropbox/pdfs/&amp;#34; bibtex-completion-bibliography &amp;#34;c:/Users/sagar/Dropbox/org/references/articles.bib&amp;#34; bibtex-completion-notes-path &amp;#34;c:/Users/sagar/Dropbox/org/references/articles.org&amp;#34; bibtex-completion-notes-path &amp;#34;c:/Users/sagar/Dropbox/org/references/articles.org&amp;#34;) (setq org-ref-notes-directory &amp;#34;c:/Users/sagar/Dropbox/org/notes/&amp;#34; org-ref-bibliography-notes &amp;#34;c:/Users/sagar/Dropbox/org/references/articles.org&amp;#34; org-ref-default-bibliography &amp;#39;(&amp;#34;c:/Users/sagar/Dropbox/org/references/articles.bib&amp;#34;) org-ref-pdf-directory &amp;#34;c:/Users/sagar/Dropbox/pdfs&amp;#34;) Using these files  Adding entries:  Find a paper, add it to aricles.bib. Either DOI or paper link. If pdf found by org-ref, okay.</description>
+(setq bibtex-completion-library-path &amp;#34;c:/Users/sagar/Dropbox/pdfs/&amp;#34; bibtex-completion-bibliography &amp;#34;c:/Users/sagar/Dropbox/org/references/articles.bib&amp;#34; bibtex-completion-notes-path &amp;#34;c:/Users/sagar/Dropbox/org/references/articles.org&amp;#34; bibtex-completion-notes-path &amp;#34;c:/Users/sagar/Dropbox/org/references/articles.org&amp;#34;) (setq org-ref-notes-directory &amp;#34;c:/Users/sagar/Dropbox/org/notes/&amp;#34; org-ref-bibliography-notes &amp;#34;c:/Users/sagar/Dropbox/org/references/articles.org&amp;#34; org-ref-default-bibliography &amp;#39;(&amp;#34;c:/Users/sagar/Dropbox/org/references/articles.bib&amp;#34;) org-ref-pdf-directory &amp;#34;c:/Users/sagar/Dropbox/pdfs&amp;#34;) Using these files Adding entries: Find a paper, add it to aricles.bib. Either DOI or paper link. If pdf found by org-ref, okay. Else doi-utils-get-bibtex-entry-pdf run it.</description>
     </item>
     
   </channel>

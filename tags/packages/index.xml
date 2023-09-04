@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/packages/</link>
     <description>Recent content in packages on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:22 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/packages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful Linux Packages</title>
@@ -13,7 +13,7 @@
       <pubDate>Sun, 19 Apr 2020 15:59:22 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/useful-linux-packages/</guid>
-      <description>joe: to generate .gitignore files when needed  joe g java,node,osx &amp;gt; .gitignore : create new gitignore joe g OSX,SublimeText &amp;raquo; ~/.gitignore : appends to existing one joe ls : what tags can be used   ledger ffsend: firefox send function hexyl: hex viewer tldr nemesis bed : binary editor builtwith site: to find what technology the site is using malc0de.com/database: search for malware thispersondoesnotexist.com &amp;ndash; get a fake face generated.</description>
+      <description> joe: to generate .gitignore files when needed joe g java,node,osx &amp;gt; .gitignore : create new gitignore joe g OSX,SublimeText &amp;raquo; ~/.gitignore : appends to existing one joe ls : what tags can be used ledger ffsend: firefox send function hexyl: hex viewer tldr nemesis bed : binary editor builtwith site: to find what technology the site is using malc0de.com/database: search for malware thispersondoesnotexist.com &amp;ndash; get a fake face generated.photos mkcert: just make certificates Backlinks Linux one liners Backlinks Linux one liners </description>
     </item>
     
   </channel>

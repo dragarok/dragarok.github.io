@@ -1,2390 +1,1143 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://dragarok.github.io/</loc>
-    <lastmod>2020-10-11T10:45:01+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/</loc>
-    <lastmod>2020-10-11T10:45:01+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-105-unsupervised-learning/</loc>
-    <lastmod>2020-10-11T10:45:01+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-1/</loc>
-    <lastmod>2020-10-09T14:31:13+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-2-regression/</loc>
-    <lastmod>2020-10-09T10:40:57+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</loc>
-    <lastmod>2020-10-07T05:47:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</loc>
-    <lastmod>2020-10-08T09:38:20+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-103-exploratory-data-analysis/</loc>
-    <lastmod>2020-10-06T13:22:27+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-dates-and-times/</loc>
-    <lastmod>2020-10-04T15:19:33+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-functions-in-r/</loc>
-    <lastmod>2020-10-08T07:02:02+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-cleaning-data/</loc>
-    <lastmod>2020-10-08T07:01:43+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-importing-databases-and-urls/</loc>
-    <lastmod>2020-10-03T08:34:44+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/10/r-programming-102-importing-data/</loc>
-    <lastmod>2020-10-02T14:52:46+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/git/</loc>
-    <lastmod>2020-09-23T21:58:34+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/09/git-commands/</loc>
-    <lastmod>2020-09-23T21:58:34+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/</loc>
-    <lastmod>2020-09-23T21:58:34+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/tips/</loc>
-    <lastmod>2020-09-23T21:58:34+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/r/</loc>
-    <lastmod>2020-09-22T08:34:51+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/09/r-programming-101-datacamp-beginner/</loc>
-    <lastmod>2020-09-22T08:34:36+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/09/r-programming-101-datacamp-intermediate/</loc>
-    <lastmod>2020-09-22T08:34:51+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/09/r-programming-101-dplyr/</loc>
-    <lastmod>2020-09-26T16:50:02+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/09/r-programming-101-ggplot/</loc>
-    <lastmod>2020-10-02T07:35:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/09/data-scientist-with-r/</loc>
-    <lastmod>2020-10-11T10:28:04+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/09/data-structures/</loc>
-    <lastmod>2020-09-17T19:50:49+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/datastructure/</loc>
-    <lastmod>2020-09-17T19:50:49+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/09/gitconfig/</loc>
-    <lastmod>2020-09-13T11:00:07+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/08/stock-market-metrics/</loc>
-    <lastmod>2020-09-15T08:08:22+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/neuroscience/fmri_hyperalignment/</loc>
-    <lastmod>2020-08-31T15:28:34+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/neuroscience/</loc>
-    <lastmod>2020-08-31T15:28:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/neuroscience/fmri_comparisons/</loc>
-    <lastmod>2020-08-31T15:28:18+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/neuroscience/representational_similarity_analysis/</loc>
-    <lastmod>2020-08-31T15:28:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/</loc>
-    <lastmod>2020-08-24T09:32:47+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/the-psychedelic-explorers-guide-safe-therapeutic-and-sacred-journeys/</loc>
-    <lastmod>2020-08-24T09:32:47+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/08/plantuml/</loc>
-    <lastmod>2020-08-24T08:07:33+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/datawarehouse/</loc>
-    <lastmod>2020-08-18T07:54:57+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/oracle/</loc>
-    <lastmod>2020-08-18T07:54:57+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/08/ra/</loc>
-    <lastmod>2020-08-18T07:54:57+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/anything-you-want-40-lessons-for-a-new-kind-of-entrepreneur/</loc>
-    <lastmod>2020-08-13T07:02:53+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/neuroscience/fmri_bootcamp/</loc>
-    <lastmod>2020-08-29T17:35:09+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/08/tips-from-entrepreneurs/</loc>
-    <lastmod>2020-08-28T06:51:27+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/emacs/</loc>
-    <lastmod>2020-08-17T08:01:11+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/emacs/</loc>
-    <lastmod>2020-08-12T13:23:08+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/emacs/emacs_shortcuts/</loc>
-    <lastmod>2020-08-12T13:23:08+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/shortcuts/</loc>
-    <lastmod>2020-08-12T13:23:08+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/emacs/emacs_tramp/</loc>
-    <lastmod>2020-08-12T13:03:24+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/ssh/</loc>
-    <lastmod>2020-08-12T13:03:24+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/emacs/emacs_tips/</loc>
-    <lastmod>2020-08-12T12:52:04+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/blogging/</loc>
-    <lastmod>2020-08-12T12:51:48+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/emacs/emacs_hugo_blogging/</loc>
-    <lastmod>2020-08-12T12:51:48+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/hugo/</loc>
-    <lastmod>2020-08-12T12:51:48+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/emacs/emacs-windows-installation/</loc>
-    <lastmod>2020-08-12T12:51:30+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/guide/</loc>
-    <lastmod>2020-08-12T12:51:30+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/windows/</loc>
-    <lastmod>2020-08-12T12:51:30+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/emacs/emacs-completion/</loc>
-    <lastmod>2020-08-12T12:51:16+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/psychology/</loc>
-    <lastmod>2020-08-11T07:48:18+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/ichiro-kishimifumitake-koga/</loc>
-    <lastmod>2020-08-11T07:48:18+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/</loc>
-    <lastmod>2020-08-20T07:26:00+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/neural_odes/</loc>
-    <lastmod>2020-08-20T07:26:00+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/paper/</loc>
-    <lastmod>2020-07-12T12:07:48+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/07/paper-reading-3-pass/</loc>
-    <lastmod>2020-07-12T12:07:48+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/reading/</loc>
-    <lastmod>2020-07-12T12:07:48+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/posts/2020/07/brain-facts/</loc>
-    <lastmod>2020-07-06T10:55:38+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/neuroscience/</loc>
-    <lastmod>2020-07-06T10:55:38+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/posts/</loc>
-    <lastmod>2020-09-22T06:37:45+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/05/anatomy-directions/</loc>
-    <lastmod>2020-05-13T04:52:56+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/categories/</loc>
-    <lastmod>2020-05-18T03:41:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/posts/2020/05/controlling-irrational-thoughts/</loc>
-    <lastmod>2020-05-03T01:33:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/posts/2020/05/on-procrastination/</loc>
-    <lastmod>2020-05-03T01:11:47+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/categories/productivity/</loc>
-    <lastmod>2020-05-03T01:33:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/05/large-scale-network-embedding/</loc>
-    <lastmod>2020-05-02T03:40:13+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/05/8086/</loc>
-    <lastmod>2020-05-02T01:01:54+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/assembly/</loc>
-    <lastmod>2020-05-02T01:01:54+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/mircroprocessor/</loc>
-    <lastmod>2020-05-02T01:01:54+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/emacs/emacs_setup/</loc>
-    <lastmod>2020-08-17T08:01:11+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/05/kdeconnect-i3/</loc>
-    <lastmod>2020-05-01T05:47:50+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/posts/2020/05/looking-back-to-school-life/</loc>
-    <lastmod>2020-05-01T05:53:46+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/poem/</loc>
-    <lastmod>2020-09-22T06:37:45+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/thoughts/</loc>
-    <lastmod>2020-05-01T05:53:46+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/posts/2020/05/%E0%A4%97%E0%A4%9C%E0%A4%B2/</loc>
-    <lastmod>2020-09-22T06:37:45+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/music/</loc>
-    <lastmod>2020-04-27T11:04:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/04/songs/</loc>
-    <lastmod>2020-04-27T11:04:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/astronomy/</loc>
-    <lastmod>2020-04-27T02:30:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/history/</loc>
-    <lastmod>2020-04-27T02:30:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/dk/</loc>
-    <lastmod>2020-04-27T02:30:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/eat-that-frog/</loc>
-    <lastmod>2020-04-27T02:30:01+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/productivity/</loc>
-    <lastmod>2020-04-27T02:30:01+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/milan-kundera/</loc>
-    <lastmod>2020-04-27T02:28:33+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/om-swami/</loc>
-    <lastmod>2020-04-27T02:28:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/meditation/</loc>
-    <lastmod>2020-04-27T02:28:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/influence/</loc>
-    <lastmod>2020-04-27T02:27:55+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/quiet-the-power-of-introverts-in-a-world-that-cant-stop-talking/</loc>
-    <lastmod>2020-04-27T02:27:55+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/rabindranath-tagore/</loc>
-    <lastmod>2020-04-27T02:27:38+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/siddhartha/</loc>
-    <lastmod>2020-04-27T02:27:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/the-charisma-myth/</loc>
-    <lastmod>2020-04-27T02:26:54+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/startup/</loc>
-    <lastmod>2020-04-27T02:26:33+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/the-lean-startup/</loc>
-    <lastmod>2020-04-27T02:26:33+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/mindfulness/</loc>
-    <lastmod>2020-04-27T02:25:39+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/the-power-of-now-a-guide-to-spiritual-enlightenment/</loc>
-    <lastmod>2020-04-27T02:25:39+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/the-startup-game/</loc>
-    <lastmod>2020-04-27T02:25:08+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/think-and-grow-rich/</loc>
-    <lastmod>2020-04-27T02:24:22+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/dream/</loc>
-    <lastmod>2020-04-27T02:23:51+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/sleep/</loc>
-    <lastmod>2020-04-27T02:23:51+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams/</loc>
-    <lastmod>2020-04-27T02:23:51+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/ceo/</loc>
-    <lastmod>2020-04-27T02:23:31+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/william-n.-thorndike/</loc>
-    <lastmod>2020-04-27T02:23:31+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/zero-to-one-notes-on-startups-or-how-to-build-the-future/</loc>
-    <lastmod>2020-04-27T02:22:52+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/13-steps-to-bloody-good-luck/</loc>
-    <lastmod>2020-04-27T02:21:21+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/emacs/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</loc>
     <lastmod>2020-04-26T04:53:19+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/hugo/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/</loc>
+    <lastmod>2020-04-26T04:53:19+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/books/13-steps-to-bloody-good-luck/</loc>
+    <lastmod>2020-04-26T03:08:39+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/books/</loc>
+    <lastmod>2020-04-26T03:08:39+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes/</loc>
     <lastmod>2020-04-26T03:08:38+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/a-common-sense-guide-to-data-structures-and-algorithms-level-up-your-core-programming-skills/</loc>
     <lastmod>2020-04-26T03:08:37+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/a-guide-to-the-good-life-the-ancient-art-of-stoic-joy/</loc>
     <lastmod>2020-04-26T03:08:36+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/android-concurrency-android-deep-dive/</loc>
     <lastmod>2020-04-26T03:08:35+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/android-design-patterns-and-best-practice/</loc>
     <lastmod>2020-04-26T03:08:35+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/android-programming-in-a-day/</loc>
     <lastmod>2020-04-26T03:08:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/antenna-theory-analysis-and-design/</loc>
     <lastmod>2020-04-26T03:08:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/a-tale-of-two-cities/</loc>
     <lastmod>2020-04-26T03:08:33+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/anything-you-want-40-lessons-for-a-new-kind-of-entrepreneur/</loc>
+    <lastmod>2020-04-26T03:08:33+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/awaken-the-giant-within/</loc>
     <lastmod>2020-04-26T03:08:32+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/bitcoin-a-concise-history/</loc>
+  </url><url>
+    <loc>https://dragarok.github.io/books/bitcoin--a-concise-history/</loc>
     <lastmod>2020-04-26T03:08:32+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/brad-feldjason-mendelson/</loc>
     <lastmod>2020-04-26T03:08:31+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/brave-new-world/</loc>
     <lastmod>2020-04-26T03:08:30+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/building-machine-learning-projects-with-tensorflow/</loc>
     <lastmod>2020-04-26T03:08:30+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/chaos-monkeys-obscene-fortune-and-random-failure-in-silicon-valley/</loc>
     <lastmod>2020-04-26T03:08:29+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/childhoods-end/</loc>
     <lastmod>2020-04-26T03:08:28+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/choose-yourself/</loc>
     <lastmod>2020-04-26T03:08:27+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/clean-architecture/</loc>
     <lastmod>2020-04-26T03:08:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/clarke-adam/</loc>
     <lastmod>2020-04-26T03:08:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/coa2-central-processing-unit/</loc>
     <lastmod>2020-04-26T03:08:24+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/coa3-control-unit/</loc>
     <lastmod>2020-04-26T03:08:23+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/coa4-pipeline-and-vector-processing/</loc>
     <lastmod>2020-04-26T03:08:22+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/coa5-computer-arithmetic/</loc>
     <lastmod>2020-04-26T03:08:22+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/computer-security/</loc>
     <lastmod>2020-04-26T03:08:21+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/conscious/</loc>
     <lastmod>2020-04-26T03:08:20+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/cosmos/</loc>
     <lastmod>2020-04-26T03:08:19+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/countdown-to-zero-day/</loc>
     <lastmod>2020-04-26T03:08:19+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/debra-cameronjames-elliottmarc-loyeric-s.-raymondbill-rosenblatt/</loc>
     <lastmod>2020-04-26T03:08:18+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/deep-learning-in-python-prerequisites/</loc>
     <lastmod>2020-04-26T03:08:17+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/deeplearningbook/</loc>
     <lastmod>2020-04-26T03:08:17+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/deep-learning-with-keras/</loc>
     <lastmod>2020-04-26T03:08:16+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/django-unleashed/</loc>
     <lastmod>2020-04-26T03:08:15+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/dk/</loc>
+    <lastmod>2020-04-26T03:08:14+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/docker-deep-dive-updated-october-2017/</loc>
     <lastmod>2020-04-26T03:08:12+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/douglas-adams/</loc>
     <lastmod>2020-04-26T03:08:11+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/dreaming-yourself-awake/</loc>
     <lastmod>2020-04-26T03:08:10+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/draper-iii-william-h.eric-schmidt/</loc>
     <lastmod>2020-04-26T03:08:10+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/eat-that-frog/</loc>
+    <lastmod>2020-04-26T03:08:09+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/einstein/</loc>
     <lastmod>2020-04-26T03:08:09+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/elon-musk-tesla-spacex-and-the-quest-for-a-fantastic-future/</loc>
     <lastmod>2020-04-26T03:08:08+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/getting-results-the-agile-way-a-personal-results-system-for-work-and-life/</loc>
     <lastmod>2020-04-26T03:08:07+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/franz-kafkadonna-freedjason-baker/</loc>
     <lastmod>2020-04-26T03:08:07+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/getting-things-done-the-art-of-stress-free-productivity/</loc>
     <lastmod>2020-04-26T03:08:06+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/google-adsense-secrets-6.0-what-google-never-told-you-about-making-money-with-adsense/</loc>
     <lastmod>2020-04-26T03:08:06+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/gorilla-mindset/</loc>
     <lastmod>2020-04-26T03:08:05+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/how-linux-works-what-every-superuser-should-know/</loc>
     <lastmod>2020-04-26T03:08:04+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/how-the-linux-scheduler-works/</loc>
     <lastmod>2020-04-26T03:08:03+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life/</loc>
     <lastmod>2020-04-26T03:08:02+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/ichiro-kishimifumitake-koga/</loc>
+    <lastmod>2020-04-26T03:08:01+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/ignited-minds/</loc>
     <lastmod>2020-04-26T03:07:58+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/influence-the-psychology-of-persuasion-collins-business-essentials/</loc>
     <lastmod>2020-04-26T03:07:58+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/instrumentation-ii-6-grounding-and-shielding/</loc>
+  </url><url>
+    <loc>https://dragarok.github.io/books/instrumentation-ii-6---grounding-and-shielding/</loc>
     <lastmod>2020-04-26T03:07:57+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/introduction-to-algorithms/</loc>
     <lastmod>2020-04-26T03:07:56+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/kundalini-tantra/</loc>
     <lastmod>2020-04-26T03:07:56+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/lazyprogrammer/</loc>
     <lastmod>2020-04-26T03:07:55+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/learning-gnu-emacs-3rd-edition/</loc>
     <lastmod>2020-04-26T03:07:55+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/leonardo-da-vinci/</loc>
     <lastmod>2020-04-26T03:07:54+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/life-in-light-of-death/</loc>
     <lastmod>2020-04-26T03:07:53+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/limited-liability-company/</loc>
     <lastmod>2020-04-26T03:07:53+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/love-yourself-like-your-life-depends-on-it/</loc>
     <lastmod>2020-04-26T03:07:52+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/machine-learning/</loc>
     <lastmod>2020-04-26T03:07:52+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/machine-learning-refined-foundations-algorithms-and-applications/</loc>
     <lastmod>2020-04-26T03:07:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/malcolm-gladwell/</loc>
     <lastmod>2020-04-26T03:07:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/mark-manson/</loc>
     <lastmod>2020-04-26T03:07:49+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/mastering-bitcoin-unlocking-digital-cryptocurrencies/</loc>
     <lastmod>2020-04-26T03:07:48+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/mastering-ubuntu-server/</loc>
     <lastmod>2020-04-26T03:07:45+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/matlab-deep-learning/</loc>
     <lastmod>2020-04-26T03:07:44+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/matthew-walker/</loc>
     <lastmod>2020-04-26T03:07:44+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/meaning-in-life-and-why-it-matters-the-university-center-for-human-values-series/</loc>
     <lastmod>2020-04-26T03:07:42+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/mihaly-csikszentmihalyi/</loc>
     <lastmod>2020-04-26T03:07:41+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/milan-kundera/</loc>
+    <lastmod>2020-04-26T03:07:37+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/models-attract-women-through-honesty/</loc>
     <lastmod>2020-04-26T03:07:35+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/name-that-star-ancient-cultures-lend-titles-to-86-suns/</loc>
     <lastmod>2020-04-26T03:07:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/never-eat-alone/</loc>
     <lastmod>2020-04-26T03:07:33+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/nicholas-royle/</loc>
     <lastmod>2020-04-26T03:07:32+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/nineteen-eighty-four/</loc>
     <lastmod>2020-04-26T03:07:32+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/no-excuses/</loc>
     <lastmod>2020-04-26T03:07:31+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/no-place-to-hide-edward-snowden-the-nsa-and-the-u.s.-surveillance-state/</loc>
     <lastmod>2020-04-26T03:07:28+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/om-swami/</loc>
+    <lastmod>2020-04-26T03:07:27+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/opencv-computer-vision-with-python/</loc>
     <lastmod>2020-04-26T03:07:26+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/penetration-testing/</loc>
     <lastmod>2020-04-26T03:07:26+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/php-7-tutorial-master-the-concepts-of-php-a-step-by-step-process/</loc>
     <lastmod>2020-04-26T03:07:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/polkinghorne-john/</loc>
     <lastmod>2020-04-26T03:07:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/practical-reinforcement-learning/</loc>
     <lastmod>2020-04-26T03:07:24+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/prof.-brian-cox/</loc>
     <lastmod>2020-04-26T03:07:23+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/professional-wordpress-design-and-development/</loc>
     <lastmod>2020-04-26T03:07:22+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/pro-git/</loc>
     <lastmod>2020-04-26T03:07:21+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/programming-from-the-ground-up/</loc>
     <lastmod>2020-04-26T03:07:20+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/quiet-the-power-of-introverts-in-a-world-that-cant-stop-talking/</loc>
+    <lastmod>2020-04-26T03:07:19+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/books/rabindranath-tagore/</loc>
+    <lastmod>2020-04-26T03:07:18+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/raspberry-pi-robotic-projects/</loc>
     <lastmod>2020-04-26T03:07:17+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/ray-dalio/</loc>
     <lastmod>2020-04-26T03:07:16+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/rich-dad-poor-dad/</loc>
     <lastmod>2020-04-26T03:07:15+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/ruby-on-rails-tutorial-rails-5/</loc>
     <lastmod>2020-04-26T03:07:14+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/self-knowledge/</loc>
     <lastmod>2020-04-26T03:07:13+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/siddhartha/</loc>
+    <lastmod>2020-04-26T03:07:12+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/signals-and-systems/</loc>
     <lastmod>2020-04-26T03:07:11+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/stauffer-matt/</loc>
     <lastmod>2020-04-26T03:07:10+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/space.com/</loc>
     <lastmod>2020-04-26T03:07:10+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/steve-jobs/</loc>
     <lastmod>2020-04-26T03:07:09+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-22-immutable-laws-of-marketing/</loc>
     <lastmod>2020-04-26T03:07:08+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-48-laws-of-power/</loc>
     <lastmod>2020-04-26T03:07:07+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-4-hour-workweek-expanded-and-updated/</loc>
     <lastmod>2020-04-26T03:07:06+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-7-habits-of-highly-effective-people/</loc>
     <lastmod>2020-04-26T03:07:05+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-art-of-the-start/</loc>
     <lastmod>2020-04-26T03:07:04+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/the-charisma-myth/</loc>
+    <lastmod>2020-04-26T03:07:03+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-cold-war-a-very-short-introduction-very-short-introductions/</loc>
     <lastmod>2020-04-26T03:07:01+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-elon-musk-blog-series-wait-but-why/</loc>
     <lastmod>2020-04-26T03:07:01+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/books/the-infinite-monkey-cage-how-to-build-a-universe/</loc>
+  </url><url>
+    <loc>https://dragarok.github.io/books/the-infinite-monkey-cage--how-to-build-a-universe/</loc>
     <lastmod>2020-04-26T03:07:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-intelligent-investor-rev/</loc>
     <lastmod>2020-04-26T03:06:59+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/the-lean-startup/</loc>
+    <lastmod>2020-04-26T03:06:57+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-library-of-babel-and-other-stories/</loc>
     <lastmod>2020-04-26T03:06:54+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-magic-of-thinking-big/</loc>
     <lastmod>2020-04-26T03:06:54+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-metamorphosis-and-other-stories/</loc>
     <lastmod>2020-04-26T03:06:53+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-millionaire-fastlane/</loc>
     <lastmod>2020-04-26T03:06:52+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-miracle-morning/</loc>
     <lastmod>2020-04-26T03:06:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-picture-of-dorian-gray/</loc>
     <lastmod>2020-04-26T03:06:50+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-power-of-habit-why-we-do-what-we-do-in-life-and-business/</loc>
     <lastmod>2020-04-26T03:06:49+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/the-power-of-now-a-guide-to-spiritual-enlightenment/</loc>
+    <lastmod>2020-04-26T03:06:48+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-power-of-persuasion-how-were-bought-and-sold/</loc>
     <lastmod>2020-04-26T03:06:47+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-pragmatic-programmer-from-journeyman-to-master/</loc>
     <lastmod>2020-04-26T03:06:47+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/the-psychedelic-explorers-guide-safe-therapeutic-and-sacred-journeys/</loc>
+    <lastmod>2020-04-26T03:06:45+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-slight-edge-turning-simple-disciplines-into-massive-success-and-happiness/</loc>
     <lastmod>2020-04-26T03:06:43+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/the-social-skills-guidebook-manage-shyness-improve-your-conversations-and-make-friends-without-giving-up-who-you-are/</loc>
     <lastmod>2020-04-26T03:06:42+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/the-startup-game/</loc>
+    <lastmod>2020-04-26T03:06:41+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/books/think-and-grow-rich/</loc>
+    <lastmod>2020-04-26T03:06:40+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/thinking-fast-and-slow/</loc>
     <lastmod>2020-04-26T03:06:39+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/books/walter-isaacson/</loc>
     <lastmod>2020-04-26T03:06:38+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/books/why-we-sleep-unlocking-the-power-of-sleep-and-dreams/</loc>
+    <lastmod>2020-04-26T03:06:33+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/books/william-n.-thorndike/</loc>
+    <lastmod>2020-04-26T03:06:30+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/books/zero-to-one-notes-on-startups-or-how-to-build-the-future/</loc>
+    <lastmod>2020-04-26T03:06:18+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/books/100-years-of-the-best-american-short-stories/</loc>
     <lastmod>2020-04-26T02:36:50+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</loc>
     <lastmod>2020-04-24T03:55:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/categories/</loc>
+    <lastmod>2020-04-24T03:55:25+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/physics/</loc>
     <lastmod>2020-04-24T03:55:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/categories/science/</loc>
     <lastmod>2020-04-24T03:55:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/dorks/</loc>
     <lastmod>2020-04-23T16:31:35+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/google/</loc>
-    <lastmod>2020-05-02T03:40:16+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-23T16:31:35+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/google-dorks/</loc>
     <lastmod>2020-04-23T16:31:35+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/hacking/</loc>
     <lastmod>2020-04-23T16:31:35+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/04/active-reading/</loc>
-    <lastmod>2020-05-09T16:58:36+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/04/building-emacs/</loc>
-    <lastmod>2020-05-16T09:41:48+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/chatbot/</loc>
-    <lastmod>2020-05-02T03:40:16+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/meena/</loc>
-    <lastmod>2020-05-02T03:40:16+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/whattowriteabout/</loc>
-    <lastmod>2020-05-02T03:51:34+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/neuralnetwork/</loc>
-    <lastmod>2020-05-02T04:04:27+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/algorithm/</loc>
-    <lastmod>2020-05-02T03:44:10+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/algorithms/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/categories/coding/</loc>
-    <lastmod>2020-05-18T03:41:41+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-21T06:02:46+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/complexity/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/data_structures/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/optimization/</loc>
     <lastmod>2020-04-21T06:02:46+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/graph-signal-processing/</loc>
     <lastmod>2020-04-21T05:57:03+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/graph-convolutions/</loc>
     <lastmod>2020-04-21T05:54:09+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/fast-graphconv-nets/</loc>
     <lastmod>2020-04-21T05:53:45+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/monets/</loc>
     <lastmod>2020-04-21T05:53:35+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/motifs/</loc>
     <lastmod>2020-04-21T05:53:26+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/chebnets/</loc>
     <lastmod>2020-04-21T05:53:09+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/cayley-nets/</loc>
     <lastmod>2020-04-21T05:52:54+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/graph-data-structures/</loc>
     <lastmod>2020-04-21T05:52:14+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/array-data-structures/</loc>
     <lastmod>2020-04-21T05:51:27+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/heap-data-structures/</loc>
     <lastmod>2020-04-21T05:51:05+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/stack-data-structures/</loc>
     <lastmod>2020-04-21T05:50:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/list-data-structures/</loc>
     <lastmod>2020-04-21T05:50:32+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/hash-data-structures/</loc>
     <lastmod>2020-04-21T05:44:27+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/data-structures/</loc>
+    <lastmod>2020-04-21T05:41:02+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/datastructure/</loc>
+    <lastmod>2020-04-21T05:41:02+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/emacs-tips/</loc>
     <lastmod>2020-04-20T05:07:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/architecture/</loc>
-    <lastmod>2020-05-02T04:04:27+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T19:28:53+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/efficient-nets/</loc>
     <lastmod>2020-04-19T19:28:53+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/neuralnetwork/</loc>
+    <lastmod>2020-04-19T19:28:53+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/vision/</loc>
-    <lastmod>2020-05-02T04:04:27+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T19:28:53+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/graph/</loc>
-    <lastmod>2020-05-02T03:44:39+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T19:24:20+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/graph-neural-networks/</loc>
     <lastmod>2020-04-19T19:24:20+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/references/</loc>
     <lastmod>2020-04-19T18:43:55+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/git/</loc>
+    <lastmod>2020-04-19T18:43:16+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/gitconfig/</loc>
+    <lastmod>2020-04-19T18:43:16+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/git-commands/</loc>
+    <lastmod>2020-04-19T18:31:28+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/tips/</loc>
+    <lastmod>2020-04-19T18:31:28+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/posts/</loc>
+    <lastmod>2020-04-19T16:26:42+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/posts/2020/04/tentacles-of-thoughts/</loc>
     <lastmod>2020-04-19T16:26:42+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/posts/2020/04/peak/</loc>
-    <lastmod>2020-04-19T16:22:45+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</loc>
     <lastmod>2020-04-19T16:17:16+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/shortcuts/</loc>
+    <lastmod>2020-04-19T16:17:16+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/zettlekasten/</loc>
     <lastmod>2020-04-19T16:12:54+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/selinux/</loc>
     <lastmod>2020-04-19T16:10:57+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/question/</loc>
     <lastmod>2020-04-19T16:09:16+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/rus/</loc>
     <lastmod>2020-04-19T16:05:05+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/rust/</loc>
     <lastmod>2020-04-19T16:05:05+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/bibliography/</loc>
     <lastmod>2020-04-19T16:00:52+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/bibliography-management/</loc>
     <lastmod>2020-04-19T16:00:52+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/notes/</loc>
     <lastmod>2020-04-19T16:00:52+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/categories/notetaking/</loc>
     <lastmod>2020-04-19T16:00:52+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/papers/</loc>
     <lastmod>2020-04-19T16:00:52+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/reading/</loc>
+    <lastmod>2020-04-19T16:00:52+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/mantra/</loc>
     <lastmod>2020-04-19T16:00:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/sanskrit/</loc>
     <lastmod>2020-04-19T16:00:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/tandav/</loc>
     <lastmod>2020-04-19T16:00:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/numpy/</loc>
+    <lastmod>2020-04-19T16:00:50+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/numpy/</loc>
     <lastmod>2020-04-19T16:00:50+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/numpy/</loc>
-    <lastmod>2020-05-02T03:40:18+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/python/</loc>
-    <lastmod>2020-05-18T03:41:41+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T16:00:50+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/rigveda/</loc>
     <lastmod>2020-04-19T16:00:49+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/veda/</loc>
     <lastmod>2020-04-19T16:00:49+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/notes-management/</loc>
     <lastmod>2020-04-19T16:00:47+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/organization/</loc>
     <lastmod>2020-04-19T16:00:47+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/productivity/</loc>
+    <lastmod>2020-04-19T16:00:47+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/ctf/</loc>
     <lastmod>2020-04-19T16:00:46+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/reverse/</loc>
     <lastmod>2020-04-19T16:00:46+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/web-ctf/</loc>
     <lastmod>2020-04-19T16:00:46+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/markov/</loc>
-    <lastmod>2020-05-02T03:40:16+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T16:00:44+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/markov-nets/</loc>
     <lastmod>2020-04-19T16:00:44+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/convolution/</loc>
+    <lastmod>2020-04-19T16:00:43+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/convolution/</loc>
     <lastmod>2020-04-19T16:00:43+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/convolution/</loc>
-    <lastmod>2020-05-02T03:40:04+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/categories/machinelearning/</loc>
-    <lastmod>2020-05-02T03:40:04+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T16:00:43+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/emacs-completion/</loc>
     <lastmod>2020-04-19T16:00:42+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/linux-tip/</loc>
     <lastmod>2020-04-19T16:00:41+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/config/</loc>
     <lastmod>2020-04-19T16:00:40+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/rcnn/</loc>
+    <lastmod>2020-04-19T16:00:40+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/rcnn/</loc>
     <lastmod>2020-04-19T16:00:40+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/rcnn/</loc>
-    <lastmod>2020-05-02T03:40:19+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/wordpress/</loc>
     <lastmod>2020-04-19T16:00:40+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/wordpress-manjaro/</loc>
     <lastmod>2020-04-19T16:00:40+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/bash/</loc>
     <lastmod>2020-04-19T16:00:38+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/know-bash-better/</loc>
     <lastmod>2020-04-19T16:00:38+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/scripting/</loc>
     <lastmod>2020-04-19T16:00:38+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/graph-neural-nets/</loc>
     <lastmod>2020-04-19T16:00:36+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/github-sec/</loc>
     <lastmod>2020-04-19T16:00:35+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/design/</loc>
     <lastmod>2020-04-19T16:00:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/image-processing-pipeline/</loc>
     <lastmod>2020-04-19T16:00:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/object-oriented-design/</loc>
     <lastmod>2020-04-19T16:00:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/objectoriented/</loc>
     <lastmod>2020-04-19T16:00:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/problemsolving/</loc>
-    <lastmod>2020-05-02T03:40:09+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T16:00:34+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/causality/</loc>
-    <lastmod>2020-05-02T03:40:03+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T16:00:33+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/ml/</loc>
-    <lastmod>2020-05-02T03:40:03+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T16:00:33+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/ml-causality/</loc>
     <lastmod>2020-04-19T16:00:33+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/preprocess/</loc>
     <lastmod>2020-04-19T16:00:32+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/scipy/</loc>
     <lastmod>2020-04-19T16:00:31+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/gayatri-mantra/</loc>
     <lastmod>2020-04-19T16:00:28+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/chatbot/</loc>
+    <lastmod>2020-04-19T16:00:27+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/meena/</loc>
     <lastmod>2020-04-19T16:00:27+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/useful/</loc>
     <lastmod>2020-04-19T16:00:26+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/emacs-tramp/</loc>
     <lastmod>2020-04-19T16:00:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/oneliner/</loc>
     <lastmod>2020-04-19T16:00:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/python-one-liners/</loc>
     <lastmod>2020-04-19T16:00:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/ssh/</loc>
+    <lastmod>2020-04-19T16:00:25+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/lisp/</loc>
     <lastmod>2020-04-19T16:00:24+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/devops/</loc>
     <lastmod>2020-04-19T16:00:23+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/04/scaling/</loc>
-    <lastmod>2020-04-19T16:00:23+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/scaling/</loc>
     <lastmod>2020-04-19T16:00:23+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/scaling/</loc>
+    <lastmod>2020-04-19T16:00:23+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/webserver/</loc>
     <lastmod>2020-04-19T16:00:23+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/mars/</loc>
     <lastmod>2020-04-19T16:00:20+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/mars-terraforming/</loc>
     <lastmod>2020-04-19T16:00:20+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/nn-interpretability/</loc>
     <lastmod>2020-04-19T16:00:20+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/categories/emacs/</loc>
     <lastmod>2020-04-19T16:00:19+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/odi/</loc>
     <lastmod>2020-04-19T16:00:19+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/oracle/</loc>
+    <lastmod>2020-04-19T16:00:19+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/ml-paper-questions/</loc>
     <lastmod>2020-04-19T16:00:15+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/ml-useful/</loc>
     <lastmod>2020-04-19T16:00:13+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/mathematics/</loc>
-    <lastmod>2020-05-02T03:40:14+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T16:00:11+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/matlab/</loc>
     <lastmod>2020-04-19T16:00:11+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/novel/</loc>
     <lastmod>2020-04-19T16:00:10+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/the-unbearable-lightness-of-being/</loc>
     <lastmod>2020-04-19T16:00:10+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/thought/</loc>
     <lastmod>2020-04-19T16:00:10+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/8086/</loc>
+    <lastmod>2020-04-19T16:00:09+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/assembly/</loc>
+    <lastmod>2020-04-19T16:00:09+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/mircroprocessor/</loc>
+    <lastmod>2020-04-19T16:00:09+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/topology/</loc>
+    <lastmod>2020-04-19T16:00:08+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/topology/</loc>
     <lastmod>2020-04-19T16:00:08+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/topology/</loc>
-    <lastmod>2020-05-02T04:00:57+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/problems/</loc>
     <lastmod>2020-04-19T16:00:06+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/macro/</loc>
     <lastmod>2020-04-19T16:00:05+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/message/</loc>
     <lastmod>2020-04-19T16:00:05+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/progressive-summarization/</loc>
     <lastmod>2020-04-19T16:00:05+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/3d/</loc>
     <lastmod>2020-04-19T16:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/3ddatarepresentation/</loc>
     <lastmod>2020-04-19T16:00:00+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/datawarehouse/</loc>
+    <lastmod>2020-04-19T15:59:59+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/ra/</loc>
     <lastmod>2020-04-19T15:59:59+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/warehouse/</loc>
     <lastmod>2020-04-19T15:59:59+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/memories/</loc>
     <lastmod>2020-04-19T15:59:58+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/memory/</loc>
     <lastmod>2020-04-19T15:59:58+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/raspberry-pi-project-ideas/</loc>
     <lastmod>2020-04-19T15:59:57+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/raspberrypi/</loc>
     <lastmod>2020-04-19T15:59:57+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/music/</loc>
+    <lastmod>2020-04-19T15:59:56+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/musical-thoughts/</loc>
     <lastmod>2020-04-19T15:59:56+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/hack/</loc>
     <lastmod>2020-04-19T15:59:55+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/nifty-linux-hacks/</loc>
     <lastmod>2020-04-19T15:59:55+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/python/</loc>
     <lastmod>2020-04-19T15:59:54+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/obiee/</loc>
     <lastmod>2020-04-19T15:59:53+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/obiee/</loc>
     <lastmod>2020-04-19T15:59:53+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/migrating-os/</loc>
     <lastmod>2020-04-19T15:59:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/migration/</loc>
     <lastmod>2020-04-19T15:59:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/os/</loc>
     <lastmod>2020-04-19T15:59:51+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</loc>
     <lastmod>2020-04-19T15:59:47+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/04/para/</loc>
-    <lastmod>2020-04-19T15:59:46+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/para/</loc>
     <lastmod>2020-04-19T15:59:46+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/para/</loc>
+    <lastmod>2020-04-19T15:59:46+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/matplotlib/</loc>
+    <lastmod>2020-04-19T15:59:45+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/matplotlib/</loc>
     <lastmod>2020-04-19T15:59:45+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/matplotlib/</loc>
-    <lastmod>2020-05-02T03:40:15+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/mcmc-methods/</loc>
     <lastmod>2020-04-19T15:59:44+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/office/</loc>
     <lastmod>2020-04-19T15:59:41+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/office-linux-package/</loc>
     <lastmod>2020-04-19T15:59:41+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/linux-one-liners/</loc>
     <lastmod>2020-04-19T15:59:40+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/oneliners/</loc>
     <lastmod>2020-04-19T15:59:40+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/guide/</loc>
+    <lastmod>2020-04-19T15:59:38+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/subconscious/</loc>
     <lastmod>2020-04-19T15:59:38+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/subconscious-reprogramming/</loc>
     <lastmod>2020-04-19T15:59:38+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/2017nov14-reminder-to-myself/</loc>
     <lastmod>2020-04-19T15:59:37+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/reminder/</loc>
     <lastmod>2020-04-19T15:59:37+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/bi/</loc>
     <lastmod>2020-04-19T15:59:36+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/inventory-replenishment/</loc>
     <lastmod>2020-04-19T15:59:36+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/replenishment/</loc>
     <lastmod>2020-04-19T15:59:36+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/retail/</loc>
     <lastmod>2020-04-19T15:59:36+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/consciousness/</loc>
     <lastmod>2020-04-19T15:59:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/pineal-gland/</loc>
     <lastmod>2020-04-19T15:59:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/pinealgland/</loc>
     <lastmod>2020-04-19T15:59:34+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/debate/</loc>
     <lastmod>2020-04-19T15:59:33+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/practical-guide-to-debating/</loc>
     <lastmod>2020-04-19T15:59:33+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/songs/</loc>
+    <lastmod>2020-04-19T15:59:32+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/emacs-windows-installation/</loc>
     <lastmod>2020-04-19T15:59:31+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/windows/</loc>
+    <lastmod>2020-04-19T15:59:31+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/paper/</loc>
+    <lastmod>2020-04-19T15:59:30+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/paper-reading-3-pass/</loc>
+    <lastmod>2020-04-19T15:59:30+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/nlp/</loc>
-    <lastmod>2020-05-02T03:46:24+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T15:59:29+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/text-text-transformers/</loc>
     <lastmod>2020-04-19T15:59:29+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/ra-and-bi/</loc>
     <lastmod>2020-04-19T15:59:28+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/sqlbasics/</loc>
     <lastmod>2020-04-19T15:59:26+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/bert/</loc>
-    <lastmod>2020-06-16T07:35:03+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T15:59:25+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/bert-tokenization/</loc>
     <lastmod>2020-04-19T15:59:25+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/tokenization/</loc>
-    <lastmod>2020-06-16T07:35:03+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T15:59:25+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/euler/</loc>
     <lastmod>2020-04-19T15:59:24+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/euler-621/</loc>
     <lastmod>2020-04-19T15:59:24+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/packages/</loc>
     <lastmod>2020-04-19T15:59:22+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/useful/</loc>
     <lastmod>2020-04-19T15:59:22+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/useful-linux-packages/</loc>
     <lastmod>2020-04-19T15:59:22+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/interstellar/</loc>
     <lastmod>2020-04-19T15:59:21+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/interstellar-poem/</loc>
     <lastmod>2020-04-19T15:59:21+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/movie/</loc>
     <lastmod>2020-04-19T15:59:21+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/muzero/</loc>
     <lastmod>2020-04-19T15:59:20+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/reinforcement/</loc>
-    <lastmod>2020-05-02T03:46:03+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T15:59:20+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/confidence/</loc>
     <lastmod>2020-04-19T15:59:18+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/public-speaking/</loc>
     <lastmod>2020-04-19T15:59:18+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/speaking/</loc>
     <lastmod>2020-04-19T15:59:18+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/org-mode-tips-and-tricks/</loc>
     <lastmod>2020-04-19T15:59:15+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/orgmode/</loc>
     <lastmod>2020-04-19T15:59:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/04/photoshop/</loc>
-    <lastmod>2020-04-19T15:59:14+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/photoshop/</loc>
     <lastmod>2020-04-19T15:59:14+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/photoshop/</loc>
+    <lastmod>2020-04-19T15:59:14+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/controlsystem/</loc>
-    <lastmod>2020-05-02T03:40:13+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T15:59:12+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/kalman/</loc>
+    <lastmod>2020-04-19T15:59:12+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/kalman/</loc>
     <lastmod>2020-04-19T15:59:12+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/tags/kalman/</loc>
-    <lastmod>2020-05-02T03:40:13+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/ctf-new/</loc>
     <lastmod>2020-04-19T15:59:08+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/categories/security/</loc>
     <lastmod>2020-04-19T15:59:08+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/etl/</loc>
     <lastmod>2020-04-19T15:59:07+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/etl-extraction/</loc>
     <lastmod>2020-04-19T15:59:07+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/extraction/</loc>
     <lastmod>2020-04-19T15:59:07+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/language/</loc>
     <lastmod>2020-04-19T15:59:03+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/sanskrit-learning/</loc>
     <lastmod>2020-04-19T15:59:03+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/top/</loc>
     <lastmod>2020-04-19T15:59:02+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/top-novels-subash/</loc>
     <lastmod>2020-04-19T15:59:02+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/braindump/2020/04/tmux/</loc>
-    <lastmod>2020-04-19T15:59:01+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/tmux/</loc>
     <lastmod>2020-04-19T15:59:01+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/tmux/</loc>
+    <lastmod>2020-04-19T15:59:01+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/django/</loc>
     <lastmod>2020-04-19T15:58:59+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/django-process/</loc>
     <lastmod>2020-04-19T15:58:59+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/nepali/</loc>
     <lastmod>2020-04-19T15:58:58+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/unicode-nepali-character-map/</loc>
     <lastmod>2020-04-19T15:58:58+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://dragarok.github.io/braindump/2020/04/ra/</loc>
+    <lastmod>2020-04-19T15:58:54+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/tags/resource/</loc>
     <lastmod>2020-04-19T15:58:53+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/security/</loc>
     <lastmod>2020-04-19T15:58:53+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/security-resources/</loc>
     <lastmod>2020-04-19T15:58:53+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/bayes/</loc>
-    <lastmod>2020-08-12T13:07:15+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T15:58:50+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/bayesian-prior/</loc>
     <lastmod>2020-04-19T15:58:50+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/ctf-resource/</loc>
     <lastmod>2020-04-19T15:58:47+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/whitehat/</loc>
     <lastmod>2020-04-19T15:58:47+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/muzero/</loc>
-    <lastmod>2020-05-02T03:46:03+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/about/</loc>
     <lastmod>2020-04-14T07:53:22+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/t2t_transformers/</loc>
-    <lastmod>2020-05-02T03:46:24+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/efficient_nets/</loc>
-    <lastmod>2020-05-02T04:04:27+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/harp/</loc>
-    <lastmod>2020-05-02T03:48:10+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/cayley_nets/</loc>
-    <lastmod>2020-05-02T04:01:43+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/chebnets/</loc>
-    <lastmod>2020-05-02T04:01:57+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/deepwalk/</loc>
-    <lastmod>2020-05-02T03:49:49+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/fast_graphconv_nets/</loc>
-    <lastmod>2020-05-02T04:09:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/graph_algos/</loc>
-    <lastmod>2020-05-02T03:44:10+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/graph_convolutions/</loc>
-    <lastmod>2020-05-02T03:44:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/graph_data_structures/</loc>
-    <lastmod>2020-05-02T03:44:21+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/graph_embedding_techniques/</loc>
-    <lastmod>2020-05-02T03:44:26+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/graph-neural-networks/</loc>
-    <lastmod>2020-05-02T03:44:39+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/graph_signal_processing/</loc>
-    <lastmod>2020-05-02T03:44:53+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/graph2vec/</loc>
-    <lastmod>2020-05-02T03:48:27+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/graphsage/</loc>
-    <lastmod>2020-05-02T03:44:44+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/monets/</loc>
-    <lastmod>2020-05-02T03:43:31+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/motifs/</loc>
-    <lastmod>2020-05-02T03:43:22+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/node2vec/</loc>
-    <lastmod>2020-05-02T03:43:13+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/topology/</loc>
-    <lastmod>2020-05-02T04:00:57+05:45</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dragarok.github.io/tags/anaconda/</loc>
-    <lastmod>2020-05-18T03:41:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/anaconda-windows/</loc>
-    <lastmod>2020-05-18T03:41:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/categories/howtoguide/</loc>
-    <lastmod>2020-05-18T03:41:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/categories/solutions/</loc>
-    <lastmod>2020-05-18T03:41:41+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/spatial_convolutional_nets/</loc>
-    <lastmod>2020-05-02T03:42:25+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/tokenizing_for_bert/</loc>
-    <lastmod>2020-06-16T07:35:03+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/image_processing_pipeline/</loc>
-    <lastmod>2020-05-02T03:40:09+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/markovnets/</loc>
-    <lastmod>2020-05-02T03:40:14+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/mcmcmethods/</loc>
-    <lastmod>2020-05-02T03:40:16+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/causality_in_ml/</loc>
-    <lastmod>2020-05-02T03:40:03+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/useful_in_ml/</loc>
-    <lastmod>2020-05-02T03:58:07+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/interpretability/</loc>
-    <lastmod>2020-05-02T03:40:09+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/preprocess_random/</loc>
-    <lastmod>2020-05-02T03:40:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/rcnn/</loc>
-    <lastmod>2020-05-02T03:40:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/bayesianprior/</loc>
-    <lastmod>2020-08-12T13:07:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/matplotlib/</loc>
-    <lastmod>2020-05-02T03:40:15+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/matlab/</loc>
-    <lastmod>2020-05-02T03:40:14+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/scipy/</loc>
-    <lastmod>2020-05-02T03:40:19+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/convolution/</loc>
-    <lastmod>2020-05-02T03:40:04+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/numpy/</loc>
-    <lastmod>2020-05-02T03:40:18+05:45</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/ai/kalmans/</loc>
-    <lastmod>2020-05-02T03:40:13+05:45</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-19T15:59:13+05:45</lastmod>
+  </url><url>
     <loc>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</loc>
     <lastmod>2020-04-19T15:59:13+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/categories/howtoguide/</loc>
+    <lastmod>2020-04-19T15:59:13+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/categories/solutions/</loc>
+    <lastmod>2020-04-19T15:59:13+05:45</lastmod>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/composition/</loc>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/default/</loc>
+  </url><url>
+    <loc>https://dragarok.github.io/posts/1/01/my-first-vipassana-experience/</loc>
+  </url><url>
+    <loc>https://dragarok.github.io/posts/1/01/peak-poem/</loc>
+  </url><url>
+    <loc>https://dragarok.github.io/tags/poem/</loc>
   </url>
-  
-  <url>
-    <loc>https://dragarok.github.io/posts/2015/05/%E0%A4%B8%E0%A4%A4%E0%A5%8D%E0%A4%AF/</loc>
-    <lastmod>2020-05-01T07:42:58+05:45</lastmod>
-  </url>
-  
 </urlset>

@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/bi/</link>
     <description>Recent content in BI on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:36 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/bi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inventory Replenishment</title>
@@ -13,7 +13,7 @@
       <pubDate>Sun, 19 Apr 2020 15:59:36 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/inventory-replenishment/</guid>
-      <description>Talk about business opportunity History and Comparison Consumer and Customer Analytics Replenishment: Replenishment Execution System:  Order Point Order Upton Point   Defining these two points is the key. Unknowns and Parameters &amp;ndash;&amp;gt; Optimizations  Terms  Lead time &amp;ndash; Time between ordering and getting items avail for sale.  Order to pickup + Pickup to location + Warehouse to location   ROQ &amp;ndash; Recommended Order Quantity Inventory selling days &amp;ndash; No of days of supply desired when replenishment is made.</description>
+      <description>Talk about business opportunity History and Comparison Consumer and Customer Analytics Replenishment: Replenishment Execution System: Order Point Order Upton Point Defining these two points is the key. Unknowns and Parameters &amp;ndash;&amp;gt; Optimizations Terms Lead time &amp;ndash; Time between ordering and getting items avail for sale. Order to pickup + Pickup to location + Warehouse to location ROQ &amp;ndash; Recommended Order Quantity Inventory selling days &amp;ndash; No of days of supply desired when replenishment is made.</description>
     </item>
     
     <item>

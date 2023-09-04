@@ -5,114 +5,118 @@
     <link>https://dragarok.github.io/braindump/</link>
     <description>Recent content in Braindumps on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/braindump/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Apr 2020 04:53:19 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/braindump/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>R Programming 105- Unsupervised Learning</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-105-unsupervised-learning/</link>
-      <pubDate>Fri, 09 Oct 2020 00:00:00 +0545</pubDate>
+      <title>Emacs Hugo Blogging</title>
+      <link>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</link>
+      <pubDate>Sun, 26 Apr 2020 04:53:19 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-105-unsupervised-learning/</guid>
-      <description>K Means Clustering res &amp;lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on.   Arguments
- Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</guid>
+      <description>:ID: 0dacbf0d-550d-4db9-8e15-6ffcede1107c
+Hugo blogging Liked themes:
+Meme theme Harbor Cortex &amp;ndash;JethroKuan Hello friend ng rhazdon Beautiful Hugo Blogging org mode Font Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well
+//fonts.googleapis.com/css?family=Roboto+Slab:700,300,400|Source+Code+Pro:500 //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+Normalize css : I don&amp;rsquo;t know what it does but looks pretty cool with all these stars on github.
+I think I have a faint idea now about what it does. It actually makes sure all line heights and stuffs look all the same whatever the browser may be.</description>
     </item>
     
     <item>
-      <title>R Programming 105- Supervised Learning 1</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-1/</link>
-      <pubDate>Thu, 08 Oct 2020 00:00:00 +0545</pubDate>
+      <title>Beyond Higgs Boson</title>
+      <link>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-1/</guid>
-      <description>Aggregate by column aggregate(col_name ~ by_column_name, data = df_name, mean) We can use other functions instead of mean as well. The variable after tilde is what the aggregation is done with respect to. If by_column_name is continent, the above code will calculate the mean for all continents for given column: e.g. age or anything like that.
-Nearest Neighbors library(class) knn(train = train_data, test = test_data, cl=vector_train_labels)   Confusion Matrix</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</guid>
+      <description>&amp;ndash; link: Beyond Higgs: The Wild Frontier of Particle Physics - YouTube - Brave
+What are these people looking for? Supersymmetry Mathematical idea: Not still experimentally verified. Pencil standing on it&amp;rsquo;s tip Analogy: Though people found the Higgs out there, there is still no understanding of how the higgs is standing in the standard model. Physicists are looking for the support for the pencil if it is being held by a string or being held by hand.</description>
     </item>
     
     <item>
-      <title>R Programming 105- Supervised Learning 2 Regression</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-2-regression/</link>
-      <pubDate>Thu, 08 Oct 2020 00:00:00 +0545</pubDate>
+      <title>Google Dorks</title>
+      <link>https://dragarok.github.io/braindump/2020/04/google-dorks/</link>
+      <pubDate>Thu, 23 Apr 2020 16:31:35 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-2-regression/</guid>
-      <description>TODOGain Curve Writing formulas formula_obj &amp;lt;- var1 ~ var2 formula_obj &amp;lt;- var1 ~ var2 + var3 formula_obj &amp;lt;- as.formula(&amp;#34;var1 ~ var2&amp;#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var)  print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/google-dorks/</guid>
+      <description>What Is Google Dorks? It is basically an advanced google search!
+I have included four types of google dorks in this collection: Google dorks for SQL injection, Google dorks for Local File Inclusion, Google dorks For open CCTV cams and Google dorks for sensitive information.
+Copy and paste the below google dorks on the search engine and have fun!
+Google Dorks For SQL Injection:
+•inurl:index.php?id=
+•inurl:trainers.php?id=
+•inurl:buy.php?category=
+•inurl:article.php?ID=
+•inurl:play_old.php?id=
+•inurl:declaration_more.php?decl_id=</description>
     </item>
     
     <item>
-      <title>R Programming 104- Correlation and Regression</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</link>
-      <pubDate>Tue, 06 Oct 2020 00:00:00 +0545</pubDate>
+      <title>Algorithms</title>
+      <link>https://dragarok.github.io/braindump/2020/04/algorithms/</link>
+      <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</guid>
-      <description>Backlinks  Data Scientist with R  </description>
+      <guid>https://dragarok.github.io/braindump/2020/04/algorithms/</guid>
+      <description>Algorithms Basic rules of complexity definition for removing terms:
+Multiplicative constants can be omitted: 14n2 becomes n2. n^a dominates n^b if a &amp;gt; b: for instance, n^2 dominates n. Any exponential dominates any polynomial: 3^n dominates n^5 (it even dominates 2^n). Likewise, any polynomial dominates any logarithm: n dominates (log n)^3. This also means, for example, that n^2 dominates n* log n. Techniques to think of counter examples:
+Think small Think exhaustively: All possibilities by adding to general cases Hunt for the weakness: understand the problem statement and try to find loopholes Go for a tie: Attacking greedy procedures Extreme examples: Searching for solution to problem needs you to know first the type of problem it falls into:</description>
     </item>
     
     <item>
-      <title>R Programming 104- Correlation and Regression</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</link>
-      <pubDate>Tue, 06 Oct 2020 00:00:00 +0545</pubDate>
+      <title>Graph Signal Processing</title>
+      <link>https://dragarok.github.io/braindump/2020/04/graph-signal-processing/</link>
+      <pubDate>Tue, 21 Apr 2020 05:57:03 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</guid>
-      <description>Getting the coefficients ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89  coef(model_var) summary(model_var) fitted.values(mod_var) # each observation fitted residuals(mod_var) \[e + \hat{y} = y \] The sum of residual and fitted value is equal to the original value.
-Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname{Var}(e)}{\operatorname{Var}(y)}\] This helps to analyze between different models how good the fit is. It compares the model&amp;rsquo;s utility with respect o null model. \[ y = \hat{y} \] which always outputs the mean of the overall data whatever the input is.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/graph-signal-processing/</guid>
+      <description>&amp;ndash; tags: Graph Convolutions
+Basics Spectral Graph Convolutional Network: GSP is the key to generalizing convolutions, allowing us to build functions that can take into account both the overall structure of the graph and the individual properties of the graph’s components. It is the graph fourier transform that allows one to introduce the notion of a “bandwidth” or “smoothness” to a graph In GCNs, node features and attributes are represented by “signals”.</description>
     </item>
     
     <item>
-      <title>R Programming 103- Exploratory Data Analysis</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-103-exploratory-data-analysis/</link>
-      <pubDate>Mon, 05 Oct 2020 00:00:00 +0545</pubDate>
+      <title>Graph Convolutions</title>
+      <link>https://dragarok.github.io/braindump/2020/04/graph-convolutions/</link>
+      <pubDate>Tue, 21 Apr 2020 05:54:09 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-103-exploratory-data-analysis/</guid>
-      <description>Practice Course   Dropping levels from categorical dataset
-df %&amp;gt;% filter(col_name != &amp;#34;certain_level&amp;#34;) %&amp;gt;% droplevels(df$col_name)     Counts vs Proportions
-prop.table(table_obj) prop.table(table_obj, number) # used to condition on some factor prop.table(table_obj, 1) # condition on rows prop.table(table_obj, 2) # condition on columns With this method, we can have marginal distributions for ourselves.
-    Numerical Data
-Note on the variability of the distribution and mean of the distribution when looking at numerical data representations.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/graph-convolutions/</guid>
+      <description>Graph Conv &amp;ndash; What is inductive bias ? &amp;ndash; Inductive bias of a learning algorithm is the set of assumptions that the learner uses to predict outputs given inputs that it has not encountered. &amp;ndash; Neural Networks tend to discard the features that have very less significance in task at hand. &amp;ndash; Similary, GNNs have bias: By structuring the data in a way that prioritizes certain patterns, we can improve model performance, even if the data is the same.</description>
     </item>
     
     <item>
-      <title>R Programming 102- Dates and Times</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-102-dates-and-times/</link>
-      <pubDate>Sun, 04 Oct 2020 00:00:00 +0545</pubDate>
+      <title>Fast GraphConv Nets</title>
+      <link>https://dragarok.github.io/braindump/2020/04/fast-graphconv-nets/</link>
+      <pubDate>Tue, 21 Apr 2020 05:53:45 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-102-dates-and-times/</guid>
-      <description>Inbuilt Functionalities Breaks on date axes in years:
-scale_x_date(date_breaks = &amp;#34;5 years&amp;#34;, date_labels = &amp;#34;%Y&amp;#34;) Types of Datetimes
- POSIXct : seconds since 1970-01-01 POSIXlt : list with named components  as.POSIXct(&amp;#34;date-string&amp;#34;) UTC as Timezone in Datetime object: 2010-01-01 00:00:00Z will mean a UTC timezone object and will be parsed accordingly. Else the time is local. You can change the timezone in POSIXct object though.
-as.POSIXct(&amp;#34;date-string&amp;#34;, tz= &amp;#34;UTC&amp;#34;) This line preserves the datetime in UTC.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/fast-graphconv-nets/</guid>
+      <description>&amp;ndash; tags: Graph Signal Processing
+Intro &amp;ndash; The kernel is defined in Fourier space and graph Fourier transforms are notoriously expensive to compute. &amp;ndash; O(N²) operation for a graph with N nodes: the multiplication operation for i/p nodes and eigenvec of graph&amp;rsquo;s laplacian. &amp;ndash; Thus as a solution to the computational complexity introduced by it, Monte Carlo (biased random sampling method) approaches to consistently estimate the integrals, which allowed for batch training, reducing the overall training time.</description>
     </item>
     
     <item>
-      <title>R Programming 102- Functions in R</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-102-functions-in-r/</link>
-      <pubDate>Sun, 04 Oct 2020 00:00:00 +0545</pubDate>
+      <title>MoNets</title>
+      <link>https://dragarok.github.io/braindump/2020/04/monets/</link>
+      <pubDate>Tue, 21 Apr 2020 05:53:35 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-102-functions-in-r/</guid>
-      <description>List the arguments to a function args(function_name) Categorical defaults function(x, y, z, cat_arg = c(&amp;#34;arg1&amp;#34;, &amp;#34;arg2&amp;#34;, &amp;#34;arg3&amp;#34;)) # inside function body cat_arg &amp;lt;- match.arg(cat_arg) Passing arguments between functions function(x, ...) { some_other_function(...) } In cases where some_other_function in our case takes many arguments that we want to specify as the user sends them, we can use ellipsis like this to get around with it.
-Checking for values type manually if(! is.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/monets/</guid>
+      <description>&amp;ndash; tags: Graph Signal Processing
+MoNets: &amp;ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. &amp;ndash; Contributions: &amp;ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches &amp;ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) &amp;ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks &amp;ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input.</description>
     </item>
     
     <item>
-      <title>R Programming 102- Cleaning data</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-102-cleaning-data/</link>
-      <pubDate>Sat, 03 Oct 2020 00:00:00 +0545</pubDate>
+      <title>Motifs</title>
+      <link>https://dragarok.github.io/braindump/2020/04/motifs/</link>
+      <pubDate>Tue, 21 Apr 2020 05:53:26 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-102-cleaning-data/</guid>
-      <description>library(assertive) assert_is_numeric(df$col_name) assert_is_character(df$col_name) class(df$col_name) # check data types Similarly, we have more functions for more data type checks.
-library(stringr) str_remove(df$tbl_name, &amp;#34;char_to_be_removed&amp;#34;) Assert values within a range given by lower and upper arguments.
-assert_all_are_in_closed_range(df$tbl_name, lower = num, upper = num) Assert all dates are in the past
-assert_all_are_in_past(tbl_name$col_name) as.Date(dateCol) # to convert to date type Uniqueness constraints for Full duplicates
-duplicated(df) # finds full duplicates and returns logical values sum(duplicated(df)) # count of full duplicates Uniqueness constraints for partial duplicates</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/motifs/</guid>
+      <description>&amp;ndash; tags: Graph Signal Processing
+Intro &amp;ndash; Essentially, the mode partitions input graphs into motifs which are unique substructures of x length, such that any graph in the dataset can be built by some combination of the motifs. &amp;ndash; The motifs take into directionality of edges into consideration, a detail in graph theory that has been omitted in previous graph learning approaches. &amp;ndash; Each convolutional layer of a MotifNet has a multivariate matrix polynomial (a fancy kernel where each element is a polynomial with multiple variables), which is applied to and learns from the motif’s Laplacian matrices.</description>
     </item>
     
     <item>
-      <title>R Programming 102- Importing Databases and URLs</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-102-importing-databases-and-urls/</link>
-      <pubDate>Sat, 03 Oct 2020 00:00:00 +0545</pubDate>
+      <title>ChebNets</title>
+      <link>https://dragarok.github.io/braindump/2020/04/chebnets/</link>
+      <pubDate>Tue, 21 Apr 2020 05:53:09 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-102-importing-databases-and-urls/</guid>
-      <description>Databases Importing Library library(DBI) Creating Connection con &amp;lt;-dbConnect(RMySQL::MySQL(), dbname = &amp;#34;db_name&amp;#34;, host = &amp;#34;localhost&amp;#34;, port = port_num, user = &amp;#34;username&amp;#34;, password = &amp;#34;my_password&amp;#34;) This connection object is specific to MySQL database.
-Importing data   Read Whole Tables
-dbListTables(con) dbReadTable(con, &amp;#34;table_name&amp;#34;)     Read selected data from tables
-dbGetQuery(con, &amp;#34;SELECT * FROM TABLE_NAME WHERE date &amp;gt; &amp;#39;2020-02-01&amp;#39;&amp;#34;) res &amp;lt;- dbSendQuery(con, &amp;#34;query string&amp;#34;) dbFetch(res) dbClearResult(res) The dbGetQuery first sends the query and fetches it.</description>
+      <guid>https://dragarok.github.io/braindump/2020/04/chebnets/</guid>
+      <description>&amp;ndash; tags: Graph Signal Processing
+ChebNets &amp;ndash; Spectral convolutions are defined as the multiplication of a signal (node features/attributes) by a kernel. &amp;ndash; Thus similar to original convolution operation &amp;ndash; The kernel used in a spectral convolution made of Chebyshev polynomials of the diagonal matrix of Laplacian eigenvalues &amp;ndash; The kernel equals the sum of all Chebyshev polynomial kernels applied to the diagonal matrix of scaled Laplacian eigenvalues for each order of k up to K-1.</description>
     </item>
     
   </channel>

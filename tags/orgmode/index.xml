@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/orgmode/</link>
     <description>Recent content in orgmode on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:15 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Org mode Tips and Tricks</title>
@@ -13,7 +13,7 @@
       <pubDate>Sun, 19 Apr 2020 15:59:15 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/org-mode-tips-and-tricks/</guid>
-      <description>Clone trees with time shifts: Bound to C-c C-x c, org-clone-subtree-with-time-shift create multiple subtrees with timestamps shifted. Useful for creating skeleton for repeated tasks. Spc-m-b-c : create table or update from region:  use with whitespace mode if there is an issue.   Advanced features (The Org Manual)  Gives functionality to change formula, update on formula change, go directly to formula and so on.   Also we can create org tables in html mode as well as latex mode.</description>
+      <description>Clone trees with time shifts: Bound to C-c C-x c, org-clone-subtree-with-time-shift create multiple subtrees with timestamps shifted. Useful for creating skeleton for repeated tasks. Spc-m-b-c : create table or update from region: use with whitespace mode if there is an issue. Advanced features (The Org Manual) Gives functionality to change formula, update on formula change, go directly to formula and so on. Also we can create org tables in html mode as well as latex mode.</description>
     </item>
     
   </channel>

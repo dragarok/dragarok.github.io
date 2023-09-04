@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/categories/emacs/</link>
     <description>Recent content in emacs on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:19 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ODI</title>
@@ -13,7 +13,7 @@
       <pubDate>Sun, 19 Apr 2020 16:00:19 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/odi/</guid>
-      <description>Full package for ETL Automation tool: UC4 RMS Server Database  These work together; ODI isn&amp;rsquo;t standalone. All stuffs may be installed in the same RMS server.    Jobs  Handled by (ksh) scripts to run different jobs  UC4  Scheduler Agent: defined in uc4 to connect to RMS server.  defines path of scripts    ODI agent  Connect between server &amp;amp; ODI Can also automate UC4 tasks in newer versions.</description>
+      <description>Full package for ETL Automation tool: UC4 RMS Server Database These work together; ODI isn&amp;rsquo;t standalone. All stuffs may be installed in the same RMS server. Jobs Handled by (ksh) scripts to run different jobs UC4 Scheduler Agent: defined in uc4 to connect to RMS server. defines path of scripts ODI agent Connect between server &amp;amp; ODI Can also automate UC4 tasks in newer versions. Architecture Design Mapping Transform Making of Project Operator Logging Status of jobs Topology Defining connections : physical and logical Physical connections ==&amp;gt; Mapped to logical connections Data model ==&amp;gt; Map table columns to table columns and so on.</description>
     </item>
     
   </channel>

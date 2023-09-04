@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/ra/</link>
     <description>Recent content in ra on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:59 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/ra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Warehouse</title>
@@ -17,7 +17,7 @@
 Dimensions Facts
 Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage
 Column naming: Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC
-  Maintenance columns: insert timestamp, update, close, close_dt</description>
+Maintenance columns: insert timestamp, update, close, close_dt</description>
     </item>
     
   </channel>

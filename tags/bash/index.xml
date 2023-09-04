@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/bash/</link>
     <description>Recent content in bash on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:38 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Know Bash Better</title>
@@ -13,7 +13,7 @@
       <pubDate>Sun, 19 Apr 2020 16:00:38 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/know-bash-better/</guid>
-      <description>Run a history command  ![line-num-from-history]   Run any command as like as last time  ![e.g. !vim] would open the same file/directory you did last time.   Perform previous action as root  sudo !!   Search through history commands  Control+R Control+C to cancel   Search  grep &amp;ldquo;text&amp;rdquo; filename   tldr :  tldr is useful find.    -Cheat</description>
+      <description>Run a history command ![line-num-from-history] Run any command as like as last time ![e.g. !vim] would open the same file/directory you did last time. Perform previous action as root sudo !! Search through history commands Control+R Control+C to cancel Search grep &amp;ldquo;text&amp;rdquo; filename tldr : tldr is useful find. - Cheat</description>
     </item>
     
   </channel>

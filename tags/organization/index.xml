@@ -5,7 +5,7 @@
     <link>https://dragarok.github.io/tags/organization/</link>
     <description>Recent content in organization on Alok&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:47 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/organization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes Management</title>
@@ -13,7 +13,7 @@
       <pubDate>Sun, 19 Apr 2020 16:00:47 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/notes-management/</guid>
-      <description>Notes Management  Org-ref Helm-bibtex Interleave Org-capture The whole process is about writing notes, interleaving them, collecting references so that this whole loop can be iterated.  Process  papers.org and papers.bib &amp;ndash;&amp;gt; huge files Books, papers, articles marked as TODO When going through the file convert captures to bibtex references.  Helm bibtex for searching references directly or have paper and let bibtex do the work   Capture TODO to document TODO in papers.</description>
+      <description>Notes Management Org-ref Helm-bibtex Interleave Org-capture The whole process is about writing notes, interleaving them, collecting references so that this whole loop can be iterated. Process papers.org and papers.bib &amp;ndash;&amp;gt; huge files Books, papers, articles marked as TODO When going through the file convert captures to bibtex references. Helm bibtex for searching references directly or have paper and let bibtex do the work Capture TODO to document TODO in papers.org itself.</description>
     </item>
     
   </channel>
