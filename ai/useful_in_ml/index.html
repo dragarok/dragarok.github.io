@@ -6,16 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
 <meta name="description" content="&amp;ndash;tags: 3ddatarepresentation
-Useful tricks:   Setting the subplot size:
+Useful tricks: Setting the subplot size:
 f, axs = plt.subplots(2,2,figsize=(15,15))
-  Permuting axes in torch tensor(Useful when torch images axes need to be changed):
+Permuting axes in torch tensor(Useful when torch images axes need to be changed):
 testimage = image[0].permute(1, 2, 0)
-  Adding rectangular box to images:
+Adding rectangular box to images:
 ax.add_patch(rectangle)
-  patches from matplotlib.patches
-  patches will have function for a rectangle
-   Add empty numpy array   np.empty()
-  can be filled using matrix_name." />
+patches from matplotlib.patches
+patches will have function for a rectangle
+Add empty numpy array np.empty()
+can be filled using matrix_name.fill(d)
+Contiguous() call in pytorch: When you call contiguous(), it actually makes a copy of tensor so the order of elements would be same as if tensor of same shape created from scratch." />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -24,7 +25,7 @@ ax.add_patch(rectangle)
 
     <title>
         
-            ML Useful :: Alok&#39;s Blog 
+            ML Useful ::  
         
     </title>
 
@@ -44,7 +45,7 @@ ax.add_patch(rectangle)
 
 
 
-<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../main.min.47d1ac1539fe1320a4309408fbd7b3a0a50b48482799b1e81ee0115e02cb24e2.css">
 
 
 
@@ -60,45 +61,41 @@ ax.add_patch(rectangle)
 
 <meta itemprop="name" content="ML Useful">
 <meta itemprop="description" content="&ndash;tags: 3ddatarepresentation
-Useful tricks:   Setting the subplot size:
+Useful tricks: Setting the subplot size:
 f, axs = plt.subplots(2,2,figsize=(15,15))
-  Permuting axes in torch tensor(Useful when torch images axes need to be changed):
+Permuting axes in torch tensor(Useful when torch images axes need to be changed):
 testimage = image[0].permute(1, 2, 0)
-  Adding rectangular box to images:
+Adding rectangular box to images:
 ax.add_patch(rectangle)
-  patches from matplotlib.patches
-  patches will have function for a rectangle
-   Add empty numpy array   np.empty()
-  can be filled using matrix_name.">
-<meta itemprop="datePublished" content="2020-01-24T00:00:00+05:45" />
+patches from matplotlib.patches
+patches will have function for a rectangle
+Add empty numpy array np.empty()
+can be filled using matrix_name.fill(d)
+Contiguous() call in pytorch: When you call contiguous(), it actually makes a copy of tensor so the order of elements would be same as if tensor of same shape created from scratch."><meta itemprop="datePublished" content="2020-01-24T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-05-02T03:58:07+05:45" />
-<meta itemprop="wordCount" content="1283">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="1283"><meta itemprop="image" content="https://dragarok.github.io/"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="ML Useful"/>
 <meta name="twitter:description" content="&ndash;tags: 3ddatarepresentation
-Useful tricks:   Setting the subplot size:
+Useful tricks: Setting the subplot size:
 f, axs = plt.subplots(2,2,figsize=(15,15))
-  Permuting axes in torch tensor(Useful when torch images axes need to be changed):
+Permuting axes in torch tensor(Useful when torch images axes need to be changed):
 testimage = image[0].permute(1, 2, 0)
-  Adding rectangular box to images:
+Adding rectangular box to images:
 ax.add_patch(rectangle)
-  patches from matplotlib.patches
-  patches will have function for a rectangle
-   Add empty numpy array   np.empty()
-  can be filled using matrix_name."/>
+patches from matplotlib.patches
+patches will have function for a rectangle
+Add empty numpy array np.empty()
+can be filled using matrix_name.fill(d)
+Contiguous() call in pytorch: When you call contiguous(), it actually makes a copy of tensor so the order of elements would be same as if tensor of same shape created from scratch."/>
 
 
 
 
 
-    <meta property="article:published_time" content="2020-01-24 00:00:00 &#43;0545 &#43;0545" />
+    <meta property="article:published_time" content="2020-01-24 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -192,7 +189,7 @@ ax.add_patch(rectangle)
 <p>patches will have function for a rectangle</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <ul>
 <li>Add empty numpy array
 <ul>
@@ -205,7 +202,7 @@ ax.add_patch(rectangle)
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <ul>
 <li>Contiguous() call in pytorch:
 <ul>
@@ -213,14 +210,14 @@ ax.add_patch(rectangle)
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <ul>
 <li>
 <p>Random permutation function in pytorch:</p>
 <p>rand_num_perm = torch.randperm(self.num_per_batch)</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <ul>
 <li>Expanding tensor without making a change to a dimension:
 <ul>
@@ -241,7 +238,7 @@ ax.add_patch(rectangle)
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <ul>
 <li>
 <p>Convert 1 channel image to 3 channels:</p>
@@ -250,7 +247,7 @@ im = im[:,:,np.newaxis]
 im = np.concatenate((im,im,im), axis=2)</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--listend-->
 <ul>
 <li>RGB to BGR image:</li>
 </ul>
@@ -328,16 +325,16 @@ a is 2,2,1</p>
 <p>Splitting ndarrays:</p>
 <p>x = np.split(a, subsection [2,7] or no of splits to be made 3, axis=0)</p>
 <p>Numpy character functions:</p>
-<p>np.char.add([&lsquo;hello&rsquo;],[' xyz'])</p>
+<p>np.char.add([&lsquo;hello&rsquo;],[&rsquo; xyz&rsquo;])</p>
 <p>np.char.multiply(&lsquo;Hello &lsquo;,3)</p>
 <p>numpy.char.center(arr,width,fillchar)</p>
-<p>e.g. np.char.center(&lsquo;hello&rsquo;,20,fillchar='*')</p>
+<p>e.g. np.char.center(&lsquo;hello&rsquo;,20,fillchar=&rsquo;*&rsquo;)</p>
 <p>np.char.capitalize(&lsquo;hello world&rsquo;)</p>
-<p>np.char.title(&lsquo;hello how are you?')</p>
+<p>np.char.title(&lsquo;hello how are you?&rsquo;)</p>
 <p>lower and upper functions</p>
 <p>split with sep option</p>
 <p>strip and choose which to strip . can do it in arrays too.</p>
-<p>np.char.join(':&rsquo;,&lsquo;dmy&rsquo;)</p>
+<p>np.char.join(&rsquo;:&rsquo;,&lsquo;dmy&rsquo;)</p>
 <p>replace, and also encode functions are available</p>
 <p>Rounding to decimal places:</p>
 <p>np.around(a,decimals=1)</p>
@@ -355,9 +352,9 @@ a is 2,2,1</p>
 <p>or you can just give the axis to sort about to sort by column and so on.</p>
 <p>numpy has dtype function to specifically give the pararmeters like definition for specific arrays</p>
 <p>say for person&rsquo;s array , we can have dtype as:</p>
-<p>person_dtype = np.dtype([(&lsquo;name&rsquo;,&lsquo;S10&rsquo;),(&lsquo;age&rsquo;,int)])</p>
+<p>person_dtype = np.dtype([(&rsquo;name&rsquo;,&lsquo;S10&rsquo;),(&lsquo;age&rsquo;,int)])</p>
 <p>a = np.array([(&ldquo;raju&rdquo;,21),(&ldquo;anil&rdquo;,25),(&ldquo;ravi&rdquo;, 17), (&ldquo;amar&rdquo;,27)], dtype = dt)</p>
-<p>np.sort(a,order = &lsquo;name&rsquo;)</p>
+<p>np.sort(a,order = &rsquo;name&rsquo;)</p>
 <p>argsort to get the index of sorted array so that it can be used to order other related arrays as well.</p>
 <p>nonzero function : gives the index of non zero elements in ndarray. The indexes will be such that x indices in first array and y indices in second array.</p>
 <p>np.where(condition) also gives index in row, column format so passing such value to ndarray as ndarray[index_of_rows_and_cols] will give the resp elements</p>
@@ -438,22 +435,6 @@ underlying data they use is the same.</p>
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -461,7 +442,7 @@ underlying data they use is the same.</p>
 
 
 
-<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
 
 
 

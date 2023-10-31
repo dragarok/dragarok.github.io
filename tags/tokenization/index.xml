@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tokenization on Alok&#39;s Blog</title>
+    <title>tokenization on </title>
     <link>https://dragarok.github.io/tags/tokenization/</link>
-    <description>Recent content in tokenization on Alok&#39;s Blog</description>
+    <description>Recent content in tokenization on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:25 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/tokenization/index.xml" rel="self" type="application/rss+xml" />
@@ -17,6 +17,16 @@
 n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256
 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&amp;rsquo;[CLS]&amp;rsquo;] self.pad_token = self.tokenizer.vocab[&amp;rsquo;[PAD]&#39;]
 def encode(self, input): return list(self.</description>
+    </item>
+    
+    <item>
+      <title>Bert Tokenization</title>
+      <link>https://dragarok.github.io/ai/tokenizing_for_bert/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dragarok.github.io/ai/tokenizing_for_bert/</guid>
+      <description>&amp;quot;&amp;quot;&amp;quot; Adapted from Oliver Atanaszov&amp;rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &amp;quot;&amp;quot;&amp;quot;
+from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&amp;#39;[CLS]&amp;#39;] self.pad_token = self.tokenizer.vocab[&amp;#39;[PAD]&amp;#39;] def encode(self, input): return list(self.</description>
     </item>
     
   </channel>

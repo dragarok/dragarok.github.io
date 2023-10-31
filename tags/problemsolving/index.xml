@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>problemsolving on Alok&#39;s Blog</title>
+    <title>problemsolving on </title>
     <link>https://dragarok.github.io/tags/problemsolving/</link>
-    <description>Recent content in problemsolving on Alok&#39;s Blog</description>
+    <description>Recent content in problemsolving on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:34 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/problemsolving/index.xml" rel="self" type="application/rss+xml" />
@@ -31,6 +31,20 @@ Extract features that you think will most probably define your data.</descriptio
 def streak(a): for i in range(1,a,1): if (a%i) != 0: return i
 def pfunction(s,n): count=0 for j in range(1, n, 1): if(streak(j))==s: count = count +1 return count
 sum=0 for i in range(1,31,1): sum = sum + pfunction(i,int(math.pow(4,i)))</description>
+    </item>
+    
+    <item>
+      <title>Image Processing Pipeline</title>
+      <link>https://dragarok.github.io/ai/image_processing_pipeline/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dragarok.github.io/ai/image_processing_pipeline/</guid>
+      <description>Integrating image processing with machine learning consists of following steps:
+Decide your project title/purpose/objectives.
+Collect data, i.e images relevant to your project.
+Preprocess all the collected images. Preprocessing steps may be different for different projects. It basically includes filtering, noise removal, grayscale conversion, binary image formation, morphological operation, thresholding and so on.
+Divide the preprocessed images into two sets: training and tesing sets.
+Extract features that you think will most probably define your data.</description>
     </item>
     
   </channel>

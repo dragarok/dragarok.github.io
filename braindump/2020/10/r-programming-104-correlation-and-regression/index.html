@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Getting the coefficients ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89  coef(model_var) summary(model_var) fitted.values(mod_var) # each observation fitted residuals(mod_var) \[e &#43; \hat{y} = y \] The sum of residual and fitted value is equal to the original value.
+<meta name="description" content="Getting the coefficients ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89 coef(model_var) summary(model_var) fitted.values(mod_var) # each observation fitted residuals(mod_var) \[e &#43; \hat{y} = y \] The sum of residual and fitted value is equal to the original value.
 Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname{Var}(e)}{\operatorname{Var}(y)}\] This helps to analyze between different models how good the fit is. It compares the model&amp;rsquo;s utility with respect o null model. \[ y = \hat{y} \] which always outputs the mean of the overall data whatever the input is." />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
@@ -15,7 +15,7 @@ Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname
 
     <title>
         
-            R Programming 104- Correlation and Regression :: Alok&#39;s Blog 
+            R Programming 104- Correlation and Regression ::  
         
     </title>
 
@@ -35,7 +35,7 @@ Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.47d1ac1539fe1320a4309408fbd7b3a0a50b48482799b1e81ee0115e02cb24e2.css">
 
 
 
@@ -50,21 +50,15 @@ Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname
     <meta name="theme-color" content="#252627">
 
 <meta itemprop="name" content="R Programming 104- Correlation and Regression">
-<meta itemprop="description" content="Getting the coefficients ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89  coef(model_var) summary(model_var) fitted.values(mod_var) # each observation fitted residuals(mod_var) \[e &#43; \hat{y} = y \] The sum of residual and fitted value is equal to the original value.
-Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname{Var}(e)}{\operatorname{Var}(y)}\] This helps to analyze between different models how good the fit is. It compares the model&rsquo;s utility with respect o null model. \[ y = \hat{y} \] which always outputs the mean of the overall data whatever the input is.">
-<meta itemprop="datePublished" content="2020-10-06T00:00:00+05:45" />
+<meta itemprop="description" content="Getting the coefficients ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89 coef(model_var) summary(model_var) fitted.values(mod_var) # each observation fitted residuals(mod_var) \[e &#43; \hat{y} = y \] The sum of residual and fitted value is equal to the original value.
+Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname{Var}(e)}{\operatorname{Var}(y)}\] This helps to analyze between different models how good the fit is. It compares the model&rsquo;s utility with respect o null model. \[ y = \hat{y} \] which always outputs the mean of the overall data whatever the input is."><meta itemprop="datePublished" content="2020-10-06T00:00:00+05:45" />
 <meta itemprop="dateModified" content="2020-10-08T09:38:20+05:45" />
-<meta itemprop="wordCount" content="223">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="224"><meta itemprop="image" content="https://dragarok.github.io/"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="R Programming 104- Correlation and Regression"/>
-<meta name="twitter:description" content="Getting the coefficients ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89  coef(model_var) summary(model_var) fitted.values(mod_var) # each observation fitted residuals(mod_var) \[e &#43; \hat{y} = y \] The sum of residual and fitted value is equal to the original value.
+<meta name="twitter:description" content="Getting the coefficients ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89 coef(model_var) summary(model_var) fitted.values(mod_var) # each observation fitted residuals(mod_var) \[e &#43; \hat{y} = y \] The sum of residual and fitted value is equal to the original value.
 Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname{Var}(e)}{\operatorname{Var}(y)}\] This helps to analyze between different models how good the fit is. It compares the model&rsquo;s utility with respect o null model. \[ y = \hat{y} \] which always outputs the mean of the overall data whatever the input is."/>
 
 
@@ -151,25 +145,25 @@ Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname
                 <h2 id="getting-the-coefficients">Getting the coefficients</h2>
 <pre><code>ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89
 </code></pre>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">coef</span>(model_var)
-<span style="color:#a6e22e">summary</span>(model_var)
-<span style="color:#a6e22e">fitted.values</span>(mod_var) <span style="color:#75715e"># each observation fitted</span>
-<span style="color:#a6e22e">residuals</span>(mod_var)
-</code></pre></div><p>\[e + \hat{y} = y \] The sum of residual and fitted value is equal to the original value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">coef</span>(model_var)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(model_var)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fitted.values</span>(mod_var) <span style="color:#75715e"># each observation fitted</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">residuals</span>(mod_var)
+</span></span></code></pre></div><p>\[e + \hat{y} = y \] The sum of residual and fitted value is equal to the original value.</p>
 <h3 id="coefficient-of-determination">Coefficient of determination</h3>
 <p>\[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname{Var}(e)}{\operatorname{Var}(y)}\]
 This helps to analyze between different models how good the fit is. It compares the model&rsquo;s utility with respect o null model. \[ y = \hat{y} \] which always outputs the mean of the overall data whatever the input is.</p>
 <h3 id="leverage">Leverage</h3>
 <p>\[h_{i}=\frac{1}{n}+\frac{\left(x_{i}-\bar{x}\right)^{2}}{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}\]
 It is used to find the contribution of the point in the overall regression. The point of high leverage can change the overall generalization of points.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">augment</span>(mod_name)<span style="color:#f92672">$</span>.hat
-</code></pre></div><p>The .hat variable obtained from the augment function is the leverage value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">augment</span>(mod_name)<span style="color:#f92672">$</span>.hat
+</span></span></code></pre></div><p>The .hat variable obtained from the augment function is the leverage value.</p>
 <h3 id="influence">Influence</h3>
-<p>Also, the <em>cook&rsquo;s distance</em> variable is available as <!-- raw HTML omitted -->.cooksd<!-- raw HTML omitted --> and used to measure the overall influence since leverage may not be sufficient to know how influential a point is.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">model_var <span style="color:#f92672">%&gt;%</span>
-<span style="color:#a6e22e">augment</span>() <span style="color:#f92672">%&gt;%</span>
-<span style="color:#a6e22e">arrange</span>(<span style="color:#a6e22e">desc</span>(.cooksd))
-</code></pre></div><h3 id="removing-outliers">Removing outliers</h3>
+<p>Also, the <em>cook&rsquo;s distance</em> variable is available as <span class="underline">.cooksd</span> and used to measure the overall influence since leverage may not be sufficient to know how influential a point is.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>model_var <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">augment</span>() <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">arrange</span>(<span style="color:#a6e22e">desc</span>(.cooksd))
+</span></span></code></pre></div><h3 id="removing-outliers">Removing outliers</h3>
 <p>Just don&rsquo;t remove what you feel can be an outlier but rather justify why this case is not a general one and needs to be removed. Also check how the scope of inference changes due to that point.</p>
 <h3 id="general-use-cases">General Use Cases</h3>
 <ul>
@@ -187,7 +181,7 @@ It is used to find the contribution of the point in the overall regression. The 
 
         <div class="post-info">
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>223 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>224 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-10-06 00:00 &#43;0545</p>
         </div>
@@ -226,22 +220,6 @@ It is used to find the contribution of the point in the overall regression. The 
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -249,7 +227,7 @@ It is used to find the contribution of the point in the overall regression. The 
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
 
 
 

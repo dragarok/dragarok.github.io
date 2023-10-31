@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on Alok&#39;s Blog</title>
+    <title>git on </title>
     <link>https://dragarok.github.io/tags/git/</link>
-    <description>Recent content in git on Alok&#39;s Blog</description>
+    <description>Recent content in git on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 18:43:16 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Gitconfig</title>
-      <link>https://dragarok.github.io/braindump/2020/04/gitconfig/</link>
-      <pubDate>Sun, 19 Apr 2020 18:43:16 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/gitconfig/</guid>
-      <description>Windows Git Config eval $(ssh-agent -s) ssh-add ~/.ssh/sshkey Add ssh key in one command https://www.howtogeek.com/168147/add-public-ssh-key-to-remote-server-in-a-single-command/
-ssh-keygen -t rsa cat ~/.ssh/id_rsa.pub | ssh user@hostname &amp;lsquo;cat &amp;raquo; .ssh/authorized_keys&amp;rsquo; Change id_rsa as per your key , user, hostname and you are good to go. Need to restart ssh service though from server. </description>
-    </item>
-    
+    <lastBuildDate>Wed, 23 Sep 2020 21:58:34 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Commands</title>
-      <link>https://dragarok.github.io/braindump/2020/04/git-commands/</link>
-      <pubDate>Sun, 19 Apr 2020 18:31:28 +0545</pubDate>
+      <link>https://dragarok.github.io/braindump/2020/09/git-commands/</link>
+      <pubDate>Wed, 23 Sep 2020 21:58:34 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/braindump/2020/04/git-commands/</guid>
-      <description>&amp;ndash;tags: Useful
+      <guid>https://dragarok.github.io/braindump/2020/09/git-commands/</guid>
+      <description>&amp;ndash;tags: Useful &amp;ndash;references: https://learngitbranching.js.org/
 Commands git add : tracking with git
 git status : current status of tracked, untracked, changed, committed files.
 git add filename.extension
@@ -34,8 +24,17 @@ git add . -&amp;gt; all files are committed
 git add *.html -&amp;gt;only html files are committed
 touch .gitignore
 git branch Mybranch
-git commit -m &amp;lsquo;commit command&amp;rsquo;
-git checkout master</description>
+git commit -m &amp;lsquo;commit command&amp;rsquo;</description>
+    </item>
+    
+    <item>
+      <title>Gitconfig</title>
+      <link>https://dragarok.github.io/braindump/2020/09/gitconfig/</link>
+      <pubDate>Sun, 13 Sep 2020 11:00:07 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/09/gitconfig/</guid>
+      <description>Windows Git Config eval $(ssh-agent -s) ssh-add ~/.ssh/sshkey Add ssh key in one command https://www.howtogeek.com/168147/add-public-ssh-key-to-remote-server-in-a-single-command/
+ssh-keygen -t rsa cat ~/.ssh/id_rsa.pub | ssh user@hostname &amp;lsquo;cat &amp;raquo; .ssh/authorized_keys&amp;rsquo; Change id_rsa as per your key , user, hostname and you are good to go. Need to restart ssh service though from server. </description>
     </item>
     
     <item>

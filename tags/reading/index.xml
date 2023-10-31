@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>reading on Alok&#39;s Blog</title>
+    <title>reading on </title>
     <link>https://dragarok.github.io/tags/reading/</link>
-    <description>Recent content in reading on Alok&#39;s Blog</description>
+    <description>Recent content in reading on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:52 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jul 2020 12:07:48 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper Reading 3 pass</title>
+      <link>https://dragarok.github.io/braindump/2020/07/paper-reading-3-pass/</link>
+      <pubDate>Sun, 12 Jul 2020 12:07:48 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/braindump/2020/07/paper-reading-3-pass/</guid>
+      <description>Reference: https://codearsonist.com/reading-for-programmers
+3 pass Overview: Verify Value Background Grasp Thought Process Highlights Diagram Unknowns References Understand Holes Implementations Notes Process Verify This provides High level view of the contents. Start with references usually. Mark the cited papers I&amp;rsquo;ve read as to get previous notes I have made and verify the background. Title, Abstract, Introduction&amp;ndash;&amp;gt; Read very carefully Scan through to find diagrams, equations. Questions to ask during first pass
+What type of paper is this?</description>
+    </item>
+    
     <item>
       <title>Bibliography Management</title>
       <link>https://dragarok.github.io/braindump/2020/04/bibliography-management/</link>
@@ -25,17 +36,6 @@
       <guid>https://dragarok.github.io/braindump/2020/04/para/</guid>
       <description>Projects Areas Resources Archives
 Projects Group of related task Specific outcomes Specific deadlines Areas No deadline Standards to be met e.g. House, Work etc. Resources Not tied to specific project but of interest to you e.g. Emacs, Productivity etc. Archives Inactive Projects, Areas or Resources. Archived </description>
-    </item>
-    
-    <item>
-      <title>Paper Reading 3 pass</title>
-      <link>https://dragarok.github.io/braindump/2020/04/paper-reading-3-pass/</link>
-      <pubDate>Sun, 19 Apr 2020 15:59:30 +0545</pubDate>
-      
-      <guid>https://dragarok.github.io/braindump/2020/04/paper-reading-3-pass/</guid>
-      <description>Reference: https://codearsonist.com/reading-for-programmers
-3 pass Overview: Verify Value Background Grasp Thought Process Highlights Diagram Unknowns References Understand Holes Implementations Notes Process Verify This provides High level view of the contents. Start with references usually. Mark the cited papers I&amp;rsquo;ve read as to get previous notes I have made and verify the background. Title, Abstract, Introduction&amp;ndash;&amp;gt; Read very carefully Scan through to find diagrams, equations. Questions to ask during first pass
-What type of paper is this?</description>
     </item>
     
   </channel>

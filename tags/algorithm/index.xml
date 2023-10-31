@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>algorithm on Alok&#39;s Blog</title>
+    <title>algorithm on </title>
     <link>https://dragarok.github.io/tags/algorithm/</link>
-    <description>Recent content in algorithm on Alok&#39;s Blog</description>
+    <description>Recent content in algorithm on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
@@ -24,6 +24,19 @@ Think small Think exhaustively: All possibilities by adding to general cases Hun
       <pubDate>Sun, 19 Apr 2020 15:59:47 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</guid>
+      <description>Graph Algos:
+Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
+Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes
+Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.
+Edgenode data structure is created which saves the node, weight of edge and the next edgenode reference.</description>
+    </item>
+    
+    <item>
+      <title>Graph Algorithms</title>
+      <link>https://dragarok.github.io/ai/graph_algos/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dragarok.github.io/ai/graph_algos/</guid>
       <description>Graph Algos:
 Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
 Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes

@@ -1,20 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>poem on Alok&#39;s Blog</title>
+    <title>poem on </title>
     <link>https://dragarok.github.io/tags/poem/</link>
-    <description>Recent content in poem on Alok&#39;s Blog</description>
+    <description>Recent content in poem on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://dragarok.github.io/tags/poem/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/poem/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Peak Poem</title>
-      <link>https://dragarok.github.io/posts/1/01/peak-poem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>गजल</title>
+      <link>https://dragarok.github.io/posts/2020/05/%E0%A4%97%E0%A4%9C%E0%A4%B2/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0545</pubDate>
       
-      <guid>https://dragarok.github.io/posts/1/01/peak-poem/</guid>
-      <description>Peak Peak they saw, Thought they made, Of the day when their steps would be on the mountain peak, Clear seem&amp;rsquo;d they, Of the goal they desperately seek.
-Guided by the river trail, Dreams flew high against the flow, The mountains of hope: deep and strong first, Now saw the wind of fear that slowly blow.
-The path feels rough now, The silent howls of people&amp;rsquo;s voice he heard, Of those who got lost on that way, And of those who sought to walk away.</description>
+      <guid>https://dragarok.github.io/posts/2020/05/%E0%A4%97%E0%A4%9C%E0%A4%B2/</guid>
+      <description>तिम्रो बोली गुलाबको फूल मनमा भने काँडा रैछ झुटो मेरो वचन होइन पापी तिम्रो आँखा रैछ ।
+माया प्रेमको अन्धकारमा हराएको मेरो दृष्टि नयन हेर्दा निर्दोष तिमी मनमा भने ढुसी रैछ ।
+सुन्दरताको मोहजालमा तड्पाएर मेरो शरीर अङ्ग भङ्ग पारी शरीर बेच्ने तिम्रो चाहा रैछ ।
+जीवनको नाटककी पारङ्गत कलाकार तिमी मायाको अमृतमा लोभ्याएर विष मिसाई पीलाउनु रैछ ।
+तिम्रो केशको छायाँमा नै जीवन जिउँछु भन्ने मलाई त्यै केशको फन्दा बनाई प्याक्क पारी मार्नु रैछ ।</description>
+    </item>
+    
+    <item>
+      <title>सत्य</title>
+      <link>https://dragarok.github.io/posts/2015/05/%E0%A4%B8%E0%A4%A4%E0%A5%8D%E0%A4%AF/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0545</pubDate>
+      
+      <guid>https://dragarok.github.io/posts/2015/05/%E0%A4%B8%E0%A4%A4%E0%A5%8D%E0%A4%AF/</guid>
+      <description>आकाङ्क्षाका पानाहरुमा
+समेटिएको यो जीवनमा
+च्यातिएका ती पानाहरु
+स्वयमहित्को तान्डवसँगै
+कुल्चिएका भावनाहरु ।
+तिनै जलेका पानाहरु
+धुँवा बनी उडेको छ
+संसार जस्तो भएपनि
+अदृश्यतामा रमेकोछ ।
+हिमालका ती कोप्चारामा
+हिउँसँगै जमेकोछ ।।
+सुरको धुनमा बज्दा यसलाई
+शब्दकोशमा खोजेपछि
+आफुलाई नचाहरि
+धर्मग्रन्थ रटेपछि
+न्यायका ती किताबले नै
+सत्यतालाई ढाकेपछि ।
+सत्य आज मरिसक्यो
+जीवनलाई छाडेपछि
+मृत्यु सत्य बनिसक्यो
+सत्य खोज्न थालेपछि ।।
+गढिमाईको मन्दीरमा
+मृत्यु नै त सत्य बन्यो
+न्याय बन्यो धर्म बन्यो</description>
     </item>
     
   </channel>

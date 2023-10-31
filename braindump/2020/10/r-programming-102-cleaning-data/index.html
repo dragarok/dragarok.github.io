@@ -18,7 +18,7 @@ duplicated(df) # finds full duplicates and returns logical values sum(duplicated
 
     <title>
         
-            R Programming 102- Cleaning data :: Alok&#39;s Blog 
+            R Programming 102- Cleaning data ::  
         
     </title>
 
@@ -38,7 +38,7 @@ duplicated(df) # finds full duplicates and returns logical values sum(duplicated
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.47d1ac1539fe1320a4309408fbd7b3a0a50b48482799b1e81ee0115e02cb24e2.css">
 
 
 
@@ -57,16 +57,10 @@ duplicated(df) # finds full duplicates and returns logical values sum(duplicated
 library(stringr) str_remove(df$tbl_name, &#34;char_to_be_removed&#34;) Assert values within a range given by lower and upper arguments.
 assert_all_are_in_closed_range(df$tbl_name, lower = num, upper = num) Assert all dates are in the past
 assert_all_are_in_past(tbl_name$col_name) as.Date(dateCol) # to convert to date type Uniqueness constraints for Full duplicates
-duplicated(df) # finds full duplicates and returns logical values sum(duplicated(df)) # count of full duplicates Uniqueness constraints for partial duplicates">
-<meta itemprop="datePublished" content="2020-10-03T00:00:00+05:45" />
+duplicated(df) # finds full duplicates and returns logical values sum(duplicated(df)) # count of full duplicates Uniqueness constraints for partial duplicates"><meta itemprop="datePublished" content="2020-10-03T00:00:00+05:45" />
 <meta itemprop="dateModified" content="2020-10-08T07:01:43+05:45" />
-<meta itemprop="wordCount" content="642">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="642"><meta itemprop="image" content="https://dragarok.github.io/"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="R Programming 102- Cleaning data"/>
@@ -157,55 +151,55 @@ duplicated(df) # finds full duplicates and returns logical values sum(duplicated
             
 
             <div class="post-content">
-                <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(assertive)
-<span style="color:#a6e22e">assert_is_numeric</span>(df<span style="color:#f92672">$</span>col_name)
-<span style="color:#a6e22e">assert_is_character</span>(df<span style="color:#f92672">$</span>col_name)
-<span style="color:#a6e22e">class</span>(df<span style="color:#f92672">$</span>col_name) <span style="color:#75715e"># check data types</span>
-</code></pre></div><p>Similarly, we have more functions for more data type checks.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(stringr)
-<span style="color:#a6e22e">str_remove</span>(df<span style="color:#f92672">$</span>tbl_name, <span style="color:#e6db74">&#34;char_to_be_removed&#34;</span>)
-</code></pre></div><p>Assert values within a range given by lower and upper arguments.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">assert_all_are_in_closed_range</span>(df<span style="color:#f92672">$</span>tbl_name, lower <span style="color:#f92672">=</span> num, upper <span style="color:#f92672">=</span> num)
-</code></pre></div><p>Assert all dates are in the past</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">assert_all_are_in_past</span>(tbl_name<span style="color:#f92672">$</span>col_name)
-<span style="color:#a6e22e">as.Date</span>(dateCol) <span style="color:#75715e"># to convert to date type</span>
-</code></pre></div><p>Uniqueness constraints for Full duplicates</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">duplicated</span>(df) <span style="color:#75715e"># finds full duplicates and returns logical values</span>
-<span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">duplicated</span>(df)) <span style="color:#75715e"># count of full duplicates</span>
-</code></pre></div><p>Uniqueness constraints for partial duplicates</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">df <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">count</span>(some_col) <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">filter</span>(n <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>)
-</code></pre></div><p>This can be done using dplyr packages functionality.</p>
+                <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(assertive)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">assert_is_numeric</span>(df<span style="color:#f92672">$</span>col_name)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">assert_is_character</span>(df<span style="color:#f92672">$</span>col_name)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">class</span>(df<span style="color:#f92672">$</span>col_name) <span style="color:#75715e"># check data types</span>
+</span></span></code></pre></div><p>Similarly, we have more functions for more data type checks.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(stringr)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">str_remove</span>(df<span style="color:#f92672">$</span>tbl_name, <span style="color:#e6db74">&#34;char_to_be_removed&#34;</span>)
+</span></span></code></pre></div><p>Assert values within a range given by lower and upper arguments.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">assert_all_are_in_closed_range</span>(df<span style="color:#f92672">$</span>tbl_name, lower <span style="color:#f92672">=</span> num, upper <span style="color:#f92672">=</span> num)
+</span></span></code></pre></div><p>Assert all dates are in the past</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">assert_all_are_in_past</span>(tbl_name<span style="color:#f92672">$</span>col_name)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">as.Date</span>(dateCol) <span style="color:#75715e"># to convert to date type</span>
+</span></span></code></pre></div><p>Uniqueness constraints for Full duplicates</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">duplicated</span>(df) <span style="color:#75715e"># finds full duplicates and returns logical values</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">duplicated</span>(df)) <span style="color:#75715e"># count of full duplicates</span>
+</span></span></code></pre></div><p>Uniqueness constraints for partial duplicates</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">count</span>(some_col) <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">filter</span>(n <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><p>This can be done using dplyr packages functionality.</p>
 <p>Remove partial duplicates using distinct function</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">credit_scores <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">distinct</span>(col_name1, col_name2, <span style="color:#66d9ef">...</span> , .keep_all <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span> )
-</code></pre></div><p>Using distinct we can choose number of columns as index and find duplicates by that index. Keep all returns all columns after distinct.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>credit_scores <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">distinct</span>(col_name1, col_name2, <span style="color:#66d9ef">...</span> , .keep_all <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span> )
+</span></span></code></pre></div><p>Using distinct we can choose number of columns as index and find duplicates by that index. Keep all returns all columns after distinct.</p>
 <p>Replace partial duplicate by their summary: mean, median and so on.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">df <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">group_by</span>(index_col1, index_col2, <span style="color:#66d9ef">...</span>) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">mutate</span>(mean_col_value <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(some_col)) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">distinct</span>(index_col1, index_col2, <span style="color:#66d9ef">...</span>) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">select</span>(<span style="color:#f92672">-</span>some_col)
-</code></pre></div><p>Here you first group by indexes, then calculate the mean value using those groupings, find distinct rows across those indexes and remove that original column from which mean was calculated.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">group_by</span>(index_col1, index_col2, <span style="color:#66d9ef">...</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mutate</span>(mean_col_value <span style="color:#f92672">=</span> <span style="color:#a6e22e">mean</span>(some_col)) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">distinct</span>(index_col1, index_col2, <span style="color:#66d9ef">...</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">select</span>(<span style="color:#f92672">-</span>some_col)
+</span></span></code></pre></div><p>Here you first group by indexes, then calculate the mean value using those groupings, find distinct rows across those indexes and remove that original column from which mean was calculated.</p>
 <h3 id="categorical-data">Categorical Data</h3>
 <p>Removing rows with categorical variable of no sense. e.g. When the value should be &ldquo;YES&rdquo; or &ldquo;NO&rdquo; but it is &ldquo;Light&rdquo;.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">semi_join</span>(dest_tbl) <span style="color:#75715e"># to get only useful rows</span>
-<span style="color:#a6e22e">anti_join</span>(dest_tbl) <span style="color:#75715e"># to remove unuseful rows</span>
-</code></pre></div><p>When working with factors, you might have strings with spaces as well as case differences such as &quot; col_name&quot; and &ldquo;col_name&rdquo; OR &ldquo;col_Name&rdquo; and &ldquo;COL_NAME&rdquo;. You need to make sure that these all belong to one and the same group.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">str_trim</span>(<span style="color:#e6db74">&#34;string&#34;</span>)
-<span style="color:#a6e22e">to_lower</span>(<span style="color:#e6db74">&#34;string&#34;</span>)
-</code></pre></div><p>Collapse categories that have very few number of observations and can be mapped onto some other category.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">collapse_categories <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;category1&#34;</span>, <span style="color:#e6db74">&#34;category2&#34;</span>)
-<span style="color:#a6e22e">mutate</span>(col_collapsed <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_collapse</span>(col_name, categ_to_rename_to <span style="color:#f92672">=</span> collapse_categories))
-</code></pre></div><p>Cleaning dirty text data</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">semi_join</span>(dest_tbl) <span style="color:#75715e"># to get only useful rows</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">anti_join</span>(dest_tbl) <span style="color:#75715e"># to remove unuseful rows</span>
+</span></span></code></pre></div><p>When working with factors, you might have strings with spaces as well as case differences such as &quot; col_name&quot; and &ldquo;col_name&rdquo; OR &ldquo;col_Name&rdquo; and &ldquo;COL_NAME&rdquo;. You need to make sure that these all belong to one and the same group.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">str_trim</span>(<span style="color:#e6db74">&#34;string&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">to_lower</span>(<span style="color:#e6db74">&#34;string&#34;</span>)
+</span></span></code></pre></div><p>Collapse categories that have very few number of observations and can be mapped onto some other category.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>collapse_categories <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;category1&#34;</span>, <span style="color:#e6db74">&#34;category2&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mutate</span>(col_collapsed <span style="color:#f92672">=</span> <span style="color:#a6e22e">fct_collapse</span>(col_name, categ_to_rename_to <span style="color:#f92672">=</span> collapse_categories))
+</span></span></code></pre></div><p>Cleaning dirty text data</p>
 <ol>
 <li>Formatting inconsistencies: Phone numbers written differently</li>
 <li>Information Inconsistency: Full Names vs Only Last Names</li>
 </ol>
-<!-- raw HTML omitted -->
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">str_remove_all</span>(<span style="color:#e6db74">&#34;-&#34;</span>)
-<span style="color:#a6e22e">str_remove</span>(<span style="color:#e6db74">&#34;-&#34;</span>) <span style="color:#75715e"># removes the first occurence only</span>
-<span style="color:#a6e22e">str_detect</span>(col_name, <span style="color:#a6e22e">fixed</span>(<span style="color:#e6db74">&#34;(&#34;</span>))
-<span style="color:#a6e22e">str_detect</span>(tbl_name<span style="color:#f92672">$</span>col_name, <span style="color:#e6db74">&#34;-&#34;</span>)
-<span style="color:#a6e22e">str_replace_all</span>(col_name, <span style="color:#e6db74">&#34;to_be_replaced&#34;</span>, <span style="color:#e6db74">&#34;replace_with_this&#34;</span>)
-</code></pre></div><p>Specially for paranthesis, we need to use <em>fixed</em> function to use them inside our strings in R.
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">str_remove_all</span>(<span style="color:#e6db74">&#34;-&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">str_remove</span>(<span style="color:#e6db74">&#34;-&#34;</span>) <span style="color:#75715e"># removes the first occurence only</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">str_detect</span>(col_name, <span style="color:#a6e22e">fixed</span>(<span style="color:#e6db74">&#34;(&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">str_detect</span>(tbl_name<span style="color:#f92672">$</span>col_name, <span style="color:#e6db74">&#34;-&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">str_replace_all</span>(col_name, <span style="color:#e6db74">&#34;to_be_replaced&#34;</span>, <span style="color:#e6db74">&#34;replace_with_this&#34;</span>)
+</span></span></code></pre></div><p>Specially for paranthesis, we need to use <em>fixed</em> function to use them inside our strings in R.
 Uniformity in data entries e.g. Money units, Temperatures and so on.</p>
 <ol>
 <li>Find why the data is not uniform by researching into possible causes.</li>
@@ -213,82 +207,82 @@ Uniformity in data entries e.g. Money units, Temperatures and so on.</p>
 <li>Find which sources data come from. This makes it easier to find most possible reasons of things.</li>
 </ol>
 <p>Working with date objects</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(lubridate)
-formats <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c </span>(<span style="color:#e6db74">&#34;%Y/%m/%d&#34;</span>, <span style="color:#66d9ef">...</span>)
-<span style="color:#a6e22e">parse_date_time</span>(col_name, orders <span style="color:#f92672">=</span> formats)
-<span style="color:#a6e22e">as.numeric</span>(date_col <span style="color:#f92672">%--%</span> <span style="color:#a6e22e">today</span>(), <span style="color:#e6db74">&#34;years&#34;</span>) <span style="color:#75715e"># get the number of years by subtraction</span>
-</code></pre></div><p>Find NA values.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">is.na</span>(tbl_name))
-<span style="color:#a6e22e">vis_miss</span>(tbl_name)
-<span style="color:#a6e22e">mean</span>(col_name, na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#75715e"># mean without NA values.</span>
-</code></pre></div><p>Types of Missing Data</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(lubridate)
+</span></span><span style="display:flex;"><span>formats <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c </span>(<span style="color:#e6db74">&#34;%Y/%m/%d&#34;</span>, <span style="color:#66d9ef">...</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">parse_date_time</span>(col_name, orders <span style="color:#f92672">=</span> formats)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">as.numeric</span>(date_col <span style="color:#f92672">%--%</span> <span style="color:#a6e22e">today</span>(), <span style="color:#e6db74">&#34;years&#34;</span>) <span style="color:#75715e"># get the number of years by subtraction</span>
+</span></span></code></pre></div><p>Find NA values.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">sum</span>(<span style="color:#a6e22e">is.na</span>(tbl_name))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">vis_miss</span>(tbl_name)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>(col_name, na.rm <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>) <span style="color:#75715e"># mean without NA values.</span>
+</span></span></code></pre></div><p>Types of Missing Data</p>
 <ol>
 <li>Missing completely at random: No relation to other variables.</li>
 <li>Missing at random: Systematic relation between missing data and observed variables.</li>
 <li>Missing not at random: Systematic relation between missing data and some unobserved variable.</li>
 </ol>
 <p>Assert there are no NA values:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">assert_all_are_not_na</span>(tbl<span style="color:#f92672">$</span>col_name)
-</code></pre></div><h3 id="string-comparisons">String Comparisons</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(stringdist)
-<span style="color:#a6e22e">stringdist</span>(<span style="color:#e6db74">&#34;string_1&#34;</span>, <span style="color:#e6db74">&#34;string_2&#34;</span>, method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;any&#34;</span>)
-</code></pre></div><p>Some Methods of comparison are as follows:</p>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">assert_all_are_not_na</span>(tbl<span style="color:#f92672">$</span>col_name)
+</span></span></code></pre></div><h3 id="string-comparisons">String Comparisons</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(stringdist)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">stringdist</span>(<span style="color:#e6db74">&#34;string_1&#34;</span>, <span style="color:#e6db74">&#34;string_2&#34;</span>, method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;any&#34;</span>)
+</span></span></code></pre></div><p>Some Methods of comparison are as follows:</p>
+<!--list-separator-->
 <ul>
 <li>
 <p>Damerau Levenshtein distance</p>
 <p>Minimum edit distance is the least number of steps [ Insertion, Deletion, Transposition, Substitution] that you need to do to get to the other string.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Levenshtein distance</p>
 <p>No transposition of characters.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Longest Common Subsequence (LCS)</p>
 <p>Only insertion and deletion</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Fuzzy Join Package</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(fuzzyjoin)
-<span style="color:#a6e22e">stringdist_left_join</span>(one_tbl, another_tbl, by<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;some_col&#34;</span>, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;any&#34;</span>, max_dist <span style="color:#f92672">=</span> num)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(fuzzyjoin)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">stringdist_left_join</span>(one_tbl, another_tbl, by<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;some_col&#34;</span>, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;any&#34;</span>, max_dist <span style="color:#f92672">=</span> num)
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Record Linkage Package</p>
 <p>Generate and compare pairs</p>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Generate pairs</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(reclin)
-<span style="color:#a6e22e">pair_blocking</span>(df1, df2)
-<span style="color:#a6e22e">pair_blocking</span>(df1, df2, blocking_var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;any_var&#34;</span>)
-</code></pre></div><p>When using multiple comparisons, if we compare each row to the other; there will be non scalable number of comparisons. So, we use blocking.  Blocking means consider pairs only if the rows agree on the blocking variable.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(reclin)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pair_blocking</span>(df1, df2)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pair_blocking</span>(df1, df2, blocking_var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;any_var&#34;</span>)
+</span></span></code></pre></div><p>When using multiple comparisons, if we compare each row to the other; there will be non scalable number of comparisons. So, we use blocking.  Blocking means consider pairs only if the rows agree on the blocking variable.
 e.g. People&rsquo;s information can be blocked by country.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Compare pairs</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">pair_blocking</span>(<span style="color:#66d9ef">...</span>) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">compare_pairs</span>(by <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;col_name&#34;</span>, <span style="color:#e6db74">&#34;col_other&#34;</span>), default_comparator<span style="color:#f92672">=</span><span style="color:#a6e22e">lcs</span>()) <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">score_simsum</span>()
-<span style="color:#a6e22e">score_problink</span>() <span style="color:#75715e"># scores probabilistically</span>
-<span style="color:#a6e22e">select_n_to_m</span>() <span style="color:#f92672">%&gt;%</span>
-  <span style="color:#a6e22e">link</span>()
-</code></pre></div><p>On comparing with multiple columns, it will show the scores for each columns.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">pair_blocking</span>(<span style="color:#66d9ef">...</span>) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">compare_pairs</span>(by <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;col_name&#34;</span>, <span style="color:#e6db74">&#34;col_other&#34;</span>), default_comparator<span style="color:#f92672">=</span><span style="color:#a6e22e">lcs</span>()) <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">score_simsum</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">score_problink</span>() <span style="color:#75715e"># scores probabilistically</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">select_n_to_m</span>() <span style="color:#f92672">%&gt;%</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">link</span>()
+</span></span></code></pre></div><p>On comparing with multiple columns, it will show the scores for each columns.</p>
 </li>
 </ul>
 </li>
@@ -344,22 +338,6 @@ e.g. People&rsquo;s information can be blocked by country.</p>
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -367,7 +345,7 @@ e.g. People&rsquo;s information can be blocked by country.</p>
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
 
 
 

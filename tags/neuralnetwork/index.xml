@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>neuralnetwork on Alok&#39;s Blog</title>
+    <title>neuralnetwork on </title>
     <link>https://dragarok.github.io/tags/neuralnetwork/</link>
-    <description>Recent content in neuralnetwork on Alok&#39;s Blog</description>
+    <description>Recent content in neuralnetwork on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 19:28:53 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/neuralnetwork/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://dragarok.github.io/tags/neuralnetwork/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML Paper Questions</title>
+      <link>https://dragarok.github.io/ai/whattowriteabout/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dragarok.github.io/ai/whattowriteabout/</guid>
+      <description>Problem No. 1 : Understanding what pretraining and training a supervised layer over it changes in the model Our ability to characterize exactly what aspects of the pretrained parameters are retained during the supervised training stage is limited.
+Problem No. 2 : For example, if we train a generative model of images of cars and motorcycles, it will need to know about wheels, and about how many wheels should be in an image.</description>
+    </item>
+    
     <item>
       <title>Efficient Nets</title>
       <link>https://dragarok.github.io/braindump/2020/04/efficient-nets/</link>

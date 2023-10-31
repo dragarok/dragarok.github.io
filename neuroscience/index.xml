@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Neurosciences on Alok&#39;s Blog</title>
+    <title>Neurosciences on </title>
     <link>https://dragarok.github.io/neuroscience/</link>
-    <description>Recent content in Neurosciences on Alok&#39;s Blog</description>
+    <description>Recent content in Neurosciences on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/neuroscience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FMRI Hyperalignment</title>
@@ -22,7 +22,7 @@
       <pubDate>Fri, 28 Aug 2020 00:00:00 +0545</pubDate>
       
       <guid>https://dragarok.github.io/neuroscience/fmri_comparisons/</guid>
-      <description>If only the probability that Null Hypothesis is less than 1/20, the experiment is of scientific interest. If we treat each voxel as independent test of the hypothesis, there will be sure chances to see some example that follows null hypothesis.  If there are 20 independent experiments, then the probability of finding a false positive is 0.64 For 200, it&amp;rsquo;s 0.99. Now if we are taking 20k voxels each treated as independent experiments, we are surely to find some voxels that will pass as null hypothesis.</description>
+      <description>If only the probability that Null Hypothesis is less than 1/20, the experiment is of scientific interest. If we treat each voxel as independent test of the hypothesis, there will be sure chances to see some example that follows null hypothesis. If there are 20 independent experiments, then the probability of finding a false positive is 0.64 For 200, it&amp;rsquo;s 0.99. Now if we are taking 20k voxels each treated as independent experiments, we are surely to find some voxels that will pass as null hypothesis.</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Thu, 13 Aug 2020 00:00:00 +0545</pubDate>
       
       <guid>https://dragarok.github.io/neuroscience/fmri_bootcamp/</guid>
-      <description>Different views of the brain  Coronal view: View after cutting the face off. Sagittal medial view: Cutting brain from the sides into the middle. Lateral Sagittal view: Take the skull off. Axial view: Look from the top after cutting off a piece.   Sulca: Bottom of cortical folds Gyrus: Top of cortical folds  Different Imaging Techniques Anatomical Imaging  Axial slices are 2D representations. Making multiple axial slices &amp;ndash;&amp;gt; 3D representation of the brain Slices can be separated by some space.</description>
+      <description>Different views of the brain Coronal view: View after cutting the face off. Sagittal medial view: Cutting brain from the sides into the middle. Lateral Sagittal view: Take the skull off. Axial view: Look from the top after cutting off a piece. Sulca: Bottom of cortical folds Gyrus: Top of cortical folds Different Imaging Techniques Anatomical Imaging Axial slices are 2D representations. Making multiple axial slices &amp;ndash;&amp;gt; 3D representation of the brain Slices can be separated by some space.</description>
     </item>
     
   </channel>

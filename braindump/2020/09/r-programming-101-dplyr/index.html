@@ -6,12 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
 <meta name="description" content="Dplyr Dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges.
-Installation  install.packages(&amp;ldquo;dplyr&amp;rdquo;)
- Command Usage Pipe command similar to python and other languages in R is represented as:
- %&amp;gt;%
- See an example:
- gapminder %&amp;gt;% filter(year == 1957) %&amp;gt;% group_by(continent)
- The command above first applies filter operation to the dataset and on that output groups by continent." />
+Installation install.packages(&amp;ldquo;dplyr&amp;rdquo;)
+Command Usage Pipe command similar to python and other languages in R is represented as:
+%&amp;gt;%
+See an example:
+gapminder %&amp;gt;% filter(year == 1957) %&amp;gt;% group_by(continent)
+The command above first applies filter operation to the dataset and on that output groups by continent.
+General Commands Filter" />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -20,7 +21,7 @@ Installation  install.packages(&amp;ldquo;dplyr&amp;rdquo;)
 
     <title>
         
-            R Programming 101- Dplyr :: Alok&#39;s Blog 
+            R Programming 101- Dplyr ::  
         
     </title>
 
@@ -40,7 +41,7 @@ Installation  install.packages(&amp;ldquo;dplyr&amp;rdquo;)
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.47d1ac1539fe1320a4309408fbd7b3a0a50b48482799b1e81ee0115e02cb24e2.css">
 
 
 
@@ -56,31 +57,27 @@ Installation  install.packages(&amp;ldquo;dplyr&amp;rdquo;)
 
 <meta itemprop="name" content="R Programming 101- Dplyr">
 <meta itemprop="description" content="Dplyr Dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges.
-Installation  install.packages(&ldquo;dplyr&rdquo;)
- Command Usage Pipe command similar to python and other languages in R is represented as:
- %&gt;%
- See an example:
- gapminder %&gt;% filter(year == 1957) %&gt;% group_by(continent)
- The command above first applies filter operation to the dataset and on that output groups by continent.">
-<meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45" />
+Installation install.packages(&ldquo;dplyr&rdquo;)
+Command Usage Pipe command similar to python and other languages in R is represented as:
+%&gt;%
+See an example:
+gapminder %&gt;% filter(year == 1957) %&gt;% group_by(continent)
+The command above first applies filter operation to the dataset and on that output groups by continent.
+General Commands Filter"><meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45" />
 <meta itemprop="dateModified" content="2020-09-26T16:50:02+05:45" />
-<meta itemprop="wordCount" content="1168">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="1168"><meta itemprop="image" content="https://dragarok.github.io/"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="R Programming 101- Dplyr"/>
 <meta name="twitter:description" content="Dplyr Dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges.
-Installation  install.packages(&ldquo;dplyr&rdquo;)
- Command Usage Pipe command similar to python and other languages in R is represented as:
- %&gt;%
- See an example:
- gapminder %&gt;% filter(year == 1957) %&gt;% group_by(continent)
- The command above first applies filter operation to the dataset and on that output groups by continent."/>
+Installation install.packages(&ldquo;dplyr&rdquo;)
+Command Usage Pipe command similar to python and other languages in R is represented as:
+%&gt;%
+See an example:
+gapminder %&gt;% filter(year == 1957) %&gt;% group_by(continent)
+The command above first applies filter operation to the dataset and on that output groups by continent.
+General Commands Filter"/>
 
 
 
@@ -180,7 +177,7 @@ Installation  install.packages(&ldquo;dplyr&rdquo;)
 </blockquote>
 <p>The command above first applies filter operation to the dataset and on that output groups by continent.</p>
 <h3 id="general-commands">General Commands</h3>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Filter</p>
@@ -191,7 +188,7 @@ filter(item %in% c(list_of_items) )
 filter(col_1 <code>= val_1, col_1 ==</code> val_2 and so on)</p>
 </blockquote>
 <p>This command will be written following the pipe sign in R. The second example is used to filter multiple possible OR conditions. The conditions matching AND can either be passed separated by commas or by &amp; sign.</p>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Filter NA columns</p>
@@ -203,7 +200,7 @@ filter(col_1 <code>= val_1, col_1 ==</code> val_2 and so on)</p>
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Arrange</p>
@@ -216,7 +213,7 @@ arrange(desc(column_name))</p>
 This command will also be written following the pipe sign in R.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Mutate</p>
@@ -229,7 +226,7 @@ mutate(popNew = pop /  10000)</p>
 <p>This command will also be written following the pipe sign in R.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Summarize</p>
@@ -268,7 +265,7 @@ summarize(medianPop = median(pop))</p>
 </table>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Select</p>
@@ -277,11 +274,11 @@ summarize(medianPop = median(pop))</p>
 <p>dataframe %&gt;%
 select(column_1, column_2, &hellip;)</p>
 </blockquote>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Advanced commands with select</p>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Range of Columns</p>
@@ -291,7 +288,7 @@ select(column_1, column_2, &hellip;)</p>
 <p>This command selects columns from 1 to N. In general cases, we have similar information related columns together and this is helpful in selecting only those columns without specifying name for each one of them.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Contains</p>
@@ -301,7 +298,7 @@ select(column_1, column_2, &hellip;)</p>
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Starts With</p>
@@ -310,7 +307,7 @@ select(column_1, column_2, &hellip;)</p>
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Ends With</p>
@@ -319,7 +316,7 @@ select(column_1, column_2, &hellip;)</p>
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Last column</p>
@@ -329,7 +326,7 @@ select(column_1, column_2, &hellip;)</p>
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Rename columns</p>
@@ -339,7 +336,7 @@ select(column_1, column_2, &hellip;)</p>
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Help for these commands</p>
@@ -350,7 +347,7 @@ select(column_1, column_2, &hellip;)</p>
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Removing column by column names</p>
@@ -362,7 +359,7 @@ select(column_1, column_2, &hellip;)</p>
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Group By</p>
@@ -374,7 +371,7 @@ group_by(column_name, second_col_name_if_needed, and so on)</p>
 <p>Take care of ordering when using group by to group data by certain columns.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Count( sort=TRUE, wt=some_column)</p>
@@ -382,7 +379,7 @@ group_by(column_name, second_col_name_if_needed, and so on)</p>
 The weight variable can be used for sorting based on some value.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Top N</p>
@@ -393,7 +390,7 @@ top_n(5, population)</p>
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Ungroup</p>
@@ -403,7 +400,7 @@ top_n(5, population)</p>
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Rename</p>
@@ -414,7 +411,7 @@ rename(new_name = original_name)</p>
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Transmute     :ATTACH:</p>
@@ -425,11 +422,11 @@ rename(new_name = original_name)</p>
 <img src="../../../../ox-hugo/_20200923_121725screenshot.png" alt=""></p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Window functions</p>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Lag function</p>
@@ -442,7 +439,7 @@ rename(new_name = original_name)</p>
 </li>
 </ul>
 <h3 id="join-commands">Join Commands</h3>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Inner Join</p>
@@ -454,7 +451,7 @@ If both column names are same in both tables, we can just use <em>by = &ldquo;co
 <strong>NOTE</strong> Here notice that inside c used in by clause, there is a equals sign in between. I was confusing it to be comma all the time.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Left Join</p>
@@ -464,7 +461,7 @@ If both column names are same in both tables, we can just use <em>by = &ldquo;co
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Right Join</p>
@@ -474,7 +471,7 @@ If both column names are same in both tables, we can just use <em>by = &ldquo;co
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Full Join</p>
@@ -484,7 +481,7 @@ If both column names are same in both tables, we can just use <em>by = &ldquo;co
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Semi Join</p>
@@ -494,7 +491,7 @@ If both column names are same in both tables, we can just use <em>by = &ldquo;co
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Anti Join</p>
@@ -505,7 +502,7 @@ If both column names are same in both tables, we can just use <em>by = &ldquo;co
 </li>
 </ul>
 <h3 id="advanced-commands">Advanced Commands</h3>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Replace NAs</p>
@@ -515,7 +512,7 @@ If both column names are same in both tables, we can just use <em>by = &ldquo;co
 <p>We often have NA values that we want to give meaning to. In this case, we set all NA values to 0 in that column.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Suffix Argument</p>
@@ -526,7 +523,7 @@ If both column names are same in both tables, we can just use <em>by = &ldquo;co
 You give two arguments to suffix as <em>&quot;_replaceText&quot;</em> then the first name will append &ldquo;_replaceText&rdquo; to the column name and similarly goes on for the next value as well.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>n() in Summarize Columns</p>
@@ -536,7 +533,7 @@ You give two arguments to suffix as <em>&quot;_replaceText&quot;</em> then the f
 </blockquote>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Bind rows</p>
@@ -547,7 +544,7 @@ You give two arguments to suffix as <em>&quot;_replaceText&quot;</em> then the f
 </li>
 </ul>
 <h3 id="additional-functions">Additional Functions</h3>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Glimpse()</p>
@@ -605,22 +602,6 @@ You give two arguments to suffix as <em>&quot;_replaceText&quot;</em> then the f
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -628,7 +609,7 @@ You give two arguments to suffix as <em>&quot;_replaceText&quot;</em> then the f
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
 
 
 

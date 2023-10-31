@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ML on Alok&#39;s Blog</title>
+    <title>ML on </title>
     <link>https://dragarok.github.io/tags/ml/</link>
-    <description>Recent content in ML on Alok&#39;s Blog</description>
+    <description>Recent content in ML on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 16:00:33 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/ml/index.xml" rel="self" type="application/rss+xml" />
@@ -13,6 +13,15 @@
       <pubDate>Sun, 19 Apr 2020 16:00:33 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/ml-causality/</guid>
+      <description>Causality in ML: &amp;ndash;Inspirations and References: J. Peters, D. Janzing, and B. Schölkopf. 2017. Elements of Causal Inference - Foundations and Learning Algorithms. MIT</description>
+    </item>
+    
+    <item>
+      <title>ML Causality</title>
+      <link>https://dragarok.github.io/ai/causality_in_ml/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dragarok.github.io/ai/causality_in_ml/</guid>
       <description>Causality in ML: &amp;ndash;Inspirations and References: J. Peters, D. Janzing, and B. Schölkopf. 2017. Elements of Causal Inference - Foundations and Learning Algorithms. MIT</description>
     </item>
     

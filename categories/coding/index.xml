@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>coding on Alok&#39;s Blog</title>
+    <title>coding on </title>
     <link>https://dragarok.github.io/categories/coding/</link>
-    <description>Recent content in coding on Alok&#39;s Blog</description>
+    <description>Recent content in coding on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/categories/coding/index.xml" rel="self" type="application/rss+xml" />
@@ -16,6 +16,20 @@
       <description>Algorithms Basic rules of complexity definition for removing terms:
 Multiplicative constants can be omitted: 14n2 becomes n2. n^a dominates n^b if a &amp;gt; b: for instance, n^2 dominates n. Any exponential dominates any polynomial: 3^n dominates n^5 (it even dominates 2^n). Likewise, any polynomial dominates any logarithm: n dominates (log n)^3. This also means, for example, that n^2 dominates n* log n. Techniques to think of counter examples:
 Think small Think exhaustively: All possibilities by adding to general cases Hunt for the weakness: understand the problem statement and try to find loopholes Go for a tie: Attacking greedy procedures Extreme examples: Searching for solution to problem needs you to know first the type of problem it falls into:</description>
+    </item>
+    
+    <item>
+      <title>Anaconda Windows</title>
+      <link>https://dragarok.github.io/ai/anaconda-windows/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dragarok.github.io/ai/anaconda-windows/</guid>
+      <description>Anaconda Installation in Windows Issue with pyzmq:
+pip uninstall pyzmq pip install pyzmq Issue with requests
+conda deactivate conda update --force conda Issue with sqlite3
+Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.
+Anaconda if HTTPS error:
+conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
     </item>
     
     <item>

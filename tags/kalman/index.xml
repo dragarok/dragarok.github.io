@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kalman on Alok&#39;s Blog</title>
+    <title>kalman on </title>
     <link>https://dragarok.github.io/tags/kalman/</link>
-    <description>Recent content in kalman on Alok&#39;s Blog</description>
+    <description>Recent content in kalman on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2020 15:59:12 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/kalman/index.xml" rel="self" type="application/rss+xml" />
@@ -13,6 +13,17 @@
       <pubDate>Sun, 19 Apr 2020 15:59:12 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/04/kalman/</guid>
+      <description>&amp;ndash; Such filter is such a general and powerful tool for combining information in the presence of uncertainty.
+&amp;ndash; You can use a Kalman filter in any place where you have uncertain information about some dynamic system, and you can make an educated guess about what the system is going to do next.
+&amp;ndash; And it can take advantage of correlations between crazy phenomena that you maybe wouldn’t have thought to exploit!</description>
+    </item>
+    
+    <item>
+      <title>Kalman</title>
+      <link>https://dragarok.github.io/ai/kalmans/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dragarok.github.io/ai/kalmans/</guid>
       <description>&amp;ndash; Such filter is such a general and powerful tool for combining information in the presence of uncertainty.
 &amp;ndash; You can use a Kalman filter in any place where you have uncertain information about some dynamic system, and you can make an educated guess about what the system is going to do next.
 &amp;ndash; And it can take advantage of correlations between crazy phenomena that you maybe wouldn’t have thought to exploit!</description>

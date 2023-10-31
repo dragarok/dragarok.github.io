@@ -5,10 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Efficient Nets:   Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
+<meta name="description" content="Efficient Nets: Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
 &amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
 &amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
-  We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others." />
+We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others." />
 <meta name="keywords" content="Blog, neuralnetwork, architecture, vision" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -17,7 +17,7 @@
 
     <title>
         
-            Efficient Nets :: Alok&#39;s Blog 
+            Efficient Nets ::  
         
     </title>
 
@@ -37,7 +37,7 @@
 
 
 
-<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../main.min.47d1ac1539fe1320a4309408fbd7b3a0a50b48482799b1e81ee0115e02cb24e2.css">
 
 
 
@@ -52,32 +52,26 @@
     <meta name="theme-color" content="#252627">
 
 <meta itemprop="name" content="Efficient Nets">
-<meta itemprop="description" content="Efficient Nets:   Why all this ? &ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
+<meta itemprop="description" content="Efficient Nets: Why all this ? &ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
 &ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
 &ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
-  We now know the problem so let&rsquo;s do this instead: &ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others.">
-<meta itemprop="datePublished" content="2020-03-20T00:00:00+05:45" />
+We now know the problem so let&rsquo;s do this instead: &ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others."><meta itemprop="datePublished" content="2020-03-20T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-05-02T04:04:27+05:45" />
-<meta itemprop="wordCount" content="295">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
-
-
-
-<meta itemprop="keywords" content="neuralnetwork,architecture,vision," />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="295"><meta itemprop="image" content="https://dragarok.github.io/"/>
+<meta itemprop="keywords" content="neuralnetwork,architecture,vision," /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="Efficient Nets"/>
-<meta name="twitter:description" content="Efficient Nets:   Why all this ? &ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
+<meta name="twitter:description" content="Efficient Nets: Why all this ? &ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
 &ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
 &ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
-  We now know the problem so let&rsquo;s do this instead: &ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others."/>
+We now know the problem so let&rsquo;s do this instead: &ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others."/>
 
 
 
 
 
-    <meta property="article:published_time" content="2020-03-20 00:00:00 &#43;0545 &#43;0545" />
+    <meta property="article:published_time" content="2020-03-20 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -185,7 +179,7 @@ Thanks to reduced number of parameters. Thanks to Gooooogogoogogogogogle&rsquo;s
 for having this grid search and the paper.</p>
 </li>
 </ol>
-<!-- raw HTML omitted -->
+<!--listend-->
 <ol>
 <li>Not just google, I need to experiment with how much to give to depth, width and
 resolution For example, when given 2^N computational resources,
@@ -210,22 +204,6 @@ determined by a small grid search on the original small model.</li>
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -233,7 +211,7 @@ determined by a small grid search on the original small model.</li>
 
 
 
-<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
 
 
 

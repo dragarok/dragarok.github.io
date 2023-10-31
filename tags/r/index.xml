@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>r on Alok&#39;s Blog</title>
+    <title>r on </title>
     <link>https://dragarok.github.io/tags/r/</link>
-    <description>Recent content in r on Alok&#39;s Blog</description>
+    <description>Recent content in r on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Tue, 22 Sep 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R Programming 101- Datacamp Beginner</title>
@@ -13,7 +13,7 @@
       <pubDate>Tue, 22 Sep 2020 00:00:00 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/09/r-programming-101-datacamp-beginner/</guid>
-      <description>Datacamp Beginner Course Notes Symbol  Assign is used as &amp;lt;- rather than =.  Arithmetic Operations  Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE.  Matrix and Vectors  Index starts at 1 Methods:  rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames    Factors  Basically these are used for categorical variables.</description>
+      <description>Datacamp Beginner Course Notes Symbol Assign is used as &amp;lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it&amp;rsquo;s categorical values.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Tue, 22 Sep 2020 00:00:00 +0545</pubDate>
       
       <guid>https://dragarok.github.io/braindump/2020/09/r-programming-101-datacamp-intermediate/</guid>
-      <description>Datacamp Intermediate Course Notes Logical Operators  &amp;amp; means and and | means or operator. &amp;amp;&amp;amp; and || will first do element wise comparison on just the first element and give a single result.  Conditionals  if (condition){ } else if (condition2) {} else {} However the else statement should be written on the same line as closing brace of if statement. while(condition) {expression} break for breaking the loop for(item in item_list) { operate on item } for (i in 1:length(list)) { operate on list[i] } Double brackets when subsetting over a list.</description>
+      <description>Datacamp Intermediate Course Notes Logical Operators &amp;amp; means and and | means or operator. &amp;amp;&amp;amp; and || will first do element wise comparison on just the first element and give a single result. Conditionals if (condition){ } else if (condition2) {} else {} However the else statement should be written on the same line as closing brace of if statement. while(condition) {expression} break for breaking the loop for(item in item_list) { operate on item } for (i in 1:length(list)) { operate on list[i] } Double brackets when subsetting over a list.</description>
     </item>
     
   </channel>

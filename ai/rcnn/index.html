@@ -5,11 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Faster RCNN Region Proposal:   Anchors: Different size bounding box of different aspect ratio and sizes
-  Task to be done by RPN:
-  Does this anchor contain a relevant object?
-  How would we adjust this anchor to better fit the relevant object?
-  It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image." />
+<meta name="description" content="Faster RCNN Region Proposal: Anchors: Different size bounding box of different aspect ratio and sizes
+Task to be done by RPN:
+Does this anchor contain a relevant object?
+How would we adjust this anchor to better fit the relevant object?
+It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
+Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio." />
 <meta name="keywords" content="Blog, rcnn, architecture, neuralnetwork" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -18,7 +19,7 @@
 
     <title>
         
-            RCNN :: Alok&#39;s Blog 
+            RCNN ::  
         
     </title>
 
@@ -38,7 +39,7 @@
 
 
 
-<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../main.min.47d1ac1539fe1320a4309408fbd7b3a0a50b48482799b1e81ee0115e02cb24e2.css">
 
 
 
@@ -53,34 +54,30 @@
     <meta name="theme-color" content="#252627">
 
 <meta itemprop="name" content="RCNN">
-<meta itemprop="description" content="Faster RCNN Region Proposal:   Anchors: Different size bounding box of different aspect ratio and sizes
-  Task to be done by RPN:
-  Does this anchor contain a relevant object?
-  How would we adjust this anchor to better fit the relevant object?
-  It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.">
-<meta itemprop="datePublished" content="2020-01-24T00:00:00+05:45" />
+<meta itemprop="description" content="Faster RCNN Region Proposal: Anchors: Different size bounding box of different aspect ratio and sizes
+Task to be done by RPN:
+Does this anchor contain a relevant object?
+How would we adjust this anchor to better fit the relevant object?
+It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
+Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio."><meta itemprop="datePublished" content="2020-01-24T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-05-02T03:40:19+05:45" />
-<meta itemprop="wordCount" content="867">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
-
-
-
-<meta itemprop="keywords" content="rcnn,architecture,neuralnetwork," />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="867"><meta itemprop="image" content="https://dragarok.github.io/"/>
+<meta itemprop="keywords" content="rcnn,architecture,neuralnetwork," /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="RCNN"/>
-<meta name="twitter:description" content="Faster RCNN Region Proposal:   Anchors: Different size bounding box of different aspect ratio and sizes
-  Task to be done by RPN:
-  Does this anchor contain a relevant object?
-  How would we adjust this anchor to better fit the relevant object?
-  It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image."/>
+<meta name="twitter:description" content="Faster RCNN Region Proposal: Anchors: Different size bounding box of different aspect ratio and sizes
+Task to be done by RPN:
+Does this anchor contain a relevant object?
+How would we adjust this anchor to better fit the relevant object?
+It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
+Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio."/>
 
 
 
 
 
-    <meta property="article:published_time" content="2020-01-24 00:00:00 &#43;0545 &#43;0545" />
+    <meta property="article:published_time" content="2020-01-24 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -189,7 +186,7 @@
 <p>we use the foreground anchor and the closest ground truth object and calculate the correct Δ\DeltaΔ needed to transform the anchor into the object.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Two different output for anchors:</p>
@@ -208,7 +205,7 @@
 <p>2 output heads for objectness and bounding box regression</p>
 <p>For the classification layer, we output two predictions per anchor: Background vs Foreground logit</p>
 <p>For regression: 4 delta values</p>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Network:</p>
@@ -216,21 +213,21 @@
 whose number of channels depends on the number of anchors per point.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Training:</p>
 <p>Categorization of anchors:</p>
 <p>Those that overlap a ground-truth object with an Intersection over Union (IoU) bigger than 0.5 are considered “foreground”</p>
 <p>those that don’t overlap any ground truth object or have less than 0.1 IoU with ground-truth objects are considered “background”.</p>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Random sampling:</p>
 <p>From all anchors to form a mini batch of size 256 making balance between foreground and backgnd</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Binary cross entropy:</p>
@@ -239,20 +236,20 @@ whose number of channels depends on the number of anchors per point.</p>
 <p>Then, it uses only those minibatch anchors marked as foreground to calculate the regression loss.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Regularization Used:</p>
 <p>Smooth L1 loss</p>
 <p>Smooth L1 is basically L1, but when the L1 error is small enough, defined by a certain σ\sigmaσ, the error is considered almost correct and the loss diminishes at a faster rate.</p>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Problem:</p>
 <p>Maintaining a perfect ratio between foreground and background in a batch size due to lesser foreground anchors</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Solution:</p>
@@ -263,7 +260,7 @@ whose number of channels depends on the number of anchors per point.</p>
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Post Processing:</p>
@@ -274,14 +271,14 @@ whose number of channels depends on the number of anchors per point.</p>
 <p>Too low and you may end up missing proposals for objects; too high and you could end up with too many proposals for the same object. A value commonly used is 0.6.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>How many proposals to use then?</p>
 <p>Based on paper, after NMS, let N=2000 but sometimes even 50 will work fine.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Region of Interest Pooling:</p>
@@ -323,22 +320,6 @@ whose number of channels depends on the number of anchors per point.</p>
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -346,7 +327,7 @@ whose number of channels depends on the number of anchors per point.</p>
 
 
 
-<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
 
 
 

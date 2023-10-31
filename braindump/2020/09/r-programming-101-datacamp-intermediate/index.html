@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Datacamp Intermediate Course Notes Logical Operators  &amp;amp; means and and | means or operator. &amp;amp;&amp;amp; and || will first do element wise comparison on just the first element and give a single result.  Conditionals  if (condition){ } else if (condition2) {} else {} However the else statement should be written on the same line as closing brace of if statement. while(condition) {expression} break for breaking the loop for(item in item_list) { operate on item } for (i in 1:length(list)) { operate on list[i] } Double brackets when subsetting over a list." />
+<meta name="description" content="Datacamp Intermediate Course Notes Logical Operators &amp;amp; means and and | means or operator. &amp;amp;&amp;amp; and || will first do element wise comparison on just the first element and give a single result. Conditionals if (condition){ } else if (condition2) {} else {} However the else statement should be written on the same line as closing brace of if statement. while(condition) {expression} break for breaking the loop for(item in item_list) { operate on item } for (i in 1:length(list)) { operate on list[i] } Double brackets when subsetting over a list." />
 <meta name="keywords" content="Blog, r" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -14,7 +14,7 @@
 
     <title>
         
-            R Programming 101- Datacamp Intermediate :: Alok&#39;s Blog 
+            R Programming 101- Datacamp Intermediate ::  
         
     </title>
 
@@ -34,7 +34,7 @@
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.47d1ac1539fe1320a4309408fbd7b3a0a50b48482799b1e81ee0115e02cb24e2.css">
 
 
 
@@ -49,20 +49,14 @@
     <meta name="theme-color" content="#252627">
 
 <meta itemprop="name" content="R Programming 101- Datacamp Intermediate">
-<meta itemprop="description" content="Datacamp Intermediate Course Notes Logical Operators  &amp; means and and | means or operator. &amp;&amp; and || will first do element wise comparison on just the first element and give a single result.  Conditionals  if (condition){ } else if (condition2) {} else {} However the else statement should be written on the same line as closing brace of if statement. while(condition) {expression} break for breaking the loop for(item in item_list) { operate on item } for (i in 1:length(list)) { operate on list[i] } Double brackets when subsetting over a list.">
-<meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45" />
+<meta itemprop="description" content="Datacamp Intermediate Course Notes Logical Operators &amp; means and and | means or operator. &amp;&amp; and || will first do element wise comparison on just the first element and give a single result. Conditionals if (condition){ } else if (condition2) {} else {} However the else statement should be written on the same line as closing brace of if statement. while(condition) {expression} break for breaking the loop for(item in item_list) { operate on item } for (i in 1:length(list)) { operate on list[i] } Double brackets when subsetting over a list."><meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45" />
 <meta itemprop="dateModified" content="2020-09-22T08:34:51+05:45" />
-<meta itemprop="wordCount" content="709">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
-
-
-
-<meta itemprop="keywords" content="r," />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="wordCount" content="709"><meta itemprop="image" content="https://dragarok.github.io/"/>
+<meta itemprop="keywords" content="r," /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://dragarok.github.io/"/>
 
 <meta name="twitter:title" content="R Programming 101- Datacamp Intermediate"/>
-<meta name="twitter:description" content="Datacamp Intermediate Course Notes Logical Operators  &amp; means and and | means or operator. &amp;&amp; and || will first do element wise comparison on just the first element and give a single result.  Conditionals  if (condition){ } else if (condition2) {} else {} However the else statement should be written on the same line as closing brace of if statement. while(condition) {expression} break for breaking the loop for(item in item_list) { operate on item } for (i in 1:length(list)) { operate on list[i] } Double brackets when subsetting over a list."/>
+<meta name="twitter:description" content="Datacamp Intermediate Course Notes Logical Operators &amp; means and and | means or operator. &amp;&amp; and || will first do element wise comparison on just the first element and give a single result. Conditionals if (condition){ } else if (condition2) {} else {} However the else statement should be written on the same line as closing brace of if statement. while(condition) {expression} break for breaking the loop for(item in item_list) { operate on item } for (i in 1:length(list)) { operate on list[i] } Double brackets when subsetting over a list."/>
 
 
 
@@ -260,28 +254,27 @@ of if statement.</li>
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Example</p>
-<pre><code class="language-jupyter-R" data-lang="jupyter-R"># Definition of character strings representing times
-str1 &lt;- &quot;May 23, '96 hours:23 minutes:01 seconds:45&quot;
-str2 &lt;- &quot;2012-3-12 14:23:08&quot;
+<pre tabindex="0"><code class="language-jupyter-R" data-lang="jupyter-R"># Definition of character strings representing times
+str1 &lt;- &#34;May 23, &#39;96 hours:23 minutes:01 seconds:45&#34;
+str2 &lt;- &#34;2012-3-12 14:23:08&#34;
 
 # Convert the strings to POSIXct objects: time1, time2
-time1 &lt;- as.POSIXct(str1, format = &quot;%B %d, '%y hours:%H minutes:%M seconds:%S&quot;)
+time1 &lt;- as.POSIXct(str1, format = &#34;%B %d, &#39;%y hours:%H minutes:%M seconds:%S&#34;)
 time2 &lt;- as.POSIXct(str2)
 
 # Convert times to formatted strings
-format(time1, &quot;%M&quot;)
-format(time2, &quot;%I:%M %p&quot;)
-
-</code></pre><pre><code class="language-jupyter-R" data-lang="jupyter-R">df = data.frame(
+format(time1, &#34;%M&#34;)
+format(time2, &#34;%I:%M %p&#34;)
+</code></pre><pre tabindex="0"><code class="language-jupyter-R" data-lang="jupyter-R">df = data.frame(
 x = c(4,5,6),
-y = c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)
+y = c(&#34;a&#34;, &#34;b&#34;, &#34;c&#34;)
 )
 class(df)
-df[&quot;x&quot;] &lt;- c(1,2,3)
+df[&#34;x&#34;] &lt;- c(1,2,3)
 df
 </code></pre></li>
 </ul>
@@ -339,22 +332,6 @@ df
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -362,7 +339,7 @@ df
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
 
 
 
