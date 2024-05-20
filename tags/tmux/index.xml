@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tmux on </title>
+    <title>Tmux on </title>
     <link>https://dragarok.github.io/tags/tmux/</link>
-    <description>Recent content in tmux on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Tmux on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:01 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:01 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tmux</title>
       <link>https://dragarok.github.io/braindump/2020/04/tmux/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:01 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/tmux/</guid>
-      <description>mastering tmux:
-tmux new -s &amp;ldquo;session_name&amp;rdquo;
-tmux ls - lists sessions
-Pane controls:
-everything is with control + B
-then:
-&amp;quot; : split horizontally
-% : split vertically
-o : go to next pane
-; : previous pane
-q : show pane numbers
-z : toggle pane zoom ( can hide all panes using z)
-! : convert pane into an window
-Control + O : swap panes
-t: copy mode</description>
+      <description>mastering tmux:&#xA;tmux new -s &amp;ldquo;session_name&amp;rdquo;&#xA;tmux ls - lists sessions&#xA;Pane controls:&#xA;everything is with control + B&#xA;then:&#xA;&amp;quot; : split horizontally&#xA;% : split vertically&#xA;o : go to next pane&#xA;; : previous pane&#xA;q : show pane numbers&#xA;z : toggle pane zoom ( can hide all panes using z)&#xA;! : convert pane into an window&#xA;Control + O : swap panes&#xA;t: copy mode</description>
     </item>
-    
   </channel>
 </rss>

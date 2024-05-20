@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>useful on </title>
+    <title>Useful on </title>
     <link>https://dragarok.github.io/tags/useful/</link>
-    <description>Recent content in useful on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Useful on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:22 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/useful/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:22 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/useful/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful Linux Packages</title>
       <link>https://dragarok.github.io/braindump/2020/04/useful-linux-packages/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:22 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/useful-linux-packages/</guid>
       <description> joe: to generate .gitignore files when needed joe g java,node,osx &amp;gt; .gitignore : create new gitignore joe g OSX,SublimeText &amp;raquo; ~/.gitignore : appends to existing one joe ls : what tags can be used ledger ffsend: firefox send function hexyl: hex viewer tldr nemesis bed : binary editor builtwith site: to find what technology the site is using malc0de.com/database: search for malware thispersondoesnotexist.com &amp;ndash; get a fake face generated.photos mkcert: just make certificates Backlinks Linux one liners Backlinks Linux one liners </description>
     </item>
-    
   </channel>
 </rss>

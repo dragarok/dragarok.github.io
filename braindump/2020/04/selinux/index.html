@@ -49,17 +49,19 @@ Every process has a LABEL Another important part is type enforcement : isolation
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="Selinux">
-<meta itemprop="description" content="Selinux Sysadmin&rsquo;s guide on selinux:
-Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context ">
-<meta itemprop="dateModified" content="2020-04-19T16:10:57+05:45" />
-<meta itemprop="wordCount" content="134"><meta itemprop="image" content="https://dragarok.github.io/"/>
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
 
-<meta name="twitter:title" content="Selinux"/>
-<meta name="twitter:description" content="Selinux Sysadmin&rsquo;s guide on selinux:
-Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context "/>
+  <meta itemprop="name" content="Selinux">
+  <meta itemprop="description" content="Selinux Sysadmin’s guide on selinux:
+Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context ">
+  <meta itemprop="datePublished" content="2020-04-19T16:10:57+05:45">
+  <meta itemprop="dateModified" content="2020-04-19T16:10:57+05:45">
+  <meta itemprop="wordCount" content="134">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="Selinux">
+  <meta name="twitter:description" content="Selinux Sysadmin’s guide on selinux:
+Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context ">
 
 
 
@@ -227,7 +229,7 @@ logfile, content directory, process, ports</li>
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
 
 
 

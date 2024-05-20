@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nepali on </title>
+    <title>Nepali on </title>
     <link>https://dragarok.github.io/tags/nepali/</link>
-    <description>Recent content in nepali on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Nepali on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:58:58 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/nepali/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:58:58 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/nepali/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unicode Nepali Character Map</title>
       <link>https://dragarok.github.io/braindump/2020/04/unicode-nepali-character-map/</link>
       <pubDate>Sun, 19 Apr 2020 15:58:58 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/unicode-nepali-character-map/</guid>
       <description>(&amp;quot; &amp;quot; &amp;ldquo;\u0020&amp;rdquo;) ; SPACE (&amp;quot;!&amp;quot; &amp;ldquo;\u0021&amp;rdquo;) ; ! -&amp;gt; ! (&amp;quot;&amp;rsquo;&amp;quot; &amp;ldquo;\u0953&amp;rdquo;) ; &amp;rsquo; -&amp;gt; &#39; (&amp;quot;#&amp;quot; &amp;ldquo;\u0023&amp;rdquo;) ; # -&amp;gt; # (&amp;quot;$&amp;quot; &amp;ldquo;\u0024&amp;rdquo;) ; $ -&amp;gt; $ (&amp;quot;%&amp;quot; &amp;ldquo;\u0025&amp;rdquo;) ; % -&amp;gt; % (&amp;quot;&amp;amp;&amp;quot; &amp;ldquo;\u0026&amp;rdquo;) ; &amp;amp; -&amp;gt; &amp;amp; (&amp;quot;&amp;rsquo;&amp;quot; &amp;ldquo;\u0027&amp;rdquo;) ; &amp;rsquo; -&amp;gt; &#39; (&amp;quot;(&amp;quot; &amp;ldquo;\u0028&amp;rdquo;) ; ( -&amp;gt; ( (&amp;quot;)&amp;quot; &amp;ldquo;\u0029&amp;rdquo;) ; ) -&amp;gt; ) (&amp;quot;*&amp;quot; &amp;ldquo;\u002A&amp;rdquo;) ; * -&amp;gt; * (&amp;quot;+&amp;quot; &amp;ldquo;\u200C&amp;rdquo;) ; + -&amp;gt; ZWNJ (&amp;quot;,&amp;quot; &amp;ldquo;\u002C&amp;rdquo;) ; , -&amp;gt; , (&amp;quot;-&amp;quot; &amp;ldquo;\u002D&amp;rdquo;) ; - -&amp;gt; - (&amp;quot;.</description>
     </item>
-    
   </channel>
 </rss>

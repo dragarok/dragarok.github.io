@@ -1,48 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>config on </title>
+    <title>Config on </title>
     <link>https://dragarok.github.io/tags/config/</link>
-    <description>Recent content in config on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Config on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:40 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/config/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:40 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/config/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wordpress Manjaro</title>
       <link>https://dragarok.github.io/braindump/2020/04/wordpress-manjaro/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:40 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/wordpress-manjaro/</guid>
-      <description>sudo mysql_install_db : when &amp;ldquo;Can&amp;rsquo;t open and lock privilege tables: Table &amp;lsquo;mysql.servers&amp;rsquo; doesn&amp;rsquo;t exist&amp;rdquo; occurs.
-Install apache, mariadb, phpmyadmin, mysql and everything
-Starting apache server:
-sudo systemctl enable httpd.service sudo systemctl start httpd.service Also can check status as well. After installing mariadb: run
-mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql sudo systemctl restart mariadb.service Create wordpress database and user using mysql shell rather than phpmyadmin
-su mysql -u root -p In mysql shell: [ Change strong_password first ]</description>
+      <description>sudo mysql_install_db : when &amp;ldquo;Can&amp;rsquo;t open and lock privilege tables: Table &amp;lsquo;mysql.servers&amp;rsquo; doesn&amp;rsquo;t exist&amp;rdquo; occurs.&#xA;Install apache, mariadb, phpmyadmin, mysql and everything&#xA;Starting apache server:&#xA;sudo systemctl enable httpd.service sudo systemctl start httpd.service Also can check status as well. After installing mariadb: run&#xA;mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql sudo systemctl restart mariadb.service Create wordpress database and user using mysql shell rather than phpmyadmin&#xA;su mysql -u root -p In mysql shell: [ Change strong_password first ]</description>
     </item>
-    
     <item>
       <title>Tmux</title>
       <link>https://dragarok.github.io/braindump/2020/04/tmux/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:01 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/tmux/</guid>
-      <description>mastering tmux:
-tmux new -s &amp;ldquo;session_name&amp;rdquo;
-tmux ls - lists sessions
-Pane controls:
-everything is with control + B
-then:
-&amp;quot; : split horizontally
-% : split vertically
-o : go to next pane
-; : previous pane
-q : show pane numbers
-z : toggle pane zoom ( can hide all panes using z)
-! : convert pane into an window
-Control + O : swap panes
-t: copy mode</description>
+      <description>mastering tmux:&#xA;tmux new -s &amp;ldquo;session_name&amp;rdquo;&#xA;tmux ls - lists sessions&#xA;Pane controls:&#xA;everything is with control + B&#xA;then:&#xA;&amp;quot; : split horizontally&#xA;% : split vertically&#xA;o : go to next pane&#xA;; : previous pane&#xA;q : show pane numbers&#xA;z : toggle pane zoom ( can hide all panes using z)&#xA;! : convert pane into an window&#xA;Control + O : swap panes&#xA;t: copy mode</description>
     </item>
-    
   </channel>
 </rss>

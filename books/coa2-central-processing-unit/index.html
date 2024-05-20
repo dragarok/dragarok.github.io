@@ -50,19 +50,21 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="COA2-Central-Processing-Unit">
-<meta itemprop="description" content="### Author:
+
+  <meta itemprop="name" content="COA2-Central-Processing-Unit">
+  <meta itemprop="description" content="### Author:
 loc 1 - Here two sets of multiplexers select register which perform input data for ALU. A decoder selects destination register by enabling its load input. The function select in ALU determines the particular operation that to be performed
 loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A selector (SELA): to place the content of R1 into bus A.2. MUX B selector (SELB): to place the content of R2 into bus B.">
-<meta itemprop="dateModified" content="2020-04-26T03:08:24+05:45" />
-<meta itemprop="wordCount" content="1282"><meta itemprop="image" content="https://dragarok.github.io/"/>
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
-
-<meta name="twitter:title" content="COA2-Central-Processing-Unit"/>
-<meta name="twitter:description" content="### Author:
+  <meta itemprop="datePublished" content="2020-04-26T03:08:24+05:45">
+  <meta itemprop="dateModified" content="2020-04-26T03:08:24+05:45">
+  <meta itemprop="wordCount" content="1282">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="COA2-Central-Processing-Unit">
+  <meta name="twitter:description" content="### Author:
 loc 1 - Here two sets of multiplexers select register which perform input data for ALU. A decoder selects destination register by enabling its load input. The function select in ALU determines the particular operation that to be performed
-loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A selector (SELA): to place the content of R1 into bus A.2. MUX B selector (SELB): to place the content of R2 into bus B."/>
+loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A selector (SELA): to place the content of R1 into bus A.2. MUX B selector (SELB): to place the content of R2 into bus B.">
 
 
 
@@ -197,7 +199,7 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
 <p>loc 14 - The three address instruction format requires a very complex design to hold the three address references</p>
 </li>
 <li>
-<p>loc 15 - Example: ADD X, Y, Z; X  Y + Z  ADVANTAGE: It results in short programs when evaluating arithmetic expressions.  DISADVANTAGE: The instructions requires too many bits to specify 3 addresses.Two address instruction 2. Two-address instructions are the most common in commercial computers. Here again each address field can specify either a processor register, or a memory word. One address must do double duty as both operand and result. The two address instruction format reduces the space requirement. To avoid altering the value of an operand, a MOV instruction is used to move one of the values to a result or temporary location T, before performing the operation.Format: Op X, Y; X  X Op Y Example: SUB X, Y; X  X - Y 3. One address Instruction It was generally used in earlier machine with the implied address been a CPU register known as accumulator. The accumulator contains one of the operand and is used to store the result.One-address instruction uses an implied accumulator (Ac) register for all data manipulation. All operations are done between the AC register and a memory operand. We use LOAD and STORE instruction for transfer to and from memory and Ac register.Format: Op X; Ac  Ac Op X Example: MUL X; Ac  Ac * X 4. Zero address Instruction It does not use address field for the instruction like ADD, SUB, MUL, DIV etc. The PUSH and POP instructions, however, need an address field to specify the operand that communicates with the stack. The name “Zero” address is given because of the absence of an address field in the computational instruction.Format: Op; TOS  TOS Op (TOS – 1) Example: DIV; TOS  TOS DIV (TOS – 1) Example: To illustrate the influence of the number of address on computer programs, we will evaluate the arithmetic statement X=(A+B)*(C+D) using Zero, one, two, or three address instructions.1.Three-Address Instructions: ADD R1, A, B; R1  M[A] + M[B] ADD R2, C, D; R2  M[C] + M[D] MUL X, R1,R2; M<input checked="" disabled="" type="checkbox">  R1 * R2 It is assumed that the computer has two processor registers R1 and R2. The symbol M[A] denotes the operand at memory address symbolized by A.2.Two-Address Instructions: MOV R1, A; R1  M[A] ADD R1, B; R1  R1 + M[B]Compiled By: Er. Hari Aryal [haryal4@gmail.com] References: W. Stalling &amp; M. Mano | 15</p>
+<p>loc 15 - Example: ADD X, Y, Z; X  Y + Z  ADVANTAGE: It results in short programs when evaluating arithmetic expressions.  DISADVANTAGE: The instructions requires too many bits to specify 3 addresses.Two address instruction 2. Two-address instructions are the most common in commercial computers. Here again each address field can specify either a processor register, or a memory word. One address must do double duty as both operand and result. The two address instruction format reduces the space requirement. To avoid altering the value of an operand, a MOV instruction is used to move one of the values to a result or temporary location T, before performing the operation.Format: Op X, Y; X  X Op Y Example: SUB X, Y; X  X - Y 3. One address Instruction It was generally used in earlier machine with the implied address been a CPU register known as accumulator. The accumulator contains one of the operand and is used to store the result.One-address instruction uses an implied accumulator (Ac) register for all data manipulation. All operations are done between the AC register and a memory operand. We use LOAD and STORE instruction for transfer to and from memory and Ac register.Format: Op X; Ac  Ac Op X Example: MUL X; Ac  Ac * X 4. Zero address Instruction It does not use address field for the instruction like ADD, SUB, MUL, DIV etc. The PUSH and POP instructions, however, need an address field to specify the operand that communicates with the stack. The name “Zero” address is given because of the absence of an address field in the computational instruction.Format: Op; TOS  TOS Op (TOS – 1) Example: DIV; TOS  TOS DIV (TOS – 1) Example: To illustrate the influence of the number of address on computer programs, we will evaluate the arithmetic statement X=(A+B)*(C+D) using Zero, one, two, or three address instructions.1.Three-Address Instructions: ADD R1, A, B; R1  M[A] + M[B] ADD R2, C, D; R2  M[C] + M[D] MUL X, R1,R2; M[X]  R1 * R2 It is assumed that the computer has two processor registers R1 and R2. The symbol M[A] denotes the operand at memory address symbolized by A.2.Two-Address Instructions: MOV R1, A; R1  M[A] ADD R1, B; R1  R1 + M[B]Compiled By: Er. Hari Aryal [haryal4@gmail.com] References: W. Stalling &amp; M. Mano | 15</p>
 </li>
 <li>
 <p>loc 17 - It was mentioned previously that the address field of an instruction may specify either a memory word or a processor register. When the address field specifies a processor register, the instruction is said to be in register-mode</p>
@@ -251,7 +253,7 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
 
 
 
-<script type="text/javascript" src="../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
+<script type="text/javascript" src="../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
 
 
 

@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>meditation on </title>
+    <title>Meditation on </title>
     <link>https://dragarok.github.io/tags/meditation/</link>
-    <description>Recent content in meditation on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Meditation on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Apr 2020 02:28:19 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/meditation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2020 02:28:19 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/meditation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kundalini – an Untold Story: A Himalayan Mystic&#39;s Insight Into the Power of Kundalini and Chakra Sadhana</title>
       <link>https://dragarok.github.io/books/om-swami/</link>
       <pubDate>Mon, 27 Apr 2020 02:28:19 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/books/om-swami/</guid>
-      <description>### Author: OM Swami
-loc 92 - The science of the kundalini is an ancient vidya that has been passed through an oral tradition in strict disciplic succession to worthy recipients. The science remains just as intact today. All it requires is for one to walk the path with great determination and tenacity.
-loc 618 - When you don’t react, a sense of ease arises. Resistance goes away. When you resist something, you have to exert double the force, it is exhausting and demoralizing.</description>
+      <description>### Author: OM Swami&#xA;loc 92 - The science of the kundalini is an ancient vidya that has been passed through an oral tradition in strict disciplic succession to worthy recipients. The science remains just as intact today. All it requires is for one to walk the path with great determination and tenacity.&#xA;loc 618 - When you don’t react, a sense of ease arises. Resistance goes away. When you resist something, you have to exert double the force, it is exhausting and demoralizing.</description>
     </item>
-    
     <item>
       <title>Gitanjali</title>
       <link>https://dragarok.github.io/books/rabindranath-tagore/</link>
       <pubDate>Mon, 27 Apr 2020 02:27:38 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/books/rabindranath-tagore/</guid>
-      <description>### Author: Rabindranath Tagore
-loc 208 - Indeed, when he is speaking of children, so much a part of himself this quality seems, one is not certain that he is not also speaking of the saints, “They build their houses with sand and they play with empty shells. With withered leaves they weave their boats and smilingly float them on the vast deep. Children have their play on the seashore of worlds.</description>
+      <description>### Author: Rabindranath Tagore&#xA;loc 208 - Indeed, when he is speaking of children, so much a part of himself this quality seems, one is not certain that he is not also speaking of the saints, “They build their houses with sand and they play with empty shells. With withered leaves they weave their boats and smilingly float them on the vast deep. Children have their play on the seashore of worlds.</description>
     </item>
-    
     <item>
       <title>Siddhartha</title>
       <link>https://dragarok.github.io/books/siddhartha/</link>
       <pubDate>Mon, 27 Apr 2020 02:27:19 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/books/siddhartha/</guid>
-      <description>### Author: Hermann Hesse
-loc 747 - &amp;ldquo;No, Samana, I am not afraid of this. Did any Samana or Brahman ever fear, someone might come and grab him and steal his learning, and his religious devotion, and his depth of thought? No, for they are his very own, and he would only give away from those whatever he is willing to give and to whomever he is willing to give. Like this it is, precisely like this it is also with Kamala and with the pleasures of love.</description>
+      <description>### Author: Hermann Hesse&#xA;loc 747 - &amp;ldquo;No, Samana, I am not afraid of this. Did any Samana or Brahman ever fear, someone might come and grab him and steal his learning, and his religious devotion, and his depth of thought? No, for they are his very own, and he would only give away from those whatever he is willing to give and to whomever he is willing to give. Like this it is, precisely like this it is also with Kamala and with the pleasures of love.</description>
     </item>
-    
   </channel>
 </rss>

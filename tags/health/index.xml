@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>health on </title>
+    <title>Health on </title>
     <link>https://dragarok.github.io/tags/health/</link>
-    <description>Recent content in health on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Health on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/health/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My relationship with my body</title>
       <link>https://dragarok.github.io/posts/2023/01/my-relationship-with-my-body/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/posts/2023/01/my-relationship-with-my-body/</guid>
-      <description>We all identify our bodies as &amp;ldquo;my body&amp;rdquo; and not me directly. The whole idea of this blog post revolves around this idea. The purpose of this blog post is to establish an idea on how to build healthier lifestyle based on this concept.
-It&amp;rsquo;s not like we intentionally don&amp;rsquo;t want to build healthier habits. We try to pick up exercise habits, but we are too lazy to work on it.</description>
+      <description>We all identify our bodies as &amp;ldquo;my body&amp;rdquo; and not me directly. The whole idea of this blog post revolves around this idea. The purpose of this blog post is to establish an idea on how to build healthier lifestyle based on this concept.&#xA;It&amp;rsquo;s not like we intentionally don&amp;rsquo;t want to build healthier habits. We try to pick up exercise habits, but we are too lazy to work on it.</description>
     </item>
-    
   </channel>
 </rss>

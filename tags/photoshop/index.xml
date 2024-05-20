@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>photoshop on </title>
+    <title>Photoshop on </title>
     <link>https://dragarok.github.io/tags/photoshop/</link>
-    <description>Recent content in photoshop on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Photoshop on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:14 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/photoshop/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:14 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/photoshop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Photoshop</title>
       <link>https://dragarok.github.io/braindump/2020/04/photoshop/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:14 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/photoshop/</guid>
-      <description>Photoshop carefulness: Active layer is to be cared.
-Not on bed or something
-control +g go back
-move tool by pressing V
-always group layers and rename them
-control g for group after selecting using control
-Never use yellow background with white text Designing a cursor to appear on the design . Selecting a hover to other text color and also the opacity to change either low or high</description>
+      <description>Photoshop carefulness: Active layer is to be cared.&#xA;Not on bed or something&#xA;control +g go back&#xA;move tool by pressing V&#xA;always group layers and rename them&#xA;control g for group after selecting using control&#xA;Never use yellow background with white text Designing a cursor to appear on the design . Selecting a hover to other text color and also the opacity to change either low or high</description>
     </item>
-    
   </channel>
 </rss>

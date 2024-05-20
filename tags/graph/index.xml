@@ -1,64 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>graph on </title>
+    <title>Graph on </title>
     <link>https://dragarok.github.io/tags/graph/</link>
-    <description>Recent content in graph on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Graph on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 19:24:20 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 May 2020 03:44:39 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graph Neural Networks</title>
       <link>https://dragarok.github.io/braindump/2020/04/graph-neural-networks/</link>
       <pubDate>Sun, 19 Apr 2020 19:24:20 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/graph-neural-networks/</guid>
       <description>Graph Neural Net Intro &amp;ndash; Information about the non euclidean space incorporated &amp;ndash; 2D conversion of image as input vs 3D image as input &amp;ndash; Ideas about no connectivity in cases of pixels &amp;ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &amp;ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &amp;ndash; Static and dynamic graphs will have different ways &amp;ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &amp;ndash; Adjacency Matrix are mostly used.</description>
     </item>
-    
     <item>
       <title>Graph Neural Nets</title>
       <link>https://dragarok.github.io/braindump/2020/04/graph-neural-nets/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:36 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/graph-neural-nets/</guid>
       <description>&amp;ndash; Information about the non euclidean space incorporated &amp;ndash; 2D conversion of image as input vs 3D image as input &amp;ndash; Ideas about no connectivity in cases of pixels &amp;ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &amp;ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &amp;ndash; Static and dynamic graphs will have different ways &amp;ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &amp;ndash; Adjacency Matrix are mostly used.</description>
     </item>
-    
     <item>
       <title>Graph Algorithms</title>
       <link>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:47 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/graph-algorithms/</guid>
-      <description>Graph Algos:
-Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
-Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes
-Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.
-Edgenode data structure is created which saves the node, weight of edge and the next edgenode reference.</description>
+      <description>Graph Algos:&#xA;Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used&#xA;Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes&#xA;Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.&#xA;Edgenode data structure is created which saves the node, weight of edge and the next edgenode reference.</description>
     </item>
-    
     <item>
       <title>Graph Algorithms</title>
       <link>https://dragarok.github.io/ai/graph_algos/</link>
       <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://dragarok.github.io/ai/graph_algos/</guid>
-      <description>Graph Algos:
-Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used
-Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes
-Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.
-Edgenode data structure is created which saves the node, weight of edge and the next edgenode reference.</description>
+      <description>Graph Algos:&#xA;Know when to use adjacency list vs adjacency matrices: mostly adjacency lists are used&#xA;Directed and undirected graphs: Undirected have vertex linked to both the nodes i.e. we need to insert edge for both nodes&#xA;Initialization of graph will set edge matrix to null, degree matrix to zero, number of vertices to zero.&#xA;Edgenode data structure is created which saves the node, weight of edge and the next edgenode reference.</description>
     </item>
-    
     <item>
       <title>Graph Neural Networks</title>
       <link>https://dragarok.github.io/ai/graph-neural-networks/</link>
       <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://dragarok.github.io/ai/graph-neural-networks/</guid>
       <description>Graph Neural Net Intro &amp;ndash; Information about the non euclidean space incorporated &amp;ndash; 2D conversion of image as input vs 3D image as input &amp;ndash; Ideas about no connectivity in cases of pixels &amp;ndash; Atoms, molecules, SMILE notation, what it leaves behind is the actual structural information &amp;ndash; Nodes, edges, labels, attributes, rule(function that gives another node from one node) &amp;ndash; Static and dynamic graphs will have different ways &amp;ndash; Graph embedding: process of representing graphs vectorically with lower dimensions with as low information loss as possible &amp;ndash; Adjacency Matrix are mostly used.</description>
     </item>
-    
   </channel>
 </rss>

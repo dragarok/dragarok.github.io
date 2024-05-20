@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mars on </title>
+    <title>Mars on </title>
     <link>https://dragarok.github.io/tags/mars/</link>
-    <description>Recent content in mars on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Mars on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:20 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/mars/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:20 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/mars/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mars Terraforming</title>
       <link>https://dragarok.github.io/braindump/2020/04/mars-terraforming/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:20 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/mars-terraforming/</guid>
       <description>C02 dominated atmosphere billions of years ago Global magnetic field shutdown 4.2 billlion of years ago The atmospheric CO2 has been out of the solar system which may not be possible to bring it back Methane is suspected to be stable in the Martian atmosphere for only about 300 years, so whatever is generating this gas did so recently. volcanic activity The planet&amp;rsquo;s atmospheric pressure is too low, at about 1/100th of Earth&amp;rsquo;s, for liquid water to last on the surface.</description>
     </item>
-    
   </channel>
 </rss>

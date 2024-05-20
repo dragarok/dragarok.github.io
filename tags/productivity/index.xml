@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>productivity on </title>
+    <title>Productivity on </title>
     <link>https://dragarok.github.io/tags/productivity/</link>
-    <description>Recent content in productivity on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Productivity on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Apr 2020 02:30:01 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2020 02:30:01 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time</title>
       <link>https://dragarok.github.io/books/eat-that-frog/</link>
       <pubDate>Mon, 27 Apr 2020 02:30:01 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/books/eat-that-frog/</guid>
-      <description>### Author: Tracy, Brian
-loc 70 - Then I did something that changed my life. I began to ask successful people what they were doing that enabled them to be more productive and earn more money than me. And they told me.
-loc 88 - The ability to concentrate singlemindedly on your most important task, to do it well and to finish it completely, is the key to great success, achievement, respect, status, and happiness in life.</description>
+      <description>### Author: Tracy, Brian&#xA;loc 70 - Then I did something that changed my life. I began to ask successful people what they were doing that enabled them to be more productive and earn more money than me. And they told me.&#xA;loc 88 - The ability to concentrate singlemindedly on your most important task, to do it well and to finish it completely, is the key to great success, achievement, respect, status, and happiness in life.</description>
     </item>
-    
     <item>
       <title>Notes Management</title>
       <link>https://dragarok.github.io/braindump/2020/04/notes-management/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:47 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/notes-management/</guid>
       <description>Notes Management Org-ref Helm-bibtex Interleave Org-capture The whole process is about writing notes, interleaving them, collecting references so that this whole loop can be iterated. Process papers.org and papers.bib &amp;ndash;&amp;gt; huge files Books, papers, articles marked as TODO When going through the file convert captures to bibtex references. Helm bibtex for searching references directly or have paper and let bibtex do the work Capture TODO to document TODO in papers.org itself.</description>
     </item>
-    
   </channel>
 </rss>

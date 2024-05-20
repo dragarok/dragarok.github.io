@@ -1,61 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>windows on </title>
+    <title>Windows on </title>
     <link>https://dragarok.github.io/tags/windows/</link>
-    <description>Recent content in windows on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Windows on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Aug 2020 12:51:30 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Aug 2020 12:51:30 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emacs Windows Installation</title>
       <link>https://dragarok.github.io/emacs/emacs-windows-installation/</link>
       <pubDate>Wed, 12 Aug 2020 12:51:30 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/emacs/emacs-windows-installation/</guid>
-      <description>Problems with installing Not having msys2 so that pdftools can&amp;rsquo;t build [install msys]
-Not having mingw so that sqlite can&amp;rsquo;t build for org-roam [choco install mingw] Don&amp;rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&amp;rsquo;s bin to the PATH.
-pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64.</description>
+      <description>Problems with installing Not having msys2 so that pdftools can&amp;rsquo;t build [install msys]&#xA;Not having mingw so that sqlite can&amp;rsquo;t build for org-roam [choco install mingw] Don&amp;rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&amp;rsquo;s bin to the PATH.&#xA;pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64.</description>
     </item>
-    
     <item>
       <title>Emacs Windows Installation</title>
       <link>https://dragarok.github.io/braindump/2020/04/emacs-windows-installation/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:31 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/emacs-windows-installation/</guid>
-      <description>Problems with installing Not having msys2 so that pdftools can&amp;rsquo;t build [install msys]
-Not having mingw so that sqlite can&amp;rsquo;t build for org-roam [choco install mingw] Don&amp;rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&amp;rsquo;s bin to the PATH.
-pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64.</description>
+      <description>Problems with installing Not having msys2 so that pdftools can&amp;rsquo;t build [install msys]&#xA;Not having mingw so that sqlite can&amp;rsquo;t build for org-roam [choco install mingw] Don&amp;rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&amp;rsquo;s bin to the PATH.&#xA;pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64.</description>
     </item>
-    
     <item>
       <title>Anaconda Windows</title>
       <link>https://dragarok.github.io/ai/anaconda-windows/</link>
       <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://dragarok.github.io/ai/anaconda-windows/</guid>
-      <description>Anaconda Installation in Windows Issue with pyzmq:
-pip uninstall pyzmq pip install pyzmq Issue with requests
-conda deactivate conda update --force conda Issue with sqlite3
-Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.
-Anaconda if HTTPS error:
-conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
+      <description>Anaconda Installation in Windows Issue with pyzmq:&#xA;pip uninstall pyzmq pip install pyzmq Issue with requests&#xA;conda deactivate conda update --force conda Issue with sqlite3&#xA;Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.&#xA;Anaconda if HTTPS error:&#xA;conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
     </item>
-    
     <item>
       <title>Anaconda Windows</title>
       <link>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</guid>
-      <description>Anaconda Installation in Windows Issue with pyzmq:
-pip uninstall pyzmq pip install pyzmq Issue with requests
-conda deactivate conda update --force conda Issue with sqlite3
-Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.
-Anaconda if HTTPS error:
-conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
+      <description>Anaconda Installation in Windows Issue with pyzmq:&#xA;pip uninstall pyzmq pip install pyzmq Issue with requests&#xA;conda deactivate conda update --force conda Issue with sqlite3&#xA;Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.&#xA;Anaconda if HTTPS error:&#xA;conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
     </item>
-    
   </channel>
 </rss>

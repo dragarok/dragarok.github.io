@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rust on </title>
+    <title>Rust on </title>
     <link>https://dragarok.github.io/tags/rust/</link>
-    <description>Recent content in rust on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Rust on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:05:05 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 16:05:05 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rus</title>
       <link>https://dragarok.github.io/braindump/2020/04/rus/</link>
       <pubDate>Sun, 19 Apr 2020 16:05:05 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/rus/</guid>
-      <description>Variables: let age:u32 = 20; let sum:i32 = 5-15; let mark:isize = 10; let count:usize = 30;
-Overflow: let weight:u8 = 256; //overflow value is 0 let height:u8 = 257; //overflow value is 1
-Floats: The f32 type is a single-precision float, and f64 has double precision let interest:f32 = 8.35; let cost:f64 = 15000.600; f64 is default
-No automatic type casting
-That is 50,000 can be written as 50_000 .</description>
+      <description>Variables: let age:u32 = 20; let sum:i32 = 5-15; let mark:isize = 10; let count:usize = 30;&#xA;Overflow: let weight:u8 = 256; //overflow value is 0 let height:u8 = 257; //overflow value is 1&#xA;Floats: The f32 type is a single-precision float, and f64 has double precision let interest:f32 = 8.35; let cost:f64 = 15000.600; f64 is default&#xA;No automatic type casting&#xA;That is 50,000 can be written as 50_000 .</description>
     </item>
-    
   </channel>
 </rss>

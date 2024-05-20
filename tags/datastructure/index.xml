@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>datastructure on </title>
+    <title>Datastructure on </title>
     <link>https://dragarok.github.io/tags/datastructure/</link>
-    <description>Recent content in datastructure on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Datastructure on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Sep 2020 19:50:49 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/datastructure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Sep 2020 19:50:49 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/datastructure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Structures</title>
       <link>https://dragarok.github.io/braindump/2020/09/data-structures/</link>
       <pubDate>Thu, 17 Sep 2020 19:50:49 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/09/data-structures/</guid>
-      <description>Data Structures: Keep related info together to find the data in an efficent way
-Collections of information
-Haphazard is imaginary ; it is an intentional management of data
-Held in memory inside the running application
-Systematic arrangement of some values together
-Multiple repeating items as different transactions Use of the idea of tuple to generate a group for similar data C styled struct:
-No behavior only data Simple creation Value types unlike objects which are passed as reference No features of oop Requirements of any data structures: How to find (can be a single or multiple items at once) How to insert (where to insert the data) [INSERT OR PUSH] How to delete (from end or from top and how by copying into a new array or dynamic shuffling) [REMOVE OR POP] How to find (if it exists or where it exists) How to sort (sort in place or create new sorted version) Staying conscious of the data, how much, how many the data is going to alter Summary Arrays: Direct indexing, easy to create and use Weak: Sort, Search and insertion Linked list: Insertion and iteration is better; Weak: Direct search and sort Stacks and Queues: LIFO OR FIFO Weak: DIrect access, Searching and sorting Hash table: Speed of insertion and deletion, Access speed Weak: Retrieving in a sorted order, Search for a value Sets: Check exists(), Avoid duplicates Backlinks Array Data Structures Stack Data Structures Heap Data Structures List Data Structures Hash Data Structures </description>
+      <description>Data Structures: Keep related info together to find the data in an efficent way&#xA;Collections of information&#xA;Haphazard is imaginary ; it is an intentional management of data&#xA;Held in memory inside the running application&#xA;Systematic arrangement of some values together&#xA;Multiple repeating items as different transactions Use of the idea of tuple to generate a group for similar data C styled struct:&#xA;No behavior only data Simple creation Value types unlike objects which are passed as reference No features of oop Requirements of any data structures: How to find (can be a single or multiple items at once) How to insert (where to insert the data) [INSERT OR PUSH] How to delete (from end or from top and how by copying into a new array or dynamic shuffling) [REMOVE OR POP] How to find (if it exists or where it exists) How to sort (sort in place or create new sorted version) Staying conscious of the data, how much, how many the data is going to alter Summary Arrays: Direct indexing, easy to create and use Weak: Sort, Search and insertion Linked list: Insertion and iteration is better; Weak: Direct search and sort Stacks and Queues: LIFO OR FIFO Weak: DIrect access, Searching and sorting Hash table: Speed of insertion and deletion, Access speed Weak: Retrieving in a sorted order, Search for a value Sets: Check exists(), Avoid duplicates Backlinks Array Data Structures Stack Data Structures Heap Data Structures List Data Structures Hash Data Structures </description>
     </item>
-    
   </channel>
 </rss>

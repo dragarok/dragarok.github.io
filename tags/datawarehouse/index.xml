@@ -1,48 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>datawarehouse on </title>
+    <title>Datawarehouse on </title>
     <link>https://dragarok.github.io/tags/datawarehouse/</link>
-    <description>Recent content in datawarehouse on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Datawarehouse on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Aug 2020 07:54:57 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/datawarehouse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Aug 2020 07:54:57 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/datawarehouse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RA</title>
       <link>https://dragarok.github.io/braindump/2020/08/ra/</link>
       <pubDate>Tue, 18 Aug 2020 07:54:57 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/08/ra/</guid>
       <description>Basic terminologies: Dimensions Facts Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage Column naming: Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar.</description>
     </item>
-    
     <item>
       <title>Warehouse</title>
       <link>https://dragarok.github.io/braindump/2020/04/warehouse/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:59 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/warehouse/</guid>
-      <description>Basic terminologies:
-Dimensions Facts
-Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage
-Column naming: Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC
-Maintenance columns: insert timestamp, update, close, close_dt</description>
+      <description>Basic terminologies:&#xA;Dimensions Facts&#xA;Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage&#xA;Column naming: Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC&#xA;Maintenance columns: insert timestamp, update, close, close_dt</description>
     </item>
-    
     <item>
       <title>RA AND BI</title>
       <link>https://dragarok.github.io/braindump/2020/04/ra-and-bi/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:28 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/ra-and-bi/</guid>
-      <description>RA and BI tips:
-Compression table use FROM_DT_WID and TO_DT_WID columns to indicate the time range in which records are valid.
-Current Table stores latest positional fact data at the base level. Defined in day dimension levels
-Flow:
-Taken to the staging table or fact table first.
-Temp table from facts table with surrogate keys for ease of processing
-If data in temp table is new, inserted into the target table as well.</description>
+      <description>RA and BI tips:&#xA;Compression table use FROM_DT_WID and TO_DT_WID columns to indicate the time range in which records are valid.&#xA;Current Table stores latest positional fact data at the base level. Defined in day dimension levels&#xA;Flow:&#xA;Taken to the staging table or fact table first.&#xA;Temp table from facts table with surrogate keys for ease of processing&#xA;If data in temp table is new, inserted into the target table as well.</description>
     </item>
-    
   </channel>
 </rss>

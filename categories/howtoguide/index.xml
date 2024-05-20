@@ -1,39 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>howtoguide on </title>
+    <title>Howtoguide on </title>
     <link>https://dragarok.github.io/categories/howtoguide/</link>
-    <description>Recent content in howtoguide on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Howtoguide on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://dragarok.github.io/categories/howtoguide/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 May 2020 03:41:41 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/categories/howtoguide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anaconda Windows</title>
       <link>https://dragarok.github.io/ai/anaconda-windows/</link>
       <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://dragarok.github.io/ai/anaconda-windows/</guid>
-      <description>Anaconda Installation in Windows Issue with pyzmq:
-pip uninstall pyzmq pip install pyzmq Issue with requests
-conda deactivate conda update --force conda Issue with sqlite3
-Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.
-Anaconda if HTTPS error:
-conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
+      <description>Anaconda Installation in Windows Issue with pyzmq:&#xA;pip uninstall pyzmq pip install pyzmq Issue with requests&#xA;conda deactivate conda update --force conda Issue with sqlite3&#xA;Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.&#xA;Anaconda if HTTPS error:&#xA;conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
     </item>
-    
     <item>
       <title>Anaconda Windows</title>
       <link>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</guid>
-      <description>Anaconda Installation in Windows Issue with pyzmq:
-pip uninstall pyzmq pip install pyzmq Issue with requests
-conda deactivate conda update --force conda Issue with sqlite3
-Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.
-Anaconda if HTTPS error:
-conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
+      <description>Anaconda Installation in Windows Issue with pyzmq:&#xA;pip uninstall pyzmq pip install pyzmq Issue with requests&#xA;conda deactivate conda update --force conda Issue with sqlite3&#xA;Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.&#xA;Anaconda if HTTPS error:&#xA;conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
     </item>
-    
   </channel>
 </rss>

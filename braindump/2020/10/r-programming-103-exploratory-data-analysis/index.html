@@ -53,25 +53,27 @@ Density plot" />
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="R Programming 103- Exploratory Data Analysis">
-<meta itemprop="description" content="Practice Course Dropping levels from categorical dataset
-df %&gt;% filter(col_name != &#34;certain_level&#34;) %&gt;% droplevels(df$col_name) Counts vs Proportions
-prop.table(table_obj) prop.table(table_obj, number) # used to condition on some factor prop.table(table_obj, 1) # condition on rows prop.table(table_obj, 2) # condition on columns With this method, we can have marginal distributions for ourselves.
-Numerical Data
-Note on the variability of the distribution and mean of the distribution when looking at numerical data representations.
-Density plot"><meta itemprop="datePublished" content="2020-10-05T00:00:00+05:45" />
-<meta itemprop="dateModified" content="2020-10-06T13:22:27+05:45" />
-<meta itemprop="wordCount" content="395"><meta itemprop="image" content="https://dragarok.github.io/"/>
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
 
-<meta name="twitter:title" content="R Programming 103- Exploratory Data Analysis"/>
-<meta name="twitter:description" content="Practice Course Dropping levels from categorical dataset
+  <meta itemprop="name" content="R Programming 103- Exploratory Data Analysis">
+  <meta itemprop="description" content="Practice Course Dropping levels from categorical dataset
 df %&gt;% filter(col_name != &#34;certain_level&#34;) %&gt;% droplevels(df$col_name) Counts vs Proportions
 prop.table(table_obj) prop.table(table_obj, number) # used to condition on some factor prop.table(table_obj, 1) # condition on rows prop.table(table_obj, 2) # condition on columns With this method, we can have marginal distributions for ourselves.
 Numerical Data
 Note on the variability of the distribution and mean of the distribution when looking at numerical data representations.
-Density plot"/>
+Density plot">
+  <meta itemprop="datePublished" content="2020-10-05T00:00:00+05:45">
+  <meta itemprop="dateModified" content="2020-10-06T13:22:27+05:45">
+  <meta itemprop="wordCount" content="395">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="R Programming 103- Exploratory Data Analysis">
+  <meta name="twitter:description" content="Practice Course Dropping levels from categorical dataset
+df %&gt;% filter(col_name != &#34;certain_level&#34;) %&gt;% droplevels(df$col_name) Counts vs Proportions
+prop.table(table_obj) prop.table(table_obj, number) # used to condition on some factor prop.table(table_obj, 1) # condition on rows prop.table(table_obj, 2) # condition on columns With this method, we can have marginal distributions for ourselves.
+Numerical Data
+Note on the variability of the distribution and mean of the distribution when looking at numerical data representations.
+Density plot">
 
 
 
@@ -276,7 +278,7 @@ Density plot"/>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(purrr)
 </span></span><span style="display:flex;"><span>x <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span>(x, <span style="color:#f92672">~</span> . <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span>(list, function) <span style="color:#75715e"># all items of list are applied to function</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">map</span>(list, <span style="color:#66d9ef">function</span>) <span style="color:#75715e"># all items of list are applied to function</span>
 </span></span></code></pre></div><p>Here ~ and . refers to all items in the list. Each item is passed to the function one by one.</p>
 <h3 id="p-value-adjustments"><span class="org-todo todo TODO">TODO</span> P value Adjustments</h3>
 <h3 id="understand-gather-and-how-column-names-appear"><span class="org-todo todo TODO">TODO</span> Understand gather and how column names appear</h3>
@@ -347,7 +349,7 @@ Density plot"/>
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
 
 
 

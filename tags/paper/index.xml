@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>paper on </title>
+    <title>Paper on </title>
     <link>https://dragarok.github.io/tags/paper/</link>
-    <description>Recent content in paper on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Paper on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Jul 2020 12:07:48 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/paper/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jul 2020 12:07:48 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paper Reading 3 pass</title>
       <link>https://dragarok.github.io/braindump/2020/07/paper-reading-3-pass/</link>
       <pubDate>Sun, 12 Jul 2020 12:07:48 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/07/paper-reading-3-pass/</guid>
-      <description>Reference: https://codearsonist.com/reading-for-programmers
-3 pass Overview: Verify Value Background Grasp Thought Process Highlights Diagram Unknowns References Understand Holes Implementations Notes Process Verify This provides High level view of the contents. Start with references usually. Mark the cited papers I&amp;rsquo;ve read as to get previous notes I have made and verify the background. Title, Abstract, Introduction&amp;ndash;&amp;gt; Read very carefully Scan through to find diagrams, equations. Questions to ask during first pass
-What type of paper is this?</description>
+      <description>Reference: https://codearsonist.com/reading-for-programmers&#xA;3 pass Overview: Verify Value Background Grasp Thought Process Highlights Diagram Unknowns References Understand Holes Implementations Notes Process Verify This provides High level view of the contents. Start with references usually. Mark the cited papers I&amp;rsquo;ve read as to get previous notes I have made and verify the background. Title, Abstract, Introduction&amp;ndash;&amp;gt; Read very carefully Scan through to find diagrams, equations. Questions to ask during first pass&#xA;What type of paper is this?</description>
     </item>
-    
   </channel>
 </rss>

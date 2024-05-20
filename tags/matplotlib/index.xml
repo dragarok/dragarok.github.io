@@ -1,38 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>matplotlib on </title>
+    <title>Matplotlib on </title>
     <link>https://dragarok.github.io/tags/matplotlib/</link>
-    <description>Recent content in matplotlib on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Matplotlib on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:45 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Oct 2020 07:12:40 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Matplotlib</title>
       <link>https://dragarok.github.io/braindump/2020/04/matplotlib/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:45 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/matplotlib/</guid>
-      <description>triangles
-plot(t, t, &amp;lsquo;r&amp;ndash;&amp;rsquo;, t, t**2, &amp;lsquo;bs&amp;rsquo;, t, t**3, &amp;lsquo;g^&amp;rsquo;)
-plt.plot(x,y,&amp;lsquo;r&amp;ndash;&amp;rsquo;, linewidth=1.0)
-when lines= plt.plot(x1,y1,x2,y2)
-and the use of subplot() command
-plt.figure(1) # the first figure plt.subplot(211) # the first subplot in the first figure plt.plot([1, 2, 3]) plt.subplot(212) # the second subplot in the first figure plt.plot([4, 5, 6])
-plt.figure(2) # a second figure plt.plot([4, 5, 6]) # creates a subplot(111) by default
-plt.figure(1) # figure 1 current; subplot(212) still current plt.</description>
+      <description>triangles&#xA;plot(t, t, &amp;lsquo;r&amp;ndash;&amp;rsquo;, t, t**2, &amp;lsquo;bs&amp;rsquo;, t, t**3, &amp;lsquo;g^&amp;rsquo;)&#xA;plt.plot(x,y,&amp;lsquo;r&amp;ndash;&amp;rsquo;, linewidth=1.0)&#xA;when lines= plt.plot(x1,y1,x2,y2)&#xA;and the use of subplot() command&#xA;plt.figure(1) # the first figure plt.subplot(211) # the first subplot in the first figure plt.plot([1, 2, 3]) plt.subplot(212) # the second subplot in the first figure plt.plot([4, 5, 6])&#xA;plt.figure(2) # a second figure plt.plot([4, 5, 6]) # creates a subplot(111) by default&#xA;plt.figure(1) # figure 1 current; subplot(212) still current plt.</description>
     </item>
-    
     <item>
       <title>Matplotlib</title>
       <link>https://dragarok.github.io/ai/matplotlib/</link>
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://dragarok.github.io/ai/matplotlib/</guid>
-      <description>Matplotlib Creating objects for interaction Create empty plot to be filled in with data
-import matplotlib.pyplot as plt fig, ax = plt.subplots() plt.show() Create some plot
-from sklearn import datasets import pandas as pd import numpy as np iris = datasets.load_iris() df = pd.DataFrame(data= np.c_[iris[&amp;#39;data&amp;#39;], iris[&amp;#39;target&amp;#39;]], columns= iris[&amp;#39;feature_names&amp;#39;] + [&amp;#39;target&amp;#39;]) print(df.head()) import matplotlib.pyplot as plt fig, ax = plt.subplots() ax.plot(df.iloc[:,0], df.iloc[:,1]) plt.show() sepal length (cm) sepal width (cm) petal length (cm) petal width (cm) \ 0 5.</description>
+      <description>Matplotlib Creating objects for interaction Create empty plot to be filled in with data&#xA;import matplotlib.pyplot as plt fig, ax = plt.subplots() plt.show() Create some plot&#xA;from sklearn import datasets import pandas as pd import numpy as np iris = datasets.load_iris() df = pd.DataFrame(data= np.c_[iris[&amp;#39;data&amp;#39;], iris[&amp;#39;target&amp;#39;]], columns= iris[&amp;#39;feature_names&amp;#39;] + [&amp;#39;target&amp;#39;]) print(df.head()) import matplotlib.pyplot as plt fig, ax = plt.subplots() ax.plot(df.iloc[:,0], df.iloc[:,1]) plt.show() sepal length (cm) sepal width (cm) petal length (cm) petal width (cm) \ 0 5.</description>
     </item>
-    
   </channel>
 </rss>

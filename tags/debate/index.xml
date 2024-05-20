@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>debate on </title>
+    <title>Debate on </title>
     <link>https://dragarok.github.io/tags/debate/</link>
-    <description>Recent content in debate on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Debate on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:33 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/debate/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:33 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/debate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Practical Guide to Debating</title>
       <link>https://dragarok.github.io/braindump/2020/04/practical-guide-to-debating/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:33 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/practical-guide-to-debating/</guid>
-      <description>Page 16 Highlight: &amp;ldquo;Anticipating and engaging with a multiplicity of views are required.&amp;rdquo;
-Page 19 Highlight:
-Speaking —talking out loud fluently and without hesitation Arguing —condensing what you say into a persuasive point(s) Listening —hearing and understanding the points others make Synthesizing —matching the points you and others make Arranging —structuring your points into a persuasive speec
-Page 19 Highlight: &amp;ldquo;Switch&amp;rdquo;
-Page 19 Highlight:
-Excellent listening skills are needed to follow the thread of an argument and be able to continue it without pause;</description>
+      <description>Page 16 Highlight: &amp;ldquo;Anticipating and engaging with a multiplicity of views are required.&amp;rdquo;&#xA;Page 19 Highlight:&#xA;Speaking —talking out loud fluently and without hesitation Arguing —condensing what you say into a persuasive point(s) Listening —hearing and understanding the points others make Synthesizing —matching the points you and others make Arranging —structuring your points into a persuasive speec&#xA;Page 19 Highlight: &amp;ldquo;Switch&amp;rdquo;&#xA;Page 19 Highlight:&#xA;Excellent listening skills are needed to follow the thread of an argument and be able to continue it without pause;</description>
     </item>
-    
   </channel>
 </rss>

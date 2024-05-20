@@ -48,15 +48,17 @@
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="R Programming 105- Supervised Learning 2 Regression">
-<meta itemprop="description" content="TODO Gain Curve Writing formulas formula_obj &lt;- var1 ~ var2 formula_obj &lt;- var1 ~ var2 &#43; var3 formula_obj &lt;- as.formula(&#34;var1 ~ var2&#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var) print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df."><meta itemprop="datePublished" content="2020-10-08T00:00:00+05:45" />
-<meta itemprop="dateModified" content="2020-10-09T10:40:57+05:45" />
-<meta itemprop="wordCount" content="957"><meta itemprop="image" content="https://dragarok.github.io/"/>
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
 
-<meta name="twitter:title" content="R Programming 105- Supervised Learning 2 Regression"/>
-<meta name="twitter:description" content="TODO Gain Curve Writing formulas formula_obj &lt;- var1 ~ var2 formula_obj &lt;- var1 ~ var2 &#43; var3 formula_obj &lt;- as.formula(&#34;var1 ~ var2&#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var) print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df."/>
+  <meta itemprop="name" content="R Programming 105- Supervised Learning 2 Regression">
+  <meta itemprop="description" content="TODO Gain Curve Writing formulas formula_obj &lt;- var1 ~ var2 formula_obj &lt;- var1 ~ var2 &#43; var3 formula_obj &lt;- as.formula(&#34;var1 ~ var2&#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var) print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df.">
+  <meta itemprop="datePublished" content="2020-10-08T00:00:00+05:45">
+  <meta itemprop="dateModified" content="2020-10-09T10:40:57+05:45">
+  <meta itemprop="wordCount" content="957">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="R Programming 105- Supervised Learning 2 Regression">
+  <meta name="twitter:description" content="TODO Gain Curve Writing formulas formula_obj &lt;- var1 ~ var2 formula_obj &lt;- var1 ~ var2 &#43; var3 formula_obj &lt;- as.formula(&#34;var1 ~ var2&#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var) print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df.">
 
 
 
@@ -185,7 +187,7 @@ Having large R^2 means that the model fits the data well.</p>
 </span></span><span style="display:flex;"><span>splitWay <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kWayCrossValidation</span>(n_rows, n_splits, <span style="color:#66d9ef">NULL</span>, <span style="color:#66d9ef">NULL</span>)
 </span></span><span style="display:flex;"><span>splitWay[[index]]
 </span></span></code></pre></div><p>The last two parameters are <em>df</em> and <em>y</em> ; these parameters are just for compatibility purposes.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">for </span>( i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>num_folds ) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ( i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>num_folds ) {
 </span></span><span style="display:flex;"><span>  split_ind <span style="color:#f92672">&lt;-</span> splitObject[[i]]
 </span></span><span style="display:flex;"><span>  model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(formula, data <span style="color:#f92672">=</span> df[split_ind<span style="color:#f92672">$</span>train,])
 </span></span><span style="display:flex;"><span>  df<span style="color:#f92672">$</span>predictions[split_ind<span style="color:#f92672">$</span>app] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(model, newdata <span style="color:#f92672">=</span> df[split_ind<span style="color:#f92672">$</span>app, ])
@@ -366,7 +368,7 @@ You need to note that the predict function also takes a matrix when using a xgbo
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
 
 
 

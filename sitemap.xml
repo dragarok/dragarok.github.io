@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dragarok.github.io/about/</loc>
+    <loc>https://dragarok.github.io/</loc>
     <lastmod>2023-10-31T09:56:33+05:45</lastmod>
   </url><url>
-    <loc>https://dragarok.github.io/</loc>
-    <lastmod>2023-10-31T00:00:00+00:00</lastmod>
+    <loc>https://dragarok.github.io/about/</loc>
+    <lastmod>2023-10-31T09:56:33+05:45</lastmod>
   </url><url>
     <loc>https://dragarok.github.io/tags/blog/</loc>
     <lastmod>2023-10-31T00:00:00+00:00</lastmod>
@@ -1085,10 +1085,10 @@
     <loc>https://dragarok.github.io/braindump/2020/04/python/</loc>
     <lastmod>2020-04-19T15:59:54+05:45</lastmod>
   </url><url>
-    <loc>https://dragarok.github.io/tags/obiee/</loc>
+    <loc>https://dragarok.github.io/braindump/2020/04/obiee/</loc>
     <lastmod>2020-04-19T15:59:53+05:45</lastmod>
   </url><url>
-    <loc>https://dragarok.github.io/braindump/2020/04/obiee/</loc>
+    <loc>https://dragarok.github.io/tags/obiee/</loc>
     <lastmod>2020-04-19T15:59:53+05:45</lastmod>
   </url><url>
     <loc>https://dragarok.github.io/braindump/2020/04/migrating-os/</loc>

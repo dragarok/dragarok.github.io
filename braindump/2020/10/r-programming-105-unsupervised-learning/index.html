@@ -49,17 +49,19 @@ Centers is the number of clusters to make. Nstart is used to run algorithm multi
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="R Programming 105- Unsupervised Learning">
-<meta itemprop="description" content="K Means Clustering res &lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on. Arguments
-Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters."><meta itemprop="datePublished" content="2020-10-09T00:00:00+05:45" />
-<meta itemprop="dateModified" content="2020-10-11T10:45:01+05:45" />
-<meta itemprop="wordCount" content="801"><meta itemprop="image" content="https://dragarok.github.io/"/>
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
 
-<meta name="twitter:title" content="R Programming 105- Unsupervised Learning"/>
-<meta name="twitter:description" content="K Means Clustering res &lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on. Arguments
-Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters."/>
+  <meta itemprop="name" content="R Programming 105- Unsupervised Learning">
+  <meta itemprop="description" content="K Means Clustering res &lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on. Arguments
+Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters.">
+  <meta itemprop="datePublished" content="2020-10-09T00:00:00+05:45">
+  <meta itemprop="dateModified" content="2020-10-11T10:45:01+05:45">
+  <meta itemprop="wordCount" content="801">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="R Programming 105- Unsupervised Learning">
+  <meta name="twitter:description" content="K Means Clustering res &lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on. Arguments
+Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters.">
 
 
 
@@ -179,7 +181,7 @@ Centers is the number of clusters to make. Nstart is used to run algorithm multi
 <p>Scree Plot</p>
 <p>Plot <em>within ss</em> vs <em>number of clusters</em> to find the elbow of the plot. Choose that number of clusters to create k-means. This plot is known as <strong>scree plot</strong>. This is useful since trial and error is not the best approach.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(purrr)
-</span></span><span style="display:flex;"><span>withinss <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">map_dbl</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>, <span style="color:#a6e22e">function</span>(k) {
+</span></span><span style="display:flex;"><span>withinss <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">map_dbl</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>, <span style="color:#66d9ef">function</span>(k) {
 </span></span><span style="display:flex;"><span>  model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kmeans</span>(x <span style="color:#f92672">=</span> df, centers <span style="color:#f92672">=</span> k)
 </span></span><span style="display:flex;"><span>  model<span style="color:#f92672">$</span>tot.withinss
 </span></span><span style="display:flex;"><span>    })
@@ -392,7 +394,7 @@ N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 <ul>
 <li>
 <p>Overall Flow</p>
-<figure><img src="../../../../ox-hugo/plantuml-cluster.png"/>
+<figure><img src="../../../../ox-hugo/plantuml-cluster.png">
     </figure>
 
 </li>
@@ -467,7 +469,7 @@ It checks how many categories are similar between observations and how many ther
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
 
 
 

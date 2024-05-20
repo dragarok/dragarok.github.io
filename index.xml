@@ -4,110 +4,79 @@
     <title></title>
     <link>https://dragarok.github.io/</link>
     <description>Recent content on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dragarok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Oct 2023 09:56:33 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://dragarok.github.io/about/</link>
       <pubDate>Tue, 31 Oct 2023 09:56:33 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/about/</guid>
-      <description>Alok Regmi I am a Software Engineer with Bachelors in Electronics and Communication Engineering from IOE Pulchowk Campus, Nepal.
-Curiosity is my prime interest. ML/AI is my primary work/passion. Currently working as ML/AI Architect. Problem Solving is my core skill. I&amp;rsquo;m intrigued by anything and everything that even remotely concerns human mind. The more complex an idea is, the greater the interest.
-I love to read as much as I can.</description>
+      <description>Alok Regmi I am a Software Engineer with Bachelors in Electronics and Communication Engineering from IOE Pulchowk Campus, Nepal.&#xA;Curiosity is my prime interest. ML/AI is my primary work/passion. Currently working as ML/AI Architect. Problem Solving is my core skill. I&amp;rsquo;m intrigued by anything and everything that even remotely concerns human mind. The more complex an idea is, the greater the interest.&#xA;I love to read as much as I can.</description>
     </item>
-    
     <item>
       <title>On Love</title>
       <link>https://dragarok.github.io/posts/2023/10/on-love/</link>
       <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://dragarok.github.io/posts/2023/10/on-love/</guid>
       <description>I have been trying to write some essays on basic words that are the hardest to capture because often times it&amp;rsquo;s these words that stir up conflict: love, happiness, fulfillment, peace, pain, god, spirituality etc. Because they are the most overused, yet least understood by our subconscious minds, our subconscious gets trippy while making sense. I started writing this essay about six months ago. In trying to write this essay, I started by searching for word love in my personal notes vault.</description>
     </item>
-    
     <item>
       <title>Turning a quarter old</title>
       <link>https://dragarok.github.io/posts/2023/09/turning-a-quarter-old/</link>
       <pubDate>Wed, 13 Sep 2023 17:05:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/posts/2023/09/turning-a-quarter-old/</guid>
       <description>Books read this year Brave New World One Hundred Years of Solitude The Twilight Saga [ 1-4 ] How to Read a Book What would you do if you weren&amp;rsquo;t afraid? Turiya - The God State: Beyond Kundalini, Kriya Yoga &amp;amp; all Spirituality (Real Yoga) How Psychology Works Being You: A New Science of Consciousness How to find love Make something wonderful American Gods The Tibetan Book of Living and Dying Logicomix The Phoenix Project The Art of Dying by Osho The Old Man and the sea Zen Mind Beginners Mind Isa Upanishad Chhandogya Upanishad Enlightenment is your nature 101 Essays That Will Change the Way You Think Books In Progress: Remnants from Last Year Dhando Investor [ Not in that mental state of value investing rn ] Lives of the Stoics [ Got enough philosophy to be useful ] Meditations by Marcus Aurelius [ Same with meditations ] Code Breaker by Walter Issacson [ Excited upto the point of decision for a Nobel Prize.</description>
     </item>
-    
     <item>
       <title>My relationship with my body</title>
       <link>https://dragarok.github.io/posts/2023/01/my-relationship-with-my-body/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/posts/2023/01/my-relationship-with-my-body/</guid>
-      <description>We all identify our bodies as &amp;ldquo;my body&amp;rdquo; and not me directly. The whole idea of this blog post revolves around this idea. The purpose of this blog post is to establish an idea on how to build healthier lifestyle based on this concept.
-It&amp;rsquo;s not like we intentionally don&amp;rsquo;t want to build healthier habits. We try to pick up exercise habits, but we are too lazy to work on it.</description>
+      <description>We all identify our bodies as &amp;ldquo;my body&amp;rdquo; and not me directly. The whole idea of this blog post revolves around this idea. The purpose of this blog post is to establish an idea on how to build healthier lifestyle based on this concept.&#xA;It&amp;rsquo;s not like we intentionally don&amp;rsquo;t want to build healthier habits. We try to pick up exercise habits, but we are too lazy to work on it.</description>
     </item>
-    
     <item>
       <title>R Programming 105- Unsupervised Learning</title>
       <link>https://dragarok.github.io/braindump/2020/10/r-programming-105-unsupervised-learning/</link>
       <pubDate>Fri, 09 Oct 2020 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/10/r-programming-105-unsupervised-learning/</guid>
-      <description>K Means Clustering res &amp;lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on. Arguments
-Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters.</description>
+      <description>K Means Clustering res &amp;lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on. Arguments&#xA;Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters.</description>
     </item>
-    
     <item>
       <title>R Programming 105- Supervised Learning 1</title>
       <link>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-1/</link>
       <pubDate>Thu, 08 Oct 2020 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-1/</guid>
-      <description>Aggregate by column aggregate(col_name ~ by_column_name, data = df_name, mean) We can use other functions instead of mean as well. The variable after tilde is what the aggregation is done with respect to. If by_column_name is continent, the above code will calculate the mean for all continents for given column: e.g. age or anything like that.
-Nearest Neighbors library(class) knn(train = train_data, test = test_data, cl=vector_train_labels) Confusion Matrix
-table(actual_classes, pred_classes) This creates a confusion matrix based on number of observations.</description>
+      <description>Aggregate by column aggregate(col_name ~ by_column_name, data = df_name, mean) We can use other functions instead of mean as well. The variable after tilde is what the aggregation is done with respect to. If by_column_name is continent, the above code will calculate the mean for all continents for given column: e.g. age or anything like that.&#xA;Nearest Neighbors library(class) knn(train = train_data, test = test_data, cl=vector_train_labels) Confusion Matrix&#xA;table(actual_classes, pred_classes) This creates a confusion matrix based on number of observations.</description>
     </item>
-    
     <item>
       <title>R Programming 105- Supervised Learning 2 Regression</title>
       <link>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-2-regression/</link>
       <pubDate>Thu, 08 Oct 2020 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/10/r-programming-105-supervised-learning-2-regression/</guid>
       <description>TODO Gain Curve Writing formulas formula_obj &amp;lt;- var1 ~ var2 formula_obj &amp;lt;- var1 ~ var2 + var3 formula_obj &amp;lt;- as.formula(&amp;#34;var1 ~ var2&amp;#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var) print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df.</description>
     </item>
-    
     <item>
       <title>R Programming 104- Correlation and Regression</title>
       <link>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</guid>
       <description>Backlinks Data Scientist with R </description>
     </item>
-    
     <item>
       <title>R Programming 104- Correlation and Regression</title>
       <link>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</link>
       <pubDate>Tue, 06 Oct 2020 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/10/r-programming-104-correlation-and-regression/</guid>
-      <description>Getting the coefficients ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89 coef(model_var) summary(model_var) fitted.values(mod_var) # each observation fitted residuals(mod_var) \[e + \hat{y} = y \] The sum of residual and fitted value is equal to the original value.
-Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname{Var}(e)}{\operatorname{Var}(y)}\] This helps to analyze between different models how good the fit is. It compares the model&amp;rsquo;s utility with respect o null model. \[ y = \hat{y} \] which always outputs the mean of the overall data whatever the input is.</description>
+      <description>Getting the coefficients ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89 coef(model_var) summary(model_var) fitted.values(mod_var) # each observation fitted residuals(mod_var) \[e + \hat{y} = y \] The sum of residual and fitted value is equal to the original value.&#xA;Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname{Var}(e)}{\operatorname{Var}(y)}\] This helps to analyze between different models how good the fit is. It compares the model&amp;rsquo;s utility with respect o null model. \[ y = \hat{y} \] which always outputs the mean of the overall data whatever the input is.</description>
     </item>
-    
     <item>
       <title>R Programming 103- Exploratory Data Analysis</title>
       <link>https://dragarok.github.io/braindump/2020/10/r-programming-103-exploratory-data-analysis/</link>
       <pubDate>Mon, 05 Oct 2020 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/10/r-programming-103-exploratory-data-analysis/</guid>
-      <description>Practice Course Dropping levels from categorical dataset
-df %&amp;gt;% filter(col_name != &amp;#34;certain_level&amp;#34;) %&amp;gt;% droplevels(df$col_name) Counts vs Proportions
-prop.table(table_obj) prop.table(table_obj, number) # used to condition on some factor prop.table(table_obj, 1) # condition on rows prop.table(table_obj, 2) # condition on columns With this method, we can have marginal distributions for ourselves.
-Numerical Data
-Note on the variability of the distribution and mean of the distribution when looking at numerical data representations.
-Density plot</description>
+      <description>Practice Course Dropping levels from categorical dataset&#xA;df %&amp;gt;% filter(col_name != &amp;#34;certain_level&amp;#34;) %&amp;gt;% droplevels(df$col_name) Counts vs Proportions&#xA;prop.table(table_obj) prop.table(table_obj, number) # used to condition on some factor prop.table(table_obj, 1) # condition on rows prop.table(table_obj, 2) # condition on columns With this method, we can have marginal distributions for ourselves.&#xA;Numerical Data&#xA;Note on the variability of the distribution and mean of the distribution when looking at numerical data representations.&#xA;Density plot</description>
     </item>
-    
   </channel>
 </rss>

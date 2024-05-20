@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>psychology on </title>
+    <title>Psychology on </title>
     <link>https://dragarok.github.io/tags/psychology/</link>
-    <description>Recent content in psychology on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Psychology on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Aug 2020 07:48:18 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Aug 2020 07:48:18 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Courage to Be Disliked</title>
       <link>https://dragarok.github.io/books/ichiro-kishimifumitake-koga/</link>
       <pubDate>Tue, 11 Aug 2020 07:48:18 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/books/ichiro-kishimifumitake-koga/</guid>
-      <description>### Author: Ichiro Kishimi;Fumitake Koga
-loc 143 - That is not because the world is complicated. It’s because you are making the world complicated. YOUTH: I am? PHILOSOPHER: None of us live in an objective world, but instead in a subjective world that we ourselves have given meaning to. The world you see is different from the one I see, and it’s impossible to share your world with anyone else</description>
+      <description>### Author: Ichiro Kishimi;Fumitake Koga&#xA;loc 143 - That is not because the world is complicated. It’s because you are making the world complicated. YOUTH: I am? PHILOSOPHER: None of us live in an objective world, but instead in a subjective world that we ourselves have given meaning to. The world you see is different from the one I see, and it’s impossible to share your world with anyone else</description>
     </item>
-    
   </channel>
 </rss>

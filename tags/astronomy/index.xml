@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>astronomy on </title>
+    <title>Astronomy on </title>
     <link>https://dragarok.github.io/tags/astronomy/</link>
-    <description>Recent content in astronomy on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Astronomy on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Apr 2020 02:30:19 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/astronomy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2020 02:30:19 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/astronomy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Astronomy Book</title>
       <link>https://dragarok.github.io/books/dk/</link>
       <pubDate>Mon, 27 Apr 2020 02:30:19 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/books/dk/</guid>
-      <description>### Author: DK
-loc 216 - &amp;ldquo;You have to have the imagination to recognize a discovery when you make one.&amp;rdquo; Clyde Tombaugh
-loc 225 - &amp;ldquo;What a wonderful and amazing scheme have we here of the magnificent vastness of the universe.&amp;rdquo; Christiaan Huygens
-loc 235 - in 1979, the first example of a gravitational lens was identified, when the image of a quasar was seen to be double due to the presence of a galaxy along the line of sight, again as relativity had predicted.</description>
+      <description>### Author: DK&#xA;loc 216 - &amp;ldquo;You have to have the imagination to recognize a discovery when you make one.&amp;rdquo; Clyde Tombaugh&#xA;loc 225 - &amp;ldquo;What a wonderful and amazing scheme have we here of the magnificent vastness of the universe.&amp;rdquo; Christiaan Huygens&#xA;loc 235 - in 1979, the first example of a gravitational lens was identified, when the image of a quasar was seen to be double due to the presence of a galaxy along the line of sight, again as relativity had predicted.</description>
     </item>
-    
   </channel>
 </rss>
