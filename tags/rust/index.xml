@@ -13,7 +13,7 @@
       <link>https://dragarok.github.io/braindump/2020/04/rus/</link>
       <pubDate>Sun, 19 Apr 2020 16:05:05 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/rus/</guid>
-      <description>Variables: let age:u32 = 20; let sum:i32 = 5-15; let mark:isize = 10; let count:usize = 30;&#xA;Overflow: let weight:u8 = 256; //overflow value is 0 let height:u8 = 257; //overflow value is 1&#xA;Floats: The f32 type is a single-precision float, and f64 has double precision let interest:f32 = 8.35; let cost:f64 = 15000.600; f64 is default&#xA;No automatic type casting&#xA;That is 50,000 can be written as 50_000 .</description>
+      <description>&lt;p&gt;Variables:&#xA;let age:u32 = 20;&#xA;let sum:i32 = 5-15;&#xA;let mark:isize = 10;&#xA;let count:usize = 30;&lt;/p&gt;&#xA;&lt;p&gt;Overflow:&#xA;let weight:u8 = 256;   //overflow value is 0&#xA;let height:u8 = 257;   //overflow value is 1&lt;/p&gt;&#xA;&lt;p&gt;Floats:&#xA;The f32 type is a single-precision float, and f64 has double precision&#xA;let interest:f32 = 8.35;&#xA;let cost:f64 = 15000.600;&#xA;f64 is default&lt;/p&gt;&#xA;&lt;p&gt;No automatic type casting&lt;/p&gt;&#xA;&lt;p&gt;That is 50,000 can be written as 50_000 . for ease of read&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

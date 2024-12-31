@@ -13,14 +13,14 @@
       <link>https://dragarok.github.io/braindump/2020/04/matlab/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:11 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/matlab/</guid>
-      <description>&amp;ndash; %% to make a code section Ctrl + Enter to run a code section&#xA;&amp;ndash;&#x9;%{&#xA;%} to make a multiline comment but you cannot enter any text on the first line : else it interprets the thing as comment and rest as code</description>
+      <description>&lt;p&gt;&amp;ndash;  %% to make a code section&#xA;Ctrl + Enter to run a code section&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash;&#x9;%{&lt;/p&gt;&#xA;&lt;p&gt;%} to make a multiline comment but you cannot enter any text on the first line : else it interprets&#xA;the thing as comment and rest as code&lt;/p&gt;</description>
     </item>
     <item>
       <title>Matlab</title>
       <link>https://dragarok.github.io/ai/matlab/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/matlab/</guid>
-      <description>&amp;ndash; %% to make a code section Ctrl + Enter to run a code section&#xA;&amp;ndash;&#x9;%{&#xA;%} to make a multiline comment but you cannot enter any text on the first line : else it interprets the thing as comment and rest as code</description>
+      <description>&lt;p&gt;&amp;ndash;  %% to make a code section&#xA;Ctrl + Enter to run a code section&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash;&#x9;%{&lt;/p&gt;&#xA;&lt;p&gt;%} to make a multiline comment but you cannot enter any text on the first line : else it interprets&#xA;the thing as comment and rest as code&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

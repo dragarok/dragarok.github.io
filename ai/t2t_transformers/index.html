@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
 <meta name="description" content="Catches from text to text transfer transformers:
-As an example, consider the case of English to German translation: If we have a training datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good." />
+As an example, consider the case of English to German translation: If we have a training datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good. target:” and would be asked to generate the remainder of the sequence autoregressively.
+" />
 <meta name="keywords" content="Blog, NLP, neuralnetwork" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -35,7 +36,7 @@ As an example, consider the case of English to German translation: If we have a 
 
 
 
-<link rel="stylesheet" href="../../main.min.3b9d61eed5cef2530244e1bb93d906e1b4b24a0fc910248f94f550e7390b078d.css">
+<link rel="stylesheet" href="../../main.min.3776bc7b2f4134a9ee4c9ed3c7e665d484ac2532e46467d1fa8e55cff5f1566c.css">
 
 
 
@@ -52,7 +53,7 @@ As an example, consider the case of English to German translation: If we have a 
 
   <meta itemprop="name" content="Text-Text Transformers">
   <meta itemprop="description" content="Catches from text to text transfer transformers:
-As an example, consider the case of English to German translation: If we have a training datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.">
+As an example, consider the case of English to German translation: If we have a training datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good. target:” and would be asked to generate the remainder of the sequence autoregressively.">
   <meta itemprop="datePublished" content="2020-04-03T00:00:00+00:00">
   <meta itemprop="dateModified" content="2020-05-02T03:46:24+05:45">
   <meta itemprop="wordCount" content="328">
@@ -62,7 +63,7 @@ As an example, consider the case of English to German translation: If we have a 
   <meta name="twitter:image" content="https://dragarok.github.io/">
   <meta name="twitter:title" content="Text-Text Transformers">
   <meta name="twitter:description" content="Catches from text to text transfer transformers:
-As an example, consider the case of English to German translation: If we have a training datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.">
+As an example, consider the case of English to German translation: If we have a training datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good. target:” and would be asked to generate the remainder of the sequence autoregressively.">
 
 
 
@@ -219,7 +220,7 @@ multi-task pre-training might not result in a dramatic task interference)</p>
 
 
 
-<script type="text/javascript" src="../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
+<script type="text/javascript" src="../../bundle.min.45295cbc2d5bbc09b85caead90108f31defa5c6b650a42abb2e79d59a363e5bc2f11614e43687e66e6d47563560a45c3324b75dcb9b3a724a2955a2f1ce2f114.js" integrity="sha512-RSlcvC1bvAm4XK6tkBCPMd76XGtlCkKrsuedWaNj5bwvEWFOQ2h&#43;ZubUdWNWCkXDMkt13LmzpySilVovHOLxFA=="></script>
 
 
 

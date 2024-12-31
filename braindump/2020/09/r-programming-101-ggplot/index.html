@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property )." />
+<meta name="description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes
+" />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -34,7 +35,7 @@
 
 
 
-<link rel="stylesheet" href="../../../../main.min.3b9d61eed5cef2530244e1bb93d906e1b4b24a0fc910248f94f550e7390b078d.css">
+<link rel="stylesheet" href="../../../../main.min.3776bc7b2f4134a9ee4c9ed3c7e665d484ac2532e46467d1fa8e55cff5f1566c.css">
 
 
 
@@ -50,7 +51,7 @@
 
 
   <meta itemprop="name" content="R Programming 101- Ggplot">
-  <meta itemprop="description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ).">
+  <meta itemprop="description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes">
   <meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45">
   <meta itemprop="dateModified" content="2020-10-02T07:35:15+05:45">
   <meta itemprop="wordCount" content="2151">
@@ -58,7 +59,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://dragarok.github.io/">
   <meta name="twitter:title" content="R Programming 101- Ggplot">
-  <meta name="twitter:description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ).">
+  <meta name="twitter:description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes">
 
 
 
@@ -234,7 +235,7 @@ Plot box plots. Use <em>+geom_boxplot()</em> for boxplots.</li>
 <p>Grammatical Components     :ATTACH:</p>
 <pre><code> ID: 6de41dc8-f180-4508-8ef8-7daa18dc649f
 </code></pre>
-<p><img src="../../../../ox-hugo/_20200928_071235screenshot.png">
+<p><img src="../../../../ox-hugo/_20200928_071235screenshot.png" alt="">
 These are the layers in which we work with plots. They are layered to make dependency as least as possible.</p>
 </li>
 </ul>
@@ -248,7 +249,7 @@ These are the layers in which we work with plots. They are layered to make depen
 <p>Aesthetics Parameters     :ATTACH:</p>
 <pre><code> ID: 32eb25cb-81d9-4eb4-aa1e-23533f438855
 </code></pre>
-<p><img src="../../../../ox-hugo/_20200928_060924screenshot.png">
+<p><img src="../../../../ox-hugo/_20200928_060924screenshot.png" alt="">
 The aesthetics properties are used inside <em>aes()</em> function to create different kind of plots with same set of data.
 In cases you want to have properties of lines or points with something from the data itself, you can call <em>aes()</em> inside <strong>geom</strong> functions.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(aes <span style="color:#f92672">=</span> col_1)
@@ -296,7 +297,7 @@ In cases you want to have properties of lines or points with something from the 
 <p>Geometrical Layer     :ATTACH:</p>
 <pre><code> ID: 961b321b-cf29-4397-99dd-5b9380d4609e
 </code></pre>
-<p><img src="../../../../ox-hugo/_20200928_073010screenshot.png">
+<p><img src="../../../../ox-hugo/_20200928_073010screenshot.png" alt="">
 So , we have many different kind of plots to use.</p>
 <ul>
 <li>For every geometry, there will be some essential as well as some optional parameters to be passed on.
@@ -410,7 +411,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 </ul>
 </li>
 <li>Text Elements:
-<img src="../../../../ox-hugo/_20200928_082541screenshot.png"></li>
+<img src="../../../../ox-hugo/_20200928_082541screenshot.png" alt=""></li>
 <li>Theme function contains all these elements and can be changed. But we don&rsquo;t need to change all the elements: instead we use the hierarchy of data such as text, title and modify all elements within them as well.</li>
 </ul>
  <!--list-separator-->
@@ -922,7 +923,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.45295cbc2d5bbc09b85caead90108f31defa5c6b650a42abb2e79d59a363e5bc2f11614e43687e66e6d47563560a45c3324b75dcb9b3a724a2955a2f1ce2f114.js" integrity="sha512-RSlcvC1bvAm4XK6tkBCPMd76XGtlCkKrsuedWaNj5bwvEWFOQ2h&#43;ZubUdWNWCkXDMkt13LmzpySilVovHOLxFA=="></script>
 
 
 

@@ -13,28 +13,28 @@
       <link>https://dragarok.github.io/braindump/2020/04/markov-nets/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:44 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/markov-nets/</guid>
-      <description>Markov Networks We study this by comparing to Bayesian networks: Burglar, Earthquake, Alarm, He calls, She calls&#xA;&amp;ndash; First, the values do not need to sum to one, that is, the table does not define a probability distribution. It only tells us that configurations with higher values are more likely. Second, there is no conditioning. It is proportional to the joint distribution of all the variables involved, as opposed to conditional distributions in CPDs.</description>
+      <description>&lt;h2 id=&#34;markov-networks&#34;&gt;Markov Networks&lt;/h2&gt;&#xA;&lt;p&gt;We study this by comparing to Bayesian networks:&#xA;Burglar, Earthquake, Alarm, He calls, She calls&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; First, the values do not need to sum to one, that is,&#xA;the table does not define a probability distribution.&#xA;It only tells us that configurations with higher values are more likely.&#xA;Second, there is no conditioning. It is proportional to the joint distribution&#xA;of all the variables involved,&#xA;as opposed to conditional distributions in CPDs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MCMC methods</title>
       <link>https://dragarok.github.io/braindump/2020/04/mcmc-methods/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:44 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/mcmc-methods/</guid>
-      <description>&amp;ndash; MCMC methods allow us to estimate the shape of a posterior distribution in case we can’t compute it directly.&#xA;&amp;ndash; Monte Carlo simulations are just a way of estimating a fixed parameter by repeatedly generating random numbers.&#xA;&amp;ndash; Assuming we have to calculate the area of a circle within the square box. By having points that belong to the circle, we can find out it&amp;rsquo;s area. Since the circle is inside a square with 10 inch sides, the area can be easily calculated as 78.</description>
+      <description>&lt;p&gt;&amp;ndash; MCMC methods allow us to estimate the shape of a posterior distribution&#xA;in case we can’t compute it directly.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Monte Carlo simulations are just a way of estimating a fixed parameter&#xA;by repeatedly generating random numbers.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Assuming we have to calculate the area of a circle within the square box.&#xA;By having points that belong to the circle, we can find out it&amp;rsquo;s area.&#xA;Since the circle is inside a square with 10 inch sides,&#xA;the area can be easily calculated as 78.5 square inches.&#xA;Instead, however, we can drop 20 points randomly inside the square.&#xA;Then we count the proportion of points that fell within the circle,&#xA;and multiply that by the area of the square.&#xA;That number is a pretty good approximation of the area of the circle.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markov Nets</title>
       <link>https://dragarok.github.io/ai/markovnets/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/markovnets/</guid>
-      <description>Markov Networks We study this by comparing to Bayesian networks: Burglar, Earthquake, Alarm, He calls, She calls&#xA;&amp;ndash; First, the values do not need to sum to one, that is, the table does not define a probability distribution. It only tells us that configurations with higher values are more likely. Second, there is no conditioning. It is proportional to the joint distribution of all the variables involved, as opposed to conditional distributions in CPDs.</description>
+      <description>&lt;h2 id=&#34;markov-networks&#34;&gt;Markov Networks&lt;/h2&gt;&#xA;&lt;p&gt;We study this by comparing to Bayesian networks:&#xA;Burglar, Earthquake, Alarm, He calls, She calls&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; First, the values do not need to sum to one, that is,&#xA;the table does not define a probability distribution.&#xA;It only tells us that configurations with higher values are more likely.&#xA;Second, there is no conditioning. It is proportional to the joint distribution&#xA;of all the variables involved,&#xA;as opposed to conditional distributions in CPDs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MCMC methods</title>
       <link>https://dragarok.github.io/ai/mcmcmethods/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/mcmcmethods/</guid>
-      <description>&amp;ndash; MCMC methods allow us to estimate the shape of a posterior distribution in case we can’t compute it directly.&#xA;&amp;ndash; Monte Carlo simulations are just a way of estimating a fixed parameter by repeatedly generating random numbers.&#xA;&amp;ndash; Assuming we have to calculate the area of a circle within the square box. By having points that belong to the circle, we can find out it&amp;rsquo;s area. Since the circle is inside a square with 10 inch sides, the area can be easily calculated as 78.</description>
+      <description>&lt;p&gt;&amp;ndash; MCMC methods allow us to estimate the shape of a posterior distribution&#xA;in case we can’t compute it directly.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Monte Carlo simulations are just a way of estimating a fixed parameter&#xA;by repeatedly generating random numbers.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Assuming we have to calculate the area of a circle within the square box.&#xA;By having points that belong to the circle, we can find out it&amp;rsquo;s area.&#xA;Since the circle is inside a square with 10 inch sides,&#xA;the area can be easily calculated as 78.5 square inches.&#xA;Instead, however, we can drop 20 points randomly inside the square.&#xA;Then we count the proportion of points that fell within the circle,&#xA;and multiply that by the area of the square.&#xA;That number is a pretty good approximation of the area of the circle.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

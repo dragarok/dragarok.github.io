@@ -5,10 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="&amp;quot;&amp;quot;&amp;quot; Adapted from Oliver Atanaszov&amp;rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &amp;quot;&amp;quot;&amp;quot; from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm
+<meta name="description" content="&quot;&quot;&quot; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&quot;&quot; from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm
 n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256
-class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&amp;rsquo;[CLS]&amp;rsquo;] self.pad_token = self.tokenizer.vocab[&amp;rsquo;[PAD]&#39;]
-def encode(self, input): return list(self." />
+class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&rsquo;[CLS]&rsquo;] self.pad_token = self.tokenizer.vocab[&rsquo;[PAD]&#39;]
+def encode(self, input): return list(self.tokenizer.convert_tokens_to_ids(o) for o in input)
+" />
 <meta name="keywords" content="Blog, tokenization, bert" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -37,7 +38,7 @@ def encode(self, input): return list(self." />
 
 
 
-<link rel="stylesheet" href="../../../../main.min.3b9d61eed5cef2530244e1bb93d906e1b4b24a0fc910248f94f550e7390b078d.css">
+<link rel="stylesheet" href="../../../../main.min.3776bc7b2f4134a9ee4c9ed3c7e665d484ac2532e46467d1fa8e55cff5f1566c.css">
 
 
 
@@ -56,7 +57,7 @@ def encode(self, input): return list(self." />
   <meta itemprop="description" content="&#34;&#34;&#34; Adapted from Oliver Atanaszov’s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &#34;&#34;&#34; from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm
 n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256
 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[’[CLS]’] self.pad_token = self.tokenizer.vocab[’[PAD]&#39;]
-def encode(self, input): return list(self.">
+def encode(self, input): return list(self.tokenizer.convert_tokens_to_ids(o) for o in input)">
   <meta itemprop="datePublished" content="2020-04-19T15:59:25+05:45">
   <meta itemprop="dateModified" content="2020-04-19T15:59:25+05:45">
   <meta itemprop="wordCount" content="255">
@@ -68,7 +69,7 @@ def encode(self, input): return list(self.">
   <meta name="twitter:description" content="&#34;&#34;&#34; Adapted from Oliver Atanaszov’s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &#34;&#34;&#34; from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm
 n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256
 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[’[CLS]’] self.pad_token = self.tokenizer.vocab[’[PAD]&#39;]
-def encode(self, input): return list(self.">
+def encode(self, input): return list(self.tokenizer.convert_tokens_to_ids(o) for o in input)">
 
 
 
@@ -269,7 +270,7 @@ return data_loader</p>
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.45295cbc2d5bbc09b85caead90108f31defa5c6b650a42abb2e79d59a363e5bc2f11614e43687e66e6d47563560a45c3324b75dcb9b3a724a2955a2f1ce2f114.js" integrity="sha512-RSlcvC1bvAm4XK6tkBCPMd76XGtlCkKrsuedWaNj5bwvEWFOQ2h&#43;ZubUdWNWCkXDMkt13LmzpySilVovHOLxFA=="></script>
 
 
 

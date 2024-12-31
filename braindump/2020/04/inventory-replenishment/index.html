@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Talk about business opportunity History and Comparison Consumer and Customer Analytics Replenishment: Replenishment Execution System: Order Point Order Upton Point Defining these two points is the key. Unknowns and Parameters &amp;ndash;&amp;gt; Optimizations Terms Lead time &amp;ndash; Time between ordering and getting items avail for sale. Order to pickup &#43; Pickup to location &#43; Warehouse to location ROQ &amp;ndash; Recommended Order Quantity Inventory selling days &amp;ndash; No of days of supply desired when replenishment is made." />
+<meta name="description" content=" Talk about business opportunity History and Comparison Consumer and Customer Analytics Replenishment: Replenishment Execution System: Order Point Order Upton Point Defining these two points is the key. Unknowns and Parameters &ndash;&gt; Optimizations Terms Lead time &ndash; Time between ordering and getting items avail for sale. Order to pickup &#43; Pickup to location &#43; Warehouse to location ROQ &ndash; Recommended Order Quantity Inventory selling days &ndash; No of days of supply desired when replenishment is made. Service level: % of customer demand that&rsquo;s satisfied by by an item being in-stock and available for purchase. Lost sales factor: % of lost sales to be included when generating dynamic replenishment recommended order quantities. Exempt from Scaling Indicator: check if SKU/location will be eligible for vendor constraint scaling. Activate and deactivate date: date on which SKU/location will be active. Allowable Order change tolerances: set restriction on amount that POs can be changed on replenishment orders. Document Provided Summary Replenishment Attributes Review Cycle Stock Category Primary Replenishment Supplier/ Origin Country Replenishment Order Control Sourcing Warehouse Replenishment Method Activate Date Deactivate Date Presentation Stock Demo Stock Pickup to Location Lead Time Warehouse to Location Lead Time Order Change Tolerance percentages Specific to Replenishment Method: Minimum Stock Maximum Stock Increment Percent Minimum Time Supply Days Maximum Time Supply Days Time Supply Horizon Inventory Selling Days Service Level Lost Sales Factor Terminal Stock Quantity Season ID and Phase ID Exempt from Scaling Indicator and Maximum Scaling Amount Stock Category: Direct to store Cross Docked: supplier &ndash;&gt; warehouse &ndash;&gt; store Warehouse stocked: supplier &ndash;&gt; warehouse(stocked) &ndash;&gt; store Warehouse stocked (Store): So, need to take care of warehouses on replenishment in such cases. Order Control: whether to create purchase orders(supplier replenishment) and transfers(warehouse to store replenishment) during replenishment and in what status should they be created ? Manual : runs, gives predictions but users test it to have confidence in it to trust the fully automatic process later on. Semi automatic: both PO and Transfer will be created. Users need to approve them. Automatic: PO created in Approved status, transfers created with approved status with freight code of Normal. TODO Primary Replenishment Supplier and Origin Country For same SKU can choose different suppliers/countries. Review Cycle Can be set to multiple times per week, once every 2 weeks and so on. Replenishment Methods: Out of Nine : six are stock oriented methods(one that focus control of on-hand inventory levels without consideration of service level objectives) Stock Oriented Methods:
+" />
 <meta name="keywords" content="Blog, replenishment, BI, retail" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -34,7 +35,7 @@
 
 
 
-<link rel="stylesheet" href="../../../../main.min.3b9d61eed5cef2530244e1bb93d906e1b4b24a0fc910248f94f550e7390b078d.css">
+<link rel="stylesheet" href="../../../../main.min.3776bc7b2f4134a9ee4c9ed3c7e665d484ac2532e46467d1fa8e55cff5f1566c.css">
 
 
 
@@ -50,7 +51,7 @@
 
 
   <meta itemprop="name" content="Inventory Replenishment">
-  <meta itemprop="description" content="Talk about business opportunity History and Comparison Consumer and Customer Analytics Replenishment: Replenishment Execution System: Order Point Order Upton Point Defining these two points is the key. Unknowns and Parameters –&gt; Optimizations Terms Lead time – Time between ordering and getting items avail for sale. Order to pickup &#43; Pickup to location &#43; Warehouse to location ROQ – Recommended Order Quantity Inventory selling days – No of days of supply desired when replenishment is made.">
+  <meta itemprop="description" content="Talk about business opportunity History and Comparison Consumer and Customer Analytics Replenishment: Replenishment Execution System: Order Point Order Upton Point Defining these two points is the key. Unknowns and Parameters –&gt; Optimizations Terms Lead time – Time between ordering and getting items avail for sale. Order to pickup &#43; Pickup to location &#43; Warehouse to location ROQ – Recommended Order Quantity Inventory selling days – No of days of supply desired when replenishment is made. Service level: % of customer demand that’s satisfied by by an item being in-stock and available for purchase. Lost sales factor: % of lost sales to be included when generating dynamic replenishment recommended order quantities. Exempt from Scaling Indicator: check if SKU/location will be eligible for vendor constraint scaling. Activate and deactivate date: date on which SKU/location will be active. Allowable Order change tolerances: set restriction on amount that POs can be changed on replenishment orders. Document Provided Summary Replenishment Attributes Review Cycle Stock Category Primary Replenishment Supplier/ Origin Country Replenishment Order Control Sourcing Warehouse Replenishment Method Activate Date Deactivate Date Presentation Stock Demo Stock Pickup to Location Lead Time Warehouse to Location Lead Time Order Change Tolerance percentages Specific to Replenishment Method: Minimum Stock Maximum Stock Increment Percent Minimum Time Supply Days Maximum Time Supply Days Time Supply Horizon Inventory Selling Days Service Level Lost Sales Factor Terminal Stock Quantity Season ID and Phase ID Exempt from Scaling Indicator and Maximum Scaling Amount Stock Category: Direct to store Cross Docked: supplier –&gt; warehouse –&gt; store Warehouse stocked: supplier –&gt; warehouse(stocked) –&gt; store Warehouse stocked (Store): So, need to take care of warehouses on replenishment in such cases. Order Control: whether to create purchase orders(supplier replenishment) and transfers(warehouse to store replenishment) during replenishment and in what status should they be created ? Manual : runs, gives predictions but users test it to have confidence in it to trust the fully automatic process later on. Semi automatic: both PO and Transfer will be created. Users need to approve them. Automatic: PO created in Approved status, transfers created with approved status with freight code of Normal. TODO Primary Replenishment Supplier and Origin Country For same SKU can choose different suppliers/countries. Review Cycle Can be set to multiple times per week, once every 2 weeks and so on. Replenishment Methods: Out of Nine : six are stock oriented methods(one that focus control of on-hand inventory levels without consideration of service level objectives) Stock Oriented Methods:">
   <meta itemprop="datePublished" content="2020-04-19T15:59:36+05:45">
   <meta itemprop="dateModified" content="2020-04-19T15:59:36+05:45">
   <meta itemprop="wordCount" content="773">
@@ -59,7 +60,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://dragarok.github.io/">
   <meta name="twitter:title" content="Inventory Replenishment">
-  <meta name="twitter:description" content="Talk about business opportunity History and Comparison Consumer and Customer Analytics Replenishment: Replenishment Execution System: Order Point Order Upton Point Defining these two points is the key. Unknowns and Parameters –&gt; Optimizations Terms Lead time – Time between ordering and getting items avail for sale. Order to pickup &#43; Pickup to location &#43; Warehouse to location ROQ – Recommended Order Quantity Inventory selling days – No of days of supply desired when replenishment is made.">
+  <meta name="twitter:description" content="Talk about business opportunity History and Comparison Consumer and Customer Analytics Replenishment: Replenishment Execution System: Order Point Order Upton Point Defining these two points is the key. Unknowns and Parameters –&gt; Optimizations Terms Lead time – Time between ordering and getting items avail for sale. Order to pickup &#43; Pickup to location &#43; Warehouse to location ROQ – Recommended Order Quantity Inventory selling days – No of days of supply desired when replenishment is made. Service level: % of customer demand that’s satisfied by by an item being in-stock and available for purchase. Lost sales factor: % of lost sales to be included when generating dynamic replenishment recommended order quantities. Exempt from Scaling Indicator: check if SKU/location will be eligible for vendor constraint scaling. Activate and deactivate date: date on which SKU/location will be active. Allowable Order change tolerances: set restriction on amount that POs can be changed on replenishment orders. Document Provided Summary Replenishment Attributes Review Cycle Stock Category Primary Replenishment Supplier/ Origin Country Replenishment Order Control Sourcing Warehouse Replenishment Method Activate Date Deactivate Date Presentation Stock Demo Stock Pickup to Location Lead Time Warehouse to Location Lead Time Order Change Tolerance percentages Specific to Replenishment Method: Minimum Stock Maximum Stock Increment Percent Minimum Time Supply Days Maximum Time Supply Days Time Supply Horizon Inventory Selling Days Service Level Lost Sales Factor Terminal Stock Quantity Season ID and Phase ID Exempt from Scaling Indicator and Maximum Scaling Amount Stock Category: Direct to store Cross Docked: supplier –&gt; warehouse –&gt; store Warehouse stocked: supplier –&gt; warehouse(stocked) –&gt; store Warehouse stocked (Store): So, need to take care of warehouses on replenishment in such cases. Order Control: whether to create purchase orders(supplier replenishment) and transfers(warehouse to store replenishment) during replenishment and in what status should they be created ? Manual : runs, gives predictions but users test it to have confidence in it to trust the fully automatic process later on. Semi automatic: both PO and Transfer will be created. Users need to approve them. Automatic: PO created in Approved status, transfers created with approved status with freight code of Normal. TODO Primary Replenishment Supplier and Origin Country For same SKU can choose different suppliers/countries. Review Cycle Can be set to multiple times per week, once every 2 weeks and so on. Replenishment Methods: Out of Nine : six are stock oriented methods(one that focus control of on-hand inventory levels without consideration of service level objectives) Stock Oriented Methods:">
 
 
 
@@ -302,52 +303,52 @@ to double the investment.</li>
 <ul>
 <li>Rule set for items:
 <table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Characteristics</th>
-<th>Service Level</th>
-<th>Target Sales</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>Always in stock</td>
-<td>98%</td>
-<td>50%</td>
-</tr>
-<tr>
-<td>B</td>
-<td>Margin</td>
-<td>95%</td>
-<td>30%</td>
-</tr>
-<tr>
-<td>C</td>
-<td>Slow sellers</td>
-<td>92%</td>
-<td>15%</td>
-</tr>
-<tr>
-<td>D</td>
-<td>Very slow</td>
-<td>85%</td>
-<td>5%</td>
-</tr>
-<tr>
-<td>E</td>
-<td>Clearance</td>
-<td>70%</td>
-<td>0%</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Category</th>
+          <th>Characteristics</th>
+          <th>Service Level</th>
+          <th>Target Sales</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A</td>
+          <td>Always in stock</td>
+          <td>98%</td>
+          <td>50%</td>
+      </tr>
+      <tr>
+          <td>B</td>
+          <td>Margin</td>
+          <td>95%</td>
+          <td>30%</td>
+      </tr>
+      <tr>
+          <td>C</td>
+          <td>Slow sellers</td>
+          <td>92%</td>
+          <td>15%</td>
+      </tr>
+      <tr>
+          <td>D</td>
+          <td>Very slow</td>
+          <td>85%</td>
+          <td>5%</td>
+      </tr>
+      <tr>
+          <td>E</td>
+          <td>Clearance</td>
+          <td>70%</td>
+          <td>0%</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 </li>
 </ul>
@@ -456,7 +457,7 @@ Q: Expected Demand during the lead time</p>
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.45295cbc2d5bbc09b85caead90108f31defa5c6b650a42abb2e79d59a363e5bc2f11614e43687e66e6d47563560a45c3324b75dcb9b3a724a2955a2f1ce2f114.js" integrity="sha512-RSlcvC1bvAm4XK6tkBCPMd76XGtlCkKrsuedWaNj5bwvEWFOQ2h&#43;ZubUdWNWCkXDMkt13LmzpySilVovHOLxFA=="></script>
 
 
 

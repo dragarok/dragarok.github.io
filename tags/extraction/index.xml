@@ -13,7 +13,7 @@
       <link>https://dragarok.github.io/braindump/2020/04/etl-extraction/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:07 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/etl-extraction/</guid>
-      <description>EDW enterprise data warehouse&#xA;RPM Retail price management&#xA;REiM Retail Invoice Match&#xA;ReSA Retail Sales Audit&#xA;A View table is appended with V suffix at the end&#xA;The extract process takes multiple types of db &amp;ndash;&amp;gt; converts them to flatfiles &amp;ndash;&amp;gt; flat files match the staging schema &amp;ndash;&amp;gt; so they can be further processed as per required.&#xA;Load job: From flat files to staging table &amp;ndash;&amp;gt; process it( transformation and lookup) &amp;ndash;&amp;gt; move to target table</description>
+      <description>&lt;p&gt;EDW enterprise data warehouse&lt;/p&gt;&#xA;&lt;p&gt;RPM Retail price management&lt;/p&gt;&#xA;&lt;p&gt;REiM Retail Invoice Match&lt;/p&gt;&#xA;&lt;p&gt;ReSA Retail Sales Audit&lt;/p&gt;&#xA;&lt;p&gt;A View table is appended with V suffix at the end&lt;/p&gt;&#xA;&lt;p&gt;The extract process takes multiple types of db &amp;ndash;&amp;gt; converts them to flatfiles &amp;ndash;&amp;gt; flat files match the staging schema &amp;ndash;&amp;gt; so they can be&#xA;further processed as per required.&lt;/p&gt;&#xA;&lt;p&gt;Load job: From flat files to staging table &amp;ndash;&amp;gt; process it( transformation and lookup) &amp;ndash;&amp;gt; move to target table&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

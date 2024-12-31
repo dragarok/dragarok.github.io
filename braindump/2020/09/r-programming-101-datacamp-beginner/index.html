@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Datacamp Beginner Course Notes Symbol Assign is used as &amp;lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it&amp;rsquo;s categorical values." />
+<meta name="description" content="Datacamp Beginner Course Notes Symbol Assign is used as &lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it&rsquo;s categorical values. Types Nominal : Categorical Variable without implied order. Ordinal: Categorical Variable with order. e.g. [0, 1, 2] Defined by passing parameter order = TRUE. Also need to pass levels as levels = vector. By specifying levels for the input vector, we can specify levels and then later use summary(factors_vector) to get the summary on it&rsquo;s levels. DataFrame Creating: data.frame(array1, array2&hellip; ) Indexing: df$column to get only one column of data. Similar indexing as numpy matrices Also can use &ldquo;column names&rdquo; to get elements by index. Filtering : subset(df, condition) Sorting: order() Using order to sort whole dataframe, we need to get index using order() and later use it to sort by indexing into the dataframe as df[sorted_indexes, ] NOTE: We have a built in dataframe known as mtcars.
+" />
 <meta name="keywords" content="Blog, r" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -34,7 +35,7 @@
 
 
 
-<link rel="stylesheet" href="../../../../main.min.3b9d61eed5cef2530244e1bb93d906e1b4b24a0fc910248f94f550e7390b078d.css">
+<link rel="stylesheet" href="../../../../main.min.3776bc7b2f4134a9ee4c9ed3c7e665d484ac2532e46467d1fa8e55cff5f1566c.css">
 
 
 
@@ -50,7 +51,7 @@
 
 
   <meta itemprop="name" content="R Programming 101- Datacamp Beginner">
-  <meta itemprop="description" content="Datacamp Beginner Course Notes Symbol Assign is used as &lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it’s categorical values.">
+  <meta itemprop="description" content="Datacamp Beginner Course Notes Symbol Assign is used as &lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it’s categorical values. Types Nominal : Categorical Variable without implied order. Ordinal: Categorical Variable with order. e.g. [0, 1, 2] Defined by passing parameter order = TRUE. Also need to pass levels as levels = vector. By specifying levels for the input vector, we can specify levels and then later use summary(factors_vector) to get the summary on it’s levels. DataFrame Creating: data.frame(array1, array2… ) Indexing: df$column to get only one column of data. Similar indexing as numpy matrices Also can use “column names” to get elements by index. Filtering : subset(df, condition) Sorting: order() Using order to sort whole dataframe, we need to get index using order() and later use it to sort by indexing into the dataframe as df[sorted_indexes, ] NOTE: We have a built in dataframe known as mtcars.">
   <meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45">
   <meta itemprop="dateModified" content="2020-09-22T08:34:36+05:45">
   <meta itemprop="wordCount" content="265">
@@ -59,7 +60,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://dragarok.github.io/">
   <meta name="twitter:title" content="R Programming 101- Datacamp Beginner">
-  <meta name="twitter:description" content="Datacamp Beginner Course Notes Symbol Assign is used as &lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it’s categorical values.">
+  <meta name="twitter:description" content="Datacamp Beginner Course Notes Symbol Assign is used as &lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it’s categorical values. Types Nominal : Categorical Variable without implied order. Ordinal: Categorical Variable with order. e.g. [0, 1, 2] Defined by passing parameter order = TRUE. Also need to pass levels as levels = vector. By specifying levels for the input vector, we can specify levels and then later use summary(factors_vector) to get the summary on it’s levels. DataFrame Creating: data.frame(array1, array2… ) Indexing: df$column to get only one column of data. Similar indexing as numpy matrices Also can use “column names” to get elements by index. Filtering : subset(df, condition) Sorting: order() Using order to sort whole dataframe, we need to get index using order() and later use it to sort by indexing into the dataframe as df[sorted_indexes, ] NOTE: We have a built in dataframe known as mtcars.">
 
 
 
@@ -279,7 +280,7 @@ index list similar to dataframes. e.g. <strong>list$name</strong></li>
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.45295cbc2d5bbc09b85caead90108f31defa5c6b650a42abb2e79d59a363e5bc2f11614e43687e66e6d47563560a45c3324b75dcb9b3a724a2955a2f1ce2f114.js" integrity="sha512-RSlcvC1bvAm4XK6tkBCPMd76XGtlCkKrsuedWaNj5bwvEWFOQ2h&#43;ZubUdWNWCkXDMkt13LmzpySilVovHOLxFA=="></script>
 
 
 

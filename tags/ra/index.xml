@@ -13,7 +13,7 @@
       <link>https://dragarok.github.io/braindump/2020/04/warehouse/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:59 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/warehouse/</guid>
-      <description>Basic terminologies:&#xA;Dimensions Facts&#xA;Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region + dimension_or_fact + content + granularity + usage&#xA;Column naming: Naming: Attribute or measure + data type Attribute: Price etc. Data type: KEY, ID, DESC&#xA;Maintenance columns: insert timestamp, update, close, close_dt</description>
+      <description>&lt;p&gt;Basic terminologies:&lt;/p&gt;&#xA;&lt;p&gt;Dimensions&#xA;Facts&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-and-table-naming-conventions&#34;&gt;Table and table naming conventions&lt;/h2&gt;&#xA;&lt;p&gt;initial 3 letter prefix: DWH, ODS etc.&#xA;Content: e.g. PRD, SLS&#xA;Dimension or Fact: D, F&#xA;Granularity : Department, day/week etc.&#xA;Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix&#xA;Naming: data region + dimension_or_fact + content + granularity + usage&lt;/p&gt;&#xA;&lt;h2 id=&#34;column-naming&#34;&gt;Column naming:&lt;/h2&gt;&#xA;&lt;p&gt;Naming: Attribute or measure  + data type&#xA;Attribute: Price etc.&#xA;Data type: KEY, ID, DESC&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Maintenance columns: insert timestamp, update, close, close_dt&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

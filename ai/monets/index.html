@@ -5,8 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="&amp;ndash; tags: Graph Signal Processing
-MoNets: &amp;ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. &amp;ndash; Contributions: &amp;ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches &amp;ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) &amp;ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks &amp;ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input." />
+<meta name="description" content="&ndash; tags: Graph Signal Processing
+MoNets: &ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. &ndash; Contributions: &ndash; A generalization of various Graph Learning approaches, unifying spatial and spectral approaches &ndash; A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) &ndash; A series of experiments performed on different benchmark manifolds, graphs, and networks &ndash; MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input. Variables y is considered the neighboring nodes or points, which is associated with a vector of pseudo-coordinates in d-dimensional space, such that u(x, y) are the pseudo-coordinates of which there is a unique set for each neighbor of x. &ndash; Each pseudo-coordinate is put through a weighting function, which replicates the effect of a traditional image convolution kernel whereby each value of the kernel is multiplied by the value that is currently in consideration. In the case of MoNet, the weighting function is a kernel with learnable parameters that operates on the pseudo-coordinates:
+" />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -35,7 +36,7 @@ MoNets: &amp;ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic 
 
 
 
-<link rel="stylesheet" href="../../main.min.3b9d61eed5cef2530244e1bb93d906e1b4b24a0fc910248f94f550e7390b078d.css">
+<link rel="stylesheet" href="../../main.min.3776bc7b2f4134a9ee4c9ed3c7e665d484ac2532e46467d1fa8e55cff5f1566c.css">
 
 
 
@@ -52,7 +53,7 @@ MoNets: &amp;ndash; Base of research such as Spline CNNs, Geodesic, Anisotropic 
 
   <meta itemprop="name" content="MoNets">
   <meta itemprop="description" content="– tags: Graph Signal Processing
-MoNets: – Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. – Contributions: – A generalization of various Graph Learning approaches, unifying spatial and spectral approaches – A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) – A series of experiments performed on different benchmark manifolds, graphs, and networks – MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input.">
+MoNets: – Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. – Contributions: – A generalization of various Graph Learning approaches, unifying spatial and spectral approaches – A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) – A series of experiments performed on different benchmark manifolds, graphs, and networks – MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input. Variables y is considered the neighboring nodes or points, which is associated with a vector of pseudo-coordinates in d-dimensional space, such that u(x, y) are the pseudo-coordinates of which there is a unique set for each neighbor of x. – Each pseudo-coordinate is put through a weighting function, which replicates the effect of a traditional image convolution kernel whereby each value of the kernel is multiplied by the value that is currently in consideration. In the case of MoNet, the weighting function is a kernel with learnable parameters that operates on the pseudo-coordinates:">
   <meta itemprop="datePublished" content="2020-03-12T00:00:00+00:00">
   <meta itemprop="dateModified" content="2020-05-02T03:43:31+05:45">
   <meta itemprop="wordCount" content="334">
@@ -61,7 +62,7 @@ MoNets: – Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc
   <meta name="twitter:image" content="https://dragarok.github.io/">
   <meta name="twitter:title" content="MoNets">
   <meta name="twitter:description" content="– tags: Graph Signal Processing
-MoNets: – Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. – Contributions: – A generalization of various Graph Learning approaches, unifying spatial and spectral approaches – A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) – A series of experiments performed on different benchmark manifolds, graphs, and networks – MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input.">
+MoNets: – Base of research such as Spline CNNs, Geodesic, Anisotropic CNNs etc. – Contributions: – A generalization of various Graph Learning approaches, unifying spatial and spectral approaches – A new approach using parametric kernels, pseudo-coordinates, integrated with existing models (Anistropic CNN, Geodesic CNN,) – A series of experiments performed on different benchmark manifolds, graphs, and networks – MoNet’s generalization first considers variable x as a point in the manifold or node in a graph depending on the application, task, and input. Variables y is considered the neighboring nodes or points, which is associated with a vector of pseudo-coordinates in d-dimensional space, such that u(x, y) are the pseudo-coordinates of which there is a unique set for each neighbor of x. – Each pseudo-coordinate is put through a weighting function, which replicates the effect of a traditional image convolution kernel whereby each value of the kernel is multiplied by the value that is currently in consideration. In the case of MoNet, the weighting function is a kernel with learnable parameters that operates on the pseudo-coordinates:">
 
 
 
@@ -181,7 +182,7 @@ spatial convolutions are conceptually as well as markedly similar to vanilla con
 
 
 
-<script type="text/javascript" src="../../bundle.min.329ee33333b8e75309a69907c5873b8594382eb187cf4f064303561f90286018c382e7c682dfd9eeec7f0fd66763f4fab24b1f37b2a918f5f0087f9bda761a26.js" integrity="sha512-Mp7jMzO451MJppkHxYc7hZQ4LrGHz08GQwNWH5AoYBjDgufGgt/Z7ux/D9ZnY/T6sksfN7KpGPXwCH&#43;b2nYaJg=="></script>
+<script type="text/javascript" src="../../bundle.min.45295cbc2d5bbc09b85caead90108f31defa5c6b650a42abb2e79d59a363e5bc2f11614e43687e66e6d47563560a45c3324b75dcb9b3a724a2955a2f1ce2f114.js" integrity="sha512-RSlcvC1bvAm4XK6tkBCPMd76XGtlCkKrsuedWaNj5bwvEWFOQ2h&#43;ZubUdWNWCkXDMkt13LmzpySilVovHOLxFA=="></script>
 
 
 

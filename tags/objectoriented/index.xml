@@ -13,7 +13,7 @@
       <link>https://dragarok.github.io/braindump/2020/04/object-oriented-design/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:34 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/object-oriented-design/</guid>
-      <description>Object orientation is a paradigm that interacts with objects having logic and data by themselves. Object in a real world is similar to the object in programming. The objects have their unique identity. One object might contain other objects but cannot actually replace an object. Multiple attributes are present in an object. Identity sepatate from others. Data to describe it&amp;rsquo;s current states. Class is a blueprint of the house and house is a object.</description>
+      <description>&lt;p&gt;Object orientation is a paradigm that interacts with objects having logic and data by themselves.&#xA;Object in a real world is similar to the object in programming.&#xA;The objects have their unique identity. One object might contain other objects but cannot actually replace an object.&#xA;Multiple attributes are present in an object. Identity sepatate from others. Data to describe it&amp;rsquo;s current states.&#xA;Class is a blueprint of the house and house is a object. It can be used to create these objects.&#xA;Objects are defined as type: methods and attributes&#xA;Objects are the instances of a class and they are known as instantiation.&#xA;Existig classes like i/o networking strings dates arrays etc.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -13,7 +13,7 @@
       <link>https://dragarok.github.io/braindump/2020/04/django-process/</link>
       <pubDate>Sun, 19 Apr 2020 15:58:59 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/django-process/</guid>
-      <description>FIrst i created project, then created an app Registered the app into the setttings.py file Then first created the view in the app, then add url to the urls.py file in the app If more urls are to be added and multiple apps within the project use include and make urls.py in own app Then made the html file in index directory and worked there. The function in views class takes the request as parameter and returns either HttpResponse or a render object.</description>
+      <description>&lt;p&gt;FIrst i created project, then created an app&#xA;Registered the app into the setttings.py file&#xA;Then first created the view in the app, then add url to the urls.py file in the app&#xA;If more urls are to be added and multiple apps within the project use include and make urls.py in own app&#xA;Then made the html file in index directory and worked there.&#xA;The function in views class takes the request as parameter and returns either HttpResponse or a render&#xA;object.&#xA;Render or render_to_response are somehow similar  and we give them the request, the file to open i.e. html file and then the variables to be sent with {&amp;ldquo;temp_name&amp;rdquo;: my_var}.&#xA;We edit the html file by putting in the variables as {{ temp_name }} and this works.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

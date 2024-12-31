@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/kai/workspace/personal/personalblog",
+	"sourceRoot": "/Users/alokregmi/workspace/personal/personalblog",
 	"sources": [
 		"themes/koi/assets/scss/main.scss",
 		"themes/koi/assets/scss/_normalize.scss",

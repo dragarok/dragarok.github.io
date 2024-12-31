@@ -13,7 +13,7 @@
       <link>https://dragarok.github.io/braindump/2020/04/office-linux-package/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:41 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/office-linux-package/</guid>
-      <description> Checkbox issue: U+2610 ☐BALLOT BOX U+2611 ☑ BALLOT BOX WITH CHECK U+2612 ☒ BALLOT BOX WITH X&#xA;Calc: $ to lock rows on which to extend same formula for Vlookup on multiple rows: Create a helpful variable =A1&amp;amp;&amp;quot;|&amp;quot;&amp;amp;B1 then use it to lookup from another table or datasheet. </description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Checkbox issue:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;U+2610 ☐BALLOT BOX&#xA;U+2611 ☑ BALLOT BOX WITH CHECK&#xA;U+2612 ☒ BALLOT BOX WITH X&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Calc:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;$ to lock rows on which to extend same formula for&lt;/li&gt;&#xA;&lt;li&gt;Vlookup on multiple rows:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a helpful variable =A1&amp;amp;&amp;quot;|&amp;quot;&amp;amp;B1 then use it to lookup from another&#xA;table or datasheet.&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>
 </rss>

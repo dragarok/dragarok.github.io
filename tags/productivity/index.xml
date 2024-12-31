@@ -13,14 +13,14 @@
       <link>https://dragarok.github.io/books/eat-that-frog/</link>
       <pubDate>Mon, 27 Apr 2020 02:30:01 +0545</pubDate>
       <guid>https://dragarok.github.io/books/eat-that-frog/</guid>
-      <description>### Author: Tracy, Brian&#xA;loc 70 - Then I did something that changed my life. I began to ask successful people what they were doing that enabled them to be more productive and earn more money than me. And they told me.&#xA;loc 88 - The ability to concentrate singlemindedly on your most important task, to do it well and to finish it completely, is the key to great success, achievement, respect, status, and happiness in life.</description>
+      <description>&lt;p&gt;### Author: Tracy, Brian&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;loc 70 - Then I did something that changed my life. I began to ask successful people what they were doing that enabled them to be more productive and earn more money than me. And they told me.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;loc 88 - The ability to concentrate singlemindedly on your most important task, to do it well and to finish it completely, is the key to great success, achievement, respect, status, and happiness in life.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Notes Management</title>
       <link>https://dragarok.github.io/braindump/2020/04/notes-management/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:47 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/notes-management/</guid>
-      <description>Notes Management Org-ref Helm-bibtex Interleave Org-capture The whole process is about writing notes, interleaving them, collecting references so that this whole loop can be iterated. Process papers.org and papers.bib &amp;ndash;&amp;gt; huge files Books, papers, articles marked as TODO When going through the file convert captures to bibtex references. Helm bibtex for searching references directly or have paper and let bibtex do the work Capture TODO to document TODO in papers.org itself.</description>
+      <description>&lt;h2 id=&#34;notes-management&#34;&gt;Notes Management&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Org-ref&lt;/li&gt;&#xA;&lt;li&gt;Helm-bibtex&lt;/li&gt;&#xA;&lt;li&gt;Interleave&lt;/li&gt;&#xA;&lt;li&gt;Org-capture&lt;/li&gt;&#xA;&lt;li&gt;The whole process is about writing notes, interleaving them, collecting&#xA;references so that this whole loop can be iterated.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;process&#34;&gt;Process&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;papers.org and papers.bib &amp;ndash;&amp;gt; huge files&lt;/li&gt;&#xA;&lt;li&gt;Books, papers, articles marked as TODO&lt;/li&gt;&#xA;&lt;li&gt;When going through the file convert captures to bibtex references.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Helm bibtex for searching references directly or have paper and let bibtex&#xA;do the work&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Capture TODO to document TODO in papers.org itself.&lt;/li&gt;&#xA;&lt;li&gt;org-ref to link captured TODO and reference.&lt;/li&gt;&#xA;&lt;li&gt;Now interleave pdf with pdf-tools to read it.&lt;/li&gt;&#xA;&lt;li&gt;Some changes&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

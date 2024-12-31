@@ -13,14 +13,14 @@
       <link>https://dragarok.github.io/braindump/2020/04/rcnn/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:40 +0545</pubDate>
       <guid>https://dragarok.github.io/braindump/2020/04/rcnn/</guid>
-      <description>Faster RCNN&#xA;Region Proposal:&#xA;Anchors: Different size bounding box of different aspect ratio and sizes&#xA;Task to be done by RPN:&#xA;Does this anchor contain a relevant object?&#xA;How would we adjust this anchor to better fit the relevant object?&#xA;It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.&#xA;Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.</description>
+      <description>&lt;p&gt;Faster RCNN&lt;/p&gt;&#xA;&lt;p&gt;Region Proposal:&lt;/p&gt;&#xA;&lt;p&gt;Anchors: Different size bounding box of different aspect ratio and sizes&lt;/p&gt;&#xA;&lt;p&gt;Task to be done by RPN:&lt;/p&gt;&#xA;&lt;p&gt;Does this anchor contain a relevant object?&lt;/p&gt;&#xA;&lt;p&gt;How would we adjust this anchor to better fit the relevant object?&lt;/p&gt;&#xA;&lt;p&gt;It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.&lt;/p&gt;&#xA;&lt;p&gt;Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RCNN</title>
       <link>https://dragarok.github.io/ai/rcnn/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/rcnn/</guid>
-      <description>Faster RCNN Region Proposal: Anchors: Different size bounding box of different aspect ratio and sizes&#xA;Task to be done by RPN:&#xA;Does this anchor contain a relevant object?&#xA;How would we adjust this anchor to better fit the relevant object?&#xA;It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.&#xA;Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.</description>
+      <description>&lt;h2 id=&#34;faster-rcnn&#34;&gt;Faster RCNN&lt;/h2&gt;&#xA;&lt;h3 id=&#34;region-proposal&#34;&gt;Region Proposal:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Anchors: Different size bounding box of different aspect ratio and sizes&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Task to be done by RPN:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Does this anchor contain a relevant object?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;How would we adjust this anchor to better fit the relevant object?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
