@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>whitehat on Alok&#39;s Blog</title>
+    <title>Whitehat on </title>
     <link>https://dragarok.github.io/tags/whitehat/</link>
-    <description>Recent content in whitehat on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Whitehat on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:58:47 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/whitehat/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:58:47 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/whitehat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CTF Resource</title>
       <link>https://dragarok.github.io/braindump/2020/04/ctf-resource/</link>
       <pubDate>Sun, 19 Apr 2020 15:58:47 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/ctf-resource/</guid>
-      <description>CTFs Crackstation.net : NTLM, md4, md5 hashes match with existing hashtable from crackstation
-Some useful commands:
-cat | head -n &amp;lt;line_number&amp;gt; | tail -1 : get n&amp;rsquo;th line_number
-strings reversing1 | egrep &amp;ldquo;^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{4})$&amp;rdquo; | while read line ; do echo $line | base64 -d | cat -v &amp;amp;&amp;amp; echo &amp;ldquo;&amp;rdquo;; done
-base64 encoded text regex
-echo &amp;ldquo;obase=16; &amp;lt;decimal_number&amp;gt;&amp;rdquo; | BC_LINE_LENGTH=0 bc | awk &amp;lsquo;{ print (length($0) % 2 == 0) ?</description>
+      <description>&lt;h2 id=&#34;ctfs&#34;&gt;CTFs&lt;/h2&gt;&#xA;&lt;p&gt;Crackstation.net : NTLM, md4, md5 hashes match with existing hashtable from crackstation&lt;/p&gt;&#xA;&lt;p&gt;Some useful commands:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;cat &lt;file&gt; | head -n &amp;lt;line_number&amp;gt; | tail -1 : get n&amp;rsquo;th line_number&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;strings reversing1 | egrep &amp;ldquo;^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{4})$&amp;rdquo; | while read line ; do echo $line | base64 -d | cat -v &amp;amp;&amp;amp; echo &amp;ldquo;&amp;rdquo;; done&lt;/p&gt;&#xA;&lt;p&gt;base64 encoded text regex&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;echo &amp;ldquo;obase=16; &amp;lt;decimal_number&amp;gt;&amp;rdquo; | BC_LINE_LENGTH=0 bc | awk &amp;lsquo;{ print (length($0) % 2 == 0) ? $0 : 0$0; }&amp;rsquo; : decimal number to zero padded hex&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

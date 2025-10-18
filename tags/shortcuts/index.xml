@@ -1,35 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>shortcuts on Alok&#39;s Blog</title>
+    <title>Shortcuts on </title>
     <link>https://dragarok.github.io/tags/shortcuts/</link>
-    <description>Recent content in shortcuts on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Shortcuts on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:17:16 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Aug 2020 13:23:08 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs Shortcuts</title>
+      <link>https://dragarok.github.io/emacs/emacs_shortcuts/</link>
+      <pubDate>Wed, 12 Aug 2020 13:23:08 +0545</pubDate>
+      <guid>https://dragarok.github.io/emacs/emacs_shortcuts/</guid>
+      <description>&lt;h2 id=&#34;emacs-shortcuts&#34;&gt;Emacs Shortcuts&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Spc f d &amp;ndash;&amp;gt; search for files in dired&lt;/li&gt;&#xA;&lt;li&gt;Spc : &amp;ndash;&amp;gt; main command&lt;/li&gt;&#xA;&lt;li&gt;Spc g s &amp;ndash;&amp;gt; git status&lt;/li&gt;&#xA;&lt;li&gt;Spc n n &amp;ndash;&amp;gt;  Capture template&lt;/li&gt;&#xA;&lt;li&gt;Spc n a &amp;ndash;&amp;gt; agenda view&lt;/li&gt;&#xA;&lt;li&gt;Vim commands&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ctrl up , down &amp;ndash;&amp;gt; go up and down in file&lt;/li&gt;&#xA;&lt;li&gt;q [a-z] &amp;ndash;&amp;gt; record a macro&lt;/li&gt;&#xA;&lt;li&gt;Shift &amp;raquo; &amp;ndash;&amp;gt; indent in code&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Evil snipe:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;s ch : go to ch ; same as f but more letters&lt;/li&gt;&#xA;&lt;li&gt;gc : to comment using evil&lt;/li&gt;&#xA;&lt;li&gt;gs [annotation] &amp;ndash;&amp;gt; to go to lines directly like vimium ease&lt;/li&gt;&#xA;&lt;li&gt;dii &amp;ndash;&amp;gt; delete inside indentation&lt;/li&gt;&#xA;&lt;li&gt;dik &amp;ndash;&amp;gt; delete inside plus a line above&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Dired buffer shortcuts:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Dired marking and unmarking options: % and * keys&lt;/li&gt;&#xA;&lt;li&gt;Narrow subtree : (&lt;/li&gt;&#xA;&lt;li&gt;Show git status for files : )&lt;/li&gt;&#xA;&lt;li&gt;Diff one file to another: =&lt;/li&gt;&#xA;&lt;li&gt;Create a directory : +&lt;/li&gt;&#xA;&lt;li&gt;Up a directory : -&lt;/li&gt;&#xA;&lt;li&gt;Rename a file: R&lt;/li&gt;&#xA;&lt;li&gt;Change timestamp of file: T&lt;/li&gt;&#xA;&lt;li&gt;Copy filename: Y&lt;/li&gt;&#xA;&lt;li&gt;Open a sub-directory in same menu: I&lt;/li&gt;&#xA;&lt;li&gt;Change ownership of file: O&lt;/li&gt;&#xA;&lt;li&gt;Unmark all files: U&lt;/li&gt;&#xA;&lt;li&gt;Hardlink of file: H&lt;/li&gt;&#xA;&lt;li&gt;Goto file: J&lt;/li&gt;&#xA;&lt;li&gt;Counsel search online: K&lt;/li&gt;&#xA;&lt;li&gt;Encrypt, decrypt a file: ;&lt;/li&gt;&#xA;&lt;li&gt;Uncompress or compress : Z&lt;/li&gt;&#xA;&lt;li&gt;Copy file to : C&lt;/li&gt;&#xA;&lt;li&gt;Byte compile a file: B&lt;/li&gt;&#xA;&lt;li&gt;Change file mode: M&lt;/li&gt;&#xA;&lt;li&gt;Copy async to rsync : C-c C-r&lt;/li&gt;&#xA;&lt;li&gt;Wide dired mode: i&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Org table by copying html table: C-c |&lt;/li&gt;&#xA;&lt;li&gt;Show all project TODOs: Spc p t&lt;/li&gt;&#xA;&lt;li&gt;Scroll other window : S-up&lt;/li&gt;&#xA;&lt;li&gt;Scroll other window down : S-down&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;backlinks&#34;&gt;Backlinks&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../../emacs/emacs_hugo_blogging/&#34;&gt;Emacs Hugo Blogging&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Emacs Shortcuts</title>
       <link>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</link>
       <pubDate>Sun, 19 Apr 2020 16:17:16 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/emacs-shortcuts/</guid>
-      <description>Emacs Shortcuts Spc f d &amp;ndash;&amp;gt; search for files in dired Spc : &amp;ndash;&amp;gt; main command Spc g s &amp;ndash;&amp;gt; git status Spc n n &amp;ndash;&amp;gt; Capture template Spc n a &amp;ndash;&amp;gt; agenda view Vim commands Ctrl up , down &amp;ndash;&amp;gt; go up and down in file q [a-z] &amp;ndash;&amp;gt; record a macro Shift &amp;raquo; &amp;ndash;&amp;gt; indent in code Evil snipe: s ch : go to ch ; same as f but more letters gc : to comment using evil gs [annotation] &amp;ndash;&amp;gt; to go to lines directly like vimium ease dii &amp;ndash;&amp;gt; delete inside indentation dik &amp;ndash;&amp;gt; delete inside plus a line above Backlinks Emacs Hugo Blogging </description>
+      <description>&lt;h2 id=&#34;emacs-shortcuts&#34;&gt;Emacs Shortcuts&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Spc f d &amp;ndash;&amp;gt; search for files in dired&lt;/li&gt;&#xA;&lt;li&gt;Spc : &amp;ndash;&amp;gt; main command&lt;/li&gt;&#xA;&lt;li&gt;Spc g s &amp;ndash;&amp;gt; git status&lt;/li&gt;&#xA;&lt;li&gt;Spc n n &amp;ndash;&amp;gt;  Capture template&lt;/li&gt;&#xA;&lt;li&gt;Spc n a &amp;ndash;&amp;gt; agenda view&lt;/li&gt;&#xA;&lt;li&gt;Vim commands&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ctrl up , down &amp;ndash;&amp;gt; go up and down in file&lt;/li&gt;&#xA;&lt;li&gt;q [a-z] &amp;ndash;&amp;gt; record a macro&lt;/li&gt;&#xA;&lt;li&gt;Shift &amp;raquo; &amp;ndash;&amp;gt; indent in code&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Evil snipe:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;s ch : go to ch ; same as f but more letters&lt;/li&gt;&#xA;&lt;li&gt;gc : to comment using evil&lt;/li&gt;&#xA;&lt;li&gt;gs [annotation] &amp;ndash;&amp;gt; to go to lines directly like vimium ease&lt;/li&gt;&#xA;&lt;li&gt;dii &amp;ndash;&amp;gt; delete inside indentation&lt;/li&gt;&#xA;&lt;li&gt;dik &amp;ndash;&amp;gt; delete inside plus a line above&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;backlinks&#34;&gt;Backlinks&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../../braindump/2020/04/emacs-hugo-blogging/&#34;&gt;Emacs Hugo Blogging&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Photoshop</title>
       <link>https://dragarok.github.io/braindump/2020/04/photoshop/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:14 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/photoshop/</guid>
-      <description>Photoshop carefulness: Active layer is to be cared.
-Not on bed or something
-control +g go back
-move tool by pressing V
-always group layers and rename them
-control g for group after selecting using control
-Never use yellow background with white text Designing a cursor to appear on the design . Selecting a hover to other text color and also the opacity to change either low or high</description>
+      <description>&lt;h2 id=&#34;photoshop-carefulness&#34;&gt;Photoshop carefulness:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Active layer is to be cared.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Not on bed or something&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;control +g go back&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;move tool by pressing V&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;always group layers and rename them&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;control g for group after selecting using control&lt;/p&gt;&#xA;&lt;p&gt;Never use yellow background with white text&#xA;Designing a cursor to appear on the design .&#xA;Selecting a hover to other text color and also the opacity to change either low or high&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tmux on Alok&#39;s Blog</title>
+    <title>Tmux on </title>
     <link>https://dragarok.github.io/tags/tmux/</link>
-    <description>Recent content in tmux on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Tmux on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:01 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:01 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tmux</title>
       <link>https://dragarok.github.io/braindump/2020/04/tmux/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:01 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/tmux/</guid>
-      <description>mastering tmux:
-tmux new -s &amp;ldquo;session_name&amp;rdquo;
-tmux ls - lists sessions
-Pane controls:
-everything is with control + B
-then:
-&amp;quot; : split horizontally
-% : split vertically
-o : go to next pane
-; : previous pane
-q : show pane numbers
-z : toggle pane zoom ( can hide all panes using z)
-! : convert pane into an window
-Control + O : swap panes
-t: copy mode</description>
+      <description>&lt;p&gt;mastering tmux:&lt;/p&gt;&#xA;&lt;p&gt;tmux new -s &amp;ldquo;session_name&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;tmux ls - lists sessions&lt;/p&gt;&#xA;&lt;p&gt;Pane controls:&lt;/p&gt;&#xA;&lt;p&gt;everything is with control + B&lt;/p&gt;&#xA;&lt;p&gt;then:&lt;/p&gt;&#xA;&lt;p&gt;&amp;quot; : split horizontally&lt;/p&gt;&#xA;&lt;p&gt;% : split vertically&lt;/p&gt;&#xA;&lt;p&gt;o : go to next pane&lt;/p&gt;&#xA;&lt;p&gt;; : previous pane&lt;/p&gt;&#xA;&lt;p&gt;q : show pane numbers&lt;/p&gt;&#xA;&lt;p&gt;z : toggle pane zoom ( can hide all panes using z)&lt;/p&gt;&#xA;&lt;p&gt;! : convert pane into an window&lt;/p&gt;&#xA;&lt;p&gt;Control + O : swap panes&lt;/p&gt;&#xA;&lt;p&gt;t: copy mode&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

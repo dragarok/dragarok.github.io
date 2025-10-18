@@ -5,8 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="List the arguments to a function args(function_name) Categorical defaults function(x, y, z, cat_arg = c(&amp;#34;arg1&amp;#34;, &amp;#34;arg2&amp;#34;, &amp;#34;arg3&amp;#34;)) # inside function body cat_arg &amp;lt;- match.arg(cat_arg) Passing arguments between functions function(x, ...) { some_other_function(...) } In cases where some_other_function in our case takes many arguments that we want to specify as the user sends them, we can use ellipsis like this to get around with it.
-Checking for values type manually if(! is." />
+<meta name="description" content="List the arguments to a function args(function_name) Categorical defaults function(x, y, z, cat_arg = c(&#34;arg1&#34;, &#34;arg2&#34;, &#34;arg3&#34;)) # inside function body cat_arg &lt;- match.arg(cat_arg) Passing arguments between functions function(x, ...) { some_other_function(...) } In cases where some_other_function in our case takes many arguments that we want to specify as the user sends them, we can use ellipsis like this to get around with it.
+Checking for values type manually if(! is.some_type(x)) { stop(&#34;The variable x doesn&#39;t comply to class of some_type. Instead it has &#34;, class(x), &#34;.&#34;) } Asserting Checks assert_is_some_type(x) Change the type of something coerce_to(use_first(any_var), target_class = &#34;class&#34;) Often in using TRUE or FALSE this works when people just type something rather than full thing. In such ways the user input errors can be handled.
+" />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -15,7 +16,7 @@ Checking for values type manually if(! is." />
 
     <title>
         
-            R Programming 102- Functions in R :: Alok&#39;s Blog 
+            R Programming 102- Functions in R ::  
         
     </title>
 
@@ -35,7 +36,7 @@ Checking for values type manually if(! is." />
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
@@ -49,23 +50,19 @@ Checking for values type manually if(! is." />
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="R Programming 102- Functions in R">
-<meta itemprop="description" content="List the arguments to a function args(function_name) Categorical defaults function(x, y, z, cat_arg = c(&#34;arg1&#34;, &#34;arg2&#34;, &#34;arg3&#34;)) # inside function body cat_arg &lt;- match.arg(cat_arg) Passing arguments between functions function(x, ...) { some_other_function(...) } In cases where some_other_function in our case takes many arguments that we want to specify as the user sends them, we can use ellipsis like this to get around with it.
-Checking for values type manually if(! is.">
-<meta itemprop="datePublished" content="2020-10-04T00:00:00+05:45" />
-<meta itemprop="dateModified" content="2020-10-08T07:02:02+05:45" />
-<meta itemprop="wordCount" content="231">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
 
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
-
-<meta name="twitter:title" content="R Programming 102- Functions in R"/>
-<meta name="twitter:description" content="List the arguments to a function args(function_name) Categorical defaults function(x, y, z, cat_arg = c(&#34;arg1&#34;, &#34;arg2&#34;, &#34;arg3&#34;)) # inside function body cat_arg &lt;- match.arg(cat_arg) Passing arguments between functions function(x, ...) { some_other_function(...) } In cases where some_other_function in our case takes many arguments that we want to specify as the user sends them, we can use ellipsis like this to get around with it.
-Checking for values type manually if(! is."/>
+  <meta itemprop="name" content="R Programming 102- Functions in R">
+  <meta itemprop="description" content="List the arguments to a function args(function_name) Categorical defaults function(x, y, z, cat_arg = c(&#34;arg1&#34;, &#34;arg2&#34;, &#34;arg3&#34;)) # inside function body cat_arg &lt;- match.arg(cat_arg) Passing arguments between functions function(x, ...) { some_other_function(...) } In cases where some_other_function in our case takes many arguments that we want to specify as the user sends them, we can use ellipsis like this to get around with it.
+Checking for values type manually if(! is.some_type(x)) { stop(&#34;The variable x doesn&#39;t comply to class of some_type. Instead it has &#34;, class(x), &#34;.&#34;) } Asserting Checks assert_is_some_type(x) Change the type of something coerce_to(use_first(any_var), target_class = &#34;class&#34;) Often in using TRUE or FALSE this works when people just type something rather than full thing. In such ways the user input errors can be handled.">
+  <meta itemprop="datePublished" content="2020-10-04T00:00:00+05:45">
+  <meta itemprop="dateModified" content="2020-10-08T07:02:02+05:45">
+  <meta itemprop="wordCount" content="231">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="R Programming 102- Functions in R">
+  <meta name="twitter:description" content="List the arguments to a function args(function_name) Categorical defaults function(x, y, z, cat_arg = c(&#34;arg1&#34;, &#34;arg2&#34;, &#34;arg3&#34;)) # inside function body cat_arg &lt;- match.arg(cat_arg) Passing arguments between functions function(x, ...) { some_other_function(...) } In cases where some_other_function in our case takes many arguments that we want to specify as the user sends them, we can use ellipsis like this to get around with it.
+Checking for values type manually if(! is.some_type(x)) { stop(&#34;The variable x doesn&#39;t comply to class of some_type. Instead it has &#34;, class(x), &#34;.&#34;) } Asserting Checks assert_is_some_type(x) Change the type of something coerce_to(use_first(any_var), target_class = &#34;class&#34;) Often in using TRUE or FALSE this works when people just type something rather than full thing. In such ways the user input errors can be handled.">
 
 
 
@@ -149,74 +146,74 @@ Checking for values type manually if(! is."/>
 
             <div class="post-content">
                 <h3 id="list-the-arguments-to-a-function">List the arguments to a function</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">args</span>(function_name)
-</code></pre></div><h3 id="categorical-defaults">Categorical defaults</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">function</span>(x, y, z, cat_arg <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;arg1&#34;</span>, <span style="color:#e6db74">&#34;arg2&#34;</span>, <span style="color:#e6db74">&#34;arg3&#34;</span>))
-<span style="color:#75715e"># inside function body</span>
-cat_arg <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">match.arg</span>(cat_arg)
-</code></pre></div><h3 id="passing-arguments-between-functions">Passing arguments between functions</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">function</span>(x, <span style="color:#66d9ef">...</span>) {
-  <span style="color:#a6e22e">some_other_function</span>(<span style="color:#66d9ef">...</span>)
-}
-</code></pre></div><p>In cases where <em>some_other_function</em> in our case takes many arguments that we want to specify as the user sends them, we can use ellipsis like this to get around with it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">args</span>(function_name)
+</span></span></code></pre></div><h3 id="categorical-defaults">Categorical defaults</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#66d9ef">function</span>(x, y, z, cat_arg <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;arg1&#34;</span>, <span style="color:#e6db74">&#34;arg2&#34;</span>, <span style="color:#e6db74">&#34;arg3&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># inside function body</span>
+</span></span><span style="display:flex;"><span>cat_arg <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">match.arg</span>(cat_arg)
+</span></span></code></pre></div><h3 id="passing-arguments-between-functions">Passing arguments between functions</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#66d9ef">function</span>(x, <span style="color:#66d9ef">...</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">some_other_function</span>(<span style="color:#66d9ef">...</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In cases where <em>some_other_function</em> in our case takes many arguments that we want to specify as the user sends them, we can use ellipsis like this to get around with it.</p>
 <h3 id="checking-for-values-type-manually">Checking for values type manually</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">if</span>(<span style="color:#f92672">!</span> <span style="color:#a6e22e">is.some_type</span>(x)) {
-  <span style="color:#a6e22e">stop</span>(<span style="color:#e6db74">&#34;The variable x doesn&#39;t comply to class of some_type. Instead it has &#34;</span>, <span style="color:#a6e22e">class</span>(x), <span style="color:#e6db74">&#34;.&#34;</span>)
-}
-</code></pre></div><h3 id="asserting-checks">Asserting Checks</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">assert_is_some_type</span>(x)
-</code></pre></div><h3 id="change-the-type-of-something">Change the type of something</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">coerce_to</span>(<span style="color:#a6e22e">use_first</span>(any_var), target_class <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
-</code></pre></div><p>Often in using TRUE or FALSE this works when people just type something rather than full thing. In such ways the user input errors can be handled.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span> <span style="color:#a6e22e">is.some_type</span>(x)) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">stop</span>(<span style="color:#e6db74">&#34;The variable x doesn&#39;t comply to class of some_type. Instead it has &#34;</span>, <span style="color:#a6e22e">class</span>(x), <span style="color:#e6db74">&#34;.&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="asserting-checks">Asserting Checks</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">assert_is_some_type</span>(x)
+</span></span></code></pre></div><h3 id="change-the-type-of-something">Change the type of something</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">coerce_to</span>(<span style="color:#a6e22e">use_first</span>(any_var), target_class <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
+</span></span></code></pre></div><p>Often in using TRUE or FALSE this works when people just type something rather than full thing. In such ways the user input errors can be handled.</p>
 <h3 id="zeallot-package-multi-assignment">Zeallot package Multi Assignment</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(zeallot)
-<span style="color:#a6e22e">c</span>(arg_1, arg_2, arg_3) <span style="color:#f92672">%&lt;-%</span> <span style="color:#a6e22e">multi_output_function</span>()
-</code></pre></div><p>This gives the output as multiple values that can later be used.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(zeallot)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">c</span>(arg_1, arg_2, arg_3) <span style="color:#f92672">%&lt;-%</span> <span style="color:#a6e22e">multi_output_function</span>()
+</span></span></code></pre></div><p>This gives the output as multiple values that can later be used.</p>
 <h3 id="attributes">Attributes</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">attributes</span>(some_var) <span style="color:#75715e"># gets the attributes list</span>
-<span style="color:#a6e22e">attr</span>(some_var, <span style="color:#e6db74">&#34;names&#34;</span>) <span style="color:#75715e"># gets the name attribute for the variable</span>
-<span style="color:#a6e22e">attr</span>(some_var, <span style="color:#e6db74">&#34;names&#34;</span>) <span style="color:#f92672">&lt;-</span> name_attr <span style="color:#75715e"># sets the name attribute</span>
-</code></pre></div><h3 id="broom-package">Broom Package</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">glance</span>()
-<span style="color:#a6e22e">tidy</span>()
-</code></pre></div><h3 id="list-of-attributes">List of attributes</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">ls.str</span>(list_obj)
-env_list <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">list2env</span>(list_obj)
-<span style="color:#a6e22e">ls.str</span>(env_obj)
-</code></pre></div><p>The both returns similar objects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">attributes</span>(some_var) <span style="color:#75715e"># gets the attributes list</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">attr</span>(some_var, <span style="color:#e6db74">&#34;names&#34;</span>) <span style="color:#75715e"># gets the name attribute for the variable</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">attr</span>(some_var, <span style="color:#e6db74">&#34;names&#34;</span>) <span style="color:#f92672">&lt;-</span> name_attr <span style="color:#75715e"># sets the name attribute</span>
+</span></span></code></pre></div><h3 id="broom-package">Broom Package</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">glance</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">tidy</span>()
+</span></span></code></pre></div><h3 id="list-of-attributes">List of attributes</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">ls.str</span>(list_obj)
+</span></span><span style="display:flex;"><span>env_list <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">list2env</span>(list_obj)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ls.str</span>(env_obj)
+</span></span></code></pre></div><p>The both returns similar objects.</p>
 <h3 id="environments">Environments</h3>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Grandparent environment</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">grandparent <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">parent.env</span>(parent)
-<span style="color:#a6e22e">environmentName</span>(grandparent)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>grandparent <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">parent.env</span>(parent)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">environmentName</span>(grandparent)
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Search loaded environments</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">search</span>()
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">search</span>()
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Exists Function</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">exists</span>(<span style="color:#e6db74">&#34;variable&#34;</span>, envir <span style="color:#f92672">=</span> env_obj)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">exists</span>(<span style="color:#e6db74">&#34;variable&#34;</span>, envir <span style="color:#f92672">=</span> env_obj)
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>Accessing variable outside functions</li>
 </ul>
 <h3 id="using-operators-with-pipe">Using operators with pipe</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">x <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">raise_to_power</span>(some_num)
-x <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">multiply_by</span>(some_num)
-</code></pre></div><h3 id="returning-invisibly">Returning Invisibly</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">invisible</span>(ret_val)
-</code></pre></div><h2 id="backlinks">Backlinks</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>x <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">raise_to_power</span>(some_num)
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">multiply_by</span>(some_num)
+</span></span></code></pre></div><h3 id="returning-invisibly">Returning Invisibly</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">invisible</span>(ret_val)
+</span></span></code></pre></div><h2 id="backlinks">Backlinks</h2>
 <ul>
 <li><a href="../../../../braindump/2020/09/data-scientist-with-r/">Data Scientist with R</a></li>
 </ul>
@@ -267,22 +264,6 @@ x <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">multiply
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -290,7 +271,7 @@ x <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">multiply
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

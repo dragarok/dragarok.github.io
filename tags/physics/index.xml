@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>physics on Alok&#39;s Blog</title>
+    <title>Physics on </title>
     <link>https://dragarok.github.io/tags/physics/</link>
-    <description>Recent content in physics on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Physics on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Apr 2020 03:55:25 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/physics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beyond Higgs Boson</title>
       <link>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/beyond-higgs-boson/</guid>
-      <description>&amp;ndash; link: Beyond Higgs: The Wild Frontier of Particle Physics - YouTube - Brave
-What are these people looking for? Supersymmetry Mathematical idea: Not still experimentally verified. Pencil standing on it&amp;rsquo;s tip Analogy: Though people found the Higgs out there, there is still no understanding of how the higgs is standing in the standard model. Physicists are looking for the support for the pencil if it is being held by a string or being held by hand.</description>
+      <description>&lt;p&gt;&amp;ndash; link: &lt;a href=&#34;https://www.youtube.com/watch?v=no3qLqUYBLo&#34;&gt;Beyond Higgs: The Wild Frontier of Particle Physics - YouTube - Brave&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-are-these-people-looking-for&#34;&gt;What are these people looking for?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Supersymmetry&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mathematical idea: Not still experimentally verified.&lt;/li&gt;&#xA;&lt;li&gt;Pencil standing on it&amp;rsquo;s tip Analogy: Though people found the Higgs out there, there is still no understanding of how the higgs is standing in the standard model. Physicists are looking for the support for the pencil if it is being held by a string or being held by hand. They are looking for hand and the string now. Supersymmetry is supposed to be one of them.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;zoo-of-particles&#34;&gt;Zoo of Particles&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Complications: Photons vs g, h , w particles which have 3 degree of spin meaning they are so slow as you can catch up with them and they have mass. Photons on the other hand have 2 degree of spin: either coming towards you or going in the opposite direction and you can&amp;rsquo;t observe a photon&amp;rsquo;s mass.&lt;/li&gt;&#xA;&lt;li&gt;Higgs Field: The space is filled with Higgs Boson which basically gives mass to all particles with mass. Photons fairly pass through the field without interacting with it: so no inertia and no mass. Other particles interact with the Higgs field as it slams them every instant and thus these particles can&amp;rsquo;t accelerate as the photon.&lt;/li&gt;&#xA;&lt;li&gt;There are basically two type of particles: One that you are made of and one that gives rise to the force.&lt;/li&gt;&#xA;&lt;li&gt;One you are made of are called fermions.&lt;/li&gt;&#xA;&lt;li&gt;Dirac found what are now called antimatter. He even didn&amp;rsquo;t believe it first that these particles would exist. They were confirmed in later experiments shortly.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;new-accelerators&#34;&gt;New Accelerators:&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;ID: baf005d8-9b3d-44e0-ae60-15d2d36e4c66&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Linear machines: Proton Proton collision results in a lot of unnecessary stuff in analysis of a collision: so there can be better collision course. A positron electron collision on the other hand would be fairly simple with no unnecessary data: so ease of analysis and finding new particles.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../ox-hugo/_20200424_033533screenshot.png&#34; alt=&#34;Caption&#34;&gt;&#xA;As we can see in this picture, green is all track of particles that is unnecessary here for analysis. There may be two or three particles which are of care but the rectangular patches on the surface shows there are many more coming out. Now, physicists have to dig through this data to actually have a new particle discovered or it&amp;rsquo;s nature understood.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Selinux Sysadmin&amp;rsquo;s guide on selinux:
+<meta name="description" content="Selinux Sysadmin&rsquo;s guide on selinux:
 Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context " />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
@@ -15,7 +15,7 @@ Every process has a LABEL Another important part is type enforcement : isolation
 
     <title>
         
-            Selinux :: Alok&#39;s Blog 
+            Selinux ::  
         
     </title>
 
@@ -24,33 +24,44 @@ Every process has a LABEL Another important part is type enforcement : isolation
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
 
 
-<link rel="stylesheet" href="/main.min.d235e788b40b442aba9cd6c69fdc330353b2dec27dcbc4235961469d2155f5a9.css">
+
+
+
+<link rel="stylesheet" href="../../../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="Selinux">
-<meta itemprop="description" content="Selinux Sysadmin&rsquo;s guide on selinux:
-Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context ">
-<meta itemprop="dateModified" content="2020-04-19T16:10:57+05:45" />
-<meta itemprop="wordCount" content="134"><meta itemprop="image" content="https://dragarok.github.io/"/>
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
 
-<meta name="twitter:title" content="Selinux"/>
-<meta name="twitter:description" content="Selinux Sysadmin&rsquo;s guide on selinux:
-Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context "/>
+  <meta itemprop="name" content="Selinux">
+  <meta itemprop="description" content="Selinux Sysadmin’s guide on selinux:
+Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context">
+  <meta itemprop="datePublished" content="2020-04-19T16:10:57+05:45">
+  <meta itemprop="dateModified" content="2020-04-19T16:10:57+05:45">
+  <meta itemprop="wordCount" content="134">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="Selinux">
+  <meta name="twitter:description" content="Selinux Sysadmin’s guide on selinux:
+Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context">
 
 
 
@@ -71,11 +82,12 @@ Every process has a LABEL Another important part is type enforcement : isolation
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="/" style="text-decoration: none;">
+        <a href="../../../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -89,7 +101,7 @@ Every process has a LABEL Another important part is type enforcement : isolation
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
     </ul>
 </nav>
 
@@ -210,20 +222,6 @@ logfile, content directory, process, ports</li>
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2023</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-</footer>
-
-            
         </div>
 
         
@@ -231,7 +229,7 @@ logfile, content directory, process, ports</li>
 
 
 
-<script type="text/javascript" src="/bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

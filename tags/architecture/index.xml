@@ -1,59 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>architecture on Alok&#39;s Blog</title>
+    <title>Architecture on </title>
     <link>https://dragarok.github.io/tags/architecture/</link>
-    <description>Recent content in architecture on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Architecture on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 19:28:53 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 May 2020 04:04:27 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Efficient Nets</title>
       <link>https://dragarok.github.io/braindump/2020/04/efficient-nets/</link>
       <pubDate>Sun, 19 Apr 2020 19:28:53 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/efficient-nets/</guid>
-      <description>Efficient Nets: Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
-&amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
-&amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
-We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others.</description>
+      <description>&lt;h2 id=&#34;efficient-nets&#34;&gt;Efficient Nets:&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Why all this ?&#xA;&amp;ndash;  Scaling CNN’s only in one direction (eg depth only) will result in rapidly&#xA;deteriorating gains relative to the computational increase needed.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example,&#xA;as after 100 -150 layer’s gains rapidly drop off.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so&#xA;not at all  possibility of sota.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We now know the problem so let&amp;rsquo;s do this instead:&#xA;&amp;ndash; In order to scale up efficiently, all dimensions of depth,&#xA;width and resolution have to be scaled together,&#xA;and there is an optimal balance for each dimension relative to the others.&#xA;VOILA!!!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Markov Nets</title>
       <link>https://dragarok.github.io/braindump/2020/04/markov-nets/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:44 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/markov-nets/</guid>
-      <description>Markov Networks We study this by comparing to Bayesian networks: Burglar, Earthquake, Alarm, He calls, She calls
-&amp;ndash; First, the values do not need to sum to one, that is, the table does not define a probability distribution. It only tells us that configurations with higher values are more likely. Second, there is no conditioning. It is proportional to the joint distribution of all the variables involved, as opposed to conditional distributions in CPDs.</description>
+      <description>&lt;h2 id=&#34;markov-networks&#34;&gt;Markov Networks&lt;/h2&gt;&#xA;&lt;p&gt;We study this by comparing to Bayesian networks:&#xA;Burglar, Earthquake, Alarm, He calls, She calls&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; First, the values do not need to sum to one, that is,&#xA;the table does not define a probability distribution.&#xA;It only tells us that configurations with higher values are more likely.&#xA;Second, there is no conditioning. It is proportional to the joint distribution&#xA;of all the variables involved,&#xA;as opposed to conditional distributions in CPDs.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>RCNN</title>
       <link>https://dragarok.github.io/braindump/2020/04/rcnn/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:40 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/rcnn/</guid>
-      <description>Faster RCNN
-Region Proposal:
-Anchors: Different size bounding box of different aspect ratio and sizes
-Task to be done by RPN:
-Does this anchor contain a relevant object?
-How would we adjust this anchor to better fit the relevant object?
-It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
-Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.</description>
+      <description>&lt;p&gt;Faster RCNN&lt;/p&gt;&#xA;&lt;p&gt;Region Proposal:&lt;/p&gt;&#xA;&lt;p&gt;Anchors: Different size bounding box of different aspect ratio and sizes&lt;/p&gt;&#xA;&lt;p&gt;Task to be done by RPN:&lt;/p&gt;&#xA;&lt;p&gt;Does this anchor contain a relevant object?&lt;/p&gt;&#xA;&lt;p&gt;How would we adjust this anchor to better fit the relevant object?&lt;/p&gt;&#xA;&lt;p&gt;It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.&lt;/p&gt;&#xA;&lt;p&gt;Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>MUZero</title>
       <link>https://dragarok.github.io/braindump/2020/04/muzero/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:20 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/muzero/</guid>
-      <description>MuZero:
-&amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space &amp;ndash; Learns optimal policy, reward functions, value functions automatically &amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly relevant for planning. &amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using previous step&amp;rsquo;s hidden state and hypothetical next action &amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward</description>
+      <description>&lt;p&gt;MuZero:&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space&#xA;&amp;ndash; Learns optimal policy, reward functions, value functions automatically&#xA;&amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly&#xA;relevant for planning.&#xA;&amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using&#xA;previous step&amp;rsquo;s hidden state and hypothetical next action&#xA;&amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>MUZero</title>
+      <link>https://dragarok.github.io/ai/muzero/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://dragarok.github.io/ai/muzero/</guid>
+      <description>&lt;p&gt;MuZero:&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space&#xA;&amp;ndash; Learns optimal policy, reward functions, value functions automatically&#xA;&amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly&#xA;relevant for planning.&#xA;&amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using&#xA;previous step&amp;rsquo;s hidden state and hypothetical next action&#xA;&amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Efficient Nets</title>
+      <link>https://dragarok.github.io/ai/efficient_nets/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://dragarok.github.io/ai/efficient_nets/</guid>
+      <description>&lt;h2 id=&#34;efficient-nets&#34;&gt;Efficient Nets:&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Why all this ?&#xA;&amp;ndash;  Scaling CNN’s only in one direction (eg depth only) will result in rapidly&#xA;deteriorating gains relative to the computational increase needed.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example,&#xA;as after 100 -150 layer’s gains rapidly drop off.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so&#xA;not at all  possibility of sota.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We now know the problem so let&amp;rsquo;s do this instead:&#xA;&amp;ndash; In order to scale up efficiently, all dimensions of depth,&#xA;width and resolution have to be scaled together,&#xA;and there is an optimal balance for each dimension relative to the others.&#xA;VOILA!!!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markov Nets</title>
+      <link>https://dragarok.github.io/ai/markovnets/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://dragarok.github.io/ai/markovnets/</guid>
+      <description>&lt;h2 id=&#34;markov-networks&#34;&gt;Markov Networks&lt;/h2&gt;&#xA;&lt;p&gt;We study this by comparing to Bayesian networks:&#xA;Burglar, Earthquake, Alarm, He calls, She calls&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; First, the values do not need to sum to one, that is,&#xA;the table does not define a probability distribution.&#xA;It only tells us that configurations with higher values are more likely.&#xA;Second, there is no conditioning. It is proportional to the joint distribution&#xA;of all the variables involved,&#xA;as opposed to conditional distributions in CPDs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RCNN</title>
+      <link>https://dragarok.github.io/ai/rcnn/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://dragarok.github.io/ai/rcnn/</guid>
+      <description>&lt;h2 id=&#34;faster-rcnn&#34;&gt;Faster RCNN&lt;/h2&gt;&#xA;&lt;h3 id=&#34;region-proposal&#34;&gt;Region Proposal:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Anchors: Different size bounding box of different aspect ratio and sizes&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Task to be done by RPN:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Does this anchor contain a relevant object?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;How would we adjust this anchor to better fit the relevant object?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

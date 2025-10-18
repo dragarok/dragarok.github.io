@@ -1,49 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vision on Alok&#39;s Blog</title>
+    <title>Vision on </title>
     <link>https://dragarok.github.io/tags/vision/</link>
-    <description>Recent content in vision on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Vision on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 19:28:53 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/vision/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 May 2020 04:04:27 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/vision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Efficient Nets</title>
       <link>https://dragarok.github.io/braindump/2020/04/efficient-nets/</link>
       <pubDate>Sun, 19 Apr 2020 19:28:53 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/efficient-nets/</guid>
-      <description>Efficient Nets: Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
-&amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
-&amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
-We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others.</description>
+      <description>&lt;h2 id=&#34;efficient-nets&#34;&gt;Efficient Nets:&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Why all this ?&#xA;&amp;ndash;  Scaling CNN’s only in one direction (eg depth only) will result in rapidly&#xA;deteriorating gains relative to the computational increase needed.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example,&#xA;as after 100 -150 layer’s gains rapidly drop off.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so&#xA;not at all  possibility of sota.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We now know the problem so let&amp;rsquo;s do this instead:&#xA;&amp;ndash; In order to scale up efficiently, all dimensions of depth,&#xA;width and resolution have to be scaled together,&#xA;and there is an optimal balance for each dimension relative to the others.&#xA;VOILA!!!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Convolution</title>
       <link>https://dragarok.github.io/braindump/2020/04/convolution/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:43 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/convolution/</guid>
-      <description>Convolution Image will be of shape: (H * W * channels)
-Our kernel will also be of shape (Hk * Wk * channels)
-The number of channels is same as it is volume convolution.
-In case of 1 * 1 convolution, the convolution helps decrease or increase the feature map dimensions.</description>
+      <description>&lt;h2 id=&#34;convolution&#34;&gt;Convolution&lt;/h2&gt;&#xA;&lt;p&gt;Image will be of shape: (H * W * channels)&lt;/p&gt;&#xA;&lt;p&gt;Our kernel will also be of shape (Hk * Wk * channels)&lt;/p&gt;&#xA;&lt;p&gt;The number of channels is same as it is volume convolution.&lt;/p&gt;&#xA;&lt;p&gt;In case of 1 * 1 convolution, the convolution helps decrease or increase the feature map dimensions.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Image Processing Pipeline</title>
       <link>https://dragarok.github.io/braindump/2020/04/image-processing-pipeline/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:34 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/image-processing-pipeline/</guid>
-      <description>Integrating image processing with machine learning consists of following steps:
-Decide your project title/purpose/objectives.
-Collect data, i.e images relevant to your project.
-Preprocess all the collected images. Preprocessing steps may be different for different projects. It basically includes filtering, noise removal, grayscale conversion, binary image formation, morphological operation, thresholding and so on.
-Divide the preprocessed images into two sets: training and tesing sets.
-Extract features that you think will most probably define your data.</description>
+      <description>&lt;p&gt;Integrating image processing with machine learning consists of following steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Decide your project title/purpose/objectives.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Collect data, i.e images relevant to your project.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Preprocess all the collected images. Preprocessing steps may be different for different projects. It basically includes filtering, noise     removal, grayscale conversion, binary image formation, morphological operation, thresholding and so on.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Divide the preprocessed images into two sets: training and tesing sets.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Extract features that you think will most probably define your data. (For example, if you are working on a face detection project, one possible feature could be the distance between the two eyes. You can think of a number of such features) (very important step)&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Efficient Nets</title>
+      <link>https://dragarok.github.io/ai/efficient_nets/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://dragarok.github.io/ai/efficient_nets/</guid>
+      <description>&lt;h2 id=&#34;efficient-nets&#34;&gt;Efficient Nets:&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Why all this ?&#xA;&amp;ndash;  Scaling CNN’s only in one direction (eg depth only) will result in rapidly&#xA;deteriorating gains relative to the computational increase needed.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example,&#xA;as after 100 -150 layer’s gains rapidly drop off.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so&#xA;not at all  possibility of sota.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We now know the problem so let&amp;rsquo;s do this instead:&#xA;&amp;ndash; In order to scale up efficiently, all dimensions of depth,&#xA;width and resolution have to be scaled together,&#xA;and there is an optimal balance for each dimension relative to the others.&#xA;VOILA!!!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Image Processing Pipeline</title>
+      <link>https://dragarok.github.io/ai/image_processing_pipeline/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://dragarok.github.io/ai/image_processing_pipeline/</guid>
+      <description>&lt;p&gt;Integrating image processing with machine learning consists of following steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Decide your project title/purpose/objectives.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Collect data, i.e images relevant to your project.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Preprocess all the collected images. Preprocessing steps may be different for different projects. It basically includes filtering, noise     removal, grayscale conversion, binary image formation, morphological operation, thresholding and so on.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Divide the preprocessed images into two sets: training and tesing sets.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Extract features that you think will most probably define your data. (For example, if you are working on a face detection project, one possible feature could be the distance between the two eyes. You can think of a number of such features) (very important step)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Convolution</title>
+      <link>https://dragarok.github.io/ai/convolution/</link>
+      <pubDate>Thu, 05 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://dragarok.github.io/ai/convolution/</guid>
+      <description>&lt;h2 id=&#34;convolution&#34;&gt;Convolution&lt;/h2&gt;&#xA;&lt;p&gt;Image will be of shape: (H * W * channels)&lt;/p&gt;&#xA;&lt;p&gt;Our kernel will also be of shape (Hk * Wk * channels)&lt;/p&gt;&#xA;&lt;p&gt;The number of channels is same as it is volume convolution.&lt;/p&gt;&#xA;&lt;p&gt;In case of 1 * 1 convolution, the convolution helps decrease or increase the feature map dimensions.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

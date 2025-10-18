@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>obiee on Alok&#39;s Blog</title>
+    <title>Obiee on </title>
     <link>https://dragarok.github.io/tags/obiee/</link>
-    <description>Recent content in obiee on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Obiee on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:53 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/obiee/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:53 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/obiee/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>obiee</title>
       <link>https://dragarok.github.io/braindump/2020/04/obiee/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:53 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/obiee/</guid>
-      <description>Steps Catalog &amp;ndash;&amp;gt; Get to columns and filters. Change defaults tab to criteria save as give a proper name for result change all columns and filters as necessary. save again go to results then. export results. if &amp;gt; 2500 : export to csv. Edit the sheet RMS Sales recon Tran data In tran_data we have item, units, tran_code as major fields. if it belongs to a pack, then it has a ref_pack_no which is a packitem object.</description>
+      <description>&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Catalog &amp;ndash;&amp;gt; Get to columns and filters.&lt;/li&gt;&#xA;&lt;li&gt;Change defaults tab to criteria&lt;/li&gt;&#xA;&lt;li&gt;save as&lt;/li&gt;&#xA;&lt;li&gt;give a proper name for result&lt;/li&gt;&#xA;&lt;li&gt;change all columns and  filters as necessary.&lt;/li&gt;&#xA;&lt;li&gt;save again&lt;/li&gt;&#xA;&lt;li&gt;go to results then.&lt;/li&gt;&#xA;&lt;li&gt;export results.&#xA;if &amp;gt; 2500 : export to csv.&lt;/li&gt;&#xA;&lt;li&gt;Edit the sheet&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;rms-sales-recon&#34;&gt;RMS Sales recon&lt;/h2&gt;&#xA;&lt;h3 id=&#34;tran-data&#34;&gt;Tran data&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In tran_data we have item, units, tran_code as major fields.&lt;/li&gt;&#xA;&lt;li&gt;if it belongs to a pack, then it has a ref_pack_no which is a packitem object.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;packitem&#34;&gt;Packitem&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;It has pack_no and seq_no as main fields: seq_no for multiple items in a pack&#xA;and make it unique.&lt;/li&gt;&#xA;&lt;li&gt;it has item inside it&lt;/li&gt;&#xA;&lt;li&gt;item_parent if available.&lt;/li&gt;&#xA;&lt;li&gt;either item has to be there or item_parent has to be there. Both can&amp;rsquo;t be null.&lt;/li&gt;&#xA;&lt;li&gt;pack_qty has quantity of items.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;packitem-breakout&#34;&gt;Packitem breakout&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;pack may contain a pack, if so the nested pack and it&amp;rsquo;s items are inside&#xA;packitem breakout table.&lt;/li&gt;&#xA;&lt;li&gt;similar to packitem&lt;/li&gt;&#xA;&lt;li&gt;COMP_PACK_NO: Contains the inner pack item number if a pack item is added to an outer pack.&lt;/li&gt;&#xA;&lt;li&gt;COMP_PACK_QTY: This field is null if comp_pack_no is not populated. Else if comp_pack_no is&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;populated then this field contains the quantity of comp_pack_no in a pack_no.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

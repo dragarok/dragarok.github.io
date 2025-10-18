@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Basic terminologies:  Dimensions Facts  Table and table naming conventions  initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region &#43; dimension_or_fact &#43; content &#43; granularity &#43; usage  Column naming:  Naming: Attribute or measure &#43; data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar." />
+<meta name="description" content="Basic terminologies: Dimensions Facts Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region &#43; dimension_or_fact &#43; content &#43; granularity &#43; usage Column naming: Naming: Attribute or measure &#43; data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar. Matrices are designated with MTX suffix. Dimension Tables: Examples of naming: DWH_D_TIM_YR_LU : data warehouse, dimension table, timestamp, year, Lookup CURR_TIM : curr timestamp Some examples
+" />
 <meta name="keywords" content="Blog, oracle, datawarehouse" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -14,7 +15,7 @@
 
     <title>
         
-            RA :: Alok&#39;s Blog 
+            RA ::  
         
     </title>
 
@@ -34,7 +35,7 @@
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
@@ -48,20 +49,18 @@
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="RA">
-<meta itemprop="description" content="Basic terminologies:  Dimensions Facts  Table and table naming conventions  initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region &#43; dimension_or_fact &#43; content &#43; granularity &#43; usage  Column naming:  Naming: Attribute or measure &#43; data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar.">
-<meta itemprop="dateModified" content="2020-08-18T07:54:57+05:45" />
-<meta itemprop="wordCount" content="183">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
 
-
-
-<meta itemprop="keywords" content="oracle,datawarehouse," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
-
-<meta name="twitter:title" content="RA"/>
-<meta name="twitter:description" content="Basic terminologies:  Dimensions Facts  Table and table naming conventions  initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region &#43; dimension_or_fact &#43; content &#43; granularity &#43; usage  Column naming:  Naming: Attribute or measure &#43; data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar."/>
+  <meta itemprop="name" content="RA">
+  <meta itemprop="description" content="Basic terminologies: Dimensions Facts Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region &#43; dimension_or_fact &#43; content &#43; granularity &#43; usage Column naming: Naming: Attribute or measure &#43; data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar. Matrices are designated with MTX suffix. Dimension Tables: Examples of naming: DWH_D_TIM_YR_LU : data warehouse, dimension table, timestamp, year, Lookup CURR_TIM : curr timestamp Some examples">
+  <meta itemprop="datePublished" content="2020-08-18T07:54:57+05:45">
+  <meta itemprop="dateModified" content="2020-08-18T07:54:57+05:45">
+  <meta itemprop="wordCount" content="183">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta itemprop="keywords" content="Oracle,Datawarehouse">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="RA">
+  <meta name="twitter:description" content="Basic terminologies: Dimensions Facts Table and table naming conventions initial 3 letter prefix: DWH, ODS etc. Content: e.g. PRD, SLS Dimension or Fact: D, F Granularity : Department, day/week etc. Suffix as use case: Lookup vs Base Vs Aggregate vs Matrix Naming: data region &#43; dimension_or_fact &#43; content &#43; granularity &#43; usage Column naming: Naming: Attribute or measure &#43; data type Attribute: Price etc. Data type: KEY, ID, DESC Maintenance columns: insert timestamp, update, close, close_dt Business calendar: 4-4-5 or 4-5-4 or 5-4-4 and 13 period calendar. Matrices are designated with MTX suffix. Dimension Tables: Examples of naming: DWH_D_TIM_YR_LU : data warehouse, dimension table, timestamp, year, Lookup CURR_TIM : curr timestamp Some examples">
 
 
 
@@ -176,7 +175,7 @@
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Some examples</p>
@@ -259,22 +258,6 @@ location group matrix etc.</li>
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -282,7 +265,7 @@ location group matrix etc.</li>
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

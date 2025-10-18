@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>photoshop on Alok&#39;s Blog</title>
+    <title>Photoshop on </title>
     <link>https://dragarok.github.io/tags/photoshop/</link>
-    <description>Recent content in photoshop on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Photoshop on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:14 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/photoshop/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:14 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/photoshop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Photoshop</title>
       <link>https://dragarok.github.io/braindump/2020/04/photoshop/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:14 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/photoshop/</guid>
-      <description>Photoshop carefulness: Active layer is to be cared.
-Not on bed or something
-control +g go back
-move tool by pressing V
-always group layers and rename them
-control g for group after selecting using control
-Never use yellow background with white text Designing a cursor to appear on the design . Selecting a hover to other text color and also the opacity to change either low or high</description>
+      <description>&lt;h2 id=&#34;photoshop-carefulness&#34;&gt;Photoshop carefulness:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Active layer is to be cared.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Not on bed or something&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;control +g go back&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;move tool by pressing V&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;always group layers and rename them&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;control g for group after selecting using control&lt;/p&gt;&#xA;&lt;p&gt;Never use yellow background with white text&#xA;Designing a cursor to appear on the design .&#xA;Selecting a hover to other text color and also the opacity to change either low or high&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>

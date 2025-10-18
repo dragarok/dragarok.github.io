@@ -7,7 +7,8 @@
 <meta name="author" content="[Alok Regmi]">
 <meta name="description" content="### Author: Rutherford, Adam
 loc 1 - Here two sets of multiplexers select register which perform input data for ALU. A decoder selects destination register by enabling its load input. The function select in ALU determines the particular operation that to be performed
-loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A selector (SELA): to place the content of R1 into bus A." />
+loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A selector (SELA): to place the content of R1 into bus A.2. MUX B selector (SELB): to place the content of R2 into bus B.3. ALU operation selector (OPR): to provide arithmetic addition A &#43; B.4. Decoder destination selector (SELD): to transfer the content of the output bus into R3
+" />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -16,7 +17,7 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
 
     <title>
         
-            A Brief History of Everyone who Ever Lived: The Stories in Our Genes :: Alok&#39;s Blog 
+            A Brief History of Everyone who Ever Lived: The Stories in Our Genes ::  
         
     </title>
 
@@ -25,35 +26,46 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
 
 
-<link rel="stylesheet" href="/main.min.d235e788b40b442aba9cd6c69fdc330353b2dec27dcbc4235961469d2155f5a9.css">
+
+
+
+<link rel="stylesheet" href="../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="A Brief History of Everyone who Ever Lived: The Stories in Our Genes">
-<meta itemprop="description" content="### Author: Rutherford, Adam
-loc 1 - Here two sets of multiplexers select register which perform input data for ALU. A decoder selects destination register by enabling its load input. The function select in ALU determines the particular operation that to be performed
-loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A selector (SELA): to place the content of R1 into bus A.">
-<meta itemprop="dateModified" content="2020-04-26T03:08:38+05:45" />
-<meta itemprop="wordCount" content="1401"><meta itemprop="image" content="https://dragarok.github.io/"/>
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
 
-<meta name="twitter:title" content="A Brief History of Everyone who Ever Lived: The Stories in Our Genes"/>
-<meta name="twitter:description" content="### Author: Rutherford, Adam
+  <meta itemprop="name" content="A Brief History of Everyone who Ever Lived: The Stories in Our Genes">
+  <meta itemprop="description" content="### Author: Rutherford, Adam
 loc 1 - Here two sets of multiplexers select register which perform input data for ALU. A decoder selects destination register by enabling its load input. The function select in ALU determines the particular operation that to be performed
-loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A selector (SELA): to place the content of R1 into bus A."/>
+loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A selector (SELA): to place the content of R1 into bus A.2. MUX B selector (SELB): to place the content of R2 into bus B.3. ALU operation selector (OPR): to provide arithmetic addition A &#43; B.4. Decoder destination selector (SELD): to transfer the content of the output bus into R3">
+  <meta itemprop="datePublished" content="2020-04-26T03:08:38+05:45">
+  <meta itemprop="dateModified" content="2020-04-26T03:08:38+05:45">
+  <meta itemprop="wordCount" content="1401">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="A Brief History of Everyone who Ever Lived: The Stories in Our Genes">
+  <meta name="twitter:description" content="### Author: Rutherford, Adam
+loc 1 - Here two sets of multiplexers select register which perform input data for ALU. A decoder selects destination register by enabling its load input. The function select in ALU determines the particular operation that to be performed
+loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A selector (SELA): to place the content of R1 into bus A.2. MUX B selector (SELB): to place the content of R2 into bus B.3. ALU operation selector (OPR): to provide arithmetic addition A &#43; B.4. Decoder destination selector (SELD): to transfer the content of the output bus into R3">
 
 
 
@@ -74,11 +86,12 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="/" style="text-decoration: none;">
+        <a href="../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -92,7 +105,7 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
     </ul>
 </nav>
 
@@ -187,7 +200,7 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
 <p>loc 14 - The three address instruction format requires a very complex design to hold the three address references</p>
 </li>
 <li>
-<p>loc 15 - Example: ADD X, Y, Z; X  Y + Z  ADVANTAGE: It results in short programs when evaluating arithmetic expressions.  DISADVANTAGE: The instructions requires too many bits to specify 3 addresses.Two address instruction 2. Two-address instructions are the most common in commercial computers. Here again each address field can specify either a processor register, or a memory word. One address must do double duty as both operand and result. The two address instruction format reduces the space requirement. To avoid altering the value of an operand, a MOV instruction is used to move one of the values to a result or temporary location T, before performing the operation.Format: Op X, Y; X  X Op Y Example: SUB X, Y; X  X - Y 3. One address Instruction It was generally used in earlier machine with the implied address been a CPU register known as accumulator. The accumulator contains one of the operand and is used to store the result.One-address instruction uses an implied accumulator (Ac) register for all data manipulation. All operations are done between the AC register and a memory operand. We use LOAD and STORE instruction for transfer to and from memory and Ac register.Format: Op X; Ac  Ac Op X Example: MUL X; Ac  Ac * X 4. Zero address Instruction It does not use address field for the instruction like ADD, SUB, MUL, DIV etc. The PUSH and POP instructions, however, need an address field to specify the operand that communicates with the stack. The name “Zero” address is given because of the absence of an address field in the computational instruction.Format: Op; TOS  TOS Op (TOS – 1) Example: DIV; TOS  TOS DIV (TOS – 1) Example: To illustrate the influence of the number of address on computer programs, we will evaluate the arithmetic statement X=(A+B)*(C+D) using Zero, one, two, or three address instructions.1.Three-Address Instructions: ADD R1, A, B; R1  M[A] + M[B] ADD R2, C, D; R2  M[C] + M[D] MUL X, R1,R2; M<input checked="" disabled="" type="checkbox">  R1 * R2 It is assumed that the computer has two processor registers R1 and R2. The symbol M[A] denotes the operand at memory address symbolized by A.2.Two-Address Instructions: MOV R1, A; R1  M[A] ADD R1, B; R1  R1 + M[B]Compiled By: Er. Hari Aryal [haryal4@gmail.com] References: W. Stalling &amp; M. Mano | 15</p>
+<p>loc 15 - Example: ADD X, Y, Z; X  Y + Z  ADVANTAGE: It results in short programs when evaluating arithmetic expressions.  DISADVANTAGE: The instructions requires too many bits to specify 3 addresses.Two address instruction 2. Two-address instructions are the most common in commercial computers. Here again each address field can specify either a processor register, or a memory word. One address must do double duty as both operand and result. The two address instruction format reduces the space requirement. To avoid altering the value of an operand, a MOV instruction is used to move one of the values to a result or temporary location T, before performing the operation.Format: Op X, Y; X  X Op Y Example: SUB X, Y; X  X - Y 3. One address Instruction It was generally used in earlier machine with the implied address been a CPU register known as accumulator. The accumulator contains one of the operand and is used to store the result.One-address instruction uses an implied accumulator (Ac) register for all data manipulation. All operations are done between the AC register and a memory operand. We use LOAD and STORE instruction for transfer to and from memory and Ac register.Format: Op X; Ac  Ac Op X Example: MUL X; Ac  Ac * X 4. Zero address Instruction It does not use address field for the instruction like ADD, SUB, MUL, DIV etc. The PUSH and POP instructions, however, need an address field to specify the operand that communicates with the stack. The name “Zero” address is given because of the absence of an address field in the computational instruction.Format: Op; TOS  TOS Op (TOS – 1) Example: DIV; TOS  TOS DIV (TOS – 1) Example: To illustrate the influence of the number of address on computer programs, we will evaluate the arithmetic statement X=(A+B)*(C+D) using Zero, one, two, or three address instructions.1.Three-Address Instructions: ADD R1, A, B; R1  M[A] + M[B] ADD R2, C, D; R2  M[C] + M[D] MUL X, R1,R2; M[X]  R1 * R2 It is assumed that the computer has two processor registers R1 and R2. The symbol M[A] denotes the operand at memory address symbolized by A.2.Two-Address Instructions: MOV R1, A; R1  M[A] ADD R1, B; R1  R1 + M[B]Compiled By: Er. Hari Aryal [haryal4@gmail.com] References: W. Stalling &amp; M. Mano | 15</p>
 </li>
 <li>
 <p>loc 17 - It was mentioned previously that the address field of an instruction may specify either a memory word or a processor register. When the address field specifies a processor register, the instruction is said to be in register-mode</p>
@@ -249,20 +262,6 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2023</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-</footer>
-
-            
         </div>
 
         
@@ -270,7 +269,7 @@ loc 1 - For an example to perform the operation: R3  R1 &#43; R2 1. MUX A sel
 
 
 
-<script type="text/javascript" src="/bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
+<script type="text/javascript" src="../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

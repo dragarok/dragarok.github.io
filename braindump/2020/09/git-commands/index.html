@@ -5,15 +5,20 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="&amp;ndash;tags: Useful &amp;ndash;references: https://learngitbranching.js.org/
-Commands   git add : tracking with git
-  git status : current status of tracked, untracked, changed, committed files.
-  git add filename.extension
-  (only after making the file it can be done)
-  double add command - stages the new changes
-  git commit
-  git add . -&amp;gt; all files are committed
-  git add *." />
+<meta name="description" content="&ndash;tags: Useful &ndash;references: https://learngitbranching.js.org/
+Commands git add : tracking with git
+git status : current status of tracked, untracked, changed, committed files.
+git add filename.extension
+(only after making the file it can be done)
+double add command - stages the new changes
+git commit
+git add . -&gt; all files are committed
+git add *.html -&gt;only html files are committed
+touch .gitignore
+git branch Mybranch
+git commit -m &lsquo;commit command&rsquo;
+git checkout master
+" />
 <meta name="keywords" content="Blog, git, tips" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -22,7 +27,7 @@ Commands   git add : tracking with git
 
     <title>
         
-            Git Commands :: Alok&#39;s Blog 
+            Git Commands ::  
         
     </title>
 
@@ -42,7 +47,7 @@ Commands   git add : tracking with git
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
@@ -56,36 +61,42 @@ Commands   git add : tracking with git
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="Git Commands">
-<meta itemprop="description" content="&ndash;tags: Useful &ndash;references: https://learngitbranching.js.org/
-Commands   git add : tracking with git
-  git status : current status of tracked, untracked, changed, committed files.
-  git add filename.extension
-  (only after making the file it can be done)
-  double add command - stages the new changes
-  git commit
-  git add . -&gt; all files are committed
-  git add *.">
-<meta itemprop="dateModified" content="2020-09-23T21:58:34+05:45" />
-<meta itemprop="wordCount" content="1227">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
 
-
-
-<meta itemprop="keywords" content="git,tips," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
-
-<meta name="twitter:title" content="Git Commands"/>
-<meta name="twitter:description" content="&ndash;tags: Useful &ndash;references: https://learngitbranching.js.org/
-Commands   git add : tracking with git
-  git status : current status of tracked, untracked, changed, committed files.
-  git add filename.extension
-  (only after making the file it can be done)
-  double add command - stages the new changes
-  git commit
-  git add . -&gt; all files are committed
-  git add *."/>
+  <meta itemprop="name" content="Git Commands">
+  <meta itemprop="description" content="–tags: Useful –references: https://learngitbranching.js.org/
+Commands git add : tracking with git
+git status : current status of tracked, untracked, changed, committed files.
+git add filename.extension
+(only after making the file it can be done)
+double add command - stages the new changes
+git commit
+git add . -&gt; all files are committed
+git add *.html -&gt;only html files are committed
+touch .gitignore
+git branch Mybranch
+git commit -m ‘commit command’
+git checkout master">
+  <meta itemprop="datePublished" content="2020-09-23T21:58:34+05:45">
+  <meta itemprop="dateModified" content="2020-09-23T21:58:34+05:45">
+  <meta itemprop="wordCount" content="1227">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta itemprop="keywords" content="Git,Tips">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="Git Commands">
+  <meta name="twitter:description" content="–tags: Useful –references: https://learngitbranching.js.org/
+Commands git add : tracking with git
+git status : current status of tracked, untracked, changed, committed files.
+git add filename.extension
+(only after making the file it can be done)
+double add command - stages the new changes
+git commit
+git add . -&gt; all files are committed
+git add *.html -&gt;only html files are committed
+touch .gitignore
+git branch Mybranch
+git commit -m ‘commit command’
+git checkout master">
 
 
 
@@ -291,7 +302,7 @@ easier to understand and go along.</li>
 </ul>
 <h3 id="new-branch-and-checkout-to-before-merge">New branch and checkout to before merge:</h3>
 <ul>
-<li>git checkout -b bugWork HEAD~1^2~1: means first go to ancestor of
+<li>git checkout -b bugWork HEAD<del>1^2</del>1: means first go to ancestor of
 current_branch, choose the second parent to move up, then go back one commit
 up and make it bugWork branch.</li>
 </ul>
@@ -339,7 +350,7 @@ will get ancestor of master to a new branch foo.</li>
 </ul>
 <h3 id="source-in-push-and-fetch-can-be-nothing">Source in push and fetch can be nothing:</h3>
 <ul>
-<li>Git abuses the <!-- raw HTML omitted --> parameter in two weird ways. These two abuses come
+<li>Git abuses the <source> parameter in two weird ways. These two abuses come
 from the fact that you can technically specify &ldquo;nothing&rdquo; as a valid source for
 both git push and git fetch.</li>
 <li>Fetching nothing to local creates a new branch</li>
@@ -366,163 +377,163 @@ both git push and git fetch.</li>
 </ul>
 <h2 id="more-helpful-commands">More Helpful Commands</h2>
 <h3 id="stash-untracked-files-too">Stash Untracked files too</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git stash -u
-</code></pre></div><h3 id="reflog">Reflog</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash -u
+</span></span></code></pre></div><h3 id="reflog">Reflog</h3>
 <p>This shows all the reference records of everything that we have changed.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git reflog
-git reflog show branch_name
-</code></pre></div><p>The second command shows the reflog for a particular branch. Now to take the branch to a specific commit in the past, you can do:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git reset --hard commit_hash
-</code></pre></div><h3 id="undoing">Undoing</h3>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reflog
+</span></span><span style="display:flex;"><span>git reflog show branch_name
+</span></span></code></pre></div><p>The second command shows the reflog for a particular branch. Now to take the branch to a specific commit in the past, you can do:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reset --hard commit_hash
+</span></span></code></pre></div><h3 id="undoing">Undoing</h3>
+<!--list-separator-->
 <ul>
 <li>Including forgotten files</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>EGIN_SRC sh</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>add file_name</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>commit &ndash;amend &ndash;no-edit</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>ND_SRC</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>o this often. I forgot to add some static files or migrations in my commit. This will come handy.</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>Making a command alias for long command</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>EGIN_SRC sh</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>config &ndash;global alias.car &lsquo;commit &ndash;amend &ndash;no-edit&rsquo;</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>ND_SRC</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>s means it will make us not type the whole lengthy message to reuse the commit in making some amendments to it.</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>Reset the changes not committed</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>EGIN_SRC sh</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>checkout .</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>ND_SRC</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>cks us out to the most recent commit on that branch.</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>Remove a commit completely</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>EGIN_SRC sh</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>reset &ndash;soft HEAD^</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>ND_SRC</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>t reset means leave the files in the working directory and index untouched.  ^ goes to parent commit of HEAD.  This just takes us back to one commit before.</li>
 </ul>
 <h3 id="history">History</h3>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>More informative log</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git log --oneline --decorate --graph --all -30
-</code></pre></div><p>The last one is the number of commits to show.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --oneline --decorate --graph --all -30
+</span></span></code></pre></div><p>The last one is the number of commits to show.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Find something on the log</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git log --grep -E -i <span style="color:#e6db74">&#39;textpattern&#39;</span>
-</code></pre></div><p>-E stands for extended regex and -i for case insensitive search.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --grep -E -i <span style="color:#e6db74">&#39;textpattern&#39;</span>
+</span></span></code></pre></div><p>-E stands for extended regex and -i for case insensitive search.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Searching within commit code</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git log -S <span style="color:#e6db74">&#34;search_term&#34;</span>
-</code></pre></div><p>Now you can find this search_term on the previously committed changed files as well.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log -S <span style="color:#e6db74">&#34;search_term&#34;</span>
+</span></span></code></pre></div><p>Now you can find this search_term on the previously committed changed files as well.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Single file log</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git log --oneline -- file_name
-</code></pre></div><p>You get the log for specific file and see it&rsquo;s history.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --oneline -- file_name
+</span></span></code></pre></div><p>You get the log for specific file and see it&rsquo;s history.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Blame</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git blame file_name
-</code></pre></div><p>See most recent commit that modified a given line, for every line in the file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git blame file_name
+</span></span></code></pre></div><p>See most recent commit that modified a given line, for every line in the file.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Show</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git show commit_hash
-</code></pre></div><p>By finding commit_hash from blame and log commands, we can use the commit_hash to compare to present changes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git show commit_hash
+</span></span></code></pre></div><p>By finding commit_hash from blame and log commands, we can use the commit_hash to compare to present changes.</p>
 </li>
 </ul>
 <h3 id="adding-files-with-multiple-changes">Adding files with multiple changes</h3>
 <p>Often times you work on some file, you might not want to add all the changes at once. If you do <em>git add file_name</em>, it adds everything.
 So to add changes iteratively:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git add --patch
-</code></pre></div><p>Gives options to skip the hunch, split it, stage this, quit and so on.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add --patch
+</span></span></code></pre></div><p>Gives options to skip the hunch, split it, stage this, quit and so on.</p>
 <h3 id="cherry-pick">Cherry Pick</h3>
 <p>Often times when you commit on the master branch than on your feature branch, we can cherry pick to copy commits across branches.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git diff origin/master..master
-</code></pre></div><p>First we need to make sure the specified range is good to be copied.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff origin/master..master
+</span></span></code></pre></div><p>First we need to make sure the specified range is good to be copied.
 Then we go to our branch using <em>checkout -b branch_name</em> and then use such command:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git cherry-pick origin/master..master
-</code></pre></div><p>By doing this we cherry pick the needed commits to our branch.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git cherry-pick origin/master..master
+</span></span></code></pre></div><p>By doing this we cherry pick the needed commits to our branch.
 Then go to master and remove the commits:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git checkout master
-git reset --hard origin/master
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout master
+</span></span><span style="display:flex;"><span>git reset --hard origin/master
+</span></span></code></pre></div>
             </div>
         </article>
 
@@ -572,22 +583,6 @@ git reset --hard origin/master
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -595,7 +590,7 @@ git reset --hard origin/master
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="TODOGain Curve Writing formulas formula_obj &amp;lt;- var1 ~ var2 formula_obj &amp;lt;- var1 ~ var2 &#43; var3 formula_obj &amp;lt;- as.formula(&amp;#34;var1 ~ var2&amp;#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var)  print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df." />
+<meta name="description" content="TODO Gain Curve Writing formulas formula_obj &lt;- var1 ~ var2 formula_obj &lt;- var1 ~ var2 &#43; var3 formula_obj &lt;- as.formula(&#34;var1 ~ var2&#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var) print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df.residual, sigma and so on. wrapFTest shows the most relevant details of the model. Predicting using the model predict(model, newdata = new_data_vals) Collinearity The variables assumed to be independent might not be independent after all. Unusually high collinearity may make model unstable though. Gain curve The gain curve is important in sorting the outcome rather than making all predictions correct. Checks if model&rsquo;s predictions sort in the same order as the true outcome.
+" />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -14,7 +15,7 @@
 
     <title>
         
-            R Programming 105- Supervised Learning 2 Regression :: Alok&#39;s Blog 
+            R Programming 105- Supervised Learning 2 Regression ::  
         
     </title>
 
@@ -34,7 +35,7 @@
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
@@ -48,21 +49,17 @@
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="R Programming 105- Supervised Learning 2 Regression">
-<meta itemprop="description" content="TODOGain Curve Writing formulas formula_obj &lt;- var1 ~ var2 formula_obj &lt;- var1 ~ var2 &#43; var3 formula_obj &lt;- as.formula(&#34;var1 ~ var2&#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var)  print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df.">
-<meta itemprop="datePublished" content="2020-10-08T00:00:00+05:45" />
-<meta itemprop="dateModified" content="2020-10-09T10:40:57+05:45" />
-<meta itemprop="wordCount" content="956">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
 
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
-
-<meta name="twitter:title" content="R Programming 105- Supervised Learning 2 Regression"/>
-<meta name="twitter:description" content="TODOGain Curve Writing formulas formula_obj &lt;- var1 ~ var2 formula_obj &lt;- var1 ~ var2 &#43; var3 formula_obj &lt;- as.formula(&#34;var1 ~ var2&#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var)  print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df."/>
+  <meta itemprop="name" content="R Programming 105- Supervised Learning 2 Regression">
+  <meta itemprop="description" content="TODO Gain Curve Writing formulas formula_obj &lt;- var1 ~ var2 formula_obj &lt;- var1 ~ var2 &#43; var3 formula_obj &lt;- as.formula(&#34;var1 ~ var2&#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var) print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df.residual, sigma and so on. wrapFTest shows the most relevant details of the model. Predicting using the model predict(model, newdata = new_data_vals) Collinearity The variables assumed to be independent might not be independent after all. Unusually high collinearity may make model unstable though. Gain curve The gain curve is important in sorting the outcome rather than making all predictions correct. Checks if model’s predictions sort in the same order as the true outcome.">
+  <meta itemprop="datePublished" content="2020-10-08T00:00:00+05:45">
+  <meta itemprop="dateModified" content="2020-10-09T10:40:57+05:45">
+  <meta itemprop="wordCount" content="957">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="R Programming 105- Supervised Learning 2 Regression">
+  <meta name="twitter:description" content="TODO Gain Curve Writing formulas formula_obj &lt;- var1 ~ var2 formula_obj &lt;- var1 ~ var2 &#43; var3 formula_obj &lt;- as.formula(&#34;var1 ~ var2&#34;) Getting information about the model print(model_var) summary(model_var) broom::glance(model_var) sigr:wrapFTest(model_var) print shows the basic formula used and the coefficients for the model. summary shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on. glance shows the whole data from summary in the form of nice dataframe with columns such as df.residual, sigma and so on. wrapFTest shows the most relevant details of the model. Predicting using the model predict(model, newdata = new_data_vals) Collinearity The variables assumed to be independent might not be independent after all. Unusually high collinearity may make model unstable though. Gain curve The gain curve is important in sorting the outcome rather than making all predictions correct. Checks if model’s predictions sort in the same order as the true outcome.">
 
 
 
@@ -145,36 +142,36 @@
             
 
             <div class="post-content">
-                <h2 id="gain-curve"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Gain Curve</h2>
+                <h2 id="gain-curve"><span class="org-todo todo TODO">TODO</span> Gain Curve</h2>
 <h3 id="writing-formulas">Writing formulas</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">formula_obj <span style="color:#f92672">&lt;-</span> var1 <span style="color:#f92672">~</span> var2
-formula_obj <span style="color:#f92672">&lt;-</span> var1 <span style="color:#f92672">~</span> var2 <span style="color:#f92672">+</span> var3
-formula_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.formula</span>(<span style="color:#e6db74">&#34;var1 ~ var2&#34;</span>)
-</code></pre></div><h3 id="getting-information-about-the-model">Getting information about the model</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">print</span>(model_var)
-<span style="color:#a6e22e">summary</span>(model_var)
-broom<span style="color:#f92672">::</span><span style="color:#a6e22e">glance</span>(model_var)
-sigr<span style="color:#f92672">:</span><span style="color:#a6e22e">wrapFTest</span>(model_var)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>formula_obj <span style="color:#f92672">&lt;-</span> var1 <span style="color:#f92672">~</span> var2
+</span></span><span style="display:flex;"><span>formula_obj <span style="color:#f92672">&lt;-</span> var1 <span style="color:#f92672">~</span> var2 <span style="color:#f92672">+</span> var3
+</span></span><span style="display:flex;"><span>formula_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.formula</span>(<span style="color:#e6db74">&#34;var1 ~ var2&#34;</span>)
+</span></span></code></pre></div><h3 id="getting-information-about-the-model">Getting information about the model</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(model_var)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(model_var)
+</span></span><span style="display:flex;"><span>broom<span style="color:#f92672">::</span><span style="color:#a6e22e">glance</span>(model_var)
+</span></span><span style="display:flex;"><span>sigr<span style="color:#f92672">:</span><span style="color:#a6e22e">wrapFTest</span>(model_var)
+</span></span></code></pre></div><ul>
 <li><em>print</em> shows the basic formula used and the coefficients for the model.</li>
 <li><em>summary</em> shows the formula, coefficients, residuals as well as probabilistic statistics such as R^2 value and so on.</li>
 <li><em>glance</em> shows the whole data from summary in the form of nice dataframe with columns such as <strong>df.residual</strong>, <strong>sigma</strong> and so on.</li>
 <li><em>wrapFTest</em> shows the most relevant details of the model.</li>
 </ul>
 <h3 id="predicting-using-the-model">Predicting using the model</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">predict</span>(model, newdata <span style="color:#f92672">=</span> new_data_vals)
-</code></pre></div><h3 id="collinearity">Collinearity</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">predict</span>(model, newdata <span style="color:#f92672">=</span> new_data_vals)
+</span></span></code></pre></div><h3 id="collinearity">Collinearity</h3>
 <ul>
 <li>The variables assumed to be independent might not be independent after all.</li>
 <li>Unusually high collinearity may make model unstable though.</li>
 </ul>
 <h3 id="gain-curve">Gain curve</h3>
 <p>The gain curve is important in sorting the outcome rather than making all predictions correct. Checks if model&rsquo;s predictions sort in the same order as the true outcome.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(WVPlots)
-<span style="color:#a6e22e">GainCurvePlot</span>(df_var, predictions, actual_value, title_for_plot)
-<span style="color:#a6e22e">GainCurvePlot</span>(frame, xvar, truthvar, title)
-<span style="color:#a6e22e">GainCurvePlot</span>(df_name, <span style="color:#e6db74">&#34;pred_col_name&#34;</span>, <span style="color:#e6db74">&#34;actual_col_name&#34;</span> , <span style="color:#e6db74">&#34;Title of plot&#34;</span>)
-</code></pre></div><p>Here, the <em>column names</em> need to be passed as strings or else these objects cannot be found when creating the plot.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(WVPlots)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">GainCurvePlot</span>(df_var, predictions, actual_value, title_for_plot)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">GainCurvePlot</span>(frame, xvar, truthvar, title)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">GainCurvePlot</span>(df_name, <span style="color:#e6db74">&#34;pred_col_name&#34;</span>, <span style="color:#e6db74">&#34;actual_col_name&#34;</span> , <span style="color:#e6db74">&#34;Title of plot&#34;</span>)
+</span></span></code></pre></div><p>Here, the <em>column names</em> need to be passed as strings or else these objects cannot be found when creating the plot.</p>
 <h3 id="rmse">RMSE</h3>
 <p>RMSE much smaller than the outcome&rsquo;s standard deviation suggests that a model predicts well.</p>
 <h3 id="r-2">R^2</h3>
@@ -183,63 +180,63 @@ sigr<span style="color:#f92672">:</span><span style="color:#a6e22e">wrapFTest</s
 where RSS = Residual sum of squares i.e. Variance of model and
 \[SS_{TOT}\] = Total sum of squares i.e. Variance of data
 Having large R^2 means that the model fits the data well.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">summary</span>(model_var)<span style="color:#f92672">$</span>r.squared
-<span style="color:#a6e22e">glance</span>(model_var)<span style="color:#f92672">$</span>r.squared
-</code></pre></div><p>The summary function for linear model using <em>lm()</em> returns the R^2 error already there.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(model_var)<span style="color:#f92672">$</span>r.squared
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">glance</span>(model_var)<span style="color:#f92672">$</span>r.squared
+</span></span></code></pre></div><p>The summary function for linear model using <em>lm()</em> returns the R^2 error already there.</p>
 <h3 id="cross-validation">Cross Validation</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(vtreat)
-splitWay <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kWayCrossValidation</span>(n_rows, n_splits, <span style="color:#66d9ef">NULL</span>, <span style="color:#66d9ef">NULL</span>)
-splitWay[[index]]
-</code></pre></div><p>The last two parameters are <em>df</em> and <em>y</em> ; these parameters are just for compatibility purposes.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">for </span>( i in <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>num_folds ) {
-  split_ind <span style="color:#f92672">&lt;-</span> splitObject[[i]]
-  model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(formula, data <span style="color:#f92672">=</span> df[split_ind<span style="color:#f92672">$</span>train,])
-  df<span style="color:#f92672">$</span>predictions[split_ind<span style="color:#f92672">$</span>app] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(model, newdata <span style="color:#f92672">=</span> df[split_ind<span style="color:#f92672">$</span>app, ])
-    }
-</code></pre></div><p>The test indexes are named as <em>app</em> and can be used as used in the code snippet above.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(vtreat)
+</span></span><span style="display:flex;"><span>splitWay <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kWayCrossValidation</span>(n_rows, n_splits, <span style="color:#66d9ef">NULL</span>, <span style="color:#66d9ef">NULL</span>)
+</span></span><span style="display:flex;"><span>splitWay[[index]]
+</span></span></code></pre></div><p>The last two parameters are <em>df</em> and <em>y</em> ; these parameters are just for compatibility purposes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ( i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>num_folds ) {
+</span></span><span style="display:flex;"><span>  split_ind <span style="color:#f92672">&lt;-</span> splitObject[[i]]
+</span></span><span style="display:flex;"><span>  model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(formula, data <span style="color:#f92672">=</span> df[split_ind<span style="color:#f92672">$</span>train,])
+</span></span><span style="display:flex;"><span>  df<span style="color:#f92672">$</span>predictions[split_ind<span style="color:#f92672">$</span>app] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(model, newdata <span style="color:#f92672">=</span> df[split_ind<span style="color:#f92672">$</span>app, ])
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>The test indexes are named as <em>app</em> and can be used as used in the code snippet above.</p>
 <h3 id="random-train-test-split">Random train test split</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">train_size <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.8</span> <span style="color:#f92672">*</span> total_size
-tot_ind <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(total_size)
-df_train <span style="color:#f92672">&lt;-</span> df[tot_ind <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.75</span>, ]
-df_test <span style="color:#f92672">&lt;-</span> df[tot_ind <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0.75</span>, ]
-</code></pre></div><h3 id="one-hot-encoding">One Hot Encoding</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>train_size <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.8</span> <span style="color:#f92672">*</span> total_size
+</span></span><span style="display:flex;"><span>tot_ind <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(total_size)
+</span></span><span style="display:flex;"><span>df_train <span style="color:#f92672">&lt;-</span> df[tot_ind <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.75</span>, ]
+</span></span><span style="display:flex;"><span>df_test <span style="color:#f92672">&lt;-</span> df[tot_ind <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0.75</span>, ]
+</span></span></code></pre></div><h3 id="one-hot-encoding">One Hot Encoding</h3>
 <p>Every categorical variable is encoded under the hood as numerical values from 0 to N-1 by R itself.
 But with too many levels, this can be a problem.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">mmat <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">model.matrix</span>(formula, data)
-</code></pre></div><p>Doing this you know how exactly is R changing the dataframe for you to be fitted to any model later.</p>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>mmat <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">model.matrix</span>(formula, data)
+</span></span></code></pre></div><p>Doing this you know how exactly is R changing the dataframe for you to be fitted to any model later.</p>
+<!--list-separator-->
 <ul>
 <li>
 <p>Creating treatment plans</p>
 <p>The treatment plans help to work on specific columns from the data in a certain way such as creating levels on categorical data and removing NAs from numerical data.</p>
 <p>:ID:       e664edf5-fc3e-488e-85e4-cd802f1ad389</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">designTreatmentsZ</span>(dframe, varslist, verbose <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
-<span style="color:#a6e22e">prepare</span>(treatmentPlan, dframe, varRestriction <span style="color:#f92672">=</span> new_vars_list)
-</code></pre></div><p>You need to use the treatment plan on test data as well before predicting the output.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">designTreatmentsZ</span>(dframe, varslist, verbose <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">prepare</span>(treatmentPlan, dframe, varRestriction <span style="color:#f92672">=</span> new_vars_list)
+</span></span></code></pre></div><p>You need to use the treatment plan on test data as well before predicting the output.</p>
 </li>
 </ul>
 <h3 id="variables-interactions">Variables Interactions</h3>
 <p>When representing variables as formulas, there are chances that the variables will be related as well which need to be incorporated into the formula itself.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">dep_var <span style="color:#f92672">&lt;-</span> var_1 <span style="color:#f92672">+</span> var_2 <span style="color:#f92672">+</span> var_1<span style="color:#f92672">:</span>var_2
-</code></pre></div><p>The two variables separated by column are dependent on each other. So, we need to map that relation too.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">dep_var <span style="color:#f92672">&lt;-</span> var_1 <span style="color:#f92672">*</span> var_2
-</code></pre></div><p>The <em>asterisk</em> means the same as the formula we wrote above.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">dep_var <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">I</span>(var_1, var_2)
-</code></pre></div><p>This expresses the product of two variables in the formula.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>dep_var <span style="color:#f92672">&lt;-</span> var_1 <span style="color:#f92672">+</span> var_2 <span style="color:#f92672">+</span> var_1<span style="color:#f92672">:</span>var_2
+</span></span></code></pre></div><p>The two variables separated by column are dependent on each other. So, we need to map that relation too.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>dep_var <span style="color:#f92672">&lt;-</span> var_1 <span style="color:#f92672">*</span> var_2
+</span></span></code></pre></div><p>The <em>asterisk</em> means the same as the formula we wrote above.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>dep_var <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">I</span>(var_1, var_2)
+</span></span></code></pre></div><p>This expresses the product of two variables in the formula.</p>
 <h3 id="transforming-variables">Transforming Variables</h3>
 <p>The variables can be changed based on some information that we have priorly.</p>
 <h3 id="logistic-regression">Logistic Regression</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">glm</span>(formula, data, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
-<span style="color:#a6e22e">predict</span>(model, newdata, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;response&#34;</span>)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">glm</span>(formula, data, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">predict</span>(model, newdata, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;response&#34;</span>)
+</span></span></code></pre></div><ul>
 <li>Deviance and Null Deviance instead of SSE and SST.</li>
 </ul>
-<!-- raw HTML omitted -->
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">wrapChiSqTest</span>(<span style="color:#e6db74">&#34;pred_col&#34;</span>, <span style="color:#e6db74">&#34;actual_col&#34;</span>, <span style="color:#e6db74">&#34;tgt_event&#34;</span>)
-</code></pre></div><p>We can also use <em>GainCurvePlot</em> to see the effectiveness of the model.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">out_df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glance</span>(glm_model)
-pseudo_r2 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> ( out_df<span style="color:#f92672">$</span>deviance <span style="color:#f92672">/</span> out_df<span style="color:#f92672">$</span>null_deviance )
-</code></pre></div><h3 id="poission-and-quasipoisson-regression">Poission and QuasiPoisson Regression</h3>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">wrapChiSqTest</span>(<span style="color:#e6db74">&#34;pred_col&#34;</span>, <span style="color:#e6db74">&#34;actual_col&#34;</span>, <span style="color:#e6db74">&#34;tgt_event&#34;</span>)
+</span></span></code></pre></div><p>We can also use <em>GainCurvePlot</em> to see the effectiveness of the model.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>out_df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glance</span>(glm_model)
+</span></span><span style="display:flex;"><span>pseudo_r2 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> ( out_df<span style="color:#f92672">$</span>deviance <span style="color:#f92672">/</span> out_df<span style="color:#f92672">$</span>null_deviance )
+</span></span></code></pre></div><h3 id="poission-and-quasipoisson-regression">Poission and QuasiPoisson Regression</h3>
 <ul>
 <li>Mean is equal to or in simlar order as the Variance means a Poisson Distribution.</li>
 <li><em>family = &ldquo;Poisson&rdquo;</em> or <em>family = &ldquo;quasipoisson&rdquo;</em> is used.</li>
@@ -249,27 +246,27 @@ pseudo_r2 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1
 <li>Similar to Logistic Regression, pseudo R^2 can be found with a similar process.</li>
 </ul>
 <h3 id="generalized-additive-models">Generalized Additive Models</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(mgcv)
-<span style="color:#a6e22e">gam</span>(formula, family, data)
-<span style="color:#a6e22e">s</span>(col_name) <span style="color:#75715e"># fit a smooth function</span>
-fmla <span style="color:#f92672">&lt;-</span> dep_col <span style="color:#f92672">~</span> <span style="color:#a6e22e">s</span>(ind_col_1)
-<span style="color:#a6e22e">plot</span>(gam_model)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(mgcv)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">gam</span>(formula, family, data)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">s</span>(col_name) <span style="color:#75715e"># fit a smooth function</span>
+</span></span><span style="display:flex;"><span>fmla <span style="color:#f92672">&lt;-</span> dep_col <span style="color:#f92672">~</span> <span style="color:#a6e22e">s</span>(ind_col_1)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(gam_model)
+</span></span></code></pre></div><ul>
 <li>family = &ldquo;gaussian&rdquo; or &ldquo;poisson&rdquo; or &ldquo;binomial&rdquo;</li>
 <li>Best for larger data sets since they are more complex.</li>
 <li>Can pass smooth function to continuous variables only.</li>
 <li>Predict function for this model gives output as matrix; so need to use <em>as.numeric()</em> to get the output.</li>
 </ul>
 <h3 id="tree-based-methods">Tree Based Methods</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(ranger)
-<span style="color:#a6e22e">ranger</span>(fmla,
-       data,
-       num.trees <span style="color:#f92672">=</span> number,
-       respect.unordered.factors <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;order&#34;</span>)
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ranger)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ranger</span>(fmla,
+</span></span><span style="display:flex;"><span>       data,
+</span></span><span style="display:flex;"><span>       num.trees <span style="color:#f92672">=</span> number,
+</span></span><span style="display:flex;"><span>       respect.unordered.factors <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;order&#34;</span>)
+</span></span></code></pre></div><ul>
 <li><em>mtry</em> : number of variables to try at each node.</li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Gradient Boosting</p>
@@ -278,17 +275,17 @@ fmla <span style="color:#f92672">&lt;-</span> dep_col <span style="color:#f92672
 <li>Fit tree T2 to the residuals and find λ such that  M2 = M1 + λ * T2</li>
 <li>For regularized learning, add a regularization parameter η ranging from 0 to 1 where smaller η means slow learning and higher means faster learning.</li>
 </ol>
-<!-- raw HTML omitted -->
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(xgboost)
-<span style="color:#a6e22e">xgb.cv</span>() <span style="color:#75715e"># evaluation_log has the rmse for each round and used to find the optimum model</span>
-<span style="color:#a6e22e">xgb.cv</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.matrix</span>(treatedData),
-       label <span style="color:#f92672">=</span> df<span style="color:#f92672">$</span>res_col,
-       objective <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;reg:linear&#34;</span>,
-       nrounds <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>,
-       nfold <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>,
-       eta <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>,
-       depth <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>)
-</code></pre></div><!-- raw HTML omitted -->
+ <!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(xgboost)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xgb.cv</span>() <span style="color:#75715e"># evaluation_log has the rmse for each round and used to find the optimum model</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xgb.cv</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.matrix</span>(treatedData),
+</span></span><span style="display:flex;"><span>       label <span style="color:#f92672">=</span> df<span style="color:#f92672">$</span>res_col,
+</span></span><span style="display:flex;"><span>       objective <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;reg:linear&#34;</span>,
+</span></span><span style="display:flex;"><span>       nrounds <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>,
+</span></span><span style="display:flex;"><span>       nfold <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>,
+</span></span><span style="display:flex;"><span>       eta <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>,
+</span></span><span style="display:flex;"><span>       depth <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>)
+</span></span></code></pre></div> <!--list-separator-->
 <ul>
 <li>
 <p>Arguments</p>
@@ -302,13 +299,13 @@ fmla <span style="color:#f92672">&lt;-</span> dep_col <span style="color:#f92672
 </ol>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Finding best number of trees</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">elog <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.data.frame</span>(cv<span style="color:#f92672">$</span>evaluation_log)
-nrounds <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">which.min</span>(elog<span style="color:#f92672">$</span>test_rmse_mean)
-</code></pre></div><p>First you get the evaluation log and then find the position with minimum rmse. Then use <em>xgboost()</em> to create the final model for prediction.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>elog <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.data.frame</span>(cv<span style="color:#f92672">$</span>evaluation_log)
+</span></span><span style="display:flex;"><span>nrounds <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">which.min</span>(elog<span style="color:#f92672">$</span>test_rmse_mean)
+</span></span></code></pre></div><p>First you get the evaluation log and then find the position with minimum rmse. Then use <em>xgboost()</em> to create the final model for prediction.
 You need to note that the predict function also takes a matrix when using a xgboost model for prediction.</p>
 </li>
 </ul>
@@ -326,7 +323,7 @@ You need to note that the predict function also takes a matrix when using a xgbo
 
         <div class="post-info">
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>956 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>957 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-10-08 00:00 &#43;0545</p>
         </div>
@@ -365,22 +362,6 @@ You need to note that the predict function also takes a matrix when using a xgbo
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -388,7 +369,7 @@ You need to note that the predict function also takes a matrix when using a xgbo
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

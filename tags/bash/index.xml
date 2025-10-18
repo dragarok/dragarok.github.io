@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bash on Alok&#39;s Blog</title>
+    <title>Bash on </title>
     <link>https://dragarok.github.io/tags/bash/</link>
-    <description>Recent content in bash on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Bash on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:38 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:38 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Know Bash Better</title>
       <link>https://dragarok.github.io/braindump/2020/04/know-bash-better/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:38 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/know-bash-better/</guid>
-      <description>Run a history command ![line-num-from-history] Run any command as like as last time ![e.g. !vim] would open the same file/directory you did last time. Perform previous action as root sudo !! Search through history commands Control+R Control+C to cancel Search grep &amp;ldquo;text&amp;rdquo; filename tldr : tldr is useful find. - Cheat</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Run a history command&#xA;&lt;ul&gt;&#xA;&lt;li&gt;![line-num-from-history]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Run any command as like as last time&#xA;&lt;ul&gt;&#xA;&lt;li&gt;![e.g. !vim] would open the same file/directory you did last time.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Perform previous action as root&#xA;&lt;ul&gt;&#xA;&lt;li&gt;sudo !!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Search through history commands&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Control+R&lt;/li&gt;&#xA;&lt;li&gt;Control+C to cancel&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Search&#xA;&lt;ul&gt;&#xA;&lt;li&gt;grep &amp;ldquo;text&amp;rdquo; filename&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;tldr :&#xA;&lt;ul&gt;&#xA;&lt;li&gt;tldr is useful find.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;-&lt;a href=&#34;https://github.com/cheat/cheat&#34;&gt; Cheat&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

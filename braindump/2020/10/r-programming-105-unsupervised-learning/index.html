@@ -5,8 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="K Means Clustering res &amp;lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on.   Arguments
- Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters." />
+<meta name="description" content="K Means Clustering res &lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on. Arguments
+Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters. Visualizing output
+" />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -15,7 +16,7 @@
 
     <title>
         
-            R Programming 105- Unsupervised Learning :: Alok&#39;s Blog 
+            R Programming 105- Unsupervised Learning ::  
         
     </title>
 
@@ -35,7 +36,7 @@
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
@@ -49,23 +50,19 @@
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="R Programming 105- Unsupervised Learning">
-<meta itemprop="description" content="K Means Clustering res &lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on.   Arguments
- Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters.">
-<meta itemprop="datePublished" content="2020-10-09T00:00:00+05:45" />
-<meta itemprop="dateModified" content="2020-10-11T10:45:01+05:45" />
-<meta itemprop="wordCount" content="801">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
 
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
-
-<meta name="twitter:title" content="R Programming 105- Unsupervised Learning"/>
-<meta name="twitter:description" content="K Means Clustering res &lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on.   Arguments
- Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters."/>
+  <meta itemprop="name" content="R Programming 105- Unsupervised Learning">
+  <meta itemprop="description" content="K Means Clustering res &lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on. Arguments
+Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters. Visualizing output">
+  <meta itemprop="datePublished" content="2020-10-09T00:00:00+05:45">
+  <meta itemprop="dateModified" content="2020-10-11T10:45:01+05:45">
+  <meta itemprop="wordCount" content="801">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="R Programming 105- Unsupervised Learning">
+  <meta name="twitter:description" content="K Means Clustering res &lt;- kmeans(x, centers = num, nstart = num, iter.max = 20) res$cluster # gives the cluster number for each data point print(res) # prints cluster means, cluster, sum of squares by cluster and so on. Arguments
+Centers is the number of clusters to make. Nstart is used to run algorithm multiple times to improve the odds of the best model. Iter.max is used to set the number of steps to do when creating each clusters. Visualizing output">
 
 
 
@@ -149,13 +146,13 @@
 
             <div class="post-content">
                 <h3 id="k-means-clustering">K Means Clustering</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kmeans</span>(x,
-              centers <span style="color:#f92672">=</span> num,
-              nstart <span style="color:#f92672">=</span> num,
-              iter.max <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>)
-res<span style="color:#f92672">$</span>cluster <span style="color:#75715e"># gives the cluster number for each data point</span>
-<span style="color:#a6e22e">print</span>(res) <span style="color:#75715e"># prints cluster means, cluster, sum of squares by cluster and so on.</span>
-</code></pre></div><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kmeans</span>(x,
+</span></span><span style="display:flex;"><span>              centers <span style="color:#f92672">=</span> num,
+</span></span><span style="display:flex;"><span>              nstart <span style="color:#f92672">=</span> num,
+</span></span><span style="display:flex;"><span>              iter.max <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>)
+</span></span><span style="display:flex;"><span>res<span style="color:#f92672">$</span>cluster <span style="color:#75715e"># gives the cluster number for each data point</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(res) <span style="color:#75715e"># prints cluster means, cluster, sum of squares by cluster and so on.</span>
+</span></span></code></pre></div><!--list-separator-->
 <ul>
 <li>
 <p>Arguments</p>
@@ -166,42 +163,42 @@ res<span style="color:#f92672">$</span>cluster <span style="color:#75715e"># giv
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Visualizing output</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">plot</span>(points,
-     col <span style="color:#f92672">=</span> res<span style="color:#f92672">$</span>cluter,
-     main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;title of the plot&#34;</span>)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(points,
+</span></span><span style="display:flex;"><span>     col <span style="color:#f92672">=</span> res<span style="color:#f92672">$</span>cluter,
+</span></span><span style="display:flex;"><span>     main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;title of the plot&#34;</span>)
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Best number of clusters</p>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Scree Plot</p>
 <p>Plot <em>within ss</em> vs <em>number of clusters</em> to find the elbow of the plot. Choose that number of clusters to create k-means. This plot is known as <strong>scree plot</strong>. This is useful since trial and error is not the best approach.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(purrr)
-withinss <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">map_dbl</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>, <span style="color:#a6e22e">function</span>(k) {
-  model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kmeans</span>(x <span style="color:#f92672">=</span> df, centers <span style="color:#f92672">=</span> k)
-  model<span style="color:#f92672">$</span>tot.withinss
-    })
-elbow_kmeans <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame </span>(
-  k <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>,
-  withinss <span style="color:#f92672">=</span> withinss
-    )
-<span style="color:#75715e"># 1:20 is the number of clusters which you seem to find best fit from.</span>
-<span style="color:#75715e"># When plotting put a scale so that it&#39;s easier to find k since you don&#39;t want decimal valued k.</span>
-<span style="color:#a6e22e">ggplot</span>(elbow_kmeans, <span style="color:#a6e22e">aes</span>(k, withinss)) <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">geom_line</span>() <span style="color:#f92672">+</span>
-  <span style="color:#a6e22e">scale_x_continuous</span>(breaks <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>)
-</code></pre></div><p>This gives you a df which has number of clusters &ldquo;k&rdquo; vs Within sum of squares &ldquo;withinss&rdquo;. Plotting these you get a scree plot.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(purrr)
+</span></span><span style="display:flex;"><span>withinss <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">map_dbl</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>, <span style="color:#66d9ef">function</span>(k) {
+</span></span><span style="display:flex;"><span>  model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kmeans</span>(x <span style="color:#f92672">=</span> df, centers <span style="color:#f92672">=</span> k)
+</span></span><span style="display:flex;"><span>  model<span style="color:#f92672">$</span>tot.withinss
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>elbow_kmeans <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame </span>(
+</span></span><span style="display:flex;"><span>  k <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>,
+</span></span><span style="display:flex;"><span>  withinss <span style="color:#f92672">=</span> withinss
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1:20 is the number of clusters which you seem to find best fit from.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># When plotting put a scale so that it&#39;s easier to find k since you don&#39;t want decimal valued k.</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ggplot</span>(elbow_kmeans, <span style="color:#a6e22e">aes</span>(k, withinss)) <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_line</span>() <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">scale_x_continuous</span>(breaks <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>)
+</span></span></code></pre></div><p>This gives you a df which has number of clusters &ldquo;k&rdquo; vs Within sum of squares &ldquo;withinss&rdquo;. Plotting these you get a scree plot.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Silhouette width</p>
@@ -209,32 +206,32 @@ elbow_kmeans <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e
 <li>Within cluster distance : To other cluster. C(i)</li>
 <li>Closest Neighbor distance : To other clusters point. N(i)</li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Formula</p>
 <p>\[
-s(i)=\left\{\begin{array}{ll}1-C(i) / N(i), &amp; \text { if } C(i)&lt;N(i) \\\<br>
-0, &amp; \text { if } C(i)=N(i) \\\<br>
+s(i)=\left\{\begin{array}{ll}1-C(i) / N(i), &amp; \text { if } C(i)&lt;N(i) \\\
+0, &amp; \text { if } C(i)=N(i) \\\
 N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 \]</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Analysis</p>
 <p>1: Well matched to cluster
 0: On border between two clusters
 -1: Better fit in the neighboring clusters.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(cluster)
-pam_values <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">pam</span>(df, k <span style="color:#f92672">=</span> sth)
-pam_values<span style="color:#f92672">$</span>silinfo<span style="color:#f92672">$</span>widths <span style="color:#75715e"># get silhouette widths</span>
-pam_values<span style="color:#f92672">$</span>silinfo<span style="color:#f92672">$</span>avg.width <span style="color:#75715e"># get avg of all s(i)</span>
-<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">silhouette</span>(pam_values))
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(cluster)
+</span></span><span style="display:flex;"><span>pam_values <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">pam</span>(df, k <span style="color:#f92672">=</span> sth)
+</span></span><span style="display:flex;"><span>pam_values<span style="color:#f92672">$</span>silinfo<span style="color:#f92672">$</span>widths <span style="color:#75715e"># get silhouette widths</span>
+</span></span><span style="display:flex;"><span>pam_values<span style="color:#f92672">$</span>silinfo<span style="color:#f92672">$</span>avg.width <span style="color:#75715e"># get avg of all s(i)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">silhouette</span>(pam_values))
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Choosing K with this s(i)</p>
@@ -250,38 +247,38 @@ pam_values<span style="color:#f92672">$</span>silinfo<span style="color:#f92672"
 <li>Number of clusters is not known ahead of time</li>
 <li>Similarity measured via some kind of distance metric.</li>
 </ul>
-<!-- raw HTML omitted -->
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">hclust</span>(<span style="color:#a6e22e">dist</span>(x))
-<span style="color:#a6e22e">summary</span>(hclust_obj)
-</code></pre></div><!-- raw HTML omitted -->
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(<span style="color:#a6e22e">dist</span>(x))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(hclust_obj)
+</span></span></code></pre></div><!--list-separator-->
 <ul>
 <li>
 <p>Dendrogram</p>
 <p>To analyze we can make dendrograms to understand the result properly.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">plot</span>(hclust_obj)
-</code></pre></div><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(hclust_obj)
+</span></span></code></pre></div> <!--list-separator-->
 <ul>
 <li>
 <p>Coloring dendrograms</p>
 <p>Based on height parameter passed as &ldquo;h&rdquo; or num of clusters &ldquo;k&rdquo;, we can color the dendogram for cleaner representations.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(dendextended)
-dend_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.dendogram</span>(hclust_obj)
-colored_plot <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">color_branches</span>(dend_obj, k <span style="color:#f92672">=</span> num)
-colored_plot <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">color_branches</span>(dend_obj, h <span style="color:#f92672">=</span> num)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dendextended)
+</span></span><span style="display:flex;"><span>dend_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.dendogram</span>(hclust_obj)
+</span></span><span style="display:flex;"><span>colored_plot <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">color_branches</span>(dend_obj, k <span style="color:#f92672">=</span> num)
+</span></span><span style="display:flex;"><span>colored_plot <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">color_branches</span>(dend_obj, h <span style="color:#f92672">=</span> num)
+</span></span></code></pre></div></li>
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Finding a subtree</p>
 <p>Cut a hierarchical subtree</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">cutree</span>(hclust_obj, h <span style="color:#f92672">=</span> sth) <span style="color:#75715e"># height of clusters</span>
-<span style="color:#a6e22e">cutree</span>(hclust_obj, k <span style="color:#f92672">=</span> sth) <span style="color:#75715e"># k is no of clusters</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">cutree</span>(hclust_obj, h <span style="color:#f92672">=</span> sth) <span style="color:#75715e"># height of clusters</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cutree</span>(hclust_obj, k <span style="color:#f92672">=</span> sth) <span style="color:#75715e"># k is no of clusters</span>
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Linking Clusters</p>
@@ -301,41 +298,41 @@ colored_plot <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Methods</p>
 <p>In this method, we cluster based on linkage methods to choose from and form clusters hierarchically. We start with the minimum distanced points and make them 1st cluster. Then find linkage distance between points in cluster 1 and rest of the points. If rest of the points have smaller distances, they may form a different cluster. Or else you can have another point added to the 1st cluster to form hierarchical 2nd cluster.</p>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Complete Linkage</p>
 <p>When we have more than two objects and intend to find the distance between them, we can find that using <strong>linkage method</strong> which takes the maximum of that point to other points as closeness metric.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">max</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">max</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Single Linkage</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">min</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">min</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Average Linkage</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">mean</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Using the methods</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;complete&#34;</span>)
-<span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;average&#34;</span>)
-<span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;single&#34;</span>)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;complete&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;average&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;single&#34;</span>)
+</span></span></code></pre></div></li>
 </ul>
 </li>
 </ul>
@@ -343,14 +340,14 @@ colored_plot <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e
 <ol>
 <li>Normalize features since scales will be different.</li>
 </ol>
-<!-- raw HTML omitted -->
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">scale</span>(df) <span style="color:#75715e"># normalizes df</span>
-</code></pre></div><h3 id="pca">PCA</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">prcomp</span>(x <span style="color:#f92672">=</span> data,
-       scale <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>,
-       center <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
-</code></pre></div><p>The dataframe is similar to other cases as well.</p>
-<!-- raw HTML omitted -->
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">scale</span>(df) <span style="color:#75715e"># normalizes df</span>
+</span></span></code></pre></div><h3 id="pca">PCA</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">prcomp</span>(x <span style="color:#f92672">=</span> data,
+</span></span><span style="display:flex;"><span>       scale <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>,
+</span></span><span style="display:flex;"><span>       center <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span></code></pre></div><p>The dataframe is similar to other cases as well.</p>
+<!--list-separator-->
 <ul>
 <li>
 <p>Arguments</p>
@@ -361,65 +358,64 @@ colored_plot <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Interpreting Results</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">summary</span>(pca_obj) <span style="color:#75715e"># gives the output about how influential are principal components</span>
-</code></pre></div><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(pca_obj) <span style="color:#75715e"># gives the output about how influential are principal components</span>
+</span></span></code></pre></div> <!--list-separator-->
 <ul>
 <li>
 <p>Creating Biplot</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">biplot</span>(pca_obj)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">biplot</span>(pca_obj)
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Scree Plot</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">variance <span style="color:#f92672">&lt;-</span> pca_obj<span style="color:#f92672">$</span>sdev ^ <span style="color:#ae81ff">2</span>
-pve <span style="color:#f92672">&lt;-</span> variance <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(variance)
-<span style="color:#a6e22e">plot</span>(pve)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>variance <span style="color:#f92672">&lt;-</span> pca_obj<span style="color:#f92672">$</span>sdev ^ <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>pve <span style="color:#f92672">&lt;-</span> variance <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(variance)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(pve)
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Plotting of Variance Explained</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">plot</span>(pve)
-<span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">cumsum</span>(pve))
-</code></pre></div><p>These two different kind of plots help to find the elbow.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(pve)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">cumsum</span>(pve))
+</span></span></code></pre></div><p>These two different kind of plots help to find the elbow.</p>
 </li>
 </ul>
 </li>
 </ul>
 <h3 id="cluster-analysis">Cluster Analysis</h3>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Overall Flow</p>
-<figure>
-    <img src="../../../../ox-hugo/plantuml-cluster.png"/> 
-</figure>
+<figure><img src="../../../../ox-hugo/plantuml-cluster.png">
+    </figure>
 
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Distance Metrics</p>
-<!-- raw HTML omitted -->
+ <!--list-separator-->
 <ul>
 <li>
 <p>Categorical Data</p>
 <p>Jaccard&rsquo;s index  = Intersection / Union
 Distance = 1 - J.I
 It checks how many categories are similar between observations and how many there could be.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">dist</span>(df, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binary&#34;</span>)
-</code></pre></div><p>When you have multiple categories and you want to convert them to binary variables as 1 and 0.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(dummies)
-<span style="color:#a6e22e">dummy.data.frame</span>(df_name)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">dist</span>(df, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binary&#34;</span>)
+</span></span></code></pre></div><p>When you have multiple categories and you want to convert them to binary variables as 1 and 0.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dummies)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dummy.data.frame</span>(df_name)
+</span></span></code></pre></div></li>
 </ul>
 </li>
 </ul>
@@ -467,22 +463,6 @@ It checks how many categories are similar between observations and how many ther
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -490,7 +470,7 @@ It checks how many categories are similar between observations and how many ther
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

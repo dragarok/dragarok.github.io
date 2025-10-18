@@ -5,9 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Problems with installing Not having msys2 so that pdftools can&amp;rsquo;t build [install msys]
-Not having mingw so that sqlite can&amp;rsquo;t build for org-roam [choco install mingw] Don&amp;rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&amp;rsquo;s bin to the PATH.
-pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64." />
+<meta name="description" content="Problems with installing Not having msys2 so that pdftools can&rsquo;t build [install msys]
+Not having mingw so that sqlite can&rsquo;t build for org-roam [choco install mingw] Don&rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&rsquo;s bin to the PATH.
+pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64. This is a well off version and has binaries in different places and things like that because it tries providing it&rsquo;s own configuration.
+" />
 <meta name="keywords" content="Blog, emacs, windows, guide" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -16,7 +17,7 @@ pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S 
 
     <title>
         
-            Emacs Windows Installation :: Alok&#39;s Blog 
+            Emacs Windows Installation ::  
         
     </title>
 
@@ -25,35 +26,47 @@ pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
     type="text/css">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
 
 
-<link rel="stylesheet" href="/main.min.d235e788b40b442aba9cd6c69fdc330353b2dec27dcbc4235961469d2155f5a9.css">
+
+
+
+<link rel="stylesheet" href="../../../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="Emacs Windows Installation">
-<meta itemprop="description" content="Problems with installing Not having msys2 so that pdftools can&rsquo;t build [install msys]
-Not having mingw so that sqlite can&rsquo;t build for org-roam [choco install mingw] Don&rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&rsquo;s bin to the PATH.
-pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64.">
-<meta itemprop="dateModified" content="2020-04-19T15:59:31+05:45" />
-<meta itemprop="wordCount" content="159"><meta itemprop="image" content="https://dragarok.github.io/"/>
-<meta itemprop="keywords" content="emacs,windows,guide," /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
 
-<meta name="twitter:title" content="Emacs Windows Installation"/>
-<meta name="twitter:description" content="Problems with installing Not having msys2 so that pdftools can&rsquo;t build [install msys]
-Not having mingw so that sqlite can&rsquo;t build for org-roam [choco install mingw] Don&rsquo;t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it&rsquo;s bin to the PATH.
-pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64."/>
+  <meta itemprop="name" content="Emacs Windows Installation">
+  <meta itemprop="description" content="Problems with installing Not having msys2 so that pdftools can’t build [install msys]
+Not having mingw so that sqlite can’t build for org-roam [choco install mingw] Don’t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it’s bin to the PATH.
+pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64. This is a well off version and has binaries in different places and things like that because it tries providing it’s own configuration.">
+  <meta itemprop="datePublished" content="2020-04-19T15:59:31+05:45">
+  <meta itemprop="dateModified" content="2020-04-19T15:59:31+05:45">
+  <meta itemprop="wordCount" content="159">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta itemprop="keywords" content="Emacs,Windows,Guide">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="Emacs Windows Installation">
+  <meta name="twitter:description" content="Problems with installing Not having msys2 so that pdftools can’t build [install msys]
+Not having mingw so that sqlite can’t build for org-roam [choco install mingw] Don’t even have to do that. The mingw is installed by msys2. So go to mysys2: there will be folder named mingw64. Add it’s bin to the PATH.
+pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S mingw-w64-x86_64-zlib pacman -S mingw-w64-x86_64-libpng pacman -S mingw-w64-x86_64-poppler pacman -S mingw-w64-x86_64-imagemagick Then find a version that supports modules : emax64. This is a well off version and has binaries in different places and things like that because it tries providing it’s own configuration.">
 
 
 
@@ -74,11 +87,12 @@ pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S 
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="/" style="text-decoration: none;">
+        <a href="../../../../" style="text-decoration: none;">
     <div class="logo">
         
-            <span class="logo__mark">></span>
+            <span class="logo__mark">~</span>
             <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
             <span class="logo__cursor" style=
                   "
                    
@@ -92,7 +106,7 @@ pacman -Syu pacman -S base-devel pacman -S mingw-w64-x86_64-toolchain pacman -S 
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
     </ul>
 </nav>
 
@@ -198,17 +212,17 @@ tag with helm.</p>
                 <div class="pagination__buttons">
                     
                         <span class="button previous">
-                            <a href="https://dragarok.github.io/braindump/2020/04/songs/">
+                            <a href="https://dragarok.github.io/braindump/2020/04/practical-guide-to-debating/">
                                 <span class="button__icon">←</span>
-                                <span class="button__text">Songs</span>
+                                <span class="button__text">Practical Guide to Debating</span>
                             </a>
                         </span>
                     
 
                     
                         <span class="button next">
-                            <a href="https://dragarok.github.io/braindump/2020/04/paper-reading-3-pass/">
-                                <span class="button__text">Paper Reading 3 pass</span>
+                            <a href="https://dragarok.github.io/braindump/2020/04/text-text-transformers/">
+                                <span class="button__text">Text-Text Transformers</span>
                                 <span class="button__icon">→</span>
                             </a>
                         </span>
@@ -222,20 +236,6 @@ tag with helm.</p>
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2023</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-</footer>
-
-            
         </div>
 
         
@@ -243,7 +243,7 @@ tag with helm.</p>
 
 
 
-<script type="text/javascript" src="/bundle.min.fbf016a5f89be88f4916a0898302f777692ee6600991c3b6108fc423ed982dc83b470742cc92dd796861136f5ca96988b35e049b5f4cb4b1343686784a58c8ce.js" integrity="sha512-&#43;/AWpfib6I9JFqCJgwL3d2ku5mAJkcO2EI/EI&#43;2YLcg7RwdCzJLdeWhhE29cqWmIs14Em19MtLE0NoZ4SljIzg=="></script>
+<script type="text/javascript" src="../../../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

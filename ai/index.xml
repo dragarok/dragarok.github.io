@@ -1,118 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ais on Alok&#39;s Blog</title>
+    <title>Ais on </title>
     <link>https://dragarok.github.io/ai/</link>
-    <description>Recent content in Ais on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/ai/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Ais on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Aug 2020 07:26:00 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Neural ODEs</title>
       <link>https://dragarok.github.io/ai/neural_odes/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/ai/neural_odes/</guid>
-      <description>Forecasting weather using neural ODEs  Machine learning to model dynamics of weather. Modeling the changes between time steps using Julia and SciML.  Neural ODEs for time series Instead of a neural network way,
-\begin{equation}y_{i}=f\left(t_{i} ;\theta\right)\end{equation}
-we use a differential equation to represent the change.
-\begin{equation}\frac{\partial y}{\partial t}=f(y ;\theta)\end{equation}
-The goal is to learn the dynamics of change. This formulation can be seen as &amp;ldquo;neural network inside ODE&amp;rdquo;. Forward pass of NN == Initial Value Problem</description>
+      <description>&lt;h2 id=&#34;forecasting-weather-using-neural-odes&#34;&gt;Forecasting weather using neural ODEs&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Machine learning to model dynamics of weather.&lt;/li&gt;&#xA;&lt;li&gt;Modeling the changes between time steps using Julia and SciML.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;neural-odes-for-time-series&#34;&gt;Neural ODEs for time series&lt;/h3&gt;&#xA;&lt;p&gt;Instead of a neural network way,&lt;/p&gt;&#xA;&lt;p&gt;\begin{equation}y_{i}=f\left(t_{i} ;\theta\right)\end{equation}&lt;/p&gt;&#xA;&lt;p&gt;we use a differential equation to represent the change.&lt;/p&gt;&#xA;&lt;p&gt;\begin{equation}\frac{\partial y}{\partial t}=f(y ;\theta)\end{equation}&lt;/p&gt;&#xA;&lt;p&gt;The goal is to learn the dynamics of change. This formulation can be seen as&#xA;&amp;ldquo;neural network inside ODE&amp;rdquo;. Forward pass of NN == Initial Value Problem&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Meena</title>
       <link>https://dragarok.github.io/ai/meena/</link>
-      <pubDate>Wed, 22 Apr 2020 00:00:00 +0545</pubDate>
-      
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/meena/</guid>
-      <description>Abstract  2.6B parameter Public domain social media conversations SSA (Sensibleness and Specificity Average) Some open-domain chatbots such as MILABOT (Ser-ban et al., 2017), XiaoIce (Zhou et al., 2018)1,Gunrock (Chen et al., 2018), Mitsuku (Wor-swick, 2018)2and Cleverbot3(by Rollo Carpen-ter) display human-like attributes, but rely on com-plex frameworks, such as dialog managers. Mostly not useful since just have vague conversations. 40 B mined and filtered from public domain conversations. Seq2Seq + Evolved Transformer  </description>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2.6B parameter&lt;/li&gt;&#xA;&lt;li&gt;Public domain social media conversations&lt;/li&gt;&#xA;&lt;li&gt;SSA (Sensibleness and Specificity Average)&lt;/li&gt;&#xA;&lt;li&gt;Some open-domain  chatbots  such  as  MILABOT  (Ser-ban  et  al.,  2017),&#xA;XiaoIce  (Zhou  et  al.,  2018)1,Gunrock   (Chen   et   al.,   2018),&#xA;Mitsuku   (Wor-swick, 2018)2and Cleverbot3(by Rollo Carpen-ter) display&#xA;human-like attributes, but rely on com-plex  frameworks,  such  as  dialog&#xA;managers.&lt;/li&gt;&#xA;&lt;li&gt;Mostly not useful since just have vague conversations.&lt;/li&gt;&#xA;&lt;li&gt;40 B mined and filtered from public domain conversations.&lt;/li&gt;&#xA;&lt;li&gt;Seq2Seq + Evolved Transformer&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>ML Paper Questions</title>
       <link>https://dragarok.github.io/ai/whattowriteabout/</link>
-      <pubDate>Wed, 22 Apr 2020 00:00:00 +0545</pubDate>
-      
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/whattowriteabout/</guid>
-      <description>Problem No. 1 : Understanding what pretraining and training a supervised layer over it changes in the model Our ability to characterize exactly what aspects of the pretrained parameters are retained during the supervised training stage is limited.
-Problem No. 2 : For example, if we train a generative model of images of cars and motorcycles, it will need to know about wheels, and about how many wheels should be in an image.</description>
+      <description>&lt;h2 id=&#34;problem-no-dot-1-understanding-what-pretraining-and-training-a-supervised-layer-over-it-changes-in-the-model&#34;&gt;Problem No. 1 : Understanding what pretraining and training a supervised layer over it changes in the model&lt;/h2&gt;&#xA;&lt;p&gt;Our ability to characterize exactly what aspects of the&#xA;pretrained parameters are retained during the supervised training stage is limited.&lt;/p&gt;&#xA;&lt;h2 id=&#34;problem-no-dot-2&#34;&gt;Problem No. 2 :&lt;/h2&gt;&#xA;&lt;p&gt;For example, if we train&#xA;a generative model of images of cars and motorcycles, it will need to know about&#xA;wheels, and about how many wheels should be in an image. If we are fortunate,&#xA;the representation of the wheels will take on a form that is easy for the supervised&#xA;learner to access. This is not yet understood at a mathematical, theoretical level,&#xA;so it is not always possible to predict which tasks will benefit from unsupervised&#xA;learning in this way.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>MUZero</title>
       <link>https://dragarok.github.io/ai/muzero/</link>
-      <pubDate>Wed, 15 Apr 2020 00:00:00 +0545</pubDate>
-      
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/muzero/</guid>
-      <description>MuZero:
-&amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space &amp;ndash; Learns optimal policy, reward functions, value functions automatically &amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly relevant for planning. &amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using previous step&amp;rsquo;s hidden state and hypothetical next action &amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward</description>
+      <description>&lt;p&gt;MuZero:&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Works based on AlphaZero&amp;rsquo;s search and planning space&#xA;&amp;ndash; Learns optimal policy, reward functions, value functions automatically&#xA;&amp;ndash; The main idea of the algorithm is to predict those aspects of the future that are directly&#xA;relevant for planning.&#xA;&amp;ndash; Observation image ===&amp;gt; Model ==&amp;gt; Encodes to hidden states ==&amp;gt; Hidden states updated using&#xA;previous step&amp;rsquo;s hidden state and hypothetical next action&#xA;&amp;ndash; In each step, model predicts value fn, optimal policy, and immediate reward&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Text-Text Transformers</title>
       <link>https://dragarok.github.io/ai/t2t_transformers/</link>
-      <pubDate>Fri, 03 Apr 2020 00:00:00 +0545</pubDate>
-      
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/t2t_transformers/</guid>
-      <description>Catches from text to text transfer transformers:
- As an example, consider the case of English to German translation: If we have a training  datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the model on next-step prediction over the concatenated input sequence “translate English to German: That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example, the model would be fed the prefix “translate English to German: That is good.</description>
+      <description>&lt;p&gt;Catches from text to text transfer transformers:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;As an example, consider the case of English to German translation: If we have a training&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;datapoint with input sentence “That is good.” and target “Das ist gut.”, we would simply train the&#xA;model on next-step prediction over the concatenated input sequence “translate English to German:&#xA;That is good. target: Das ist gut.” If we wanted to obtain the model’s prediction for this example,&#xA;the model would be fed the prefix “translate English to German: That is good. target:” and would&#xA;be asked to generate the remainder of the sequence autoregressively.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Efficient Nets</title>
       <link>https://dragarok.github.io/ai/efficient_nets/</link>
-      <pubDate>Fri, 20 Mar 2020 00:00:00 +0545</pubDate>
-      
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/efficient_nets/</guid>
-      <description>Efficient Nets:   Why all this ? &amp;ndash; Scaling CNN’s only in one direction (eg depth only) will result in rapidly deteriorating gains relative to the computational increase needed.
-&amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example, as after 100 -150 layer’s gains rapidly drop off.
-&amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so not at all possibility of sota.
-  We now know the problem so let&amp;rsquo;s do this instead: &amp;ndash; In order to scale up efficiently, all dimensions of depth, width and resolution have to be scaled together, and there is an optimal balance for each dimension relative to the others.</description>
+      <description>&lt;h2 id=&#34;efficient-nets&#34;&gt;Efficient Nets:&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Why all this ?&#xA;&amp;ndash;  Scaling CNN’s only in one direction (eg depth only) will result in rapidly&#xA;deteriorating gains relative to the computational increase needed.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; ResNet 1000 isn’t much more accurate than ResNet152 for example,&#xA;as after 100 -150 layer’s gains rapidly drop off.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Scaling depth, width and resolution all benifits quickly saturate so&#xA;not at all  possibility of sota.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;We now know the problem so let&amp;rsquo;s do this instead:&#xA;&amp;ndash; In order to scale up efficiently, all dimensions of depth,&#xA;width and resolution have to be scaled together,&#xA;and there is an optimal balance for each dimension relative to the others.&#xA;VOILA!!!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HARP</title>
       <link>https://dragarok.github.io/ai/harp/</link>
-      <pubDate>Sat, 14 Mar 2020 00:00:00 +0545</pubDate>
-      
+      <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/harp/</guid>
-      <description>&amp;ndash;tags: Graph Embedding Techniques
-HARP: &amp;ndash; Previous models risked getting stuck in local optima since their objective functions are non-convex. &amp;ndash; Graph coarsening to make similar nodes into super nodes &amp;ndash; After coarsening the graph, it then generates an embedding of the coarsest “supernode”, followed by an embedding of the entire graph (which itself is made of supernodes). &amp;ndash; As a preprocessing step rather than a solution: can be used with other techniques.</description>
+      <description>&lt;p&gt;&amp;ndash;tags: &lt;a href=&#34;../ai/graph_embedding_techniques/&#34;&gt;Graph Embedding Techniques&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;harp&#34;&gt;HARP:&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ndash;  Previous models risked getting stuck in local optima since their objective functions are non-convex.&#xA;&amp;ndash; Graph coarsening to make similar nodes into super nodes&#xA;&amp;ndash; After coarsening the graph, it then generates an embedding of the coarsest “supernode”,&#xA;followed by an embedding of the entire graph (which itself is made of supernodes).&#xA;&amp;ndash; As a preprocessing step rather than a solution: can be used with other techniques.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Cayley Nets</title>
       <link>https://dragarok.github.io/ai/cayley_nets/</link>
-      <pubDate>Thu, 12 Mar 2020 00:00:00 +0545</pubDate>
-      
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/cayley_nets/</guid>
-      <description>&amp;ndash; tags: Graph Signal Processing
-Intro  Cayley Transform: Unit half circle transform useful notion of localization Cayley has proven to perform better on a wide range of Graph Learning tasks due to their ability to detect narrow frequency bands of importance during training, and to specialize on them while being well-localized on the graph.   </description>
+      <description>&lt;p&gt;&amp;ndash; tags: &lt;a href=&#34;../ai/graph_signal_processing/&#34;&gt;Graph Signal Processing&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Cayley Transform: Unit half circle transform&lt;/li&gt;&#xA;&lt;li&gt;useful notion of localization&lt;/li&gt;&#xA;&lt;li&gt;Cayley has proven to perform better on a wide range of Graph Learning tasks due to their ability to detect narrow frequency bands of importance during training,&#xA;and to specialize on them while being well-localized on the graph.&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>ChebNets</title>
       <link>https://dragarok.github.io/ai/chebnets/</link>
-      <pubDate>Thu, 12 Mar 2020 00:00:00 +0545</pubDate>
-      
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/chebnets/</guid>
-      <description>&amp;ndash; tags: Graph Signal Processing
-ChebNets &amp;ndash; Spectral convolutions are defined as the multiplication of a signal (node features/attributes) by a kernel. &amp;ndash; Thus similar to original convolution operation &amp;ndash; The kernel used in a spectral convolution made of Chebyshev polynomials of the diagonal matrix of Laplacian eigenvalues &amp;ndash; The kernel equals the sum of all Chebyshev polynomial kernels applied to the diagonal matrix of scaled Laplacian eigenvalues for each order of k up to K-1.</description>
+      <description>&lt;p&gt;&amp;ndash; tags: &lt;a href=&#34;../ai/graph_signal_processing/&#34;&gt;Graph Signal Processing&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;chebnets&#34;&gt;ChebNets&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ndash; Spectral convolutions are defined as the multiplication of a signal (node features/attributes) by a kernel.&#xA;&amp;ndash; Thus similar to original convolution operation&#xA;&amp;ndash; The kernel used in a spectral convolution made of Chebyshev polynomials of the diagonal matrix of Laplacian eigenvalues&#xA;&amp;ndash; The kernel equals the sum of all Chebyshev polynomial kernels applied to the diagonal matrix of&#xA;scaled Laplacian eigenvalues for each order of k up to K-1.&#xA;&amp;ndash; Using graph coarsening, it also introduced pooling methods similar to original convolution.&#xA;&amp;ndash; ChebNet implicitly avoids computing the eigendomposition opting to approximate it instead.&#xA;&amp;ndash; GCNs are basically first order ChebNets.&#xA;&amp;ndash; In GCNs, this is intended to alleviate the risk of overfitting on a local neighborhood of a graph.&#xA;&amp;ndash; GCNs performed well in node classification tasks and other graph applications, but the main drawback is how eigenvalues&#xA;tend to cluster together in a very small range, with large gaps in between each cluster.&#xA;&amp;ndash; The problem of such GCNS was later solved by Cayleynets.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>DeepWalk</title>
       <link>https://dragarok.github.io/ai/deepwalk/</link>
-      <pubDate>Thu, 12 Mar 2020 00:00:00 +0545</pubDate>
-      
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://dragarok.github.io/ai/deepwalk/</guid>
-      <description>&amp;ndash;tags: Graph Embedding Techniques
-Deepwalk:   uses concept of walk as embedding process
-  walk: traversal of graph by moving from one node to another as long as they have common edge
-  Traversal can be represented by having one node representation after other and continue the chain.
-  Similar to word vectors: inputs can be splits of the sequence of such giant representation of walk.</description>
+      <description>&lt;p&gt;&amp;ndash;tags: &lt;a href=&#34;../ai/graph_embedding_techniques/&#34;&gt;Graph Embedding Techniques&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;deepwalk&#34;&gt;Deepwalk:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;uses concept of walk as embedding process&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;walk: traversal of graph by moving from one node to another as long as they have common edge&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Traversal can be represented by having one node representation after other and continue the chain.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Similar to word vectors: inputs can be splits of the sequence of such giant representation of walk.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Now, the probability of having some node as output given the total representation is computed.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

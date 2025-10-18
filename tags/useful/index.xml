@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>useful on Alok&#39;s Blog</title>
+    <title>Useful on </title>
     <link>https://dragarok.github.io/tags/useful/</link>
-    <description>Recent content in useful on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Useful on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:22 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/useful/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:22 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/useful/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful Linux Packages</title>
       <link>https://dragarok.github.io/braindump/2020/04/useful-linux-packages/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:22 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/useful-linux-packages/</guid>
-      <description> joe: to generate .gitignore files when needed joe g java,node,osx &amp;gt; .gitignore : create new gitignore joe g OSX,SublimeText &amp;raquo; ~/.gitignore : appends to existing one joe ls : what tags can be used ledger ffsend: firefox send function hexyl: hex viewer tldr nemesis bed : binary editor builtwith site: to find what technology the site is using malc0de.com/database: search for malware thispersondoesnotexist.com &amp;ndash; get a fake face generated.photos mkcert: just make certificates Backlinks Linux one liners Backlinks Linux one liners </description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;joe: to generate .gitignore files when needed&#xA;&lt;ol&gt;&#xA;&lt;li&gt;joe g java,node,osx &amp;gt; .gitignore : create new gitignore&lt;/li&gt;&#xA;&lt;li&gt;joe g OSX,SublimeText &amp;raquo; ~/.gitignore : appends to existing one&lt;/li&gt;&#xA;&lt;li&gt;joe ls : what tags can be used&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;ledger&lt;/li&gt;&#xA;&lt;li&gt;ffsend: firefox send function&lt;/li&gt;&#xA;&lt;li&gt;hexyl: hex viewer&lt;/li&gt;&#xA;&lt;li&gt;tldr&lt;/li&gt;&#xA;&lt;li&gt;nemesis&lt;/li&gt;&#xA;&lt;li&gt;bed : binary editor&lt;/li&gt;&#xA;&lt;li&gt;builtwith site: to find what technology the site is using&lt;/li&gt;&#xA;&lt;li&gt;malc0de.com/database: search for malware&lt;/li&gt;&#xA;&lt;li&gt;thispersondoesnotexist.com &amp;ndash; get a fake face&lt;/li&gt;&#xA;&lt;li&gt;generated.photos&lt;/li&gt;&#xA;&lt;li&gt;mkcert: just make certificates&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;backlinks&#34;&gt;Backlinks&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../../braindump/2020/04/linux-one-liners/&#34;&gt;Linux one liners&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;backlinks&#34;&gt;Backlinks&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../../braindump/2020/04/linux-one-liners/&#34;&gt;Linux one liners&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>

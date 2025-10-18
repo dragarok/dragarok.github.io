@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blogging on Alok&#39;s Blog</title>
+    <title>Blogging on </title>
     <link>https://dragarok.github.io/tags/blogging/</link>
-    <description>Recent content in blogging on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Blogging on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Apr 2020 04:53:19 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Aug 2020 12:51:48 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs Hugo Blogging</title>
+      <link>https://dragarok.github.io/emacs/emacs_hugo_blogging/</link>
+      <pubDate>Wed, 12 Aug 2020 12:51:48 +0545</pubDate>
+      <guid>https://dragarok.github.io/emacs/emacs_hugo_blogging/</guid>
+      <description>&lt;p&gt;ID: 0dacbf0d-550d-4db9-8e15-6ffcede1107c&lt;/p&gt;&#xA;&lt;h2 id=&#34;hugo-blogging&#34;&gt;Hugo blogging&lt;/h2&gt;&#xA;&lt;p&gt;&amp;lt;0d/acbf0d-550d-4db9-8e15-6ffcede1107c/_20200426_045146screenshot.png&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;Liked themes:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Meme theme&lt;/li&gt;&#xA;&lt;li&gt;Harbor&lt;/li&gt;&#xA;&lt;li&gt;Cortex &amp;ndash;JethroKuan&lt;/li&gt;&#xA;&lt;li&gt;Hello friend ng rhazdon&lt;/li&gt;&#xA;&lt;li&gt;Beautiful Hugo&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;!--list-separator--&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Blogging org mode Font&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!--list-separator--&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well&lt;/p&gt;&#xA;&lt;p&gt;//fonts.googleapis.com/css?family=Roboto+Slab:700,300,400|Source+Code+Pro:500&#xA;//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!--list-separator--&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Normalize css : I don&amp;rsquo;t know what it does but looks pretty cool with all these stars on github.&lt;/p&gt;&#xA;&lt;p&gt;I think I have a faint idea now about what it does. It actually makes sure all&#xA;line heights and stuffs look all the same whatever the browser may be.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Emacs Hugo Blogging</title>
       <link>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</link>
       <pubDate>Sun, 26 Apr 2020 04:53:19 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/emacs-hugo-blogging/</guid>
-      <description>:ID: 0dacbf0d-550d-4db9-8e15-6ffcede1107c
-Hugo blogging Liked themes:
-Meme theme Harbor Cortex &amp;ndash;JethroKuan Hello friend ng rhazdon Beautiful Hugo Blogging org mode Font Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well
-//fonts.googleapis.com/css?family=Roboto+Slab:700,300,400|Source+Code+Pro:500 //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
-Normalize css : I don&amp;rsquo;t know what it does but looks pretty cool with all these stars on github.
-I think I have a faint idea now about what it does. It actually makes sure all line heights and stuffs look all the same whatever the browser may be.</description>
+      <description>&lt;p&gt;:ID:       0dacbf0d-550d-4db9-8e15-6ffcede1107c&lt;/p&gt;&#xA;&lt;h2 id=&#34;hugo-blogging&#34;&gt;Hugo blogging&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;../../ox-hugo/_20200426_045146screenshot.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Liked themes:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Meme theme&lt;/li&gt;&#xA;&lt;li&gt;Harbor&lt;/li&gt;&#xA;&lt;li&gt;Cortex &amp;ndash;JethroKuan&lt;/li&gt;&#xA;&lt;li&gt;Hello friend ng rhazdon&lt;/li&gt;&#xA;&lt;li&gt;Beautiful Hugo&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;!--list-separator--&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Blogging org mode Font&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!--list-separator--&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Font: Source Code Pro : big size : Looks amazing: Is in google fonts as well&lt;/p&gt;&#xA;&lt;p&gt;//fonts.googleapis.com/css?family=Roboto+Slab:700,300,400|Source+Code+Pro:500&#xA;//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!--list-separator--&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Normalize css : I don&amp;rsquo;t know what it does but looks pretty cool with all these stars on github.&lt;/p&gt;&#xA;&lt;p&gt;I think I have a faint idea now about what it does. It actually makes sure all&#xA;line heights and stuffs look all the same whatever the browser may be.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

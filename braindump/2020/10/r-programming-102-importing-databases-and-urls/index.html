@@ -5,10 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="Databases Importing Library library(DBI) Creating Connection con &amp;lt;-dbConnect(RMySQL::MySQL(), dbname = &amp;#34;db_name&amp;#34;, host = &amp;#34;localhost&amp;#34;, port = port_num, user = &amp;#34;username&amp;#34;, password = &amp;#34;my_password&amp;#34;) This connection object is specific to MySQL database.
-Importing data   Read Whole Tables
-dbListTables(con) dbReadTable(con, &amp;#34;table_name&amp;#34;)     Read selected data from tables
-dbGetQuery(con, &amp;#34;SELECT * FROM TABLE_NAME WHERE date &amp;gt; &amp;#39;2020-02-01&amp;#39;&amp;#34;) res &amp;lt;- dbSendQuery(con, &amp;#34;query string&amp;#34;) dbFetch(res) dbClearResult(res) The dbGetQuery first sends the query and fetches it." />
+<meta name="description" content="Databases Importing Library library(DBI) Creating Connection con &lt;-dbConnect(RMySQL::MySQL(), dbname = &#34;db_name&#34;, host = &#34;localhost&#34;, port = port_num, user = &#34;username&#34;, password = &#34;my_password&#34;) This connection object is specific to MySQL database.
+Importing data Read Whole Tables
+dbListTables(con) dbReadTable(con, &#34;table_name&#34;) Read selected data from tables
+dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;) res &lt;- dbSendQuery(con, &#34;query string&#34;) dbFetch(res) dbClearResult(res) The dbGetQuery first sends the query and fetches it. We can do it using dbsendQuery and then dbFetch(obj) to get the result we want. The fetch function can be useful when we want to import records by records rather than having everything at once.
+" />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -17,7 +18,7 @@ dbGetQuery(con, &amp;#34;SELECT * FROM TABLE_NAME WHERE date &amp;gt; &amp;#39;2
 
     <title>
         
-            R Programming 102- Importing Databases and URLs :: Alok&#39;s Blog 
+            R Programming 102- Importing Databases and URLs ::  
         
     </title>
 
@@ -37,7 +38,7 @@ dbGetQuery(con, &amp;#34;SELECT * FROM TABLE_NAME WHERE date &amp;gt; &amp;#39;2
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
@@ -51,27 +52,23 @@ dbGetQuery(con, &amp;#34;SELECT * FROM TABLE_NAME WHERE date &amp;gt; &amp;#39;2
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="R Programming 102- Importing Databases and URLs">
-<meta itemprop="description" content="Databases Importing Library library(DBI) Creating Connection con &lt;-dbConnect(RMySQL::MySQL(), dbname = &#34;db_name&#34;, host = &#34;localhost&#34;, port = port_num, user = &#34;username&#34;, password = &#34;my_password&#34;) This connection object is specific to MySQL database.
-Importing data   Read Whole Tables
-dbListTables(con) dbReadTable(con, &#34;table_name&#34;)     Read selected data from tables
-dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;) res &lt;- dbSendQuery(con, &#34;query string&#34;) dbFetch(res) dbClearResult(res) The dbGetQuery first sends the query and fetches it.">
-<meta itemprop="datePublished" content="2020-10-03T00:00:00+05:45" />
-<meta itemprop="dateModified" content="2020-10-03T08:34:44+05:45" />
-<meta itemprop="wordCount" content="294">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
 
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
-
-<meta name="twitter:title" content="R Programming 102- Importing Databases and URLs"/>
-<meta name="twitter:description" content="Databases Importing Library library(DBI) Creating Connection con &lt;-dbConnect(RMySQL::MySQL(), dbname = &#34;db_name&#34;, host = &#34;localhost&#34;, port = port_num, user = &#34;username&#34;, password = &#34;my_password&#34;) This connection object is specific to MySQL database.
-Importing data   Read Whole Tables
-dbListTables(con) dbReadTable(con, &#34;table_name&#34;)     Read selected data from tables
-dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;) res &lt;- dbSendQuery(con, &#34;query string&#34;) dbFetch(res) dbClearResult(res) The dbGetQuery first sends the query and fetches it."/>
+  <meta itemprop="name" content="R Programming 102- Importing Databases and URLs">
+  <meta itemprop="description" content="Databases Importing Library library(DBI) Creating Connection con &lt;-dbConnect(RMySQL::MySQL(), dbname = &#34;db_name&#34;, host = &#34;localhost&#34;, port = port_num, user = &#34;username&#34;, password = &#34;my_password&#34;) This connection object is specific to MySQL database.
+Importing data Read Whole Tables
+dbListTables(con) dbReadTable(con, &#34;table_name&#34;) Read selected data from tables
+dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;) res &lt;- dbSendQuery(con, &#34;query string&#34;) dbFetch(res) dbClearResult(res) The dbGetQuery first sends the query and fetches it. We can do it using dbsendQuery and then dbFetch(obj) to get the result we want. The fetch function can be useful when we want to import records by records rather than having everything at once.">
+  <meta itemprop="datePublished" content="2020-10-03T00:00:00+05:45">
+  <meta itemprop="dateModified" content="2020-10-03T08:34:44+05:45">
+  <meta itemprop="wordCount" content="296">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="R Programming 102- Importing Databases and URLs">
+  <meta name="twitter:description" content="Databases Importing Library library(DBI) Creating Connection con &lt;-dbConnect(RMySQL::MySQL(), dbname = &#34;db_name&#34;, host = &#34;localhost&#34;, port = port_num, user = &#34;username&#34;, password = &#34;my_password&#34;) This connection object is specific to MySQL database.
+Importing data Read Whole Tables
+dbListTables(con) dbReadTable(con, &#34;table_name&#34;) Read selected data from tables
+dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;) res &lt;- dbSendQuery(con, &#34;query string&#34;) dbFetch(res) dbClearResult(res) The dbGetQuery first sends the query and fetches it. We can do it using dbsendQuery and then dbFetch(obj) to get the result we want. The fetch function can be useful when we want to import records by records rather than having everything at once.">
 
 
 
@@ -156,77 +153,77 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
             <div class="post-content">
                 <h2 id="databases">Databases</h2>
 <h3 id="importing-library">Importing Library</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(DBI)
-</code></pre></div><h3 id="creating-connection">Creating Connection</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">con <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">dbConnect</span>(RMySQL<span style="color:#f92672">::</span><span style="color:#a6e22e">MySQL</span>(),
-                dbname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;db_name&#34;</span>,
-                host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;localhost&#34;</span>,
-                port <span style="color:#f92672">=</span> port_num,
-                user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;username&#34;</span>,
-                password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;my_password&#34;</span>)
-</code></pre></div><p>This connection object is specific to MySQL database.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(DBI)
+</span></span></code></pre></div><h3 id="creating-connection">Creating Connection</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>con <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">dbConnect</span>(RMySQL<span style="color:#f92672">::</span><span style="color:#a6e22e">MySQL</span>(),
+</span></span><span style="display:flex;"><span>                dbname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;db_name&#34;</span>,
+</span></span><span style="display:flex;"><span>                host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;localhost&#34;</span>,
+</span></span><span style="display:flex;"><span>                port <span style="color:#f92672">=</span> port_num,
+</span></span><span style="display:flex;"><span>                user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;username&#34;</span>,
+</span></span><span style="display:flex;"><span>                password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;my_password&#34;</span>)
+</span></span></code></pre></div><p>This connection object is specific to MySQL database.</p>
 <h3 id="importing-data">Importing data</h3>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Read Whole Tables</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">dbListTables</span>(con)
-<span style="color:#a6e22e">dbReadTable</span>(con, <span style="color:#e6db74">&#34;table_name&#34;</span>)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">dbListTables</span>(con)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dbReadTable</span>(con, <span style="color:#e6db74">&#34;table_name&#34;</span>)
+</span></span></code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Read selected data from tables</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">dbGetQuery</span>(con, <span style="color:#e6db74">&#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;</span>)
-res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbSendQuery</span>(con, <span style="color:#e6db74">&#34;query string&#34;</span>)
-<span style="color:#a6e22e">dbFetch</span>(res)
-<span style="color:#a6e22e">dbClearResult</span>(res)
-</code></pre></div><p>The <em>dbGetQuery</em> first sends the query and fetches it. We can do it using  <em>dbsendQuery</em> and then <em>dbFetch(obj)</em> to get the result we want.  The fetch function can be useful when we want to import records by records rather than having everything at once.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">dbGetQuery</span>(con, <span style="color:#e6db74">&#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;</span>)
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbSendQuery</span>(con, <span style="color:#e6db74">&#34;query string&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dbFetch</span>(res)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dbClearResult</span>(res)
+</span></span></code></pre></div><p>The <em>dbGetQuery</em> first sends the query and fetches it. We can do it using  <em>dbsendQuery</em> and then <em>dbFetch(obj)</em> to get the result we want.  The fetch function can be useful when we want to import records by records rather than having everything at once.</p>
 </li>
 </ul>
 <h2 id="urls-and-other-data-formats">URLs and Other data formats</h2>
 <h3 id="reading-data-from-urls">Reading data from URLs</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(readr)
-<span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;http://xyz.com/filename.csv&#34;</span>)
-<span style="color:#a6e22e">read_tsv</span>(<span style="color:#e6db74">&#34;http://xyz.com/filename.tsv&#34;</span>)
-<span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;https://xyz.com/filename.csv&#34;</span>)
-<span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;https://xyz.com/filename.csv&#34;</span>)
-</code></pre></div><p>Both <em>read.csv</em> method from utils package and <em>read_csv</em> from <!-- raw HTML omitted -->readr<!-- raw HTML omitted --> package work fine with urls. It works for fine for all kinds of files if they can be parsed into tabular formats. However <em>read_excel</em> function from <!-- raw HTML omitted -->readxl<!-- raw HTML omitted --> package doesn&rsquo;t support urls.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R">file_path <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">file.path</span>(<span style="color:#e6db74">&#34;~&#34;</span>, <span style="color:#e6db74">&#34;Downloads&#34;</span>, <span style="color:#e6db74">&#34;filename.xlsx&#34;</span>)
-file_url <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;https://xyz.com/filename.xlsx&#34;</span>
-<span style="color:#a6e22e">download.file</span>(file_url, file_path)
-<span style="color:#a6e22e">load</span>(<span style="color:#e6db74">&#34;file_name.RData&#34;</span>)
-</code></pre></div><p>In loading RData files, you can&rsquo;t pass URLs to it. Instead you need to save the file first and then load it using <em>load</em> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(readr)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;http://xyz.com/filename.csv&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_tsv</span>(<span style="color:#e6db74">&#34;http://xyz.com/filename.tsv&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;https://xyz.com/filename.csv&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;https://xyz.com/filename.csv&#34;</span>)
+</span></span></code></pre></div><p>Both <em>read.csv</em> method from utils package and <em>read_csv</em> from <span class="underline">readr</span> package work fine with urls. It works for fine for all kinds of files if they can be parsed into tabular formats. However <em>read_excel</em> function from <span class="underline">readxl</span> package doesn&rsquo;t support urls.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>file_path <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">file.path</span>(<span style="color:#e6db74">&#34;~&#34;</span>, <span style="color:#e6db74">&#34;Downloads&#34;</span>, <span style="color:#e6db74">&#34;filename.xlsx&#34;</span>)
+</span></span><span style="display:flex;"><span>file_url <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;https://xyz.com/filename.xlsx&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">download.file</span>(file_url, file_path)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">load</span>(<span style="color:#e6db74">&#34;file_name.RData&#34;</span>)
+</span></span></code></pre></div><p>In loading RData files, you can&rsquo;t pass URLs to it. Instead you need to save the file first and then load it using <em>load</em> function.</p>
 <h3 id="http-queries">HTTP Queries</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(httr)
-response <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">GET</span>(url)
-raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">content</span>(response, as<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;raw&#34;</span>) <span style="color:#75715e"># parsing</span>
-raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">content</span>(response, as<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>) <span style="color:#75715e"># parsing</span>
-raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">content</span>(response) <span style="color:#75715e"># parsing json works by default</span>
-</code></pre></div><h3 id="json-files">JSON Files</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(httr)
+</span></span><span style="display:flex;"><span>response <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">GET</span>(url)
+</span></span><span style="display:flex;"><span>raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">content</span>(response, as<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;raw&#34;</span>) <span style="color:#75715e"># parsing</span>
+</span></span><span style="display:flex;"><span>raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">content</span>(response, as<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>) <span style="color:#75715e"># parsing</span>
+</span></span><span style="display:flex;"><span>raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">content</span>(response) <span style="color:#75715e"># parsing json works by default</span>
+</span></span></code></pre></div><h3 id="json-files">JSON Files</h3>
 <pre><code>ID: 2ccc63df-4382-43a4-a611-0a929a24d8e5
 </code></pre>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(jsonlite)
-<span style="color:#a6e22e">fromJSON</span>(url)
-<span style="color:#a6e22e">fromJSON</span>(json_object)
-<span style="color:#a6e22e">toJSON</span>(df)
-<span style="color:#a6e22e">minify</span>(json_obj)
-<span style="color:#a6e22e">prettify</span>(json_obj)
-<span style="color:#a6e22e">toJSON</span>(df, pretty<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>) <span style="color:#75715e"># else minified is used by default</span>
-</code></pre></div><h3 id="haven-package">Haven Package</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(haven)
-<span style="color:#a6e22e">read_sas</span>(<span style="color:#e6db74">&#34;ontime.sas7bdat&#34;</span>)
-<span style="color:#a6e22e">read_stata</span>()
-<span style="color:#a6e22e">read_dta</span>()
-<span style="color:#a6e22e">read_spss</span>()
-<span style="color:#a6e22e">read_por</span>()
-<span style="color:#a6e22e">read_sav</span>()
-</code></pre></div><h3 id="foreign-package">Foreign Package</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(foreign)
-<span style="color:#a6e22e">read.dta</span>(<span style="color:#e6db74">&#34;filename.dta&#34;</span>, convert.factors <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, convert.types<span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, missing.type <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, convert.underscore <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
-<span style="color:#a6e22e">read.spss</span>(file, use.value.labels <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, to.data.frame <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
-</code></pre></div><p>Since here the arguments to different functions have different names, it is less consistent.  Easier to go through the documentation than explaining it all.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(jsonlite)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fromJSON</span>(url)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fromJSON</span>(json_object)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">toJSON</span>(df)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">minify</span>(json_obj)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">prettify</span>(json_obj)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">toJSON</span>(df, pretty<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>) <span style="color:#75715e"># else minified is used by default</span>
+</span></span></code></pre></div><h3 id="haven-package">Haven Package</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(haven)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_sas</span>(<span style="color:#e6db74">&#34;ontime.sas7bdat&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_stata</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_dta</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_spss</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_por</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_sav</span>()
+</span></span></code></pre></div><h3 id="foreign-package">Foreign Package</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(foreign)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.dta</span>(<span style="color:#e6db74">&#34;filename.dta&#34;</span>, convert.factors <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, convert.types<span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, missing.type <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, convert.underscore <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.spss</span>(file, use.value.labels <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, to.data.frame <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span></code></pre></div><p>Since here the arguments to different functions have different names, it is less consistent.  Easier to go through the documentation than explaining it all.</p>
 
             </div>
         </article>
@@ -235,7 +232,7 @@ raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e"
 
         <div class="post-info">
 
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>294 Words</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>296 Words</p>
 
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-10-03 00:00 &#43;0545</p>
         </div>
@@ -274,22 +271,6 @@ raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e"
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -297,7 +278,7 @@ raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e"
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

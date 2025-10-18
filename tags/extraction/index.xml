@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>extraction on Alok&#39;s Blog</title>
+    <title>Extraction on </title>
     <link>https://dragarok.github.io/tags/extraction/</link>
-    <description>Recent content in extraction on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Extraction on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:07 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/extraction/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:07 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/extraction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ETL Extraction</title>
       <link>https://dragarok.github.io/braindump/2020/04/etl-extraction/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:07 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/etl-extraction/</guid>
-      <description>EDW enterprise data warehouse
-RPM Retail price management
-REiM Retail Invoice Match
-ReSA Retail Sales Audit
-A View table is appended with V suffix at the end
-The extract process takes multiple types of db &amp;ndash;&amp;gt; converts them to flatfiles &amp;ndash;&amp;gt; flat files match the staging schema &amp;ndash;&amp;gt; so they can be further processed as per required.
-Load job: From flat files to staging table &amp;ndash;&amp;gt; process it( transformation and lookup) &amp;ndash;&amp;gt; move to target table</description>
+      <description>&lt;p&gt;EDW enterprise data warehouse&lt;/p&gt;&#xA;&lt;p&gt;RPM Retail price management&lt;/p&gt;&#xA;&lt;p&gt;REiM Retail Invoice Match&lt;/p&gt;&#xA;&lt;p&gt;ReSA Retail Sales Audit&lt;/p&gt;&#xA;&lt;p&gt;A View table is appended with V suffix at the end&lt;/p&gt;&#xA;&lt;p&gt;The extract process takes multiple types of db &amp;ndash;&amp;gt; converts them to flatfiles &amp;ndash;&amp;gt; flat files match the staging schema &amp;ndash;&amp;gt; so they can be&#xA;further processed as per required.&lt;/p&gt;&#xA;&lt;p&gt;Load job: From flat files to staging table &amp;ndash;&amp;gt; process it( transformation and lookup) &amp;ndash;&amp;gt; move to target table&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

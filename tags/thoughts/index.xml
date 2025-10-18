@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thoughts on Alok&#39;s Blog</title>
+    <title>Thoughts on </title>
     <link>https://dragarok.github.io/tags/thoughts/</link>
-    <description>Recent content in thoughts on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Thoughts on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 May 2020 05:53:46 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Looking Back to School Life</title>
       <link>https://dragarok.github.io/posts/2020/05/looking-back-to-school-life/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/posts/2020/05/looking-back-to-school-life/</guid>
-      <description>A Reminiscence   Looking at this image, I find it funny how we change so much that we are no longer ourselves. I believed I was this way for as long as I can remember but alas with time: memories fade, people around you change and you no longer are the same person that you were before. This is the first page of my diary I made in my 9th grade.</description>
+      <description>&lt;h2 id=&#34;a-reminiscence&#34;&gt;A Reminiscence&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;../../ox-hugo/school_note.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Looking at this image, I find it funny how we change so much that we are no&#xA;longer ourselves. I believed I was this way for as long as I can remember but&#xA;alas with time: memories fade, people around you change and you no longer are&#xA;the same person that you were before.&#xA;This is the first page of my diary I made in my 9th grade.&#xA;Looking at the aim I wrote in this diary, it feels so funny and grave misfortune&#xA;that I had no idea about the storm of life that was about to burst upon me with&#xA;all it&amp;rsquo;s might. I so foolishly believed life was all about being the best in&#xA;exams. There&amp;rsquo;s a catch here though: the people I was around, the people who&#xA;wanted me to have a bright successful life always came to me and said it: maybe&#xA;thousand times or more. My teachers, my parents, my relatives and everyone that&#xA;wished well for me.&#xA;Either they didn&amp;rsquo;t know that life was so intricate and complex beyond you&#xA;passing exams and being best out of it. I believed it to be the holy grail that&#xA;would guide my life now.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

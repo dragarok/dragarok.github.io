@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>problemsolving on Alok&#39;s Blog</title>
+    <title>Problemsolving on </title>
     <link>https://dragarok.github.io/tags/problemsolving/</link>
-    <description>Recent content in problemsolving on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Problemsolving on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:34 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/problemsolving/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 May 2020 03:40:09 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/problemsolving/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Image Processing Pipeline</title>
       <link>https://dragarok.github.io/braindump/2020/04/image-processing-pipeline/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:34 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/image-processing-pipeline/</guid>
-      <description>Integrating image processing with machine learning consists of following steps:
-Decide your project title/purpose/objectives.
-Collect data, i.e images relevant to your project.
-Preprocess all the collected images. Preprocessing steps may be different for different projects. It basically includes filtering, noise removal, grayscale conversion, binary image formation, morphological operation, thresholding and so on.
-Divide the preprocessed images into two sets: training and tesing sets.
-Extract features that you think will most probably define your data.</description>
+      <description>&lt;p&gt;Integrating image processing with machine learning consists of following steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Decide your project title/purpose/objectives.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Collect data, i.e images relevant to your project.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Preprocess all the collected images. Preprocessing steps may be different for different projects. It basically includes filtering, noise     removal, grayscale conversion, binary image formation, morphological operation, thresholding and so on.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Divide the preprocessed images into two sets: training and tesing sets.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Extract features that you think will most probably define your data. (For example, if you are working on a face detection project, one possible feature could be the distance between the two eyes. You can think of a number of such features) (very important step)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Euler 621</title>
       <link>https://dragarok.github.io/braindump/2020/04/euler-621/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:24 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/euler-621/</guid>
-      <description>import math
-def streak(a): for i in range(1,a,1): if (a%i) != 0: return i
-def pfunction(s,n): count=0 for j in range(1, n, 1): if(streak(j))==s: count = count +1 return count
-sum=0 for i in range(1,31,1): sum = sum + pfunction(i,int(math.pow(4,i)))</description>
+      <description>&lt;p&gt;import math&lt;/p&gt;&#xA;&lt;p&gt;def streak(a):&#xA;for i in range(1,a,1):&#xA;if (a%i) != 0:&#xA;return i&lt;/p&gt;&#xA;&lt;p&gt;def pfunction(s,n):&#xA;count=0&#xA;for j in range(1, n, 1):&#xA;if(streak(j))==s:&#xA;count = count +1&#xA;return count&lt;/p&gt;&#xA;&lt;p&gt;sum=0&#xA;for i in range(1,31,1):&#xA;sum = sum + pfunction(i,int(math.pow(4,i)))&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Image Processing Pipeline</title>
+      <link>https://dragarok.github.io/ai/image_processing_pipeline/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://dragarok.github.io/ai/image_processing_pipeline/</guid>
+      <description>&lt;p&gt;Integrating image processing with machine learning consists of following steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Decide your project title/purpose/objectives.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Collect data, i.e images relevant to your project.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Preprocess all the collected images. Preprocessing steps may be different for different projects. It basically includes filtering, noise     removal, grayscale conversion, binary image formation, morphological operation, thresholding and so on.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Divide the preprocessed images into two sets: training and tesing sets.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Extract features that you think will most probably define your data. (For example, if you are working on a face detection project, one possible feature could be the distance between the two eyes. You can think of a number of such features) (very important step)&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -6,8 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
 <meta name="description" content="Flat Files read.csv() read.table() read.delim() The utils package in R loads by default and contains all these read functions.
-  Arguments
-read.csv(&amp;#34;filname.csv&amp;#34;, header = FALSE) read.csv(&amp;#34;filname.csv&amp;#34;, header = FALSE, col_names= c(&amp;#34;Column 1&amp;#34;, &amp;#34;Column 2&amp;#34;), col_values = c(&amp;#34;numeric&amp;#34;, &amp;#34;factor&amp;#34;)) read.delim(&amp;#34;filename.txt&amp;#34;, header = TRUE) read.table(&amp;#34;filname.csv&amp;#34;, header = FALSE, delimiter = &amp;#34;\t&amp;#34;) Read_table function is the main function operating behind the scenes even when we use csv or delim to read our files." />
+Arguments
+read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, header = FALSE, col_names= c(&#34;Column 1&#34;, &#34;Column 2&#34;), col_values = c(&#34;numeric&#34;, &#34;factor&#34;)) read.delim(&#34;filename.txt&#34;, header = TRUE) read.table(&#34;filname.csv&#34;, header = FALSE, delimiter = &#34;\t&#34;) Read_table function is the main function operating behind the scenes even when we use csv or delim to read our files. They are wrappers to the table function with some default arguments for ease of use. There is also read_csv2 function that works with files separated by &ldquo;;&rdquo;.
+" />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -16,7 +17,7 @@ read.csv(&amp;#34;filname.csv&amp;#34;, header = FALSE) read.csv(&amp;#34;filnam
 
     <title>
         
-            R Programming 102- Importing Data :: Alok&#39;s Blog 
+            R Programming 102- Importing Data ::  
         
     </title>
 
@@ -36,7 +37,7 @@ read.csv(&amp;#34;filname.csv&amp;#34;, header = FALSE) read.csv(&amp;#34;filnam
 
 
 
-<link rel="stylesheet" href="../../../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
@@ -50,25 +51,21 @@ read.csv(&amp;#34;filname.csv&amp;#34;, header = FALSE) read.csv(&amp;#34;filnam
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="R Programming 102- Importing Data">
-<meta itemprop="description" content="Flat Files read.csv() read.table() read.delim() The utils package in R loads by default and contains all these read functions.
-  Arguments
-read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, header = FALSE, col_names= c(&#34;Column 1&#34;, &#34;Column 2&#34;), col_values = c(&#34;numeric&#34;, &#34;factor&#34;)) read.delim(&#34;filename.txt&#34;, header = TRUE) read.table(&#34;filname.csv&#34;, header = FALSE, delimiter = &#34;\t&#34;) Read_table function is the main function operating behind the scenes even when we use csv or delim to read our files.">
-<meta itemprop="datePublished" content="2020-10-02T00:00:00+05:45" />
-<meta itemprop="dateModified" content="2020-10-02T14:52:46+05:45" />
-<meta itemprop="wordCount" content="536">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
 
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
-
-<meta name="twitter:title" content="R Programming 102- Importing Data"/>
-<meta name="twitter:description" content="Flat Files read.csv() read.table() read.delim() The utils package in R loads by default and contains all these read functions.
-  Arguments
-read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, header = FALSE, col_names= c(&#34;Column 1&#34;, &#34;Column 2&#34;), col_values = c(&#34;numeric&#34;, &#34;factor&#34;)) read.delim(&#34;filename.txt&#34;, header = TRUE) read.table(&#34;filname.csv&#34;, header = FALSE, delimiter = &#34;\t&#34;) Read_table function is the main function operating behind the scenes even when we use csv or delim to read our files."/>
+  <meta itemprop="name" content="R Programming 102- Importing Data">
+  <meta itemprop="description" content="Flat Files read.csv() read.table() read.delim() The utils package in R loads by default and contains all these read functions.
+Arguments
+read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, header = FALSE, col_names= c(&#34;Column 1&#34;, &#34;Column 2&#34;), col_values = c(&#34;numeric&#34;, &#34;factor&#34;)) read.delim(&#34;filename.txt&#34;, header = TRUE) read.table(&#34;filname.csv&#34;, header = FALSE, delimiter = &#34;\t&#34;) Read_table function is the main function operating behind the scenes even when we use csv or delim to read our files. They are wrappers to the table function with some default arguments for ease of use. There is also read_csv2 function that works with files separated by “;”.">
+  <meta itemprop="datePublished" content="2020-10-02T00:00:00+05:45">
+  <meta itemprop="dateModified" content="2020-10-02T14:52:46+05:45">
+  <meta itemprop="wordCount" content="536">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="R Programming 102- Importing Data">
+  <meta name="twitter:description" content="Flat Files read.csv() read.table() read.delim() The utils package in R loads by default and contains all these read functions.
+Arguments
+read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, header = FALSE, col_names= c(&#34;Column 1&#34;, &#34;Column 2&#34;), col_values = c(&#34;numeric&#34;, &#34;factor&#34;)) read.delim(&#34;filename.txt&#34;, header = TRUE) read.table(&#34;filname.csv&#34;, header = FALSE, delimiter = &#34;\t&#34;) Read_table function is the main function operating behind the scenes even when we use csv or delim to read our files. They are wrappers to the table function with some default arguments for ease of use. There is also read_csv2 function that works with files separated by “;”.">
 
 
 
@@ -152,19 +149,19 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 
             <div class="post-content">
                 <h2 id="flat-files">Flat Files</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">read.csv</span>()
-<span style="color:#a6e22e">read.table</span>()
-<span style="color:#a6e22e">read.delim</span>()
-</code></pre></div><p>The utils package in R loads by default and contains all these read functions.</p>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.table</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.delim</span>()
+</span></span></code></pre></div><p>The utils package in R loads by default and contains all these read functions.</p>
+<!--list-separator-->
 <ul>
 <li>
 <p>Arguments</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
-<span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, col_names<span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Column 1&#34;</span>, <span style="color:#e6db74">&#34;Column 2&#34;</span>), col_values <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;numeric&#34;</span>, <span style="color:#e6db74">&#34;factor&#34;</span>))
-<span style="color:#a6e22e">read.delim</span>(<span style="color:#e6db74">&#34;filename.txt&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
-<span style="color:#a6e22e">read.table</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, delimiter <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;\t&#34;</span>)
-</code></pre></div><p><em>Read_table</em> function is the main function operating behind the scenes even when we use <em>csv</em> or <em>delim</em> to read our files. They are wrappers to the <em>table</em> function with some default arguments for ease of use. There is also <em>read_csv2</em> function that works with files separated by &ldquo;;&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, col_names<span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Column 1&#34;</span>, <span style="color:#e6db74">&#34;Column 2&#34;</span>), col_values <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;numeric&#34;</span>, <span style="color:#e6db74">&#34;factor&#34;</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.delim</span>(<span style="color:#e6db74">&#34;filename.txt&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.table</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, delimiter <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;\t&#34;</span>)
+</span></span></code></pre></div><p><em>Read_table</em> function is the main function operating behind the scenes even when we use <em>csv</em> or <em>delim</em> to read our files. They are wrappers to the <em>table</em> function with some default arguments for ease of use. There is also <em>read_csv2</em> function that works with files separated by &ldquo;;&rdquo;.</p>
 <ul>
 <li>Header Parameter specifies if the first row of file is header or data.</li>
 <li>Delimiter Argument specifies how the column values are are separated.</li>
@@ -173,25 +170,25 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Reading filename</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">read.csv</span>(<span style="color:#a6e22e">file.path</span>(<span style="color:#e6db74">&#34;~&#34;</span>, <span style="color:#e6db74">&#34;Downloads&#34;</span>, <span style="color:#e6db74">&#34;filename.csv&#34;</span>))
-</code></pre></div><p>To read filenames that are not in the main directory, we use <em>file.path</em> functionality. This also helps make paths platform independent.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#a6e22e">file.path</span>(<span style="color:#e6db74">&#34;~&#34;</span>, <span style="color:#e6db74">&#34;Downloads&#34;</span>, <span style="color:#e6db74">&#34;filename.csv&#34;</span>))
+</span></span></code></pre></div><p>To read filenames that are not in the main directory, we use <em>file.path</em> functionality. This also helps make paths platform independent.</p>
 </li>
 </ul>
 <h3 id="other-libraries">Other Libraries</h3>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Readr Package</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(readr)
-<span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;filename.csv&#34;</span>)
-<span style="color:#a6e22e">read_tsv</span>(<span style="color:#e6db74">&#34;filename.tsv&#34;</span>)
-<span style="color:#a6e22e">read_delim</span>(<span style="color:#e6db74">&#34;filename.txt&#34;</span>, col_names <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, col_types <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ccdd&#34;</span>, delim<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/&#34;</span>, skip <span style="color:#f92672">=</span> num, n_max <span style="color:#f92672">=</span> num2)
-</code></pre></div><p>Here <em>tsv</em> function is to work with files delimited by tabs. <em>delim</em> function in this library works similar to <em>table</em> function from utils package.</p>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(readr)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;filename.csv&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_tsv</span>(<span style="color:#e6db74">&#34;filename.tsv&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_delim</span>(<span style="color:#e6db74">&#34;filename.txt&#34;</span>, col_names <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, col_types <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ccdd&#34;</span>, delim<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/&#34;</span>, skip <span style="color:#f92672">=</span> num, n_max <span style="color:#f92672">=</span> num2)
+</span></span></code></pre></div><p>Here <em>tsv</em> function is to work with files delimited by tabs. <em>delim</em> function in this library works similar to <em>table</em> function from utils package.</p>
+ <!--list-separator-->
 <ul>
 <li>
 <p>Arguments</p>
@@ -205,16 +202,16 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Data.Table Package</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(data.read)
-<span style="color:#a6e22e">fread</span>(<span style="color:#e6db74">&#34;csvfilename.csv&#34;</span>)
-<span style="color:#a6e22e">fread</span>(<span style="color:#e6db74">&#34;filename.csv&#34;</span>, select <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>))
-<span style="color:#a6e22e">fread</span>(<span style="color:#e6db74">&#34;filename.csv&#34;</span>, drop <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>))
-</code></pre></div><p>It infers column types and separators by default. It is extremely fast. Improved version of read.table function.</p>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(data.read)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fread</span>(<span style="color:#e6db74">&#34;csvfilename.csv&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fread</span>(<span style="color:#e6db74">&#34;filename.csv&#34;</span>, select <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fread</span>(<span style="color:#e6db74">&#34;filename.csv&#34;</span>, drop <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>))
+</span></span></code></pre></div><p>It infers column types and separators by default. It is extremely fast. Improved version of read.table function.</p>
+ <!--list-separator-->
 <ul>
 <li>
 <p>Arguments</p>
@@ -227,14 +224,14 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 </ul>
 <h2 id="excel-files">Excel Files</h2>
 <h3 id="readxl-package">Readxl Package</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(readxl)
-<span style="color:#a6e22e">excel_sheets</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>) <span style="color:#75715e"># gives the name of sheets</span>
-<span style="color:#a6e22e">read_excel</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>, sheet <span style="color:#f92672">=</span> Number)
-<span style="color:#a6e22e">lapply</span>(<span style="color:#a6e22e">excel_sheets</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>),
-       read_excel,
-       path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;filename.xlsx&#34;</span>)
-</code></pre></div><p>The final lapply method here calls <strong>read_excel</strong> multiple times with path parameter that we specified. Since, each call returns a sheet, we get a list of sheets from the file.</p>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(readxl)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">excel_sheets</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>) <span style="color:#75715e"># gives the name of sheets</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_excel</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>, sheet <span style="color:#f92672">=</span> Number)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lapply</span>(<span style="color:#a6e22e">excel_sheets</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>),
+</span></span><span style="display:flex;"><span>       read_excel,
+</span></span><span style="display:flex;"><span>       path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;filename.xlsx&#34;</span>)
+</span></span></code></pre></div><p>The final lapply method here calls <strong>read_excel</strong> multiple times with path parameter that we specified. Since, each call returns a sheet, we get a list of sheets from the file.</p>
+<!--list-separator-->
 <ul>
 <li>
 <p>Parameters</p>
@@ -248,31 +245,29 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 </ul>
 <h3 id="gdata-package">Gdata Package</h3>
 <p>More traditional package that supports only <em>xls</em> files by default. Follows similar syntax to utils package.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(gdata)
-<span style="color:#a6e22e">read.xls</span>(<span style="color:#e6db74">&#34;filename.xls&#34;</span>, sheet<span style="color:#f92672">=</span> sheetNum or sheetName)
-</code></pre></div><h3 id="xlconnect-package">XLConnect Package</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(gdata)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.xls</span>(<span style="color:#e6db74">&#34;filename.xls&#34;</span>, sheet<span style="color:#f92672">=</span> sheetNum or sheetName)
+</span></span></code></pre></div><h3 id="xlconnect-package">XLConnect Package</h3>
 <p>Working with excel through R. Needs JDK.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">library</span>(<span style="color:#e6db74">&#34;XLConnect&#34;</span>)
-<span style="color:#a6e22e">loadWorkBook</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>) <span style="color:#75715e"># the workbook_Obj we need.</span>
-<span style="color:#a6e22e">getSheets</span>(workbook_Obj)
-<span style="color:#a6e22e">readWorksheet</span>(workbook_Obj, sheet<span style="color:#f92672">=</span> sheet_name,
-              startRow <span style="color:#f92672">=</span> num,
-              endRow <span style="color:#f92672">=</span> num,
-              startCol <span style="color:#f92672">=</span> num,
-              header <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
-
-
-</code></pre></div><p>You can list the sheets available and read worksheet from the workbook object.</p>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(<span style="color:#e6db74">&#34;XLConnect&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">loadWorkBook</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>) <span style="color:#75715e"># the workbook_Obj we need.</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">getSheets</span>(workbook_Obj)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">readWorksheet</span>(workbook_Obj, sheet<span style="color:#f92672">=</span> sheet_name,
+</span></span><span style="display:flex;"><span>              startRow <span style="color:#f92672">=</span> num,
+</span></span><span style="display:flex;"><span>              endRow <span style="color:#f92672">=</span> num,
+</span></span><span style="display:flex;"><span>              startCol <span style="color:#f92672">=</span> num,
+</span></span><span style="display:flex;"><span>              header <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
+</span></span></code></pre></div><p>You can list the sheets available and read worksheet from the workbook object.</p>
+<!--list-separator-->
 <ul>
 <li>
 <p>Other functionalities</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#a6e22e">createSheet</span>(book_obj, <span style="color:#e6db74">&#34;new_sheet_name&#34;</span>)
-<span style="color:#a6e22e">writeWorksheet</span>(book_obj, df, sheet<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sheet_name&#34;</span>)
-<span style="color:#a6e22e">renameSheet</span>(book_obj, <span style="color:#e6db74">&#34;old_name&#34;</span>, <span style="color:#e6db74">&#34;new_name&#34;</span>)
-<span style="color:#a6e22e">removeSheet</span>(book_obj, <span style="color:#e6db74">&#34;sheet_name&#34;</span>)
-<span style="color:#a6e22e">saveWorkbook</span>(book_obj, file<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;outputFileName.xlsx&#34;</span>)
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">createSheet</span>(book_obj, <span style="color:#e6db74">&#34;new_sheet_name&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">writeWorksheet</span>(book_obj, df, sheet<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sheet_name&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">renameSheet</span>(book_obj, <span style="color:#e6db74">&#34;old_name&#34;</span>, <span style="color:#e6db74">&#34;new_name&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">removeSheet</span>(book_obj, <span style="color:#e6db74">&#34;sheet_name&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">saveWorkbook</span>(book_obj, file<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;outputFileName.xlsx&#34;</span>)
+</span></span></code></pre></div></li>
 </ul>
 <h2 id="backlinks">Backlinks</h2>
 <ul>
@@ -325,22 +320,6 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -348,7 +327,7 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 
 
 
-<script type="text/javascript" src="../../../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

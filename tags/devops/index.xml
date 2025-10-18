@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>devops on Alok&#39;s Blog</title>
+    <title>Devops on </title>
     <link>https://dragarok.github.io/tags/devops/</link>
-    <description>Recent content in devops on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Devops on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:23 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:23 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scaling</title>
       <link>https://dragarok.github.io/braindump/2020/04/scaling/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:23 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/scaling/</guid>
-      <description>Scalability of web request handling:
-That leads to the first golden rule for scalability: every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory.
-Sessions need to be stored in a centralized data store which is accessible to all your application servers. It can be an external database or an external persistent cache, like Redis.
-After “outsourcing” your sessions and serving the same codebase from all your servers, you can now create an image file from one of these servers (AWS calls this AMI - Amazon Machine Image.</description>
+      <description>&lt;p&gt;Scalability of web request handling:&lt;/p&gt;&#xA;&lt;p&gt;That leads to the first golden rule for scalability: every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory.&lt;/p&gt;&#xA;&lt;p&gt;Sessions need to be stored in a centralized data store which is accessible to all your application servers. It can be an external database or an external persistent cache, like Redis.&lt;/p&gt;&#xA;&lt;p&gt;After “outsourcing” your sessions and serving the same codebase from all your servers, you can now create an image file from one of these servers (AWS calls this AMI - Amazon Machine Image.)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

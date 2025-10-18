@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>coding on Alok&#39;s Blog</title>
+    <title>Coding on </title>
     <link>https://dragarok.github.io/categories/coding/</link>
-    <description>Recent content in coding on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Coding on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 May 2020 03:41:41 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithms</title>
       <link>https://dragarok.github.io/braindump/2020/04/algorithms/</link>
       <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/algorithms/</guid>
-      <description>Algorithms Basic rules of complexity definition for removing terms:
-Multiplicative constants can be omitted: 14n2 becomes n2. n^a dominates n^b if a &amp;gt; b: for instance, n^2 dominates n. Any exponential dominates any polynomial: 3^n dominates n^5 (it even dominates 2^n). Likewise, any polynomial dominates any logarithm: n dominates (log n)^3. This also means, for example, that n^2 dominates n* log n. Techniques to think of counter examples:
-Think small Think exhaustively: All possibilities by adding to general cases Hunt for the weakness: understand the problem statement and try to find loopholes Go for a tie: Attacking greedy procedures Extreme examples: Searching for solution to problem needs you to know first the type of problem it falls into:</description>
+      <description>&lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;&#xA;&lt;p&gt;Basic rules of complexity definition for removing terms:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multiplicative&lt;/strong&gt; constants can be omitted: 14n2 becomes n2.&lt;/li&gt;&#xA;&lt;li&gt;n^a dominates n^b if a &amp;gt; b: for instance, n^2 dominates n.&lt;/li&gt;&#xA;&lt;li&gt;Any exponential dominates any polynomial: 3^n dominates n^5 (it even dominates 2^n).&lt;/li&gt;&#xA;&lt;li&gt;Likewise, any polynomial dominates any logarithm: n dominates (log n)^3. This also means, for example, that n^2 dominates n* log n.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Techniques to &lt;em&gt;think&lt;/em&gt; of counter examples:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Think small&lt;/li&gt;&#xA;&lt;li&gt;Think exhaustively: All possibilities by adding to general cases&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Hunt&lt;/code&gt; for the weakness: understand the problem statement and try to find loopholes&lt;/li&gt;&#xA;&lt;li&gt;Go for a tie: Attacking greedy procedures&lt;/li&gt;&#xA;&lt;li&gt;Extreme &lt;strong&gt;examples&lt;/strong&gt;:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Searching for &lt;code&gt;solution&lt;/code&gt; to problem needs you to know first the type of problem it falls into:&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Anaconda Windows</title>
+      <link>https://dragarok.github.io/ai/anaconda-windows/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://dragarok.github.io/ai/anaconda-windows/</guid>
+      <description>&lt;h2 id=&#34;anaconda-installation-in-windows&#34;&gt;Anaconda Installation in Windows&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Issue with pyzmq:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   pip uninstall pyzmq&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   pip install pyzmq&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Issue with requests&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   conda deactivate&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   conda update --force conda&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Issue with sqlite3&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Find sqlite 3 dll&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.sqlite.org/download.html&#34;&gt;https://www.sqlite.org/download.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Put it into &lt;em&gt;Anaconda3/DLLS/&lt;/em&gt; folder&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for&#xA;working with TensorFlow-GPU.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Anaconda if HTTPS error:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   conda --config ssl_verify&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Path variable has importance of order. Based on which python you want as&#xA;default, put that higher in PATH variable list in windows.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Anaconda Windows</title>
       <link>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</link>
       <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2019/09/anaconda-windows/</guid>
-      <description>Anaconda Installation in Windows Issue with pyzmq:
-pip uninstall pyzmq pip install pyzmq Issue with requests
-conda deactivate conda update --force conda Issue with sqlite3
-Find sqlite 3 dll https://www.sqlite.org/download.html Put it into Anaconda3/DLLS/ folder Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for working with TensorFlow-GPU.
-Anaconda if HTTPS error:
-conda --config ssl_verify=false Path variable has importance of order. Based on which python you want as default, put that higher in PATH variable list in windows.</description>
+      <description>&lt;h2 id=&#34;anaconda-installation-in-windows&#34;&gt;Anaconda Installation in Windows&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Issue with pyzmq:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   pip uninstall pyzmq&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   pip install pyzmq&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Issue with requests&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   conda deactivate&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   conda update --force conda&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Issue with sqlite3&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Find sqlite 3 dll&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.sqlite.org/download.html&#34;&gt;https://www.sqlite.org/download.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Put it into &lt;em&gt;Anaconda3/DLLS/&lt;/em&gt; folder&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install Python 3.6 or 3.7 if you want same env for PyTorch as well as for&#xA;working with TensorFlow-GPU.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Anaconda if HTTPS error:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   conda --config ssl_verify&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;false&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Path variable has importance of order. Based on which python you want as&#xA;default, put that higher in PATH variable list in windows.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

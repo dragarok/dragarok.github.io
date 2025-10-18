@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>para on Alok&#39;s Blog</title>
+    <title>Para on </title>
     <link>https://dragarok.github.io/tags/para/</link>
-    <description>Recent content in para on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Para on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:46 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/para/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:46 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/para/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Para</title>
       <link>https://dragarok.github.io/braindump/2020/04/para/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:46 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/para/</guid>
-      <description>Projects Areas Resources Archives
-Projects Group of related task Specific outcomes Specific deadlines Areas No deadline Standards to be met e.g. House, Work etc. Resources Not tied to specific project but of interest to you e.g. Emacs, Productivity etc. Archives Inactive Projects, Areas or Resources. Archived </description>
+      <description>&lt;p&gt;Projects Areas Resources Archives&lt;/p&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Group of related task&lt;/li&gt;&#xA;&lt;li&gt;Specific outcomes&lt;/li&gt;&#xA;&lt;li&gt;Specific deadlines&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;areas&#34;&gt;Areas&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;No deadline&lt;/li&gt;&#xA;&lt;li&gt;Standards to be met&lt;/li&gt;&#xA;&lt;li&gt;e.g. House, Work etc.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Not tied to specific project but of interest to you&lt;/li&gt;&#xA;&lt;li&gt;e.g. Emacs, Productivity etc.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;archives&#34;&gt;Archives&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Inactive Projects, Areas or Resources.&lt;/li&gt;&#xA;&lt;li&gt;Archived&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
   </channel>
 </rss>

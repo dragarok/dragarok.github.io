@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thought on Alok&#39;s Blog</title>
+    <title>Thought on </title>
     <link>https://dragarok.github.io/tags/thought/</link>
-    <description>Recent content in thought on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Thought on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:10 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/thought/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:10 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/thought/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Unbearable Lightness of Being</title>
       <link>https://dragarok.github.io/braindump/2020/04/the-unbearable-lightness-of-being/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:10 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/the-unbearable-lightness-of-being/</guid>
-      <description>&amp;ndash; book_author: Milan Kundera &amp;ndash; rating: 5/5
-The way book talks of love: intricate yet tight interplay of human emotions, comparing them to politics every now and then is amazing. How people fail to realize all their lives of love: how they victimize each other with both of power and of weakness. People live on and share beds but share love with someone else. The jealousy between mistresses of Tomas: his breaking out of himself and his rules led the story here.</description>
+      <description>&lt;p&gt;&amp;ndash; book_author: Milan Kundera&#xA;&amp;ndash; rating: 5/5&lt;/p&gt;&#xA;&lt;p&gt;The way book talks of love: intricate yet tight interplay of human emotions, comparing them to politics every now and then is amazing. How people fail to realize all their lives of love: how they victimize each other with both of power and of weakness. People live on and share beds but share love with someone else. The jealousy between mistresses of Tomas: his breaking out of himself and his rules led the story here.&#xA;The characters are so strong yet they are so vulnerable looking to fall down, be commanded, stripped of all their power. Not only do people fall for power but people long for weakness: a great fall of their own.&#xA;Comparing Tereza with Nietchze in the end and the way these characters come to realize their truth: Tereza who always felt she was the weak one and Tomas the untouchable: realizes it was her leading the way. She was the one in control all along. Her belief that his love was weak and put him to tests meant that her love was questionable as well.&#xA;Tomas doesn&amp;rsquo;t know much of a thing. He takes decisions and even doesn&amp;rsquo;t know why he took it. It appears to him strange why he did things he did. He broke his rule, he left Switzerland, he left medical profession, he did not sign the petition. All for Tereza: he was partially guilty of sleeping with other mistresses and could never forgive himself for cheating on the only kind of love he had with Tereza: not of sex but sleep.&#xA;Franz searched for Sabina everywhere as if she was constantly overlooking him. He wanted to appear in her eyes beautiful. The moment he realizes the student&amp;rsquo;s love for him: how he failed to see in her the beauty of his reality with her rather than those dreams of Sabina; he fell down.&#xA;The love of an animal Karenin and how we see animal&amp;rsquo;s love vs a human&amp;rsquo;s love makes all the difference we see in love. Our expectations rise in love with human as he/she is capable of understanding and performing much more than an animal. If this expectation goes away from the either side and there is love: then it is idyllic just as Tereza wanted all her life.&#xA;Everything here as they understand the significance: the lightness of being: It happens as so it&amp;rsquo;s unbearable to live now. You have finally understood what it means to be alive. Now, it&amp;rsquo;s time to be dead.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Raspberry Pi Project Ideas</title>
       <link>https://dragarok.github.io/braindump/2020/04/raspberry-pi-project-ideas/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:57 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/raspberry-pi-project-ideas/</guid>
-      <description>Making projects with raspberry pi:
-Onion pi Code to automate flight timelapse : Pi cobbler for easy access to gpio pins web server with pi Arduino with pi : pyfirmata, pyserial Coding with scratch analysing loval network : Nagios Pi improve performance by boostraping pen drive instead of sd card to boot 9/. Making a battery pack for pi: UBEC : one with micro usb connector 3A 6S max 6A</description>
+      <description>&lt;p&gt;Making projects with raspberry pi:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Onion pi&lt;/li&gt;&#xA;&lt;li&gt;Code to automate flight&lt;/li&gt;&#xA;&lt;li&gt;timelapse : Pi cobbler for easy access to gpio pins&lt;/li&gt;&#xA;&lt;li&gt;web server with pi&lt;/li&gt;&#xA;&lt;li&gt;Arduino with pi : pyfirmata, pyserial&lt;/li&gt;&#xA;&lt;li&gt;Coding with scratch&lt;/li&gt;&#xA;&lt;li&gt;analysing loval network : Nagios Pi&lt;/li&gt;&#xA;&lt;li&gt;improve performance by boostraping pen drive instead of sd card to boot&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;9/. Making a battery pack for pi:&#xA;UBEC : one with micro usb connector 3A 6S max 6A&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Musical Thoughts</title>
       <link>https://dragarok.github.io/braindump/2020/04/musical-thoughts/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:56 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/musical-thoughts/</guid>
-      <description>Don&amp;rsquo;t we feel a curiosity why music has played such an important part of our life? Even though we dont like a certain language, we love to hear the mere music without understanding what it&amp;rsquo;s talking about, isn&amp;rsquo;t it?
-I clearly listened to Shakira&amp;rsquo;s Chantaje without even searching for what it means or what it is talking about.
-Music has no clear origins from where it all started. Regarding to it&amp;rsquo;s origin there are basically two theories that are worth to be watched: Evolutionary basis or The Cultural Evolution</description>
+      <description>&lt;p&gt;Don&amp;rsquo;t we feel a curiosity why music has played such an important part of our life? Even though we dont like a certain language, we love to hear the mere music without understanding what it&amp;rsquo;s talking about, isn&amp;rsquo;t it?&lt;/p&gt;&#xA;&lt;p&gt;I clearly listened to Shakira&amp;rsquo;s Chantaje without even searching for what it means or what it is talking about.&lt;/p&gt;&#xA;&lt;p&gt;Music has no clear origins from where it all started. Regarding to it&amp;rsquo;s origin there are basically two theories that are worth to be watched:&#xA;Evolutionary basis or The Cultural Evolution&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

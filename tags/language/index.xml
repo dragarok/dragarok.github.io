@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>language on Alok&#39;s Blog</title>
+    <title>Language on </title>
     <link>https://dragarok.github.io/tags/language/</link>
-    <description>Recent content in language on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Language on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:03 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/language/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:03 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/language/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sanskrit Learning</title>
       <link>https://dragarok.github.io/braindump/2020/04/sanskrit-learning/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:03 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/sanskrit-learning/</guid>
-      <description> स्वयम् राजन्ते इति स्वराः &amp;ndash;॥ जसको उच्चाराणमा अरुको सहायता चाहिँदैन, त्यो स्वर हो। </description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;स्वयम् राजन्ते इति स्वराः &amp;ndash;॥ जसको उच्चाराणमा अरुको सहायता चाहिँदैन, त्यो स्वर हो।&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

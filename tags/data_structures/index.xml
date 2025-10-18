@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>data_structures on Alok&#39;s Blog</title>
+    <title>Data_structures on </title>
     <link>https://dragarok.github.io/tags/data_structures/</link>
-    <description>Recent content in data_structures on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Data_structures on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/data_structures/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Apr 2020 06:02:46 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/data_structures/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithms</title>
       <link>https://dragarok.github.io/braindump/2020/04/algorithms/</link>
       <pubDate>Tue, 21 Apr 2020 06:02:46 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/algorithms/</guid>
-      <description>Algorithms Basic rules of complexity definition for removing terms:
-Multiplicative constants can be omitted: 14n2 becomes n2. n^a dominates n^b if a &amp;gt; b: for instance, n^2 dominates n. Any exponential dominates any polynomial: 3^n dominates n^5 (it even dominates 2^n). Likewise, any polynomial dominates any logarithm: n dominates (log n)^3. This also means, for example, that n^2 dominates n* log n. Techniques to think of counter examples:
-Think small Think exhaustively: All possibilities by adding to general cases Hunt for the weakness: understand the problem statement and try to find loopholes Go for a tie: Attacking greedy procedures Extreme examples: Searching for solution to problem needs you to know first the type of problem it falls into:</description>
+      <description>&lt;h2 id=&#34;algorithms&#34;&gt;Algorithms&lt;/h2&gt;&#xA;&lt;p&gt;Basic rules of complexity definition for removing terms:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multiplicative&lt;/strong&gt; constants can be omitted: 14n2 becomes n2.&lt;/li&gt;&#xA;&lt;li&gt;n^a dominates n^b if a &amp;gt; b: for instance, n^2 dominates n.&lt;/li&gt;&#xA;&lt;li&gt;Any exponential dominates any polynomial: 3^n dominates n^5 (it even dominates 2^n).&lt;/li&gt;&#xA;&lt;li&gt;Likewise, any polynomial dominates any logarithm: n dominates (log n)^3. This also means, for example, that n^2 dominates n* log n.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Techniques to &lt;em&gt;think&lt;/em&gt; of counter examples:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Think small&lt;/li&gt;&#xA;&lt;li&gt;Think exhaustively: All possibilities by adding to general cases&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Hunt&lt;/code&gt; for the weakness: understand the problem statement and try to find loopholes&lt;/li&gt;&#xA;&lt;li&gt;Go for a tie: Attacking greedy procedures&lt;/li&gt;&#xA;&lt;li&gt;Extreme &lt;strong&gt;examples&lt;/strong&gt;:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Searching for &lt;code&gt;solution&lt;/code&gt; to problem needs you to know first the type of problem it falls into:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

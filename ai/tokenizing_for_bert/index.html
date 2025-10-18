@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Alok Regmi]">
-<meta name="description" content="&amp;quot;&amp;quot;&amp;quot; Adapted from Oliver Atanaszov&amp;rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &amp;quot;&amp;quot;&amp;quot;
-from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&amp;#39;[CLS]&amp;#39;] self.pad_token = self.tokenizer.vocab[&amp;#39;[PAD]&amp;#39;] def encode(self, input): return list(self." />
+<meta name="description" content="&quot;&quot;&quot; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&quot;&quot;
+from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;] def encode(self, input): return list(self.tokenizer.convert_tokens_to_ids(o) for o in input) def token2id(self, item: Tuple[str, str]): &#34;Convert text (item[0]) to sequence of IDs and label (item[1]) to integer&#34; assert len(item) == 2 # Need a row of text AND labels label, text = item[0], item[1] assert isinstance(text, str) # Need position 1 of input to be of type(str) inputs = self.tokenizer.tokenize(text) if len(inputs) &gt;= self.max_length: inputs = inputs[:self.max_length - 1] ids = self.encode(inputs) &#43; [self.clf_token] else: pad = [self.pad_token] * (self.max_length - len(inputs) - 1) ids = self.encode(inputs) &#43; [self.clf_token] &#43; pad return np.array(ids, dtype=&#39;int64&#39;), self.label2id[label] def process_row(self, row): &#34;Calls the token2id method of the text processor for passing items to executor&#34; return self.token2id((row[1][LABEL_COL], row[1][TEXT_COL])) def create_dataloader(self, df: pd.DataFrame, batch_size: int = 32, shuffle: bool = False, valid_pct: float = None): &#34;Process rows in pd.DataFrame using n_cpus and return a DataLoader&#34; tqdm.pandas() with ProcessPoolExecutor(max_workers=n_cpu) as executor: result = list( tqdm(executor.map(self.process_row, df.iterrows(), chunksize=8192), desc=f&#34;Processing {len(df)} examples on {n_cpu} cores&#34;, total=len(df))) features = [r[0] for r in result] labels = [r[1] for r in result] dataset = TensorDataset(torch.tensor(features, dtype=torch.long), torch.tensor(labels, dtype=torch.long)) data_loader = DataLoader(dataset, batch_size=batch_size, num_workers=0, shuffle=shuffle, pin_memory=torch.cuda.is_available()) return data_loader " />
 <meta name="keywords" content="Blog, tokenization, bert" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -15,7 +15,7 @@ from concurrent.futures import ProcessPoolExecutor import multiprocessing import
 
     <title>
         
-            Bert Tokenization :: Alok&#39;s Blog 
+            Bert Tokenization ::  
         
     </title>
 
@@ -35,7 +35,7 @@ from concurrent.futures import ProcessPoolExecutor import multiprocessing import
 
 
 
-<link rel="stylesheet" href="../../main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="../../main.min.daa43c14e17ef1950fa593909b64d3a2d9855d65b354823b6d82fca285818e75.css">
 
 
 
@@ -49,29 +49,26 @@ from concurrent.futures import ProcessPoolExecutor import multiprocessing import
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
-<meta itemprop="name" content="Bert Tokenization">
-<meta itemprop="description" content="&quot;&quot;&quot; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&quot;&quot;
-from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;] def encode(self, input): return list(self.">
-<meta itemprop="datePublished" content="2020-01-24T00:00:00+05:45" />
-<meta itemprop="dateModified" content="2020-06-16T07:35:03+05:45" />
-<meta itemprop="wordCount" content="255">
-<meta itemprop="image" content="https://dragarok.github.io/"/>
 
-
-
-<meta itemprop="keywords" content="tokenization,bert," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://dragarok.github.io/"/>
-
-<meta name="twitter:title" content="Bert Tokenization"/>
-<meta name="twitter:description" content="&quot;&quot;&quot; Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &quot;&quot;&quot;
-from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;] def encode(self, input): return list(self."/>
+  <meta itemprop="name" content="Bert Tokenization">
+  <meta itemprop="description" content="&#34;&#34;&#34; Adapted from Oliver Atanaszov’s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &#34;&#34;&#34;
+from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;] def encode(self, input): return list(self.tokenizer.convert_tokens_to_ids(o) for o in input) def token2id(self, item: Tuple[str, str]): &#34;Convert text (item[0]) to sequence of IDs and label (item[1]) to integer&#34; assert len(item) == 2 # Need a row of text AND labels label, text = item[0], item[1] assert isinstance(text, str) # Need position 1 of input to be of type(str) inputs = self.tokenizer.tokenize(text) if len(inputs) &gt;= self.max_length: inputs = inputs[:self.max_length - 1] ids = self.encode(inputs) &#43; [self.clf_token] else: pad = [self.pad_token] * (self.max_length - len(inputs) - 1) ids = self.encode(inputs) &#43; [self.clf_token] &#43; pad return np.array(ids, dtype=&#39;int64&#39;), self.label2id[label] def process_row(self, row): &#34;Calls the token2id method of the text processor for passing items to executor&#34; return self.token2id((row[1][LABEL_COL], row[1][TEXT_COL])) def create_dataloader(self, df: pd.DataFrame, batch_size: int = 32, shuffle: bool = False, valid_pct: float = None): &#34;Process rows in pd.DataFrame using n_cpus and return a DataLoader&#34; tqdm.pandas() with ProcessPoolExecutor(max_workers=n_cpu) as executor: result = list( tqdm(executor.map(self.process_row, df.iterrows(), chunksize=8192), desc=f&#34;Processing {len(df)} examples on {n_cpu} cores&#34;, total=len(df))) features = [r[0] for r in result] labels = [r[1] for r in result] dataset = TensorDataset(torch.tensor(features, dtype=torch.long), torch.tensor(labels, dtype=torch.long)) data_loader = DataLoader(dataset, batch_size=batch_size, num_workers=0, shuffle=shuffle, pin_memory=torch.cuda.is_available()) return data_loader">
+  <meta itemprop="datePublished" content="2020-01-24T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2020-06-16T07:35:03+05:45">
+  <meta itemprop="wordCount" content="255">
+  <meta itemprop="image" content="https://dragarok.github.io/">
+  <meta itemprop="keywords" content="Tokenization,Bert">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://dragarok.github.io/">
+  <meta name="twitter:title" content="Bert Tokenization">
+  <meta name="twitter:description" content="&#34;&#34;&#34; Adapted from Oliver Atanaszov’s notebook on transformer fine-tuning https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb &#34;&#34;&#34;
+from concurrent.futures import ProcessPoolExecutor import multiprocessing import os import numpy as np import pandas as pd import torch from torch.utils.data import TensorDataset, random_split, DataLoader from tqdm import tqdm n_cpu = multiprocessing.cpu_count() MAX_LENGTH = 256 class TextProcessor: def __init__(self, tokenizer, label2id: dict, max_length: int=512): self.tokenizer = tokenizer self.label2id = label2id self.max_length = max_length self.clf_token = self.tokenizer.vocab[&#39;[CLS]&#39;] self.pad_token = self.tokenizer.vocab[&#39;[PAD]&#39;] def encode(self, input): return list(self.tokenizer.convert_tokens_to_ids(o) for o in input) def token2id(self, item: Tuple[str, str]): &#34;Convert text (item[0]) to sequence of IDs and label (item[1]) to integer&#34; assert len(item) == 2 # Need a row of text AND labels label, text = item[0], item[1] assert isinstance(text, str) # Need position 1 of input to be of type(str) inputs = self.tokenizer.tokenize(text) if len(inputs) &gt;= self.max_length: inputs = inputs[:self.max_length - 1] ids = self.encode(inputs) &#43; [self.clf_token] else: pad = [self.pad_token] * (self.max_length - len(inputs) - 1) ids = self.encode(inputs) &#43; [self.clf_token] &#43; pad return np.array(ids, dtype=&#39;int64&#39;), self.label2id[label] def process_row(self, row): &#34;Calls the token2id method of the text processor for passing items to executor&#34; return self.token2id((row[1][LABEL_COL], row[1][TEXT_COL])) def create_dataloader(self, df: pd.DataFrame, batch_size: int = 32, shuffle: bool = False, valid_pct: float = None): &#34;Process rows in pd.DataFrame using n_cpus and return a DataLoader&#34; tqdm.pandas() with ProcessPoolExecutor(max_workers=n_cpu) as executor: result = list( tqdm(executor.map(self.process_row, df.iterrows(), chunksize=8192), desc=f&#34;Processing {len(df)} examples on {n_cpu} cores&#34;, total=len(df))) features = [r[0] for r in result] labels = [r[1] for r in result] dataset = TensorDataset(torch.tensor(features, dtype=torch.long), torch.tensor(labels, dtype=torch.long)) data_loader = DataLoader(dataset, batch_size=batch_size, num_workers=0, shuffle=shuffle, pin_memory=torch.cuda.is_available()) return data_loader">
 
 
 
 
 
-    <meta property="article:published_time" content="2020-01-24 00:00:00 &#43;0545 &#43;0545" />
+    <meta property="article:published_time" content="2020-01-24 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -147,76 +144,76 @@ from concurrent.futures import ProcessPoolExecutor import multiprocessing import
 Adapted from Oliver Atanaszov&rsquo;s notebook on transformer fine-tuning
 <a href="https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb">https://github.com/ben0it8/containerized-transformer-finetuning/blob/develop/research/finetune-transformer-on-imdb5k.ipynb</a>
 &quot;&quot;&quot;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> concurrent.futures <span style="color:#f92672">import</span> ProcessPoolExecutor
-<span style="color:#f92672">import</span> multiprocessing
-<span style="color:#f92672">import</span> os
-<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
-<span style="color:#f92672">import</span> torch
-<span style="color:#f92672">from</span> torch.utils.data <span style="color:#f92672">import</span> TensorDataset, random_split, DataLoader
-<span style="color:#f92672">from</span> tqdm <span style="color:#f92672">import</span> tqdm
-
-n_cpu <span style="color:#f92672">=</span> multiprocessing<span style="color:#f92672">.</span>cpu_count()
-MAX_LENGTH <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
-
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TextProcessor</span>:
-    <span style="color:#66d9ef">def</span> __init__(self, tokenizer, label2id: dict, max_length: int<span style="color:#f92672">=</span><span style="color:#ae81ff">512</span>):
-        self<span style="color:#f92672">.</span>tokenizer <span style="color:#f92672">=</span> tokenizer
-        self<span style="color:#f92672">.</span>label2id <span style="color:#f92672">=</span> label2id
-        self<span style="color:#f92672">.</span>max_length <span style="color:#f92672">=</span> max_length
-        self<span style="color:#f92672">.</span>clf_token <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tokenizer<span style="color:#f92672">.</span>vocab[<span style="color:#e6db74">&#39;[CLS]&#39;</span>]
-        self<span style="color:#f92672">.</span>pad_token <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tokenizer<span style="color:#f92672">.</span>vocab[<span style="color:#e6db74">&#39;[PAD]&#39;</span>]
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">encode</span>(self, input):
-    <span style="color:#66d9ef">return</span> list(self<span style="color:#f92672">.</span>tokenizer<span style="color:#f92672">.</span>convert_tokens_to_ids(o) <span style="color:#66d9ef">for</span> o <span style="color:#f92672">in</span> input)
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">token2id</span>(self, item: Tuple[str, str]):
-    <span style="color:#e6db74">&#34;Convert text (item[0]) to sequence of IDs and label (item[1]) to integer&#34;</span>
-    <span style="color:#66d9ef">assert</span> len(item) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>   <span style="color:#75715e"># Need a row of text AND labels</span>
-    label, text <span style="color:#f92672">=</span> item[<span style="color:#ae81ff">0</span>], item[<span style="color:#ae81ff">1</span>]
-    <span style="color:#66d9ef">assert</span> isinstance(text, str)   <span style="color:#75715e"># Need position 1 of input to be of type(str)</span>
-    inputs <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tokenizer<span style="color:#f92672">.</span>tokenize(text)
-
-<span style="color:#66d9ef">if</span> len(inputs) <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>max_length:
-    inputs <span style="color:#f92672">=</span> inputs[:self<span style="color:#f92672">.</span>max_length <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
-    ids <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>encode(inputs) <span style="color:#f92672">+</span> [self<span style="color:#f92672">.</span>clf_token]
-<span style="color:#66d9ef">else</span>:
-    pad <span style="color:#f92672">=</span> [self<span style="color:#f92672">.</span>pad_token] <span style="color:#f92672">*</span> (self<span style="color:#f92672">.</span>max_length <span style="color:#f92672">-</span> len(inputs) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
-    ids <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>encode(inputs) <span style="color:#f92672">+</span> [self<span style="color:#f92672">.</span>clf_token] <span style="color:#f92672">+</span> pad
-
-<span style="color:#66d9ef">return</span> np<span style="color:#f92672">.</span>array(ids, dtype<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;int64&#39;</span>), self<span style="color:#f92672">.</span>label2id[label]
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process_row</span>(self, row):
-    <span style="color:#e6db74">&#34;Calls the token2id method of the text processor for passing items to executor&#34;</span>
-    <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>token2id((row[<span style="color:#ae81ff">1</span>][LABEL_COL], row[<span style="color:#ae81ff">1</span>][TEXT_COL]))
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_dataloader</span>(self,
-                      df: pd<span style="color:#f92672">.</span>DataFrame,
-                      batch_size: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">32</span>,
-                      shuffle: bool <span style="color:#f92672">=</span> False,
-                      valid_pct: float <span style="color:#f92672">=</span> None):
-    <span style="color:#e6db74">&#34;Process rows in pd.DataFrame using n_cpus and return a DataLoader&#34;</span>
-
-tqdm<span style="color:#f92672">.</span>pandas()
-<span style="color:#66d9ef">with</span> ProcessPoolExecutor(max_workers<span style="color:#f92672">=</span>n_cpu) <span style="color:#66d9ef">as</span> executor:
-    result <span style="color:#f92672">=</span> list(
-        tqdm(executor<span style="color:#f92672">.</span>map(self<span style="color:#f92672">.</span>process_row, df<span style="color:#f92672">.</span>iterrows(), chunksize<span style="color:#f92672">=</span><span style="color:#ae81ff">8192</span>),
-             desc<span style="color:#f92672">=</span>f<span style="color:#e6db74">&#34;Processing {len(df)} examples on {n_cpu} cores&#34;</span>,
-             total<span style="color:#f92672">=</span>len(df)))
-
-features <span style="color:#f92672">=</span> [r[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> result]
-labels <span style="color:#f92672">=</span> [r[<span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> result]
-
-dataset <span style="color:#f92672">=</span> TensorDataset(torch<span style="color:#f92672">.</span>tensor(features, dtype<span style="color:#f92672">=</span>torch<span style="color:#f92672">.</span>long),
-                        torch<span style="color:#f92672">.</span>tensor(labels, dtype<span style="color:#f92672">=</span>torch<span style="color:#f92672">.</span>long))
-
-data_loader <span style="color:#f92672">=</span> DataLoader(dataset,
-                         batch_size<span style="color:#f92672">=</span>batch_size,
-                         num_workers<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,
-                         shuffle<span style="color:#f92672">=</span>shuffle,
-                         pin_memory<span style="color:#f92672">=</span>torch<span style="color:#f92672">.</span>cuda<span style="color:#f92672">.</span>is_available())
-<span style="color:#66d9ef">return</span> data_loader
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> concurrent.futures <span style="color:#f92672">import</span> ProcessPoolExecutor
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> multiprocessing
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> torch.utils.data <span style="color:#f92672">import</span> TensorDataset, random_split, DataLoader
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> tqdm <span style="color:#f92672">import</span> tqdm
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>n_cpu <span style="color:#f92672">=</span> multiprocessing<span style="color:#f92672">.</span>cpu_count()
+</span></span><span style="display:flex;"><span>MAX_LENGTH <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TextProcessor</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, tokenizer, label2id: dict, max_length: int<span style="color:#f92672">=</span><span style="color:#ae81ff">512</span>):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>tokenizer <span style="color:#f92672">=</span> tokenizer
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>label2id <span style="color:#f92672">=</span> label2id
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>max_length <span style="color:#f92672">=</span> max_length
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>clf_token <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tokenizer<span style="color:#f92672">.</span>vocab[<span style="color:#e6db74">&#39;[CLS]&#39;</span>]
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>pad_token <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tokenizer<span style="color:#f92672">.</span>vocab[<span style="color:#e6db74">&#39;[PAD]&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">encode</span>(self, input):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> list(self<span style="color:#f92672">.</span>tokenizer<span style="color:#f92672">.</span>convert_tokens_to_ids(o) <span style="color:#66d9ef">for</span> o <span style="color:#f92672">in</span> input)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">token2id</span>(self, item: Tuple[str, str]):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Convert text (item[0]) to sequence of IDs and label (item[1]) to integer&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">assert</span> len(item) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>   <span style="color:#75715e"># Need a row of text AND labels</span>
+</span></span><span style="display:flex;"><span>    label, text <span style="color:#f92672">=</span> item[<span style="color:#ae81ff">0</span>], item[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">assert</span> isinstance(text, str)   <span style="color:#75715e"># Need position 1 of input to be of type(str)</span>
+</span></span><span style="display:flex;"><span>    inputs <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tokenizer<span style="color:#f92672">.</span>tokenize(text)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> len(inputs) <span style="color:#f92672">&gt;=</span> self<span style="color:#f92672">.</span>max_length:
+</span></span><span style="display:flex;"><span>    inputs <span style="color:#f92672">=</span> inputs[:self<span style="color:#f92672">.</span>max_length <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    ids <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>encode(inputs) <span style="color:#f92672">+</span> [self<span style="color:#f92672">.</span>clf_token]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    pad <span style="color:#f92672">=</span> [self<span style="color:#f92672">.</span>pad_token] <span style="color:#f92672">*</span> (self<span style="color:#f92672">.</span>max_length <span style="color:#f92672">-</span> len(inputs) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    ids <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>encode(inputs) <span style="color:#f92672">+</span> [self<span style="color:#f92672">.</span>clf_token] <span style="color:#f92672">+</span> pad
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> np<span style="color:#f92672">.</span>array(ids, dtype<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;int64&#39;</span>), self<span style="color:#f92672">.</span>label2id[label]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process_row</span>(self, row):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Calls the token2id method of the text processor for passing items to executor&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>token2id((row[<span style="color:#ae81ff">1</span>][LABEL_COL], row[<span style="color:#ae81ff">1</span>][TEXT_COL]))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_dataloader</span>(self,
+</span></span><span style="display:flex;"><span>                      df: pd<span style="color:#f92672">.</span>DataFrame,
+</span></span><span style="display:flex;"><span>                      batch_size: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">32</span>,
+</span></span><span style="display:flex;"><span>                      shuffle: bool <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>                      valid_pct: float <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Process rows in pd.DataFrame using n_cpus and return a DataLoader&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tqdm<span style="color:#f92672">.</span>pandas()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> ProcessPoolExecutor(max_workers<span style="color:#f92672">=</span>n_cpu) <span style="color:#66d9ef">as</span> executor:
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> list(
+</span></span><span style="display:flex;"><span>        tqdm(executor<span style="color:#f92672">.</span>map(self<span style="color:#f92672">.</span>process_row, df<span style="color:#f92672">.</span>iterrows(), chunksize<span style="color:#f92672">=</span><span style="color:#ae81ff">8192</span>),
+</span></span><span style="display:flex;"><span>             desc<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Processing </span><span style="color:#e6db74">{</span>len(df)<span style="color:#e6db74">}</span><span style="color:#e6db74"> examples on </span><span style="color:#e6db74">{</span>n_cpu<span style="color:#e6db74">}</span><span style="color:#e6db74"> cores&#34;</span>,
+</span></span><span style="display:flex;"><span>             total<span style="color:#f92672">=</span>len(df)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>features <span style="color:#f92672">=</span> [r[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> result]
+</span></span><span style="display:flex;"><span>labels <span style="color:#f92672">=</span> [r[<span style="color:#ae81ff">1</span>] <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> result]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dataset <span style="color:#f92672">=</span> TensorDataset(torch<span style="color:#f92672">.</span>tensor(features, dtype<span style="color:#f92672">=</span>torch<span style="color:#f92672">.</span>long),
+</span></span><span style="display:flex;"><span>                        torch<span style="color:#f92672">.</span>tensor(labels, dtype<span style="color:#f92672">=</span>torch<span style="color:#f92672">.</span>long))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data_loader <span style="color:#f92672">=</span> DataLoader(dataset,
+</span></span><span style="display:flex;"><span>                         batch_size<span style="color:#f92672">=</span>batch_size,
+</span></span><span style="display:flex;"><span>                         num_workers<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                         shuffle<span style="color:#f92672">=</span>shuffle,
+</span></span><span style="display:flex;"><span>                         pin_memory<span style="color:#f92672">=</span>torch<span style="color:#f92672">.</span>cuda<span style="color:#f92672">.</span>is_available())
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> data_loader
+</span></span></code></pre></div>
             </div>
         </article>
 
@@ -233,22 +230,6 @@ data_loader <span style="color:#f92672">=</span> DataLoader(dataset,
 
             </div>
 
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://dragarok.github.io/">Alok Regmi</a></span>
-            
-                
-            <span>Theme by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
-    
-</footer>
-
-            
         </div>
 
         
@@ -256,7 +237,7 @@ data_loader <span style="color:#f92672">=</span> DataLoader(dataset,
 
 
 
-<script type="text/javascript" src="../../bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
 
 
 

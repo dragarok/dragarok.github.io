@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>wordpress on Alok&#39;s Blog</title>
+    <title>Wordpress on </title>
     <link>https://dragarok.github.io/tags/wordpress/</link>
-    <description>Recent content in wordpress on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Wordpress on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:00:40 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 16:00:40 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wordpress Manjaro</title>
       <link>https://dragarok.github.io/braindump/2020/04/wordpress-manjaro/</link>
       <pubDate>Sun, 19 Apr 2020 16:00:40 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/wordpress-manjaro/</guid>
-      <description>sudo mysql_install_db : when &amp;ldquo;Can&amp;rsquo;t open and lock privilege tables: Table &amp;lsquo;mysql.servers&amp;rsquo; doesn&amp;rsquo;t exist&amp;rdquo; occurs.
-Install apache, mariadb, phpmyadmin, mysql and everything
-Starting apache server:
-sudo systemctl enable httpd.service sudo systemctl start httpd.service Also can check status as well. After installing mariadb: run
-mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql sudo systemctl restart mariadb.service Create wordpress database and user using mysql shell rather than phpmyadmin
-su mysql -u root -p In mysql shell: [ Change strong_password first ]</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;sudo mysql_install_db : when &amp;ldquo;Can&amp;rsquo;t open and lock privilege tables: Table&#xA;&amp;lsquo;mysql.servers&amp;rsquo; doesn&amp;rsquo;t exist&amp;rdquo; occurs.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install apache, mariadb, phpmyadmin, mysql and everything&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Starting apache server:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   sudo systemctl enable httpd.service&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   sudo systemctl start httpd.service&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;Also can check status as well.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;After installing mariadb: run&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   mariadb-install-db --user&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mysql --basedir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/usr --datadir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/lib/mysql&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   sudo systemctl restart mariadb.service&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Create wordpress database and user using mysql shell rather than phpmyadmin&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   su&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   mysql -u root -p&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;In mysql shell: [ Change strong_password first ]&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

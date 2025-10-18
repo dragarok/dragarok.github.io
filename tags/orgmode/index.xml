@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>orgmode on Alok&#39;s Blog</title>
+    <title>Orgmode on </title>
     <link>https://dragarok.github.io/tags/orgmode/</link>
-    <description>Recent content in orgmode on Alok&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Orgmode on </description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 15:59:15 +0545</lastBuildDate><atom:link href="https://dragarok.github.io/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 15:59:15 +0545</lastBuildDate>
+    <atom:link href="https://dragarok.github.io/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Org mode Tips and Tricks</title>
       <link>https://dragarok.github.io/braindump/2020/04/org-mode-tips-and-tricks/</link>
       <pubDate>Sun, 19 Apr 2020 15:59:15 +0545</pubDate>
-      
       <guid>https://dragarok.github.io/braindump/2020/04/org-mode-tips-and-tricks/</guid>
-      <description>Clone trees with time shifts: Bound to C-c C-x c, org-clone-subtree-with-time-shift create multiple subtrees with timestamps shifted. Useful for creating skeleton for repeated tasks. Spc-m-b-c : create table or update from region: use with whitespace mode if there is an issue. Advanced features (The Org Manual) Gives functionality to change formula, update on formula change, go directly to formula and so on. Also we can create org tables in html mode as well as latex mode.</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Clone trees with time shifts:&#xA;Bound to C-c C-x c, org-clone-subtree-with-time-shift create multiple&#xA;subtrees with timestamps shifted. Useful for creating skeleton for repeated tasks.&lt;/li&gt;&#xA;&lt;li&gt;Spc-m-b-c : create table or update from region:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;use with whitespace mode if there is an issue.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://orgmode.org/manual/Advanced-features.html&#34;&gt;Advanced features (The Org Manual)&lt;/a&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Gives functionality to change formula, update on formula change, go&#xA;directly to formula and so on.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Also we can create org tables in html mode as well as latex mode.&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>
