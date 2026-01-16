@@ -5,9 +5,17 @@
     <link>https://dragarok.github.io/</link>
     <description>Recent content on </description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 28 Nov 2025 08:08:00 +0545</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Jan 2026 07:52:56 +0545</lastBuildDate>
     <atom:link href="https://dragarok.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>  Mindset for The &#34;Uncertain&#34; times
+  </title>
+      <link>https://dragarok.github.io/posts/2026/01/mindset-for-the-uncertain-times/</link>
+      <pubDate>Fri, 16 Jan 2026 07:52:56 +0545</pubDate>
+      <guid>https://dragarok.github.io/posts/2026/01/mindset-for-the-uncertain-times/</guid>
+      <description>&lt;p&gt;If you think about world from good mental models, you&amp;rsquo;ve already recognized that traditional structures in this world are falling. Be it Politics, Business, Education and so on. As if a switch was pressed, and it started getting more and more random. Ray Dalio has written a book on &amp;ldquo;The Changing World Order&amp;rdquo;. With close observation, its hard to not take a note.&lt;/p&gt;&#xA;&lt;p&gt;Previously, money and leverage were tied to very non-random outcomes. There are decentralized commodities. Now, look at what altcoins and crypto is doing. One person is grinding their entire life saving pennies, and there&amp;rsquo;s another one who gains and loses like a gambling game. But if you look closely enough, its a form of currency we have accepted and used. So, you are a part of that gambling match whether you know crypto or not. Big countries might adapt it, and a lot of lives change. Big countries make it illegal, and a lot of lives change.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2025 Yearly Review</title>
       <link>https://dragarok.github.io/posts/2025/11/2025-yearly-review/</link>
@@ -70,13 +78,6 @@
       <pubDate>Mon, 09 Jan 2023 00:00:00 +0545</pubDate>
       <guid>https://dragarok.github.io/posts/2023/01/my-relationship-with-my-body/</guid>
       <description>&lt;p&gt;We all identify our bodies as &amp;ldquo;my body&amp;rdquo; and &lt;strong&gt;not me directly&lt;/strong&gt;. The whole idea of this blog post revolves around this idea. The purpose of this blog post is to establish an idea on how to build healthier lifestyle based on this concept.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s not like we intentionally don&amp;rsquo;t want to build healthier habits. We try to pick up exercise habits, but we are too lazy to work on it. We eat haphazardly, and without any consideration to our health. It&amp;rsquo;s a very universal problem. So, I had the same problem. On top of that, I have always been a person low in Conscientiousness, which means I used to have a hard time pushing my goals to myself if I was the only one responsible for it. Finally, I found a way that worked for me that might work for you too.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>R Programming 105- Unsupervised Learning</title>
-      <link>https://dragarok.github.io/braindump/2020/10/r-programming-105-unsupervised-learning/</link>
-      <pubDate>Fri, 09 Oct 2020 00:00:00 +0545</pubDate>
-      <guid>https://dragarok.github.io/braindump/2020/10/r-programming-105-unsupervised-learning/</guid>
-      <description>&lt;h3 id=&#34;k-means-clustering&#34;&gt;K Means Clustering&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-R&#34; data-lang=&#34;R&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;res &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;kmeans&lt;/span&gt;(x,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              centers &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; num,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              nstart &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; num,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              iter.max &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;res&lt;span style=&#34;color:#f92672&#34;&gt;$&lt;/span&gt;cluster &lt;span style=&#34;color:#75715e&#34;&gt;# gives the cluster number for each data point&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;print&lt;/span&gt;(res) &lt;span style=&#34;color:#75715e&#34;&gt;# prints cluster means, cluster, sum of squares by cluster and so on.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;!--list-separator--&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Arguments&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Centers is the number of clusters to make.&lt;/li&gt;&#xA;&lt;li&gt;Nstart is used to run algorithm multiple times to improve the odds of the best model.&lt;/li&gt;&#xA;&lt;li&gt;Iter.max is used to set the number of steps to do when creating each clusters.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!--list-separator--&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Visualizing output&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

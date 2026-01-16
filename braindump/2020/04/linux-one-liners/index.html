@@ -2213,7 +2213,7 @@ sudo !! python -m SimpleHTTPServer :w !sudo tee % cd - ^foo^bar mtr google.com c
 </span></span><span style="display:flex;"><span>find $PWD -maxdepth <span style="color:#ae81ff">1</span> -printf <span style="color:#e6db74">&#39;%.5m %10M %#9u:%-9g %#5U:%-5G  [%AD | %TD | %CD]  [%Y] %p\n&#39;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>ctrl + <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>pdftk 1.pdf 2.pdf 3.pdf cat output 123.pdf
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>rogramnameapt-file find bin/programname
@@ -3729,7 +3729,7 @@ sudo !! python -m SimpleHTTPServer :w !sudo tee % cd - ^foo^bar mtr google.com c
 </span></span><span style="display:flex;"><span>absolute_path <span style="color:#f92672">()</span> <span style="color:#f92672">{</span> readlink -f <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>; <span style="color:#f92672">}</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>find /dir_name -mtime +5 -exec rm <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>ssh user@host <span style="color:#e6db74">&#34;mysqldump -h localhost -u mysqluser -pP@</span>$$<span style="color:#e6db74">W3rD databasename | gzip -cf&#34;</span> | gunzip -c &gt; database.sql
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>getfacl file1 | setfacl --set-file<span style="color:#f92672">=</span>- file2
@@ -3774,7 +3774,7 @@ sudo !! python -m SimpleHTTPServer :w !sudo tee % cd - ^foo^bar mtr google.com c
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">find . -type d -name .svn -delete
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>$<span style="color:#e6db74"> mplayer -dumpaudio -dumpfile &lt;filename&gt;.mp3 &lt;filename&gt;.flv
+</span></span></span><span style="display:flex;"><span>$<span style="color:#e6db74"> mplayer -dumpaudio -dumpfile &lt;filename&gt;.mp3 &lt;filename&gt;.flv
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">grep -Eio &#39;([[:alnum:]_.]+@[[:alnum:]_]+?\.[[:alpha:].]{2,6})&#39; file.html
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
@@ -4853,7 +4853,7 @@ sudo !! python -m SimpleHTTPServer :w !sudo tee % cd - ^foo^bar mtr google.com c
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">hdiutil makehybrid -o CDname.iso /Way/to/folder ; hdiutil burn CDname.iso
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>$EDITOR<span style="color:#e6db74"> `perldoc -l Module::Name`
+</span></span></span><span style="display:flex;"><span>$EDITOR<span style="color:#e6db74"> `perldoc -l Module::Name`
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">for i in ./*foo*;do mv -- &#34;</span>$i<span style="color:#e6db74">&#34; &#34;</span><span style="color:#e6db74">${</span>i//foo/bar<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;;done
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
@@ -6207,9 +6207,9 @@ sudo !! python -m SimpleHTTPServer :w !sudo tee % cd - ^foo^bar mtr google.com c
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">svn status | grep &#39;!&#39; | sed &#39;s/!/ /&#39; | xargs svn del --force
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>$<span style="color:#e6db74"> xrandr -q|perl -F&#39;\s|,&#39; -lane &#34;</span>/^Sc/<span style="color:#f92672">&amp;&amp;</span>print join <span style="color:#e6db74">&#39;&#39;</span>,@F<span style="color:#f92672">[</span>8..10<span style="color:#f92672">]</span><span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span>$<span style="color:#e6db74"> xrandr -q|perl -F&#39;\s|,&#39; -lane &#34;</span>/^Sc/<span style="color:#f92672">&amp;&amp;</span>print join <span style="color:#e6db74">&#39;&#39;</span>,@F<span style="color:#f92672">[</span>8..10<span style="color:#f92672">]</span><span style="color:#e6db74">&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>$<span style="color:#e6db74"> awk &#39;{ split(sprintf(&#34;</span>%1.3e<span style="color:#e6db74">&#34;, </span>$1<span style="color:#e6db74">), b, &#34;</span>e<span style="color:#e6db74">&#34;); p = substr(&#34;</span>yzafpnum_kMGTPEZY<span style="color:#e6db74">&#34;, (b[2]/3)+9, 1); o = sprintf(&#34;</span>%f<span style="color:#e6db74">&#34;, b[1] * (10 ^ (b[2]%3))); gsub(/\./, p, o); print substr( gensub(/_[[:digit:]]*/, &#34;&#34;, &#34;</span>g<span style="color:#e6db74">&#34;, o), 1, 4); }&#39; &lt; test.dat
+</span></span></span><span style="display:flex;"><span>$<span style="color:#e6db74"> awk &#39;{ split(sprintf(&#34;</span>%1.3e<span style="color:#e6db74">&#34;, </span>$1<span style="color:#e6db74">), b, &#34;</span>e<span style="color:#e6db74">&#34;); p = substr(&#34;</span>yzafpnum_kMGTPEZY<span style="color:#e6db74">&#34;, (b[2]/3)+9, 1); o = sprintf(&#34;</span>%f<span style="color:#e6db74">&#34;, b[1] * (10 ^ (b[2]%3))); gsub(/\./, p, o); print substr( gensub(/_[[:digit:]]*/, &#34;&#34;, &#34;</span>g<span style="color:#e6db74">&#34;, o), 1, 4); }&#39; &lt; test.dat
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ip route list match 0.0.0.0/0 | cut -d &#34;</span> <span style="color:#e6db74">&#34; -f 3
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
