@@ -79,6 +79,15 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -149,7 +158,7 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 
             <div class="post-content">
                 <h2 id="flat-files">Flat Files</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.table</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.delim</span>()
 </span></span></code></pre></div><p>The utils package in R loads by default and contains all these read functions.</p>
@@ -157,7 +166,7 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 <ul>
 <li>
 <p>Arguments</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, col_names<span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Column 1&#34;</span>, <span style="color:#e6db74">&#34;Column 2&#34;</span>), col_values <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;numeric&#34;</span>, <span style="color:#e6db74">&#34;factor&#34;</span>))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.delim</span>(<span style="color:#e6db74">&#34;filename.txt&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.table</span>(<span style="color:#e6db74">&#34;filname.csv&#34;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, delimiter <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;\t&#34;</span>)
@@ -174,7 +183,7 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 <ul>
 <li>
 <p>Reading filename</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#a6e22e">file.path</span>(<span style="color:#e6db74">&#34;~&#34;</span>, <span style="color:#e6db74">&#34;Downloads&#34;</span>, <span style="color:#e6db74">&#34;filename.csv&#34;</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#a6e22e">file.path</span>(<span style="color:#e6db74">&#34;~&#34;</span>, <span style="color:#e6db74">&#34;Downloads&#34;</span>, <span style="color:#e6db74">&#34;filename.csv&#34;</span>))
 </span></span></code></pre></div><p>To read filenames that are not in the main directory, we use <em>file.path</em> functionality. This also helps make paths platform independent.</p>
 </li>
 </ul>
@@ -183,7 +192,7 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 <ul>
 <li>
 <p>Readr Package</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(readr)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(readr)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;filename.csv&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_tsv</span>(<span style="color:#e6db74">&#34;filename.tsv&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_delim</span>(<span style="color:#e6db74">&#34;filename.txt&#34;</span>, col_names <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, col_types <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ccdd&#34;</span>, delim<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/&#34;</span>, skip <span style="color:#f92672">=</span> num, n_max <span style="color:#f92672">=</span> num2)
@@ -206,7 +215,7 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 <ul>
 <li>
 <p>Data.Table Package</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(data.read)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(data.read)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">fread</span>(<span style="color:#e6db74">&#34;csvfilename.csv&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">fread</span>(<span style="color:#e6db74">&#34;filename.csv&#34;</span>, select <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">fread</span>(<span style="color:#e6db74">&#34;filename.csv&#34;</span>, drop <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>))
@@ -224,7 +233,7 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 </ul>
 <h2 id="excel-files">Excel Files</h2>
 <h3 id="readxl-package">Readxl Package</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(readxl)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(readxl)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">excel_sheets</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>) <span style="color:#75715e"># gives the name of sheets</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_excel</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>, sheet <span style="color:#f92672">=</span> Number)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">lapply</span>(<span style="color:#a6e22e">excel_sheets</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>),
@@ -245,11 +254,11 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 </ul>
 <h3 id="gdata-package">Gdata Package</h3>
 <p>More traditional package that supports only <em>xls</em> files by default. Follows similar syntax to utils package.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(gdata)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(gdata)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.xls</span>(<span style="color:#e6db74">&#34;filename.xls&#34;</span>, sheet<span style="color:#f92672">=</span> sheetNum or sheetName)
 </span></span></code></pre></div><h3 id="xlconnect-package">XLConnect Package</h3>
 <p>Working with excel through R. Needs JDK.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(<span style="color:#e6db74">&#34;XLConnect&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(<span style="color:#e6db74">&#34;XLConnect&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">loadWorkBook</span>(<span style="color:#e6db74">&#34;filename.xlsx&#34;</span>) <span style="color:#75715e"># the workbook_Obj we need.</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">getSheets</span>(workbook_Obj)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">readWorksheet</span>(workbook_Obj, sheet<span style="color:#f92672">=</span> sheet_name,
@@ -262,7 +271,7 @@ read.csv(&#34;filname.csv&#34;, header = FALSE) read.csv(&#34;filname.csv&#34;, 
 <ul>
 <li>
 <p>Other functionalities</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">createSheet</span>(book_obj, <span style="color:#e6db74">&#34;new_sheet_name&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">createSheet</span>(book_obj, <span style="color:#e6db74">&#34;new_sheet_name&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">writeWorksheet</span>(book_obj, df, sheet<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sheet_name&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">renameSheet</span>(book_obj, <span style="color:#e6db74">&#34;old_name&#34;</span>, <span style="color:#e6db74">&#34;new_name&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">removeSheet</span>(book_obj, <span style="color:#e6db74">&#34;sheet_name&#34;</span>)

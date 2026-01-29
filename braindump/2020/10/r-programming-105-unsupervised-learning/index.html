@@ -76,6 +76,15 @@ Centers is the number of clusters to make. Nstart is used to run algorithm multi
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -146,7 +155,7 @@ Centers is the number of clusters to make. Nstart is used to run algorithm multi
 
             <div class="post-content">
                 <h3 id="k-means-clustering">K Means Clustering</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kmeans</span>(x,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kmeans</span>(x,
 </span></span><span style="display:flex;"><span>              centers <span style="color:#f92672">=</span> num,
 </span></span><span style="display:flex;"><span>              nstart <span style="color:#f92672">=</span> num,
 </span></span><span style="display:flex;"><span>              iter.max <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>)
@@ -167,7 +176,7 @@ Centers is the number of clusters to make. Nstart is used to run algorithm multi
 <ul>
 <li>
 <p>Visualizing output</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(points,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(points,
 </span></span><span style="display:flex;"><span>     col <span style="color:#f92672">=</span> res<span style="color:#f92672">$</span>cluter,
 </span></span><span style="display:flex;"><span>     main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;title of the plot&#34;</span>)
 </span></span></code></pre></div></li>
@@ -181,7 +190,7 @@ Centers is the number of clusters to make. Nstart is used to run algorithm multi
 <li>
 <p>Scree Plot</p>
 <p>Plot <em>within ss</em> vs <em>number of clusters</em> to find the elbow of the plot. Choose that number of clusters to create k-means. This plot is known as <strong>scree plot</strong>. This is useful since trial and error is not the best approach.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(purrr)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(purrr)
 </span></span><span style="display:flex;"><span>withinss <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">map_dbl</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>, <span style="color:#66d9ef">function</span>(k) {
 </span></span><span style="display:flex;"><span>  model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kmeans</span>(x <span style="color:#f92672">=</span> df, centers <span style="color:#f92672">=</span> k)
 </span></span><span style="display:flex;"><span>  model<span style="color:#f92672">$</span>tot.withinss
@@ -224,7 +233,7 @@ N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 <p>1: Well matched to cluster
 0: On border between two clusters
 -1: Better fit in the neighboring clusters.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(cluster)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(cluster)
 </span></span><span style="display:flex;"><span>pam_values <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">pam</span>(df, k <span style="color:#f92672">=</span> sth)
 </span></span><span style="display:flex;"><span>pam_values<span style="color:#f92672">$</span>silinfo<span style="color:#f92672">$</span>widths <span style="color:#75715e"># get silhouette widths</span>
 </span></span><span style="display:flex;"><span>pam_values<span style="color:#f92672">$</span>silinfo<span style="color:#f92672">$</span>avg.width <span style="color:#75715e"># get avg of all s(i)</span>
@@ -248,20 +257,20 @@ N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 <li>Similarity measured via some kind of distance metric.</li>
 </ul>
 <!--listend-->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(<span style="color:#a6e22e">dist</span>(x))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(<span style="color:#a6e22e">dist</span>(x))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(hclust_obj)
 </span></span></code></pre></div><!--list-separator-->
 <ul>
 <li>
 <p>Dendrogram</p>
 <p>To analyze we can make dendrograms to understand the result properly.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(hclust_obj)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(hclust_obj)
 </span></span></code></pre></div> <!--list-separator-->
 <ul>
 <li>
 <p>Coloring dendrograms</p>
 <p>Based on height parameter passed as &ldquo;h&rdquo; or num of clusters &ldquo;k&rdquo;, we can color the dendogram for cleaner representations.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dendextended)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dendextended)
 </span></span><span style="display:flex;"><span>dend_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.dendogram</span>(hclust_obj)
 </span></span><span style="display:flex;"><span>colored_plot <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">color_branches</span>(dend_obj, k <span style="color:#f92672">=</span> num)
 </span></span><span style="display:flex;"><span>colored_plot <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">color_branches</span>(dend_obj, h <span style="color:#f92672">=</span> num)
@@ -274,7 +283,7 @@ N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 <li>
 <p>Finding a subtree</p>
 <p>Cut a hierarchical subtree</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">cutree</span>(hclust_obj, h <span style="color:#f92672">=</span> sth) <span style="color:#75715e"># height of clusters</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">cutree</span>(hclust_obj, h <span style="color:#f92672">=</span> sth) <span style="color:#75715e"># height of clusters</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">cutree</span>(hclust_obj, k <span style="color:#f92672">=</span> sth) <span style="color:#75715e"># k is no of clusters</span>
 </span></span></code></pre></div></li>
 </ul>
@@ -308,28 +317,28 @@ N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 <li>
 <p>Complete Linkage</p>
 <p>When we have more than two objects and intend to find the distance between them, we can find that using <strong>linkage method</strong> which takes the maximum of that point to other points as closeness metric.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">max</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">max</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
 </span></span></code></pre></div></li>
 </ul>
  <!--list-separator-->
 <ul>
 <li>
 <p>Single Linkage</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">min</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">min</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
 </span></span></code></pre></div></li>
 </ul>
  <!--list-separator-->
 <ul>
 <li>
 <p>Average Linkage</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">mean</span>(<span style="color:#a6e22e">dist</span>(obj_1, obj_2), <span style="color:#a6e22e">dist</span>(obj_2, obj_3))
 </span></span></code></pre></div></li>
 </ul>
  <!--list-separator-->
 <ul>
 <li>
 <p>Using the methods</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;complete&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;complete&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;average&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">hclust</span>(d, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;single&#34;</span>)
 </span></span></code></pre></div></li>
@@ -341,9 +350,9 @@ N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 <li>Normalize features since scales will be different.</li>
 </ol>
 <!--listend-->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">scale</span>(df) <span style="color:#75715e"># normalizes df</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">scale</span>(df) <span style="color:#75715e"># normalizes df</span>
 </span></span></code></pre></div><h3 id="pca">PCA</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">prcomp</span>(x <span style="color:#f92672">=</span> data,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">prcomp</span>(x <span style="color:#f92672">=</span> data,
 </span></span><span style="display:flex;"><span>       scale <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>,
 </span></span><span style="display:flex;"><span>       center <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 </span></span></code></pre></div><p>The dataframe is similar to other cases as well.</p>
@@ -362,19 +371,19 @@ N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 <ul>
 <li>
 <p>Interpreting Results</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(pca_obj) <span style="color:#75715e"># gives the output about how influential are principal components</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(pca_obj) <span style="color:#75715e"># gives the output about how influential are principal components</span>
 </span></span></code></pre></div> <!--list-separator-->
 <ul>
 <li>
 <p>Creating Biplot</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">biplot</span>(pca_obj)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">biplot</span>(pca_obj)
 </span></span></code></pre></div></li>
 </ul>
  <!--list-separator-->
 <ul>
 <li>
 <p>Scree Plot</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>variance <span style="color:#f92672">&lt;-</span> pca_obj<span style="color:#f92672">$</span>sdev ^ <span style="color:#ae81ff">2</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>variance <span style="color:#f92672">&lt;-</span> pca_obj<span style="color:#f92672">$</span>sdev ^ <span style="color:#ae81ff">2</span>
 </span></span><span style="display:flex;"><span>pve <span style="color:#f92672">&lt;-</span> variance <span style="color:#f92672">/</span> <span style="color:#a6e22e">sum</span>(variance)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(pve)
 </span></span></code></pre></div></li>
@@ -383,7 +392,7 @@ N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 <ul>
 <li>
 <p>Plotting of Variance Explained</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(pve)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(pve)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">cumsum</span>(pve))
 </span></span></code></pre></div><p>These two different kind of plots help to find the elbow.</p>
 </li>
@@ -411,9 +420,9 @@ N(i) / C(i)-1, &amp; \text { if } C(i)&gt;N(i)\end{array}\right.
 <p>Jaccard&rsquo;s index  = Intersection / Union
 Distance = 1 - J.I
 It checks how many categories are similar between observations and how many there could be.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">dist</span>(df, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binary&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">dist</span>(df, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binary&#34;</span>)
 </span></span></code></pre></div><p>When you have multiple categories and you want to convert them to binary variables as 1 and 0.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dummies)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dummies)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">dummy.data.frame</span>(df_name)
 </span></span></code></pre></div></li>
 </ul>

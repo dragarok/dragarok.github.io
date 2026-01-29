@@ -73,6 +73,15 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -144,11 +153,11 @@
             <div class="post-content">
                 <h2 id="gain-curve"><span class="org-todo todo TODO">TODO</span> Gain Curve</h2>
 <h3 id="writing-formulas">Writing formulas</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>formula_obj <span style="color:#f92672">&lt;-</span> var1 <span style="color:#f92672">~</span> var2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>formula_obj <span style="color:#f92672">&lt;-</span> var1 <span style="color:#f92672">~</span> var2
 </span></span><span style="display:flex;"><span>formula_obj <span style="color:#f92672">&lt;-</span> var1 <span style="color:#f92672">~</span> var2 <span style="color:#f92672">+</span> var3
 </span></span><span style="display:flex;"><span>formula_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.formula</span>(<span style="color:#e6db74">&#34;var1 ~ var2&#34;</span>)
 </span></span></code></pre></div><h3 id="getting-information-about-the-model">Getting information about the model</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(model_var)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(model_var)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(model_var)
 </span></span><span style="display:flex;"><span>broom<span style="color:#f92672">::</span><span style="color:#a6e22e">glance</span>(model_var)
 </span></span><span style="display:flex;"><span>sigr<span style="color:#f92672">:</span><span style="color:#a6e22e">wrapFTest</span>(model_var)
@@ -159,7 +168,7 @@
 <li><em>wrapFTest</em> shows the most relevant details of the model.</li>
 </ul>
 <h3 id="predicting-using-the-model">Predicting using the model</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">predict</span>(model, newdata <span style="color:#f92672">=</span> new_data_vals)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">predict</span>(model, newdata <span style="color:#f92672">=</span> new_data_vals)
 </span></span></code></pre></div><h3 id="collinearity">Collinearity</h3>
 <ul>
 <li>The variables assumed to be independent might not be independent after all.</li>
@@ -167,7 +176,7 @@
 </ul>
 <h3 id="gain-curve">Gain curve</h3>
 <p>The gain curve is important in sorting the outcome rather than making all predictions correct. Checks if model&rsquo;s predictions sort in the same order as the true outcome.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(WVPlots)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(WVPlots)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">GainCurvePlot</span>(df_var, predictions, actual_value, title_for_plot)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">GainCurvePlot</span>(frame, xvar, truthvar, title)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">GainCurvePlot</span>(df_name, <span style="color:#e6db74">&#34;pred_col_name&#34;</span>, <span style="color:#e6db74">&#34;actual_col_name&#34;</span> , <span style="color:#e6db74">&#34;Title of plot&#34;</span>)
@@ -180,29 +189,29 @@
 where RSS = Residual sum of squares i.e. Variance of model and
 \[SS_{TOT}\] = Total sum of squares i.e. Variance of data
 Having large R^2 means that the model fits the data well.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(model_var)<span style="color:#f92672">$</span>r.squared
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(model_var)<span style="color:#f92672">$</span>r.squared
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">glance</span>(model_var)<span style="color:#f92672">$</span>r.squared
 </span></span></code></pre></div><p>The summary function for linear model using <em>lm()</em> returns the R^2 error already there.</p>
 <h3 id="cross-validation">Cross Validation</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(vtreat)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(vtreat)
 </span></span><span style="display:flex;"><span>splitWay <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">kWayCrossValidation</span>(n_rows, n_splits, <span style="color:#66d9ef">NULL</span>, <span style="color:#66d9ef">NULL</span>)
 </span></span><span style="display:flex;"><span>splitWay[[index]]
 </span></span></code></pre></div><p>The last two parameters are <em>df</em> and <em>y</em> ; these parameters are just for compatibility purposes.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ( i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>num_folds ) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ( i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>num_folds ) {
 </span></span><span style="display:flex;"><span>  split_ind <span style="color:#f92672">&lt;-</span> splitObject[[i]]
 </span></span><span style="display:flex;"><span>  model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lm</span>(formula, data <span style="color:#f92672">=</span> df[split_ind<span style="color:#f92672">$</span>train,])
 </span></span><span style="display:flex;"><span>  df<span style="color:#f92672">$</span>predictions[split_ind<span style="color:#f92672">$</span>app] <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(model, newdata <span style="color:#f92672">=</span> df[split_ind<span style="color:#f92672">$</span>app, ])
 </span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><p>The test indexes are named as <em>app</em> and can be used as used in the code snippet above.</p>
 <h3 id="random-train-test-split">Random train test split</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>train_size <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.8</span> <span style="color:#f92672">*</span> total_size
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>train_size <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">0.8</span> <span style="color:#f92672">*</span> total_size
 </span></span><span style="display:flex;"><span>tot_ind <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">runif</span>(total_size)
 </span></span><span style="display:flex;"><span>df_train <span style="color:#f92672">&lt;-</span> df[tot_ind <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.75</span>, ]
 </span></span><span style="display:flex;"><span>df_test <span style="color:#f92672">&lt;-</span> df[tot_ind <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0.75</span>, ]
 </span></span></code></pre></div><h3 id="one-hot-encoding">One Hot Encoding</h3>
 <p>Every categorical variable is encoded under the hood as numerical values from 0 to N-1 by R itself.
 But with too many levels, this can be a problem.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>mmat <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">model.matrix</span>(formula, data)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>mmat <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">model.matrix</span>(formula, data)
 </span></span></code></pre></div><p>Doing this you know how exactly is R changing the dataframe for you to be fitted to any model later.</p>
 <!--list-separator-->
 <ul>
@@ -210,31 +219,31 @@ But with too many levels, this can be a problem.</p>
 <p>Creating treatment plans</p>
 <p>The treatment plans help to work on specific columns from the data in a certain way such as creating levels on categorical data and removing NAs from numerical data.</p>
 <p>:ID:       e664edf5-fc3e-488e-85e4-cd802f1ad389</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">designTreatmentsZ</span>(dframe, varslist, verbose <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">designTreatmentsZ</span>(dframe, varslist, verbose <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">prepare</span>(treatmentPlan, dframe, varRestriction <span style="color:#f92672">=</span> new_vars_list)
 </span></span></code></pre></div><p>You need to use the treatment plan on test data as well before predicting the output.</p>
 </li>
 </ul>
 <h3 id="variables-interactions">Variables Interactions</h3>
 <p>When representing variables as formulas, there are chances that the variables will be related as well which need to be incorporated into the formula itself.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>dep_var <span style="color:#f92672">&lt;-</span> var_1 <span style="color:#f92672">+</span> var_2 <span style="color:#f92672">+</span> var_1<span style="color:#f92672">:</span>var_2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>dep_var <span style="color:#f92672">&lt;-</span> var_1 <span style="color:#f92672">+</span> var_2 <span style="color:#f92672">+</span> var_1<span style="color:#f92672">:</span>var_2
 </span></span></code></pre></div><p>The two variables separated by column are dependent on each other. So, we need to map that relation too.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>dep_var <span style="color:#f92672">&lt;-</span> var_1 <span style="color:#f92672">*</span> var_2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>dep_var <span style="color:#f92672">&lt;-</span> var_1 <span style="color:#f92672">*</span> var_2
 </span></span></code></pre></div><p>The <em>asterisk</em> means the same as the formula we wrote above.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>dep_var <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">I</span>(var_1, var_2)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>dep_var <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">I</span>(var_1, var_2)
 </span></span></code></pre></div><p>This expresses the product of two variables in the formula.</p>
 <h3 id="transforming-variables">Transforming Variables</h3>
 <p>The variables can be changed based on some information that we have priorly.</p>
 <h3 id="logistic-regression">Logistic Regression</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">glm</span>(formula, data, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">glm</span>(formula, data, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">predict</span>(model, newdata, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;response&#34;</span>)
 </span></span></code></pre></div><ul>
 <li>Deviance and Null Deviance instead of SSE and SST.</li>
 </ul>
 <!--listend-->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">wrapChiSqTest</span>(<span style="color:#e6db74">&#34;pred_col&#34;</span>, <span style="color:#e6db74">&#34;actual_col&#34;</span>, <span style="color:#e6db74">&#34;tgt_event&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">wrapChiSqTest</span>(<span style="color:#e6db74">&#34;pred_col&#34;</span>, <span style="color:#e6db74">&#34;actual_col&#34;</span>, <span style="color:#e6db74">&#34;tgt_event&#34;</span>)
 </span></span></code></pre></div><p>We can also use <em>GainCurvePlot</em> to see the effectiveness of the model.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>out_df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glance</span>(glm_model)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>out_df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glance</span>(glm_model)
 </span></span><span style="display:flex;"><span>pseudo_r2 <span style="color:#f92672">&lt;-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> ( out_df<span style="color:#f92672">$</span>deviance <span style="color:#f92672">/</span> out_df<span style="color:#f92672">$</span>null_deviance )
 </span></span></code></pre></div><h3 id="poission-and-quasipoisson-regression">Poission and QuasiPoisson Regression</h3>
 <ul>
@@ -246,7 +255,7 @@ But with too many levels, this can be a problem.</p>
 <li>Similar to Logistic Regression, pseudo R^2 can be found with a similar process.</li>
 </ul>
 <h3 id="generalized-additive-models">Generalized Additive Models</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(mgcv)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(mgcv)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">gam</span>(formula, family, data)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">s</span>(col_name) <span style="color:#75715e"># fit a smooth function</span>
 </span></span><span style="display:flex;"><span>fmla <span style="color:#f92672">&lt;-</span> dep_col <span style="color:#f92672">~</span> <span style="color:#a6e22e">s</span>(ind_col_1)
@@ -258,7 +267,7 @@ But with too many levels, this can be a problem.</p>
 <li>Predict function for this model gives output as matrix; so need to use <em>as.numeric()</em> to get the output.</li>
 </ul>
 <h3 id="tree-based-methods">Tree Based Methods</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ranger)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ranger)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">ranger</span>(fmla,
 </span></span><span style="display:flex;"><span>       data,
 </span></span><span style="display:flex;"><span>       num.trees <span style="color:#f92672">=</span> number,
@@ -276,7 +285,7 @@ But with too many levels, this can be a problem.</p>
 <li>For regularized learning, add a regularization parameter η ranging from 0 to 1 where smaller η means slow learning and higher means faster learning.</li>
 </ol>
  <!--listend-->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(xgboost)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(xgboost)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">xgb.cv</span>() <span style="color:#75715e"># evaluation_log has the rmse for each round and used to find the optimum model</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">xgb.cv</span>(data <span style="color:#f92672">=</span> <span style="color:#a6e22e">as.matrix</span>(treatedData),
 </span></span><span style="display:flex;"><span>       label <span style="color:#f92672">=</span> df<span style="color:#f92672">$</span>res_col,
@@ -303,7 +312,7 @@ But with too many levels, this can be a problem.</p>
 <ul>
 <li>
 <p>Finding best number of trees</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>elog <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.data.frame</span>(cv<span style="color:#f92672">$</span>evaluation_log)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>elog <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.data.frame</span>(cv<span style="color:#f92672">$</span>evaluation_log)
 </span></span><span style="display:flex;"><span>nrounds <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">which.min</span>(elog<span style="color:#f92672">$</span>test_rmse_mean)
 </span></span></code></pre></div><p>First you get the evaluation log and then find the position with minimum rmse. Then use <em>xgboost()</em> to create the final model for prediction.
 You need to note that the predict function also takes a matrix when using a xgboost model for prediction.</p>

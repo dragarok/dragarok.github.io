@@ -76,6 +76,15 @@ Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -148,7 +157,7 @@ Coefficient of determination \[R^{2}=1-\frac{S S E}{S S T}=1-\frac{\operatorname
                 <h2 id="getting-the-coefficients">Getting the coefficients</h2>
 <pre><code>ID: 4e16c77d-2e7f-418a-8e03-ce7200ca9d89
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">coef</span>(model_var)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">coef</span>(model_var)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(model_var)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">fitted.values</span>(mod_var) <span style="color:#75715e"># each observation fitted</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">residuals</span>(mod_var)
@@ -159,11 +168,11 @@ This helps to analyze between different models how good the fit is. It compares 
 <h3 id="leverage">Leverage</h3>
 <p>\[h_{i}=\frac{1}{n}+\frac{\left(x_{i}-\bar{x}\right)^{2}}{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}\]
 It is used to find the contribution of the point in the overall regression. The point of high leverage can change the overall generalization of points.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">augment</span>(mod_name)<span style="color:#f92672">$</span>.hat
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">augment</span>(mod_name)<span style="color:#f92672">$</span>.hat
 </span></span></code></pre></div><p>The .hat variable obtained from the augment function is the leverage value.</p>
 <h3 id="influence">Influence</h3>
 <p>Also, the <em>cook&rsquo;s distance</em> variable is available as <span class="underline">.cooksd</span> and used to measure the overall influence since leverage may not be sufficient to know how influential a point is.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>model_var <span style="color:#f92672">%&gt;%</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>model_var <span style="color:#f92672">%&gt;%</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">augment</span>() <span style="color:#f92672">%&gt;%</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">arrange</span>(<span style="color:#a6e22e">desc</span>(.cooksd))
 </span></span></code></pre></div><h3 id="removing-outliers">Removing outliers</h3>

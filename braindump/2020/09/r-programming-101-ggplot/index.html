@@ -73,6 +73,15 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -191,7 +200,7 @@ Plot box plots. Use <em>+geom_boxplot()</em> for boxplots.</li>
 <ul>
 <li>
 <p>Bar Plots</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_bar</span>(position<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dodge&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_bar</span>(position<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dodge&#34;</span>)
 </span></span></code></pre></div><p>This results in bar plot where categorical data is shown side by side rather than stacked on top of one another.</p>
 </li>
 </ul>
@@ -207,7 +216,7 @@ Plot box plots. Use <em>+geom_boxplot()</em> for boxplots.</li>
 <ul>
 <li>
 <p>Jitter Points</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_jitter</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_jitter</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(position<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;jitter&#34;</span>)
 </span></span></code></pre></div><p>Both the lines do the same thing. This function add small amount of random variation to location of each point which helps to handle overplotting caused by smaller datasets.</p>
 </li>
@@ -252,7 +261,7 @@ These are the layers in which we work with plots. They are layered to make depen
 <p><img src="../../../../ox-hugo/_20200928_060924screenshot.png" alt="">
 The aesthetics properties are used inside <em>aes()</em> function to create different kind of plots with same set of data.
 In cases you want to have properties of lines or points with something from the data itself, you can call <em>aes()</em> inside <strong>geom</strong> functions.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(aes <span style="color:#f92672">=</span> col_1)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(aes <span style="color:#f92672">=</span> col_1)
 </span></span></code></pre></div><p>NOTE: <span class="underline">label</span> and <span class="underline">shape</span> are used only with categorical variables.</p>
 <ul>
 <li>You can define colors in hexadecimal and then use that variable with color value as well.</li>
@@ -284,7 +293,7 @@ In cases you want to have properties of lines or points with something from the 
 <li>Labels can be defined as follows:</li>
 </ul>
  <!--listend-->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">labs</span>(x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-label goes here&#34;</span>, y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Y-label goes here&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">labs</span>(x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-label goes here&#34;</span>, y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Y-label goes here&#34;</span>)
 </span></span></code></pre></div></li>
 </ul>
 </li>
@@ -316,7 +325,7 @@ So , we have many different kind of plots to use.</p>
 <figure><img src="../../../../ox-hugo/_20200928_073303screenshot.png">
         </figure>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(shape<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(shape<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span>)
 </span></span></code></pre></div><p>This line adds a point as a pixel and can be useful in cases of large datasets.</p>
 <ul>
 <li>Consider <span class="underline">Overplotting</span> in following cases:
@@ -331,7 +340,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <li>Adding jitter and width at once:</li>
 </ul>
  <!--listend-->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_jitterdodge</span>(jitter.width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>, dodge.width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_jitterdodge</span>(jitter.width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>, dodge.width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(position <span style="color:#f92672">=</span> <span style="color:#a6e22e">position_jitter</span>(width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.3</span>))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_point</span>(position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;jitter&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_jitter</span>()
@@ -342,7 +351,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Histograms</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_histogram</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_histogram</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_histogram</span>(binwidth <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>,
 </span></span><span style="display:flex;"><span>               center <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.05</span>,
 </span></span><span style="display:flex;"><span>               position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;stack&#34;</span>)
@@ -362,7 +371,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Bar Plots</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_bar</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_bar</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_col</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_count</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_errorbar</span>(<span style="color:#a6e22e">aes</span>(ymin<span style="color:#f92672">=</span> sth, ymax<span style="color:#f92672">=</span>sth)) <span style="color:#75715e"># ymin and ymax for plotting error lines.</span>
@@ -386,7 +395,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Line Plots</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> col_1, y<span style="color:#f92672">=</span>col_2, line_type<span style="color:#f92672">=</span>col_3)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">aes</span>(x <span style="color:#f92672">=</span> col_1, y<span style="color:#f92672">=</span>col_2, line_type<span style="color:#f92672">=</span>col_3)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_area</span>(postion<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fill&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_ribbon</span>(<span style="color:#a6e22e">aes</span>(ymax<span style="color:#f92672">=</span>sth, ymin<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>))
 </span></span></code></pre></div></li>
@@ -404,7 +413,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Visual Elements not of data</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">element_text</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">element_text</span>()
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">element_line</span>()
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">element_rect</span>()
 </span></span></code></pre></div></li>
@@ -446,7 +455,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Examples</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span>(
 </span></span><span style="display:flex;"><span>  axis.ticks.length <span style="color:#f92672">=</span> <span style="color:#a6e22e">unit</span>(<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;lines&#34;</span>),
 </span></span><span style="display:flex;"><span>  legend.key <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_rect</span>(color <span style="color:#f92672">=</span> <span style="color:#66d9ef">NA</span>),
 </span></span><span style="display:flex;"><span>  legend.margin <span style="color:#f92672">=</span> <span style="color:#a6e22e">margin</span>(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">50</span>, <span style="color:#e6db74">&#34;pt&#34;</span>),
@@ -471,30 +480,30 @@ Recommended is using transparency when using solid shapes. Or choose something o
 </li>
 <li>
 <p>Set a default theme</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">theme_set</span>(theme_name)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">theme_set</span>(theme_name)
 </span></span></code></pre></div></li>
 <li>
 <p>Some built in themes:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme_gray</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme_gray</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme_bw</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme_classic</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme_void</span>()
 </span></span></code></pre></div></li>
 <li>
 <p>Example of themes from ggthemes:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme_wsj</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme_wsj</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme_tufte</span>()
 </span></span></code></pre></div></li>
 <li>
 <p>Removing legend vs removing axis ticks</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span>(
 </span></span><span style="display:flex;"><span>legend.position <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>,
 </span></span><span style="display:flex;"><span>axis.ticks <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>())
 </span></span></code></pre></div><p>You cannot set legend to element_blank() to remove it.</p>
 </li>
 <li>
 <p>Working with modifying grid lines:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span>(
 </span></span><span style="display:flex;"><span>    panel.grid.major.y <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_line</span>(
 </span></span><span style="display:flex;"><span>      color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>,
 </span></span><span style="display:flex;"><span>      size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>,
@@ -504,17 +513,17 @@ Recommended is using transparency when using solid shapes. Or choose something o
 </span></span></code></pre></div></li>
 <li>
 <p>Setting title and caption using <em>labs()</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Title goes here&#34;</span>,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>  <span style="color:#a6e22e">labs</span>(title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Title goes here&#34;</span>,
 </span></span><span style="display:flex;"><span>  caption <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Caption at the bottom end&#34;</span>)
 </span></span></code></pre></div></li>
 <li>
 <p>Add a vertical or horizontal line</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> any_value, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;color_name&#34;</span>, linetype <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>  <span style="color:#a6e22e">geom_vline</span>(xintercept <span style="color:#f92672">=</span> any_value, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;color_name&#34;</span>, linetype <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
 </span></span></code></pre></div><p>You can specify parameters similar to geom_line() to plot these line into the existing plot.</p>
 <ul>
 <li>
 <p>To add text by the line we can use:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">annotate</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">annotate</span>(
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;text&#34;</span>,
 </span></span><span style="display:flex;"><span>  x<span style="color:#f92672">=</span>sth , y <span style="color:#f92672">=</span>sth,
 </span></span><span style="display:flex;"><span>  x_end <span style="color:#f92672">=</span> sth, y_end <span style="color:#f92672">=</span> sth,
@@ -552,7 +561,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Smoothing</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_smooth</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">geom_smooth</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_smooth</span>(method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;lm&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">geom_smooth</span>(se<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">stat_smooth</span>(method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#960050;background-color:#1e0010">lm, se=FALSE)</span>
@@ -597,7 +606,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 </li>
 </ul>
  <!--listend-->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">stat_summary</span>(fun.data <span style="color:#f92672">=</span> mean_sd,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">stat_summary</span>(fun.data <span style="color:#f92672">=</span> mean_sd,
 </span></span><span style="display:flex;"><span>             fun.args <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(mult<span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>),
 </span></span><span style="display:flex;"><span>             extra_args_here)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">stat_summary</span>(fun.data <span style="color:#f92672">=</span> mean_cl_normal,
@@ -614,30 +623,30 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Change coordinates plane:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_cartesian</span>(xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(x0, x1))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_cartesian</span>(xlim <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(x0, x1))
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">scale_x_continuous</span>(limits <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(x0, x1))
 </span></span></code></pre></div><p>These two do the same thing: setting x-limits.</p>
 </li>
 <li>
 <p>Aspect Ratio</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_fixed</span>() <span style="color:#75715e"># 1:1 ratio</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_fixed</span>() <span style="color:#75715e"># 1:1 ratio</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_fixed</span>(<span style="color:#ae81ff">0.055</span>) <span style="color:#75715e"># flatten it</span>
 </span></span></code></pre></div></li>
 <li>
 <p>Expand and Clip</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    coord_<span style="color:#f92672">*</span>(expand <span style="color:#f92672">=</span> val)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    coord_<span style="color:#f92672">*</span>(expand <span style="color:#f92672">=</span> val)
 </span></span><span style="display:flex;"><span>    coord_<span style="color:#f92672">*</span>(clip <span style="color:#f92672">=</span> val)
 </span></span></code></pre></div><p>Setting <span class="underline">expand = 0</span>, sets a buffer margin around the plot so that the axes and data don&rsquo;t overlap. Setting <span class="underline">clip = &ldquo;off&rdquo;</span> sets clipping to off when we expand the limits.</p>
 </li>
 <li>
 <p>Changing coordinate axes scales</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">scale_x_log10</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">scale_x_log10</span>()
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_trans</span>(x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;log10&#34;</span>, y<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;log10&#34;</span>)
 </span></span></code></pre></div><p>Both of these commands work the same. We have <em>scale_</em> commands to scale axes as well as coordinate translate functions for the job as well.</p>
 </li>
 <li>
 <p>Adding a seconday axis:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">sec_axis</span>(trans <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">sec_axis</span>(trans <span style="color:#f92672">=</span> <span style="color:#66d9ef">NULL</span>,
 </span></span><span style="display:flex;"><span>             name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sth&#34;</span>,
 </span></span><span style="display:flex;"><span>             breaks <span style="color:#f92672">=</span> list_of_first_axis_to_reference,
 </span></span><span style="display:flex;"><span>             labels <span style="color:#f92672">=</span> list_of_second_axis_mapped_to_reference_axis)
@@ -646,7 +655,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 </span></span></code></pre></div></li>
 <li>
 <p>Flip coordinates</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_flip</span>()
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_flip</span>()
 </span></span></code></pre></div></li>
 <li>
 <p>Projections</p>
@@ -659,7 +668,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 </li>
 <li>
 <p>Bar chart can be converted  to pie chart by converting cartesian to polar coordinates.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_polar</span>(theta <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;y&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_polar</span>(theta <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;y&#34;</span>)
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">coord_polar</span>(start <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#66d9ef">pi</span><span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>) <span style="color:#75715e"># helpful to set the start of the plot.</span>
 </span></span></code></pre></div></li>
 </ul>
@@ -674,7 +683,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <li>
 <p>Facets Layer</p>
 <p>Splitting of data plots into different plots to make comparisons.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(rows <span style="color:#f92672">=</span> <span style="color:#a6e22e">vars</span>(col_name), cols <span style="color:#f92672">=</span> <span style="color:#a6e22e">vars</span>(col_name))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(rows <span style="color:#f92672">=</span> <span style="color:#a6e22e">vars</span>(col_name), cols <span style="color:#f92672">=</span> <span style="color:#a6e22e">vars</span>(col_name))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(col_name <span style="color:#f92672">~</span> .) <span style="color:#75715e"># same as specifying rows = vars(col_name)</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(. <span style="color:#f92672">~</span> col_name) <span style="color:#75715e"># same as specifying cols = vars(col_name)</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(col_1 <span style="color:#f92672">~</span> col_2) <span style="color:#75715e"># same as specifying first rows and then columns.</span>
@@ -703,13 +712,13 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Labeling in Facets</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(cols<span style="color:#f92672">/</span>rows <span style="color:#f92672">=</span> col_name, labeller <span style="color:#f92672">=</span> label_both)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(cols<span style="color:#f92672">/</span>rows <span style="color:#f92672">=</span> col_name, labeller <span style="color:#f92672">=</span> label_both)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(cols<span style="color:#f92672">/</span>rows <span style="color:#f92672">=</span> col_name, labeller <span style="color:#f92672">=</span> label_context)
 </span></span></code></pre></div> <!--list-separator-->
 <ul>
 <li>
 <p>Automatic Labeling working with data itself</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>table_name<span style="color:#f92672">$</span>new_col_name <span style="color:#f92672">=</span> <span style="color:#a6e22e">factor</span>(table_name<span style="color:#f92672">$</span>old_col_name, labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(`oldRowVal1` <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;newRowVal&#34;</span>),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>table_name<span style="color:#f92672">$</span>new_col_name <span style="color:#f92672">=</span> <span style="color:#a6e22e">factor</span>(table_name<span style="color:#f92672">$</span>old_col_name, labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(`oldRowVal1` <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;newRowVal&#34;</span>),
 </span></span><span style="display:flex;"><span>                                                                      `oldRowVal2` <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;newRowVal2&#34;</span>))
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># to order the labels</span>
@@ -724,7 +733,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Changing facet plot axes</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_x&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_x&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_y&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(scales <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fixed&#34;</span>)
@@ -736,7 +745,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <li>
 <p>Changing size of facets based on the data scales</p>
 <p>Often in having categorical data, we may have to make some plots bigger than the others in facets to accurately present information. To do this we use parameter <code>space.</code> This helps to change the scale of plots in between facets.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(space <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_y&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(space <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_y&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_grid</span>(space <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;free_x&#34;</span>)
 </span></span></code></pre></div><p>Now, When facets are being created, only the values that are significant will be on either x or y axis meaning our plots to be less emptier and also fit according to number of points.</p>
 </li>
@@ -745,7 +754,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Different kind of facet <strong>Facet_wrap</strong>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_wrap</span>(<span style="color:#a6e22e">vars</span>(col_name))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">facet_wrap</span>(<span style="color:#a6e22e">vars</span>(col_name))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_wrap</span>(<span style="color:#f92672">~</span> col_name)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">facet_wrap</span>(<span style="color:#f92672">~</span> col_name, ncol <span style="color:#f92672">=</span> NumCols) <span style="color:#75715e"># You can specify how many subsets you want to plot along in one dimension.</span>
 </span></span></code></pre></div><p>Generally used when categorical variable has too many groups/levels. Facet_wrap rather than having rows and columns unlike facet_grid, it separates levels along one axis and wraps all subsets across a given number of rows or columns.</p>
@@ -761,7 +770,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Creating a palette</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">brewer.pal</span>(num, <span style="color:#e6db74">&#34;color&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">brewer.pal</span>(num, <span style="color:#e6db74">&#34;color&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">brewer.pal</span>(<span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;reds&#34;</span>)
 </span></span></code></pre></div></li>
 </ul>
@@ -769,7 +778,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 <ul>
 <li>
 <p>Using the palette</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">scale_fill_gradientn</span>(colors <span style="color:#f92672">=</span> palette_variable)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">scale_fill_gradientn</span>(colors <span style="color:#f92672">=</span> palette_variable)
 </span></span></code></pre></div></li>
 </ul>
  <!--list-separator-->

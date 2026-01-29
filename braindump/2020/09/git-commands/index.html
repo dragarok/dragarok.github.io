@@ -110,6 +110,15 @@ git checkout master">
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -377,13 +386,13 @@ both git push and git fetch.</li>
 </ul>
 <h2 id="more-helpful-commands">More Helpful Commands</h2>
 <h3 id="stash-untracked-files-too">Stash Untracked files too</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash -u
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash -u
 </span></span></code></pre></div><h3 id="reflog">Reflog</h3>
 <p>This shows all the reference records of everything that we have changed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reflog
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reflog
 </span></span><span style="display:flex;"><span>git reflog show branch_name
 </span></span></code></pre></div><p>The second command shows the reflog for a particular branch. Now to take the branch to a specific commit in the past, you can do:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reset --hard commit_hash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git reset --hard commit_hash
 </span></span></code></pre></div><h3 id="undoing">Undoing</h3>
 <!--list-separator-->
 <ul>
@@ -474,7 +483,7 @@ both git push and git fetch.</li>
 <ul>
 <li>
 <p>More informative log</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --oneline --decorate --graph --all -30
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --oneline --decorate --graph --all -30
 </span></span></code></pre></div><p>The last one is the number of commits to show.</p>
 </li>
 </ul>
@@ -482,7 +491,7 @@ both git push and git fetch.</li>
 <ul>
 <li>
 <p>Find something on the log</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --grep -E -i <span style="color:#e6db74">&#39;textpattern&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --grep -E -i <span style="color:#e6db74">&#39;textpattern&#39;</span>
 </span></span></code></pre></div><p>-E stands for extended regex and -i for case insensitive search.</p>
 </li>
 </ul>
@@ -490,7 +499,7 @@ both git push and git fetch.</li>
 <ul>
 <li>
 <p>Searching within commit code</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log -S <span style="color:#e6db74">&#34;search_term&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log -S <span style="color:#e6db74">&#34;search_term&#34;</span>
 </span></span></code></pre></div><p>Now you can find this search_term on the previously committed changed files as well.</p>
 </li>
 </ul>
@@ -498,7 +507,7 @@ both git push and git fetch.</li>
 <ul>
 <li>
 <p>Single file log</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --oneline -- file_name
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --oneline -- file_name
 </span></span></code></pre></div><p>You get the log for specific file and see it&rsquo;s history.</p>
 </li>
 </ul>
@@ -506,7 +515,7 @@ both git push and git fetch.</li>
 <ul>
 <li>
 <p>Blame</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git blame file_name
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git blame file_name
 </span></span></code></pre></div><p>See most recent commit that modified a given line, for every line in the file.</p>
 </li>
 </ul>
@@ -514,24 +523,24 @@ both git push and git fetch.</li>
 <ul>
 <li>
 <p>Show</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git show commit_hash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git show commit_hash
 </span></span></code></pre></div><p>By finding commit_hash from blame and log commands, we can use the commit_hash to compare to present changes.</p>
 </li>
 </ul>
 <h3 id="adding-files-with-multiple-changes">Adding files with multiple changes</h3>
 <p>Often times you work on some file, you might not want to add all the changes at once. If you do <em>git add file_name</em>, it adds everything.
 So to add changes iteratively:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add --patch
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add --patch
 </span></span></code></pre></div><p>Gives options to skip the hunch, split it, stage this, quit and so on.</p>
 <h3 id="cherry-pick">Cherry Pick</h3>
 <p>Often times when you commit on the master branch than on your feature branch, we can cherry pick to copy commits across branches.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff origin/master..master
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git diff origin/master..master
 </span></span></code></pre></div><p>First we need to make sure the specified range is good to be copied.
 Then we go to our branch using <em>checkout -b branch_name</em> and then use such command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git cherry-pick origin/master..master
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git cherry-pick origin/master..master
 </span></span></code></pre></div><p>By doing this we cherry pick the needed commits to our branch.
 Then go to master and remove the commits:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout master
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout master
 </span></span><span style="display:flex;"><span>git reset --hard origin/master
 </span></span></code></pre></div>
             </div>

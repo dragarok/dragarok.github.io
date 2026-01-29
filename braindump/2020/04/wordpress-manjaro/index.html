@@ -89,6 +89,15 @@ su mysql -u root -p In mysql shell: [ Change strong_password first ]">
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -168,7 +177,7 @@ su mysql -u root -p In mysql shell: [ Change strong_password first ]">
 </li>
 <li>
 <p>Starting apache server:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>   sudo systemctl enable httpd.service
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>   sudo systemctl enable httpd.service
 </span></span><span style="display:flex;"><span>   sudo systemctl start httpd.service
 </span></span></code></pre></div><ul>
 <li>Also can check status as well.</li>
@@ -176,17 +185,17 @@ su mysql -u root -p In mysql shell: [ Change strong_password first ]">
 </li>
 <li>
 <p>After installing mariadb: run</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>   mariadb-install-db --user<span style="color:#f92672">=</span>mysql --basedir<span style="color:#f92672">=</span>/usr --datadir<span style="color:#f92672">=</span>/var/lib/mysql
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>   mariadb-install-db --user<span style="color:#f92672">=</span>mysql --basedir<span style="color:#f92672">=</span>/usr --datadir<span style="color:#f92672">=</span>/var/lib/mysql
 </span></span><span style="display:flex;"><span>   sudo systemctl restart mariadb.service
 </span></span></code></pre></div></li>
 <li>
 <p>Create wordpress database and user using mysql shell rather than phpmyadmin</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>   su
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>   su
 </span></span><span style="display:flex;"><span>   mysql -u root -p
 </span></span></code></pre></div></li>
 <li>
 <p>In mysql shell: [ Change strong_password first ]</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>       <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> wordpress;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>       <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> wordpress;
 </span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">GRANT</span> <span style="color:#66d9ef">ALL</span> <span style="color:#66d9ef">PRIVILEGES</span> <span style="color:#66d9ef">ON</span> wordpress.<span style="color:#f92672">*</span> <span style="color:#66d9ef">TO</span> <span style="color:#e6db74">&#34;wp-user&#34;</span><span style="color:#f92672">@</span><span style="color:#e6db74">&#34;localhost&#34;</span> IDENTIFIED <span style="color:#66d9ef">BY</span> <span style="color:#e6db74">&#34;strong_password&#34;</span>;
 </span></span><span style="display:flex;"><span>       FLUSH <span style="color:#66d9ef">PRIVILEGES</span>;
 </span></span><span style="display:flex;"><span>       exit;

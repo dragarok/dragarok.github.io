@@ -73,6 +73,15 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -208,23 +217,23 @@
 <p><a href="../../../../braindump/2020/10/r-programming-105-unsupervised-learning/">R Programming 105- Unsupervised Learning</a></p>
 <h2 id="some-useful-functionalities">Some useful functionalities</h2>
 <h3 id="creating-generic-names-using-paste">Creating generic names using paste</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;filename_&#34;</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">50</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;id&#34;</span>, <span style="color:#a6e22e">paste0</span>(<span style="color:#e6db74">&#34;filename_&#34;</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">50</span>))
 </span></span></code></pre></div><p>This command can create number of columns by pasting some string with a list. Often in naming columns in dataframe, this might be useful.</p>
 <h3 id="remove-the-first-column-of-dataframe">Remove the first column of dataframe</h3>
 <p>Often times you have the value to be predicted in the dataframe and might need to be removed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df[<span style="color:#ae81ff">-1</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>df[<span style="color:#ae81ff">-1</span>]
 </span></span></code></pre></div><h3 id="remove-na-values">Remove NA values</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">na.omit</span>(dataframe)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">na.omit</span>(dataframe)
 </span></span></code></pre></div><h3 id="summary-for-categorical-variables-using-table-function">Summary for categorical variables using table function</h3>
 <p>Shows the number of columns in each type if the data is categorical.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">table</span>(df<span style="color:#f92672">$</span>col_name)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">table</span>(df<span style="color:#f92672">$</span>col_name)
 </span></span></code></pre></div><h3 id="get-a-subset-of-dataframe-similar-to-filter-from-dplyr">Get a subset of dataframe: similar to filter from dplyr</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">subset</span>(df_name, col_name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;sth&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">subset</span>(df_name, col_name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;sth&#34;</span>)
 </span></span></code></pre></div><h3 id="gather-some-rows-into-one-using-key-value-pair">Gather some rows into one using key-value pair</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">gather</span>(key <span style="color:#f92672">=</span> col_key, value <span style="color:#f92672">=</span> new_col_name, old_col1, old_col2)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">gather</span>(key <span style="color:#f92672">=</span> col_key, value <span style="color:#f92672">=</span> new_col_name, old_col1, old_col2)
 </span></span></code></pre></div><p>What gather helps us doing is when we have different kind of values of same type: say predictions and actual value and want to plot both of them into some graph. Rather than working with different columns, we can create a new column specified by name <em>col_key</em> which will have the type of data it is: <em>old_col1</em> or <em>old_col2</em>. Then the column specified in <em>new_col_name</em> will be the resulting column you will have containing the value of the respective old columns specified by <em>col_key</em>. Now you can just group by that column and can do many stuff with the plot.</p>
 <h3 id="rows-to-columns-matrix-to-dataframe">Rows to Columns [ Matrix to Dataframe]</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">rownames_to_column</span>(<span style="color:#a6e22e">as.data.frame</span>(df_name), var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;new_col_name&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">rownames_to_column</span>(<span style="color:#a6e22e">as.data.frame</span>(df_name), var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;new_col_name&#34;</span>)
 </span></span></code></pre></div>
             </div>
         </article>

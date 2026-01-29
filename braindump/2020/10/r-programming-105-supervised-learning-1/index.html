@@ -79,6 +79,15 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -149,16 +158,16 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 
             <div class="post-content">
                 <h3 id="aggregate-by-column">Aggregate by column</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">aggregate</span>(col_name <span style="color:#f92672">~</span> by_column_name, data <span style="color:#f92672">=</span> df_name, mean)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">aggregate</span>(col_name <span style="color:#f92672">~</span> by_column_name, data <span style="color:#f92672">=</span> df_name, mean)
 </span></span></code></pre></div><p>We can use other functions instead of mean as well. The variable after tilde is what the aggregation is done with respect to. If <em>by_column_name</em> is continent, the above code will calculate the mean for all continents for given column: e.g. age or anything like that.</p>
 <h3 id="nearest-neighbors">Nearest Neighbors</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(class)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(class)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">knn</span>(train <span style="color:#f92672">=</span> train_data, test <span style="color:#f92672">=</span> test_data, cl<span style="color:#f92672">=</span>vector_train_labels)
 </span></span></code></pre></div><!--list-separator-->
 <ul>
 <li>
 <p>Confusion Matrix</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">table</span>(actual_classes, pred_classes)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">table</span>(actual_classes, pred_classes)
 </span></span></code></pre></div><p>This creates a confusion matrix based on number of observations.</p>
 </li>
 </ul>
@@ -170,7 +179,7 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 </li>
 </ul>
 <h3 id="bayesian-methods">Bayesian Methods</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(naivebayes)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(naivebayes)
 </span></span><span style="display:flex;"><span>bayesian_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">naive_bayes</span>(formula, data)
 </span></span><span style="display:flex;"><span>bayesian_mode1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">naive_bayes</span>(y <span style="color:#f92672">~</span> x, data <span style="color:#f92672">=</span> df_name)
 </span></span><span style="display:flex;"><span>bayesian_mode1 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">naive_bayes</span>(y <span style="color:#f92672">~</span> x1 <span style="color:#f92672">+</span> x2, data <span style="color:#f92672">=</span> df_name)
@@ -190,7 +199,7 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 </li>
 </ul>
 <h3 id="binary-predictions-with-regression">Binary Predictions with Regression</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>model_var <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(var1 <span style="color:#f92672">~</span> var2 <span style="color:#f92672">+</span> var3, data <span style="color:#f92672">=</span> df_name, family<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;binomial&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>model_var <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(var1 <span style="color:#f92672">~</span> var2 <span style="color:#f92672">+</span> var3, data <span style="color:#f92672">=</span> df_name, family<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;binomial&#34;</span>)
 </span></span><span style="display:flex;"><span>predicted_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(model_name, newdata <span style="color:#f92672">=</span> new_df, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;response&#34;</span>)
 </span></span></code></pre></div><p>For binary predictions, we use family as <em>binomial</em>. By default, <em>glm</em> uses gaussian as the family function.</p>
 <h3 id="roc-curves">ROC Curves</h3>
@@ -199,7 +208,7 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 <li>Sometimes the AOC might be similar but different way of predictions using the model.</li>
 </ul>
 <!--listend-->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(pROC)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(pROC)
 </span></span><span style="display:flex;"><span>roc_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">roc</span>(actual, predicted)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(roc_obj, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sth&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">auc</span>(roc_obj)
@@ -208,13 +217,13 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 <ul>
 <li>
 <p>Handling categorical data for linear regressions</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">factor</span>(df_name<span style="color:#f92672">$</span>col_name,
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">factor</span>(df_name<span style="color:#f92672">$</span>col_name,
 </span></span><span style="display:flex;"><span>            levels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>),
 </span></span><span style="display:flex;"><span>            labels <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Small&#34;</span>, <span style="color:#e6db74">&#34;Medium&#34;</span>, <span style="color:#e6db74">&#34;Large&#34;</span>))
 </span></span></code></pre></div></li>
 <li>
 <p>Relevel factors</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">relevel</span>(factored_col, ref <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;some_val&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>    <span style="color:#a6e22e">relevel</span>(factored_col, ref <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;some_val&#34;</span>)
 </span></span></code></pre></div><p>The value from the column will be used to relevel the factors. This will be used to set reference value and all other factors are re-ordered so that the value specified by ref is first.</p>
 </li>
 </ul>
@@ -225,7 +234,7 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 <li>
 <p>Stepwise Regression</p>
 <p>Build a bigger model using all independent variables and removes them one by one if they don&rsquo;t contribute much to the output of the model.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>null_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(dep_var <span style="color:#f92672">~</span> <span style="color:#ae81ff">1</span>, data <span style="color:#f92672">=</span> df_name, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>null_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(dep_var <span style="color:#f92672">~</span> <span style="color:#ae81ff">1</span>, data <span style="color:#f92672">=</span> df_name, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
 </span></span><span style="display:flex;"><span>full_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(dep_var <span style="color:#f92672">~</span> ., data <span style="color:#f92672">=</span> df_name, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
 </span></span><span style="display:flex;"><span>step_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">step</span>(null_model, scope <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(lower <span style="color:#f92672">=</span> null_model, upper <span style="color:#f92672">=</span> full_model), direction <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;backward&#34;</span>)
 </span></span></code></pre></div></li>
@@ -235,13 +244,13 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 <li>
 <p>Forward Selection</p>
 <p>Examines each independent variable and adds them one by one unless it doesn&rsquo;t get much improvement in predictions.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>null_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(dep_var <span style="color:#f92672">~</span> <span style="color:#ae81ff">1</span>, data <span style="color:#f92672">=</span> df_name, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>null_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(dep_var <span style="color:#f92672">~</span> <span style="color:#ae81ff">1</span>, data <span style="color:#f92672">=</span> df_name, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
 </span></span><span style="display:flex;"><span>full_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">glm</span>(dep_var <span style="color:#f92672">~</span> ., data <span style="color:#f92672">=</span> df_name, family <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;binomial&#34;</span>)
 </span></span><span style="display:flex;"><span>step_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">step</span>(null_model, scope <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(lower <span style="color:#f92672">=</span> null_model, upper <span style="color:#f92672">=</span> full_model), direction <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;forward&#34;</span>)
 </span></span></code></pre></div></li>
 </ul>
 <h3 id="prediction-using-models">Prediction using Models</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>predicted_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(model_name, newdata <span style="color:#f92672">=</span> new_df, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;prob&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>predicted_obj <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">predict</span>(model_name, newdata <span style="color:#f92672">=</span> new_df, type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;prob&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">predict</span>(model_name, newdata <span style="color:#f92672">=</span> new_df)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">attr</span>(predicted_obj, <span style="color:#e6db74">&#34;prob&#34;</span>)
 </span></span></code></pre></div><p>You can just get the output columns or the probability associated with those predictions as well. To get the predictions, you need to use <em>attr</em> function to get attribute called <em>prob</em> from the predicted output object.</p>
@@ -250,13 +259,13 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 <li>More useful where transparancy is required.</li>
 </ul>
 <!--listend-->
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(rpart)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(rpart)
 </span></span><span style="display:flex;"><span>m <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart</span>(formula, data <span style="color:#f92672">=</span> df_name, method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;class&#34;</span>)
 </span></span></code></pre></div><!--list-separator-->
 <ul>
 <li>
 <p>Plotting a decision tree</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(rpart.plot)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(rpart.plot)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">rpart.plot</span>(dec_tree_model)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">rpart.plot</span>(model_name, type <span style="color:#f92672">=</span> num, box.palette <span style="color:#f92672">=</span> list_of_colors, fallen.leaves <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>)
 </span></span></code></pre></div><ul>
@@ -278,7 +287,7 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 </ul>
 <h3 id="train-test-splits">Train Test Splits</h3>
 <p>Splitting data into training and testing rows can be useful to prevent overfitting of model when new data is there to be predicted.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>sample_rows <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sample</span>(total_df_length, training_count)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>sample_rows <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sample</span>(total_df_length, training_count)
 </span></span><span style="display:flex;"><span>sample_rows <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">sample</span>(<span style="color:#a6e22e">nrow</span>(df), <span style="color:#ae81ff">0.8</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">nrow</span>(df)) <span style="color:#75715e"># 80 % of data to be used to sample</span>
 </span></span><span style="display:flex;"><span>train_data <span style="color:#f92672">&lt;-</span> df[sample_rows, ]
 </span></span><span style="display:flex;"><span>test_data <span style="color:#f92672">&lt;-</span> df[<span style="color:#f92672">-</span> sample_rows, ]
@@ -288,7 +297,7 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 <li>
 <p>Pre Pruning</p>
 <p>Based on maximum depth or minimum number of observations in splitting.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>prune_control <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart.control</span>(maxdepth <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, minsplit <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>prune_control <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rpart.control</span>(maxdepth <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, minsplit <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>)
 </span></span></code></pre></div><p><em>rpart.control</em> has parameters such as <strong>maxdepth</strong> and <strong>minsplit</strong> which can be used to control the pruning of the tree.</p>
 </li>
 </ul>
@@ -297,14 +306,14 @@ table(actual_classes, pred_classes) This creates a confusion matrix based on num
 <li>
 <p>Post Pruning</p>
 <p>Remove overly complex branch. Set <em>cp</em> to zero to grow overly complex tree.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plotcp</span>(m) <span style="color:#75715e"># get the plot of complexity of model vs error rate</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">plotcp</span>(m) <span style="color:#75715e"># get the plot of complexity of model vs error rate</span>
 </span></span><span style="display:flex;"><span>pruned_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">prune</span>(m, cp<span style="color:#f92672">=</span> some_val) <span style="color:#75715e"># obtained from the plot</span>
 </span></span></code></pre></div><p>Th</p>
 </li>
 </ul>
 <h3 id="forest-from-trees">Forest from trees</h3>
 <p>Collection of simple many trees to have more robust and powerful models. Ensemble of methods to predict is useful in making decisions.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(randomForest)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(randomForest)
 </span></span><span style="display:flex;"><span>forest_model <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">randomForest</span>(formula,
 </span></span><span style="display:flex;"><span>                             data <span style="color:#f92672">=</span> df_name,
 </span></span><span style="display:flex;"><span>                             ntree <span style="color:#f92672">=</span> num_val,

@@ -82,6 +82,15 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+
 
     </head>
 
@@ -153,9 +162,9 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
             <div class="post-content">
                 <h2 id="databases">Databases</h2>
 <h3 id="importing-library">Importing Library</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(DBI)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(DBI)
 </span></span></code></pre></div><h3 id="creating-connection">Creating Connection</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>con <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">dbConnect</span>(RMySQL<span style="color:#f92672">::</span><span style="color:#a6e22e">MySQL</span>(),
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>con <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">dbConnect</span>(RMySQL<span style="color:#f92672">::</span><span style="color:#a6e22e">MySQL</span>(),
 </span></span><span style="display:flex;"><span>                dbname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;db_name&#34;</span>,
 </span></span><span style="display:flex;"><span>                host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;localhost&#34;</span>,
 </span></span><span style="display:flex;"><span>                port <span style="color:#f92672">=</span> port_num,
@@ -167,7 +176,7 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 <ul>
 <li>
 <p>Read Whole Tables</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">dbListTables</span>(con)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">dbListTables</span>(con)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">dbReadTable</span>(con, <span style="color:#e6db74">&#34;table_name&#34;</span>)
 </span></span></code></pre></div></li>
 </ul>
@@ -175,7 +184,7 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 <ul>
 <li>
 <p>Read selected data from tables</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">dbGetQuery</span>(con, <span style="color:#e6db74">&#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">dbGetQuery</span>(con, <span style="color:#e6db74">&#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;</span>)
 </span></span><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dbSendQuery</span>(con, <span style="color:#e6db74">&#34;query string&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">dbFetch</span>(res)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">dbClearResult</span>(res)
@@ -184,19 +193,19 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 </ul>
 <h2 id="urls-and-other-data-formats">URLs and Other data formats</h2>
 <h3 id="reading-data-from-urls">Reading data from URLs</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(readr)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(readr)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;http://xyz.com/filename.csv&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_tsv</span>(<span style="color:#e6db74">&#34;http://xyz.com/filename.tsv&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;https://xyz.com/filename.csv&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;https://xyz.com/filename.csv&#34;</span>)
 </span></span></code></pre></div><p>Both <em>read.csv</em> method from utils package and <em>read_csv</em> from <span class="underline">readr</span> package work fine with urls. It works for fine for all kinds of files if they can be parsed into tabular formats. However <em>read_excel</em> function from <span class="underline">readxl</span> package doesn&rsquo;t support urls.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>file_path <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">file.path</span>(<span style="color:#e6db74">&#34;~&#34;</span>, <span style="color:#e6db74">&#34;Downloads&#34;</span>, <span style="color:#e6db74">&#34;filename.xlsx&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span>file_path <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">file.path</span>(<span style="color:#e6db74">&#34;~&#34;</span>, <span style="color:#e6db74">&#34;Downloads&#34;</span>, <span style="color:#e6db74">&#34;filename.xlsx&#34;</span>)
 </span></span><span style="display:flex;"><span>file_url <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;https://xyz.com/filename.xlsx&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">download.file</span>(file_url, file_path)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">load</span>(<span style="color:#e6db74">&#34;file_name.RData&#34;</span>)
 </span></span></code></pre></div><p>In loading RData files, you can&rsquo;t pass URLs to it. Instead you need to save the file first and then load it using <em>load</em> function.</p>
 <h3 id="http-queries">HTTP Queries</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(httr)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(httr)
 </span></span><span style="display:flex;"><span>response <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">GET</span>(url)
 </span></span><span style="display:flex;"><span>raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">content</span>(response, as<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;raw&#34;</span>) <span style="color:#75715e"># parsing</span>
 </span></span><span style="display:flex;"><span>raw_content <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">content</span>(response, as<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span>) <span style="color:#75715e"># parsing</span>
@@ -204,7 +213,7 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 </span></span></code></pre></div><h3 id="json-files">JSON Files</h3>
 <pre><code>ID: 2ccc63df-4382-43a4-a611-0a929a24d8e5
 </code></pre>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(jsonlite)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(jsonlite)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">fromJSON</span>(url)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">fromJSON</span>(json_object)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">toJSON</span>(df)
@@ -212,7 +221,7 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">prettify</span>(json_obj)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">toJSON</span>(df, pretty<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>) <span style="color:#75715e"># else minified is used by default</span>
 </span></span></code></pre></div><h3 id="haven-package">Haven Package</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(haven)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(haven)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_sas</span>(<span style="color:#e6db74">&#34;ontime.sas7bdat&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_stata</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_dta</span>()
@@ -220,7 +229,7 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_por</span>()
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read_sav</span>()
 </span></span></code></pre></div><h3 id="foreign-package">Foreign Package</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(foreign)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(foreign)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.dta</span>(<span style="color:#e6db74">&#34;filename.dta&#34;</span>, convert.factors <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, convert.types<span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, missing.type <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, convert.underscore <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">read.spss</span>(file, use.value.labels <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>, to.data.frame <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
 </span></span></code></pre></div><p>Since here the arguments to different functions have different names, it is less consistent.  Easier to go through the documentation than explaining it all.</p>
