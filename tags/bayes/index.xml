@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Bayes on </title>
-		<link>http://localhost:1313/tags/bayes/</link>
+		<link>https://dragarok.github.io/tags/bayes/</link>
 		<description>Recent content in Bayes on </description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,19 +12,19 @@
 		
 			<lastBuildDate>Wed, 12 Aug 2020 13:07:15 +0545</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/tags/bayes/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://dragarok.github.io/tags/bayes/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Bayesian Prior</title>
-				<link>http://localhost:1313/braindump/2020/04/bayesian-prior/</link>
+				<link>https://dragarok.github.io/braindump/2020/04/bayesian-prior/</link>
 				<pubDate>Sun, 19 Apr 2020 15:58:50 +0545</pubDate>
-				<guid>http://localhost:1313/braindump/2020/04/bayesian-prior/</guid>
+				<guid>https://dragarok.github.io/braindump/2020/04/bayesian-prior/</guid>
 				<description>&lt;p&gt;&amp;ndash; Always set the priors in the vicinity of what you believe the truth is&#xA;&amp;ndash; Always set the priors such that they reflect the same order of magnitude&#xA;as the phenomenon you’re trying to predict&#xA;&amp;ndash; Don’t be overconfident, leave space for doubt&#xA;&amp;ndash; Never use completely uninformative priors&#xA;&amp;ndash; Whenever possible refrain from using uniform distributions&#xA;&amp;ndash; Always sum up the consequence of all of your priors such&#xA;that if no data was available your model still predicts&#xA;in the same order of magnitude as your observed response&#xA;&amp;ndash; Be careful, and be honest! Never postulate very informative priors on&#xA;results you WANT to be true. It’s OK&#xA;if you BELIEVE them to be true.&#xA;Don’t rest your mind until you see the difference.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Bayesian Prior</title>
-				<link>http://localhost:1313/ai/bayesianprior/</link>
+				<link>https://dragarok.github.io/ai/bayesianprior/</link>
 				<pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/ai/bayesianprior/</guid>
+				<guid>https://dragarok.github.io/ai/bayesianprior/</guid>
 				<description>&lt;ul&gt;&#xA;&lt;li&gt;Always set the priors in the vicinity of what you believe the truth is&lt;/li&gt;&#xA;&lt;li&gt;Always set the priors such that they reflect the same order of magnitude&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;s the phenomenon you’re trying to predict&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Don’t be overconfident, leave space for doubt&lt;/li&gt;&#xA;&lt;li&gt;Never use completely uninformative priors&lt;/li&gt;&#xA;&lt;li&gt;Whenever possible refrain from using uniform distributions&lt;/li&gt;&#xA;&lt;li&gt;Always sum up the consequence of all of your priors such&#xA;that if no data was available your model still predicts&#xA;in the same order of magnitude as your observed response&lt;/li&gt;&#xA;&lt;li&gt;Be careful, and be honest! Never postulate very informative priors on&#xA;results you WANT to be true. It’s OK&#xA;if you BELIEVE them to be true.&#xA;Don’t rest your mind until you see the difference.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 	</channel>
