@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://dragarok.github.io/braindump/2020/09/r-programming-101-ggplot/" />
+<link rel="canonical" href="http://localhost:1313/braindump/2020/09/r-programming-101-ggplot/" />
 
 
     <title>
@@ -50,16 +50,16 @@
     <meta name="theme-color" content="#252627">
 
 
-  <meta itemprop="name" content="R Programming 101- Ggplot">
-  <meta itemprop="description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes">
-  <meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45">
-  <meta itemprop="dateModified" content="2020-10-02T07:35:15+05:45">
-  <meta itemprop="wordCount" content="2151">
-  <meta itemprop="image" content="https://dragarok.github.io/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://dragarok.github.io/">
-  <meta name="twitter:title" content="R Programming 101- Ggplot">
-  <meta name="twitter:description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes">
+	<meta itemprop="name" content="R Programming 101- Ggplot">
+	<meta itemprop="description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes">
+	<meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45">
+	<meta itemprop="dateModified" content="2020-10-02T07:35:15+05:45">
+	<meta itemprop="wordCount" content="2151">
+	<meta itemprop="image" content="http://localhost:1313/">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="http://localhost:1313/">
+	<meta name="twitter:title" content="R Programming 101- Ggplot">
+	<meta name="twitter:description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes">
 
 
 
@@ -108,7 +108,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/about/">About</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li>
+    <ul class="menu__inner"><li><a href="http://localhost:1313/about/">About</a></li><li><a href="http://localhost:1313/ai/">AI</a></li><li><a href="http://localhost:1313/posts/">Blog</a></li><li><a href="http://localhost:1313/books/">Books</a></li><li><a href="http://localhost:1313/braindump/">Braindump</a></li>
     </ul>
 </nav>
 
@@ -145,7 +145,7 @@
 
         <article>
             <h1 class="post-title">
-                <a href="https://dragarok.github.io/braindump/2020/09/r-programming-101-ggplot/">R Programming 101- Ggplot</a>
+                <a href="http://localhost:1313/braindump/2020/09/r-programming-101-ggplot/">R Programming 101- Ggplot</a>
             </h1>
 
             
@@ -901,7 +901,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
                 <div class="pagination__buttons">
                     
                         <span class="button previous">
-                            <a href="https://dragarok.github.io/braindump/2020/09/r-programming-101-dplyr/">
+                            <a href="http://localhost:1313/braindump/2020/09/r-programming-101-dplyr/">
                                 <span class="button__icon">←</span>
                                 <span class="button__text">R Programming 101- Dplyr</span>
                             </a>
@@ -910,7 +910,7 @@ Recommended is using transparency when using solid shapes. Or choose something o
 
                     
                         <span class="button next">
-                            <a href="https://dragarok.github.io/braindump/2020/09/data-scientist-with-r/">
+                            <a href="http://localhost:1313/braindump/2020/09/data-scientist-with-r/">
                                 <span class="button__text">Data Scientist with R</span>
                                 <span class="button__icon">→</span>
                             </a>
