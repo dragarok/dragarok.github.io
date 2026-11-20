@@ -7,6 +7,50 @@
 <meta name="author" content="[Alok Regmi]">
 <meta name="description" content="### Author: Stauffer, Matt
 loc 235 - You have Homestead and Valet for local development, Forge for server management, and Envoyer for advanced deployment. And there’s a suite of add-on packages: Cashier for payments and subscriptions, Echo for WebSockets, Scout for search, Passport for API authentication, Socialite for social login, and Spark to bootstrap your SaaS. Laravel is trying to take the repetitive work out of developers’ jobs so they can do something unique.
+loc 570 - What’s a Closure? Closures are PHP’s version of anonymous functions. A closure is a function that you can pass around as an object, assign to a variable, pass as a parameter to other functions and methods, or even serialize.
+loc 681 - // Defining a route with name in routes/web.php: Route::get(&lsquo;members/{id}&rsquo;, &lsquo;MembersController@show&rsquo;)-&gt;name(&lsquo;members.show&rsquo;);
+loc 701 - Route Naming Conventions You can name your route anything you’d like, but the common convention is to use the plural of the resource name, then a period, then the action.
+loc 709 - In general, I recommend using route names instead of paths to refer to your routes, and therefore using the route() helper instead of the url() helper. Sometimes it can get a bit clumsy — for example, if you’re working with multiple subdomains — but it provides an incredible level of flexibility to later change the application’s routing structure without major penalty.
+loc 739 - Example 3-10. Defining a route group Route::group([], function () { Route::get(&lsquo;hello&rsquo;, function () { return &lsquo;Hello&rsquo;; }); Route::get(&lsquo;world&rsquo;, function () { return &lsquo;World&rsquo;; }); });
+loc 750 - most common use for route groups is to apply middleware to a group of routes.
+loc 755 - Example 3-11. Restricting a group of routes to logged-in users only Route::group([&lsquo;middleware&rsquo; =&gt; &lsquo;auth&rsquo;], function () {
+loc 768 - Often it’s clearer and more direct to attach middleware to your routes in the controller instead of at the route definition. You
+loc 768 - Often it’s clearer and more direct to attach middleware to your routes in the controller instead of at the route definition. You can do this by calling the middleware() method in the constructor of your controller.
+loc 772 - public function __construct() { $this-&gt;middleware(&lsquo;auth&rsquo;); $this-&gt;middleware(&lsquo;admin-auth&rsquo;) -&gt;only(&lsquo;admin&rsquo;); $this-&gt;middleware(&rsquo;team-member&rsquo;) -&gt;
+loc 772 - public function __construct() { $this-&gt;middleware(&lsquo;auth&rsquo;); $this-&gt;middleware(&lsquo;admin-auth&rsquo;) -&gt;only(&lsquo;admin&rsquo;); $this-&gt;middleware(&rsquo;team-member&rsquo;) -&gt;except(&lsquo;admin&rsquo;); }
+loc 850 - Three ways to load a view() There are three different ways to return a view. For now, just concern yourself with view(), but if you ever see View::make(), it’s the same thing, and you could also
+loc 850 - Three ways to load a view() There are three different ways to return a view. For now, just concern yourself with view(), but if you ever see View::make(), it’s the same thing, and you could also inject
+loc 850 - Three ways to load a view() There are three different ways to return a view. For now, just concern yourself with view(), but if you ever see View::make(), it’s the same thing, and you could also inject the Illuminate\View\ViewFactory if you prefer.
+loc 872 - It’s possible to share certain variables with every template or just certain templates, like in the following code: view()-&gt;share(&lsquo;variableName&rsquo;, &lsquo;variableValue&rsquo;);
+loc 873 - view()-&gt;share(&lsquo;variableName&rsquo;, &lsquo;variableValue&rsquo;);
+loc 930 - Generating resource controllers If you ever used php artisan make:controller in Laravel prior to 5.3, you might be expecting it to autogenerate methods for all of the basic resource routes like create() and update(). You can bring this behavior back in Laravel 5.3 by passing the &ndash;resource flag when you create the controller: php artisan make:controller TasksController &ndash;resource
+loc 964 - import \Input, or we can import Illuminate\Support\Facades\Input. For
+loc 1039 - Resource controller binding // routes/web.php Route::resource(&rsquo;tasks&rsquo;, &lsquo;TasksController&rsquo;);
+loc 1046 - you ever find yourself in a situation where you’re wondering what routes your current application has available, there’s a tool for that: from the command line, run php artisan route:list and you’ll get a listing of all of the available routes (see
+loc 1062 - There are two kinds of route model binding: implicit and custom (or explicit).
+loc 1072 - Because the route parameter ({conference}) is the same as the method parameter ($conference), and the method parameter is typehinted with a Conference model (Conference $conference), Laravel sees this as a route model binding.
+loc 1107 - If your app isn’t using any route closures, you can run php artisan route:cache, Laravel will serialize the results of your routes/* files.
+loc 1108 - you want to delete the cache, run php artisan route:clear.
+loc 1125 - HEAD asks for a headers-only version of the GET, POST creates a resource, PUT overwrites a resource and PATCH modifies a resource, DELETE deletes a resource, and OPTIONS asks the server which verbs are allowed at this URL.
+loc 1134 - But if you find yourself needing to submit HTML forms in Laravel with verbs other than GET or POST, you’ll need to use form method spoofing, which is spoofing the HTTP method in an HTML form.
+loc 1137 - To inform Laravel that the form you’re currently submitting should be treated as something other than POST, add a hidden variable named _method with the value of either &ldquo;PUT&rdquo;, &ldquo;PATCH&rdquo;, or &ldquo;DELETE&rdquo;, and Laravel will match and route that form submission as if it were actually a request with that verb.
+loc 1147 - form action=&quot;/tasks/5&quot; method=&ldquo;POST&rdquo;&gt; loc 1154 - By default, all routes in Laravel except “read-only” routes (those using GET, HEAD, or OPTIONS) are protected against cross-site request forgery (CSRF) attacks by requiring a token, in the form of an input named _token, to be passed along with each request.
+loc 1230 - Route::get(&lsquo;redirect&rsquo;, function () { return redirect()-&gt;route(&lsquo;conferences.show&rsquo;, [&lsquo;conference&rsquo; =&gt; 99]); }); redirect()-&gt;
+loc 1230 - Route::get(&lsquo;redirect&rsquo;, function () { return redirect()-&gt;route(&lsquo;conferences.show&rsquo;, [&lsquo;conference&rsquo; =&gt; 99]); });
+loc 1234 - Because of some of the built-in conveniences of Laravel’s session implementation, your application will always have knowledge of what the user’s previously visited page was. That opens up the opportunity for a redirect()-&gt;() redirect, which simply redirects the user to whatever page she came from. There’s also a global shortcut for this: back().
+loc 1254 - Route::get(&lsquo;redirect-with-key-value&rsquo;, function () { return redirect(&lsquo;dashboard&rsquo;) -&gt;with(&rsquo;error&rsquo;, true); }); Route::get(&lsquo;redirect-with-array&rsquo;, function () { return redirect(&lsquo;dashboard&rsquo;) -&gt;with([&rsquo;error&rsquo; =&gt; true, &lsquo;message&rsquo; =&gt; &lsquo;Whoops!&rsquo;]); });
+loc 1303 - There are a few globally available methods (abort(), abort_if(), and abort_unless()), which optionally take HTTP status codes, a message, and a headers array as parameters.
+loc 1306 - Example 3-41. 403 Forbidden aborts Route::post(&lsquo;something-you-cant-do&rsquo;, function (Illuminate\Http\Request) { abort(403, &lsquo;You cannot do that!&rsquo;); abort_unless($request-&gt;has(&lsquo;magicToken&rsquo;), 403); abort_if($request-&gt;user()-&gt;isBanned, 403); });
+loc 1319 - If you want to create an HTTP response manually, just pass your data into the first parameter of response()-&gt;make(): e.g., return response()-&gt;make(&lsquo;Hello, World!&rsquo;). Once
+loc 1324 - return response()-&gt;json(User::all());. It’s
+loc 1327 - send a file for the end user to download, pass either an SplFileInfo instance or a string filename to download(), with an optional second parameter of the filename: e.g., return response()-&gt;
+loc 1327 - send a file for the end user to download, pass either an SplFileInfo instance or a string filename to download(), with an optional second parameter of the filename: e.g., return response()-&gt;download(&lsquo;file501751.pdf&rsquo;, &lsquo;myFile.pdf&rsquo;).
+loc 1547 - Each file should only extend one other file, and the @extends call should be the first line of the file.
+loc 1555 - Note, however, that when you’re using @section in a child view, you end it with @endsection (or its alias @stop), instead of @show, which is reserved for defining sections in parent views.
+loc 2421 - Any time you’re using facades inside of namespaced classes (e.g., controllers), you’ll have to add the full facade path to the import block at the top of your file (e.g., use Illuminate\Support\facades\Request).
+loc 2422 - Because of this, several of the facades also have a companion global helper function. If these helper functions are run with no parameters, they expose the same syntax as the facade (e.g., request()-&gt;has() is the same as Request::has()).
+loc 2435 - Injected Request objects (and the Request facade and the request() helper) have several methods available to represent the state of the current page’s URL, but right now let’s look primarily at getting information about the URL segments. If you’re not familiar with the idea of URL segments, each group of characters after the domain is called a segment. So, http://www.myapp.com/users/15/ has two segments: users and 15.
+loc 2439 - you can probably guess, we have two methods available to us: $request-&gt;segments() returns an array of all segments, and $request-&gt;segment($segmentId) allows us to get the value of a single segment.
 " />
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
@@ -36,7 +80,7 @@ loc 235 - You have Homestead and Valet for local development, Forge for server m
 
 
 
-<link rel="stylesheet" href="../../main.min.b0d234ca364f76d18f74dd789a642d763e058fe48a746787387c0cdd21815e04.css">
+<link rel="stylesheet" href="../../main.min.1e9ec51b5041c877f62777a7ced7b8aa5cda70ad201572915921be13bf9ee0e2.css">
 
 
 
@@ -53,7 +97,51 @@ loc 235 - You have Homestead and Valet for local development, Forge for server m
 
 	<meta itemprop="name" content="Laravel: Up and Running: A Framework for Building Modern PHP Apps">
 	<meta itemprop="description" content="### Author: Stauffer, Matt
-loc 235 - You have Homestead and Valet for local development, Forge for server management, and Envoyer for advanced deployment. And there’s a suite of add-on packages: Cashier for payments and subscriptions, Echo for WebSockets, Scout for search, Passport for API authentication, Socialite for social login, and Spark to bootstrap your SaaS. Laravel is trying to take the repetitive work out of developers’ jobs so they can do something unique.">
+loc 235 - You have Homestead and Valet for local development, Forge for server management, and Envoyer for advanced deployment. And there’s a suite of add-on packages: Cashier for payments and subscriptions, Echo for WebSockets, Scout for search, Passport for API authentication, Socialite for social login, and Spark to bootstrap your SaaS. Laravel is trying to take the repetitive work out of developers’ jobs so they can do something unique.
+loc 570 - What’s a Closure? Closures are PHP’s version of anonymous functions. A closure is a function that you can pass around as an object, assign to a variable, pass as a parameter to other functions and methods, or even serialize.
+loc 681 - // Defining a route with name in routes/web.php: Route::get(‘members/{id}’, ‘MembersController@show’)-&gt;name(‘members.show’);
+loc 701 - Route Naming Conventions You can name your route anything you’d like, but the common convention is to use the plural of the resource name, then a period, then the action.
+loc 709 - In general, I recommend using route names instead of paths to refer to your routes, and therefore using the route() helper instead of the url() helper. Sometimes it can get a bit clumsy — for example, if you’re working with multiple subdomains — but it provides an incredible level of flexibility to later change the application’s routing structure without major penalty.
+loc 739 - Example 3-10. Defining a route group Route::group([], function () { Route::get(‘hello’, function () { return ‘Hello’; }); Route::get(‘world’, function () { return ‘World’; }); });
+loc 750 - most common use for route groups is to apply middleware to a group of routes.
+loc 755 - Example 3-11. Restricting a group of routes to logged-in users only Route::group([‘middleware’ =&gt; ‘auth’], function () {
+loc 768 - Often it’s clearer and more direct to attach middleware to your routes in the controller instead of at the route definition. You
+loc 768 - Often it’s clearer and more direct to attach middleware to your routes in the controller instead of at the route definition. You can do this by calling the middleware() method in the constructor of your controller.
+loc 772 - public function __construct() { $this-&gt;middleware(‘auth’); $this-&gt;middleware(‘admin-auth’) -&gt;only(‘admin’); $this-&gt;middleware(’team-member’) -&gt;
+loc 772 - public function __construct() { $this-&gt;middleware(‘auth’); $this-&gt;middleware(‘admin-auth’) -&gt;only(‘admin’); $this-&gt;middleware(’team-member’) -&gt;except(‘admin’); }
+loc 850 - Three ways to load a view() There are three different ways to return a view. For now, just concern yourself with view(), but if you ever see View::make(), it’s the same thing, and you could also
+loc 850 - Three ways to load a view() There are three different ways to return a view. For now, just concern yourself with view(), but if you ever see View::make(), it’s the same thing, and you could also inject
+loc 850 - Three ways to load a view() There are three different ways to return a view. For now, just concern yourself with view(), but if you ever see View::make(), it’s the same thing, and you could also inject the Illuminate\View\ViewFactory if you prefer.
+loc 872 - It’s possible to share certain variables with every template or just certain templates, like in the following code: view()-&gt;share(‘variableName’, ‘variableValue’);
+loc 873 - view()-&gt;share(‘variableName’, ‘variableValue’);
+loc 930 - Generating resource controllers If you ever used php artisan make:controller in Laravel prior to 5.3, you might be expecting it to autogenerate methods for all of the basic resource routes like create() and update(). You can bring this behavior back in Laravel 5.3 by passing the –resource flag when you create the controller: php artisan make:controller TasksController –resource
+loc 964 - import \Input, or we can import Illuminate\Support\Facades\Input. For
+loc 1039 - Resource controller binding // routes/web.php Route::resource(’tasks’, ‘TasksController’);
+loc 1046 - you ever find yourself in a situation where you’re wondering what routes your current application has available, there’s a tool for that: from the command line, run php artisan route:list and you’ll get a listing of all of the available routes (see
+loc 1062 - There are two kinds of route model binding: implicit and custom (or explicit).
+loc 1072 - Because the route parameter ({conference}) is the same as the method parameter ($conference), and the method parameter is typehinted with a Conference model (Conference $conference), Laravel sees this as a route model binding.
+loc 1107 - If your app isn’t using any route closures, you can run php artisan route:cache, Laravel will serialize the results of your routes/* files.
+loc 1108 - you want to delete the cache, run php artisan route:clear.
+loc 1125 - HEAD asks for a headers-only version of the GET, POST creates a resource, PUT overwrites a resource and PATCH modifies a resource, DELETE deletes a resource, and OPTIONS asks the server which verbs are allowed at this URL.
+loc 1134 - But if you find yourself needing to submit HTML forms in Laravel with verbs other than GET or POST, you’ll need to use form method spoofing, which is spoofing the HTTP method in an HTML form.
+loc 1137 - To inform Laravel that the form you’re currently submitting should be treated as something other than POST, add a hidden variable named _method with the value of either “PUT”, “PATCH”, or “DELETE”, and Laravel will match and route that form submission as if it were actually a request with that verb.
+loc 1147 - form action=&#34;/tasks/5&#34; method=“POST”&gt; loc 1154 - By default, all routes in Laravel except “read-only” routes (those using GET, HEAD, or OPTIONS) are protected against cross-site request forgery (CSRF) attacks by requiring a token, in the form of an input named _token, to be passed along with each request.
+loc 1230 - Route::get(‘redirect’, function () { return redirect()-&gt;route(‘conferences.show’, [‘conference’ =&gt; 99]); }); redirect()-&gt;
+loc 1230 - Route::get(‘redirect’, function () { return redirect()-&gt;route(‘conferences.show’, [‘conference’ =&gt; 99]); });
+loc 1234 - Because of some of the built-in conveniences of Laravel’s session implementation, your application will always have knowledge of what the user’s previously visited page was. That opens up the opportunity for a redirect()-&gt;() redirect, which simply redirects the user to whatever page she came from. There’s also a global shortcut for this: back().
+loc 1254 - Route::get(‘redirect-with-key-value’, function () { return redirect(‘dashboard’) -&gt;with(’error’, true); }); Route::get(‘redirect-with-array’, function () { return redirect(‘dashboard’) -&gt;with([’error’ =&gt; true, ‘message’ =&gt; ‘Whoops!’]); });
+loc 1303 - There are a few globally available methods (abort(), abort_if(), and abort_unless()), which optionally take HTTP status codes, a message, and a headers array as parameters.
+loc 1306 - Example 3-41. 403 Forbidden aborts Route::post(‘something-you-cant-do’, function (Illuminate\Http\Request) { abort(403, ‘You cannot do that!’); abort_unless($request-&gt;has(‘magicToken’), 403); abort_if($request-&gt;user()-&gt;isBanned, 403); });
+loc 1319 - If you want to create an HTTP response manually, just pass your data into the first parameter of response()-&gt;make(): e.g., return response()-&gt;make(‘Hello, World!’). Once
+loc 1324 - return response()-&gt;json(User::all());. It’s
+loc 1327 - send a file for the end user to download, pass either an SplFileInfo instance or a string filename to download(), with an optional second parameter of the filename: e.g., return response()-&gt;
+loc 1327 - send a file for the end user to download, pass either an SplFileInfo instance or a string filename to download(), with an optional second parameter of the filename: e.g., return response()-&gt;download(‘file501751.pdf’, ‘myFile.pdf’).
+loc 1547 - Each file should only extend one other file, and the @extends call should be the first line of the file.
+loc 1555 - Note, however, that when you’re using @section in a child view, you end it with @endsection (or its alias @stop), instead of @show, which is reserved for defining sections in parent views.
+loc 2421 - Any time you’re using facades inside of namespaced classes (e.g., controllers), you’ll have to add the full facade path to the import block at the top of your file (e.g., use Illuminate\Support\facades\Request).
+loc 2422 - Because of this, several of the facades also have a companion global helper function. If these helper functions are run with no parameters, they expose the same syntax as the facade (e.g., request()-&gt;has() is the same as Request::has()).
+loc 2435 - Injected Request objects (and the Request facade and the request() helper) have several methods available to represent the state of the current page’s URL, but right now let’s look primarily at getting information about the URL segments. If you’re not familiar with the idea of URL segments, each group of characters after the domain is called a segment. So, http://www.myapp.com/users/15/ has two segments: users and 15.
+loc 2439 - you can probably guess, we have two methods available to us: $request-&gt;segments() returns an array of all segments, and $request-&gt;segment($segmentId) allows us to get the value of a single segment.">
 	<meta itemprop="datePublished" content="2020-04-26T03:07:10+05:45">
 	<meta itemprop="dateModified" content="2020-04-26T03:07:10+05:45">
 	<meta itemprop="wordCount" content="1432">
@@ -62,7 +150,51 @@ loc 235 - You have Homestead and Valet for local development, Forge for server m
 	<meta name="twitter:image" content="https://dragarok.github.io/">
 	<meta name="twitter:title" content="Laravel: Up and Running: A Framework for Building Modern PHP Apps">
 	<meta name="twitter:description" content="### Author: Stauffer, Matt
-loc 235 - You have Homestead and Valet for local development, Forge for server management, and Envoyer for advanced deployment. And there’s a suite of add-on packages: Cashier for payments and subscriptions, Echo for WebSockets, Scout for search, Passport for API authentication, Socialite for social login, and Spark to bootstrap your SaaS. Laravel is trying to take the repetitive work out of developers’ jobs so they can do something unique.">
+loc 235 - You have Homestead and Valet for local development, Forge for server management, and Envoyer for advanced deployment. And there’s a suite of add-on packages: Cashier for payments and subscriptions, Echo for WebSockets, Scout for search, Passport for API authentication, Socialite for social login, and Spark to bootstrap your SaaS. Laravel is trying to take the repetitive work out of developers’ jobs so they can do something unique.
+loc 570 - What’s a Closure? Closures are PHP’s version of anonymous functions. A closure is a function that you can pass around as an object, assign to a variable, pass as a parameter to other functions and methods, or even serialize.
+loc 681 - // Defining a route with name in routes/web.php: Route::get(‘members/{id}’, ‘MembersController@show’)-&gt;name(‘members.show’);
+loc 701 - Route Naming Conventions You can name your route anything you’d like, but the common convention is to use the plural of the resource name, then a period, then the action.
+loc 709 - In general, I recommend using route names instead of paths to refer to your routes, and therefore using the route() helper instead of the url() helper. Sometimes it can get a bit clumsy — for example, if you’re working with multiple subdomains — but it provides an incredible level of flexibility to later change the application’s routing structure without major penalty.
+loc 739 - Example 3-10. Defining a route group Route::group([], function () { Route::get(‘hello’, function () { return ‘Hello’; }); Route::get(‘world’, function () { return ‘World’; }); });
+loc 750 - most common use for route groups is to apply middleware to a group of routes.
+loc 755 - Example 3-11. Restricting a group of routes to logged-in users only Route::group([‘middleware’ =&gt; ‘auth’], function () {
+loc 768 - Often it’s clearer and more direct to attach middleware to your routes in the controller instead of at the route definition. You
+loc 768 - Often it’s clearer and more direct to attach middleware to your routes in the controller instead of at the route definition. You can do this by calling the middleware() method in the constructor of your controller.
+loc 772 - public function __construct() { $this-&gt;middleware(‘auth’); $this-&gt;middleware(‘admin-auth’) -&gt;only(‘admin’); $this-&gt;middleware(’team-member’) -&gt;
+loc 772 - public function __construct() { $this-&gt;middleware(‘auth’); $this-&gt;middleware(‘admin-auth’) -&gt;only(‘admin’); $this-&gt;middleware(’team-member’) -&gt;except(‘admin’); }
+loc 850 - Three ways to load a view() There are three different ways to return a view. For now, just concern yourself with view(), but if you ever see View::make(), it’s the same thing, and you could also
+loc 850 - Three ways to load a view() There are three different ways to return a view. For now, just concern yourself with view(), but if you ever see View::make(), it’s the same thing, and you could also inject
+loc 850 - Three ways to load a view() There are three different ways to return a view. For now, just concern yourself with view(), but if you ever see View::make(), it’s the same thing, and you could also inject the Illuminate\View\ViewFactory if you prefer.
+loc 872 - It’s possible to share certain variables with every template or just certain templates, like in the following code: view()-&gt;share(‘variableName’, ‘variableValue’);
+loc 873 - view()-&gt;share(‘variableName’, ‘variableValue’);
+loc 930 - Generating resource controllers If you ever used php artisan make:controller in Laravel prior to 5.3, you might be expecting it to autogenerate methods for all of the basic resource routes like create() and update(). You can bring this behavior back in Laravel 5.3 by passing the –resource flag when you create the controller: php artisan make:controller TasksController –resource
+loc 964 - import \Input, or we can import Illuminate\Support\Facades\Input. For
+loc 1039 - Resource controller binding // routes/web.php Route::resource(’tasks’, ‘TasksController’);
+loc 1046 - you ever find yourself in a situation where you’re wondering what routes your current application has available, there’s a tool for that: from the command line, run php artisan route:list and you’ll get a listing of all of the available routes (see
+loc 1062 - There are two kinds of route model binding: implicit and custom (or explicit).
+loc 1072 - Because the route parameter ({conference}) is the same as the method parameter ($conference), and the method parameter is typehinted with a Conference model (Conference $conference), Laravel sees this as a route model binding.
+loc 1107 - If your app isn’t using any route closures, you can run php artisan route:cache, Laravel will serialize the results of your routes/* files.
+loc 1108 - you want to delete the cache, run php artisan route:clear.
+loc 1125 - HEAD asks for a headers-only version of the GET, POST creates a resource, PUT overwrites a resource and PATCH modifies a resource, DELETE deletes a resource, and OPTIONS asks the server which verbs are allowed at this URL.
+loc 1134 - But if you find yourself needing to submit HTML forms in Laravel with verbs other than GET or POST, you’ll need to use form method spoofing, which is spoofing the HTTP method in an HTML form.
+loc 1137 - To inform Laravel that the form you’re currently submitting should be treated as something other than POST, add a hidden variable named _method with the value of either “PUT”, “PATCH”, or “DELETE”, and Laravel will match and route that form submission as if it were actually a request with that verb.
+loc 1147 - form action=&#34;/tasks/5&#34; method=“POST”&gt; loc 1154 - By default, all routes in Laravel except “read-only” routes (those using GET, HEAD, or OPTIONS) are protected against cross-site request forgery (CSRF) attacks by requiring a token, in the form of an input named _token, to be passed along with each request.
+loc 1230 - Route::get(‘redirect’, function () { return redirect()-&gt;route(‘conferences.show’, [‘conference’ =&gt; 99]); }); redirect()-&gt;
+loc 1230 - Route::get(‘redirect’, function () { return redirect()-&gt;route(‘conferences.show’, [‘conference’ =&gt; 99]); });
+loc 1234 - Because of some of the built-in conveniences of Laravel’s session implementation, your application will always have knowledge of what the user’s previously visited page was. That opens up the opportunity for a redirect()-&gt;() redirect, which simply redirects the user to whatever page she came from. There’s also a global shortcut for this: back().
+loc 1254 - Route::get(‘redirect-with-key-value’, function () { return redirect(‘dashboard’) -&gt;with(’error’, true); }); Route::get(‘redirect-with-array’, function () { return redirect(‘dashboard’) -&gt;with([’error’ =&gt; true, ‘message’ =&gt; ‘Whoops!’]); });
+loc 1303 - There are a few globally available methods (abort(), abort_if(), and abort_unless()), which optionally take HTTP status codes, a message, and a headers array as parameters.
+loc 1306 - Example 3-41. 403 Forbidden aborts Route::post(‘something-you-cant-do’, function (Illuminate\Http\Request) { abort(403, ‘You cannot do that!’); abort_unless($request-&gt;has(‘magicToken’), 403); abort_if($request-&gt;user()-&gt;isBanned, 403); });
+loc 1319 - If you want to create an HTTP response manually, just pass your data into the first parameter of response()-&gt;make(): e.g., return response()-&gt;make(‘Hello, World!’). Once
+loc 1324 - return response()-&gt;json(User::all());. It’s
+loc 1327 - send a file for the end user to download, pass either an SplFileInfo instance or a string filename to download(), with an optional second parameter of the filename: e.g., return response()-&gt;
+loc 1327 - send a file for the end user to download, pass either an SplFileInfo instance or a string filename to download(), with an optional second parameter of the filename: e.g., return response()-&gt;download(‘file501751.pdf’, ‘myFile.pdf’).
+loc 1547 - Each file should only extend one other file, and the @extends call should be the first line of the file.
+loc 1555 - Note, however, that when you’re using @section in a child view, you end it with @endsection (or its alias @stop), instead of @show, which is reserved for defining sections in parent views.
+loc 2421 - Any time you’re using facades inside of namespaced classes (e.g., controllers), you’ll have to add the full facade path to the import block at the top of your file (e.g., use Illuminate\Support\facades\Request).
+loc 2422 - Because of this, several of the facades also have a companion global helper function. If these helper functions are run with no parameters, they expose the same syntax as the facade (e.g., request()-&gt;has() is the same as Request::has()).
+loc 2435 - Injected Request objects (and the Request facade and the request() helper) have several methods available to represent the state of the current page’s URL, but right now let’s look primarily at getting information about the URL segments. If you’re not familiar with the idea of URL segments, each group of characters after the domain is called a segment. So, http://www.myapp.com/users/15/ has two segments: users and 15.
+loc 2439 - you can probably guess, we have two methods available to us: $request-&gt;segments() returns an array of all segments, and $request-&gt;segment($segmentId) allows us to get the value of a single segment.">
 
 
 
@@ -311,7 +443,7 @@ loc 235 - You have Homestead and Valet for local development, Forge for server m
 
 
 
-<script type="text/javascript" src="../../bundle.min.74fe699bb673e8362137b575513abfcf73303855d923eea09c0e507deab0ca7f8321880b672790b9e63cc109a18189deebfd13899a8ff536e858791973ffd487.js" integrity="sha512-dP5pm7Zz6DYhN7V1UTq/z3MwOFXZI&#43;6gnA5Qfeqwyn&#43;DIYgLZyeQueY8wQmhgYne6/0TiZqP9TboWHkZc//Uhw=="></script>
+<script type="text/javascript" src="../../bundle.min.778e2214d78dff15f4559780e10b60705e86f1006936e291682966b95861ab39662038c5f8b1bdbec542fb0a5fb41be31a400e1f7f8c871725f1042665fea928.js" integrity="sha512-d44iFNeN/xX0VZeA4QtgcF6G8QBpNuKRaClmuVhhqzlmIDjF&#43;LG9vsVC&#43;wpftBvjGkAOH3&#43;Mhxcl8QQmZf6pKA=="></script>
 
 
 
