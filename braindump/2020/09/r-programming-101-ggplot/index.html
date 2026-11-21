@@ -10,12 +10,12 @@ On plotting many values don&rsquo;t start from 0. So to make plot start from 0 i
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://dragarok.github.io/braindump/2020/09/r-programming-101-ggplot/" />
+<link rel="canonical" href="https://alokregmi.com/braindump/2020/09/r-programming-101-ggplot/" />
 
 
     <title>
         
-            R Programming 101- Ggplot :: Alok&#39;s Blog 
+            R Programming 101- Ggplot :: Alok Regmi 
         
     </title>
 
@@ -39,16 +39,11 @@ On plotting many values don&rsquo;t start from 0. So to make plot start from 0 i
 
 
 
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
-    <link rel="manifest" href="../../../../site.webmanifest">
-    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
+<link rel="icon" href="../../../../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+<link rel="manifest" href="../../../../site.webmanifest">
 
 	<meta itemprop="name" content="R Programming 101- Ggplot">
 	<meta itemprop="description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes
@@ -56,9 +51,9 @@ On plotting many values don’t start from 0. So to make plot start from 0 in di
 	<meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45">
 	<meta itemprop="dateModified" content="2020-10-02T07:35:15+05:45">
 	<meta itemprop="wordCount" content="2151">
-	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:title" content="R Programming 101- Ggplot">
 	<meta name="twitter:description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes
 On plotting many values don’t start from 0. So to make plot start from 0 in different axes, expand_limits(y=0) can be used. To scale axes like making axis logarithmic, even_x_log10() In this way">
@@ -83,7 +78,18 @@ On plotting many values don’t start from 0. So to make plot start from 0 in di
 
   gtag('config', 'G-TYZR3W5F57');
 </script>
-<link rel="stylesheet" href="../../../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+<link rel="stylesheet" href="../../../../css/site.min.b59afd7f8a94f5e7f133d59c0c000bda54b474c23a669ace4376182be3c21502.css"><meta property="og:url" content="https://alokregmi.com/braindump/2020/09/r-programming-101-ggplot/">
+	<meta property="og:site_name" content="Alok Regmi">
+	<meta property="og:title" content="R Programming 101- Ggplot">
+	<meta property="og:description" content="Confusions TODO Clarify what dodge actually does alongside jitter together TODO Understand differences in facet types: wrap, grid, margins. Ggplot Basics Components Data to Plot Aesthetics Plot additional properties [ Added with &#43; sign] Aesthetics Parameters Color: Set a color based on specific category. e.g. continents in case of gapminder data Size: Make points sized base on some value of dataframe. e.g. by population or by gdp Faceting: This is used outside aes as facet_wrap( ~ property ). Here ~ means by category and facet wrap separates the individual plots based on the facet property. e.g. If you facet by continents, then individual continents will be plotted separately. Types of plot Scatter Plot: Plot based on points. Use &#43;geom_point() to make a scatter plot. Line Plot: Plot lines. Use &#43;geom_line() to make line plot. Bar Plot: Plot bar graphs. Use &#43;geom_col() to make bar plots. Histogram Plot: Plot histogram for plots. Use &#43;geom_histogram() to make histogram plot. Box Plot: Plot box plots. Use &#43;geom_boxplot() for boxplots. Additional Notes
+On plotting many values don’t start from 0. So to make plot start from 0 in different axes, expand_limits(y=0) can be used. To scale axes like making axis logarithmic, even_x_log10() In this way">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="braindump">
+		<meta property="article:published_time" content="2020-09-22T00:00:00+05:45">
+		<meta property="article:modified_time" content="2020-10-02T07:35:15+05:45">
+		<meta property="og:image" content="https://alokregmi.com/og.png">
+
 
 
     </head>
@@ -111,7 +117,7 @@ On plotting many values don’t start from 0. So to make plot start from 0 in di
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    <ul class="menu__inner"><li><a href="https://alokregmi.com/posts/">Blog</a></li><li><a href="https://alokregmi.com/books/">Books</a></li><li><a href="https://alokregmi.com/highlights/">Highlights</a></li><li><a href="https://alokregmi.com/braindump/">Braindump</a></li><li><a href="https://alokregmi.com/ai/">AI</a></li>
     </ul>
 </nav>
 

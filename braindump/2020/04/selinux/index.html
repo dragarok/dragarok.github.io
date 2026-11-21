@@ -10,12 +10,12 @@ Every process has a LABEL Another important part is type enforcement : isolation
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://dragarok.github.io/braindump/2020/04/selinux/" />
+<link rel="canonical" href="https://alokregmi.com/braindump/2020/04/selinux/" />
 
 
     <title>
         
-            Selinux :: Alok&#39;s Blog 
+            Selinux :: Alok Regmi 
         
     </title>
 
@@ -39,16 +39,11 @@ Every process has a LABEL Another important part is type enforcement : isolation
 
 
 
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
-    <link rel="manifest" href="../../../../site.webmanifest">
-    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
+<link rel="icon" href="../../../../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+<link rel="manifest" href="../../../../site.webmanifest">
 
 	<meta itemprop="name" content="Selinux">
 	<meta itemprop="description" content="Selinux Sysadmin’s guide on selinux:
@@ -56,9 +51,9 @@ Every process has a LABEL Another important part is type enforcement : isolation
 	<meta itemprop="datePublished" content="2020-04-19T16:10:57+05:45">
 	<meta itemprop="dateModified" content="2020-04-19T16:10:57+05:45">
 	<meta itemprop="wordCount" content="134">
-	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:title" content="Selinux">
 	<meta name="twitter:description" content="Selinux Sysadmin’s guide on selinux:
 Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context">
@@ -83,7 +78,18 @@ Every process has a LABEL Another important part is type enforcement : isolation
 
   gtag('config', 'G-TYZR3W5F57');
 </script>
-<link rel="stylesheet" href="../../../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+<link rel="stylesheet" href="../../../../css/site.min.b59afd7f8a94f5e7f133d59c0c000bda54b474c23a669ace4376182be3c21502.css"><meta property="og:url" content="https://alokregmi.com/braindump/2020/04/selinux/">
+	<meta property="og:site_name" content="Alok Regmi">
+	<meta property="og:title" content="Selinux">
+	<meta property="og:description" content="Selinux Sysadmin’s guide on selinux:
+Every process has a LABEL Another important part is type enforcement : isolation of process from one another based on their types. user:role:type:label Multi level security(MLS) to control domains based on security levels Multi Category Security : like virtual machines , selinux sandboxes kernel params for selinux at boot: autorelabel=1 forcing system to relabel selinux = 0 enforcing = 0 :permissive mode7. check selinux status: getenforce enable/disable/ : setenfoce 1/0/ status tool : sestatus config : /etc/selinux/config ls -Z , id -z and so on to create and modify context For a web server, different labels are created for binary, config_directory, logfile, content directory, process, ports selinux can set httpd to listen to specific port as: semanage port -a -t http_port_t -p tcp 8585 chcon to change the context">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="braindump">
+		<meta property="article:published_time" content="2020-04-19T16:10:57+05:45">
+		<meta property="article:modified_time" content="2020-04-19T16:10:57+05:45">
+		<meta property="og:image" content="https://alokregmi.com/og.png">
+
 
 
     </head>
@@ -111,7 +117,7 @@ Every process has a LABEL Another important part is type enforcement : isolation
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    <ul class="menu__inner"><li><a href="https://alokregmi.com/posts/">Blog</a></li><li><a href="https://alokregmi.com/books/">Books</a></li><li><a href="https://alokregmi.com/highlights/">Highlights</a></li><li><a href="https://alokregmi.com/braindump/">Braindump</a></li><li><a href="https://alokregmi.com/ai/">AI</a></li>
     </ul>
 </nav>
 

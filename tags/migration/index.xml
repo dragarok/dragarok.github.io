@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Migration on Alok&#39;s Blog</title>
-		<link>https://dragarok.github.io/tags/migration/</link>
-		<description>Recent content in Migration on Alok&#39;s Blog</description>
+		<title>Migration on Alok Regmi</title>
+		<link>https://alokregmi.com/tags/migration/</link>
+		<description>Recent content in Migration on Alok Regmi</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Sun, 19 Apr 2020 15:59:51 +0545</lastBuildDate>
 		
-			<atom:link href="https://dragarok.github.io/tags/migration/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://alokregmi.com/tags/migration/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Migrating OS</title>
-				<link>https://dragarok.github.io/braindump/2020/04/migrating-os/</link>
+				<link>https://alokregmi.com/braindump/2020/04/migrating-os/</link>
 				<pubDate>Sun, 19 Apr 2020 15:59:51 +0545</pubDate>
-				<guid>https://dragarok.github.io/braindump/2020/04/migrating-os/</guid>
+				<guid>https://alokregmi.com/braindump/2020/04/migrating-os/</guid>
 				<description>&lt;ol&gt;&#xA;&lt;li&gt;Get Minitool Partition Wizard on Windows&lt;/li&gt;&#xA;&lt;li&gt;Linux EFI partition and Windows EFI partition are the main things to look after.&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
 			</item>
 	</channel>

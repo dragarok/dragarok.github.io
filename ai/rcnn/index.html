@@ -20,12 +20,12 @@ we use the foreground anchor and the closest ground truth object and calculate t
 <meta name="keywords" content="Blog, rcnn, architecture, neuralnetwork" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://dragarok.github.io/ai/rcnn/" />
+<link rel="canonical" href="https://alokregmi.com/ai/rcnn/" />
 
 
     <title>
         
-            RCNN :: Alok&#39;s Blog 
+            RCNN :: Alok Regmi 
         
     </title>
 
@@ -49,16 +49,11 @@ we use the foreground anchor and the closest ground truth object and calculate t
 
 
 
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="manifest" href="../../site.webmanifest">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
 
 	<meta itemprop="name" content="RCNN">
 	<meta itemprop="description" content="Faster RCNN Region Proposal: Anchors: Different size bounding box of different aspect ratio and sizes
@@ -75,10 +70,10 @@ we use the foreground anchor and the closest ground truth object and calculate t
 	<meta itemprop="datePublished" content="2020-01-24T00:00:00+00:00">
 	<meta itemprop="dateModified" content="2020-05-02T03:40:19+05:45">
 	<meta itemprop="wordCount" content="867">
-	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="image" content="https://alokregmi.com/og.png">
 	<meta itemprop="keywords" content="Rcnn,Architecture,Neuralnetwork">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:title" content="RCNN">
 	<meta name="twitter:description" content="Faster RCNN Region Proposal: Anchors: Different size bounding box of different aspect ratio and sizes
 Task to be done by RPN:
@@ -112,7 +107,30 @@ we use the foreground anchor and the closest ground truth object and calculate t
 
   gtag('config', 'G-TYZR3W5F57');
 </script>
-<link rel="stylesheet" href="../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+<link rel="stylesheet" href="../../css/site.min.b59afd7f8a94f5e7f133d59c0c000bda54b474c23a669ace4376182be3c21502.css"><meta property="og:url" content="https://alokregmi.com/ai/rcnn/">
+	<meta property="og:site_name" content="Alok Regmi">
+	<meta property="og:title" content="RCNN">
+	<meta property="og:description" content="Faster RCNN Region Proposal: Anchors: Different size bounding box of different aspect ratio and sizes
+Task to be done by RPN:
+Does this anchor contain a relevant object?
+How would we adjust this anchor to better fit the relevant object?
+It’s important to understand that even though anchors are defined based on the convolutional feature map, the final anchors reference the original image.
+Mathematically, if the image was w×hw × hw×h, the feature map will end up w/r×h/rw/r × h/rw/r×h/r where rrr is called subsampling ratio.
+If we define one anchor per spatial position of the feature map, the final image will end up with a bunch of anchors separated by r pixels.
+In order to choose the set of anchors we usually define a set of sizes (e.g. 64px, 128px, 256px) and a set of ratios between width and height of boxes (e.g. 0.5, 1, 1.5) and use all the possible combinations of sizes and ratios
+The RPN uses all the anchors selected for the mini batch to calculate the classification loss using binary cross entropy.
+Then, it uses only those minibatch anchors marked as foreground to calculate the regression loss. For calculating the targets for the regression,
+we use the foreground anchor and the closest ground truth object and calculate the correct Δ\DeltaΔ needed to transform the anchor into the object.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="ai">
+		<meta property="article:published_time" content="2020-01-24T00:00:00+00:00">
+		<meta property="article:modified_time" content="2020-05-02T03:40:19+05:45">
+		<meta property="article:tag" content="Rcnn">
+		<meta property="article:tag" content="Architecture">
+		<meta property="article:tag" content="Neuralnetwork">
+		<meta property="og:image" content="https://alokregmi.com/og.png">
+
 
 
     </head>
@@ -140,7 +158,7 @@ we use the foreground anchor and the closest ground truth object and calculate t
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    <ul class="menu__inner"><li><a href="https://alokregmi.com/posts/">Blog</a></li><li><a href="https://alokregmi.com/books/">Books</a></li><li><a href="https://alokregmi.com/highlights/">Highlights</a></li><li><a href="https://alokregmi.com/braindump/">Braindump</a></li><li><a href="https://alokregmi.com/ai/">AI</a></li>
     </ul>
 </nav>
 

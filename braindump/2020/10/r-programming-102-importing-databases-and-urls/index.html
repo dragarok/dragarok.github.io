@@ -13,12 +13,12 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://dragarok.github.io/braindump/2020/10/r-programming-102-importing-databases-and-urls/" />
+<link rel="canonical" href="https://alokregmi.com/braindump/2020/10/r-programming-102-importing-databases-and-urls/" />
 
 
     <title>
         
-            R Programming 102- Importing Databases and URLs :: Alok&#39;s Blog 
+            R Programming 102- Importing Databases and URLs :: Alok Regmi 
         
     </title>
 
@@ -42,16 +42,11 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 
 
 
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
-    <link rel="manifest" href="../../../../site.webmanifest">
-    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
+<link rel="icon" href="../../../../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+<link rel="manifest" href="../../../../site.webmanifest">
 
 	<meta itemprop="name" content="R Programming 102- Importing Databases and URLs">
 	<meta itemprop="description" content="Databases Importing Library library(DBI) Creating Connection con &lt;-dbConnect(RMySQL::MySQL(), dbname = &#34;db_name&#34;, host = &#34;localhost&#34;, port = port_num, user = &#34;username&#34;, password = &#34;my_password&#34;) This connection object is specific to MySQL database.
@@ -61,9 +56,9 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 	<meta itemprop="datePublished" content="2020-10-03T00:00:00+05:45">
 	<meta itemprop="dateModified" content="2020-10-03T08:34:44+05:45">
 	<meta itemprop="wordCount" content="296">
-	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:title" content="R Programming 102- Importing Databases and URLs">
 	<meta name="twitter:description" content="Databases Importing Library library(DBI) Creating Connection con &lt;-dbConnect(RMySQL::MySQL(), dbname = &#34;db_name&#34;, host = &#34;localhost&#34;, port = port_num, user = &#34;username&#34;, password = &#34;my_password&#34;) This connection object is specific to MySQL database.
 Importing data Read Whole Tables
@@ -90,7 +85,20 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
 
   gtag('config', 'G-TYZR3W5F57');
 </script>
-<link rel="stylesheet" href="../../../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+<link rel="stylesheet" href="../../../../css/site.min.b59afd7f8a94f5e7f133d59c0c000bda54b474c23a669ace4376182be3c21502.css"><meta property="og:url" content="https://alokregmi.com/braindump/2020/10/r-programming-102-importing-databases-and-urls/">
+	<meta property="og:site_name" content="Alok Regmi">
+	<meta property="og:title" content="R Programming 102- Importing Databases and URLs">
+	<meta property="og:description" content="Databases Importing Library library(DBI) Creating Connection con &lt;-dbConnect(RMySQL::MySQL(), dbname = &#34;db_name&#34;, host = &#34;localhost&#34;, port = port_num, user = &#34;username&#34;, password = &#34;my_password&#34;) This connection object is specific to MySQL database.
+Importing data Read Whole Tables
+dbListTables(con) dbReadTable(con, &#34;table_name&#34;) Read selected data from tables
+dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#39;&#34;) res &lt;- dbSendQuery(con, &#34;query string&#34;) dbFetch(res) dbClearResult(res) The dbGetQuery first sends the query and fetches it. We can do it using dbsendQuery and then dbFetch(obj) to get the result we want. The fetch function can be useful when we want to import records by records rather than having everything at once.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="braindump">
+		<meta property="article:published_time" content="2020-10-03T00:00:00+05:45">
+		<meta property="article:modified_time" content="2020-10-03T08:34:44+05:45">
+		<meta property="og:image" content="https://alokregmi.com/og.png">
+
 
 
     </head>
@@ -118,7 +126,7 @@ dbGetQuery(con, &#34;SELECT * FROM TABLE_NAME WHERE date &gt; &#39;2020-02-01&#3
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    <ul class="menu__inner"><li><a href="https://alokregmi.com/posts/">Blog</a></li><li><a href="https://alokregmi.com/books/">Books</a></li><li><a href="https://alokregmi.com/highlights/">Highlights</a></li><li><a href="https://alokregmi.com/braindump/">Braindump</a></li><li><a href="https://alokregmi.com/ai/">AI</a></li>
     </ul>
 </nav>
 

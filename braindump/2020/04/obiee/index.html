@@ -10,12 +10,12 @@
 <meta name="keywords" content="Blog, obiee, oracle" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://dragarok.github.io/braindump/2020/04/obiee/" />
+<link rel="canonical" href="https://alokregmi.com/braindump/2020/04/obiee/" />
 
 
     <title>
         
-            obiee :: Alok&#39;s Blog 
+            obiee :: Alok Regmi 
         
     </title>
 
@@ -39,26 +39,21 @@
 
 
 
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
-    <link rel="manifest" href="../../../../site.webmanifest">
-    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
+<link rel="icon" href="../../../../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+<link rel="manifest" href="../../../../site.webmanifest">
 
 	<meta itemprop="name" content="obiee">
 	<meta itemprop="description" content="Steps Catalog –&gt; Get to columns and filters. Change defaults tab to criteria save as give a proper name for result change all columns and filters as necessary. save again go to results then. export results. if &gt; 2500 : export to csv. Edit the sheet RMS Sales recon Tran data In tran_data we have item, units, tran_code as major fields. if it belongs to a pack, then it has a ref_pack_no which is a packitem object. Packitem It has pack_no and seq_no as main fields: seq_no for multiple items in a pack and make it unique. it has item inside it item_parent if available. either item has to be there or item_parent has to be there. Both can’t be null. pack_qty has quantity of items. Packitem breakout pack may contain a pack, if so the nested pack and it’s items are inside packitem breakout table. similar to packitem COMP_PACK_NO: Contains the inner pack item number if a pack item is added to an outer pack. COMP_PACK_QTY: This field is null if comp_pack_no is not populated. Else if comp_pack_no is populated then this field contains the quantity of comp_pack_no in a pack_no.">
 	<meta itemprop="datePublished" content="2020-04-19T15:59:53+05:45">
 	<meta itemprop="dateModified" content="2020-04-19T15:59:53+05:45">
 	<meta itemprop="wordCount" content="242">
-	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="image" content="https://alokregmi.com/og.png">
 	<meta itemprop="keywords" content="Obiee,Oracle">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:title" content="obiee">
 	<meta name="twitter:description" content="Steps Catalog –&gt; Get to columns and filters. Change defaults tab to criteria save as give a proper name for result change all columns and filters as necessary. save again go to results then. export results. if &gt; 2500 : export to csv. Edit the sheet RMS Sales recon Tran data In tran_data we have item, units, tran_code as major fields. if it belongs to a pack, then it has a ref_pack_no which is a packitem object. Packitem It has pack_no and seq_no as main fields: seq_no for multiple items in a pack and make it unique. it has item inside it item_parent if available. either item has to be there or item_parent has to be there. Both can’t be null. pack_qty has quantity of items. Packitem breakout pack may contain a pack, if so the nested pack and it’s items are inside packitem breakout table. similar to packitem COMP_PACK_NO: Contains the inner pack item number if a pack item is added to an outer pack. COMP_PACK_QTY: This field is null if comp_pack_no is not populated. Else if comp_pack_no is populated then this field contains the quantity of comp_pack_no in a pack_no.">
 
@@ -82,7 +77,19 @@
 
   gtag('config', 'G-TYZR3W5F57');
 </script>
-<link rel="stylesheet" href="../../../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+<link rel="stylesheet" href="../../../../css/site.min.b59afd7f8a94f5e7f133d59c0c000bda54b474c23a669ace4376182be3c21502.css"><meta property="og:url" content="https://alokregmi.com/braindump/2020/04/obiee/">
+	<meta property="og:site_name" content="Alok Regmi">
+	<meta property="og:title" content="obiee">
+	<meta property="og:description" content="Steps Catalog –&gt; Get to columns and filters. Change defaults tab to criteria save as give a proper name for result change all columns and filters as necessary. save again go to results then. export results. if &gt; 2500 : export to csv. Edit the sheet RMS Sales recon Tran data In tran_data we have item, units, tran_code as major fields. if it belongs to a pack, then it has a ref_pack_no which is a packitem object. Packitem It has pack_no and seq_no as main fields: seq_no for multiple items in a pack and make it unique. it has item inside it item_parent if available. either item has to be there or item_parent has to be there. Both can’t be null. pack_qty has quantity of items. Packitem breakout pack may contain a pack, if so the nested pack and it’s items are inside packitem breakout table. similar to packitem COMP_PACK_NO: Contains the inner pack item number if a pack item is added to an outer pack. COMP_PACK_QTY: This field is null if comp_pack_no is not populated. Else if comp_pack_no is populated then this field contains the quantity of comp_pack_no in a pack_no.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="braindump">
+		<meta property="article:published_time" content="2020-04-19T15:59:53+05:45">
+		<meta property="article:modified_time" content="2020-04-19T15:59:53+05:45">
+		<meta property="article:tag" content="Obiee">
+		<meta property="article:tag" content="Oracle">
+		<meta property="og:image" content="https://alokregmi.com/og.png">
+
 
 
     </head>
@@ -110,7 +117,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    <ul class="menu__inner"><li><a href="https://alokregmi.com/posts/">Blog</a></li><li><a href="https://alokregmi.com/books/">Books</a></li><li><a href="https://alokregmi.com/highlights/">Highlights</a></li><li><a href="https://alokregmi.com/braindump/">Braindump</a></li><li><a href="https://alokregmi.com/ai/">AI</a></li>
     </ul>
 </nav>
 

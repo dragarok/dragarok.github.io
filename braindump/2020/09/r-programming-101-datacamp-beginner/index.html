@@ -10,12 +10,12 @@
 <meta name="keywords" content="Blog, r" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://dragarok.github.io/braindump/2020/09/r-programming-101-datacamp-beginner/" />
+<link rel="canonical" href="https://alokregmi.com/braindump/2020/09/r-programming-101-datacamp-beginner/" />
 
 
     <title>
         
-            R Programming 101- Datacamp Beginner :: Alok&#39;s Blog 
+            R Programming 101- Datacamp Beginner :: Alok Regmi 
         
     </title>
 
@@ -39,26 +39,21 @@
 
 
 
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
-    <link rel="manifest" href="../../../../site.webmanifest">
-    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="../../../../favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
+<link rel="icon" href="../../../../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+<link rel="manifest" href="../../../../site.webmanifest">
 
 	<meta itemprop="name" content="R Programming 101- Datacamp Beginner">
 	<meta itemprop="description" content="Datacamp Beginner Course Notes Symbol Assign is used as &lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it’s categorical values. Types Nominal : Categorical Variable without implied order. Ordinal: Categorical Variable with order. e.g. [0, 1, 2] Defined by passing parameter order = TRUE. Also need to pass levels as levels = vector. By specifying levels for the input vector, we can specify levels and then later use summary(factors_vector) to get the summary on it’s levels. DataFrame Creating: data.frame(array1, array2… ) Indexing: df$column to get only one column of data. Similar indexing as numpy matrices Also can use “column names” to get elements by index. Filtering : subset(df, condition) Sorting: order() Using order to sort whole dataframe, we need to get index using order() and later use it to sort by indexing into the dataframe as df[sorted_indexes, ] NOTE: We have a built in dataframe known as mtcars.">
 	<meta itemprop="datePublished" content="2020-09-22T00:00:00+05:45">
 	<meta itemprop="dateModified" content="2020-09-22T08:34:36+05:45">
 	<meta itemprop="wordCount" content="265">
-	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="image" content="https://alokregmi.com/og.png">
 	<meta itemprop="keywords" content="R">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:title" content="R Programming 101- Datacamp Beginner">
 	<meta name="twitter:description" content="Datacamp Beginner Course Notes Symbol Assign is used as &lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it’s categorical values. Types Nominal : Categorical Variable without implied order. Ordinal: Categorical Variable with order. e.g. [0, 1, 2] Defined by passing parameter order = TRUE. Also need to pass levels as levels = vector. By specifying levels for the input vector, we can specify levels and then later use summary(factors_vector) to get the summary on it’s levels. DataFrame Creating: data.frame(array1, array2… ) Indexing: df$column to get only one column of data. Similar indexing as numpy matrices Also can use “column names” to get elements by index. Filtering : subset(df, condition) Sorting: order() Using order to sort whole dataframe, we need to get index using order() and later use it to sort by indexing into the dataframe as df[sorted_indexes, ] NOTE: We have a built in dataframe known as mtcars.">
 
@@ -82,7 +77,18 @@
 
   gtag('config', 'G-TYZR3W5F57');
 </script>
-<link rel="stylesheet" href="../../../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+<link rel="stylesheet" href="../../../../css/site.min.b59afd7f8a94f5e7f133d59c0c000bda54b474c23a669ace4376182be3c21502.css"><meta property="og:url" content="https://alokregmi.com/braindump/2020/09/r-programming-101-datacamp-beginner/">
+	<meta property="og:site_name" content="Alok Regmi">
+	<meta property="og:title" content="R Programming 101- Datacamp Beginner">
+	<meta property="og:description" content="Datacamp Beginner Course Notes Symbol Assign is used as &lt;- rather than =. Arithmetic Operations Same as other languages. Modulo is represented by %%. Logical variables True or False represented by TRUE and FALSE. Matrix and Vectors Index starts at 1 Methods: rowSum : Find sum across a row. colSum colnames: Specify column names to a matrix. rowNames Factors Basically these are used for categorical variables. If we have a vector with categorical values, we can use factor() to get it’s categorical values. Types Nominal : Categorical Variable without implied order. Ordinal: Categorical Variable with order. e.g. [0, 1, 2] Defined by passing parameter order = TRUE. Also need to pass levels as levels = vector. By specifying levels for the input vector, we can specify levels and then later use summary(factors_vector) to get the summary on it’s levels. DataFrame Creating: data.frame(array1, array2… ) Indexing: df$column to get only one column of data. Similar indexing as numpy matrices Also can use “column names” to get elements by index. Filtering : subset(df, condition) Sorting: order() Using order to sort whole dataframe, we need to get index using order() and later use it to sort by indexing into the dataframe as df[sorted_indexes, ] NOTE: We have a built in dataframe known as mtcars.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="braindump">
+		<meta property="article:published_time" content="2020-09-22T00:00:00+05:45">
+		<meta property="article:modified_time" content="2020-09-22T08:34:36+05:45">
+		<meta property="article:tag" content="R">
+		<meta property="og:image" content="https://alokregmi.com/og.png">
+
 
 
     </head>
@@ -110,7 +116,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    <ul class="menu__inner"><li><a href="https://alokregmi.com/posts/">Blog</a></li><li><a href="https://alokregmi.com/books/">Books</a></li><li><a href="https://alokregmi.com/highlights/">Highlights</a></li><li><a href="https://alokregmi.com/braindump/">Braindump</a></li><li><a href="https://alokregmi.com/ai/">AI</a></li>
     </ul>
 </nav>
 

@@ -31,12 +31,12 @@ loc 14297 - with the other form of let, these become local variables accessible 
 <meta name="keywords" content="Blog" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://dragarok.github.io/books/debra-cameronjames-elliottmarc-loyeric-s.-raymondbill-rosenblatt/" />
+<link rel="canonical" href="https://alokregmi.com/books/debra-cameronjames-elliottmarc-loyeric-s.-raymondbill-rosenblatt/" />
 
 
     <title>
         
-            Learning GNU Emacs, 3rd Edition :: Alok&#39;s Blog 
+            Learning GNU Emacs, 3rd Edition :: Alok Regmi 
         
     </title>
 
@@ -60,16 +60,11 @@ loc 14297 - with the other form of let, these become local variables accessible 
 
 
 
-
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="manifest" href="../../site.webmanifest">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <meta name="msapplication-TileColor" content="#252627">
-    <meta name="theme-color" content="#252627">
-
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
 
 	<meta itemprop="name" content="Learning GNU Emacs, 3rd Edition">
 	<meta itemprop="description" content="### Author: Debra Cameron;James Elliott;Marc Loy;Eric S. Raymond;Bill Rosenblatt
@@ -97,9 +92,9 @@ loc 14297 - with the other form of let, these become local variables accessible 
 	<meta itemprop="datePublished" content="2020-04-26T03:08:18+05:45">
 	<meta itemprop="dateModified" content="2020-04-26T03:08:18+05:45">
 	<meta itemprop="wordCount" content="854">
-	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:image" content="https://alokregmi.com/og.png">
 	<meta name="twitter:title" content="Learning GNU Emacs, 3rd Edition">
 	<meta name="twitter:description" content="### Author: Debra Cameron;James Elliott;Marc Loy;Eric S. Raymond;Bill Rosenblatt
 loc 14010 - Arguments can be made optional by preceding them with the keyword &amp;optional
@@ -144,7 +139,38 @@ loc 14297 - with the other form of let, these become local variables accessible 
 
   gtag('config', 'G-TYZR3W5F57');
 </script>
-<link rel="stylesheet" href="../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+<link rel="stylesheet" href="../../css/site.min.b59afd7f8a94f5e7f133d59c0c000bda54b474c23a669ace4376182be3c21502.css"><meta property="og:url" content="https://alokregmi.com/books/debra-cameronjames-elliottmarc-loyeric-s.-raymondbill-rosenblatt/">
+	<meta property="og:site_name" content="Alok Regmi">
+	<meta property="og:title" content="Learning GNU Emacs, 3rd Edition">
+	<meta property="og:description" content="### Author: Debra Cameron;James Elliott;Marc Loy;Eric S. Raymond;Bill Rosenblatt
+loc 14010 - Arguments can be made optional by preceding them with the keyword &amp;optional
+loc 14016 - The first thing let does is define the variables var1, var2, etc., and set them to the initial values value1, value2, etc. Then let executes the statement block, which is a sequence of function calls or values, just like the body of a function.
+loc 14024 - the let block is known as the scope of the variables
+loc 14037 - block. The first of these calls the built-in Emacs function save-excursion,
+loc 14040 - Calling save-excursion tells Emacs to remember the location of cursor at the beginning of the function, and go back there after executing any statements in its body
+loc 14048 - point-min returns the value of the first character position in the current buffer, which is almost always 1; then, goto-char is called with the value 1, which has the effect of moving point to the beginning of the buffer.
+loc 14060 - Of course, it is possible to write an infinite loop. If you write a Lisp function with a while loop and try running it, and your Emacs session hangs, chances are that you have made this all-too-common mistake; just type C-g to abort it.
+loc 14074 - The form of the message function will be familiar to C programmers.
+loc 14074 - The form of the message function will be familiar to C programmers. The first argument to message is a format string, which contains text and special formatting instructions of the form % x, where x is one of a few possible letters. For each of these instructions, in the order in which they appear in the format string, message reads the next argument and tries to interpret it according to the letter after the percent sign
+loc 14101 - For example: (message “\&#34;%s\” is a string, %d is a number, and %c is a character&#34; “hi there” 142 ?q) causes the message: “hi there” is a string, 142 is a number, and q is a character
+loc 14129 - Now that you can execute the function correctly from a Lisp interaction window, try executing the function with M-x, as with any other Emacs command. Try typing M-x count-words-buffer Enter: you will get the error message [No match]. (You can type C-g to cancel this failed attempt.) You get this error message because you need to “register” a function with Emacs to make it available for interactive use. The function to do this is interactive, which has the form:
+loc 14135 - (interactive “prompt-string”) This statement should be the first in a function, that is, right after the line containing the defun and the documentation string (which we will cover shortly). Using interactive causes Emacs to register the function as a command and to prompt the user for the arguments declared in the defun statement. The prompt string is optional.
+loc 14183 - (interactive “nPercent: “) The n in the prompt string tells Emacs to prompt for an integer; the string Percent: appears in the minibuffer.
+loc 14201 - interactive supplies values to the function’s arguments in the order of the sections of the prompt string.
+loc 14206 - (replace-string “Bill” “Deb”) The function is not being called interactively in this case, so the interactive statement has no effect; the argument from is set to “Bill,” and to is set to “Deb.
+loc 14214 - Doc strings are normal Lisp strings; they are optional and can be arbitrarily many lines long, although, by convention, the first line is a terse, complete sentence summarizing the command’s functionality. Remember that any double quotes inside a string need to be preceded by backslashes.
+loc 14229 - Integers are also allowed where characters are expected. The ASCII code is used on most machines. For example, the number 65 is interpreted as the character A on such a machine.
+loc 14258 - Comparison &gt;, &lt;, &gt;=, &lt;= /= (not equal
+loc 14269 - All the arithmetic functions except 1&#43;, 1-, and % can take arbitrarily many arguments, as can and and or. An arithmetic function returns floating point values only if at least one argument is a floating point number, so for example, (/ 7.0 4) returns 1.75, and (/ 7 4) returns 1. Notice that integer division truncates the remainder.
+loc 14286 - progn is a simple way of making a block of statements look like a single one, somewhat like the curly braces of Java or the begin and end of Pascal. The value returned by progn is the value returned by the last statement in the block. progn is especially useful with control structures like if (see the following discussion) that, unlike while, do not include statement blocks.
+loc 14297 - with the other form of let, these become local variables accessible in the statement block. However, instead of initializing them to given values, they are all just initialized to nil. You can actually mix both forms within the same let statement, for example: (let (var1 (var2 value2) var3 …) statement-block)">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="books">
+		<meta property="article:published_time" content="2020-04-26T03:08:18+05:45">
+		<meta property="article:modified_time" content="2020-04-26T03:08:18+05:45">
+		<meta property="og:image" content="https://alokregmi.com/og.png">
+
 
 
     </head>
@@ -172,7 +198,7 @@ loc 14297 - with the other form of let, these become local variables accessible 
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    <ul class="menu__inner"><li><a href="https://alokregmi.com/posts/">Blog</a></li><li><a href="https://alokregmi.com/books/">Books</a></li><li><a href="https://alokregmi.com/highlights/">Highlights</a></li><li><a href="https://alokregmi.com/braindump/">Braindump</a></li><li><a href="https://alokregmi.com/ai/">AI</a></li>
     </ul>
 </nav>
 
