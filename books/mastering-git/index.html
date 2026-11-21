@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Author: Chris Belanger
+By Jawwad Ahmad
+Converting short hash into long Execute the command below to convert a short hash into its long equivalent: git rev-parse d83ab2b
+The Git object repository structure When Git stores objects, instead of dumping them all into a single directory, which would get unwieldy in rather short order, it structures them neatly into a tree. Git takes the first two characters of your object’s hash, uses that as the directory name, and then uses the remaining 38 characters as the object identifier
+" />
+<meta name="keywords" content="Blog, book, technology" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/books/mastering-git/" />
+
+
+    <title>
+        
+            Mastering Git :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+<link rel="stylesheet" href="../../main.min.1e9ec51b5041c877f62777a7ced7b8aa5cda70ad201572915921be13bf9ee0e2.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+	<meta itemprop="name" content="Mastering Git">
+	<meta itemprop="description" content="Author: Chris Belanger
+By Jawwad Ahmad
+Converting short hash into long Execute the command below to convert a short hash into its long equivalent: git rev-parse d83ab2b
+The Git object repository structure When Git stores objects, instead of dumping them all into a single directory, which would get unwieldy in rather short order, it structures them neatly into a tree. Git takes the first two characters of your object’s hash, uses that as the directory name, and then uses the remaining 38 characters as the object identifier">
+	<meta itemprop="datePublished" content="2022-04-19T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2022-04-19T00:00:00+00:00">
+	<meta itemprop="wordCount" content="374">
+	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="keywords" content="Book,Technology">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:title" content="Mastering Git">
+	<meta name="twitter:description" content="Author: Chris Belanger
+By Jawwad Ahmad
+Converting short hash into long Execute the command below to convert a short hash into its long equivalent: git rev-parse d83ab2b
+The Git object repository structure When Git stores objects, instead of dumping them all into a single directory, which would get unwieldy in rather short order, it structures them neatly into a tree. Git takes the first two characters of your object’s hash, uses that as the directory name, and then uses the remaining 38 characters as the object identifier">
+
+
+
+
+
+    <meta property="article:published_time" content="2022-04-19 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+<link rel="stylesheet" href="../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">~</span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                <main class="post article">
+    <div class="article-meta"><span class="kind kind--highlights">Highlights</span><time datetime="2022-04-19">Apr 19, 2022</time>
+        <span>2 min read</span>
+    </div>
+
+    <article>
+        <h1 class="post-title">Mastering Git</h1><p class="article-by">Chris Belanger</p>
+
+        <div class="post-content">
+            <p>Author: Chris Belanger</p>
+<p>By Jawwad Ahmad</p>
+<blockquote>
+<p>Converting short hash into long
+Execute the command below to convert a short hash into its long equivalent:
+git rev-parse d83ab2b</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The Git object repository structure
+When Git stores objects, instead of dumping them all into a single directory, which would get unwieldy in rather short order, it structures them neatly into a tree. Git takes the first two characters of your object’s hash, uses that as the directory name, and then uses the remaining 38 characters as the object identifier</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>You can’t take a look at this object directly, though, as objects in Git are compressed</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Git provides a way to look at the contents of a compressed Git object: git cat-file. This decompresses the object and writes it out to your console in a human-readable form. You can simply pass it a short or long hash, and Git will write out the contents of that object in a human-readable form.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>git cat-file -p d83ab2b</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The -p option here tells Git to figure out what type of object it’s dealing with and to provide appropriately formatted output</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Git tells me the details about my chosen commit object:
+tree c0425d3b2aa2bfbbc0a08efda69ed00286dec6e4</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>There’s a wealth of information here, but what you’re interested in is the tree hash.
+The tree object
+The tree object is a pointer to another object that holds the collection of files for this commit.
+So execute git cat-file again to see what’s inside that object, substituting your particular hash:
+git cat-file -p c0425d3b2aa2bfbbc0a08efda69ed00286dec6e4</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>I get the following information about the tree object:
+100644 blob 8b23445f4a55ae5f9e38055dec94b27ef2b14150 LICENSE
+100644 blob f5c651739ff232f6226d686724f3c9618dd9f840 README.md
+040000 tree d27f2eb006fff5b83fdc5d6639c7cfabdcf9fc37 articles
+040000 tree 0b2d0890591a57393dc40e2155bff8901acafbb6 books
+040000 tree 028f2d5e0a0f99902638039794149dfa0126bede videos
+Ah — that looks a lot like the working tree of the project from the first part of this book, doesn’t it? That’s because that’s precisely what this is: a compressed representation of your file structure inside the repository</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>You can dig further into the tree by following the references down. What’s inside the articles directory in this commit? The following command will tell you that:
+git cat-file -p d27f2eb006fff5b83fdc5d6639c7cfabdcf9fc37</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The blob object
+For instance, you can see the state of the LICENSE file in this commit with git cat-file:
+git cat-file -p 8b23445f4a55ae5f9e38055dec94b27ef2b14150</p>
+</blockquote>
+
+        </div>
+    </article>
+    <nav class="article-tags" aria-label="Tags"><a href="../../tags/book/">book</a><a href="../../tags/technology/">technology</a>
+    </nav>
+    <nav class="article-nav" aria-label="More"><a class="prev" href="../../books/animal-farm/"><span>← Newer</span>Animal Farm</a><a class="next" href="../../books/how-to-live/"><span>Older →</span>How to Live</a>
+    </nav>
+</main>
+
+            </div>
+
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.778e2214d78dff15f4559780e10b60705e86f1006936e291682966b95861ab39662038c5f8b1bdbec542fb0a5fb41be31a400e1f7f8c871725f1042665fea928.js" integrity="sha512-d44iFNeN/xX0VZeA4QtgcF6G8QBpNuKRaClmuVhhqzlmIDjF&#43;LG9vsVC&#43;wpftBvjGkAOH3&#43;Mhxcl8QQmZf6pKA=="></script>
+
+
+
+    </body>
+</html>

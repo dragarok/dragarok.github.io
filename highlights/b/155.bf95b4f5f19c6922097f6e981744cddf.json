@@ -1,0 +1,1 @@
+["Provided that an image has 8 bits per channel, we can cast it to a standard Python bytearray, which is one-dimensional: byteArray = bytearray(image)"]

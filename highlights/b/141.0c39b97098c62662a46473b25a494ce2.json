@@ -1,0 +1,1 @@
+["Arguments can be made optional by preceding them with the keyword \u0026optional","The first thing let does is define the variables var1, var2, etc., and set them to the initial values value1, value2, etc. Then let executes the statement block, which is a sequence of function calls or values, just like the body of a function."]

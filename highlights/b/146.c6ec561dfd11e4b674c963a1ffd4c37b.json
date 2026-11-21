@@ -1,0 +1,1 @@
+["ID3 is information gain, whereas in C4.5, the criterion is gain ratio.","Shannon entropy quantifies this uncertainty in terms of expected value of the information present in the message. H(X)=∑iP(xi)I(xi)=−∑iP(xi)log","Shannon entropy quantifies this uncertainty in terms of expected value of the information present in the message. H(X)=∑iP(xi)I(xi)=−∑iP(xi)logbP(xi)"]

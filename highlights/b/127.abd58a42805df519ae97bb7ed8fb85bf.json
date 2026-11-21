@@ -1,0 +1,1 @@
+["Frameworks are different from other external codebases, such as libraries, because they feature inversion of control.","The framework, which is essentially the base of the program, then calls those functions implemented by the developer. In this way, the framework, not the developer, dictates control flow."]

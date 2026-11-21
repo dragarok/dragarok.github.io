@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Algorithm Design Manual Common mistake is to use pseudocode to dress up an ill-defined idea so that it looks more formal.
+For correctness of algorithms Set of allowed input instances Required properties of algorithm&rsquo;s output. Tips for design Narrowing the set of allowable instances until there is correct and efficient algorithm. e.g. Restrict graph problem from general graph down to trees or 2d to 1d. Traps in specifying output requirements: Not correctly specifying what best measure is. Creating compound goals which are hard to reason and solve. Find counter examples: Think small and simple. Think exhaustively. Hunt for the weakness. e.g [ Words like always and so on.] Go for a tie if algorithms are greedy. Take extremes: high and low, up and down, few and many, near and far. Boundary errors in inductive proofs. Defining Problem Names Permutation: Arrangement, Tour, Ordering or Sequence Subsets: Cluster, COllection, Committee, Group, Packaging or Selection. Trees: Hierarchy, Dominance Relationship, Ancestor/Descendant Relationship or Taxonomy. Graphs: Network, Web, Circuit or Relationship. Points: Sites, Positions, Data Records or Locations. Polygons and Polyhedra: Shapes, Regions, Configurations or Boundaries. Strings: Text, Characters, Patterns or Labels. Ways to think Think recursively: Look for big problems that are made from smaller ones of same type. e.g. Remove one node from permutation and it&rsquo;s permutation of one less element. Removing the root of tree gives collection of small trees. Design the programs with efficient data structure in the first place. Types of data structures by memory continuity Contiguously-allocated Single slabs of memory. Arrays, matrices, Heaps and Hash tables. Constant access time given the index. Space efficiency due to no pointers. Memory Locality helps a lot in cache memories where there will be lots of cache hits. Linked Distinct chunks of memory bound together by pointers Lists, trees, Graph Adjacency Lists. Complicated Deletions. Basic Information about Data Structures Effective Implementation can be using either arrays or linked lists. Key issue is whether an upper bound on the size of the container is known in advance, thus permitting the use of a statically-allocated array. Dictionaries support operations such as: Min(D) or Max(D) Predecessor(D, k) or Successor(D, k) Unsorted doubly linked lists support insertion and deletion in O(1) but search takes linear time in worst case. Sorted arrays support binary search but cost of linear time update. Binary Search Trees Basic operations supported by binary trees are searching, traversal, insertion and deletion. The pre-order and post-order traversal make little sense with search trees, but prove useful when rooted tree represents arithmetic or logical expressions. Allocating the node and linking it to tree is constant-time operation after the search has been performed in O(h) time. Deletion in binary trees is complicated, worst case complexity takes at most two searches which takes O(h) and constant time for pointer manipulation. It has three cases: Having only one child. SOLUTION: Link grandchild to the parent. Having two children. SOLUTION: Relabel the node with key of immediate successor in sorted order. Balanced search trees have all dictionary operations ( Insert, Delete and Query ) taking O(logn) time. Trying to sort using specific operations only Sort in O(n logn) time using minimum, insert, delete and search. Repeatedly find and delete the minimum element to traverse the elements in sorted order. Sort in O(n logn) time using only insert and in-order traversal. Insert all n elements and do in-order traversal to access the items in sorted order. Sort in O(n logn) time using only minimum, successor and insert. Start with the minimum element and then repeatedly find the successor to traverse the elements in the sorted order. Priority Queues Supports three primary operations Insert(Q, x) Find-Minimum(Q) or Find-Maximum(Q) Delete-Minimum(Q) or Delete-Maximum(Q) Naturally occuring. E.g. Dating Potential Candidates with Desirability Score where you try to Find-Maximum(), spend evening to evaluate them better and maybe update their score. Worst time complexity in priority Queue when underlying data structure is Array Type/Operation Delete-Min Find-Min Insert Unsorted Array O(n) O(n) O(1) Sorted Array O(1) O(1) O(n) BST O(1) O(1) O(logn) Hashing and Strings Practical way to maintain a dictionary and having constant time access. Collision is the major setback in hash and can be resolved using: Chaining: Having a linked list of items with same hash key. But memory taken to store pointers. Open Addressing: Hash table maintained as array [ not bucket ] with each element initialised to NULL. On inserting an item, if spot is taken; takes the next possible place. Here, deleting can get ugly since removing one element might break a chain of operations. Thus, we need to reinsert all the items in the run following the new hole. In m-element hash table, Chaining takes O(n&#43;m) time for chaining and O(m) for open addressing since n must be at most m. Effective String Matching using Hash Tables Fundamental operation is substring search. Searching by placing the substring over string takes O(nm) time. Rabin-Karp algorithm can do it in expected linear time. Hash function on both pattern string &lsquo;p&rsquo; and m-character substring from ith position of t. Hash values will be same in case of match. Even the false-positives are so rare and can be checked for explicitly easily. So, this reduces matching to n-m&#43;2 hash value computations but since hash function takes O(m) time to compute hash function on m-character string, the computation is O(mn) again. Catch is we can compute hash of one changed character in string using simple multiplication, addition and subtraction which can be done in constant time. Thus, the O(nm) time complexity reduces to O(n). Duplicate Detection Used by search engines to compare documents. Hashing for bids. Specialized data structures String Geometric Graph Set Pragmatics of Sorting What order do we want the items sorted? Increasing or Decreasing Order Sorting just the key or entire record What should we do with equal keys? Secondary Keys such as article size OR leave items in same relative order as in the original permutation. Algorithms that enforce such requirement are known as Stable. Right way to specify such matters is to have proper way to use comparison of records. Heap Sort What happens if we replace unsorted array in Priority Queue implementation with better data structure : Heap or Binary Search Tree? Using such implementation takes O(nlogn) instead of O(n2). Heapsort is nothing but implementation of selection sort using right data structure. " />
+<meta name="keywords" content="Blog, blog, book, technology" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/posts/2021/03/algorithm-design-manual/" />
+
+
+    <title>
+        
+            Algorithm Design Manual :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+<link rel="stylesheet" href="../../../../main.min.1e9ec51b5041c877f62777a7ced7b8aa5cda70ad201572915921be13bf9ee0e2.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+    <link rel="manifest" href="../../../../site.webmanifest">
+    <link rel="mask-icon" href="../../../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+	<meta itemprop="name" content="Algorithm Design Manual">
+	<meta itemprop="description" content="Algorithm Design Manual Common mistake is to use pseudocode to dress up an ill-defined idea so that it looks more formal.
+For correctness of algorithms Set of allowed input instances Required properties of algorithm’s output. Tips for design Narrowing the set of allowable instances until there is correct and efficient algorithm. e.g. Restrict graph problem from general graph down to trees or 2d to 1d. Traps in specifying output requirements: Not correctly specifying what best measure is. Creating compound goals which are hard to reason and solve. Find counter examples: Think small and simple. Think exhaustively. Hunt for the weakness. e.g [ Words like always and so on.] Go for a tie if algorithms are greedy. Take extremes: high and low, up and down, few and many, near and far. Boundary errors in inductive proofs. Defining Problem Names Permutation: Arrangement, Tour, Ordering or Sequence Subsets: Cluster, COllection, Committee, Group, Packaging or Selection. Trees: Hierarchy, Dominance Relationship, Ancestor/Descendant Relationship or Taxonomy. Graphs: Network, Web, Circuit or Relationship. Points: Sites, Positions, Data Records or Locations. Polygons and Polyhedra: Shapes, Regions, Configurations or Boundaries. Strings: Text, Characters, Patterns or Labels. Ways to think Think recursively: Look for big problems that are made from smaller ones of same type. e.g. Remove one node from permutation and it’s permutation of one less element. Removing the root of tree gives collection of small trees. Design the programs with efficient data structure in the first place. Types of data structures by memory continuity Contiguously-allocated Single slabs of memory. Arrays, matrices, Heaps and Hash tables. Constant access time given the index. Space efficiency due to no pointers. Memory Locality helps a lot in cache memories where there will be lots of cache hits. Linked Distinct chunks of memory bound together by pointers Lists, trees, Graph Adjacency Lists. Complicated Deletions. Basic Information about Data Structures Effective Implementation can be using either arrays or linked lists. Key issue is whether an upper bound on the size of the container is known in advance, thus permitting the use of a statically-allocated array. Dictionaries support operations such as: Min(D) or Max(D) Predecessor(D, k) or Successor(D, k) Unsorted doubly linked lists support insertion and deletion in O(1) but search takes linear time in worst case. Sorted arrays support binary search but cost of linear time update. Binary Search Trees Basic operations supported by binary trees are searching, traversal, insertion and deletion. The pre-order and post-order traversal make little sense with search trees, but prove useful when rooted tree represents arithmetic or logical expressions. Allocating the node and linking it to tree is constant-time operation after the search has been performed in O(h) time. Deletion in binary trees is complicated, worst case complexity takes at most two searches which takes O(h) and constant time for pointer manipulation. It has three cases: Having only one child. SOLUTION: Link grandchild to the parent. Having two children. SOLUTION: Relabel the node with key of immediate successor in sorted order. Balanced search trees have all dictionary operations ( Insert, Delete and Query ) taking O(logn) time. Trying to sort using specific operations only Sort in O(n logn) time using minimum, insert, delete and search. Repeatedly find and delete the minimum element to traverse the elements in sorted order. Sort in O(n logn) time using only insert and in-order traversal. Insert all n elements and do in-order traversal to access the items in sorted order. Sort in O(n logn) time using only minimum, successor and insert. Start with the minimum element and then repeatedly find the successor to traverse the elements in the sorted order. Priority Queues Supports three primary operations Insert(Q, x) Find-Minimum(Q) or Find-Maximum(Q) Delete-Minimum(Q) or Delete-Maximum(Q) Naturally occuring. E.g. Dating Potential Candidates with Desirability Score where you try to Find-Maximum(), spend evening to evaluate them better and maybe update their score. Worst time complexity in priority Queue when underlying data structure is Array Type/Operation Delete-Min Find-Min Insert Unsorted Array O(n) O(n) O(1) Sorted Array O(1) O(1) O(n) BST O(1) O(1) O(logn) Hashing and Strings Practical way to maintain a dictionary and having constant time access. Collision is the major setback in hash and can be resolved using: Chaining: Having a linked list of items with same hash key. But memory taken to store pointers. Open Addressing: Hash table maintained as array [ not bucket ] with each element initialised to NULL. On inserting an item, if spot is taken; takes the next possible place. Here, deleting can get ugly since removing one element might break a chain of operations. Thus, we need to reinsert all the items in the run following the new hole. In m-element hash table, Chaining takes O(n&#43;m) time for chaining and O(m) for open addressing since n must be at most m. Effective String Matching using Hash Tables Fundamental operation is substring search. Searching by placing the substring over string takes O(nm) time. Rabin-Karp algorithm can do it in expected linear time. Hash function on both pattern string ‘p’ and m-character substring from ith position of t. Hash values will be same in case of match. Even the false-positives are so rare and can be checked for explicitly easily. So, this reduces matching to n-m&#43;2 hash value computations but since hash function takes O(m) time to compute hash function on m-character string, the computation is O(mn) again. Catch is we can compute hash of one changed character in string using simple multiplication, addition and subtraction which can be done in constant time. Thus, the O(nm) time complexity reduces to O(n). Duplicate Detection Used by search engines to compare documents. Hashing for bids. Specialized data structures String Geometric Graph Set Pragmatics of Sorting What order do we want the items sorted? Increasing or Decreasing Order Sorting just the key or entire record What should we do with equal keys? Secondary Keys such as article size OR leave items in same relative order as in the original permutation. Algorithms that enforce such requirement are known as Stable. Right way to specify such matters is to have proper way to use comparison of records. Heap Sort What happens if we replace unsorted array in Priority Queue implementation with better data structure : Heap or Binary Search Tree? Using such implementation takes O(nlogn) instead of O(n2). Heapsort is nothing but implementation of selection sort using right data structure.">
+	<meta itemprop="datePublished" content="2021-03-10T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2021-03-10T00:00:00+00:00">
+	<meta itemprop="wordCount" content="1052">
+	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="keywords" content="Blog,Book,Technology">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:title" content="Algorithm Design Manual">
+	<meta name="twitter:description" content="Algorithm Design Manual Common mistake is to use pseudocode to dress up an ill-defined idea so that it looks more formal.
+For correctness of algorithms Set of allowed input instances Required properties of algorithm’s output. Tips for design Narrowing the set of allowable instances until there is correct and efficient algorithm. e.g. Restrict graph problem from general graph down to trees or 2d to 1d. Traps in specifying output requirements: Not correctly specifying what best measure is. Creating compound goals which are hard to reason and solve. Find counter examples: Think small and simple. Think exhaustively. Hunt for the weakness. e.g [ Words like always and so on.] Go for a tie if algorithms are greedy. Take extremes: high and low, up and down, few and many, near and far. Boundary errors in inductive proofs. Defining Problem Names Permutation: Arrangement, Tour, Ordering or Sequence Subsets: Cluster, COllection, Committee, Group, Packaging or Selection. Trees: Hierarchy, Dominance Relationship, Ancestor/Descendant Relationship or Taxonomy. Graphs: Network, Web, Circuit or Relationship. Points: Sites, Positions, Data Records or Locations. Polygons and Polyhedra: Shapes, Regions, Configurations or Boundaries. Strings: Text, Characters, Patterns or Labels. Ways to think Think recursively: Look for big problems that are made from smaller ones of same type. e.g. Remove one node from permutation and it’s permutation of one less element. Removing the root of tree gives collection of small trees. Design the programs with efficient data structure in the first place. Types of data structures by memory continuity Contiguously-allocated Single slabs of memory. Arrays, matrices, Heaps and Hash tables. Constant access time given the index. Space efficiency due to no pointers. Memory Locality helps a lot in cache memories where there will be lots of cache hits. Linked Distinct chunks of memory bound together by pointers Lists, trees, Graph Adjacency Lists. Complicated Deletions. Basic Information about Data Structures Effective Implementation can be using either arrays or linked lists. Key issue is whether an upper bound on the size of the container is known in advance, thus permitting the use of a statically-allocated array. Dictionaries support operations such as: Min(D) or Max(D) Predecessor(D, k) or Successor(D, k) Unsorted doubly linked lists support insertion and deletion in O(1) but search takes linear time in worst case. Sorted arrays support binary search but cost of linear time update. Binary Search Trees Basic operations supported by binary trees are searching, traversal, insertion and deletion. The pre-order and post-order traversal make little sense with search trees, but prove useful when rooted tree represents arithmetic or logical expressions. Allocating the node and linking it to tree is constant-time operation after the search has been performed in O(h) time. Deletion in binary trees is complicated, worst case complexity takes at most two searches which takes O(h) and constant time for pointer manipulation. It has three cases: Having only one child. SOLUTION: Link grandchild to the parent. Having two children. SOLUTION: Relabel the node with key of immediate successor in sorted order. Balanced search trees have all dictionary operations ( Insert, Delete and Query ) taking O(logn) time. Trying to sort using specific operations only Sort in O(n logn) time using minimum, insert, delete and search. Repeatedly find and delete the minimum element to traverse the elements in sorted order. Sort in O(n logn) time using only insert and in-order traversal. Insert all n elements and do in-order traversal to access the items in sorted order. Sort in O(n logn) time using only minimum, successor and insert. Start with the minimum element and then repeatedly find the successor to traverse the elements in the sorted order. Priority Queues Supports three primary operations Insert(Q, x) Find-Minimum(Q) or Find-Maximum(Q) Delete-Minimum(Q) or Delete-Maximum(Q) Naturally occuring. E.g. Dating Potential Candidates with Desirability Score where you try to Find-Maximum(), spend evening to evaluate them better and maybe update their score. Worst time complexity in priority Queue when underlying data structure is Array Type/Operation Delete-Min Find-Min Insert Unsorted Array O(n) O(n) O(1) Sorted Array O(1) O(1) O(n) BST O(1) O(1) O(logn) Hashing and Strings Practical way to maintain a dictionary and having constant time access. Collision is the major setback in hash and can be resolved using: Chaining: Having a linked list of items with same hash key. But memory taken to store pointers. Open Addressing: Hash table maintained as array [ not bucket ] with each element initialised to NULL. On inserting an item, if spot is taken; takes the next possible place. Here, deleting can get ugly since removing one element might break a chain of operations. Thus, we need to reinsert all the items in the run following the new hole. In m-element hash table, Chaining takes O(n&#43;m) time for chaining and O(m) for open addressing since n must be at most m. Effective String Matching using Hash Tables Fundamental operation is substring search. Searching by placing the substring over string takes O(nm) time. Rabin-Karp algorithm can do it in expected linear time. Hash function on both pattern string ‘p’ and m-character substring from ith position of t. Hash values will be same in case of match. Even the false-positives are so rare and can be checked for explicitly easily. So, this reduces matching to n-m&#43;2 hash value computations but since hash function takes O(m) time to compute hash function on m-character string, the computation is O(mn) again. Catch is we can compute hash of one changed character in string using simple multiplication, addition and subtraction which can be done in constant time. Thus, the O(nm) time complexity reduces to O(n). Duplicate Detection Used by search engines to compare documents. Hashing for bids. Specialized data structures String Geometric Graph Set Pragmatics of Sorting What order do we want the items sorted? Increasing or Decreasing Order Sorting just the key or entire record What should we do with equal keys? Secondary Keys such as article size OR leave items in same relative order as in the original permutation. Algorithms that enforce such requirement are known as Stable. Right way to specify such matters is to have proper way to use comparison of records. Heap Sort What happens if we replace unsorted array in Priority Queue implementation with better data structure : Heap or Binary Search Tree? Using such implementation takes O(nlogn) instead of O(n2). Heapsort is nothing but implementation of selection sort using right data structure.">
+
+
+
+
+
+    <meta property="article:published_time" content="2021-03-10 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+<link rel="stylesheet" href="../../../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">~</span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                <main class="post article">
+    <div class="article-meta"><span class="kind kind--summary">Book summary</span><time datetime="2021-03-10">Mar 10, 2021</time>
+        <span>5 min read</span>
+    </div>
+
+    <article>
+        <h1 class="post-title">Algorithm Design Manual</h1>
+
+        <div class="post-content">
+            <h2 id="algorithm-design-manual">Algorithm Design Manual</h2>
+<blockquote>
+<p>Common mistake is to use pseudocode to dress up an ill-defined idea so that it looks more formal.</p>
+</blockquote>
+<h3 id="for-correctness-of-algorithms">For correctness of algorithms</h3>
+<ul>
+<li>Set of allowed input instances</li>
+<li>Required properties of algorithm&rsquo;s output.</li>
+</ul>
+<h3 id="tips-for-design">Tips for design</h3>
+<ul>
+<li>Narrowing the set of allowable instances until there is correct and efficient algorithm. e.g. Restrict graph problem from general graph down to trees or 2d to 1d.</li>
+<li>Traps in specifying output requirements:
+<ul>
+<li>Not correctly specifying what best measure is.</li>
+<li>Creating compound goals which are hard to reason and solve.</li>
+</ul>
+</li>
+<li>Find counter examples:
+<ul>
+<li>Think small and simple.</li>
+<li>Think exhaustively.</li>
+<li>Hunt for the weakness. e.g [ Words like always and so on.]</li>
+<li>Go for a tie if algorithms are greedy.</li>
+<li>Take extremes: high and low, up and down, few and many, near and far.</li>
+<li>Boundary errors in inductive proofs.</li>
+</ul>
+</li>
+</ul>
+<h3 id="defining-problem-names">Defining Problem Names</h3>
+<ul>
+<li>Permutation: Arrangement, Tour, Ordering or Sequence</li>
+<li>Subsets: Cluster, COllection, Committee, Group, Packaging or Selection.</li>
+<li>Trees: Hierarchy, Dominance Relationship, Ancestor/Descendant Relationship or Taxonomy.</li>
+<li>Graphs: Network, Web, Circuit or Relationship.</li>
+<li>Points: Sites, Positions, Data Records or Locations.</li>
+<li>Polygons and Polyhedra: Shapes, Regions, Configurations or Boundaries.</li>
+<li>Strings: Text, Characters, Patterns or Labels.</li>
+</ul>
+<h3 id="ways-to-think">Ways to think</h3>
+<ul>
+<li>Think recursively: Look for big problems that are made from smaller ones of same type. e.g. Remove one node from permutation and it&rsquo;s permutation of one less element. Removing the root of tree gives collection of small trees.</li>
+<li>Design the programs with efficient data structure in the first place.</li>
+</ul>
+<h3 id="types-of-data-structures-by-memory-continuity">Types of data structures by memory continuity</h3>
+<h4 id="contiguously-allocated">Contiguously-allocated</h4>
+<ul>
+<li>Single slabs of memory.</li>
+<li>Arrays, matrices, Heaps and Hash tables.</li>
+<li>Constant access time given the index.</li>
+<li>Space efficiency due to no pointers.</li>
+<li>Memory Locality helps a lot in cache memories where there will be lots of cache hits.</li>
+</ul>
+<h4 id="linked">Linked</h4>
+<ul>
+<li>Distinct chunks of memory bound together by pointers</li>
+<li>Lists, trees, Graph Adjacency Lists.</li>
+<li>Complicated Deletions.</li>
+</ul>
+<h3 id="basic-information-about-data-structures">Basic Information about Data Structures</h3>
+<ul>
+<li>Effective Implementation can be using either arrays or linked lists. Key issue is whether <strong>an  upper bound on the size of the container is known in advance</strong>, thus permitting the use of a statically-allocated array.</li>
+<li>Dictionaries support operations such as:
+<ul>
+<li>Min(D) or Max(D)</li>
+<li>Predecessor(D, k) or Successor(D, k)</li>
+</ul>
+</li>
+<li>Unsorted doubly linked lists support insertion and deletion in O(1) but search takes linear time in worst case.</li>
+<li>Sorted arrays support binary search but cost of linear time update.</li>
+</ul>
+<h3 id="binary-search-trees">Binary Search Trees</h3>
+<ul>
+<li>Basic operations supported by binary trees are searching, traversal, insertion and deletion. The pre-order and post-order traversal make little sense with search trees, but prove useful when rooted tree represents arithmetic or logical expressions. Allocating the node and linking it to tree is constant-time operation after the search has been performed in O(h) time.</li>
+<li>Deletion in binary trees is complicated, worst case complexity takes at most two searches which takes O(h) and constant time for pointer manipulation. It has three cases:
+<ul>
+<li>Having only one child. SOLUTION: Link grandchild to the parent.</li>
+<li>Having two children. SOLUTION: Relabel the node with key of immediate successor in sorted order.</li>
+</ul>
+</li>
+<li>Balanced search trees have all dictionary operations ( Insert, Delete and Query ) taking O(logn) time.</li>
+</ul>
+<h4 id="trying-to-sort-using-specific-operations-only">Trying to sort using specific operations only</h4>
+<ol>
+<li>Sort in O(n logn) time using minimum, insert, delete and search.
+<ul>
+<li>Repeatedly find and delete the minimum element to traverse the elements in sorted order.</li>
+</ul>
+</li>
+<li>Sort in O(n logn) time using only insert and in-order traversal.
+<ul>
+<li>Insert all n elements and do in-order traversal to access the items in sorted order.</li>
+</ul>
+</li>
+<li>Sort in O(n logn) time using only minimum, successor and insert.
+<ul>
+<li>Start with the minimum element and then repeatedly find the successor to traverse the elements in the sorted order.</li>
+</ul>
+</li>
+</ol>
+<h3 id="priority-queues">Priority Queues</h3>
+<ul>
+<li>Supports three primary operations
+<ul>
+<li>Insert(Q, x)</li>
+<li>Find-Minimum(Q) or Find-Maximum(Q)</li>
+<li>Delete-Minimum(Q) or Delete-Maximum(Q)</li>
+</ul>
+</li>
+<li>Naturally occuring. E.g. Dating Potential Candidates with Desirability Score where you try to Find-Maximum(), spend evening to evaluate them better and maybe update their score.</li>
+<li>Worst time complexity in priority Queue when underlying data structure is</li>
+</ul>
+<table>
+	<thead>
+			<tr>
+					<th>Array Type/Operation</th>
+					<th>Delete-Min</th>
+					<th>Find-Min</th>
+					<th>Insert</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Unsorted Array</td>
+					<td>O(n)</td>
+					<td>O(n)</td>
+					<td>O(1)</td>
+			</tr>
+			<tr>
+					<td>Sorted Array</td>
+					<td>O(1)</td>
+					<td>O(1)</td>
+					<td>O(n)</td>
+			</tr>
+			<tr>
+					<td>BST</td>
+					<td>O(1)</td>
+					<td>O(1)</td>
+					<td>O(logn)</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="hashing-and-strings">Hashing and Strings</h3>
+<ul>
+<li>Practical way to maintain a dictionary and having constant time access.</li>
+<li>Collision is the major setback in hash and can be resolved using:
+<ul>
+<li>Chaining: Having a linked list of items with same hash key. But memory taken to store pointers.</li>
+<li>Open Addressing: Hash table maintained as array [ not bucket ] with each element initialised  to NULL. On inserting an item, if spot is taken; takes the next possible place. Here, deleting can get ugly since removing one element might break a chain of operations. Thus, we need to reinsert all the items in the run following the new hole.</li>
+<li>In m-element hash table, Chaining takes O(n+m) time for chaining and O(m) for open addressing since n must be at most m.</li>
+</ul>
+</li>
+</ul>
+<h4 id="effective-string-matching-using-hash-tables">Effective String Matching using Hash Tables</h4>
+<ul>
+<li>Fundamental operation is <strong>substring search</strong>.</li>
+<li>Searching by placing the substring over string takes O(nm) time.</li>
+<li>Rabin-Karp algorithm can do it in expected linear time.
+<ul>
+<li>Hash function on both pattern string &lsquo;p&rsquo; and m-character substring from i<sup>th</sup> position of t. Hash values will be same in case of match. Even the false-positives are so rare and can be checked for explicitly easily.</li>
+<li>So, this reduces matching to n-m+2 hash value computations but since hash function takes O(m) time to compute hash function on m-character string, the computation is O(mn) again.</li>
+<li>Catch is we can compute hash of one changed character in string using simple multiplication, addition and subtraction which can be done in constant time. Thus, the O(nm) time complexity reduces to O(n).</li>
+</ul>
+</li>
+</ul>
+<h4 id="duplicate-detection">Duplicate Detection</h4>
+<ul>
+<li>Used by search engines to compare documents.</li>
+<li>Hashing for bids.</li>
+</ul>
+<h3 id="specialized-data-structures">Specialized data structures</h3>
+<ul>
+<li>String</li>
+<li>Geometric</li>
+<li>Graph</li>
+<li>Set</li>
+</ul>
+<h3 id="pragmatics-of-sorting">Pragmatics of Sorting</h3>
+<ul>
+<li>What order do we want the items sorted?
+<ul>
+<li>Increasing or Decreasing Order</li>
+<li>Sorting just the key or entire record</li>
+<li>What should we do with equal keys?
+<ul>
+<li>Secondary Keys such as article size OR leave items in same relative order as in the original permutation.</li>
+<li>Algorithms that enforce such requirement are known as <strong>Stable</strong>.</li>
+<li>Right way to specify such matters is to have proper way to use comparison of records.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="heap-sort">Heap Sort</h4>
+<ul>
+<li>What happens if we replace unsorted array in Priority Queue implementation with better data structure : Heap or Binary Search Tree? Using such implementation takes O(nlogn) instead of O(n<sup>2</sup>).</li>
+<li>Heapsort is nothing but implementation of selection sort using right data structure.</li>
+</ul>
+
+        </div>
+    </article>
+    <nav class="article-tags" aria-label="Tags"><a href="../../../../tags/book/">book</a><a href="../../../../tags/technology/">technology</a>
+    </nav>
+    <nav class="article-nav" aria-label="More"><a class="prev" href="../../../../posts/2021/03/the-courage-of-being-disliked/"><span>← Newer</span>The Courage of Being Disliked</a><a class="next" href="../../../../posts/2020/07/brain-facts/"><span>Older →</span>Brain Facts</a>
+    </nav>
+</main>
+
+            </div>
+
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../../../bundle.min.778e2214d78dff15f4559780e10b60705e86f1006936e291682966b95861ab39662038c5f8b1bdbec542fb0a5fb41be31a400e1f7f8c871725f1042665fea928.js" integrity="sha512-d44iFNeN/xX0VZeA4QtgcF6G8QBpNuKRaClmuVhhqzlmIDjF&#43;LG9vsVC&#43;wpftBvjGkAOH3&#43;Mhxcl8QQmZf6pKA=="></script>
+
+
+
+    </body>
+</html>

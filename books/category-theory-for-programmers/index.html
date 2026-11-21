@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Alok Regmi]">
+<meta name="description" content="Author: Bartosz Milewski
+Arrows as Functions A category consists of objects and arrows that go between them.
+Properties of Composition Composition is associative.
+For every object 𝐴 there is an arrow which is a unit of composition. This arrow loops from the object to itself.
+Composition is the Essence of Programming Neutral values like zero or id are extremely useful when working with symbolic variables. That’s why Romans were not very good at algebra, whereas the Arabs and the Persians, who were familiar with the concept of zero, were.
+" />
+<meta name="keywords" content="Blog, book, mathematics, technology" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://dragarok.github.io/books/category-theory-for-programmers/" />
+
+
+    <title>
+        
+            Category Theory for Programmers :: Alok&#39;s Blog 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+    
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+<link rel="stylesheet" href="../../main.min.1e9ec51b5041c877f62777a7ced7b8aa5cda70ad201572915921be13bf9ee0e2.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+	<meta itemprop="name" content="Category Theory for Programmers">
+	<meta itemprop="description" content="Author: Bartosz Milewski
+Arrows as Functions A category consists of objects and arrows that go between them.
+Properties of Composition Composition is associative.
+For every object 𝐴 there is an arrow which is a unit of composition. This arrow loops from the object to itself.
+Composition is the Essence of Programming Neutral values like zero or id are extremely useful when working with symbolic variables. That’s why Romans were not very good at algebra, whereas the Arabs and the Persians, who were familiar with the concept of zero, were.">
+	<meta itemprop="datePublished" content="2024-07-27T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2024-07-27T00:00:00+00:00">
+	<meta itemprop="wordCount" content="6655">
+	<meta itemprop="image" content="https://dragarok.github.io/">
+	<meta itemprop="keywords" content="Book,Mathematics,Technology">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://dragarok.github.io/">
+	<meta name="twitter:title" content="Category Theory for Programmers">
+	<meta name="twitter:description" content="Author: Bartosz Milewski
+Arrows as Functions A category consists of objects and arrows that go between them.
+Properties of Composition Composition is associative.
+For every object 𝐴 there is an arrow which is a unit of composition. This arrow loops from the object to itself.
+Composition is the Essence of Programming Neutral values like zero or id are extremely useful when working with symbolic variables. That’s why Romans were not very good at algebra, whereas the Arabs and the Persians, who were familiar with the concept of zero, were.">
+
+
+
+
+
+    <meta property="article:published_time" content="2024-07-27 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYZR3W5F57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYZR3W5F57');
+</script>
+<link rel="stylesheet" href="../../css/site.min.b779cef02db7d81162b99a44c389202a872ce435db782d4784ece9cf560d6485.css">
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="../../" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">~</span>
+            <span class="logo__text">K4iv41y4</span>
+            <span class="logo__mark">&nbsp;~</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://dragarok.github.io/posts/">Blog</a></li><li><a href="https://dragarok.github.io/books/">Books</a></li><li><a href="https://dragarok.github.io/highlights/">Highlights</a></li><li><a href="https://dragarok.github.io/braindump/">Braindump</a></li><li><a href="https://dragarok.github.io/ai/">AI</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                <main class="post article">
+    <div class="article-meta"><span class="kind kind--highlights">Highlights</span><time datetime="2024-07-27">Jul 27, 2024</time>
+        <span>32 min read</span>
+    </div>
+
+    <article>
+        <h1 class="post-title">Category Theory for Programmers</h1><p class="article-by">Bartosz Milewski</p>
+
+        <div class="post-content">
+            <p>Author: Bartosz Milewski</p>
+<h2 id="arrows-as-functions">Arrows as Functions</h2>
+<blockquote>
+<p>A category consists
+of objects and arrows that go between them.</p>
+</blockquote>
+<h2 id="properties-of-composition">Properties of Composition</h2>
+<blockquote>
+<p>Composition is associative.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>For every object 𝐴 there is an arrow which is a unit of composition. This arrow loops from the object to itself.</p>
+</blockquote>
+<h2 id="composition-is-the-essence-of-programming">Composition is the Essence of Programming</h2>
+<blockquote>
+<p>Neutral values like zero or id are extremely useful when working
+with symbolic variables. That’s why Romans were not very good at algebra, whereas the Arabs and the Persians, who were familiar with the
+concept of zero, were.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>of code to create solutions to larger problems. Decomposition wouldn’t
+make sense if we weren’t able to put the pieces back together.</p>
+</blockquote>
+<h2 id="challenges">Challenges</h2>
+<blockquote>
+<p>Category theory is extreme in the sense that it actively discourages
+us from looking inside the objects. An object in category theory is an
+abstract nebulous entity. All you can ever know about it is how it relates
+to other objects — how it connects with them using arrows.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>But not any two arrows
+can be composed.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>designing the types. Later, type annotations drive the implementation
+and become compiler-enforced comments.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>a two-element set of True and False. Type Char is a set of all Unicode
+characters like a or ą.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>— it just knows the answer. A Haskell function has to calculate the answer. It’s not a problem if the answer can be obtained in a finite number
+of steps — however big that number might be.</p>
+</blockquote>
+<h2 id="why-do-we-need-a-mathematical-model">Why Do We Need a Mathematical Model?</h2>
+<blockquote>
+<p>Functions that may return bottom are called partial, as opposed to
+total functions, which return valid results for every possible argument.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The problem is that it’s very hard to prove things about programs
+using operational semantics. To show a property of a program you essentially have to “run it” through the idealized interpreter.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>What’s the mathematical model for reading a character from
+the keyboard or sending a packet across the network? For the longest
+time that would have been an awkward question leading to a rather convoluted explanation. It seemed like denotational semantics wasn’t the
+best fit for a considerable number of important tasks that were essential
+for writing useful programs, and which could be easily tackled by operational semantics. The breakthrough came from category theory.</p>
+</blockquote>
+<h2 id="examples-of-types">Examples of Types</h2>
+<blockquote>
+<p>2.5 Pure and Dirty Functions</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>2.6 Examples of Types</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>In Haskell, however,
+there is a symbol for this value: an empty pair of parentheses, ().</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>A pure function that returns unit does nothing: it discards its
+argument.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Pure functions from Bool just pick two values from the target type,
+one corresponding to True and another to False.
+Functions to Bool are called predicates.</p>
+</blockquote>
+<h2 id="simple-graphs">Simple Graphs</h2>
+<blockquote>
+<p>Y
+ou can get real appreciation for categories by studying a variety of
+examples. Categories come in all shapes and sizes and often pop up
+in unexpected places.</p>
+</blockquote>
+<h2 id="monoid-as-set">Monoid as Set</h2>
+<blockquote>
+<p>A set of morphisms from object 𝑎 to object 𝑏 in a category 𝐂 is called
+a hom-set and is written as 𝐂(𝑎, 𝑏) (or, sometimes, Hom𝐂(𝑎, 𝑏)).</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>a monoid is defined as a set with a binary operation.
+All that’s required from this operation is that it’s associative, and that
+there is one special element that behaves like a unit with respect to it.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>mempty and mappend (i.e., the fact that mempty is neutral
+and that mappend is associative). It’s the responsibility of the programmer to make sure they are satisfied.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The former translates into equality of morphisms in the category Hask
+(or 𝐒𝐞𝐭, if we ignore bottoms, which is the name for never-ending calculations)</p>
+</blockquote>
+<h2 id="challenges">Challenges</h2>
+<blockquote>
+<p>we can always recover a set monoid
+from a category monoid. For all intents and purposes they are one and
+the same.</p>
+</blockquote>
+<h2 id="kleisli-categories">Kleisli Categories</h2>
+<blockquote>
+<p>You know that this is not a pure function, because its memoized version
+would fail to produce a log. This function has side effects.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>main purpose of the</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>function negate is to turn one Boolean into another. The logging is secondary.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>We want to modify the functions toUpper and toWords so that they
+piggyback a message string on top of their regular return values.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>We have accomplished our goal: The aggregation of the log is no longer
+the concern of the individual functions. They produce their own messages, which are then, externally, concatenated into a larger log.
+Now imagine a whole program written in this style. It’s a nightmare
+of repetitive, error-prone code.</p>
+</blockquote>
+<h2 id="the-writer-category">The Writer Category</h2>
+<blockquote>
+<p>The idea of embellishing the return types of a bunch of functions in
+order to piggyback some additional functionality turns out to be very
+fruitful. We’ll see many more examples of it. The starting point is our
+regular category of types and functions. We’ll leave the types as objects,
+but redefine our morphisms to be the embellished functions.</p>
+</blockquote>
+<h2 id="writer-in-haskell">Writer in Haskell</h2>
+<blockquote>
+<p>The result is a lambda function of one argument x. The lambda is written
+as a backslash — think of it as the Greek letter λ with an amputated leg.</p>
+</blockquote>
+<h2 id="challenge">Challenge</h2>
+<blockquote>
+<p>For our limited purposes, a Kleisli
+category has, as objects, the types of the underlying programming language. Morphisms from type 𝐴 to type 𝐵 are functions that go from 𝐴 to
+a type derived from 𝐵 using the particular embellishment.</p>
+</blockquote>
+<h2 id="products-and-coproducts">Products and Coproducts</h2>
+<blockquote>
+<p>Ancient Greek playwright Euripides once said: “Every man is
+like the company he is wont to keep.” We are defined by our relationships. Nowhere is this more true than in category theory.</p>
+</blockquote>
+<h2 id="initial-object">Initial Object</h2>
+<blockquote>
+<p>The initial object is the object that has one and only one
+morphism going to any object in the category.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>However, even that doesn’t guarantee the uniqueness of the initial object (if one exists). But it guarantees the next best thing: uniqueness up
+to isomorphism.</p>
+</blockquote>
+<h2 id="terminal-object">Terminal Object</h2>
+<blockquote>
+<p>The terminal object is the object with one and only one
+morphism coming to it from any object in the category.</p>
+</blockquote>
+<h2 id="duality">Duality</h2>
+<blockquote>
+<p>It turns out that for any category 𝐂 we can define the opposite category 𝐂
+𝑜𝑝 just by reversing all the
+arrows. The opposite category automatically satisfies all the requirements of a category, as long as we simultaneously redefine composition.</p>
+</blockquote>
+<h2 id="isomorphisms">Isomorphisms</h2>
+<blockquote>
+<p>The constructions in the
+opposite category are often prefixed with “co”, so you have products
+and coproducts, monads and comonads, cones and cocones, limits and
+colimits, and so on. There are no cocomonads though, because reversing
+the arrows twice gets us back to the original state.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>An isomorphism is an invertible morphism; or a pair
+of morphisms, one being the inverse of the other.</p>
+</blockquote>
+<h2 id="products">Products</h2>
+<blockquote>
+<p>The composition 𝑔 ∘ 𝑓 must be a morphism from 𝑖1
+to 𝑖1
+. But 𝑖1
+is initial
+so there can only be one morphism going from 𝑖1
+to 𝑖1
+. Since we are in
+a category, we know that there is an identity morphism from 𝑖1
+to 𝑖1
+,
+and since there is room for only one, that must be it. Therefore 𝑔 ∘ 𝑓 is
+equal to identity. Similarly, 𝑓 ∘𝑔 must be equal to identity, because there
+can be only one morphism from 𝑖2 back to 𝑖2
+. This proves that 𝑓 and 𝑔
+must be the inverse of each other. Therefore any two initial objects are
+isomorphic.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Another way of looking at these equations is that 𝑚 factorizes 𝑝
+′
+and 𝑞
+′
+.
+Just pretend that these equations are in natural numbers, and the dot is
+multiplication: 𝑚 is a common factor shared by 𝑝
+′
+and 𝑞
+′</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The second example is different: we retain enough information after running either p or q, but there is more than one way to factorize
+fst and snd. Because both p and q ignore the second component of the
+triple, our m&rsquo; can put anything in it. We can have:
+m&rsquo; (x, b) = (x, x, b)
+or
+m&rsquo; (x, b) = (x, 42, b)
+and so on.</p>
+</blockquote>
+<h2 id="coproduct">Coproduct</h2>
+<blockquote>
+<p>A product of two objects 𝑎 and 𝑏 is the object 𝑐 equipped
+with two projections such that for any other object 𝑐
+′
+equipped with two projections there is a unique morphism
+𝑚 from 𝑐
+′
+to 𝑐 that factorizes those projections</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>A coproduct of two objects 𝑎 and 𝑏 is the object 𝑐 equipped
+with two injections such that for any other object 𝑐
+′
+equipped with two injections there is a unique morphism
+𝑚 from 𝑐 to 𝑐
+′
+that factorizes those injections.</p>
+</blockquote>
+<h2 id="asymmetry">Asymmetry</h2>
+<blockquote>
+<p>We’ll see later that product behaves like
+multiplication, with the terminal object playing the role of one; whereas
+coproduct behaves more like the sum, with the initial object playing the
+role of zero.</p>
+</blockquote>
+<h2 id="product-types">Product Types</h2>
+<blockquote>
+<p>For instance, if you know how to compare
+values of basic types for equality, and you know how to generalize
+these comparisons to product and coproduct types, you can automate
+the derivation of equality operators for composite types. In Haskell you
+can automatically derive equality, comparison, conversion to and from
+string, and more, for a large subset of composite types.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Pairs are not strictly commutative: a pair (Int, Bool) cannot be substituted for a pair (Bool, Int), even though they carry the same information. They are, however, commutative up to isomorphism — the
+isomorphism being given by the swap function (which is its own inverse):
+swap :: (a, b) -&gt; (b, a)
+swap (x, y) = (y, x)
+You can think of the two pairs as simply using a different format for
+storing the same data. It’s just like big endian vs. little endian.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>You can interpret the creation of a product type as a binary operation on types. From that perspective, the above isomorphism looks very
+much like the associativity law we’ve seen in monoids:
+(𝑎 ∗ 𝑏) ∗ 𝑐 = 𝑎 ∗ (𝑏 ∗ 𝑐)</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>data Pair a b = P a b
+Here, Pair a b is the name of the type parameterized by two other
+types, a and b; and P is the name of the data constructor. You define a pair
+type by passing two types to the Pair type constructor.</p>
+</blockquote>
+<h2 id="sum-types">Sum Types</h2>
+<blockquote>
+<p>Just as the product in the category of sets gives rise to product types,
+the coproduct gives rise to sum types.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>In terms of types, we have Either as the monoidal operator and Void,
+the uninhabited type, as its neutral element. You can think of Either
+as plus, and Void as zero. Indeed, adding Void to a sum type doesn’t
+change its content. For instance:
+Either a Void
+is isomorphic to a. That’s because there is no way to construct a Right
+version of this type — there isn’t a value of type Void.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>This kind
+of optionality, if deliberate, is expressed in Haskell using the Maybe type:
+data Maybe a = Nothing | Just a
+The Maybe type is a sum of two types. You can see this if you separate
+the two constructors into individual types. The first one would look like
+this:
+data NothingType = Nothing
+It’s an enumeration with one value called Nothing. In other words, it’s
+a singleton, which is equivalent to the unit type (). The second part:
+data JustType a = Just a
+is just an encapsulation of the type a.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>data Maybe a = Either () a</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>object that was created as Just &ldquo;energy&rdquo; will never turn into Nothing.
+Similarly, an empty list will forever be empty, and a list of three elements will always have the same three elements.
+It’s this immutability that makes construction reversible.</p>
+</blockquote>
+<h2 id="algebra-of-types">Algebra of Types</h2>
+<blockquote>
+<p>Taken separately, product and sum types can be used to define a variety
+of useful data structures, but the real strength comes from combining
+the two. Once again we are invoking the power of composition.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Does it also hold for product and sum types? Yes, it does — up to isomorphisms, as usual.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Mathematicians have a name for two such intertwined monoids: it’s
+called a semiring. It’s not a full ring, because we can’t define subtraction
+of types. That’s why a semiring is sometimes called a rig, which is a
+pun on “ring without an n” (negative). But barring that, we can get a
+lot of mileage from translating statements about, say, natural numbers,
+which form a rig, to statements about types.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The list type is quite interesting, because it’s defined as a solution to an
+equation. The type we are defining appears on both sides of the equation:
+data List a = Nil | Cons a (List a)
+If we do our usual substitutions, and also replace List a with x, we get
+the equation:
+x = 1 + a * x
+We can’t solve it using traditional algebraic methods because we can’t
+subtract or divide types. But we can try a series of substitutions, where
+we keep replacing x on the right hand side with (1 + a*x), and use the
+distributive property. This leads to the following series:
+x = 1 + a*x
+x = 1 + a*(1 + a*x) = 1 + a + a*a*x
+x = 1 + a + a*a*(1 + a*x) = 1 + a + a*a + a*a*a*x
+&hellip;
+x = 1 + a + a*a + a*a*a + a*a*a*a&hellip;
+We end up with an infinite sum of products (tuples), which can be interpreted as: A list is either empty, 1; or a singleton, a; or a pair, a*a; or
+a triple, a*a*a; etc… Well, that’s exactly what a list is — a string of as!</p>
+</blockquote>
+<h2 id="challenges">Challenges</h2>
+<blockquote>
+<p>Logical and and or also form a semiring, and it too
+can be mapped into type theory:</p>
+</blockquote>
+<h2 id="functors">Functors</h2>
+<blockquote>
+<p>A functor is a
+mapping between categories.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>there’s something more to the structure of a category: there’s also the
+composition of morphisms. If ℎ is a composition of 𝑓 and 𝑔:
+ℎ = 𝑔.𝑓
+we want its image under 𝐹 to be a composition of the images of 𝑓 and
+𝑔:
+𝐹ℎ = 𝐹𝑔 . 𝐹 𝑓</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>It may smash objects together, it may glue multiple morphisms
+into one, but it may never break things apart. This no-tearing constraint
+is similar to the continuity condition you might know from calculus.</p>
+</blockquote>
+<h2 id="the-maybe-functor">The Maybe Functor</h2>
+<blockquote>
+<p>We can talk about functors that map this
+category into itself — such functors are called endofunctors. So what’s
+an endofunctor in the category of types? First of all, it maps types to
+types.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>In Haskell, we implement the
+morphism-mapping part of a functor as a higher order function called
+fmap. In the case of Maybe, it has the following signature:
+fmap :: (a -&gt; b) -&gt; (Maybe a -&gt; Maybe b)</p>
+</blockquote>
+<h2 id="equational-reasoning">Equational Reasoning</h2>
+<blockquote>
+<p>equational reasoning, which is a
+common proof technique in Haskell. It takes advantage of the fact that
+Haskell functions are defined as equalities: the left hand side equals the
+right hand side. You can always substitute one for another, possibly renaming variables to avoid name conflicts.</p>
+</blockquote>
+<h2 id="optional">Optional</h2>
+<blockquote>
+<p>Let’s consider the C++ analog of Maybe, the template type
+optional.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>So how does Haskell deal with abstracting the functor? It uses the typeclass mechanism. A typeclass defines a family of types that support a
+common interface.</p>
+</blockquote>
+<h2 id="typeclasses">Typeclasses</h2>
+<blockquote>
+<p>Typeclasses are also Haskell’s only mechanism for overloading functions (and operators)</p>
+</blockquote>
+<h2 id="the-list-functor">The List Functor</h2>
+<blockquote>
+<p>We have the type constructor List, which is a mapping from any type
+a to the type List a. To show that List is a functor we have to define
+the lifting of functions: Given a function a -&gt; b define a function List
+a -&gt; List b:
+fmap :: (a -&gt; b) -&gt; (List a -&gt; List b)</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Notice that, on the right hand side, fmap f is applied to a list that’s
+shorter than the list for which we are defining it — it’s applied to its
+tail. We recurse towards shorter and shorter lists, so we are bound to
+eventually reach the empty list, or Nil.</p>
+</blockquote>
+<h2 id="the-reader-functor">The Reader Functor</h2>
+<blockquote>
+<p>Most C++ containers are functors by virtue of implementing iterators
+that can be passed to std::transform, which is the more primitive
+cousin of fmap. Unfortunately, the simplicity of a functor is lost under
+the usual clutter of iterators and temporaries</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>fmap f g = (.) f g
+and the arguments can be omitted to yield a direct equality of two functions:</p>
+</blockquote>
+<h2 id="functors-as-containers">Functors as Containers</h2>
+<blockquote>
+<p>This combination of the type constructor (-&gt;) r with the above implementation of fmap is called the reader functor.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>So
+I like to think of the functor object (an object of the type generated by
+an endofunctor) as containing a value or values of the type over which it
+is parameterized, even if these values are not physically present there.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Despite its weirdness, the Const functor plays an important role in
+many constructions. In category theory, it’s a special case of the Δ𝑐
+functor I mentioned earlier — the endo-functor case of a black hole.</p>
+</blockquote>
+<h2 id="functor-composition">Functor Composition</h2>
+<blockquote>
+<p>In particular, it’s
+easy to compose endofunctors.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>And there is also a trivial identity
+functor in every category: it maps every object to itself, and every morphism to itself. So functors have all the same properties as morphisms
+in some category.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>functoriality means that a bifunctor
+has to map morphisms as well. This time, though, it must map a pair of
+morphisms, one from 𝐂 and one from 𝐃, to a morphism in 𝐄.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>When declaring an instance of Bifunctor, you have a choice of
+either implementing bimap and accepting the defaults for first and
+second, or implementing both first and second and accepting the default for bimap (of course, you may implement all three of them, but
+then it’s up to you to make sure they are related to each other in this
+manner).</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>By duality, a coproduct, if it’s defined for every pair of objects in a category, is also a bifunctor. In Haskell, this is exemplified by the Either
+type constructor being an instance of Bifunctor:</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>So what are the building blocks of parameterized algebraic data
+types? First, there are the items that have no dependency on the type
+parameter of the functor, like Nothing in Maybe, or Nil in List. They are
+equivalent to the Const functor. Remember, the Const functor ignores
+its type parameter (really, the second type parameter, which is the one
+of interest to us, the first one being kept constant).</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>It’s a sum of two types, and we now know that the sum is functorial.
+The first part, Nothing can be represented as a Const () acting on a
+(the first type parameter of Const is set to unit — later we’ll see more
+interesting uses of Const). The second part is just a different name for
+the identity functor. We could have defined Maybe, up to isomorphism,
+as:</p>
+</blockquote>
+<h2 id="functorial-algebraic-data-types">Functorial Algebraic Data Types</h2>
+<blockquote>
+<p>newtype BiComp bf fu gu a b = BiComp (bf (fu a) (gu b))</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>So it turns out that we didn’t have to prove that Maybe was a functor
+— this fact followed from the way it was constructed as a sum of two
+functorial primitives.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>data Maybe a = Nothing | Just a deriving Functor
+and the corresponding fmap will be implemented for you.</p>
+</blockquote>
+<h2 id="functors-in-c-plus-plus">Functors in C++</h2>
+<blockquote>
+<p>Virtual functions cannot be templatized in C++. We’ll implement fmap as a generic free function, and
+we’ll replace pattern matching with dynamic_cast.</p>
+</blockquote>
+<h2 id="the-writer-functor">The Writer Functor</h2>
+<blockquote>
+<p>I said that the embellishment was somehow related to endofunctors.
+And, indeed, the Writer type constructor is functorial in a. We don’t
+even have to implement fmap for it, because it’s just a simple product
+type.</p>
+</blockquote>
+<h2 id="covariant-and-contravariant-functors">Covariant and Contravariant Functors</h2>
+<blockquote>
+<p>of acting with f on the lambda’s argument.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Let’s try to make it functorial in the first argument. We’ll start with a
+type synonym — it’s just like the Reader but with the arguments flipped:
+type Op r a = a -&gt; r</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>ch a functor maps a morphism 𝑓
+𝑜𝑝 ∷ 𝑎 → 𝑏 in 𝐂
+𝑜𝑝 to the morphism
+𝐹 𝑓 𝑜𝑝 ∷ 𝐹 𝑎 → 𝐹 𝑏 in 𝐃. But the morphism 𝑓
+𝑜𝑝 secretly corresponds
+to some morphism 𝑓 ∷ 𝑏 → 𝑎 in the original category 𝐂.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>class Contravariant f where
+contramap :: (b -&gt; a) -&gt; (f a -&gt; f b)</p>
+</blockquote>
+<h2 id="profunctors">Profunctors</h2>
+<blockquote>
+<p>contramap = flip (.)</p>
+</blockquote>
+<h2 id="the-hom-functor">The Hom-Functor</h2>
+<blockquote>
+<p>The above examples are the reflection of a more general statement that
+the mapping that takes a pair of objects 𝑎 and 𝑏 and assigns to it the
+set of morphisms between them, the hom-set 𝐂(𝑎, 𝑏), is a functor.</p>
+</blockquote>
+<h2 id="challenges">Challenges</h2>
+<blockquote>
+<p>A morphism in 𝐂
+𝑜𝑝 × 𝐂 is a
+pair of morphisms from 𝐂:
+𝑓 ∷ 𝑎′ → 𝑎
+𝑔 ∷ 𝑏 → 𝑏′
+The lifting of this pair must be a morphism (a function) from the set
+𝐂(𝑎, 𝑏) to the set 𝐂(𝑎
+′
+, 𝑏′
+). Just pick any element ℎ of 𝐂(𝑎, 𝑏) (it’s a morphism from 𝑎 to 𝑏) and assign to it:
+𝑔 ∘ ℎ ∘ 𝑓
+which is an element of 𝐂(𝑎
+′
+, 𝑏′
+).
+As you can see, the hom-functor is a special case of a profunctor.</p>
+</blockquote>
+<h2 id="function-types">Function Types</h2>
+<blockquote>
+<p>It just so happens that in
+the category 𝐒𝐞𝐭 every hom-set is itself an object in the same category
+—because it is, after all, a set.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Hom-set in Set is just a set</p>
+</blockquote>
+<h2 id="universal-construction">Universal Construction</h2>
+<blockquote>
+<p>A function type may be considered a composite type because of its
+relationship to the argument type and the result type.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>But instead of dealing with individual pairs (𝑓 , 𝑥), we can as well talk
+about the whole product of the function type 𝑧 and the argument type 𝑎.
+The product 𝑧 × 𝑎 is an object, and we can pick, as our application morphism, an arrow 𝑔 from that object to 𝑏. In 𝐒𝐞𝐭, 𝑔 would be the function
+that maps every pair (𝑓 , 𝑥) to 𝑓 𝑥.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>which there is no product, or there isn’t a product for all pairs of objects.
+The answer is no: there is no function type, if there is no product type.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>What we really need, given the mapping ℎ from 𝑧
+′
+to 𝑧, is a mapping
+from 𝑧
+′ × 𝑎 to 𝑧 × 𝑎. And now, after discussing the functoriality of the
+product, we know how to do it. Because the product itself is a functor
+(more precisely an endo-bi-functor), it’s possible to lift pairs of morphisms.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Of course, there is no guarantee that such an object 𝑎 ⇒ 𝑏 exists for
+any pair of objects 𝑎 and 𝑏 in a given category. But it always does in 𝐒𝐞𝐭.
+Moreover, in 𝐒𝐞𝐭, this object is isomorphic to the hom-set 𝐒𝐞𝐭(𝑎, 𝑏).</p>
+</blockquote>
+<h2 id="currying">Currying</h2>
+<blockquote>
+<p>let’s think of the morphism 𝑔 as a function of two
+variables, 𝑧 and 𝑎.
+𝑔 ∷ 𝑧 × 𝑎 → 𝑏</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>a -&gt; (b -&gt; c)</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>curry :: ((a, b) -&gt; c) -&gt; (a -&gt; b -&gt; c)
+curry f a b = f (a, b)</p>
+</blockquote>
+<h2 id="exponentials">Exponentials</h2>
+<blockquote>
+<p>In mathematical literature, the function object, or the internal homobject between two objects 𝑎 and 𝑏, is often called the exponential and
+denoted by 𝑏
+𝑎
+. Notice that the argument type is in the exponent.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>For instance a (pure) function from Bool is completely specified by
+a pair of values: one corresponding to False, and one corresponding to
+True. The set of all possible functions from Bool to, say, Int is the set
+of all pairs of Ints. This is the same as the product Int × Int or, being
+a little creative with notation, Int2
+.</p>
+</blockquote>
+<h2 id="cartesian-closed-categories">Cartesian Closed Categories</h2>
+<blockquote>
+<p>But Haskell is a lazy language, so the
+boundary between lazily evaluated (infinite) data structures and functions is fuzzy. This function vs. data duality explains the identification of
+Haskell’s function type with the categorical exponential object — which
+corresponds more to our idea of data.</p>
+</blockquote>
+<h2 id="zeroth-power">Zeroth Power</h2>
+<blockquote>
+<p>in which product can be distributed over coproduct
+𝑎 × (𝑏 + 𝑐) = 𝑎 × 𝑏 + 𝑎 × 𝑐
+(𝑏 + 𝑐) × 𝑎 = 𝑏 × 𝑎 + 𝑐 × 𝑎
+is called a bicartesian closed category.</p>
+</blockquote>
+<h2 id="first-power">First Power</h2>
+<blockquote>
+<p>In Haskell, we replace 0 with Void; 1 with the unit type (); and the
+exponential with function type.</p>
+</blockquote>
+<h2 id="exponentials-of-sums">Exponentials of Sums</h2>
+<blockquote>
+<p>This is a restatement of the observation that morphisms from the terminal object can be used to pick “elements” of the object a. The set of such
+morphisms is isomorphic to the object itself. In 𝐒𝐞𝐭, and in Haskell, the
+isomorphism is between elements of the set a and functions that pick
+those elements, () -&gt; a.</p>
+</blockquote>
+<h2 id="curry-howard-isomorphism">Curry-Howard Isomorphism</h2>
+<blockquote>
+<p>Exponentials of Exponentials</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>𝑒𝑣𝑎𝑙 ∷ (𝑎 ⇒ 𝑏) × 𝑎 → 𝑏
+which defines the function type 𝑎 ⇒ 𝑏 (or the exponential object 𝑏
+𝑎
+).
+Let’s translate this signature to a logical predicate using the CurryHoward isomorphism:
+((𝑎 ⇒ 𝑏) ∧ 𝑎) ⇒ 𝑏
+Here’s how you can read this statement: If it’s true that 𝑏 follows from
+𝑎, and 𝑎 is true, then 𝑏 must be true. This makes perfect intuitive sense
+and has been known since antiquity as modus ponens.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>absurd :: Void -&gt; a
+Considering that Void translates into false, we get:
+𝑓 𝑎𝑙𝑠𝑒 ⇒ 𝑎
+Anything follows from falsehood (ex falso quodlibet)</p>
+</blockquote>
+<h2 id="bibliography">Bibliography</h2>
+<blockquote>
+<p>Computers are not only helping mathematicians do their work —
+they are revolutionizing the very foundations of mathematics. The latest
+hot research topic in that area is called Homotopy Type Theory, and is
+an outgrowth of type theory.</p>
+</blockquote>
+<h2 id="natural-transformations">Natural Transformations</h2>
+<blockquote>
+<p>A functor “embeds” one category in another. It may collapse multiple things into one, but it never breaks connections. One way of thinking about it is that with a functor we are modeling one category inside
+another. The source category serves as a model, a blueprint, for some
+structure that’s part of the target category.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Natural
+transformations help us compare these realizations. They are mappings
+of functors — special mappings that preserve their functorial nature.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>We don’t want to make artificial connections between objects. So it’s natural to use existing connections, namely morphisms. A
+natural transformation is a selection of morphisms: for every object 𝑎, it
+picks one morphism from 𝐹 𝑎 to 𝐺𝑎. If we call the natural transformation
+𝛼, this morphism is called the component of 𝛼 at 𝑎, or 𝛼𝑎
+.
+𝛼𝑎 ∷ 𝐹 𝑎 → 𝐺𝑎
+Keep in mind that 𝑎 is an object in 𝐂 while 𝛼𝑎
+is a morphism in 𝐃.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Now we have two ways of getting from 𝐹 𝑎 to 𝐺𝑏. To make sure that
+they are equal, we must impose the naturality condition that holds for
+any 𝑓 :
+𝐺𝑓 ∘ 𝛼𝑎 = 𝛼𝑏
+∘ 𝐹 𝑓</p>
+</blockquote>
+<h2 id="polymorphic-functions">Polymorphic Functions</h2>
+<blockquote>
+<p>Looking at a natural transformation component-wise, one may say
+that it maps objects to morphisms. Because of the naturality condition,
+one may also say that it maps morphisms to commuting squares — there
+is one commuting naturality square in 𝐃 for every morphism in 𝐂.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>A natural transformation is a polymorphic function that is defined for
+all types a:
+alpha :: forall a . F a -&gt; G a
+The forall a is optional in Haskell (and in fact requires turning on the
+language extension ExplicitForAll)</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>In Haskell, a polymorphic function must be defined uniformly for all types. One formula must
+work across all types. This is called parametric polymorphism.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>fmapG f . alphaa = alphab . fmapF f
+Because of type inference, these annotations are not necessary, and the
+following equation holds:
+fmap f . alpha = alpha . fmap f</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>the new container, with its own implementation of fmap. These two actions, repackaging and fmapping, are orthogonal. “One moves the eggs,
+the other boils them.”</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>instance Functor (Reader e) where
+fmap f (Reader g) = Reader (\x -&gt; f (g x))
+For every type e, you can define a family of natural transformations
+from Reader e to any other functor f. We’ll see later that the members of this family are always in one to one correspondence with the
+elements of f e (the Yoneda lemma)</p>
+</blockquote>
+<h2 id="beyond-naturality">Beyond Naturality</h2>
+<blockquote>
+<p>Since all standard algebraic data types are functors, any polymorphic function between such types is a natural transformation.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Polymorphic functions between two contravariant functors are still natural transformations in the categorical sense, except that they work on functors from
+the opposite category to Haskell types.</p>
+</blockquote>
+<h2 id="functor-category">Functor Category</h2>
+<blockquote>
+<p>Therefore a function of the signature:
+(a -&gt; a) -&gt; f a
+where f is an arbitrary functor, cannot be a natural transformation.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>ne (long) look at a diagram convinces us that the result of this composition is indeed a natural transformation from F to H:
+𝐻 𝑓 ∘ (𝛽 ⋅ 𝛼)𝑎 = (𝛽 ⋅ 𝛼)𝑏
+∘ 𝐹 𝑓</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>word about notation. Following Saunders Mac Lane I use the dot
+for the kind of natural transformation composition I have just described.
+The problem is that there are two ways of composing natural transformations. This one is called the vertical composition, because the functors are usually stacked up vertically in the diagrams that describe it.
+Vertical composition is important in defining the functor category.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The functor category between categories 𝐂 and 𝐃 is written as
+𝐅𝐮𝐧(𝐂, 𝐃), or [𝐂, 𝐃], or sometimes as 𝐃
+𝐂.</p>
+</blockquote>
+<h2 id="2-categories">2-Categories</h2>
+<blockquote>
+<p>𝐂𝐚𝐭 is
+a full-blown Cartesian closed category in which there is an exponential
+object 𝐃
+𝐂 for any pair of categories. And by “object” in 𝐂𝐚𝐭 I mean a
+category, so 𝐃
+𝐂 is a category, which we can identify with the functor
+category between 𝐂 and 𝐃</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Our goal is to find a morphism that goes from
+𝐺(𝐹 𝑎) to 𝐺
+′
+(𝐹
+′
+𝑎), a candidate for the component of a natural transformation connecting the two functors 𝐺 ∘ 𝐹 and 𝐺
+′
+∘ 𝐹 ′
+. In fact there’s not
+one but two paths we can take from 𝐺(𝐹 𝑎) to 𝐺
+′
+(𝐹
+′
+𝑎):
+𝐺
+′
+𝛼𝑎
+∘ 𝛽𝐹 𝑎
+𝛽𝐹
+′𝑎
+∘ 𝐺𝛼𝑎
+Luckily for us, they are equal, because the square we have formed turns
+out to be the naturality square for 𝛽</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Here’s a categorical rule of thumb: Every time you have composition, you should look for a category. We have vertical composition of
+natural transformations, and it’s part of the functor category. But what
+about the horizontal composition? What category does that live in?</p>
+</blockquote>
+<h2 id="conclusion">Conclusion</h2>
+<blockquote>
+<p>In this new sideways interpretation of 𝐂𝐚𝐭 there are two ways of
+getting from object to object: using a functor or using a natural transformation.</p>
+</blockquote>
+<h2 id="challenges">Challenges</h2>
+<blockquote>
+<p>A functor maps objects to objects, so we can use it as a type constructor, or a parametric type. A functor also maps morphisms, so it is
+a higher order function — fmap. There are some simple functors, like
+Const, product, and coproduct, that can be used to generate a large variety of algebraic data types. Function types are also functorial, both
+covariant and contravariant, and can be used to extend algebraic data
+types.</p>
+</blockquote>
+<h2 id="declarative-programming">Declarative Programming</h2>
+<blockquote>
+<p>There are, roughly speaking, two ways of doing it: by telling
+the computer what to do, or by telling it how to do it. One is called
+declarative and the other imperative.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>h x = let y = f x
+in g y</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Notice how this approach resembles imperative thinking: we reach
+the final solution by following a sequence of small steps, each depending
+on the result of the previous one. In fact, computer simulations of physical systems are routinely implemented by turning differential equations
+into difference equations and iterating them.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The other approach is global. We look at the initial and the final
+state of the system, and calculate a trajectory that connects them by
+minimizing a certain functional.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Feynman’s greatest contribution was to realize that the principle of least
+action can be generalized to quantum mechanics. There, again, the problem is formulated in terms of initial state and final state. The Feynman
+path integral between those states is used to calculate the probability of
+transition.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>global picture, where we declare the initial and final conditions, and
+everything in between just follows.
+The global approach can be also used in programming, for instance
+when implementing ray tracing.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>If you can get from 𝐴 to 𝐵
+through a series of steps, you can also get there in one leap. Moreover,
+the major tool of category theory is the universal construction, which is
+the epitome of a global approach. We’</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>I would go as far as to argue that category theory is the kind of math that is particularly well suited for the minds of programmers. That’s because category theory — rather than dealing with particulars — deals with structure. It deals with the kind of structure that makes programs composable.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Functional programming is not only about composing functions and algebraic data structures — it makes concurrency composable — something that’s virtually impossible with other programming paradigms.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Mathematicians laughed at the Dirac delta function, which was made up on the spot by the great physicist P. A. M. Dirac to solve some differential equations. They stopped laughing when they discovered a completely new branch of calculus called distribution theory that formalized Dirac’s insights.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>One of the forces that are driving the big change is the multicore revolution. The prevailing programming paradigm, object oriented programming, doesn’t buy you anything in the realm of concurrency and parallelism, and instead encourages dangerous and buggy design.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Data hiding, the basic premise of object orientation, when combined with sharing and mutation, becomes a recipe for data races.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The idea of combining a mutex with the data it protects is nice but, unfortunately, locks don’t compose, and lock hiding makes deadlocks more likely and harder to debug.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>But even in the absence of concurrency, the growing complexity of software systems is testing the limits of scalability of the imperative paradigm.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>To put it simply, side effects are getting out of hand.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>It’s only when we start composing functions that have side effects on top of other functions that have side effects, and so on, that things start getting hairy. It’s not that side effects are inherently bad — it’s the fact that they are hidden from view that makes them impossible to manage at larger scales. Side effects don’t scale, and imperative programming is all about side effects.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>I hope future generations will be as admiring of the programming skills we’ve been displaying in building complex operating systems, web servers, and the internet infrastructure. And, frankly, they should, because we’ve done all this based on very flimsy theoretical foundations. We have to fix those foundations if we want to move forward.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>This process of hierarchical decomposition and recomposition is not imposed on us by computers. It reflects the limitations of the human mind.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>So what are the right chunks for the composition of programs? Their surface area has to increase slower than their volume. (I like this analogy because of the intuition that the surface area of a geometric object grows with the square of its size — slower than the volume, which grows with the cube of its size.) The surface area is the information we need in order to compose chunks. The volume is the information we need in order to implement them.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The idea is that, once a chunk is implemented, we can forget about the details of its implementation and concentrate on how it interacts with other chunks. In object-oriented programming, the surface is the class declaration of the object, or its abstract interface. In functional programming, it’s the declaration of a function.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The moment you have to dig into the implementation of the object in order to understand how to compose it with other objects, you’ve lost the advantages of your programming paradigm.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>the essence of a category is composition. Or, if you prefer, the essence of composition is a category. Arrows compose, so if you have an arrow from object A to object B, and another arrow from object B to object C, then there must be an arrow — their composition — that goes from A to C.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Arrows as Functions</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Think of arrows, which are also called morphisms, as functions.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>You have a function f that takes an argument of type A and returns a B. You have another function g that takes a B and returns a C. You can compose them by passing the result of f to g.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>You have just defined a new function that takes an A and returns a C.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>In math, such composition is denoted by a small circle between functions: g∘f. Notice the right to left order of composition. For some people this is confusing. You may be familiar with the pipe notation in Unix, as in:
+lsof | grep Chrome</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>But in mathematics and in Haskell functions compose right to left. It helps if you read g∘f as “g after f.”</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>you see right-to-left composition: g(f(a)); this time in C.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>So let’s try some Haskell for a change. Here’s the declaration of a function from A to B:
+f :: A -&gt; B
+Similarly:
+g :: B -&gt; C
+Their composition is:
+g . f
+Once you see how simple things are in Haskell, the inability to express straightforward functional concepts in C++ is a little embarrassing. In fact, Haskell will let you use Unicode characters so you can write composition as:
+g ∘ f
+You can even use Unicode double colons and arrows:
+f ∷ A → B</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>So here’s the first Haskell lesson: Double colon means “has the type of…” A function type is created by inserting an arrow between two types. You compose two functions by inserting a period between them (or a Unicode circle).</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Properties of Composition</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>two extremely important properties that the composition in any category must satisfy</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Composition is associative. If you have three morphisms, f, g, and h, that can be composed (that is, their objects match end-to-end), you don’t need parentheses to compose them. In math notation this is expressed as:
+h∘(g∘f) = (h∘g)∘f = h∘g∘f
+In (pseudo) Haskell:
+f :: A -&gt; B
+g :: B -&gt; C
+h :: C -&gt; D
+h . (g . f) <code>= (h . g) . f =</code> h . g . f
+(I said “pseudo,” because equality is not defined for functions.)
+Associativity is pretty obvious when dealing with functions, but it may be not as obvious in other categories.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>For every object A there is an arrow which is a unit of composition. This arrow loops from the object to itself. Being a unit of composition means that, when composed with any arrow that either starts at A or ends at A, respectively, it gives back the same arrow. The unit arrow for object A is called idA (identity on A). In math notation, if f goes from A to B then
+f∘idA = f
+and
+idB∘f = f</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>When dealing with functions, the identity arrow is implemented as the identity function that just returns back its argument.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>In Haskell, the identity function is part of the standard library (called Prelude). Here’s its declaration and definition:
+id :: a -&gt; a
+id x = x
+As you can see, polymorphic functions in Haskell are a piece of cake.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Here’s the trick: names of concrete types always start with a capital letter, names of type variables start with a lowercase letter. So here a stands for all types.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>Function definition and function call are the bread and butter of functional programming so their syntax is reduced to the bare minimum. Not only are there no parentheses around the argument list but there are no commas between arguments (you’ll see that later, when we define functions of multiple arguments</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>The body of a function is always an expression — there are no statements in functions. The result of a function is this expression — here, just x.</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>You might be asking yourself the question: Why would anyone bother with the identity function — a function that does nothing? Then again, why do we bother with the number zero? Zero is a symbol for nothing</p>
+</blockquote>
+<!--quoteend-->
+<blockquote>
+<p>To summarize: A category consists of objects and arrows (morphisms). Arrows can be composed, and the composition is associative. Every object has an identity arrow that serves as a unit under composition.</p>
+</blockquote>
+
+        </div>
+    </article>
+    <nav class="article-tags" aria-label="Tags"><a href="../../tags/book/">book</a><a href="../../tags/mathematics/">mathematics</a><a href="../../tags/technology/">technology</a>
+    </nav>
+    <nav class="article-nav" aria-label="More"><a class="prev" href="../../books/the-picture-of-dorian-gray/"><span>← Newer</span>The Picture of Dorian Gray</a><a class="next" href="../../books/turiya-the-god-state/"><span>Older →</span>Turiya: The God State</a>
+    </nav>
+</main>
+
+            </div>
+
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="../../bundle.min.778e2214d78dff15f4559780e10b60705e86f1006936e291682966b95861ab39662038c5f8b1bdbec542fb0a5fb41be31a400e1f7f8c871725f1042665fea928.js" integrity="sha512-d44iFNeN/xX0VZeA4QtgcF6G8QBpNuKRaClmuVhhqzlmIDjF&#43;LG9vsVC&#43;wpftBvjGkAOH3&#43;Mhxcl8QQmZf6pKA=="></script>
+
+
+
+    </body>
+</html>
